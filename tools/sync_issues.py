@@ -1,20 +1,22 @@
 #!/usr/bin/env python3
 """Mirror GitHub issues (and bot-commented PRs) into raw/data/github/<repo>/.
 
-Strategy (see AGENTS.md "Tools"):
-- Issues:   GET /repos/{repo}/issues?state=all&sort=updated&direction=asc&since=<cursor>
-- Comments: GET /repos/{repo}/issues/comments?sort=updated&direction=asc&since=<cursor>
-  (repo-level endpoint: ~100 comments/request instead of 1 request/issue)
+Strategy (see AGENTS.md "Tools"; hard-won API quirks in paged()'s docstring):
+- Incremental stream: GET /repos/{repo}/issues and /repos/{repo}/issues/comments
+  with sort=created&direction=asc&since=<cursor> (created-order is the only
+  stable listing order; `since` still filters by updated_at).
+- Full/backfill integrity: --repair lists every item (fits the ~40k pagination
+  cap) and refetches comments per-issue wherever the local comment count
+  disagrees with the API's — the full comment history itself exceeds the cap.
 
-Cursors are persisted to .sync-state.json after every page, so an interrupted
-run resumes where it left off. Files are rewritten whole from an in-file store
-(frontmatter + sentinel-delimited comments), so reruns are idempotent.
+Cursors persist to .sync-state.json at the end of each completed pass; reruns
+are idempotent (files are rewritten whole from frontmatter + sentinels).
 
-PRs: skipped unless they carry css-meeting-bot comments; those are fetched
-individually at the end and stored under pulls/.
+PRs: skipped unless they carry css-meeting-bot comments; those are stored
+under pulls/.
 
 Intentionally dropped: reactions, edit history, label-change events.
-Deleted comments are not detected (updated_at based sync).
+Deleted comments/issues are not detected (additive sync; see AGENTS.md).
 """
 
 import argparse
@@ -55,6 +57,11 @@ def gh_api(path: str, tries: int = 8) -> list | dict:
         )
         if proc.returncode == 0:
             return json.loads(proc.stdout)
+        if "pagination is limited" in proc.stderr:
+            raise RuntimeError(
+                f"deep-pagination cap hit on {path} — window too large for the "
+                "stream; run --repair to fill via per-issue fetches"
+            )
         wait = min(60 * (attempt + 1), 300)
         log(f"gh api failed ({proc.stderr.strip()[:200]}); retry in {wait}s")
         time.sleep(wait)
@@ -212,55 +219,57 @@ def minus_1s(ts: str) -> str:
     return dt.strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
-def paged(repo: str, endpoint: str, anchor: str):
-    """Yield (page_items, resume_cursor).
+def paged(repo: str, endpoint: str, since: str):
+    """Yield (page_items, resume_cursor) for `since=<fixed>`, pages 1..N.
 
-    GitHub's sort=updated listing is NOT stable across page requests: items tied
-    on the same second can reshuffle between two page fetches, silently skipping
-    whoever crosses the boundary (observed ~4.5% loss on deep pagination). So we
-    never trust page boundaries: after every full page we re-anchor `since` to
-    (newest seen - 1s) and fetch page 1 again. The 1s rewind re-covers the whole
-    tie group; duplicates are idempotent. page+=1 happens only when a single
-    second holds >100 items (then boundary risk is unavoidable — warned).
-    The yielded resume_cursor is safe to persist: ascending order means
-    everything unseen is >= newest seen.
+    Hard-won constraints (see memory/gotchas and git history):
+    - sort=updated ordering is UNRELIABLE: pages contain occasional items whose
+      displayed updated_at disagrees with the hidden sort key (an outlier months
+      ahead can sit mid-page). Any since-re-anchoring scheme built on updated_at
+      therefore skips items deterministically. Never re-anchor.
+    - sort=created is stable (created_at is immutable), so a plain page walk has
+      consistent boundaries. `since` still filters by updated_at, which is fine.
+    - Deep pagination is capped server-side (~40k items, HTTP 422). The issues
+      listing (~14k) fits; a full-history comments walk does NOT — full comment
+      coverage comes from repair()'s per-issue fetches instead. This stream is
+      for incremental windows only.
+
+    resume_cursor = (max updated_at seen - 1s) is only safe to persist AFTER the
+    pass completes: created-order ≠ updated-order, so mid-pass the unseen tail
+    may still hold small updated_at values.
     """
     page = 1
-    max_seen = anchor
+    max_updated = since
     while True:
         path = (
-            f"/repos/{repo}/{endpoint}?sort=updated&direction=asc"
-            f"&since={anchor}&per_page={PER_PAGE}&page={page}"
+            f"/repos/{repo}/{endpoint}?sort=created&direction=asc"
+            f"&since={since}&per_page={PER_PAGE}&page={page}"
         )
         if endpoint == "issues":
             path += "&state=all"
         items = gh_api(path)
         if not items:
             return
-        newest = max(i["updated_at"] for i in items)
-        max_seen = max(max_seen, newest)
-        yield items, minus_1s(max_seen)
+        max_updated = max([max_updated] + [i["updated_at"] for i in items])
+        yield items, minus_1s(max_updated)
         if len(items) < PER_PAGE:
             return
-        if minus_1s(max_seen) > anchor:
-            anchor = minus_1s(max_seen)
-            page = 1
-        else:
-            page += 1  # >100 items inside one second; cannot rewind further
-            log(f"  WARNING: dense tie group at {max_seen}, deepening to page {page}")
+        page += 1
 
 
 def sync(repo: str, full: bool, dry_run: bool) -> None:
     state = load_state(repo)
     if full:
+        # Only the issues cursor resets: a full-history comments walk exceeds
+        # the deep-pagination cap. Run --repair afterwards for comment gaps.
         state["issues_cursor"] = EPOCH
-        state["comments_cursor"] = EPOCH
 
     n_issues = n_comments = n_dropped = 0
     bot_pr_numbers: set[int] = set()
     pr_numbers: set[int] = set(state["pr_numbers"])
 
     log(f"issues since {state['issues_cursor']}")
+    issues_final = state["issues_cursor"]
     for items, cursor in paged(repo, "issues", state["issues_cursor"]):
         for item in items:
             if "pull_request" in item:
@@ -269,13 +278,17 @@ def sync(repo: str, full: bool, dry_run: bool) -> None:
             if not dry_run:
                 write_item(repo, item, "issues")
             n_issues += 1
-        state["issues_cursor"] = cursor
+        issues_final = cursor  # persist only after the pass completes (see paged)
         state["pr_numbers"] = sorted(pr_numbers)
         if not dry_run:
             save_state(repo, state)
-        log(f"  issues: +{len(items)} (total {n_issues}, cursor {cursor})")
+        log(f"  issues: +{len(items)} (total {n_issues})")
+    state["issues_cursor"] = issues_final
+    if not dry_run:
+        save_state(repo, state)
 
     log(f"comments since {state['comments_cursor']}")
+    comments_final = state["comments_cursor"]
     for items, cursor in paged(repo, "issues/comments", state["comments_cursor"]):
         for c in items:
             number = int(c["issue_url"].rstrip("/").rsplit("/", 1)[1])
@@ -305,11 +318,14 @@ def sync(repo: str, full: bool, dry_run: bool) -> None:
                     merge_comment(repo, number, c, "issues")
                     n_issues += 1
                     n_comments += 1
-        state["comments_cursor"] = cursor
+        comments_final = cursor  # persist only after the pass completes (see paged)
         state["pr_numbers"] = sorted(pr_numbers)
         if not dry_run:
             save_state(repo, state)
-        log(f"  comments: +{len(items)} (total {n_comments}, cursor {cursor})")
+        log(f"  comments: +{len(items)} (total {n_comments})")
+    state["comments_cursor"] = comments_final
+    if not dry_run:
+        save_state(repo, state)
 
     for number in sorted(bot_pr_numbers):
         item = gh_api(f"/repos/{repo}/issues/{number}")

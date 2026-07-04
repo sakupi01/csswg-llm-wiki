@@ -1,0 +1,11 @@
+{
+  "name": "csswg-llm-wiki",
+  "private": true,
+  "scripts": {
+    "fmt": "oxfmt AGENTS.md LICENSE.md wiki tools .claude --no-error-on-unmatched-pattern",
+    "fmt:check": "oxfmt --check AGENTS.md LICENSE.md wiki tools .claude --no-error-on-unmatched-pattern"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.2.0"
+  }
+}

@@ -1,0 +1,25 @@
+#!/bin/sh
+# Format staged markdown/json (excluding raw/ and _generated/) and enforce
+# that wiki/log.md is append-only relative to HEAD.
+set -e
+
+staged=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.(md|json)$' | grep -Ev '^(raw/|_generated/|node_modules/)' || true)
+if [ -n "$staged" ]; then
+  if command -v pnpm >/dev/null 2>&1 && [ -d node_modules/.bin ]; then
+    echo "$staged" | xargs pnpm exec oxfmt >/dev/null 2>&1 || true
+    echo "$staged" | xargs git add
+  fi
+fi
+
+# wiki/log.md: the staged version must start with the HEAD version (append-only).
+if git diff --cached --name-only | grep -qx 'wiki/log.md'; then
+  if git cat-file -e HEAD:wiki/log.md 2>/dev/null; then
+    old_lines=$(git show HEAD:wiki/log.md | wc -l | tr -d ' ')
+    old=$(git show HEAD:wiki/log.md)
+    staged_head=$(git show :wiki/log.md | head -n "$old_lines")
+    if [ "$old" != "$staged_head" ]; then
+      echo "pre-commit: wiki/log.md is append-only; existing lines were modified." >&2
+      exit 1
+    fi
+  fi
+fi

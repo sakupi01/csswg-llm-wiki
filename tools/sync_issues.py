@@ -215,12 +215,15 @@ def minus_1s(ts: str) -> str:
 def paged(repo: str, endpoint: str, anchor: str):
     """Yield (page_items, resume_cursor).
 
-    `since=<anchor>` stays FIXED while pages deepen (advancing `since` to a page's
-    newest updated_at silently skips items sharing that same second beyond the
-    page — bulk edits/migrations collide a lot). Every 10 pages we re-anchor to
-    (max seen - 1s); the 1s rewind re-covers any same-second collision window.
-    The yielded resume_cursor is safe to persist: on restart, re-anchoring there
-    cannot lose items (ascending order ⇒ everything unseen is >= max seen).
+    GitHub's sort=updated listing is NOT stable across page requests: items tied
+    on the same second can reshuffle between two page fetches, silently skipping
+    whoever crosses the boundary (observed ~4.5% loss on deep pagination). So we
+    never trust page boundaries: after every full page we re-anchor `since` to
+    (newest seen - 1s) and fetch page 1 again. The 1s rewind re-covers the whole
+    tie group; duplicates are idempotent. page+=1 happens only when a single
+    second holds >100 items (then boundary risk is unavoidable — warned).
+    The yielded resume_cursor is safe to persist: ascending order means
+    everything unseen is >= newest seen.
     """
     page = 1
     max_seen = anchor
@@ -239,10 +242,12 @@ def paged(repo: str, endpoint: str, anchor: str):
         yield items, minus_1s(max_seen)
         if len(items) < PER_PAGE:
             return
-        page += 1
-        if page > 10 and minus_1s(max_seen) > anchor:
+        if minus_1s(max_seen) > anchor:
             anchor = minus_1s(max_seen)
             page = 1
+        else:
+            page += 1  # >100 items inside one second; cannot rewind further
+            log(f"  WARNING: dense tie group at {max_seen}, deepening to page {page}")
 
 
 def sync(repo: str, full: bool, dry_run: bool) -> None:
@@ -320,16 +325,76 @@ def sync(repo: str, full: bool, dry_run: bool) -> None:
     )
 
 
+def fetch_all_comments(repo: str, number: int) -> list:
+    """Per-issue comments endpoint: created-order, stable — safe pagination."""
+    out, page = [], 1
+    while True:
+        items = gh_api(f"/repos/{repo}/issues/{number}/comments?per_page={PER_PAGE}&page={page}")
+        out += items
+        if len(items) < PER_PAGE:
+            return out
+        page += 1
+
+
+def repair(repo: str) -> None:
+    """Verify mirror completeness against a fresh full listing; fix gaps.
+
+    (a) missing issues (skipped by any past stream run) are written;
+    (b) issue files whose local comment count != the listing's `comments`
+        count get their comments refetched via the stable per-issue endpoint.
+    Unmirrored PRs stay unmirrored (bot-PR detection is the stream's job);
+    deleted comments still cannot be detected (local > API is refetched but
+    stale comments are not removed — documented limitation).
+    """
+    state = load_state(repo)
+    pr_numbers = set(state["pr_numbers"])
+    listing: dict[int, dict] = {}
+    log("repair: full listing pass")
+    for items, _cursor in paged(repo, "issues", EPOCH):
+        for item in items:
+            listing[item["number"]] = item
+    log(f"repair: {len(listing)} items listed")
+
+    n_missing = n_refetched = 0
+    for number, item in sorted(listing.items()):
+        is_pr = "pull_request" in item
+        if is_pr:
+            pr_numbers.add(number)
+        kind = "pulls" if is_pr else "issues"
+        path = issue_path(repo, number, kind)
+        existing = parse_file(path)
+        if is_pr and existing is None:
+            continue
+        n_local = len(existing["comments"]) if existing else 0
+        if existing is None:
+            n_missing += 1
+            log(f"  missing #{number} — mirrored")
+        if existing is None or n_local != item.get("comments", 0):
+            write_item(repo, item, kind)
+            if item.get("comments", 0):
+                for c in fetch_all_comments(repo, number):
+                    merge_comment(repo, number, c, kind)
+            if existing is not None:
+                n_refetched += 1
+    state["pr_numbers"] = sorted(pr_numbers)
+    save_state(repo, state)
+    log(f"repair done: {n_missing} missing mirrored, {n_refetched} comment sets refetched")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--repo", default=REPO_DEFAULT)
     ap.add_argument("--full", action="store_true", help="reset cursors, remirror all")
+    ap.add_argument("--repair", action="store_true", help="verify against a fresh listing, fix gaps")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
     (data_dir(args.repo) / "issues").mkdir(parents=True, exist_ok=True)
     (data_dir(args.repo) / "pulls").mkdir(parents=True, exist_ok=True)
     try:
-        sync(args.repo, args.full, args.dry_run)
+        if args.repair:
+            repair(args.repo)
+        else:
+            sync(args.repo, args.full, args.dry_run)
     except KeyboardInterrupt:
         log("interrupted; cursors saved, rerun to resume")
         sys.exit(130)

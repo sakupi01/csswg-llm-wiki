@@ -1,0 +1,206 @@
+# Hand-maintained identity map: IRC nick <-> GitHub handle <-> name <-> affiliation.
+# This file is the canonical source for wiki/people/ (regenerate via extract_people.py).
+# Restricted YAML subset — parsed by extract_people.load_people():
+#   - slug: <people page slug>
+#     name: <full name>
+#     github: <github login>
+#     irc_nicks: [nick1, nick2]
+#     affiliation: <free text; verify against raw/data/w3c-api/group/css/participants.json>
+#     roles: [free text, ...]
+# Affiliations change; record "since YYYY" when known and verify before citing.
+
+- slug: astearns
+  name: Alan Stearns
+  github: astearns
+  irc_nicks: [astearns]
+  affiliation: Adobe
+  roles: [CSSWG co-chair]
+
+- slug: atanassov
+  name: Rossen Atanassov
+  github: atanassov
+  irc_nicks: [Rossen_, Rossen]
+  affiliation: Microsoft
+  roles: [CSSWG co-chair]
+
+- slug: fantasai
+  name: Elika J. Etemad
+  github: fantasai
+  irc_nicks: [fantasai]
+  affiliation: Apple (since 2023; previously Invited Expert / Mozilla)
+  roles: [editor of many CSS modules]
+
+- slug: tabatkins
+  name: Tab Atkins Bittner
+  github: tabatkins
+  irc_nicks: [TabAtkins]
+  affiliation: Google
+  roles: [editor of many CSS modules]
+
+- slug: dbaron
+  name: David Baron
+  github: dbaron
+  irc_nicks: [dbaron]
+  affiliation: Google (previously Mozilla)
+  roles: []
+
+- slug: emilio
+  name: Emilio Cobos Alvarez
+  github: emilio
+  irc_nicks: [emilio]
+  affiliation: Mozilla
+  roles: []
+
+- slug: frivoal
+  name: Florian Rivoal
+  github: frivoal
+  irc_nicks: [florian, Florian]
+  affiliation: Invited Expert
+  roles: []
+
+- slug: miriam
+  name: Miriam Suzanne
+  github: mirisuzanne
+  irc_nicks: [miriam, TYLin]
+  affiliation: Invited Expert (OddBird)
+  roles: [container queries / cascade layers / scope]
+
+- slug: argyleink
+  name: Adam Argyle
+  github: argyleink
+  irc_nicks: [argyle]
+  affiliation: Google
+  roles: [CSS Nesting]
+
+- slug: smfr
+  name: Simon Fraser
+  github: smfr
+  irc_nicks: [smfr]
+  affiliation: Apple
+  roles: []
+
+- slug: jensimmons
+  name: Jen Simmons
+  github: jensimmons
+  irc_nicks: [jensimmons]
+  affiliation: Apple
+  roles: []
+
+- slug: rachelandrew
+  name: Rachel Andrew
+  github: rachelandrew
+  irc_nicks: [rachelandrew]
+  affiliation: Google
+  roles: []
+
+- slug: una
+  name: Una Kravets
+  github: una
+  irc_nicks: [una]
+  affiliation: Google
+  roles: []
+
+- slug: bramus
+  name: Bramus Van Damme
+  github: bramus
+  irc_nicks: [bramus]
+  affiliation: Google
+  roles: []
+
+- slug: loirooriol
+  name: Oriol Brufau
+  github: Loirooriol
+  irc_nicks: [oriol]
+  affiliation: Igalia
+  roles: []
+
+- slug: svgeesus
+  name: Chris Lilley
+  github: svgeesus
+  irc_nicks: [chris, ChrisL]
+  affiliation: W3C
+  roles: [CSS Color]
+
+- slug: plinss
+  name: Peter Linss
+  github: plinss
+  irc_nicks: [plinss]
+  affiliation: Invited Expert
+  roles: [former CSSWG co-chair]
+
+- slug: dael
+  name: Dael Jackson
+  github: dael
+  irc_nicks: [dael]
+  affiliation: Invited Expert
+  roles: [long-time telecon scribe]
+
+- slug: chrishtr
+  name: Chris Harrelson
+  github: chrishtr
+  irc_nicks: [chrishtr]
+  affiliation: Google
+  roles: []
+
+- slug: flackr
+  name: Robert Flack
+  github: flackr
+  irc_nicks: [flackr]
+  affiliation: Google
+  roles: []
+
+- slug: ntim
+  name: Tim Nguyen
+  github: nt1m
+  irc_nicks: [ntim]
+  affiliation: Apple
+  roles: []
+
+- slug: lea
+  name: Lea Verou
+  github: LeaVerou
+  irc_nicks: [lea, leaverou]
+  affiliation: Invited Expert
+  roles: []
+
+- slug: kizu
+  name: Roman Komarov
+  github: kizu
+  irc_nicks: [kizu]
+  affiliation: Invited Expert
+  roles: []
+
+- slug: sebastianz
+  name: Sebastian Zartner
+  github: SebastianZ
+  irc_nicks: [SebastianZ]
+  affiliation: Invited Expert
+  roles: []
+
+- slug: futhark
+  name: Rune Lillesveen
+  github: lilles
+  irc_nicks: [futhark]
+  affiliation: Google
+  roles: []
+
+- slug: andruud
+  name: Anders Hartvoll Ruud
+  github: andruud
+  irc_nicks: [andruud]
+  affiliation: Google
+  roles: []
+
+- slug: vmpstr
+  name: Vladimir Levin
+  github: vmpstr
+  irc_nicks: [vmpstr]
+  affiliation: Google
+  roles: [view transitions]
+
+- slug: khushalsagar
+  name: Khushal Sagar
+  github: khushalsagar
+  irc_nicks: [khush]
+  affiliation: Google
+  roles: [view transitions]

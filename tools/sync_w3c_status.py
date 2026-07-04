@@ -38,6 +38,7 @@ MATURITY = {
     "First Public Working Draft": "FPWD",
     "Group Note": "NOTE",
     "Working Group Note": "NOTE",
+    "Note": "NOTE",
     "Group Draft Note": "DNOTE",
     "Draft Note": "DNOTE",
     "Retired": "RETIRED",

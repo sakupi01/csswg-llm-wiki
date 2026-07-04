@@ -23,13 +23,15 @@ import re
 import subprocess
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 REPO_DEFAULT = "w3c/csswg-drafts"
 ROOT = Path(__file__).resolve().parent.parent
 BOT = "css-meeting-bot"
-EPOCH = "1970-01-01T00:00:00Z"
+# GitHub's /issues endpoint silently returns [] for a since= before ~2000;
+# 2008-01-01 (pre-GitHub-founding) is safe for any repo.
+EPOCH = "2008-01-01T00:00:00Z"
 PER_PAGE = 100
 
 SENTINEL_RE = re.compile(
@@ -43,7 +45,7 @@ def log(msg: str) -> None:
     print(f"[sync_issues] {msg}", flush=True)
 
 
-def gh_api(path: str, tries: int = 5) -> list | dict:
+def gh_api(path: str, tries: int = 8) -> list | dict:
     """GET via `gh api` with backoff on secondary rate limits."""
     for attempt in range(tries):
         proc = subprocess.run(
@@ -205,13 +207,27 @@ def merge_comment(repo: str, number: int, comment: dict, kind: str) -> bool:
 # ------------------------------------------------------------------ streams
 
 
-def paged(repo: str, endpoint: str, cursor: str):
-    """Yield (page_items, new_cursor). since-cursor advance, page fallback."""
+def minus_1s(ts: str) -> str:
+    dt = datetime.strptime(ts, "%Y-%m-%dT%H:%M:%SZ") - timedelta(seconds=1)
+    return dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def paged(repo: str, endpoint: str, anchor: str):
+    """Yield (page_items, resume_cursor).
+
+    `since=<anchor>` stays FIXED while pages deepen (advancing `since` to a page's
+    newest updated_at silently skips items sharing that same second beyond the
+    page — bulk edits/migrations collide a lot). Every 10 pages we re-anchor to
+    (max seen - 1s); the 1s rewind re-covers any same-second collision window.
+    The yielded resume_cursor is safe to persist: on restart, re-anchoring there
+    cannot lose items (ascending order ⇒ everything unseen is >= max seen).
+    """
     page = 1
+    max_seen = anchor
     while True:
         path = (
             f"/repos/{repo}/{endpoint}?sort=updated&direction=asc"
-            f"&since={cursor}&per_page={PER_PAGE}&page={page}"
+            f"&since={anchor}&per_page={PER_PAGE}&page={page}"
         )
         if endpoint == "issues":
             path += "&state=all"
@@ -219,14 +235,14 @@ def paged(repo: str, endpoint: str, cursor: str):
         if not items:
             return
         newest = max(i["updated_at"] for i in items)
-        if newest == cursor and len(items) == PER_PAGE:
-            page += 1  # pathological: a full page with identical timestamps
-        else:
-            cursor = newest
-            page = 1
-        yield items, cursor
+        max_seen = max(max_seen, newest)
+        yield items, minus_1s(max_seen)
         if len(items) < PER_PAGE:
             return
+        page += 1
+        if page > 10 and minus_1s(max_seen) > anchor:
+            anchor = minus_1s(max_seen)
+            page = 1
 
 
 def sync(repo: str, full: bool, dry_run: bool) -> None:

@@ -78,6 +78,7 @@ jobs:
             exit 1
           fi
           python3 tools/extract_people.py
+          python3 tools/build_digest_candidates.py
 
       - name: Report what changed
         run: |

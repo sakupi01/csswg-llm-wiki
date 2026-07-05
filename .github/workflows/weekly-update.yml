@@ -1,0 +1,124 @@
+# Mechanical half of the /update workflow (AGENTS.md): sync raw mirrors,
+# rebuild indexes, commit. Runs the day after the Wednesday telecon.
+# The narrative digest stays a manual /update job — this workflow only
+# surfaces the raw diff in the step summary.
+name: weekly-update
+
+on:
+  schedule:
+    - cron: "17 0 * * 4" # Thursday 00:17 UTC (odd minute: on-the-hour crons get dropped under load)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: weekly-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 1
+
+      - name: Point raw/data at origin/main with push credentials
+        # checkout injects GITHUB_TOKEN as an http.extraheader into every
+        # submodule; it would override the PAT in the URL — unset it first.
+        # checkout -B origin/main also self-heals after a previous run that
+        # pushed raw but failed before pushing the pointer here.
+        env:
+          RAW_PUSH_TOKEN: ${{ secrets.RAW_PUSH_TOKEN }}
+        run: |
+          git -C raw/data config --unset-all http.https://github.com/.extraheader || true
+          git -C raw/data remote set-url origin "https://x-access-token:${RAW_PUSH_TOKEN}@github.com/sakupi01/csswg-llm-wiki-raw.git"
+          git -C raw/data fetch origin main
+          git -C raw/data checkout -B main origin/main
+
+      - name: Sync GitHub issues (incremental)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 tools/sync_issues.py
+
+      - name: Sync W3C API status snapshots
+        run: python3 tools/sync_w3c_status.py
+
+      - name: Scrape www-style (incremental; no-op until --all has run)
+        run: python3 tools/scrape_www_style.py --incremental
+
+      - name: Commit and push raw data
+        id: raw
+        run: |
+          git -C raw/data config user.name "github-actions[bot]"
+          git -C raw/data config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C raw/data add -A
+          if git -C raw/data diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git -C raw/data commit -m "[sync] $(date -u +%F): weekly incremental"
+            git -C raw/data push origin main
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Bump csswg-wiki submodule
+        run: |
+          git -C raw/csswg-wiki fetch --depth 1 origin main
+          git -C raw/csswg-wiki checkout -q FETCH_HEAD
+
+      - name: Rebuild indexes and people pages
+        run: |
+          python3 tools/build_indexes.py | tee /tmp/build_indexes.log
+          if grep -q WARNING /tmp/build_indexes.log; then
+            echo "::error::build_indexes emitted a WARNING (baseline regression?)"
+            exit 1
+          fi
+          python3 tools/extract_people.py
+
+      - name: Report what changed
+        run: |
+          {
+            echo "## Weekly CSSWG data update ($(date -u +%F))"
+            echo
+            echo "### New resolutions"
+            echo '```'
+            git diff --unified=0 -- _generated/resolutions-index.md | grep '^+- ' | sed 's/^+//' | head -60 || echo "(none)"
+            echo '```'
+            echo "### Spec status changes"
+            echo '```'
+            git diff --unified=0 -- _generated/spec-status-index.md | grep -E '^[+-]- ' | head -40 || echo "(none)"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit and push wiki repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add raw/data raw/csswg-wiki _generated wiki/people
+          if git diff --cached --quiet; then
+            echo "nothing changed this week"
+            exit 0
+          fi
+          echo "## [$(date -u +%F)] update | CI weekly sync (see Actions run summary)" >> wiki/log.md
+          git add wiki/log.md
+          git commit -m "[update] $(date -u +%F): weekly CI sync"
+          git pull --rebase origin main
+          git push origin main
+
+      - name: Open an issue on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="weekly-update failed on $(date -u +%F)"
+          existing=$(gh issue list --state open --search "weekly-update failed in:title" --json number --jq '.[0].number' || true)
+          body="Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "$title — $body"
+          else
+            gh issue create --title "$title" --body "$body"
+          fi

@@ -9,9 +9,8 @@ with citations.
 > of the CSS Working Group or the W3C. Every claim links to a primary source — verify against
 > those sources before relying on anything here. See [Accuracy & Attribution Rules](#accuracy--attribution-rules).
 
-The design follows [Karpathy's LLM-Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)
-as instantiated by [Jxck/tc39-llm-wiki](https://github.com/Jxck/tc39-llm-wiki), adapted for the
-CSSWG's data landscape (GitHub issues instead of a minutes repository).
+The design follows [Karpathy's LLM-Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f),
+adapted for the CSSWG's data landscape (GitHub issues instead of a minutes repository).
 
 This file is the **single source of truth** for the schema and all workflows.
 `.claude/commands/*.md` are pointers into the workflow sections of this file and must not
@@ -37,6 +36,7 @@ When sources disagree, this table decides which one is authoritative:
 | Current maturity / TR publication history | `raw/data/w3c-api/specifications/<shortname>.json` (note `snapshot_at`) | https://www.w3.org/TR/ dated URLs |
 | Resolution text | css-meeting-bot comment, quoted **verbatim** | `_generated/resolutions-index` |
 | Debate narrative, who argued what | The issue thread in `raw/data/github/` | Minutes emails (www-style), `raw/csswg-wiki/` |
+| Pre-2017 telecon/F2F record | www-style minutes email in `raw/data/www-style/` (scribe paraphrase — weaker than bot comments) | `raw/csswg-wiki/` F2F pages |
 | Spec prose | https://drafts.csswg.org/ Editor's Draft (WebFetch) | /TR/ snapshot |
 | F2F logistics, agendas, pre-2017 decisions | `raw/csswg-wiki/` | www-style archive |
 | Implementation / shipping status | Vendor primary announcements (release notes, Intent threads) | MDN / caniuse (cite anyway) |
@@ -45,6 +45,11 @@ Known gaps (do **not** paper over them):
 
 - **1997–2008 minutes are member-confidential** (w3c-css-wg list). This era can only be
   reconstructed indirectly (TR history, www-style technical threads). Say so explicitly.
+- **Minutes emails (2008–2017) are incomplete**: not every telecon produced one
+  (measured: 2015Feb has mails for 2 of 4 Wednesdays). Absence of a minutes mail
+  is not absence of a meeting.
+- Minutes mails after 2017-04 duplicate the bot comments and are not mirrored —
+  the rare administrative resolution not tied to any issue is consciously out of scope.
 - Deleted GitHub comments are invisible to the mirror (sync tracks `updated_at` only).
 - IRC minutes are a **scribe's paraphrase**, not a transcript (see Accuracy rules).
 
@@ -67,7 +72,10 @@ raw/
     w3c-api/
       specifications/<shortname>.json
       group/css/{charters,participants}.json
-    www-style/minutes/<YYYY>/      Phase 4 (minutes emails 2008–2025)
+    www-style/<YYYYMon>/<NNNN>.md  1:1 mirror of lists.w3.org archive pages
+      … each month also holds .messages.jsonl — the per-month sidecar that is
+        the ONLY www-style input build_indexes.py reads (not the mirror files)
+    www-style/.scrape-state.json   per-month expected/missing/complete tracking
   csswg-wiki/                submodule: w3c/csswg-wiki (F2F pages, ideas/mistakes, …)
 wiki/
   README.md                  catalog: every page + 1-line summary (update on every ingest)
@@ -82,7 +90,10 @@ _generated/                  build_indexes.py output (md + jsonl; deterministic)
   resolutions-index.{md,jsonl}   every RESOLVED with date, issue, labels, permalink
   issues-index.{md,jsonl}        number, state, title, labels, dates, has_resolution
   spec-status-index.md           shortname, maturity, latest TR, open issues, wiki page?
-  meetings-index.{md,jsonl}      date, type, topics, issues discussed
+  meetings-index.{md,jsonl}      merged meeting record: bot comments (2017-) +
+                                 minutes emails (2008-17), with sources/minutes_urls
+  www-style-minutes-index.{md,jsonl}  meeting date | subject | archived-at (pre-bot era)
+  www-style-threads.md           thread summary of mirrored ML messages (root-level only)
   by-spec/<label>.md             per-spec chronological digest (issues + resolutions)
   people-unmapped.txt            nicks/handles awaiting a people.yml entry
 tools/                       Python 3, stdlib only; `gh api` via subprocess
@@ -233,7 +244,7 @@ These rules are hard requirements, enforced by `/lint`:
 
 | # | Check |
 |---|---|
-| R1 | Every `RESOLVED:` quotation in `wiki/` matches `_generated/resolutions-index.jsonl` verbatim |
+| R1 | Every `RESOLVED:` quotation in `wiki/` matches `_generated/resolutions-index.jsonl` verbatim. For `source: minutes-email` rows, "verbatim" means the documented joining rule: wrapped continuation lines concatenated, whitespace runs collapsed to one space |
 | R2 | `feature.specs` ⇔ `spec.features` and `feature.families` ⇔ `family.members` are bidirectional |
 | R3 | Spec frontmatter `maturity` / `latest_version` match `raw/data/w3c-api/` |
 | R4 | Every Key-debate bullet / Milestones row has a source link |
@@ -253,6 +264,12 @@ One logical unit per commit. Messages in English, one line.
 ### Update
 
 Purpose: pull the world forward and report what changed. Run weekly (or before any session).
+
+**CI note**: `.github/workflows/weekly-update.yml` runs the mechanical part (steps 1–6,
+minus the narrative report) every Thursday 00:17 UTC — the day after the Wednesday
+telecon — committing as github-actions[bot]. A manual `/update` after that finds data
+already fresh and only produces the digest, which is correct behavior. `--repair` and
+`scrape_www_style.py --all` must never run in CI (job time limits, API/crawl budgets).
 
 1. Record current state: `raw/data` submodule SHA, cursors from `.sync-state.json`.
 2. Run `python3 tools/sync_issues.py` (incremental — uses saved cursors).
@@ -321,7 +338,8 @@ Purpose: decide what deserves ingest next. Read-only on `raw/`; writes nothing b
 Extend a feature's history into the pre-GitHub era.
 
 1. Skeleton from TR history (`raw/data/w3c-api/`), then `raw/csswg-wiki/` F2F pages, then
-   `raw/data/www-style/minutes/`, then (last resort) targeted www-style thread fetches.
+   `_generated/www-style-minutes-index.md` (→ `raw/data/www-style/`), then (last
+   resort) targeted thread fetches via `scrape_www_style.py --month`.
 2. Update the feature's `coverage` frontmatter honestly (`full | partial | none | n/a`).
 3. The member-confidential era (1997–2008) is documented **as unavailable** — naming the gap
    is the deliverable, not filling it. Commit `[backfill] <slug>: …`.
@@ -339,6 +357,7 @@ All Python 3 (stdlib only). GitHub access goes through `gh api --method GET` sub
 | `sync_w3c_status.py` | Lists CSSWG deliverables via `api.w3.org/groups/wg/css/specifications`, fetches unseen version resources individually, writes normalized `specifications/<shortname>.json` with `snapshot_at`. |
 | `build_indexes.py` | Reparses mirror files via comment sentinels only; emits all `_generated/` outputs, sorted and deterministic. Resolutions carry `source: bot` (official minutes) or `source: manual` (hand-pasted minutes 2015-2017 / async — lower trust, verify at permalink). Sanity check: warns if items-with-RESOLVED drops below the corpus-measured baseline (2,578 as of 2026-07). |
 | `extract_people.py` / `link_people.py` | people.yml + indexes → `wiki/people/*.md`; auto-link known names/nicks in wiki prose. Unknowns accumulate in `_generated/people-unmapped.txt`. |
+| `scrape_www_style.py --minutes\|--month\|--all\|--incremental [--dry-run]` | Polite mirror (1 req/s, contact UA, existing files never touched) of the public www-style archive into `www-style/<YYYYMon>/<NNNN>.md`, 1:1 with archive URLs. Metadata comes from Hypermail HTML comments (In-Reply-To exists only there); pages are decoded per-page from `<meta charset>`; email addresses are never republished. `--minutes` (default range 2008Jan–2017Jun) fetches `[CSSWG] Minutes/Resolutions` mails only; `--all` is the full archive (~28h — run locally overnight, NEVER in CI); `--incremental` is a no-op until `--all` has completed. Per-month sidecars `.messages.jsonl` are rebuilt from local files whenever a month is touched. |
 
 Mirror file format (produced by `sync_issues.py`, parsed by `build_indexes.py`):
 

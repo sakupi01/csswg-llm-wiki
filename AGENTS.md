@@ -244,7 +244,7 @@ These rules are hard requirements, enforced by `/lint`:
 
 | # | Check |
 |---|---|
-| R1 | Every `RESOLVED:` quotation in `wiki/` matches `_generated/resolutions-index.jsonl` verbatim. For `source: minutes-email` rows, "verbatim" means the documented joining rule: wrapped continuation lines concatenated, whitespace runs collapsed to one space |
+| R1 | Every `RESOLVED:` quotation in `wiki/` matches `_generated/resolutions-index.jsonl` verbatim. For `source: minutes-email` rows, "verbatim" means the documented joining rule: wrapped continuation lines (indented, non-bullet, not a new ALL-CAPS field like `NOTED:`/`ACTION:`) concatenated, whitespace runs collapsed to one space |
 | R2 | `feature.specs` ⇔ `spec.features` and `feature.families` ⇔ `family.members` are bidirectional |
 | R3 | Spec frontmatter `maturity` / `latest_version` match `raw/data/w3c-api/` |
 | R4 | Every Key-debate bullet / Milestones row has a source link |

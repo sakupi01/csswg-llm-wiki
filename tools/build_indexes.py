@@ -42,11 +42,13 @@ EXPECTED_RESOLVED_ISSUES = 2578  # corpus-measured 2026-07 baseline (see docstri
 # www-style minutes emails (2008-2017, pre-bot). RESOLVED lines wrap: the rule
 # (also stated in AGENTS.md, R1) is "join the RESOLVED line with immediately
 # following continuation lines — non-empty, indented, not a new bullet, not a
-# heading underline — then collapse every whitespace run to a single space".
+# heading underline, not a new ALL-CAPS field (NOTED:/ACTION:/…) — then collapse
+# every whitespace run to a single space".
 MINUTES_SUBJECT_RE = re.compile(r"^\[CSSWG\]\s+(?:Minutes|Resolutions)\b", re.I)
 EMAIL_RESOLVED_RE = re.compile(r"^(\s*)(?:[*-]\s*)?(?:RESOLVED|RESOLUTION):\s*(.*)$")
 CONTINUATION_RE = re.compile(r"^\s+\S")
 BULLET_OR_RULE_RE = re.compile(r"^\s*(?:[*-]\s|-{3,}\s*$|={3,}\s*$)")
+CAPS_FIELD_RE = re.compile(r"^\s*[A-Z][A-Z/&-]{2,}:")  # NOTED: ACTION: PRESENT: …
 HEADING_RE = re.compile(r"^(\S.*)\n\s*-{3,}\s*$", re.M)
 MEETING_DATE_RE = re.compile(r"\b(\d{4}-\d{2}-\d{2})\b")
 PARTIAL_DATE_RE = re.compile(r"\b(\d{4}-\d{2})\b")
@@ -109,6 +111,7 @@ def extract_email_resolutions(body: str) -> list[str]:
             and CONTINUATION_RE.match(lines[i])
             and not BULLET_OR_RULE_RE.match(lines[i])
             and not EMAIL_RESOLVED_RE.match(lines[i])
+            and not CAPS_FIELD_RE.match(lines[i])
         ):
             parts.append(lines[i])
             i += 1

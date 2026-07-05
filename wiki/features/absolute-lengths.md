@@ -49,11 +49,11 @@ units have been rejected as unimplementable and harmful to zoom/accessibility.
 | 1996–1998 | `px` defined relative to a **viewing angle** since CSS1 / early CSS2 — never as a device or physical pixel | [fantasai](../people/fantasai.md), [#5221 (2020-07-23)](https://github.com/w3c/csswg-drafts/issues/5221#issuecomment-663282588) |
 | 2008-04-09 | CSS2.1 wording: the pixel unit refers to the whole number of device pixels that best approximates the reference pixel | [www-style 2008Apr/0229](https://lists.w3.org/Archives/Public/www-style/2008Apr/0229.html) |
 | 2010-06-23 | CSS2.1 Issue 149 resolved — `px` and physical units tied by a **fixed ratio** (`96px = 1in`) for web-compat; physical units stop being independently physical on screen | [www-style 2010Jun/0582](https://lists.w3.org/Archives/Public/www-style/2010Jun/0582.html) |
-| 2016-10-17 | #614 filed: request for a way to address *actual physical size* | [#614](https://github.com/w3c/csswg-drafts/issues/614) |
-| 2016-11-14 | #708 filed: spec should admit that high-dpi screens also anchor on `px`, not physical units | [#708](https://github.com/w3c/csswg-drafts/issues/708) |
-| 2017-05-24 | #708 resolved — absolute-lengths section reworded so screen media (incl. high-resolution) anchor on `px` | [#708 bot](https://github.com/w3c/csswg-drafts/issues/708#issuecomment-303779713) |
-| 2018-06-21 | #614 closed `Wontfix` — new physical-size units rejected | [#614](https://github.com/w3c/csswg-drafts/issues/614#issuecomment-254403012) |
-| 2020-07-31 | #5221 closed `Invalid` — the reference-pixel-as-visual-angle definition upheld | [#5221 (tabatkins)](https://github.com/w3c/csswg-drafts/issues/5221#issuecomment-666813821) |
+| 2016-10-17 | [#614](https://github.com/w3c/csswg-drafts/issues/614) filed: request for a way to address *actual physical size* | [#614](https://github.com/w3c/csswg-drafts/issues/614) |
+| 2016-11-14 | [#708](https://github.com/w3c/csswg-drafts/issues/708) filed: spec should admit that high-dpi screens also anchor on `px`, not physical units | [#708](https://github.com/w3c/csswg-drafts/issues/708) |
+| 2017-05-24 | [#708](https://github.com/w3c/csswg-drafts/issues/708) resolved — absolute-lengths section reworded so screen media (incl. high-resolution) anchor on `px` | [#708 bot](https://github.com/w3c/csswg-drafts/issues/708#issuecomment-303779713) |
+| 2018-06-21 | [#614](https://github.com/w3c/csswg-drafts/issues/614) closed `Wontfix` — new physical-size units rejected | [#614](https://github.com/w3c/csswg-drafts/issues/614#issuecomment-254403012) |
+| 2020-07-31 | [#5221](https://github.com/w3c/csswg-drafts/issues/5221) closed `Invalid` — the reference-pixel-as-visual-angle definition upheld | [#5221 (tabatkins)](https://github.com/w3c/csswg-drafts/issues/5221#issuecomment-666813821) |
 
 ## Resolutions
 

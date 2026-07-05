@@ -98,7 +98,7 @@ _generated/                  build_indexes.py output (md + jsonl; deterministic)
   people-unmapped.txt            nicks/handles awaiting a people.yml entry
 tools/                       Python 3, stdlib only; `gh api` via subprocess
   sync_issues.py  sync_w3c_status.py  build_indexes.py
-  extract_people.py  link_people.py
+  extract_people.py  link_refs.py
   data/people.yml            hand-maintained nick ↔ GitHub ↔ name ↔ affiliation map
 ```
 
@@ -109,8 +109,16 @@ tools/                       Python 3, stdlib only; `gh api` via subprocess
 - Wiki prose is **English**. Resolution text and quotations are verbatim (never translated,
   never paraphrased inside quotation marks).
 - Standard relative Markdown links only. **No `[[wikilinks]]`** (VS Code preview compatibility).
-- People are referenced as `[fantasai](../people/fantasai.md)`; run `tools/link_people.py`
-  after editing. Unknown nicks stay as plain text until mapped in `tools/data/people.yml`.
+- **Link everything referenceable.** In wiki prose, anything that can be a link should be one —
+  this is a rule, not a preference. `tools/link_refs.py` enforces the mechanical part and is
+  run after every edit (at ingest and lint):
+  - Issue/PR numbers: a bare `#<N>` becomes a link to `https://github.com/w3c/csswg-drafts/issues/<N>`.
+    Write issue references as `#8249`, not `issue 8249`, so they get linked. (Scope is
+    csswg-drafts; qualify Houdini/FXTF numbers rather than writing a bare `#<N>`.)
+  - People: `@github`, a github login, or an IRC nick (≥4 chars) becomes a link to
+    `../people/<slug>.md`. Unknown nicks stay plain text until mapped in `tools/data/people.yml`.
+  - The tool never touches frontmatter, code, bare URLs, existing links, or blockquote lines
+    (verbatim quotations). It is idempotent.
 - Link to raw mirror files with relative paths (`../../raw/data/github/csswg-drafts/issues/08xxx/08350.md`)
   **and** to the GitHub permalink — the mirror for offline grep, the permalink for citation.
 - Don't create a page for an entity you haven't read sources for. Unwritten pages are listed
@@ -244,7 +252,7 @@ These rules are hard requirements, enforced by `/lint`:
 
 | # | Check |
 |---|---|
-| R1 | Every `RESOLVED:` quotation in `wiki/` matches `_generated/resolutions-index.jsonl` verbatim. For `source: minutes-email` rows, "verbatim" means the documented joining rule: wrapped continuation lines (indented, non-bullet, not a new ALL-CAPS field like `NOTED:`/`ACTION:`) concatenated, whitespace runs collapsed to one space |
+| R1 | Every `RESOLVED:` quotation in `wiki/` matches `_generated/resolutions-index.jsonl` verbatim, **after stripping any markdown link syntax** (`link_refs.py` may wrap a `#<N>` inside a quote — that wraps, never alters, the text). For `source: minutes-email` rows, "verbatim" also applies the documented joining rule: wrapped continuation lines (indented, non-bullet, not a new ALL-CAPS field like `NOTED:`/`ACTION:`) concatenated, whitespace runs collapsed to one space |
 | R2 | `feature.specs` ⇔ `spec.features` and `feature.families` ⇔ `family.members` are bidirectional |
 | R3 | Spec frontmatter `maturity` / `latest_version` match `raw/data/w3c-api/` |
 | R4 | Every Key-debate bullet / Milestones row has a source link |
@@ -252,6 +260,7 @@ These rules are hard requirements, enforced by `/lint`:
 | R6 | `wiki/README.md` catalog ⇔ actual page set (orphan / missing detection) |
 | R7 | `wiki/log.md` is append-only (pre-commit compares against HEAD) |
 | R8 | Derived frontmatter values (`resolutions_count`, …) match the indexes |
+| R9 | Referenceable entities in prose are linked — running `link_refs.py` leaves no changes (bare `#<N>` and known nicks outside code/quotes are already links) |
 
 ---
 
@@ -303,8 +312,8 @@ Purpose: decide what deserves ingest next. Read-only on `raw/`; writes nothing b
 3. **Status**: confirm maturity facts from `raw/data/w3c-api/`.
 4. **Write**: create/update the feature page per schema (milestones, verbatim resolutions,
    key debates — all cited). Create/update the host spec page(s). Wire `families` both ways.
-5. **People**: add newly prominent participants to `tools/data/people.yml` if identifiable,
-   run `extract_people.py` + `link_people.py`.
+5. **People & links**: add newly prominent participants to `tools/data/people.yml` if
+   identifiable, run `extract_people.py`, then `link_refs.py` (links people + issue numbers).
 6. **Catalog**: update `wiki/README.md`; append to `wiki/log.md`. Commit `[ingest] <slug>: …`.
 
 ### Query — `/query <question>`
@@ -318,9 +327,9 @@ Purpose: decide what deserves ingest next. Read-only on `raw/`; writes nothing b
 
 ### Lint — `/lint`
 
-1. Re-run `build_indexes.py` and `extract_people.py` (stale generated content is the most
-   common drift).
-2. Phase A — internal health: R2, R5, R6, R7, orphan pages, dead relative links.
+1. Re-run `build_indexes.py`, `extract_people.py`, and `link_refs.py` (stale generated
+   content and unlinked references are the most common drift).
+2. Phase A — internal health: R2, R5, R6, R7, R9, orphan pages, dead relative links.
 3. Phase B — source fidelity: R1, R3, R4, R8, treating `raw/` as ground truth ("hunt for
    errors" posture; when wiki and raw disagree, raw wins).
 4. Report all findings first; fix after confirmation. Append to `wiki/log.md`. Commit `[lint]`.
@@ -356,7 +365,8 @@ All Python 3 (stdlib only). GitHub access goes through `gh api --method GET` sub
 | `sync_issues.py [--repo w3c/csswg-drafts] [--full] [--repair] [--dry-run]` | Incremental stream: `/repos/{r}/issues` + repo-level `/repos/{r}/issues/comments`, both `sort=created&direction=asc&since=<cursor>` — created-order is the only stable listing order (sort=updated pages contain outlier items whose displayed `updated_at` disagrees with the hidden sort key, which silently loses items to any windowing scheme). Cursors persist to `.sync-state.json` when a pass completes. `--repair` is the integrity pass: full listing (fits the ~40k deep-pagination cap; full comment history does not) + per-issue comment refetch wherever local count ≠ API count — run it after `--full` and periodically. Rewrites files whole (idempotent). PRs kept only if they carry css-meeting-bot comments. Drops reactions, edit history, label-change events. |
 | `sync_w3c_status.py` | Lists CSSWG deliverables via `api.w3.org/groups/wg/css/specifications`, fetches unseen version resources individually, writes normalized `specifications/<shortname>.json` with `snapshot_at`. |
 | `build_indexes.py` | Reparses mirror files via comment sentinels only; emits all `_generated/` outputs, sorted and deterministic. Resolutions carry `source: bot` (official minutes) or `source: manual` (hand-pasted minutes 2015-2017 / async — lower trust, verify at permalink). Sanity check: warns if items-with-RESOLVED drops below the corpus-measured baseline (2,578 as of 2026-07). |
-| `extract_people.py` / `link_people.py` | people.yml + indexes → `wiki/people/*.md`; auto-link known names/nicks in wiki prose. Unknowns accumulate in `_generated/people-unmapped.txt`. |
+| `extract_people.py` | people.yml + indexes → `wiki/people/*.md`. Unknowns accumulate in `_generated/people-unmapped.txt`. |
+| `link_refs.py` | Auto-links referenceable entities in wiki prose (idempotent): issue/PR numbers `#<N>` → the csswg-drafts issue, and known people (`@github` / login / nick ≥4) → their people page. Skips frontmatter, code, bare URLs, existing links, and blockquotes (verbatim quotations). |
 | `scrape_www_style.py --minutes\|--month\|--all\|--incremental [--dry-run]` | Polite mirror (1 req/s, contact UA, existing files never touched) of the public www-style archive into `www-style/<YYYYMon>/<NNNN>.md`, 1:1 with archive URLs. Metadata comes from Hypermail HTML comments (In-Reply-To exists only there); pages are decoded per-page from `<meta charset>`; email addresses are never republished. `--minutes` (default range 2008Jan–2017Jun) fetches `[CSSWG] Minutes/Resolutions` mails only; `--all` is the full archive (~28h — run locally overnight, NEVER in CI); `--incremental` is a no-op until `--all` has completed. Per-month sidecars `.messages.jsonl` are rebuilt from local files whenever a month is touched. |
 
 Mirror file format (produced by `sync_issues.py`, parsed by `build_indexes.py`):

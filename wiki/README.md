@@ -12,6 +12,7 @@ Entry point for every query. One line per page; update on every ingest.
 | [Absolute Lengths & the Pixel Unit](features/absolute-lengths.md) | shipped | css-values-3, css-values-4 | `px` is an angular measure (the reference pixel), not a physical dot; on screen it is the *anchor* and physical units fall out of it — physical-size units repeatedly rejected (#614/#708/#5221) |
 | [CSS Nesting](features/css-nesting.md) | shipped | css-nesting-1 | Native nesting of style rules; history dominated by the "syntax wars" (Option 3 + parser lookahead) and the `&`-as-`:is()` specificity tail |
 | [CSS Masonry (Grid Lanes)](features/masonry.md) | in-discussion | css-grid-3 | Pinterest-style layout; 5-year debate over Grid-integration vs a separate `display: masonry` settled as `display: grid-lanes` (Nov 2025) — a compromise keeping "grid" in the name |
+| [:heading() Selector](features/heading-selector.md) | specified | selectors-5 | Select headings by computed level (not tag), driven by HTML `headingoffset`; fights over class- vs tag-level specificity, `an+b`→list-of-integers reversal (#12599), and whether it follows the a11y tree (#12412) |
 
 ## Specs
 
@@ -21,6 +22,7 @@ Entry point for every query. One line per page; update on every ingest.
 | [css-values-3](specs/css-values-3.md) | CRD | absolute-lengths |
 | [css-values-4](specs/css-values-4.md) | WD | absolute-lengths |
 | [css-grid-3](specs/css-grid-3.md) | WD | masonry |
+| [selectors-5](specs/selectors-5.md) | FPWD | heading-selector |
 
 ## Families
 
@@ -38,7 +40,9 @@ Entry point for every query. One line per page; update on every ingest.
 
 Narrative digests published as [RSS/Atom](https://sakupi01.github.io/csswg-llm-wiki/feed.xml)
 and [JSON Feed](https://sakupi01.github.io/csswg-llm-wiki/feed.json). Sources in `wiki/digests/`.
-Weekly = "This week in CSSWG" (pack-bounded); monthly = deeper arcs/contention (`/monthly-digest`).
+Selected by developer impact (would a working web developer want to know this?), not comment count; each topic in a
+scannable Background/Why-it-matters/Summary/Related format. Weekly = "This week in CSSWG";
+monthly = deeper arcs/contention (`/monthly-digest`).
 
 | Digest | Period |
 |---|---|

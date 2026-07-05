@@ -232,3 +232,45 @@
   irc_nicks: []
   affiliation: (type designer; not in CSSWG participants snapshot)
   roles: []
+
+- slug: keithamus
+  name: Keith Cirkel
+  github: keithamus
+  irc_nicks: [keithamus]
+  affiliation: GitHub (HTML/WHATWG contributor; not in CSSWG participants snapshot)
+  roles: [":heading() / headingoffset proposer"]
+
+- slug: annevk
+  name: Anne van Kesteren
+  github: annevk
+  irc_nicks: [annevk]
+  affiliation: Apple (WHATWG editor; not in CSSWG participants snapshot)
+  roles: []
+
+- slug: xiaochengh
+  name: Xiaocheng Hu
+  github: xiaochengh
+  irc_nicks: [xiaochengh]
+  affiliation: Google (Chromium; not in CSSWG participants snapshot)
+  roles: [anchor positioning implementer / co-designer]
+
+- slug: mfreed7
+  name: Mason Freed
+  github: mfreed7
+  irc_nicks: [masonf, mfreed7]
+  affiliation: Google (Chromium; not in CSSWG participants snapshot)
+  roles: [popover / HTML]
+
+- slug: mstensho
+  name: Morten Stenshorne
+  github: mstensho
+  irc_nicks: [mstensho]
+  affiliation: Google (Chromium; not in CSSWG participants snapshot)
+  roles: [layout implementer]
+
+- slug: dshin-moz
+  name: David Shin
+  github: dshin-moz
+  irc_nicks: [dshin]
+  affiliation: Mozilla (Gecko; not in CSSWG participants snapshot)
+  roles: []

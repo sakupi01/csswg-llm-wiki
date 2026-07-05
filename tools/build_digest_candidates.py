@@ -17,6 +17,10 @@ permalink) and .md (human-readable). Sections:
 - agenda        : issues currently labeled Agenda+/Needs Edits with window activity
 - hot           : issues/PRs with >=5 comments dated in the window, plus `recent`
                   (the window's last human comments — author + one-line gist)
+- notable       : HIGH_INTEREST_LABELS threads with window activity below the hot bar
+                  — a recall aid so quiet-but-developer-notable items reach the digest
+- fresh         : high-interest / important issues newly opened in the window (new
+                  proposals), with `background`+`related`
 - spec_changes  : specs whose latest TR version date falls in the window
 - deep          : MONTHLY only (`--month YYYY-MM`) — the month's busiest threads,
                   each with a full in-window comment ledger (author/date/gist +
@@ -42,7 +46,19 @@ GITHUB = ROOT / "raw" / "data" / "github"
 W3C = ROOT / "raw" / "data" / "w3c-api" / "specifications"
 OUT = GEN / "digest-candidates"
 IMPORTANT_LABELS = {"Agenda+", "Agenda+ F2F", "Needs Edits", "Needs Testcase (WPT)"}
+# Developer-high-interest surfaces (a RECALL AID for `notable`/`fresh`, NOT the
+# selector — the digest still weights editorially by the mozaic lens in AGENTS.md).
+# Quiet-but-notable threads here (below the hot bar) would otherwise be dropped.
+HIGH_INTEREST_LABELS = {
+    "css-anchor-position-1", "css-forms-1", "css-view-transitions-1",
+    "css-view-transitions-2", "css-contain-3", "scroll-animations-1",
+    "animation-triggers-1", "css-grid-3", "css-pseudo-4", "css-nesting-1",
+    "css-values-5", "css-gaps-1", "css-ui-4", "css-ui-5", "css-inline-3",
+    "web-animations-2", "css-color-5", "css-mixins-1", "css-link-params-1",
+}
 HOT_COMMENT_THRESHOLD = 5
+NOTABLE_MIN_COMMENTS = 1    # high-interest threads with >=this window activity (below hot)
+FRESH_CAP = 20             # newly-opened high-interest issues surfaced per pack
 IRC_MAX_LINES = 60          # cap verbatim log so the pack stays lean
 RECENT_COMMENTS = 3         # human comments surfaced per hot issue
 DEEP_TOP_N = 15             # monthly: threads that get a full comment ledger
@@ -219,6 +235,14 @@ def main() -> None:
                            "url": r["url"], "feature": feature,
                            "comments_in_window": activity.get(n, 0)})
 
+    def window_recent(n: int) -> list:
+        """The window's last human comments on issue n (author + one-line gist)."""
+        out = [{"author": cm["author"], "date": cm["created"][:10], "url": cm["url"],
+                "gist": first_line(cm["block"])}
+               for cm in (parse_mirror(mirror[n])[1] if n in mirror else [])
+               if since <= cm["created"][:10] <= until and cm["author"] != "css-meeting-bot"]
+        return out[-RECENT_COMMENTS:]
+
     # hot: >= threshold comments in the window, with the window's recent human voices
     hot = []
     for n, c in sorted(activity.items(), key=lambda kv: -kv[1]):
@@ -226,26 +250,54 @@ def main() -> None:
             continue
         r = issues[n]
         feature = next((l2f[l] for l in r["labels"] if l in l2f), None)
-        recent = []
-        if n in mirror:
-            for cm in parse_mirror(mirror[n])[1]:
-                if since <= cm["created"][:10] <= until and cm["author"] != "css-meeting-bot":
-                    recent.append({"author": cm["author"], "date": cm["created"][:10],
-                                   "url": cm["url"], "gist": first_line(cm["block"])})
         hot.append({"issue": n, "title": r["title"], "labels": r["labels"],
                     "url": r["url"], "comments_in_window": c, "feature": feature,
-                    "recent": recent[-RECENT_COMMENTS:]})
+                    "recent": window_recent(n)})
 
-    # deep (monthly only): the top threads get a FULL in-window comment ledger so
-    # the digest can trace an argument across the month and cite any turn. Every
-    # ledger URL lands in the pack, so build_feed's link gate stays satisfied even
-    # though the monthly digest (case-C) reads the mirror threads directly.
+    # notable: high-interest surfaces with window activity BELOW the hot bar — a
+    # recall aid so quiet-but-developer-notable threads reach the digest. The mozaic
+    # lens (AGENTS.md), not comment count, decides what actually gets written up.
+    hot_nums = {h["issue"] for h in hot}
+    notable = []
+    for n, c in sorted(activity.items(), key=lambda kv: -kv[1]):
+        if n in hot_nums or n not in issues or c < NOTABLE_MIN_COMMENTS:
+            continue
+        r = issues[n]
+        if not (HIGH_INTEREST_LABELS & set(r["labels"])):
+            continue
+        feature = next((l2f[l] for l in r["labels"] if l in l2f), None)
+        notable.append({"issue": n, "title": r["title"], "labels": r["labels"],
+                        "url": r["url"], "comments_in_window": c, "feature": feature,
+                        "recent": window_recent(n)})
+
+    # fresh: high-interest / important-labeled issues newly OPENED in the window —
+    # new proposals & requests that carry no discussion yet but may be mozaic-worthy.
+    fresh = []
+    for n, r in issues.items():
+        if not (since < (r.get("created_at") or "")[:10] <= until):
+            continue
+        if not ((HIGH_INTEREST_LABELS | IMPORTANT_LABELS) & set(r["labels"])):
+            continue
+        feature = next((l2f[l] for l in r["labels"] if l in l2f), None)
+        body = parse_mirror(mirror[n])[0] if n in mirror else ""
+        fresh.append({"issue": n, "title": r["title"], "labels": r["labels"], "url": r["url"],
+                      "feature": feature, "created_at": (r.get("created_at") or "")[:10],
+                      "background": first_para(body), "related": related_refs(body, n)})
+    fresh = sorted(fresh, key=lambda x: x["created_at"], reverse=True)[:FRESH_CAP]
+
+    # deep (monthly only): the busiest threads UNION the quiet high-interest ones get
+    # a FULL in-window comment ledger, so the digest can trace an argument across the
+    # month and cite any turn. Every ledger URL lands in the pack, so build_feed's
+    # link gate stays satisfied even though the monthly digest (case-C) reads the
+    # mirror threads directly.
     deep = []
     if span == "month":
         resolved = {r["issue"] for r in resolutions}
-        top = sorted((n for n, c in activity.items() if n in issues and c >= HOT_COMMENT_THRESHOLD),
-                     key=lambda n: -activity[n])[:DEEP_TOP_N]
-        for n in top:
+        loud = sorted((n for n, c in activity.items() if n in issues and c >= HOT_COMMENT_THRESHOLD),
+                      key=lambda n: -activity[n])[:DEEP_TOP_N]
+        # give a ledger only to quiet high-interest threads active enough to warrant one
+        quiet_hi = [h["issue"] for h in notable if h["comments_in_window"] >= 3]
+        for n in list(dict.fromkeys(loud + quiet_hi))[:DEEP_TOP_N * 2]:
             r = issues[n]
             feature = next((l2f[l] for l in r["labels"] if l in l2f), None)
             ledger = [{"author": cm["author"], "date": cm["created"][:10], "url": cm["url"],
@@ -270,7 +322,7 @@ def main() -> None:
             "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
             "resolutions": sorted(resolutions, key=lambda r: (r["date"], r["issue"])),
             "agenda": sorted(agenda, key=lambda a: -a["comments_in_window"]),
-            "hot": hot, "spec_changes": spec_changes}
+            "hot": hot, "notable": notable, "fresh": fresh, "spec_changes": spec_changes}
     if span == "month":
         pack["month"] = args.month
         pack["deep"] = deep
@@ -279,8 +331,8 @@ def main() -> None:
     (OUT / f"{out_stem}.json").write_text(json.dumps(pack, indent=2, ensure_ascii=False) + "\n")
     render_md(pack).write_to(OUT / f"{out_stem}.md")
     print(f"[digest_candidates] {span} {since}..{until}: {len(resolutions)} resolutions, "
-          f"{len(agenda)} agenda, {len(hot)} hot, {len(deep)} deep, {len(spec_changes)} spec changes "
-          f"-> {OUT}/{out_stem}.{{json,md}}")
+          f"{len(agenda)} agenda, {len(hot)} hot, {len(notable)} notable, {len(fresh)} fresh, "
+          f"{len(deep)} deep, {len(spec_changes)} spec changes -> {OUT}/{out_stem}.{{json,md}}")
 
 
 class render_md:
@@ -316,6 +368,20 @@ class render_md:
             L.append(f"- #{h['issue']} {h['title']}{feat} ({h['comments_in_window']} comments) {h['url']}")
             for c in h["recent"]:
                 L.append(f"    @{c['author']} ({c['date']}): {c['gist']}")
+        L.append(f"\n## Notable (high-interest, below hot bar) ({len(p.get('notable', []))})")
+        for h in p.get("notable", []):
+            feat = f" -> [[{h['feature']}]]" if h["feature"] else ""
+            L.append(f"- #{h['issue']} {h['title']}{feat} ({h['comments_in_window']} comments) {h['url']}")
+            for c in h["recent"]:
+                L.append(f"    @{c['author']} ({c['date']}): {c['gist']}")
+        L.append(f"\n## Fresh (opened in window) ({len(p.get('fresh', []))})")
+        for fr in p.get("fresh", []):
+            feat = f" -> [[{fr['feature']}]]" if fr["feature"] else ""
+            L.append(f"- #{fr['issue']} {fr['title']}{feat} (opened {fr['created_at']}) {fr['url']}")
+            if fr["background"]:
+                L.append(f"    background: {fr['background']}")
+            if fr["related"]:
+                L.append(f"    related: {', '.join('#%d %s' % (x['issue'], x['url']) for x in fr['related'])}")
         if p.get("deep"):
             L.append(f"\n## Deep threads — full ledger ({len(p['deep'])})")
             for d in p["deep"]:

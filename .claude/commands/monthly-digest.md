@@ -3,9 +3,11 @@ description: Write the deeper monthly "This month in CSSWG" digest and rebuild t
 argument-hint: [YYYY-MM]
 ---
 
-Read "## Workflows > ### Monthly digest" in `AGENTS.md` and follow that procedure exactly.
+Read "## Workflows > ### Digest selection lens" and "### Monthly digest" in `AGENTS.md` and
+follow that procedure exactly.
 
-This is the case-C deep digest: read the `deep` threads' full ledgers in the monthly
-candidate pack (`_generated/digest-candidates/<YYYY-MM>.json`) — and the mirror threads
-they point to — to explain the month's *arcs and points of contention*, not just what
-resolved. Cite permalinks; every link must trace to the pack. Month (if any): **$ARGUMENTS**
+This is the case-C deep digest: select with the **mozaic-worthiness lens** (developer impact,
+not comment count) and write each pick in the **4-field format**. Read the `deep` threads'
+full ledgers in the monthly pack (`_generated/digest-candidates/<YYYY-MM>.json`) — and the
+mirror threads they point to — to explain the month's *arcs and points of contention*, not
+just what resolved. Cite permalinks; every link must trace to the pack. Month: **$ARGUMENTS**

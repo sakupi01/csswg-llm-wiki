@@ -24,7 +24,7 @@ CANDIDATES = ROOT / "_generated" / "digest-candidates"
 DOCS = ROOT / "docs"
 SITE = "https://sakupi01.github.io/csswg-llm-wiki"
 FEED_TITLE = "This week in CSSWG"
-FEED_DESC = "Context-rich weekly and monthly digests of CSS Working Group discussions — an unofficial, LLM-maintained companion to the csswg-llm-wiki."
+FEED_DESC = "Weekly and monthly digests of CSS Working Group discussions."
 
 FM_RE = re.compile(r"\A---\n(.*?)\n---\n(.*)\Z", re.S)
 URL_RE = re.compile(r"https?://[^\s)\]<>\"']+")
@@ -61,9 +61,10 @@ def validate_links(meta: dict) -> None:
 
 # ---- minimal, self-contained markdown -> HTML (covers the /digest page format)
 def md_to_html(md: str) -> str:
-    """Render the subset used by digest/feature pages: h2/h3, ul with multi-line
-    items, and paragraphs. Hard-wrapped continuation lines join their block."""
-    out, items, para = [], [], []
+    """Render the subset used by digest/feature pages: h2/h3, ul with ONE level of
+    nesting and multi-line items, and paragraphs. Indented `- ` lines become a
+    nested <ul>; other indented lines join the current (sub)item."""
+    out, items, para = [], [], []  # items: list of {"text": str, "subs": [str]}
     block = None  # None | "ul" | "p"
 
     def inline(s: str) -> str:
@@ -78,14 +79,32 @@ def md_to_html(md: str) -> str:
     def flush():
         nonlocal block
         if block == "ul":
-            out.append("<ul>" + "".join(f"<li>{inline(x)}</li>" for x in items) + "</ul>")
+            lis = []
+            for it in items:
+                sub = ("<ul>" + "".join(f"<li>{inline(s)}</li>" for s in it["subs"]) + "</ul>"
+                       ) if it["subs"] else ""
+                lis.append(f"<li>{inline(it['text'])}{sub}</li>")
+            out.append("<ul>" + "".join(lis) + "</ul>")
             items.clear()
         elif block == "p" and para:
             out.append(f"<p>{inline(' '.join(para))}</p>")
             para.clear()
         block = None
 
+    pending_blank = False  # a blank line inside a ul: loose list unless the item list ended
     for line in md.splitlines():
+        stripped = line.lstrip()
+        indented = bool(line[:1].isspace())
+        is_bullet = line.startswith("- ") or (indented and stripped.startswith("- "))
+        if not line.strip():
+            if block == "ul":
+                pending_blank = True
+            else:
+                flush()
+            continue
+        if block == "ul" and pending_blank and not (is_bullet or indented):
+            flush()  # the list really ended
+        pending_blank = False
         if line.startswith(("## ", "### ")):
             flush()
             lvl, txt = ("h3", line[4:]) if line.startswith("### ") else ("h2", line[3:])
@@ -93,11 +112,14 @@ def md_to_html(md: str) -> str:
         elif line.startswith("- "):
             if block != "ul":
                 flush(); block = "ul"
-            items.append(line[2:].strip())
-        elif not line.strip():
-            flush()
-        elif line[0].isspace() and block == "ul" and items:
-            items[-1] += " " + line.strip()  # continuation of the current <li>
+            items.append({"text": line[2:].strip(), "subs": []})
+        elif indented and stripped.startswith("- ") and block == "ul" and items:
+            items[-1]["subs"].append(stripped[2:].strip())  # nested bullet
+        elif indented and block == "ul" and items:  # continuation of current (sub)item
+            if items[-1]["subs"]:
+                items[-1]["subs"][-1] += " " + stripped
+            else:
+                items[-1]["text"] += " " + stripped
         else:
             if block != "p":
                 flush(); block = "p"

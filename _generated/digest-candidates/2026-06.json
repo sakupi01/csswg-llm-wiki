@@ -2,7 +2,7 @@
   "span": "month",
   "since": "2026-06-01",
   "until": "2026-06-30",
-  "generated_at": "2026-07-05T13:35:53Z",
+  "generated_at": "2026-07-05T14:32:06Z",
   "resolutions": [
     {
       "date": "2026-06-03",
@@ -3353,6 +3353,1768 @@
       ]
     }
   ],
+  "notable": [
+    {
+      "issue": 14022,
+      "title": "[css-images-4][css-color-5] Replace light-dark() image function with support for light/dark in image-set()",
+      "labels": [
+        "css-color-5",
+        "css-images-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14022",
+      "comments_in_window": 4,
+      "feature": null,
+      "recent": [
+        {
+          "author": "Crissov",
+          "date": "2026-06-10",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14022#issuecomment-4668278892",
+          "gist": "Why does this have to be crammed into functions at all? For font selection, we have a descriptive approach using an at-rule instead."
+        },
+        {
+          "author": "weinig",
+          "date": "2026-06-11",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14022#issuecomment-4682510625",
+          "gist": "@tabatkins I think you make a compelling argument for having a dedicated light-dark() function."
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-06-12",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14022#issuecomment-4686298285",
+          "gist": "@Crissov Constructs have to pay for their weight. Fonts are larger and relatively complex, and commonly used in multiple places, and have a whole funky cascade-together behavior; giving them an at-rul"
+        }
+      ]
+    },
+    {
+      "issue": 14097,
+      "title": "[css-inline-3] Add `hanging` value to `text-box-edge`",
+      "labels": [
+        "Agenda+",
+        "css-inline-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14097",
+      "comments_in_window": 4,
+      "feature": null,
+      "recent": [
+        {
+          "author": "astearns",
+          "date": "2026-06-28",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14097#issuecomment-4827598378",
+          "gist": "@kbhomes the [definition](https://drafts.csswg.org/css-inline-3/#hanging-baseline) for the `hanging` value for `alignment-baseline` refers to OpenType `hang` or TrueType `bsln` value 3. Do you know wh"
+        },
+        {
+          "author": "kbhomes",
+          "date": "2026-06-28",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14097#issuecomment-4827774825",
+          "gist": "@astearns Checked with both `hb-info` and `ttx` that this font doesn't have a `hang` baseline and doesn't have a `bsln` table either. So the baseline is from glyph measurement per [CSS Inline 3 § A.2:"
+        },
+        {
+          "author": "kbhomes",
+          "date": "2026-06-28",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14097#issuecomment-4827799949",
+          "gist": "I also think that the list of baselines in [CSS Inline 3 § A.3: Synthesizing Baselines for Atomic Inlines](https://drafts.csswg.org/css-inline-3/#baseline-synthesis-box) makes a reasonable case that `"
+        }
+      ]
+    },
+    {
+      "issue": 13541,
+      "title": "[css-forms-1] Use better fallbacks for ::picker(select)",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13541",
+      "comments_in_window": 4,
+      "feature": null,
+      "recent": [
+        {
+          "author": "lukewarlow",
+          "date": "2026-06-17",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13541#issuecomment-4735944802",
+          "gist": "Btw this will now need edits in the html spec instead of CSS forms."
+        },
+        {
+          "author": "nt1m",
+          "date": "2026-06-17",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13541#issuecomment-4736017118",
+          "gist": "This depends on https://github.com/w3c/csswg-drafts/issues/14062"
+        },
+        {
+          "author": "josepharhar",
+          "date": "2026-06-18",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13541#issuecomment-4743922245",
+          "gist": "Ok, I'll wait to implement this until that one is done."
+        }
+      ]
+    },
+    {
+      "issue": 13864,
+      "title": "[css-values-5] Where should the random cache names be stored?",
+      "labels": [
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13864",
+      "comments_in_window": 4,
+      "feature": null,
+      "recent": [
+        {
+          "author": "cdoublev",
+          "date": "2026-06-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13864#issuecomment-4663148663",
+          "gist": "More specifically, I wanted to know if random cache names are cleared with `document.open()`, as is the case for registered custom properties."
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-06-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13864#issuecomment-4663333520",
+          "gist": "The spec states:"
+        },
+        {
+          "author": "cdoublev",
+          "date": "2026-06-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13864#issuecomment-4663464107",
+          "gist": "Yes, thank you!"
+        }
+      ]
+    },
+    {
+      "issue": 11825,
+      "title": "[css-values-4] Should progress() functions clamp to 0-100%?",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/11825",
+      "comments_in_window": 3,
+      "feature": null,
+      "recent": [
+        {
+          "author": "kbhomes",
+          "date": "2026-06-11",
+          "url": "https://github.com/w3c/csswg-drafts/issues/11825#issuecomment-4680985941",
+          "gist": "Should this be tagged as https://github.com/w3c/csswg-drafts/labels/Needs%20Edits? This clamping isn't yet reflected in the specification and is still marked as a pending issue."
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-06-12",
+          "url": "https://github.com/w3c/csswg-drafts/issues/11825#issuecomment-4693949364",
+          "gist": "@kbhomes Thanks for the ping on this; it was indeed missing its Needs Edits, so I'd missed working on it. Spec is updated now."
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-06-12",
+          "url": "https://github.com/w3c/csswg-drafts/issues/11825#issuecomment-4693958300",
+          "gist": "(I went with `no-clamp` as the keyword, as it or something in its vicinity got some reasonable support in this thread.)"
+        }
+      ]
+    },
+    {
+      "issue": 14028,
+      "title": "[css-link-params-1] Time for FPWD",
+      "labels": [
+        "Administrative Tracker",
+        "css-link-params-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14028",
+      "comments_in_window": 3,
+      "feature": null,
+      "recent": [
+        {
+          "author": "smfr",
+          "date": "2026-06-10",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14028#issuecomment-4667058858",
+          "gist": "https://drafts.csswg.org/css-link-params/ for those looking"
+        },
+        {
+          "author": "goldenboy777",
+          "date": "2026-06-12",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14028#issuecomment-4693884174",
+          "gist": "Work for link parameters on Chromium's side can be tracked here! Thanks for the resolution"
+        }
+      ]
+    },
+    {
+      "issue": 14056,
+      "title": "[css-values-5] Proposal for a new `<request-url-modifier>` called `<cross-origin-storage>`",
+      "labels": [
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14056",
+      "comments_in_window": 3,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-06-16",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14056#issuecomment-4722790609",
+          "gist": "I've reviewed both the general COS proposal and this `url()` extension, and they look pretty good."
+        },
+        {
+          "author": "Crissov",
+          "date": "2026-06-16",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14056#issuecomment-4722869638",
+          "gist": "Does this have to be a new URL modifier or could it be incorporated into the existing [`cross-origin()`](https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-cross-origin-modifier) whic"
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-06-16",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14056#issuecomment-4722919127",
+          "gist": "Despite both using the term \"cross-origin\", they're relatively unrelated. `cross-origin()` controls the \"request mode\", which in this case is about the CORS behavior of the request. It's orthogonal to"
+        }
+      ]
+    },
+    {
+      "issue": 13643,
+      "title": "[animation-triggers-1] Should play-forwards and play-backwards have no effect if the animation has already reached its end?",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "animation-triggers-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13643",
+      "comments_in_window": 3,
+      "feature": null,
+      "recent": [
+        {
+          "author": "ydaniv",
+          "date": "2026-06-03",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13643#issuecomment-4610116546",
+          "gist": "Another suggestion:"
+        },
+        {
+          "author": "DavMila",
+          "date": "2026-06-03",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13643#issuecomment-4613347579",
+          "gist": "These suggestions sound good to me in general."
+        }
+      ]
+    },
+    {
+      "issue": 13865,
+      "title": "[css-values-5] When/why is a fixed random base value clamped?",
+      "labels": [
+        "Closed as Question Answered",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13865",
+      "comments_in_window": 3,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-06-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13865#issuecomment-4662023576",
+          "gist": "The standard treatment of random values produces a number in the range `[0, 1)` - it includes 0 but excludes 1. This is the case with `Math.random()` in JS, for example. But CSS (purposely) can't repr"
+        },
+        {
+          "author": "cdoublev",
+          "date": "2026-06-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13865#issuecomment-4663104342",
+          "gist": "More specifically, I wanted to know what the serialization of `opacity: random(fixed 1, 0, 1)` as a declared/resolved value should be (`1` or `0.999999`), and if `fixed 1` should serialize as is if mi"
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-06-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13865#issuecomment-4663354096",
+          "gist": "The value range is `[0, 1]` and they've specified `1`, so it can continue to serialize that way."
+        }
+      ]
+    },
+    {
+      "issue": 13500,
+      "title": "[css-value] Clarification on the serialization of the shorthand associated with coordinated value lists",
+      "labels": [
+        "Agenda+",
+        "css-values-4",
+        "scroll-animations-1",
+        "spec-test-mismatch"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13500",
+      "comments_in_window": 3,
+      "feature": "absolute-lengths",
+      "recent": [
+        {
+          "author": "weinig",
+          "date": "2026-06-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13500#issuecomment-4835333949",
+          "gist": "It seems there is still some confusion here. A recent WPT change, https://github.com/web-platform-tests/wpt/commit/4c4c3524d789ffb1edb31aa4a8f00ba17b1e700d (https://github.com/web-platform-tests/wpt/p"
+        },
+        {
+          "author": "BorisChiou",
+          "date": "2026-06-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13500#issuecomment-4835495123",
+          "gist": "Thanks for ccing me. I didn't notice the conclusion here. Perhaps we could revisit that test to match the resolution of this spec issue."
+        },
+        {
+          "author": "graouts",
+          "date": "2026-06-30",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13500#issuecomment-4845536219",
+          "gist": "I ran into this yesterday trying to fix some of the Interop 2026 failures in WebKit, and this test, along with [scroll-animations/css/view-timeline-shorthand.html](https://wpt.fyi/results/scroll-anima"
+        }
+      ]
+    },
+    {
+      "issue": 13454,
+      "title": "[css-mixins-1] Need a non-hacky way to force an element-dependent value on the applying element",
+      "labels": [
+        "Agenda+",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13454",
+      "comments_in_window": 3,
+      "feature": null,
+      "recent": [
+        {
+          "author": "LeaVerou",
+          "date": "2026-06-03",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13454#issuecomment-4614160960",
+          "gist": "My mental model for these local variables has always been that they get rewritten and wrapped in a `& { }` block, i.e. they are set on the applying element. It seems that this would solve the problem "
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-06-03",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13454#issuecomment-4615269327",
+          "gist": "In general, I don't like giving special abilities to custom properties that *require* you to use an intermediate custom prop rather than using a value more literally."
+        },
+        {
+          "author": "andruud",
+          "date": "2026-06-12",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13454#issuecomment-4688521966",
+          "gist": "I agree with those three conclusions. I was initially worried about local typing for regular custom properties (outside of functions/mixins), but the \"both parses\" / as-if-`resolve()` approach describ"
+        }
+      ]
+    },
+    {
+      "issue": 13978,
+      "title": "[css-values-5] Are sibling-count() and sibling-index() math functions?",
+      "labels": [
+        "Agenda+",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13978",
+      "comments_in_window": 3,
+      "feature": null,
+      "recent": [
+        {
+          "author": "cdoublev",
+          "date": "2026-06-01",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13978#issuecomment-4594505604",
+          "gist": "The other difference is that math-functions are clamped and possibly rounded ([spec](https://drafts.csswg.org/css-values-4/#calc-range)):"
+        },
+        {
+          "author": "Loirooriol",
+          "date": "2026-06-01",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13978#issuecomment-4595495598",
+          "gist": "Somewhat related discussion: [#11204 - What is meant by the distinction between \"math function\" vs. \"function that evaluates to a `<number>`\"](https://github.com/w3c/csswg-drafts/issues/11204)"
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-06-02",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13978#issuecomment-4606578252",
+          "gist": "They are indeed not math functions, for the reasons explained in #11204, yeah. A function is defined as a math function if it, well, does math on values and needs to inherit the [calculation context]("
+        }
+      ]
+    },
+    {
+      "issue": 9534,
+      "title": "[css-view-transitions-2] resolve on descriptor/parameter names",
+      "labels": [
+        "Needs Edits",
+        "css-view-transitions-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/9534",
+      "comments_in_window": 3,
+      "feature": null,
+      "recent": [
+        {
+          "author": "cdoublev",
+          "date": "2026-06-30",
+          "url": "https://github.com/w3c/csswg-drafts/issues/9534#issuecomment-4839606315",
+          "gist": "The resolution was _\"**accept** any idents, except `none` or `-ua-` prefixes\"_ but the spec text is _\"**ignore** any `<custom-ident>` that is `none` or starts with `-ua-`_."
+        },
+        {
+          "author": "noamr",
+          "date": "2026-06-30",
+          "url": "https://github.com/w3c/csswg-drafts/issues/9534#issuecomment-4840553993",
+          "gist": "I understood these to be the same? Should we fail parsing of ’types‘ in those cases? That's how I understood the resolution but maybe it's a mistake."
+        },
+        {
+          "author": "cdoublev",
+          "date": "2026-06-30",
+          "url": "https://github.com/w3c/csswg-drafts/issues/9534#issuecomment-4840772816",
+          "gist": "I do not think that is specified anywhere, and that it needs to be, but I would say that something is ignored *usually* because it is invalid, and is a consequence of this state, but this state is not"
+        }
+      ]
+    },
+    {
+      "issue": 11343,
+      "title": "[scroll-animations] Should setting `iterations` to `Infinity` via a call to `updatingTiming()` throw?",
+      "labels": [
+        "Agenda+",
+        "scroll-animations-1",
+        "web-animations-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/11343",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "BorisChiou",
+          "date": "2026-06-11",
+          "url": "https://github.com/w3c/csswg-drafts/issues/11343#issuecomment-4685321820",
+          "gist": "This spec issue may block an interop test ([scroll-animations/scroll-timelines/effect-updateTiming.html](https://searchfox.org/firefox-main/rev/c8c933829aec7786146f4dc5a11c575d9dcda258/testing/web-pla"
+        },
+        {
+          "author": "BorisChiou",
+          "date": "2026-06-11",
+          "url": "https://github.com/w3c/csswg-drafts/issues/11343#issuecomment-4685336586",
+          "gist": "So I think the proposal for this spec issue is to throw a `TypeError` if we set the `iterations` to `Infinity` (for progress-based timelines only). This also makes sense to me."
+        }
+      ]
+    },
+    {
+      "issue": 14016,
+      "title": "[css-mixins-1] More consistent handling of function return type",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14016",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-06-11",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14016#issuecomment-4675872083",
+          "gist": "Jeezus christ, I went to go make this edit and in fact the spec already said exactly this. What the hell was I remembering before. WELP."
+        }
+      ]
+    },
+    {
+      "issue": 14015,
+      "title": "[css-mixins] Should mixin arguments be `;` separated?",
+      "labels": [
+        "Closed as Retracted",
+        "css-mixins-1",
+        "css-mixins-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14015",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-06-04",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14015#issuecomment-4626328629",
+          "gist": "Like every other location that takes a `<declaration-value>`, you can pass commas by wrapping it in {} <https://drafts.csswg.org/css-values-5/#component-function-commas>"
+        },
+        {
+          "author": "LeaVerou",
+          "date": "2026-06-04",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14015#issuecomment-4626524703",
+          "gist": "Ah, thanks, I had forgotten about that. Closing then, feel free to reopen if this comes up again as an ergonomics argument (I can see motivation for that, but weak)."
+        }
+      ]
+    },
+    {
+      "issue": 14061,
+      "title": "[css-forms-1] Should `select:not(:open)::picker(select)` use `display: none !important`?",
+      "labels": [
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14061",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "keithamus",
+          "date": "2026-06-17",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14061#issuecomment-4732809706",
+          "gist": "This is also true for popovers, if you want a flex popover for example the author needs to write `[popover]:not(:popover-open) { display: flex }`."
+        },
+        {
+          "author": "LeaVerou",
+          "date": "2026-06-17",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14061#issuecomment-4733693085",
+          "gist": "I'm less sure about that one (and also, changing that is likely to have web compat implications). There are many use cases where the same component switches from a regular static layout to popover mod"
+        }
+      ]
+    },
+    {
+      "issue": 14014,
+      "title": "[css-color-5] Remove special casing of 100% leftover from the color-mix() calculation algorithm",
+      "labels": [
+        "Closed Accepted as Obvious Bugfix",
+        "css-color-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14014",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "svgeesus",
+          "date": "2026-06-05",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14014#issuecomment-4633163037",
+          "gist": "Removing a discontinuity is a compelling reason for this change, imo."
+        },
+        {
+          "author": "yisibl",
+          "date": "2026-06-08",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14014#issuecomment-4647576161",
+          "gist": "https://drafts.csswg.org/css-color-5/#ex-mix-zero-sum"
+        }
+      ]
+    },
+    {
+      "issue": 14065,
+      "title": "[css-values-5] Should the `<syntax>` support more complex types?",
+      "labels": [
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14065",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "bigandy",
+          "date": "2026-06-17",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14065#issuecomment-4734035673",
+          "gist": "Another case I had today was with aspect-ratio. I want to pass `ratio=\"2 / 1\"` to attr() currently only works if I use `attr(ratio type(*));`"
+        },
+        {
+          "author": "JaneOri",
+          "date": "2026-06-17",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14065#issuecomment-4734118288",
+          "gist": "Responding to the ping from socials:"
+        }
+      ]
+    },
+    {
+      "issue": 13172,
+      "title": "[css-values] Function notations without parameters should be keywords!?",
+      "labels": [
+        "Closed Rejected as Wontfix by Editor Discretion",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13172",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "Crissov",
+          "date": "2026-06-02",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13172#issuecomment-4603133587",
+          "gist": "@Loirooriol Well, my initial point was that they should not be functions in the first place, unless they start taking arguments. I acknowledge the counterpoint that adding global keywords has more and"
+        },
+        {
+          "author": "Loirooriol",
+          "date": "2026-06-02",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13172#issuecomment-4606255266",
+          "gist": "Well, I want them to take arguments: https://github.com/w3c/csswg-drafts/issues/9572"
+        }
+      ]
+    },
+    {
+      "issue": 13988,
+      "title": "[web-animations-1][scroll-animations-1] View Timelines should not become inactive (or not be ready) on containers with no scrollable overflow",
+      "labels": [
+        "Agenda+",
+        "scroll-animations-1",
+        "web-animations-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13988",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "ydaniv",
+          "date": "2026-06-01",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13988#issuecomment-4590855278",
+          "gist": "I also recall I implemented the polyfill behavior the same way as @kizu described it, so the resolution we took on #9256 did sound strange at the time, but I wasn't sure, so glad this was raised here!"
+        },
+        {
+          "author": "flackr",
+          "date": "2026-06-01",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13988#issuecomment-4596646408",
+          "gist": "That is outdated, you should assume this behavior: https://drafts.csswg.org/scroll-animations-1/#view-timeline-progress"
+        }
+      ]
+    },
+    {
+      "issue": 13950,
+      "title": "[css-grid-3] Should align-self/justify-self: stretch override explicit size?",
+      "labels": [
+        "Agenda+",
+        "css-grid-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13950",
+      "comments_in_window": 2,
+      "feature": "masonry",
+      "recent": [
+        {
+          "author": "Loirooriol",
+          "date": "2026-06-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13950#issuecomment-4834407312",
+          "gist": "@celestepan You are right: https://drafts.csswg.org/css-grid-3/#stacking-self-alignment"
+        },
+        {
+          "author": "celestepan",
+          "date": "2026-06-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13950#issuecomment-4836735628",
+          "gist": "@Loirooriol I'm in agreement that we shouldn't be overriding nan-auto sizes in the stacking axis."
+        }
+      ]
+    },
+    {
+      "issue": 13974,
+      "title": "[scroll-animations-1] Now that scroll timelines are more visible by default, should the timeline lookup be in flat tree?",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "scroll-animations-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13974",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "emilio",
+          "date": "2026-06-08",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13974#issuecomment-4651014500",
+          "gist": "Proposal would be to make it a loosely matched scoped name (so, what view transitions do, afaict)"
+        }
+      ]
+    },
+    {
+      "issue": 13844,
+      "title": "[scroll-animations-1] WebIDL and prose for ViewTimeline conflict (startOffset/endOffset)",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "scroll-animations-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13844",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "BorisChiou",
+          "date": "2026-06-03",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13844#issuecomment-4614454145",
+          "gist": "Sorry I closed the wrong one."
+        }
+      ]
+    },
+    {
+      "issue": 13662,
+      "title": "[css-values-5] Caching CSS random() values in if()",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Testcase (WPT)",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13662",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-06-04",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13662#issuecomment-4626727730",
+          "gist": "Reformatting just for readability:"
+        }
+      ]
+    },
+    {
+      "issue": 13736,
+      "title": "[css-values-5] sibling-index()/count() should return 1, not 0, when the tree ref fails",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13736",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "kbhomes",
+          "date": "2026-06-26",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13736#issuecomment-4806617328",
+          "gist": "I've updated the existing tree-scoped WPT as part of a Firefox patch: https://github.com/web-platform-tests/wpt/pull/60895"
+        }
+      ]
+    },
+    {
+      "issue": 13767,
+      "title": "[css-link-params] What's the point of ommitting the value?",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-link-params-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13767",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-06-17",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13767#issuecomment-4732504537",
+          "gist": "To say a bit more: it's just that `param()` looked a lot like `var()` or `attr()`, with an arbitrary chunk coming at the end, so it seemed to make sense at the time to match them closely. But as I sai"
+        }
+      ]
+    },
+    {
+      "issue": 13661,
+      "title": "[css-values-5] Caching CSS random() values in custom functions",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Testcase (WPT)",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13661",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-06-04",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13661#issuecomment-4626603989",
+          "gist": "So, I hadn't considered actually using the return type like that, but yeah, I suppose we could consistently treat it as a type registration for the 'result' property, thus making it have the same beha"
+        }
+      ]
+    },
+    {
+      "issue": 13943,
+      "title": "[css-mixins] Custom function evaluation prevents nesting",
+      "labels": [
+        "Closed Accepted as Obvious Bugfix",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13943",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "LeaVerou",
+          "date": "2026-06-06",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13943#issuecomment-4640611748",
+          "gist": "I just ran into this trying to write a gamut mapping function."
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-06-08",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13943#issuecomment-4654047430",
+          "gist": "We don't need any sort of limit; this is just a spec bug, as I said."
+        }
+      ]
+    },
+    {
+      "issue": 13567,
+      "title": "[css-anchor-position-1] Clarify the nature of `@position-try` tree-scoped name",
+      "labels": [
+        "Needs Edits",
+        "css-anchor-position-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13567",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-06-17",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13567#issuecomment-4732571084",
+          "gist": "Yeah, we should link in the \"global\" term, but the name in question here *cannot* be local; `@position-try` is not in any way attached to a particular element. Being global is the only possible behavi"
+        }
+      ]
+    },
+    {
+      "issue": 13268,
+      "title": "[css-anchor-position] Clarification: effect of `position-try-fallbacks` and `position-try-order` when the positioned box does not overflow",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "css-anchor-position-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13268",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "jfkthame",
+          "date": "2026-06-25",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13268#issuecomment-4801719311",
+          "gist": "@tabatkins The changes made here don't entirely resolve the confusion in the spec, IMO. In particular, [6.5. Applying Position Fallback](https://drafts.csswg.org/css-anchor-position-1/#fallback-apply)"
+        },
+        {
+          "author": "jakearchibald",
+          "date": "2026-06-26",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13268#issuecomment-4808312087",
+          "gist": "I guess that paragraph needs to reference [fallback-sensitive changes](https://drafts.csswg.org/css-anchor-position-1/#fallback-sensitive-changes)."
+        }
+      ]
+    },
+    {
+      "issue": 12668,
+      "title": "[css-values-5] `ident()` should be validated at parse time",
+      "labels": [
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12668",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "weinig",
+          "date": "2026-06-18",
+          "url": "https://github.com/w3c/csswg-drafts/issues/12668#issuecomment-4744920251",
+          "gist": "It seems like the resolution for https://github.com/w3c/csswg-drafts/issues/12206 answers the questions here and validity should be checked against the concatenation of the terms with all `<number>` c"
+        },
+        {
+          "author": "cdoublev",
+          "date": "2026-06-19",
+          "url": "https://github.com/w3c/csswg-drafts/issues/12668#issuecomment-4748710905",
+          "gist": "I missed #12206. Thanks. The resolution seems a bit abstract but the key point is that `ident()` must be validated at parse time, right? I will read the IRC log later."
+        }
+      ]
+    },
+    {
+      "issue": 12131,
+      "title": "[css-anchor-position] Simplifying math functions for `<percentage>` in `anchor()`?",
+      "labels": [
+        "Agenda+",
+        "Commenter Response Pending",
+        "css-anchor-position-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12131",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "emilio",
+          "date": "2026-06-02",
+          "url": "https://github.com/w3c/csswg-drafts/issues/12131#issuecomment-4600367547",
+          "gist": "Test-case that doesn't involve `anchor()`:"
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-06-03",
+          "url": "https://github.com/w3c/csswg-drafts/issues/12131#issuecomment-4614777740",
+          "gist": "Yeah , re-reading this, anchor() actually isn't an example of the question here - the % in anchor() *doesn't* resolve against any basis, it's left as-is, so it can be resolved immediately regardless."
+        }
+      ]
+    },
+    {
+      "issue": 12206,
+      "title": "[css-values-5] Can ident() bypass dashed-ident requirements?",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12206",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "cdoublev",
+          "date": "2026-06-19",
+          "url": "https://github.com/w3c/csswg-drafts/issues/12206#issuecomment-4750414359",
+          "gist": "Regarding the false negative `ident(\"-\" -1)` as `<dashed-ident>`, a workaround would be to restrict the ~~first~~ second argument to a positive value if it is an `<integer>`. If the function were to e"
+        },
+        {
+          "author": "sakupi01",
+          "date": "2026-06-19",
+          "url": "https://github.com/w3c/csswg-drafts/issues/12206#issuecomment-4753548379",
+          "gist": "Looking at @cdoublev 's point, I agree that the current \"mock zero\" resolution introduces some unintended side effects. Because CSS identifiers are sensitive to hyphens, treating a negative integer as"
+        }
+      ]
+    },
+    {
+      "issue": 12953,
+      "title": "[css-view-transitions-2][scoped] Allow starting a scoped view transition on a shadow root",
+      "labels": [
+        "Agenda+",
+        "css-view-transitions-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12953",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "jpzwarte",
+          "date": "2026-06-25",
+          "url": "https://github.com/w3c/csswg-drafts/issues/12953#issuecomment-4798896126",
+          "gist": "I just ran into this. Workaround seems to be to put all the `view-transition-name` declarations inside `::part(...)` selectors, so they're not actually in the shadow root scope."
+        },
+        {
+          "author": "noamr",
+          "date": "2026-06-30",
+          "url": "https://github.com/w3c/csswg-drafts/issues/12953#issuecomment-4846554970",
+          "gist": "Or to have an element within the scope"
+        }
+      ]
+    },
+    {
+      "issue": 11348,
+      "title": "[css-values] How should media-progress() and container-progress() serialize?",
+      "labels": [
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/11348",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "weinig",
+          "date": "2026-06-04",
+          "url": "https://github.com/w3c/csswg-drafts/issues/11348#issuecomment-4625918523",
+          "gist": "These have been removed from the spec. Closing."
+        }
+      ]
+    },
+    {
+      "issue": 11644,
+      "title": "[scroll-animations] Inset parameter of ViewTimelineOptions should be optional",
+      "labels": [
+        "Agenda+",
+        "scroll-animations-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/11644",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "BorisChiou",
+          "date": "2026-06-12",
+          "url": "https://github.com/w3c/csswg-drafts/issues/11644#issuecomment-4695569902",
+          "gist": "Put this in agenda because this blocks the interop. (I thought we should treat it `auto` for default but the test doesn't agree with this). The spec doesn't mention this case and doesn't say we should"
+        }
+      ]
+    },
+    {
+      "issue": 11518,
+      "title": "Would it make sense to add `middle-with-baseline` or `baseline-middle` to the spec for `vertical-align`?",
+      "labels": [
+        "Agenda+",
+        "css-inline-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/11518",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "nt1m",
+          "date": "2026-06-18",
+          "url": "https://github.com/w3c/csswg-drafts/issues/11518#issuecomment-4744070991",
+          "gist": "I think it's worth standardizing a value for this"
+        }
+      ]
+    },
+    {
+      "issue": 14058,
+      "title": "[css-gaps] Precise control over how decorations apply to wrapping flex layout",
+      "labels": [
+        "css-gaps-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14058",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "kbabbitt",
+          "date": "2026-06-16",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14058#issuecomment-4723825365",
+          "gist": "I'm open to hearing specific use cases that would call for something like this, but absent such a case, I think this idea is unlikely to be pursued. The closest I'm aware of is the wrapping toolbar ca"
+        }
+      ]
+    },
+    {
+      "issue": 14077,
+      "title": "[css-forms-1] `field-sizing` should have a way to have the size be (conceptually) `max(placeholder, content)`",
+      "labels": [
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14077",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "Loirooriol",
+          "date": "2026-06-25",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14077#issuecomment-4803692887",
+          "gist": "The issue template isn't working, but https://github.com/w3c/csswg-drafts/blob/f5f456bcb65f9a413816ee6a2c1c719d752cb13d/.github/ISSUE_TEMPLATE#L8"
+        }
+      ]
+    },
+    {
+      "issue": 14021,
+      "title": "[css-color-5][css-color-4] Unclear how to use `progress` in interpolation.",
+      "labels": [
+        "Needs Edits",
+        "css-color-4",
+        "css-color-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14021",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "svgeesus",
+          "date": "2026-06-18",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14021#issuecomment-4743705024",
+          "gist": "The `color-mix()` in CSS Color 5 and the color interpolation definitions in CSS Color 4 on which it depends predate the more general progress-based mixing from [Weighted Average Notations: the *-mix()"
+        }
+      ]
+    },
+    {
+      "issue": 14004,
+      "title": "[css-variables][css-mixins] In-place hygienic rewriting?",
+      "labels": [
+        "css-mixins-1",
+        "css-mixins-2",
+        "css-variables-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14004",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "kizu",
+          "date": "2026-06-10",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14004#issuecomment-4668119423",
+          "gist": "I wonder if something like https://github.com/w3c/csswg-drafts/issues/11798 could help here. In https://github.com/w3c/csswg-drafts/issues/13524#issuecomment-4173368648 one of the potential names for "
+        }
+      ]
+    },
+    {
+      "issue": 10711,
+      "title": "[css-ui] Support setting offscreen content inert",
+      "labels": [
+        "Needs Edits",
+        "css-ui-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/10711",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "waterplea",
+          "date": "2026-06-03",
+          "url": "https://github.com/w3c/csswg-drafts/issues/10711#issuecomment-4612611687",
+          "gist": "This issue starts as \"offscreen content\" because this might be the first place where people run into such need, but it is absolutely not the only one. We can have modal widgets that all get inert exce"
+        }
+      ]
+    },
+    {
+      "issue": 13080,
+      "title": "[css-inline-3] A property to exclude an element from the baseline calculation",
+      "labels": [
+        "css-inline-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13080",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "fantasai",
+          "date": "2026-06-02",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13080#issuecomment-4605798984",
+          "gist": "Related discussion: https://github.com/w3c/csswg-drafts/issues/1339"
+        }
+      ]
+    },
+    {
+      "issue": 13320,
+      "title": "[css-color-5] `color-mix()` serialization is outdated",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-color-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13320",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "yisibl",
+          "date": "2026-06-15",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13320#issuecomment-4704469505",
+          "gist": "So this refutes the conclusion in #8564, right?"
+        }
+      ]
+    },
+    {
+      "issue": 13742,
+      "title": "[css-values-5] Are <url>s with attr() tainted values allowed in custom properties?",
+      "labels": [
+        "Agenda+",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13742",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-06-03",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13742#issuecomment-4614701512",
+          "gist": "That test is setting `--x` (an unregistered property) to the value `src(attr(data-foo))`. Because it's unregistered, *there is no URL there*. All the CSS engine sees is the value `████attr(data-foo)██"
+        }
+      ]
+    },
+    {
+      "issue": 13663,
+      "title": "[css-gaps-1]:  Assigning multiple decoration values to flex containers",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "css-gaps-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13663",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "kbabbitt",
+          "date": "2026-06-16",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13663#issuecomment-4723797833",
+          "gist": "Thanks @ByteEater-pl. We resolved in https://github.com/w3c/csswg-drafts/issues/13754#issuecomment-4298143982 that decorations apply to the actual gaps that exist in multiline flex layout. I opened ht"
+        }
+      ]
+    },
+    {
+      "issue": 13983,
+      "title": "[css-grid-2][css-grid-3] Subgrid gap contributions when empty",
+      "labels": [
+        "Agenda+",
+        "css-grid-2",
+        "css-grid-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13983",
+      "comments_in_window": 1,
+      "feature": "masonry",
+      "recent": [
+        {
+          "author": "alisonmaher",
+          "date": "2026-06-02",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13983#issuecomment-4604163985",
+          "gist": "The resolution for this issue will also apply to explicitly placed subgrids nested in a grid lanes container"
+        }
+      ]
+    },
+    {
+      "issue": 13904,
+      "title": "[css-view-transitions] [cssom] Inheritance of non-existing pseudo-elements.",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-view-transitions-1",
+        "cssom-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13904",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "vmpstr",
+          "date": "2026-06-30",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13904#issuecomment-4844537138",
+          "gist": "I don't know a lot of examples of nested pseudo elements. I assume that things like `::before::marker` work the way you describe? It's hard to test, since I don't think `getComputedStyle(target, \"::be"
+        }
+      ]
+    },
+    {
+      "issue": 13530,
+      "title": "[css-grid-3][masonry] Handling baseline shim for multi-span items in intrinsic track sizing",
+      "labels": [
+        "css-grid-3",
+        "topic: masonry"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13530",
+      "comments_in_window": 1,
+      "feature": "masonry",
+      "recent": [
+        {
+          "author": "alisonmaher",
+          "date": "2026-06-01",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13530#issuecomment-4594165214",
+          "gist": "We were able to get this working as specified in Chromium, closing this issue out as a result"
+        }
+      ]
+    },
+    {
+      "issue": 13754,
+      "title": "[css-gaps-1] Dropping decorations for suppressed gaps",
+      "labels": [
+        "Needs Testcase (WPT)",
+        "css-gaps-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13754",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "kbabbitt",
+          "date": "2026-06-11",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13754#issuecomment-4685189382",
+          "gist": "Note to self: this still needs flex testcases to land; they're in review in https://chromium-review.googlesource.com/c/chromium/src/+/7898244"
+        }
+      ]
+    },
+    {
+      "issue": 13705,
+      "title": "[css-color-5] Moving towards CR Snapshot",
+      "labels": [
+        "Administrative Tracker",
+        "css-color-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13705",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "svgeesus",
+          "date": "2026-06-18",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13705#issuecomment-4743911133",
+          "gist": "From the [18 June 2026 WD](https://www.w3.org/TR/2026/WD-css-color-5-20260618/)"
+        }
+      ]
+    },
+    {
+      "issue": 13480,
+      "title": "[scroll-animations-1] Define when `ScrollTimeline.source` should update",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "scroll-animations-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13480",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": []
+    },
+    {
+      "issue": 13852,
+      "title": "[scroll-animations] How/when does the \"inset\" parameter in the ViewTimeline constructor get evaluated?",
+      "labels": [
+        "Agenda+",
+        "scroll-animations-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13852",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "weinig",
+          "date": "2026-06-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13852#issuecomment-4820650018",
+          "gist": "For consistency with https://github.com/w3c/csswg-drafts/issues/13853, my proposal here would be:"
+        }
+      ]
+    },
+    {
+      "issue": 13765,
+      "title": "Add outline-offset: inset",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-ui-4",
+        "css-ui-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13765",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": []
+    },
+    {
+      "issue": 13817,
+      "title": "[web-animations-2][scroll-animations-1] Playing an animation with an unresolved scroll-timeline",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "web-animations-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13817",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": []
+    },
+    {
+      "issue": 13990,
+      "title": "[web-animations-2] `partial dictionary OptionalEffectTiming` should specify `duration`",
+      "labels": [
+        "scroll-animations-1",
+        "web-animations-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13990",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "BorisChiou",
+          "date": "2026-06-01",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13990#issuecomment-4595857747",
+          "gist": "Looks like this is the same as https://github.com/w3c/csswg-drafts/issues/8949"
+        }
+      ]
+    },
+    {
+      "issue": 13428,
+      "title": "[css-view-transitions-2] scoped VT: we should apply content-visibility: hidden for the duration of capture",
+      "labels": [
+        "Agenda+",
+        "css-view-transitions-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13428",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "vmpstr",
+          "date": "2026-06-03",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13428#issuecomment-4614864584",
+          "gist": "Ok, some investigations here:"
+        }
+      ]
+    },
+    {
+      "issue": 13818,
+      "title": "[scroll-animations-1] How should ViewTimeline work on an inline or fragmented subject?",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "scroll-animations-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13818",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": []
+    },
+    {
+      "issue": 2748,
+      "title": "[css-grid][css-flexbox][css-multicol] Styling Gaps/Gutters",
+      "labels": [
+        "css-gaps-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/2748",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "kbabbitt",
+          "date": "2026-06-30",
+          "url": "https://github.com/w3c/csswg-drafts/issues/2748#issuecomment-4847983594",
+          "gist": "https://www.w3.org/TR/css-gaps-1/"
+        }
+      ]
+    },
+    {
+      "issue": 12039,
+      "title": "[css-forms-1] Pseudo elements and SVG for form controls",
+      "labels": [
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12039",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "andyearnshaw",
+          "date": "2026-06-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/12039#issuecomment-4661632618",
+          "gist": "I came here to suggest that base form control icons be represented internally as SVG elements so that you could, essentially customise the path. For example, for select components:"
+        }
+      ]
+    },
+    {
+      "issue": 12160,
+      "title": "[css-pseudo] Should non-tree-abiding pseudo elements have a separate IDL interface?",
+      "labels": [
+        "css-pseudo-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12160",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": []
+    },
+    {
+      "issue": 12594,
+      "title": "[css-navigation] Exposing navigation/route matching",
+      "labels": [
+        "Agenda+",
+        "css-navigation-1",
+        "css-view-transitions-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12594",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "noamr",
+          "date": "2026-06-03",
+          "url": "https://github.com/w3c/csswg-drafts/issues/12594#issuecomment-4610839057",
+          "gist": "We've overhauled the [spec](https://drafts.csswg.org/css-navigation-1/) as well as the [explainer](https://github.com/WICG/declarative-partial-updates/blob/main/route-matching-explainer.md#css-navigat"
+        }
+      ]
+    },
+    {
+      "issue": 6748,
+      "title": "[css-align][css-grid][css-flexbox][css-multicol][css-tables] A proposal for a Gap Decorations feature",
+      "labels": [
+        "css-align-4",
+        "css-grid-3",
+        "css-multicol-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/6748",
+      "comments_in_window": 1,
+      "feature": "masonry",
+      "recent": [
+        {
+          "author": "kbabbitt",
+          "date": "2026-06-30",
+          "url": "https://github.com/w3c/csswg-drafts/issues/6748#issuecomment-4847988901",
+          "gist": "Closing as we now have https://www.w3.org/TR/css-gaps-1/ with an implementation shipping in Chromium."
+        }
+      ]
+    },
+    {
+      "issue": 9572,
+      "title": "[css-values] Extend sibling-index() and sibling-count() with a selector argument",
+      "labels": [
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/9572",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "Crissov",
+          "date": "2026-06-02",
+          "url": "https://github.com/w3c/csswg-drafts/issues/9572#issuecomment-4606708214",
+          "gist": "Neither endorsing nor rejecting this proposal, I would prefer an indirect, two-step solution, based on anchors:"
+        }
+      ]
+    },
+    {
+      "issue": 8752,
+      "title": "[css-nesting] Allow CSS nesting for inline styles",
+      "labels": [
+        "css-nesting-1",
+        "css-nesting-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/8752",
+      "comments_in_window": 1,
+      "feature": "css-nesting",
+      "recent": [
+        {
+          "author": "juner",
+          "date": "2026-06-24",
+          "url": "https://github.com/w3c/csswg-drafts/issues/8752#issuecomment-4785874762",
+          "gist": "Since `@scope` is now part of Baseline 2025, I confirmed that it no longer results in an error even without explicitly adding `&`."
+        }
+      ]
+    }
+  ],
+  "fresh": [
+    {
+      "issue": 14115,
+      "title": "[css-color-5] 11.2. Serializing Origin Colors does not cover light-dark()",
+      "labels": [
+        "css-color-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14115",
+      "feature": null,
+      "created_at": "2026-06-30",
+      "background": "Section [11.2. Serializing Origin Colors](https://drafts.csswg.org/css-color-5/#serial-origin-color) does not cover `light-dark()` as an origin color.",
+      "related": []
+    },
+    {
+      "issue": 14117,
+      "title": "[css-values][svg] Should the `width`/`height` attr of `<svg>` require literal for determining natural sizes?",
+      "labels": [
+        "Agenda+",
+        "SVG",
+        "css-values-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14117",
+      "feature": "absolute-lengths",
+      "created_at": "2026-06-30",
+      "background": "On a `<svg>`, the `width` and `height` attributes not only set presentational hints, they can also set the natural sizes.",
+      "related": [
+        {
+          "issue": 12479,
+          "url": "https://github.com/w3c/csswg-drafts/issues/12479"
+        }
+      ]
+    },
+    {
+      "issue": 14098,
+      "title": "[css-animations-2] Behavior of grouping together <keyframe-block> declarations is underspecified",
+      "labels": [
+        "Agenda+",
+        "css-animations-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14098",
+      "feature": null,
+      "created_at": "2026-06-29",
+      "background": "In the [Processing Keyframes](https://drafts.csswg.org/css-animations-2/#keyframe-processing) algorithm, step 2.2 states:",
+      "related": []
+    },
+    {
+      "issue": 14100,
+      "title": "[css-color-5] Example 32 is outdated",
+      "labels": [
+        "css-color-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14100",
+      "feature": null,
+      "created_at": "2026-06-29",
+      "background": "https://drafts.csswg.org/css-color-5/#example-dddffb4a",
+      "related": []
+    },
+    {
+      "issue": 14102,
+      "title": "[css-display] `display: contents` can't just compute to `display: none` on replaced elements",
+      "labels": [
+        "Agenda+",
+        "css-display-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14102",
+      "feature": null,
+      "created_at": "2026-06-29",
+      "background": "https://drafts.csswg.org/css-display-3/#valdef-display-contents",
+      "related": []
+    },
+    {
+      "issue": 14108,
+      "title": "[css-pseudo][css-highlight-api] Highlight painting over replaced elements",
+      "labels": [
+        "css-highlight-api-1",
+        "css-pseudo-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14108",
+      "feature": null,
+      "created_at": "2026-06-29",
+      "background": "css-pseudo-4 defines how highlights treat replaced content generically, both the overlay's **area** ([§3.4 Area of a Highlight][bounds]) and its **painting** as a semi-transparent wash ([§3.6 → Replaced Elements][replaced]), but it never says **which** replaced boxes qualify. So when a highlight is painted over replaced elements, it's unclear whether \"replaced content\" means every replaced box, or",
+      "related": [
+        {
+          "issue": 4624,
+          "url": "https://github.com/w3c/csswg-drafts/issues/4624"
+        },
+        {
+          "issue": 5395,
+          "url": "https://github.com/w3c/csswg-drafts/issues/5395"
+        }
+      ]
+    },
+    {
+      "issue": 14096,
+      "title": "[css-animations] How is a list of <easing-function> be handled when used for a keyframe specific animation-timing-function",
+      "labels": [
+        "Agenda+",
+        "css-animations-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14096",
+      "feature": null,
+      "created_at": "2026-06-28",
+      "background": "How should [`animation-timing-function`](https://drafts.csswg.org/css-animations-1/#propdef-animation-timing-function) in the following be interpreted?",
+      "related": []
+    },
+    {
+      "issue": 14097,
+      "title": "[css-inline-3] Add `hanging` value to `text-box-edge`",
+      "labels": [
+        "Agenda+",
+        "css-inline-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14097",
+      "feature": null,
+      "created_at": "2026-06-28",
+      "background": "I think a `hanging` value for `text-box-edge` would be useful, as in some fonts, the `cap` and `text` baselines don't suffice to trim to the hanging line. For example, when trimming the \"Shurjo\" font on [this Bengali news site](https://www.prothomalo.com/) with `text-box-trim`, I get the following results on Chrome and Safari (as well as Firefox with my WIP `text-box-trim` implementation). The `te",
+      "related": []
+    },
+    {
+      "issue": 14090,
+      "title": "[wpt] Allowing *.any.js tests in CSS folders.",
+      "labels": [
+        "Agenda+"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14090",
+      "feature": null,
+      "created_at": "2026-06-27",
+      "background": "Right now if you want to add a `*.any.js` test to WPT (to, e.g., test TypedOM interfaces in workers) you can't, because of [this lint rule](https://searchfox.org/firefox-main/rev/6a252a86c5bb0fdd7a197d1c244f8a28e0827b3a/testing/web-platform/tests/tools/lint/rules.py#36):",
+      "related": []
+    },
+    {
+      "issue": 14092,
+      "title": "[web-animations-2] How do relative units get evaluated when being processed as offsets in KeyframeEffect.setKeyframes",
+      "labels": [
+        "web-animations-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14092",
+      "feature": null,
+      "created_at": "2026-06-27",
+      "background": "WebAnimations 2 [extends](https://drafts.csswg.org/web-animations-2/#keyframe-offset-type) the types allowed for offsets in KeyframeEffect.setKeyframes (and the [process a keyframes argument](https://drafts.csswg.org/web-animations-1/#process-a-keyframes-argument) algorithm) from `double` to `(CSSNumberish? or TimelineRangeOffset or DOMString)`, stating:",
+      "related": [
+        {
+          "issue": 13852,
+          "url": "https://github.com/w3c/csswg-drafts/issues/13852"
+        },
+        {
+          "issue": 13853,
+          "url": "https://github.com/w3c/csswg-drafts/issues/13853"
+        }
+      ]
+    },
+    {
+      "issue": 14088,
+      "title": "[css-color-5] `calc(infinity)` in relative color and interpolation",
+      "labels": [
+        "css-color-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14088",
+      "feature": null,
+      "created_at": "2026-06-26",
+      "background": "Also see: https://github.com/w3c/csswg-drafts/issues/14027 https://codepen.io/romainmenke/pen/wBgqvrR?editors=1111",
+      "related": [
+        {
+          "issue": 14027,
+          "url": "https://github.com/w3c/csswg-drafts/issues/14027"
+        }
+      ]
+    },
+    {
+      "issue": 14089,
+      "title": "[animation-triggers-1] consolidate events & timelines into a single shared state source",
+      "labels": [
+        "animation-triggers-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14089",
+      "feature": null,
+      "created_at": "2026-06-26",
+      "background": "The spec currently defines 2 types of triggers:",
+      "related": [
+        {
+          "issue": 13643,
+          "url": "https://github.com/w3c/csswg-drafts/issues/13643"
+        },
+        {
+          "issue": 13710,
+          "url": "https://github.com/w3c/csswg-drafts/issues/13710"
+        }
+      ]
+    },
+    {
+      "issue": 14084,
+      "title": "[css-values-5][css-conditionals-3] Clarifications on `random()` support evaluation",
+      "labels": [
+        "css-conditional-3",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14084",
+      "feature": null,
+      "created_at": "2026-06-25",
+      "background": "Should a random base value be generated and a random cache name be stored when evaluating support of `random()` in `CSS.supports()`, `@supports`, `supports()`?",
+      "related": []
+    },
+    {
+      "issue": 14083,
+      "title": "[css-gaps] Allow percentage values with rule-width to account for fluid gaps",
+      "labels": [
+        "css-gaps-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14083",
+      "feature": null,
+      "created_at": "2026-06-24",
+      "background": "Let's consider the following example:",
+      "related": []
+    },
+    {
+      "issue": 14077,
+      "title": "[css-forms-1] `field-sizing` should have a way to have the size be (conceptually) `max(placeholder, content)`",
+      "labels": [
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14077",
+      "feature": null,
+      "created_at": "2026-06-22",
+      "background": "The new field-sizing for inputs is great, and it's nice that it sizes to the placeholder when using `content`. However, that causes the field size to jump around in an unpleasant way.",
+      "related": []
+    },
+    {
+      "issue": 14079,
+      "title": "[css-values-5] weighted values for random-item()",
+      "labels": [
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14079",
+      "feature": null,
+      "created_at": "2026-06-22",
+      "background": "The way [random-item](https://drafts.csswg.org/css-values-5/#random-item) is currently specified, each item has an equal chance of being picked. In some situations, you'd want to increase the chance of one value to be picked over the others.",
+      "related": []
+    },
+    {
+      "issue": 14081,
+      "title": "[view-transitions-2] Does @view-transition 'types' `<custom-ident> support values that start with \"-ua-\"?",
+      "labels": [
+        "css-view-transitions-2",
+        "spec-test-mismatch"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14081",
+      "feature": null,
+      "created_at": "2026-06-22",
+      "background": "The current view-transitions-2 spec for @view-transition 'types' (https://drafts.csswg.org/css-view-transitions-2/#descdef-view-transition-types) doesn't seem to place any restrictions on the values of its `<custom-ident>` sub productions, but [WPT](https://github.com/web-platform-tests/wpt/blob/befefbfef4cb4152dac829f2e29a199c76b24ac3/css/css-view-transitions/navigation/with-types/at-rule-with-ty",
+      "related": []
+    },
+    {
+      "issue": 14069,
+      "title": "[css-color-4] How to make gamut mapping testable?",
+      "labels": [
+        "Agenda+",
+        "css-color-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14069",
+      "feature": null,
+      "created_at": "2026-06-19",
+      "background": "There are two related but separate issues: 1. How can gamut mapping be tested in WPT? Without the feature being testable, it cannot be prioritized in Interop, cannot have a web-feature id, and many other cannots, not to mention the obvious direct problem of it not being testable. 2. How can authors detect whether gamut mapping is available? There should be a way for authors to detect support given",
+      "related": []
+    },
+    {
+      "issue": 14070,
+      "title": "[css-color-5] Omissable alpha in relative color serialization",
+      "labels": [
+        "Agenda+",
+        "css-color-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14070",
+      "feature": null,
+      "created_at": "2026-06-19",
+      "background": "_Originally posted by @emilio in [#13992](https://github.com/w3c/csswg-drafts/issues/13992#issuecomment-4744858827)_",
+      "related": [
+        {
+          "issue": 13992,
+          "url": "https://github.com/w3c/csswg-drafts/issues/13992"
+        }
+      ]
+    },
+    {
+      "issue": 14072,
+      "title": "[css-grid-3][masonry] Impact of grid-auto-* on default direction",
+      "labels": [
+        "css-grid-3",
+        "topic: masonry"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14072",
+      "feature": "masonry",
+      "created_at": "2026-06-19",
+      "background": "According to the [spec](https://drafts.csswg.org/css-grid-3/#grid-lanes-orientation), the default direction of the container (either `grid-lanes-direction` or `grid-auto-flow`) is determined accordingly: \"The [initial value](https://drafts.csswg.org/css-cascade-5/#initial-value) of this property is normal, which determines the orientation from the grid-template-* properties\".",
+      "related": []
+    }
+  ],
   "spec_changes": [
     {
       "shortname": "css-2026",
@@ -5141,6 +6903,491 @@
           "url": "https://github.com/w3c/csswg-drafts/issues/14035#issuecomment-4722996801",
           "resolution": false,
           "gist": "Okay, so the \"backdrop\" bit is a distraction, that's good to know. Your request was focused *solely* on the gradient effect on the side, then?"
+        }
+      ]
+    },
+    {
+      "issue": 14022,
+      "title": "[css-images-4][css-color-5] Replace light-dark() image function with support for light/dark in image-set()",
+      "labels": [
+        "css-color-5",
+        "css-images-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14022",
+      "feature": null,
+      "comments_in_window": 4,
+      "resolved": false,
+      "ledger": [
+        {
+          "author": "tabatkins",
+          "date": "2026-06-08",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14022#issuecomment-4653349176",
+          "resolution": false,
+          "gist": "Do you have a particular reason to prefer doing it that way, rather than the current plan?"
+        },
+        {
+          "author": "Crissov",
+          "date": "2026-06-10",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14022#issuecomment-4668278892",
+          "resolution": false,
+          "gist": "Why does this have to be crammed into functions at all? For font selection, we have a descriptive approach using an at-rule instead."
+        },
+        {
+          "author": "weinig",
+          "date": "2026-06-11",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14022#issuecomment-4682510625",
+          "resolution": false,
+          "gist": "@tabatkins I think you make a compelling argument for having a dedicated light-dark() function."
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-06-12",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14022#issuecomment-4686298285",
+          "resolution": false,
+          "gist": "@Crissov Constructs have to pay for their weight. Fonts are larger and relatively complex, and commonly used in multiple places, and have a whole funky cascade-together behavior; giving them an at-rul"
+        }
+      ]
+    },
+    {
+      "issue": 14097,
+      "title": "[css-inline-3] Add `hanging` value to `text-box-edge`",
+      "labels": [
+        "Agenda+",
+        "css-inline-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14097",
+      "feature": null,
+      "comments_in_window": 4,
+      "resolved": false,
+      "ledger": [
+        {
+          "author": "emilio",
+          "date": "2026-06-28",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14097#issuecomment-4827279912",
+          "resolution": false,
+          "gist": "Cc @frivoal @jfkthame @fantasai"
+        },
+        {
+          "author": "astearns",
+          "date": "2026-06-28",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14097#issuecomment-4827598378",
+          "resolution": false,
+          "gist": "@kbhomes the [definition](https://drafts.csswg.org/css-inline-3/#hanging-baseline) for the `hanging` value for `alignment-baseline` refers to OpenType `hang` or TrueType `bsln` value 3. Do you know wh"
+        },
+        {
+          "author": "kbhomes",
+          "date": "2026-06-28",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14097#issuecomment-4827774825",
+          "resolution": false,
+          "gist": "@astearns Checked with both `hb-info` and `ttx` that this font doesn't have a `hang` baseline and doesn't have a `bsln` table either. So the baseline is from glyph measurement per [CSS Inline 3 § A.2:"
+        },
+        {
+          "author": "kbhomes",
+          "date": "2026-06-28",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14097#issuecomment-4827799949",
+          "resolution": false,
+          "gist": "I also think that the list of baselines in [CSS Inline 3 § A.3: Synthesizing Baselines for Atomic Inlines](https://drafts.csswg.org/css-inline-3/#baseline-synthesis-box) makes a reasonable case that `"
+        }
+      ]
+    },
+    {
+      "issue": 13541,
+      "title": "[css-forms-1] Use better fallbacks for ::picker(select)",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13541",
+      "feature": null,
+      "comments_in_window": 4,
+      "resolved": true,
+      "ledger": [
+        {
+          "author": "css-meeting-bot",
+          "date": "2026-06-17",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13541#issuecomment-4732677022",
+          "resolution": true,
+          "gist": "The CSS Working Group just discussed `[css-forms-1] Use better fallbacks for ::picker(select)`, and agreed to the following:"
+        },
+        {
+          "author": "lukewarlow",
+          "date": "2026-06-17",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13541#issuecomment-4735944802",
+          "resolution": false,
+          "gist": "Btw this will now need edits in the html spec instead of CSS forms."
+        },
+        {
+          "author": "nt1m",
+          "date": "2026-06-17",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13541#issuecomment-4736017118",
+          "resolution": false,
+          "gist": "This depends on https://github.com/w3c/csswg-drafts/issues/14062"
+        },
+        {
+          "author": "josepharhar",
+          "date": "2026-06-18",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13541#issuecomment-4743922245",
+          "resolution": false,
+          "gist": "Ok, I'll wait to implement this until that one is done."
+        }
+      ]
+    },
+    {
+      "issue": 13864,
+      "title": "[css-values-5] Where should the random cache names be stored?",
+      "labels": [
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13864",
+      "feature": null,
+      "comments_in_window": 4,
+      "resolved": false,
+      "ledger": [
+        {
+          "author": "tabatkins",
+          "date": "2026-06-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13864#issuecomment-4661968794",
+          "resolution": false,
+          "gist": "There is no implication in the spec of where anything is \"stored\", or that they're \"stored\" at all. The \"document id\" in the cache name just ensures that random values aren't associated with each othe"
+        },
+        {
+          "author": "cdoublev",
+          "date": "2026-06-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13864#issuecomment-4663148663",
+          "resolution": false,
+          "gist": "More specifically, I wanted to know if random cache names are cleared with `document.open()`, as is the case for registered custom properties."
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-06-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13864#issuecomment-4663333520",
+          "resolution": false,
+          "gist": "The spec states:"
+        },
+        {
+          "author": "cdoublev",
+          "date": "2026-06-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13864#issuecomment-4663464107",
+          "resolution": false,
+          "gist": "Yes, thank you!"
+        }
+      ]
+    },
+    {
+      "issue": 11825,
+      "title": "[css-values-4] Should progress() functions clamp to 0-100%?",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/11825",
+      "feature": null,
+      "comments_in_window": 3,
+      "resolved": false,
+      "ledger": [
+        {
+          "author": "kbhomes",
+          "date": "2026-06-11",
+          "url": "https://github.com/w3c/csswg-drafts/issues/11825#issuecomment-4680985941",
+          "resolution": false,
+          "gist": "Should this be tagged as https://github.com/w3c/csswg-drafts/labels/Needs%20Edits? This clamping isn't yet reflected in the specification and is still marked as a pending issue."
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-06-12",
+          "url": "https://github.com/w3c/csswg-drafts/issues/11825#issuecomment-4693949364",
+          "resolution": false,
+          "gist": "@kbhomes Thanks for the ping on this; it was indeed missing its Needs Edits, so I'd missed working on it. Spec is updated now."
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-06-12",
+          "url": "https://github.com/w3c/csswg-drafts/issues/11825#issuecomment-4693958300",
+          "resolution": false,
+          "gist": "(I went with `no-clamp` as the keyword, as it or something in its vicinity got some reasonable support in this thread.)"
+        }
+      ]
+    },
+    {
+      "issue": 14028,
+      "title": "[css-link-params-1] Time for FPWD",
+      "labels": [
+        "Administrative Tracker",
+        "css-link-params-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14028",
+      "feature": null,
+      "comments_in_window": 3,
+      "resolved": true,
+      "ledger": [
+        {
+          "author": "smfr",
+          "date": "2026-06-10",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14028#issuecomment-4667058858",
+          "resolution": false,
+          "gist": "https://drafts.csswg.org/css-link-params/ for those looking"
+        },
+        {
+          "author": "css-meeting-bot",
+          "date": "2026-06-10",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14028#issuecomment-4672083352",
+          "resolution": true,
+          "gist": "The CSS Working Group just discussed `[css-link-params-1] Time for FPWD`, and agreed to the following:"
+        },
+        {
+          "author": "goldenboy777",
+          "date": "2026-06-12",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14028#issuecomment-4693884174",
+          "resolution": false,
+          "gist": "Work for link parameters on Chromium's side can be tracked here! Thanks for the resolution"
+        }
+      ]
+    },
+    {
+      "issue": 14056,
+      "title": "[css-values-5] Proposal for a new `<request-url-modifier>` called `<cross-origin-storage>`",
+      "labels": [
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14056",
+      "feature": null,
+      "comments_in_window": 3,
+      "resolved": false,
+      "ledger": [
+        {
+          "author": "tabatkins",
+          "date": "2026-06-16",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14056#issuecomment-4722790609",
+          "resolution": false,
+          "gist": "I've reviewed both the general COS proposal and this `url()` extension, and they look pretty good."
+        },
+        {
+          "author": "Crissov",
+          "date": "2026-06-16",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14056#issuecomment-4722869638",
+          "resolution": false,
+          "gist": "Does this have to be a new URL modifier or could it be incorporated into the existing [`cross-origin()`](https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-cross-origin-modifier) whic"
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-06-16",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14056#issuecomment-4722919127",
+          "resolution": false,
+          "gist": "Despite both using the term \"cross-origin\", they're relatively unrelated. `cross-origin()` controls the \"request mode\", which in this case is about the CORS behavior of the request. It's orthogonal to"
+        }
+      ]
+    },
+    {
+      "issue": 13643,
+      "title": "[animation-triggers-1] Should play-forwards and play-backwards have no effect if the animation has already reached its end?",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "animation-triggers-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13643",
+      "feature": null,
+      "comments_in_window": 3,
+      "resolved": true,
+      "ledger": [
+        {
+          "author": "ydaniv",
+          "date": "2026-06-03",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13643#issuecomment-4610116546",
+          "resolution": false,
+          "gist": "Another suggestion:"
+        },
+        {
+          "author": "DavMila",
+          "date": "2026-06-03",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13643#issuecomment-4613347579",
+          "resolution": false,
+          "gist": "These suggestions sound good to me in general."
+        },
+        {
+          "author": "css-meeting-bot",
+          "date": "2026-06-03",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13643#issuecomment-4613983278",
+          "resolution": true,
+          "gist": "The CSS Working Group just discussed `[animation-triggers-1] Should play-forwards and play-backwards have no effect if the animation has already reached its end?`, and agreed to the following:"
+        }
+      ]
+    },
+    {
+      "issue": 13865,
+      "title": "[css-values-5] When/why is a fixed random base value clamped?",
+      "labels": [
+        "Closed as Question Answered",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13865",
+      "feature": null,
+      "comments_in_window": 3,
+      "resolved": false,
+      "ledger": [
+        {
+          "author": "tabatkins",
+          "date": "2026-06-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13865#issuecomment-4662023576",
+          "resolution": false,
+          "gist": "The standard treatment of random values produces a number in the range `[0, 1)` - it includes 0 but excludes 1. This is the case with `Math.random()` in JS, for example. But CSS (purposely) can't repr"
+        },
+        {
+          "author": "cdoublev",
+          "date": "2026-06-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13865#issuecomment-4663104342",
+          "resolution": false,
+          "gist": "More specifically, I wanted to know what the serialization of `opacity: random(fixed 1, 0, 1)` as a declared/resolved value should be (`1` or `0.999999`), and if `fixed 1` should serialize as is if mi"
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-06-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13865#issuecomment-4663354096",
+          "resolution": false,
+          "gist": "The value range is `[0, 1]` and they've specified `1`, so it can continue to serialize that way."
+        }
+      ]
+    },
+    {
+      "issue": 13500,
+      "title": "[css-value] Clarification on the serialization of the shorthand associated with coordinated value lists",
+      "labels": [
+        "Agenda+",
+        "css-values-4",
+        "scroll-animations-1",
+        "spec-test-mismatch"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13500",
+      "feature": "absolute-lengths",
+      "comments_in_window": 3,
+      "resolved": false,
+      "ledger": [
+        {
+          "author": "weinig",
+          "date": "2026-06-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13500#issuecomment-4835333949",
+          "resolution": false,
+          "gist": "It seems there is still some confusion here. A recent WPT change, https://github.com/web-platform-tests/wpt/commit/4c4c3524d789ffb1edb31aa4a8f00ba17b1e700d (https://github.com/web-platform-tests/wpt/p"
+        },
+        {
+          "author": "BorisChiou",
+          "date": "2026-06-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13500#issuecomment-4835495123",
+          "resolution": false,
+          "gist": "Thanks for ccing me. I didn't notice the conclusion here. Perhaps we could revisit that test to match the resolution of this spec issue."
+        },
+        {
+          "author": "graouts",
+          "date": "2026-06-30",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13500#issuecomment-4845536219",
+          "resolution": false,
+          "gist": "I ran into this yesterday trying to fix some of the Interop 2026 failures in WebKit, and this test, along with [scroll-animations/css/view-timeline-shorthand.html](https://wpt.fyi/results/scroll-anima"
+        }
+      ]
+    },
+    {
+      "issue": 13454,
+      "title": "[css-mixins-1] Need a non-hacky way to force an element-dependent value on the applying element",
+      "labels": [
+        "Agenda+",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13454",
+      "feature": null,
+      "comments_in_window": 3,
+      "resolved": false,
+      "ledger": [
+        {
+          "author": "LeaVerou",
+          "date": "2026-06-03",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13454#issuecomment-4614160960",
+          "resolution": false,
+          "gist": "My mental model for these local variables has always been that they get rewritten and wrapped in a `& { }` block, i.e. they are set on the applying element. It seems that this would solve the problem "
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-06-03",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13454#issuecomment-4615269327",
+          "resolution": false,
+          "gist": "In general, I don't like giving special abilities to custom properties that *require* you to use an intermediate custom prop rather than using a value more literally."
+        },
+        {
+          "author": "andruud",
+          "date": "2026-06-12",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13454#issuecomment-4688521966",
+          "resolution": false,
+          "gist": "I agree with those three conclusions. I was initially worried about local typing for regular custom properties (outside of functions/mixins), but the \"both parses\" / as-if-`resolve()` approach describ"
+        }
+      ]
+    },
+    {
+      "issue": 13978,
+      "title": "[css-values-5] Are sibling-count() and sibling-index() math functions?",
+      "labels": [
+        "Agenda+",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13978",
+      "feature": null,
+      "comments_in_window": 3,
+      "resolved": false,
+      "ledger": [
+        {
+          "author": "cdoublev",
+          "date": "2026-06-01",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13978#issuecomment-4594505604",
+          "resolution": false,
+          "gist": "The other difference is that math-functions are clamped and possibly rounded ([spec](https://drafts.csswg.org/css-values-4/#calc-range)):"
+        },
+        {
+          "author": "Loirooriol",
+          "date": "2026-06-01",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13978#issuecomment-4595495598",
+          "resolution": false,
+          "gist": "Somewhat related discussion: [#11204 - What is meant by the distinction between \"math function\" vs. \"function that evaluates to a `<number>`\"](https://github.com/w3c/csswg-drafts/issues/11204)"
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-06-02",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13978#issuecomment-4606578252",
+          "resolution": false,
+          "gist": "They are indeed not math functions, for the reasons explained in #11204, yeah. A function is defined as a math function if it, well, does math on values and needs to inherit the [calculation context]("
+        }
+      ]
+    },
+    {
+      "issue": 9534,
+      "title": "[css-view-transitions-2] resolve on descriptor/parameter names",
+      "labels": [
+        "Needs Edits",
+        "css-view-transitions-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/9534",
+      "feature": null,
+      "comments_in_window": 3,
+      "resolved": false,
+      "ledger": [
+        {
+          "author": "cdoublev",
+          "date": "2026-06-30",
+          "url": "https://github.com/w3c/csswg-drafts/issues/9534#issuecomment-4839606315",
+          "resolution": false,
+          "gist": "The resolution was _\"**accept** any idents, except `none` or `-ua-` prefixes\"_ but the spec text is _\"**ignore** any `<custom-ident>` that is `none` or starts with `-ua-`_."
+        },
+        {
+          "author": "noamr",
+          "date": "2026-06-30",
+          "url": "https://github.com/w3c/csswg-drafts/issues/9534#issuecomment-4840553993",
+          "resolution": false,
+          "gist": "I understood these to be the same? Should we fail parsing of ’types‘ in those cases? That's how I understood the resolution but maybe it's a mistake."
+        },
+        {
+          "author": "cdoublev",
+          "date": "2026-06-30",
+          "url": "https://github.com/w3c/csswg-drafts/issues/9534#issuecomment-4840772816",
+          "resolution": false,
+          "gist": "I do not think that is specified anywhere, and that it needs to be, but I would say that something is ignored *usually* because it is invalid, and is a consequence of this state, but this state is not"
         }
       ]
     }

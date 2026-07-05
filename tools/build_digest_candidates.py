@@ -47,7 +47,7 @@ W3C = ROOT / "raw" / "data" / "w3c-api" / "specifications"
 OUT = GEN / "digest-candidates"
 IMPORTANT_LABELS = {"Agenda+", "Agenda+ F2F", "Needs Edits", "Needs Testcase (WPT)"}
 # Developer-high-interest surfaces (a RECALL AID for `notable`/`fresh`, NOT the
-# selector — the digest still weights editorially by the mozaic lens in AGENTS.md).
+# selector — the digest still weights editorially by the developer-impact lens in AGENTS.md).
 # Quiet-but-notable threads here (below the hot bar) would otherwise be dropped.
 HIGH_INTEREST_LABELS = {
     "css-anchor-position-1", "css-forms-1", "css-view-transitions-1",
@@ -255,7 +255,7 @@ def main() -> None:
                     "recent": window_recent(n)})
 
     # notable: high-interest surfaces with window activity BELOW the hot bar — a
-    # recall aid so quiet-but-developer-notable threads reach the digest. The mozaic
+    # recall aid so quiet-but-developer-notable threads reach the digest. The selection
     # lens (AGENTS.md), not comment count, decides what actually gets written up.
     hot_nums = {h["issue"] for h in hot}
     notable = []
@@ -271,7 +271,7 @@ def main() -> None:
                         "recent": window_recent(n)})
 
     # fresh: high-interest / important-labeled issues newly OPENED in the window —
-    # new proposals & requests that carry no discussion yet but may be mozaic-worthy.
+    # new proposals & requests that carry no discussion yet but may be developer-notable.
     fresh = []
     for n, r in issues.items():
         if not (since < (r.get("created_at") or "")[:10] <= until):

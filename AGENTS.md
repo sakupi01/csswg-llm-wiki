@@ -349,11 +349,11 @@ Purpose: decide what deserves ingest next. Read-only on `raw/`; writes nothing b
    Days of an F2F are independent — parallel processing is fine.
 4. Update `wiki/README.md` recent-meetings table; log; commit `[summarise]`.
 
-### Digest selection lens — mozaic-worthiness (shared: weekly + monthly)
+### Digest selection lens — developer impact (shared: weekly + monthly)
 
 The pack is a broad *candidate set*, not a ranking — **comment count is not the signal**.
-Select with the eye of [mozaic.fm Monthly Platform](https://github.com/Jxck/jxck.io/tree/main/mozaic.fm/episodes)'s
-CSSWG segment: *"would a working web developer want to know this?"*
+Select the way a web-platform news roundup would: the test for every item is
+*"would a working web developer want to know this?"*
 
 - **Lead with:**
   - **Author-facing syntax/behavior** — a new/changed property, value, pseudo, function,
@@ -376,7 +376,7 @@ Present each selected topic in the **4-field scannable format** (indented sub-bu
 ```
 - **Topic headline** ([#NNNN](issue-url))
   - **Background:** what it builds on (cite the pack's `related` #refs — gated-in)
-  - **Why it matters:** the developer/mozaic angle — impact, surface, stakes
+  - **Why it matters:** the developer angle — impact, surface, stakes
   - **Summary:** what was decided (RESOLVED permalink) or the live split (from `irc`/`recent`)
   - **Related:** #x, #y, ../features/<slug>.md
 ```
@@ -468,7 +468,7 @@ All Python 3 (stdlib only). GitHub access goes through `gh api --method GET` sub
 | `build_indexes.py` | Reparses mirror files via comment sentinels only; emits all `_generated/` outputs, sorted and deterministic. Resolutions carry `source: bot` (official minutes) or `source: manual` (hand-pasted minutes 2015-2017 / async — lower trust, verify at permalink). Sanity check: warns if items-with-RESOLVED drops below the corpus-measured baseline (2,578 as of 2026-07). |
 | `extract_people.py` | people.yml + indexes → `wiki/people/*.md`. Unknowns accumulate in `_generated/people-unmapped.txt`. |
 | `link_refs.py` | Auto-links referenceable entities in wiki prose (idempotent): issue/PR numbers `#<N>` → the csswg-drafts issue, and known people (`@github` / login / nick ≥4) → their people page. Skips frontmatter, code, bare URLs, existing links, and blockquotes (verbatim quotations). |
-| `build_digest_candidates.py [--days N] [--until DATE] [--month YYYY-MM]` | Gathers digest input from `_generated/` + the mirror (no GitHub API) as a broad *candidate set* (the mozaic-worthiness lens does the weighting, not this tool): `resolutions` (enriched with `background`/`related`/`irc` verbatim meeting log), `agenda`, `hot` (≥5 comments, +`recent`), `notable` (HIGH_INTEREST_LABELS threads below the hot bar — recall aid, +`recent`), `fresh` (high-interest issues opened in window, +`background`/`related`), `spec_changes`. `--month` adds `deep`: busiest ∪ quiet-high-interest threads, each with a full comment ledger (permalink per comment) — case-C material. Every item carries a permalink. |
+| `build_digest_candidates.py [--days N] [--until DATE] [--month YYYY-MM]` | Gathers digest input from `_generated/` + the mirror (no GitHub API) as a broad *candidate set* (the developer-impact lens does the weighting, not this tool): `resolutions` (enriched with `background`/`related`/`irc` verbatim meeting log), `agenda`, `hot` (≥5 comments, +`recent`), `notable` (HIGH_INTEREST_LABELS threads below the hot bar — recall aid, +`recent`), `fresh` (high-interest issues opened in window, +`background`/`related`), `spec_changes`. `--month` adds `deep`: busiest ∪ quiet-high-interest threads, each with a full comment ledger (permalink per comment) — case-C material. Every item carries a permalink. |
 | `build_feed.py` | Builds `docs/{feed.xml,feed.json,index.html}` from `wiki/digests/*.md` (weekly `YYYY-Www` + monthly `YYYY-MM`). **Fails** if a csswg-drafts/lists.w3.org/TR link in a digest body is not in that digest's candidate pack — named by the digest's `pack:` frontmatter, else `<until>.json` (anti-fabrication gate). stdlib only. |
 | `scrape_www_style.py --minutes\|--month\|--all\|--incremental [--dry-run]` | Polite mirror (1 req/s, contact UA, existing files never touched) of the public www-style archive into `www-style/<YYYYMon>/<NNNN>.md`, 1:1 with archive URLs. Metadata comes from Hypermail HTML comments (In-Reply-To exists only there); pages are decoded per-page from `<meta charset>`; email addresses are never republished. `--minutes` (default range 2008Jan–2017Jun) fetches `[CSSWG] Minutes/Resolutions` mails only; `--all` is the full archive (~28h — run locally overnight, NEVER in CI); `--incremental` is a no-op until `--all` has completed. Per-month sidecars `.messages.jsonl` are rebuilt from local files whenever a month is touched. |
 

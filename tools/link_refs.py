@@ -26,7 +26,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(Path(__file__).parent))
 from extract_people import load_people  # noqa: E402
 
-DIRS = ["features", "specs", "families", "history", "meetings"]
+DIRS = ["features", "specs", "families", "history", "meetings", "digests"]
 ISSUES_URL = "https://github.com/w3c/csswg-drafts/issues/"
 # `#` not preceded by a word char or another `#` (so `#708` in `#614/#708` links,
 # but `##2` headings and `foo#2` do not), followed by digits and a word boundary.

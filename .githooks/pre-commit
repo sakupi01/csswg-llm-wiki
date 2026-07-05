@@ -1,9 +1,9 @@
 #!/bin/sh
-# Format staged markdown/json (excluding raw/ and _generated/) and enforce
-# that wiki/log.md is append-only relative to HEAD.
+# Format staged markdown/json (excluding raw/, _generated/, docs/ generated feed)
+# and enforce that wiki/log.md is append-only relative to HEAD.
 set -e
 
-staged=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.(md|json)$' | grep -Ev '^(raw/|_generated/|node_modules/)' || true)
+staged=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.(md|json)$' | grep -Ev '^(raw/|_generated/|docs/|node_modules/)' || true)
 if [ -n "$staged" ]; then
   if command -v pnpm >/dev/null 2>&1 && [ -d node_modules/.bin ]; then
     echo "$staged" | xargs pnpm exec oxfmt >/dev/null 2>&1 || true

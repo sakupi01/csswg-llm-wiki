@@ -1,0 +1,587 @@
+{
+  "since": "2026-06-27",
+  "until": "2026-07-04",
+  "generated_at": "2026-07-05T12:28:02Z",
+  "resolutions": [
+    {
+      "date": "2026-07-01",
+      "issue": 11801,
+      "labels": [
+        "css-navigation-1",
+        "selectors-5"
+      ],
+      "resolution": "Applies not just to links",
+      "url": "https://github.com/w3c/csswg-drafts/issues/11801#issuecomment-4857772799",
+      "feature": null
+    },
+    {
+      "date": "2026-07-01",
+      "issue": 11801,
+      "labels": [
+        "css-navigation-1",
+        "selectors-5"
+      ],
+      "resolution": "add :nav-source pseudo for this use case",
+      "url": "https://github.com/w3c/csswg-drafts/issues/11801#issuecomment-4857772799",
+      "feature": null
+    },
+    {
+      "date": "2026-07-01",
+      "issue": 13853,
+      "labels": [
+        "web-animations-2"
+      ],
+      "resolution": "make it a parse error to set string values or typed CSSOM values that require an element to resolve",
+      "url": "https://github.com/w3c/csswg-drafts/issues/13853#issuecomment-4857950246",
+      "feature": null
+    },
+    {
+      "date": "2026-07-01",
+      "issue": 13904,
+      "labels": [
+        "css-view-transitions-1",
+        "cssom-1"
+      ],
+      "resolution": "non existing pseudo-elements are considered to inherit from their ultimate originating element if you query the computed style",
+      "url": "https://github.com/w3c/csswg-drafts/issues/13904#issuecomment-4858013386",
+      "feature": null
+    },
+    {
+      "date": "2026-07-01",
+      "issue": 14062,
+      "labels": [
+        "css-anchor-position-1",
+        "css-forms-1"
+      ],
+      "resolution": "Use these values for ::picker(select)",
+      "url": "https://github.com/w3c/csswg-drafts/issues/14062#issuecomment-4857805306",
+      "feature": null
+    },
+    {
+      "date": "2026-07-01",
+      "issue": 14062,
+      "labels": [
+        "css-anchor-position-1",
+        "css-forms-1"
+      ],
+      "resolution": "add flip-self-inline and flip-self-block to position-try",
+      "url": "https://github.com/w3c/csswg-drafts/issues/14062#issuecomment-4857805306",
+      "feature": null
+    }
+  ],
+  "agenda": [
+    {
+      "issue": 13853,
+      "title": "[web-animations] How/when do the \"rangeStart/rangeEnd\" attributes the Animation interface get evaluated",
+      "labels": [
+        "Needs Design / Proposal",
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "web-animations-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13853",
+      "feature": null,
+      "comments_in_window": 7
+    },
+    {
+      "issue": 14096,
+      "title": "[css-animations] How is a list of <easing-function> be handled when used for a keyframe specific animation-timing-function",
+      "labels": [
+        "Agenda+",
+        "css-animations-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14096",
+      "feature": null,
+      "comments_in_window": 7
+    },
+    {
+      "issue": 12953,
+      "title": "[css-view-transitions-2][scoped] Allow starting a scoped view transition on a shadow root",
+      "labels": [
+        "Agenda+",
+        "css-view-transitions-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12953",
+      "feature": null,
+      "comments_in_window": 6
+    },
+    {
+      "issue": 14070,
+      "title": "[css-color-5] Omissable alpha in relative color serialization",
+      "labels": [
+        "Agenda+",
+        "css-color-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14070",
+      "feature": null,
+      "comments_in_window": 5
+    },
+    {
+      "issue": 13904,
+      "title": "[css-view-transitions] [cssom] Inheritance of non-existing pseudo-elements.",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-view-transitions-1",
+        "cssom-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13904",
+      "feature": null,
+      "comments_in_window": 4
+    },
+    {
+      "issue": 14097,
+      "title": "[css-inline-3] Add `hanging` value to `text-box-edge`",
+      "labels": [
+        "Agenda+",
+        "css-inline-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14097",
+      "feature": null,
+      "comments_in_window": 4
+    },
+    {
+      "issue": 9534,
+      "title": "[css-view-transitions-2] resolve on descriptor/parameter names",
+      "labels": [
+        "Needs Edits",
+        "css-view-transitions-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/9534",
+      "feature": null,
+      "comments_in_window": 3
+    },
+    {
+      "issue": 11801,
+      "title": "[css-navigation-1] Add pseudo-class selector to target the element that initiated the outgoing navigation",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-navigation-1",
+        "selectors-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/11801",
+      "feature": null,
+      "comments_in_window": 3
+    },
+    {
+      "issue": 13500,
+      "title": "[css-value] Clarification on the serialization of the shorthand associated with coordinated value lists",
+      "labels": [
+        "Agenda+",
+        "css-values-4",
+        "scroll-animations-1",
+        "spec-test-mismatch"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13500",
+      "feature": "absolute-lengths",
+      "comments_in_window": 3
+    },
+    {
+      "issue": 14090,
+      "title": "[wpt] Allowing *.any.js tests in CSS folders.",
+      "labels": [
+        "Agenda+"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14090",
+      "feature": null,
+      "comments_in_window": 3
+    },
+    {
+      "issue": 1771,
+      "title": "[css-sizing] Auto-resize iframes based on content",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-sizing-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/1771",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 1967,
+      "title": "[selectors] decide on :blank",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Data",
+        "Needs Testcase (WPT)",
+        "selectors-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/1967",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 3022,
+      "title": "[selectors-4] Poor description of :lang() psuedo class selector",
+      "labels": [
+        "Agenda+",
+        "Closed Accepted as Editorial",
+        "Commenter Response Pending",
+        "i18n-tracker",
+        "selectors-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/3022",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 13652,
+      "title": "[css-sizing] \"behaves as auto\" needs clarifications",
+      "labels": [
+        "Needs Design / Proposal",
+        "Needs Edits",
+        "Needs Example or Figure",
+        "css-sizing-3",
+        "css-sizing-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13652",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 13816,
+      "title": "[css-overflow] Scroll direction of unicode-bidi: plaintext.",
+      "labels": [
+        "Agenda+",
+        "css-overflow-3",
+        "css-writing-modes-4",
+        "i18n-alreq",
+        "i18n-hlreq",
+        "i18n-tracker"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13816",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 13889,
+      "title": "[css-borders-4] `corner` shorthand slashes conflict with optional forward slashs in border-*-radius long hands",
+      "labels": [
+        "Agenda+",
+        "Needs Design / Proposal",
+        "css-borders-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13889",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 13950,
+      "title": "[css-grid-3] Should align-self/justify-self: stretch override explicit size?",
+      "labels": [
+        "Agenda+",
+        "css-grid-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13950",
+      "feature": "masonry",
+      "comments_in_window": 2
+    },
+    {
+      "issue": 14098,
+      "title": "[css-animations-2] Behavior of grouping together <keyframe-block> declarations is underspecified",
+      "labels": [
+        "Agenda+",
+        "css-animations-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14098",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 14102,
+      "title": "[css-display] `display: contents` can't just compute to `display: none` on replaced elements",
+      "labels": [
+        "Agenda+",
+        "css-display-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14102",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 7513,
+      "title": "[css-highlight-api] Approaches for dispatching highlight pointer events",
+      "labels": [
+        "Needs Edits",
+        "css-highlight-api-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/7513",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 7648,
+      "title": "[css-images] Mesh gradient / Freeform gradient / 2D gradient",
+      "labels": [
+        "Agenda+",
+        "css-images-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/7648",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 7766,
+      "title": "[css-highlight-api] Exposing shadow DOM highlights in highlightsFromPoint()",
+      "labels": [
+        "Needs Edits",
+        "css-highlight-api-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/7766",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 10853,
+      "title": "[css-values] Specs that use CSS values outside of normal style rules should provide information on calc()/non-absolute length resolution in a uniform way",
+      "labels": [
+        "Agenda+",
+        "css-fonts-4",
+        "css-values-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/10853",
+      "feature": "absolute-lengths",
+      "comments_in_window": 1
+    },
+    {
+      "issue": 12063,
+      "title": "[cssom] CSSImportRule.media should be nullable, maybe? Difference between Chromium and Firefox",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "cssom-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12063",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 12502,
+      "title": "[selectors] Declarative custom `:state()` states",
+      "labels": [
+        "Agenda+ F2F",
+        "selectors-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12502",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 12791,
+      "title": "[css-backgrounds][css-animations] Should background-* and animation-* longhands computed values serialize using the same truncation rules?",
+      "labels": [
+        "Needs Testcase (WPT)",
+        "css-animations-1",
+        "css-backgrounds-3",
+        "spec-test-mismatch"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12791",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 12801,
+      "title": "[css-break-3] Should broken boxes always be extended to fill the gap?",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Testcase (WPT)",
+        "css-break-3",
+        "css-break-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12801",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13041,
+      "title": "[mediaqueries-5][css-conditional-5][css-mixins-1] Order dependent rules and adopted stylesheets",
+      "labels": [
+        "Needs Edits",
+        "css-conditional-5",
+        "css-mixins-1",
+        "mediaqueries-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13041",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13469,
+      "title": "Wide review of Selectors 4",
+      "labels": [
+        "Administrative Tracker",
+        "Agenda+",
+        "a11y-tracker",
+        "i18n-tracker",
+        "privacy-tracker",
+        "security-tracker",
+        "selectors-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13469",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13608,
+      "title": "[animation-triggers-1] Can we add a `timeline-trigger-range` shorthand?",
+      "labels": [
+        "Agenda+",
+        "animation-triggers-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13608",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13852,
+      "title": "[scroll-animations] How/when does the \"inset\" parameter in the ViewTimeline constructor get evaluated?",
+      "labels": [
+        "Agenda+",
+        "scroll-animations-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13852",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13931,
+      "title": "[css-grid-3][masonry] Static positions of out-of-flow items in fill-reverse",
+      "labels": [
+        "Agenda+",
+        "css-grid-3",
+        "topic: masonry"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13931",
+      "feature": "masonry",
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14062,
+      "title": "[css-anchor-position-1] Add flip-self-inline/flip-self-block keywords",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-anchor-position-1",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14062",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14117,
+      "title": "[css-values][svg] Should the `width`/`height` attr of `<svg>` require literal for determining natural sizes?",
+      "labels": [
+        "Agenda+",
+        "SVG",
+        "css-values-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14117",
+      "feature": "absolute-lengths",
+      "comments_in_window": 0
+    }
+  ],
+  "hot": [
+    {
+      "issue": 14100,
+      "title": "[css-color-5] Example 32 is outdated",
+      "labels": [
+        "css-color-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14100",
+      "comments_in_window": 22,
+      "feature": null
+    },
+    {
+      "issue": 5675,
+      "title": "[css-grid] Masonry layout in CSS Grid 3 has potential to cause accessibility problems with reading order.",
+      "labels": [
+        "css-grid-3",
+        "topic: masonry"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/5675",
+      "comments_in_window": 17,
+      "feature": "masonry"
+    },
+    {
+      "issue": 14088,
+      "title": "[css-color-5] `calc(infinity)` in relative color and interpolation",
+      "labels": [
+        "css-color-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14088",
+      "comments_in_window": 10,
+      "feature": null
+    },
+    {
+      "issue": 14096,
+      "title": "[css-animations] How is a list of <easing-function> be handled when used for a keyframe specific animation-timing-function",
+      "labels": [
+        "Agenda+",
+        "css-animations-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14096",
+      "comments_in_window": 7,
+      "feature": null
+    },
+    {
+      "issue": 13853,
+      "title": "[web-animations] How/when do the \"rangeStart/rangeEnd\" attributes the Animation interface get evaluated",
+      "labels": [
+        "Needs Design / Proposal",
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "web-animations-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13853",
+      "comments_in_window": 7,
+      "feature": null
+    },
+    {
+      "issue": 13980,
+      "title": "Should `::interest-button` be opt-in, opt-out, or enabled via media query?",
+      "labels": [
+        "a11y-tracker"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13980",
+      "comments_in_window": 6,
+      "feature": null
+    },
+    {
+      "issue": 12953,
+      "title": "[css-view-transitions-2][scoped] Allow starting a scoped view transition on a shadow root",
+      "labels": [
+        "Agenda+",
+        "css-view-transitions-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12953",
+      "comments_in_window": 6,
+      "feature": null
+    },
+    {
+      "issue": 14081,
+      "title": "[view-transitions-2] Does @view-transition 'types' `<custom-ident> support values that start with \"-ua-\"?",
+      "labels": [
+        "css-view-transitions-2",
+        "spec-test-mismatch"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14081",
+      "comments_in_window": 5,
+      "feature": null
+    },
+    {
+      "issue": 14070,
+      "title": "[css-color-5] Omissable alpha in relative color serialization",
+      "labels": [
+        "Agenda+",
+        "css-color-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14070",
+      "comments_in_window": 5,
+      "feature": null
+    }
+  ],
+  "spec_changes": []
+}

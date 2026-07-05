@@ -2,12 +2,13 @@
 """Build the RSS delivery from wiki/digests/*.md into docs/ (GitHub Pages). stdlib only.
 
 Outputs docs/feed.xml (Atom 1.0), docs/feed.json (JSON Feed 1.1), docs/index.html.
-One feed item per weekly digest page.
+One feed item per digest page (weekly `YYYY-Www` and monthly `YYYY-MM` alike).
 
 Accuracy gate (mirrors R1/R4): every csswg-drafts / lists.w3.org / w3.org-TR link in
-a digest body must appear in that week's candidate pack
-(_generated/digest-candidates/<until>.json). A link that isn't a gathered fact fails
-the build — the LLM digest may select and explain, never fabricate a source.
+a digest body must appear in that digest's candidate pack. The pack is named by the
+digest's `pack:` frontmatter field, else `<until>.json` (weekly default). A link that
+isn't a gathered fact fails the build — the digest may select and explain, never
+fabricate a source.
 """
 
 import html
@@ -23,7 +24,7 @@ CANDIDATES = ROOT / "_generated" / "digest-candidates"
 DOCS = ROOT / "docs"
 SITE = "https://sakupi01.github.io/csswg-llm-wiki"
 FEED_TITLE = "This week in CSSWG"
-FEED_DESC = "Weekly, context-rich digest of CSS Working Group discussions — an unofficial, LLM-maintained companion to the csswg-llm-wiki."
+FEED_DESC = "Context-rich weekly and monthly digests of CSS Working Group discussions — an unofficial, LLM-maintained companion to the csswg-llm-wiki."
 
 FM_RE = re.compile(r"\A---\n(.*?)\n---\n(.*)\Z", re.S)
 URL_RE = re.compile(r"https?://[^\s)\]<>\"']+")
@@ -45,10 +46,10 @@ def parse_digest(path: Path) -> dict:
 
 
 def validate_links(meta: dict) -> None:
-    until = meta.get("until")
-    pack_path = CANDIDATES / f"{until}.json"
+    pack_name = meta.get("pack") or f"{meta.get('until')}.json"
+    pack_path = CANDIDATES / pack_name
     if not pack_path.exists():
-        raise SystemExit(f"[build_feed] {meta['path'].name}: no candidate pack for until={until}")
+        raise SystemExit(f"[build_feed] {meta['path'].name}: no candidate pack {pack_name}")
     pack_text = pack_path.read_text()
     for url in URL_RE.findall(meta["body"]):
         if GATED_HOST_RE.match(url) and url.rstrip("/") not in pack_text:

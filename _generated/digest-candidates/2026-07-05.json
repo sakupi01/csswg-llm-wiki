@@ -1,0 +1,978 @@
+{
+  "since": "2026-06-28",
+  "until": "2026-07-05",
+  "generated_at": "2026-07-05T13:31:33Z",
+  "resolutions": [
+    {
+      "date": "2026-07-01",
+      "issue": 11801,
+      "labels": [
+        "css-navigation-1",
+        "selectors-5"
+      ],
+      "resolution": "Applies not just to links",
+      "url": "https://github.com/w3c/csswg-drafts/issues/11801#issuecomment-4857772799",
+      "feature": null,
+      "background": "One of the properties of the [the Navigation API](https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api)’s `NavigateEvent` is the `sourceElement`. From [the explainer](https://github.com/WICG/navigation-api/blob/main/README.md#navigation-monitoring-and-interception).",
+      "related": [],
+      "irc": [
+        "<JoshT> noamr: issue that was open for a while",
+        "<JoshT> ... we wanted to address with css-nav-1 spec",
+        "<JoshT> ... quite ready on it's own. to select a link that triggers a navigation",
+        "<JoshT> ... unlike active pseudo, it stays on",
+        "<fantasai> Like :active in IE5!",
+        "<JoshT> ... so we defined in css-nav-1 as trigger-link. we define exact processing model of when it starts and stops being active",
+        "<JoshT> ... we found about css-nav that it's a reflection of the Web Navigation API",
+        "<JoshT> ... has concept of source-element.",
+        "<JoshT> ... not sure if that was the best name",
+        "<JoshT> ... can be a link, a form or submit button",
+        "<TabAtkins> q+",
+        "<JoshT> ... things that trigger a navigation",
+        "<astearns> q+",
+        "<JoshT> ... trigger-link is both the source element and the link",
+        "<kbabbitt> q+",
+        "<JoshT> ... could be confusing otherwise with forms",
+        "<JoshT> ... could say we have a navigation trigger element that also includes forms",
+        "<JoshT> ... current case is a pseudo class called trigger-link",
+        "<JoshT> ... activated on link you click",
+        "<JoshT> ... stops when navigation is done",
+        "<kbabbitt> q-",
+        "<JoshT> ... when you swap to the new document",
+        "<JoshT> TabAtkins: echoing discussion, odd specialised just to links when there are forms doing nav",
+        "<astearns> ack TabAtkins",
+        "<JoshT> ... assuming more general pseudo class, this is just adding 'a'",
+        "<fantasai> +1",
+        "<JoshT> ... could we just let people use the tag name in the selector to say which they want to match on?",
+        "<CameronPsychpsyo> Don't image maps also have links in them?",
+        "<PaulG> web components and aria-* components will probably like to support this as well",
+        "<JoshT> noamr: not great in my opinion, but could be wrong. we can change that",
+        "<JoshT> TabAtkins: concern is just in general it's not great to encourage authors to use links when they should use a form",
+        "<fantasai> +1",
+        "<JoshT> ... if these touch both cases, they should work on both cases",
+        "<dbaron> CameronPsychpsyo, image maps have <area> elements these days -- HTML4 had a feature that allowed them to use <a> as well but it got removed in HTML5 due to only one browser implementing it.",
+        "<JoshT> astearns: have maybe terrible idea. if we need something different than active for the lifecycle, then maybe this could be a parameter on :active",
+        "<CameronPsychpsyo> Yes, but <area> can have an href to link to elsewhere when clicked.",
+        "<astearns> ack astearns",
+        "<JoshT> fantasai: had the same concerns as TabAtkins",
+        "<JoshT> ... think a more general definition is better",
+        "<JoshT> ... for more general name, could be navigation-source, connecting to the source term",
+        "<JoshT> noamr: sounds good to me",
+        "<JoshT> ... i was nervous about trigger because we also have nav trigger",
+        "<PaulG> navigation referrer?",
+        "<JoshT> bramus: but you can have source and destination so having source here could confusing",
+        "<JoshT> noamr: still related",
+        "<JoshT> fantasai: what happens if you have a link that navs to a different part of the page?",
+        "<JoshT> noamr: it will still activate and pseudo will still be active",
+        "<JoshT> ... as long as Navigation API is going, it will apply",
+        "<dbaron> I think (somewhat agreeing with Bramus) that some people might see the \"source\" as the page you're navigating from rather than the element that caused that page to navigate.",
+        "<JoshT> ... because it's very quick, effect might not be different from activ",
+        "<JoshT> fantasai: old versions of IE have more persistent versions of :active",
+        "<bramus> q?",
+        "<JoshT> noamr: will be active until animation is done",
+        "<JoshT> ... same with smooth scroll",
+        "<bramus> q+",
+        "<JoshT> ... as long as the spinner goes, this will also be active",
+        "<JoshT> fantasai: in general, a good idea",
+        "<astearns> ack fantasai",
+        "<astearns> ack bramus",
+        "<JoshT> bramus: hearing +1 on the ask for a broader selector"
+      ]
+    },
+    {
+      "date": "2026-07-01",
+      "issue": 11801,
+      "labels": [
+        "css-navigation-1",
+        "selectors-5"
+      ],
+      "resolution": "add :nav-source pseudo for this use case",
+      "url": "https://github.com/w3c/csswg-drafts/issues/11801#issuecomment-4857772799",
+      "feature": null,
+      "background": "One of the properties of the [the Navigation API](https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api)’s `NavigateEvent` is the `sourceElement`. From [the explainer](https://github.com/WICG/navigation-api/blob/main/README.md#navigation-monitoring-and-interception).",
+      "related": [],
+      "irc": [
+        "<JoshT> noamr: issue that was open for a while",
+        "<JoshT> ... we wanted to address with css-nav-1 spec",
+        "<JoshT> ... quite ready on it's own. to select a link that triggers a navigation",
+        "<JoshT> ... unlike active pseudo, it stays on",
+        "<fantasai> Like :active in IE5!",
+        "<JoshT> ... so we defined in css-nav-1 as trigger-link. we define exact processing model of when it starts and stops being active",
+        "<JoshT> ... we found about css-nav that it's a reflection of the Web Navigation API",
+        "<JoshT> ... has concept of source-element.",
+        "<JoshT> ... not sure if that was the best name",
+        "<JoshT> ... can be a link, a form or submit button",
+        "<TabAtkins> q+",
+        "<JoshT> ... things that trigger a navigation",
+        "<astearns> q+",
+        "<JoshT> ... trigger-link is both the source element and the link",
+        "<kbabbitt> q+",
+        "<JoshT> ... could be confusing otherwise with forms",
+        "<JoshT> ... could say we have a navigation trigger element that also includes forms",
+        "<JoshT> ... current case is a pseudo class called trigger-link",
+        "<JoshT> ... activated on link you click",
+        "<JoshT> ... stops when navigation is done",
+        "<kbabbitt> q-",
+        "<JoshT> ... when you swap to the new document",
+        "<JoshT> TabAtkins: echoing discussion, odd specialised just to links when there are forms doing nav",
+        "<astearns> ack TabAtkins",
+        "<JoshT> ... assuming more general pseudo class, this is just adding 'a'",
+        "<fantasai> +1",
+        "<JoshT> ... could we just let people use the tag name in the selector to say which they want to match on?",
+        "<CameronPsychpsyo> Don't image maps also have links in them?",
+        "<PaulG> web components and aria-* components will probably like to support this as well",
+        "<JoshT> noamr: not great in my opinion, but could be wrong. we can change that",
+        "<JoshT> TabAtkins: concern is just in general it's not great to encourage authors to use links when they should use a form",
+        "<fantasai> +1",
+        "<JoshT> ... if these touch both cases, they should work on both cases",
+        "<dbaron> CameronPsychpsyo, image maps have <area> elements these days -- HTML4 had a feature that allowed them to use <a> as well but it got removed in HTML5 due to only one browser implementing it.",
+        "<JoshT> astearns: have maybe terrible idea. if we need something different than active for the lifecycle, then maybe this could be a parameter on :active",
+        "<CameronPsychpsyo> Yes, but <area> can have an href to link to elsewhere when clicked.",
+        "<astearns> ack astearns",
+        "<JoshT> fantasai: had the same concerns as TabAtkins",
+        "<JoshT> ... think a more general definition is better",
+        "<JoshT> ... for more general name, could be navigation-source, connecting to the source term",
+        "<JoshT> noamr: sounds good to me",
+        "<JoshT> ... i was nervous about trigger because we also have nav trigger",
+        "<PaulG> navigation referrer?",
+        "<JoshT> bramus: but you can have source and destination so having source here could confusing",
+        "<JoshT> noamr: still related",
+        "<JoshT> fantasai: what happens if you have a link that navs to a different part of the page?",
+        "<JoshT> noamr: it will still activate and pseudo will still be active",
+        "<JoshT> ... as long as Navigation API is going, it will apply",
+        "<dbaron> I think (somewhat agreeing with Bramus) that some people might see the \"source\" as the page you're navigating from rather than the element that caused that page to navigate.",
+        "<JoshT> ... because it's very quick, effect might not be different from activ",
+        "<JoshT> fantasai: old versions of IE have more persistent versions of :active",
+        "<bramus> q?",
+        "<JoshT> noamr: will be active until animation is done",
+        "<JoshT> ... same with smooth scroll",
+        "<bramus> q+",
+        "<JoshT> ... as long as the spinner goes, this will also be active",
+        "<JoshT> fantasai: in general, a good idea",
+        "<astearns> ack fantasai",
+        "<astearns> ack bramus",
+        "<JoshT> bramus: hearing +1 on the ask for a broader selector"
+      ]
+    },
+    {
+      "date": "2026-07-01",
+      "issue": 13853,
+      "labels": [
+        "web-animations-2"
+      ],
+      "resolution": "make it a parse error to set string values or typed CSSOM values that require an element to resolve",
+      "url": "https://github.com/w3c/csswg-drafts/issues/13853#issuecomment-4857950246",
+      "feature": null,
+      "background": "How/when do the `<length-percentage>` values that can be passed to the [rangeStart](https://drafts.csswg.org/web-animations-2/#dom-animation-rangestart)/[rangeEnd](https://drafts.csswg.org/web-animations-2/#dom-animation-rangeend) attributes on the Animation interface (or via [KeyframeAnimationOption](https://drafts.csswg.org/web-animations-2/#dom-keyframeanimationoptions-rangestart)) when assigni",
+      "related": [],
+      "irc": [
+        "<JoshT> weinig: issue is that in the animations API in the JS API, there are places where you can set values",
+        "<JoshT> ...the setters have been defined to take strings",
+        "<JoshT> ... but the spec says 'parse this as...' and then a CSS property",
+        "<JoshT> ... in this case, the issue with range-start is that it takes what it should parse, and animation-range-end allows a length-percentage with any number",
+        "<JoshT> ... you can have length relative units",
+        "<JoshT> ... there's no spec on how to resolve those units",
+        "<JoshT> ... it's not happening during the style resolution",
+        "<JoshT> ... in other places, there's an API that takes a string and parses it as a CSS construct",
+        "<JoshT> ... normally we limit it to absolute units because we don't have a way to resolve relative units",
+        "<JoshT> ... in this bug it's about range-end, but we can take the same idea to other cases and limit to absolute length units and %. % are ok because they resolve later",
+        "<TabAtkins> I'm fine with this",
+        "<fantasai> sgtm",
+        "<JoshT> astearns: is it possible to define some way to resolve %?",
+        "<JoshT> weinig: % are not an issue. it's just relative units",
+        "<JoshT> astearns: so can we just pick something to resolve against like the root?",
+        "<JoshT> weinig: there are other options we could takw",
+        "<TabAtkins> q+",
+        "<JoshT> ... one is to treat it like media queries",
+        "<JoshT> ... say that relative units resolve against the initial style. could be different to the root",
+        "<JoshT> ... could say the units resolve against the target element of anim if it exists",
+        "<JoshT> ... then need to define what happens if target is null",
+        "<JoshT> ... and we need to pay the sync style resolution cost",
+        "<JoshT> ... or alt, we could define alternative time that these values get resolved against an element",
+        "<JoshT> ... i think they're all complicated",
+        "<JoshT> ... someone would need to figure out the tradeoffs",
+        "<JoshT> ... right now not implementable",
+        "<JoshT> ... want something implementable in a uniform way",
+        "<ydaniv> SGTM, until we define this properly",
+        "<JoshT> ... or maybe in future we'll have a generic way in JS to say 'given this element and unit, give me the computed px values'",
+        "<JoshT> ... someone in bug says this makes it useless",
+        "<JoshT> ... don't know if they were thinking if % weren't allowed",
+        "<JoshT> ydaniv: [that was me]. it is limiting, but it's OK to patch this now and spec it later",
+        "<JoshT> astearns: I agree and I'm fine, but if there is something that would be better for authors where we can arbitrarily pick an element without author choice, it might be better to do that than only have absolute units",
+        "<JoshT> ... if we do only absolute units now, we'll need an opt in to get the better behaviour",
+        "<JoshT> weinig: we can just do a parse error for relative units for now, and then not have a parse error in the future",
+        "<astearns> ack TabAtkins",
+        "<JoshT> TabAtkins: I agree with sam. don't want to resolve on root element",
+        "<JoshT> ... would rather make it parse-time invalid now",
+        "<fantasai> +1 to TabAtkins and weinig",
+        "<JoshT> weinig: my proposal is for both the string form and type CSS form",
+        "<TabAtkins> yeah there shoudln't be any difference between those two",
+        "<JoshT> ... you can do a typed value that is an em value, so we have to treat them the same here",
+        "<JoshT> PROPOSED: make it a parse error to set string values or typed CSSOM values that don't use absolute length units or percentages",
+        "<JoshT> weinig: one other clarificatio.n also precludes things like var, sibling-index() and anything that requires an element to resolve",
+        "<fantasai> sgtm",
+        "<fantasai> We can always relax restrictions once we figure out what's the best thing to do",
+        "<JoshT> ... but the implication is we're excluding anything that requires an element context",
+        "<JoshT> PROPOSED: make it a parse error to set string values or typed CSSOM values that require an element to resolve",
+        "<JoshT> RESOLVED: make it a parse error to set string values or typed CSSOM values that require an element to resolve",
+        "<JoshT> weinig: I've filed a bunch of issues like this. should I turn them all into a single issue that we can resolve on later?",
+        "<JoshT> ... or should we go through them one by one?",
+        "<JoshT> astearns: I'm fine with that if they're all basically the same decision",
+        "<JoshT> ... we can even make it an async proposal"
+      ]
+    },
+    {
+      "date": "2026-07-01",
+      "issue": 13904,
+      "labels": [
+        "css-view-transitions-1",
+        "cssom-1"
+      ],
+      "resolution": "non existing pseudo-elements are considered to inherit from their ultimate originating element if you query the computed style",
+      "url": "https://github.com/w3c/csswg-drafts/issues/13904#issuecomment-4858013386",
+      "feature": null,
+      "background": "https://github.com/web-platform-tests/wpt/pull/58814 introduces a test that passes in chrome by minting the inheritance tree, see https://github.com/web-platform-tests/wpt/pull/58814#issuecomment-4263707301",
+      "related": [],
+      "irc": [
+        "<JoshT> TabAtkins: emilio pointed out that we have a WPT that expects a non-existant vt element to inherit from its non-existent parent",
+        "<JoshT> ... because vt pseudos aren't creating but you're asking for the computed style",
+        "<JoshT> ... emilio suggests that we inherit from the existing element rather than assuming a non-existent tree",
+        "<JoshT> ... the dev who did this had a crash and so he fixed it in a way and doesn't have opinions on which way it should go",
+        "<JoshT> ... I also agree",
+        "<JoshT> ... we probably should not be making assumptions about the state of a tree that doesn't exist",
+        "<JoshT> ... I suggest we take emilio 's suggestion",
+        "<JoshT> ... just say it's inheriting from the originating element",
+        "<bramus> sgtm",
+        "<JoshT> fantasai: so this is only while they don't exist? and then when we have a tree, do usual behaviour?",
+        "<JoshT> TabAtkins: yes?",
+        "<JoshT> s/yes?/yes/",
+        "<TabAtkins> el.gCS(\"::foo\")",
+        "<JoshT> TabAtkins: and there is always in the query an originating element to look at",
+        "<JoshT> fantasai: there was a term for ultimate originating element",
+        "<JoshT> TabAtkins: yes",
+        "<JoshT> PROPOSED: non existing pseudo-elements are considered to inherit from their ultimate originating element if you query the computed style",
+        "<JoshT> astearns: any suggestions or objections?",
+        "<JoshT> RESOLVED: non existing pseudo-elements are considered to inherit from their ultimate originating element if you query the computed style",
+        "<JoshT> astearns: do we have any other situations like this?",
+        "<JoshT> TabAtkins: you can't ask for an element that might not exist. it's only pseudos where this can happen",
+        "<noamr> \"A non-existent pseudo element falls in the forest. what style does it have?\""
+      ]
+    },
+    {
+      "date": "2026-07-01",
+      "issue": 14062,
+      "labels": [
+        "css-anchor-position-1",
+        "css-forms-1"
+      ],
+      "resolution": "Use these values for ::picker(select)",
+      "url": "https://github.com/w3c/csswg-drafts/issues/14062#issuecomment-4857805306",
+      "feature": null,
+      "background": "Following up from https://github.com/w3c/csswg-drafts/issues/13541 and https://github.com/w3c/csswg-drafts/issues/13738 - we probably want the self writing mode for these.",
+      "related": [
+        {
+          "issue": 13541,
+          "url": "https://github.com/w3c/csswg-drafts/issues/13541"
+        },
+        {
+          "issue": 13738,
+          "url": "https://github.com/w3c/csswg-drafts/issues/13738"
+        }
+      ],
+      "irc": [
+        "<JoshT> astearns: Might be the shortest issue ever!",
+        "<TabAtkins> +1 to the keywords",
+        "<JoshT> fantasai: we have flip-inline and flip-block which use writing mode of the container",
+        "<JoshT> ... we have use cases to have the writing mode of the element itself",
+        "<JoshT> astearns: both self and the parent?",
+        "<JoshT> fantasai: yes",
+        "<JoshT> ... we should be consistent",
+        "<JoshT> ... and make them the keyword that you use for the custom select dropdown",
+        "<JoshT> astearns: any concerns?",
+        "<JoshT> PROPOSED: add flip-self-inline and flip-self-block",
+        "<JoshT> RESOLVED: add flip-self-inline and flip-self-block to position-try",
+        "<ntim> position-try-fallbacks",
+        "<fantasai> RESOLVED: Use these values for ::picker(select)"
+      ]
+    },
+    {
+      "date": "2026-07-01",
+      "issue": 14062,
+      "labels": [
+        "css-anchor-position-1",
+        "css-forms-1"
+      ],
+      "resolution": "add flip-self-inline and flip-self-block to position-try",
+      "url": "https://github.com/w3c/csswg-drafts/issues/14062#issuecomment-4857805306",
+      "feature": null,
+      "background": "Following up from https://github.com/w3c/csswg-drafts/issues/13541 and https://github.com/w3c/csswg-drafts/issues/13738 - we probably want the self writing mode for these.",
+      "related": [
+        {
+          "issue": 13541,
+          "url": "https://github.com/w3c/csswg-drafts/issues/13541"
+        },
+        {
+          "issue": 13738,
+          "url": "https://github.com/w3c/csswg-drafts/issues/13738"
+        }
+      ],
+      "irc": [
+        "<JoshT> astearns: Might be the shortest issue ever!",
+        "<TabAtkins> +1 to the keywords",
+        "<JoshT> fantasai: we have flip-inline and flip-block which use writing mode of the container",
+        "<JoshT> ... we have use cases to have the writing mode of the element itself",
+        "<JoshT> astearns: both self and the parent?",
+        "<JoshT> fantasai: yes",
+        "<JoshT> ... we should be consistent",
+        "<JoshT> ... and make them the keyword that you use for the custom select dropdown",
+        "<JoshT> astearns: any concerns?",
+        "<JoshT> PROPOSED: add flip-self-inline and flip-self-block",
+        "<JoshT> RESOLVED: add flip-self-inline and flip-self-block to position-try",
+        "<ntim> position-try-fallbacks",
+        "<fantasai> RESOLVED: Use these values for ::picker(select)"
+      ]
+    }
+  ],
+  "agenda": [
+    {
+      "issue": 14096,
+      "title": "[css-animations] How is a list of <easing-function> be handled when used for a keyframe specific animation-timing-function",
+      "labels": [
+        "Agenda+",
+        "css-animations-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14096",
+      "feature": null,
+      "comments_in_window": 7
+    },
+    {
+      "issue": 12953,
+      "title": "[css-view-transitions-2][scoped] Allow starting a scoped view transition on a shadow root",
+      "labels": [
+        "Agenda+",
+        "css-view-transitions-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12953",
+      "feature": null,
+      "comments_in_window": 6
+    },
+    {
+      "issue": 13853,
+      "title": "[web-animations] How/when do the \"rangeStart/rangeEnd\" attributes the Animation interface get evaluated",
+      "labels": [
+        "Needs Design / Proposal",
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "web-animations-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13853",
+      "feature": null,
+      "comments_in_window": 5
+    },
+    {
+      "issue": 14070,
+      "title": "[css-color-5] Omissable alpha in relative color serialization",
+      "labels": [
+        "Agenda+",
+        "css-color-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14070",
+      "feature": null,
+      "comments_in_window": 5
+    },
+    {
+      "issue": 13904,
+      "title": "[css-view-transitions] [cssom] Inheritance of non-existing pseudo-elements.",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-view-transitions-1",
+        "cssom-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13904",
+      "feature": null,
+      "comments_in_window": 4
+    },
+    {
+      "issue": 14097,
+      "title": "[css-inline-3] Add `hanging` value to `text-box-edge`",
+      "labels": [
+        "Agenda+",
+        "css-inline-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14097",
+      "feature": null,
+      "comments_in_window": 4
+    },
+    {
+      "issue": 9534,
+      "title": "[css-view-transitions-2] resolve on descriptor/parameter names",
+      "labels": [
+        "Needs Edits",
+        "css-view-transitions-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/9534",
+      "feature": null,
+      "comments_in_window": 3
+    },
+    {
+      "issue": 11801,
+      "title": "[css-navigation-1] Add pseudo-class selector to target the element that initiated the outgoing navigation",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-navigation-1",
+        "selectors-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/11801",
+      "feature": null,
+      "comments_in_window": 3
+    },
+    {
+      "issue": 13500,
+      "title": "[css-value] Clarification on the serialization of the shorthand associated with coordinated value lists",
+      "labels": [
+        "Agenda+",
+        "css-values-4",
+        "scroll-animations-1",
+        "spec-test-mismatch"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13500",
+      "feature": "absolute-lengths",
+      "comments_in_window": 3
+    },
+    {
+      "issue": 1771,
+      "title": "[css-sizing] Auto-resize iframes based on content",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-sizing-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/1771",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 3022,
+      "title": "[selectors-4] Poor description of :lang() psuedo class selector",
+      "labels": [
+        "Agenda+",
+        "Closed Accepted as Editorial",
+        "Commenter Response Pending",
+        "i18n-tracker",
+        "selectors-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/3022",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 13652,
+      "title": "[css-sizing] \"behaves as auto\" needs clarifications",
+      "labels": [
+        "Needs Design / Proposal",
+        "Needs Edits",
+        "Needs Example or Figure",
+        "css-sizing-3",
+        "css-sizing-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13652",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 13816,
+      "title": "[css-overflow] Scroll direction of unicode-bidi: plaintext.",
+      "labels": [
+        "Agenda+",
+        "css-overflow-3",
+        "css-writing-modes-4",
+        "i18n-alreq",
+        "i18n-hlreq",
+        "i18n-tracker"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13816",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 13889,
+      "title": "[css-borders-4] `corner` shorthand slashes conflict with optional forward slashs in border-*-radius long hands",
+      "labels": [
+        "Agenda+",
+        "Needs Design / Proposal",
+        "css-borders-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13889",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 13950,
+      "title": "[css-grid-3] Should align-self/justify-self: stretch override explicit size?",
+      "labels": [
+        "Agenda+",
+        "css-grid-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13950",
+      "feature": "masonry",
+      "comments_in_window": 2
+    },
+    {
+      "issue": 14098,
+      "title": "[css-animations-2] Behavior of grouping together <keyframe-block> declarations is underspecified",
+      "labels": [
+        "Agenda+",
+        "css-animations-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14098",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 14102,
+      "title": "[css-display] `display: contents` can't just compute to `display: none` on replaced elements",
+      "labels": [
+        "Agenda+",
+        "css-display-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14102",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 1967,
+      "title": "[selectors] decide on :blank",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Data",
+        "Needs Testcase (WPT)",
+        "selectors-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/1967",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 7513,
+      "title": "[css-highlight-api] Approaches for dispatching highlight pointer events",
+      "labels": [
+        "Needs Edits",
+        "css-highlight-api-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/7513",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 7648,
+      "title": "[css-images] Mesh gradient / Freeform gradient / 2D gradient",
+      "labels": [
+        "Agenda+",
+        "css-images-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/7648",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 7766,
+      "title": "[css-highlight-api] Exposing shadow DOM highlights in highlightsFromPoint()",
+      "labels": [
+        "Needs Edits",
+        "css-highlight-api-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/7766",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 10853,
+      "title": "[css-values] Specs that use CSS values outside of normal style rules should provide information on calc()/non-absolute length resolution in a uniform way",
+      "labels": [
+        "Agenda+",
+        "css-fonts-4",
+        "css-values-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/10853",
+      "feature": "absolute-lengths",
+      "comments_in_window": 1
+    },
+    {
+      "issue": 12063,
+      "title": "[cssom] CSSImportRule.media should be nullable, maybe? Difference between Chromium and Firefox",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "cssom-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12063",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 12502,
+      "title": "[selectors] Declarative custom `:state()` states",
+      "labels": [
+        "Agenda+ F2F",
+        "selectors-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12502",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 12791,
+      "title": "[css-backgrounds][css-animations] Should background-* and animation-* longhands computed values serialize using the same truncation rules?",
+      "labels": [
+        "Needs Testcase (WPT)",
+        "css-animations-1",
+        "css-backgrounds-3",
+        "spec-test-mismatch"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12791",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 12801,
+      "title": "[css-break-3] Should broken boxes always be extended to fill the gap?",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Testcase (WPT)",
+        "css-break-3",
+        "css-break-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12801",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13041,
+      "title": "[mediaqueries-5][css-conditional-5][css-mixins-1] Order dependent rules and adopted stylesheets",
+      "labels": [
+        "Needs Edits",
+        "css-conditional-5",
+        "css-mixins-1",
+        "mediaqueries-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13041",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13469,
+      "title": "Wide review of Selectors 4",
+      "labels": [
+        "Administrative Tracker",
+        "Agenda+",
+        "a11y-tracker",
+        "i18n-tracker",
+        "privacy-tracker",
+        "security-tracker",
+        "selectors-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13469",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13608,
+      "title": "[animation-triggers-1] Can we add a `timeline-trigger-range` shorthand?",
+      "labels": [
+        "Agenda+",
+        "animation-triggers-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13608",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13931,
+      "title": "[css-grid-3][masonry] Static positions of out-of-flow items in fill-reverse",
+      "labels": [
+        "Agenda+",
+        "css-grid-3",
+        "topic: masonry"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13931",
+      "feature": "masonry",
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14062,
+      "title": "[css-anchor-position-1] Add flip-self-inline/flip-self-block keywords",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-anchor-position-1",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14062",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14117,
+      "title": "[css-values][svg] Should the `width`/`height` attr of `<svg>` require literal for determining natural sizes?",
+      "labels": [
+        "Agenda+",
+        "SVG",
+        "css-values-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14117",
+      "feature": "absolute-lengths",
+      "comments_in_window": 0
+    }
+  ],
+  "hot": [
+    {
+      "issue": 14100,
+      "title": "[css-color-5] Example 32 is outdated",
+      "labels": [
+        "css-color-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14100",
+      "comments_in_window": 22,
+      "feature": null,
+      "recent": [
+        {
+          "author": "romainmenke",
+          "date": "2026-07-01",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14100#issuecomment-4855630564",
+          "gist": "Yup, we can't just take the exact `hue` from another colorspace."
+        },
+        {
+          "author": "romainmenke",
+          "date": "2026-07-02",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14100#issuecomment-4866766309",
+          "gist": "🤔 even if we preserve powerless `hue` in RCS/interpolation when the start and destination space are the same, we would still lose that `hue` for `hsl` and `hwb` in computed/serialized values. Because "
+        },
+        {
+          "author": "svgeesus",
+          "date": "2026-07-03",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14100#issuecomment-4878462590",
+          "gist": "Yes. That example pre-dates all the `none` and powerless concepts."
+        }
+      ]
+    },
+    {
+      "issue": 5675,
+      "title": "[css-grid] Masonry layout in CSS Grid 3 has potential to cause accessibility problems with reading order.",
+      "labels": [
+        "css-grid-3",
+        "topic: masonry"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/5675",
+      "comments_in_window": 17,
+      "feature": "masonry",
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-06-30",
+          "url": "https://github.com/w3c/csswg-drafts/issues/5675#issuecomment-4848519759",
+          "gist": "Just throwing out some possible rules here with approximate numbers:"
+        },
+        {
+          "author": "rachelandrew",
+          "date": "2026-07-01",
+          "url": "https://github.com/w3c/csswg-drafts/issues/5675#issuecomment-4850072188",
+          "gist": "I think those rules make sense. I think the concept of a _reading region_ gives us the needed information of \"this feels like a row\" in terms of reading flow."
+        },
+        {
+          "author": "kbabbitt",
+          "date": "2026-07-01",
+          "url": "https://github.com/w3c/csswg-drafts/issues/5675#issuecomment-4857127282",
+          "gist": "Am I understanding correctly that the reading region continues to grow as items are added to it? Consider (numbers are source order):"
+        }
+      ]
+    },
+    {
+      "issue": 14096,
+      "title": "[css-animations] How is a list of <easing-function> be handled when used for a keyframe specific animation-timing-function",
+      "labels": [
+        "Agenda+",
+        "css-animations-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14096",
+      "comments_in_window": 7,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-06-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14096#issuecomment-4838047313",
+          "gist": "The original spec was not well-written in this regard, but imo the behavior the spec *should* define here is that the `animation-*` properties are not allowed inside of keyframes, but some related `an"
+        },
+        {
+          "author": "weinig",
+          "date": "2026-06-30",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14096#issuecomment-4838740072",
+          "gist": "That makes sense. Then, the spec would have descriptor definitions for the special `animation-timing-function` and `animation-composite` descriptors in addition to the property definitions they alread"
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-06-30",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14096#issuecomment-4848202031",
+          "gist": "Yeah, `@keyframes` is fine. The `for` doesn't specify some strict relationship, it's just a namespacing mechanism."
+        }
+      ]
+    },
+    {
+      "issue": 13980,
+      "title": "Should `::interest-button` be opt-in, opt-out, or enabled via media query?",
+      "labels": [
+        "a11y-tracker"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13980",
+      "comments_in_window": 6,
+      "feature": null,
+      "recent": [
+        {
+          "author": "bramus",
+          "date": "2026-07-01",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13980#issuecomment-4859980487",
+          "gist": "The page is not loading for me so I can’t check myself: Is the $220000 on that page a link? It doesn’t look like it."
+        },
+        {
+          "author": "Psychpsyo",
+          "date": "2026-07-01",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13980#issuecomment-4860294826",
+          "gist": "It is not a link and I'd agree with that point. I also prefer this feature being opt-in."
+        },
+        {
+          "author": "LeaVerou",
+          "date": "2026-07-02",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13980#issuecomment-4865396849",
+          "gist": "Yup, in cases where the tooltip is essential and not auxiliary and the target does not make its presence obvious, this can be very useful for hover platforms as well. There, its functionality as a cli"
+        }
+      ]
+    },
+    {
+      "issue": 12953,
+      "title": "[css-view-transitions-2][scoped] Allow starting a scoped view transition on a shadow root",
+      "labels": [
+        "Agenda+",
+        "css-view-transitions-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12953",
+      "comments_in_window": 6,
+      "feature": null,
+      "recent": [
+        {
+          "author": "jpzwarte",
+          "date": "2026-07-03",
+          "url": "https://github.com/w3c/csswg-drafts/issues/12953#issuecomment-4874253996",
+          "gist": "I have a pretty specific scenario: design system web components such as `<page-header>` that has view transitions that are linked to the scroll timeline (via https://chrome.dev/view-transitions-toolki"
+        },
+        {
+          "author": "noamr",
+          "date": "2026-07-03",
+          "url": "https://github.com/w3c/csswg-drafts/issues/12953#issuecomment-4874313964",
+          "gist": "Hopefully element scoped view transitions would be baseline at some point... Either way, yea with this you should be able to set view transition names inside a shadow root that link to the scroll time"
+        },
+        {
+          "author": "emilio",
+          "date": "2026-07-04",
+          "url": "https://github.com/w3c/csswg-drafts/issues/12953#issuecomment-4881348215",
+          "gist": "I think the transition should probably still be in the host, yeah, or otherwise should behave the same rendering-wise as if you called it on the host... But at that point having it on the shadow tree "
+        }
+      ]
+    },
+    {
+      "issue": 14070,
+      "title": "[css-color-5] Omissable alpha in relative color serialization",
+      "labels": [
+        "Agenda+",
+        "css-color-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14070",
+      "comments_in_window": 5,
+      "feature": null,
+      "recent": [
+        {
+          "author": "emilio",
+          "date": "2026-06-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14070#issuecomment-4832712944",
+          "gist": "@svgeesus why would you expect it? For `blue` you _can_ do this, for other colors you can't, e.g. `alpha(from light-dark(white, rgba(0, 0, 0, .5)))`. I'd prefer to be consistent and omitting the alpha"
+        },
+        {
+          "author": "svgeesus",
+          "date": "2026-06-30",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14070#issuecomment-4843663848",
+          "gist": "Hmm it seems then that we don't have consensus on this issue."
+        },
+        {
+          "author": "yisibl",
+          "date": "2026-07-01",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14070#issuecomment-4850025074",
+          "gist": "I agree with @emilio ; keeping the serialization shorter makes it easier to understand."
+        }
+      ]
+    },
+    {
+      "issue": 14088,
+      "title": "[css-color-5] `calc(infinity)` in relative color and interpolation",
+      "labels": [
+        "css-color-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14088",
+      "comments_in_window": 5,
+      "feature": null,
+      "recent": [
+        {
+          "author": "romainmenke",
+          "date": "2026-06-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14088#issuecomment-4836723744",
+          "gist": "I agree that the spec isn't unclear on `calc(infinity)`"
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-06-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14088#issuecomment-4837294977",
+          "gist": "Sure, but again, this is exactly the same problem as using an ordinary `1e1000` value, as in `color(from color(srgb 1e1000 0.2 0.3) display-p3 r g b)`. We can't strictly specify behavior without incid"
+        },
+        {
+          "author": "romainmenke",
+          "date": "2026-06-30",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14088#issuecomment-4845505689",
+          "gist": "🤔 I don't know if/how that would work."
+        }
+      ]
+    },
+    {
+      "issue": 13853,
+      "title": "[web-animations] How/when do the \"rangeStart/rangeEnd\" attributes the Animation interface get evaluated",
+      "labels": [
+        "Needs Design / Proposal",
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "web-animations-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13853",
+      "comments_in_window": 5,
+      "feature": null,
+      "recent": [
+        {
+          "author": "weinig",
+          "date": "2026-06-30",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13853#issuecomment-4847863920",
+          "gist": "It would be this definition of absolute length units, https://drafts.csswg.org/css-values-4/#absolute-lengths."
+        },
+        {
+          "author": "weinig",
+          "date": "2026-06-30",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13853#issuecomment-4847921983",
+          "gist": "As to what could be done to specify evaluation, a processing model would need to be defined, specifying things like"
+        },
+        {
+          "author": "emilio",
+          "date": "2026-07-01",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13853#issuecomment-4851685932",
+          "gist": "Strong +1 to Sam's proposal. For now it seems like the most obvious thing to do. Someone needs to write a coherent processing model for how things should behave in order for them to support element-de"
+        }
+      ]
+    }
+  ],
+  "spec_changes": []
+}

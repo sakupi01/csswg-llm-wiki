@@ -362,9 +362,13 @@ as RSS via GitHub Pages (`docs/`). Runs after the Thursday sync (7-day window by
    generated_at, title, generated_by: llm`. Body:
    - `## This week in CSSWG` — 1–2 sentence framing.
    - `## Notable` — pick the few genuinely CSS-notable items (author-facing behavior
-     changes, new/contested features, shipping-relevant decisions). For each: what was
-     decided and **why it matters**, linking the RESOLVED permalink and, when a wiki
-     feature page genuinely covers it, `../features/<slug>.md`.
+     changes, new/contested features, shipping-relevant decisions). For each: the
+     **debate that led there** and **why it matters**, not just the verdict. Each
+     resolution in the pack carries `background` (the issue's framing), `related` (the
+     issues it builds on — cite them; they are gated-in) and `irc` (the verbatim
+     meeting log — summarise the points/positions from it, never invent them). Link
+     the RESOLVED permalink and, when a wiki feature page genuinely covers it,
+     `../features/<slug>.md`. Hot items carry `recent` (the week's last human voices).
    - `## Also resolved` / `## Agenda ahead` — brief lists (issue link each).
    - Mandatory footer disclaimer (same as feature pages).
 4. **Guardrails**: every factual link comes from the candidate pack (`build_feed.py`
@@ -373,6 +377,38 @@ as RSS via GitHub Pages (`docs/`). Runs after the Thursday sync (7-day window by
 5. Run `python3 tools/build_feed.py` (rebuilds `docs/` + validates links), run
    `link_refs.py`, update `wiki/README.md` Digests section, append `wiki/log.md`.
    Commit `[digest] <week>: …`, push (Pages serves it).
+
+### Monthly digest — `/monthly-digest [YYYY-MM]`
+
+The deeper companion to the weekly. Where the weekly is pack-bounded (select-and-explain),
+the monthly is **case-C**: it reads the busiest threads' full histories to narrate the
+month's *arcs and points of contention*. Run once a month, after the last weekly of the month.
+
+1. `python3 tools/build_digest_candidates.py --month <YYYY-MM>` → pack at
+   `_generated/digest-candidates/<YYYY-MM>.{json,md}` (`span: month`). It adds a **`deep`**
+   section: the ~15 busiest threads, each with a full in-window comment `ledger`
+   (author/date/gist + **permalink for every comment**). Read the `.md`, then open the
+   mirror files (`raw/data/github/.../<n>.md`) for the `deep` threads to read the argument
+   in full — the ledger tells you which turns matter and gives you the links.
+2. Read the `wiki/features/*.md` and `wiki/specs/*.md` pages the pack tags, for the arc.
+3. Write `wiki/digests/<YYYY>-<MM>.md` (English). Frontmatter: `month, since, until,
+   generated_at, title, generated_by: llm, pack: <YYYY-MM>.json` (the `pack` field points
+   build_feed at the monthly pack). Body:
+   - `## This month in CSSWG` — 2–3 sentence framing of the month.
+   - `## Themes` — 2–4 narrative threads that tie multiple issues/resolutions together,
+     each tracing the **positions and who held them → where it landed (or why it's stuck)**,
+     citing the ledger permalinks and feature pages. This is the substance.
+   - `## Resolutions this month` — grouped by spec/feature, brief (permalink each).
+   - `## Still contested` — the month's unresolved `deep`/hot debates, one line on the split.
+   - `## Spec status` — TR maturity changes in the month.
+   - Mandatory footer disclaimer.
+4. **Guardrails**: same link gate — every csswg-drafts/lists/TR link must be in the monthly
+   pack (the `deep` ledgers put every in-window comment permalink there; for older context
+   cite the issue URL, which is also gated-in). Reading the mirror is allowed here; inventing
+   positions is not — attribute only what the ledger/thread shows.
+5. `python3 tools/build_feed.py` (validates + rebuilds `docs/`; weekly and monthly share the
+   feed), `link_refs.py`, update `wiki/README.md`, append `wiki/log.md`.
+   Commit `[digest] <YYYY>-<MM> (monthly): …`, push.
 
 ### Backfill — `/backfill <feature>` (Phase 4+)
 
@@ -399,8 +435,8 @@ All Python 3 (stdlib only). GitHub access goes through `gh api --method GET` sub
 | `build_indexes.py` | Reparses mirror files via comment sentinels only; emits all `_generated/` outputs, sorted and deterministic. Resolutions carry `source: bot` (official minutes) or `source: manual` (hand-pasted minutes 2015-2017 / async — lower trust, verify at permalink). Sanity check: warns if items-with-RESOLVED drops below the corpus-measured baseline (2,578 as of 2026-07). |
 | `extract_people.py` | people.yml + indexes → `wiki/people/*.md`. Unknowns accumulate in `_generated/people-unmapped.txt`. |
 | `link_refs.py` | Auto-links referenceable entities in wiki prose (idempotent): issue/PR numbers `#<N>` → the csswg-drafts issue, and known people (`@github` / login / nick ≥4) → their people page. Skips frontmatter, code, bare URLs, existing links, and blockquotes (verbatim quotations). |
-| `build_digest_candidates.py [--days N] [--until DATE]` | Gathers the week's digest input from `_generated/` + the mirror (no GitHub API): resolutions, Agenda+/Needs-Edits issues, hot discussions (≥5 comments in window), spec status changes (latest TR version dated in window). Tags items with the wiki feature whose host spec matches. Every item carries a permalink. Output `_generated/digest-candidates/<until>.{json,md}`. |
-| `build_feed.py` | Builds `docs/{feed.xml,feed.json,index.html}` from `wiki/digests/*.md`. **Fails** if a csswg-drafts/lists.w3.org/TR link in a digest body is not in that week's candidate pack (anti-fabrication gate). stdlib only. |
+| `build_digest_candidates.py [--days N] [--until DATE] [--month YYYY-MM]` | Gathers digest input from `_generated/` + the mirror (no GitHub API): resolutions, Agenda+/Needs-Edits issues, hot discussions (≥5 comments in window), spec status changes. Each resolution is enriched with `background` (issue opener), `related` (issues the body cites) and `irc` (verbatim meeting log from the bot comment); hot items carry `recent` (window's last human comments). Tags items with the matching wiki feature. `--month` builds the deeper monthly pack (`span: month`, stem `<YYYY-MM>`) adding `deep`: the ~15 busiest threads each with a full comment ledger (permalink per comment) — the case-C material. Every item carries a permalink. |
+| `build_feed.py` | Builds `docs/{feed.xml,feed.json,index.html}` from `wiki/digests/*.md` (weekly `YYYY-Www` + monthly `YYYY-MM`). **Fails** if a csswg-drafts/lists.w3.org/TR link in a digest body is not in that digest's candidate pack — named by the digest's `pack:` frontmatter, else `<until>.json` (anti-fabrication gate). stdlib only. |
 | `scrape_www_style.py --minutes\|--month\|--all\|--incremental [--dry-run]` | Polite mirror (1 req/s, contact UA, existing files never touched) of the public www-style archive into `www-style/<YYYYMon>/<NNNN>.md`, 1:1 with archive URLs. Metadata comes from Hypermail HTML comments (In-Reply-To exists only there); pages are decoded per-page from `<meta charset>`; email addresses are never republished. `--minutes` (default range 2008Jan–2017Jun) fetches `[CSSWG] Minutes/Resolutions` mails only; `--all` is the full archive (~28h — run locally overnight, NEVER in CI); `--incremental` is a no-op until `--all` has completed. Per-month sidecars `.messages.jsonl` are rebuilt from local files whenever a month is touched. |
 
 Mirror file format (produced by `sync_issues.py`, parsed by `build_indexes.py`):

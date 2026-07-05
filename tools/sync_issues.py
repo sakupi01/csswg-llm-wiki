@@ -108,8 +108,10 @@ def issue_path(repo: str, number: int, kind: str = "issues") -> Path:
 
 
 def escape_body(body: str) -> str:
-    """A body line matching the sentinel pattern would corrupt reparsing."""
-    return re.sub(r"^<!-- comment ", "<!-- comment(escaped) ", body or "", flags=re.M)
+    """Normalize newlines (GitHub bodies carry CRLF) and neutralize any body
+    line that would collide with the sentinel pattern on reparse."""
+    body = (body or "").replace("\r\n", "\n").replace("\r", "\n")
+    return re.sub(r"^<!-- comment ", "<!-- comment(escaped) ", body, flags=re.M)
 
 
 # ---------------------------------------------------------------- file store

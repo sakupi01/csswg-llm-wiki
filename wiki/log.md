@@ -8,3 +8,4 @@ Append-only. One line per operation: `## [YYYY-MM-DD] <kind> | <summary>`.
 ## [2026-07-05] update | CI weekly sync (see Actions run summary)
 ## [2026-07-05] ingest | css-nesting: feature + spec page (syntax wars, & semantics, CSSOM arc); 48 resolutions cited, shipping verified vs vendor sources
 ## [2026-07-05] query | absolute-lengths: feature + css-values-3/4 spec pages (px = reference-pixel viewing angle vs physical anchor; #614/#708/#5221); 3 resolutions cited; added patrickhlauke, nicksherman to people.yml
+## [2026-07-05] ingest | masonry: feature + css-grid-3 spec page (Grid-integration vs separate display; masonry -> display: grid-lanes Nov 2025; naming poll); 13 resolutions cited; added bfgeek, alisonmaher to people.yml

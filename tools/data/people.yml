@@ -205,6 +205,20 @@
   affiliation: Google
   roles: [view transitions]
 
+- slug: bfgeek
+  name: Ian Kilpatrick
+  github: bfgeek
+  irc_nicks: [iank_, bfgeek]
+  affiliation: Google
+  roles: [masonry alternative proposal]
+
+- slug: alisonmaher
+  name: Alison Maher
+  github: alisonmaher
+  irc_nicks: [alisonmaher]
+  affiliation: Microsoft
+  roles: [masonry / grid-lanes]
+
 - slug: patrickhlauke
   name: Patrick H. Lauke
   github: patrickhlauke

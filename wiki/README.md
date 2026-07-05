@@ -34,14 +34,16 @@ Entry point for every query. One line per page; update on every ingest.
 |---|---|---|
 | *(none yet)* | | |
 
-## Weekly digests
+## Digests
 
-"This week in CSSWG" — narrative digests published as [RSS/Atom](https://sakupi01.github.io/csswg-llm-wiki/feed.xml)
+Narrative digests published as [RSS/Atom](https://sakupi01.github.io/csswg-llm-wiki/feed.xml)
 and [JSON Feed](https://sakupi01.github.io/csswg-llm-wiki/feed.json). Sources in `wiki/digests/`.
+Weekly = "This week in CSSWG" (pack-bounded); monthly = deeper arcs/contention (`/monthly-digest`).
 
-| Week | Period |
+| Digest | Period |
 |---|---|
-| [2026-W27](digests/2026-W27.md) | 2026-06-28 – 2026-07-05 |
+| [2026-W27](digests/2026-W27.md) (weekly) | 2026-06-28 – 2026-07-05 |
+| [June 2026](digests/2026-06.md) (monthly) | 2026-06-01 – 2026-06-30 |
 
 ## Not yet ingested
 

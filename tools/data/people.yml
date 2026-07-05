@@ -147,7 +147,7 @@
   github: flackr
   irc_nicks: [flackr]
   affiliation: Google
-  roles: []
+  roles: [scroll-driven animations editor]
 
 - slug: ntim
   name: Tim Nguyen
@@ -190,6 +190,20 @@
   irc_nicks: [andruud]
   affiliation: Google
   roles: []
+
+- slug: birtles
+  name: Brian Birtles
+  github: birtles
+  irc_nicks: [birtles]
+  affiliation: Invited Expert (previously Mozilla)
+  roles: [Web Animations editor]
+
+- slug: majido
+  name: Majid Valipour
+  github: majido
+  irc_nicks: [majido]
+  affiliation: Google
+  roles: [scroll-driven animations (former editor)]
 
 - slug: vmpstr
   name: Vladimir Levin

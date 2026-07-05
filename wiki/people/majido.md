@@ -1,26 +1,26 @@
 ---
-name: "Robert Flack"
-slug: flackr
+name: "Majid Valipour"
+slug: majido
 kind: person
-github: "flackr"
-irc_nicks: ["flackr"]
+github: "majido"
+irc_nicks: ["majido"]
 affiliation: "Google"
 generated_by: llm
 ---
 
-# Robert Flack
+# Majid Valipour
 
-- GitHub: [@flackr](https://github.com/flackr)
-- IRC nicks: `flackr`
+- GitHub: [@majido](https://github.com/majido)
+- IRC nicks: `majido`
 - Affiliation: Google *(verify against `raw/data/w3c-api/group/css/participants.json` before citing)*
 
 ## Roles
 
-- scroll-driven animations editor
+- scroll-driven animations (former editor)
 
 ## Activity in the mirror
 
-Issues authored: 230 / comments: 1600 / IRC minute lines: 236
+Issues authored: 48 / comments: 260 / IRC minute lines: 0
 (from `_generated/people-activity.jsonl`)
 
 ---

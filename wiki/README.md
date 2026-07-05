@@ -13,6 +13,7 @@ Entry point for every query. One line per page; update on every ingest.
 | [CSS Nesting](features/css-nesting.md) | shipped | css-nesting-1 | Native nesting of style rules; history dominated by the "syntax wars" (Option 3 + parser lookahead) and the `&`-as-`:is()` specificity tail |
 | [CSS Masonry (Grid Lanes)](features/masonry.md) | in-discussion | css-grid-3 | Pinterest-style layout; 5-year debate over Grid-integration vs a separate `display: masonry` settled as `display: grid-lanes` (Nov 2025) — a compromise keeping "grid" in the name |
 | [:heading() Selector](features/heading-selector.md) | specified | selectors-5 | Select headings by computed level (not tag), driven by HTML `headingoffset`; fights over class- vs tag-level specificity, `an+b`→list-of-integers reversal (#12599), and whether it follows the a11y tree (#12412) |
+| [Scroll-driven Animations](features/scroll-driven-animations.md) | shipping | scroll-animations-1 | Drive animations by scroll/view timelines; 2021 declarative reboot (fantasai/Miriam) replaced the offset+ID model with `animation-timeline: scroll()`/named timelines; 2026 work aligns timeline-name scoping with view transitions |
 
 ## Specs
 
@@ -23,6 +24,7 @@ Entry point for every query. One line per page; update on every ingest.
 | [css-values-4](specs/css-values-4.md) | WD | absolute-lengths |
 | [css-grid-3](specs/css-grid-3.md) | WD | masonry |
 | [selectors-5](specs/selectors-5.md) | FPWD | heading-selector |
+| [scroll-animations-1](specs/scroll-animations-1.md) | WD | scroll-driven-animations |
 
 ## Families
 

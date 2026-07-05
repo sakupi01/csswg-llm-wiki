@@ -1,0 +1,3333 @@
+{"key": "tabatkins", "comments": 6525, "issues_authored": 341}
+{"key": "fantasai", "comments": 4635, "irc_lines": 562, "issues_authored": 646}
+{"key": "svgeesus", "comments": 4205, "issues_authored": 270}
+{"key": "css-meeting-bot", "comments": 3845}
+{"key": "Loirooriol", "comments": 3113, "issues_authored": 500}
+{"key": "frivoal", "comments": 2527, "issues_authored": 331}
+{"key": "emilio", "comments": 1718, "issues_authored": 280}
+{"key": "LeaVerou", "comments": 1447, "issues_authored": 192}
+{"key": "SebastianZ", "comments": 1326, "issues_authored": 210}
+{"key": "cdoublev", "comments": 903, "issues_authored": 365}
+{"key": "noamr", "comments": 1021, "issues_authored": 96}
+{"key": "dbaron", "comments": 841, "irc_lines": 50, "issues_authored": 196}
+{"key": "litherum", "comments": 919, "issues_authored": 150}
+{"key": "flackr", "comments": 800, "irc_lines": 118, "issues_authored": 115}
+{"key": "bramus", "comments": 939, "issues_authored": 89}
+{"key": "Crissov", "comments": 895, "issues_authored": 124}
+{"key": "astearns", "comments": 933, "irc_lines": 24, "issues_authored": 18}
+{"key": "birtles", "comments": 802, "irc_lines": 3, "issues_authored": 108}
+{"key": "mirisuzanne", "comments": 798, "issues_authored": 74}
+{"key": "FremyCompany", "comments": 734, "issues_authored": 35}
+{"key": "romainmenke", "comments": 670, "issues_authored": 96}
+{"key": "nt1m", "comments": 631, "issues_authored": 84}
+{"key": "AmeliaBR", "comments": 661, "issues_authored": 43}
+{"key": "upsuper", "comments": 602, "issues_authored": 102}
+{"key": "kojiishi", "comments": 625, "issues_authored": 70}
+{"key": "andruud", "comments": 553, "issues_authored": 105}
+{"key": "khushalsagar", "comments": 521, "issues_authored": 76}
+{"key": "smfr", "comments": 459, "irc_lines": 10, "issues_authored": 118}
+{"key": "bfgeek", "comments": 459, "issues_authored": 74}
+{"key": "chrishtr", "comments": 483, "issues_authored": 41}
+{"key": "jfkthame", "comments": 440, "issues_authored": 77}
+{"key": "ydaniv", "comments": 467, "issues_authored": 35}
+{"key": "jakearchibald", "comments": 446, "issues_authored": 55}
+{"key": "MatsPalmgren", "comments": 403, "issues_authored": 90}
+{"key": "rachelandrew", "comments": 270, "irc_lines": 169, "issues_authored": 42}
+{"key": "faceless2", "comments": 421, "issues_authored": 52}
+{"key": "zcorpan", "comments": 397, "issues_authored": 62}
+{"key": "yisibl", "comments": 431, "issues_authored": 20}
+{"key": "dholbert", "comments": 375, "issues_authored": 72}
+{"key": "kizu", "comments": 394, "issues_authored": 48}
+{"key": "SelenIT", "comments": 425, "issues_authored": 14}
+{"key": "annevk", "comments": 354, "issues_authored": 71}
+{"key": "vmpstr", "comments": 349, "issues_authored": 66}
+{"key": "r12a", "comments": 328, "issues_authored": 77}
+{"key": "weinig", "comments": 231, "issues_authored": 131}
+{"key": "bradkemper", "comments": 335, "issues_authored": 11}
+{"key": "jonjohnjohnson", "comments": 317, "issues_authored": 24}
+{"key": "tantek", "comments": 51, "irc_lines": 259, "issues_authored": 30}
+{"key": "lilles", "comments": 300, "issues_authored": 32}
+{"key": "lukewarlow", "comments": 262, "issues_authored": 70}
+{"key": "kbabbitt", "comments": 266, "issues_authored": 39}
+{"key": "gsnedders", "comments": 198, "issues_authored": 104}
+{"key": "plinss", "comments": 280, "irc_lines": 2, "issues_authored": 15}
+{"key": "mfreed7", "comments": 258, "issues_authored": 30}
+{"key": "josepharhar", "comments": 255, "issues_authored": 28}
+{"key": "xiaochengh", "comments": 228, "issues_authored": 50}
+{"key": "facelessuser", "comments": 264, "issues_authored": 7}
+{"key": "jsnkuhn", "comments": 225, "issues_authored": 35}
+{"key": "xfq", "comments": 207, "issues_authored": 51}
+{"key": "gregwhitworth", "comments": 202, "issues_authored": 53}
+{"key": "mrego", "comments": 221, "issues_authored": 32}
+{"key": "gitspeaks", "comments": 193, "issues_authored": 50}
+{"key": "argyleink", "comments": 200, "issues_authored": 30}
+{"key": "drott", "comments": 191, "issues_authored": 37}
+{"key": "jensimmons", "comments": 202, "issues_authored": 25}
+{"key": "mstensho", "comments": 197, "issues_authored": 30}
+{"key": "johannesodland", "comments": 176, "issues_authored": 46}
+{"key": "brandonmcconnell", "comments": 192, "issues_authored": 23}
+{"key": "benface", "comments": 174, "issues_authored": 31}
+{"key": "cookiecrook", "comments": 182, "issues_authored": 15}
+{"key": "alisonmaher", "comments": 163, "issues_authored": 32}
+{"key": "tobireif", "comments": 176, "issues_authored": 14}
+{"key": "javifernandez", "comments": 152, "issues_authored": 31}
+{"key": "ewilligers", "comments": 138, "issues_authored": 44}
+{"key": "graouts", "comments": 122, "issues_authored": 56}
+{"key": "davidsgrogan", "comments": 151, "issues_authored": 26}
+{"key": "cbiesinger", "comments": 120, "issues_authored": 39}
+{"key": "majido", "comments": 130, "issues_authored": 24}
+{"key": "bzbarsky", "comments": 122, "issues_authored": 29}
+{"key": "Nadya678", "comments": 111, "issues_authored": 29}
+{"key": "foolip", "comments": 111, "issues_authored": 25}
+{"key": "heycam", "comments": 106, "issues_authored": 30}
+{"key": "rniwa", "comments": 125, "issues_authored": 11}
+{"key": "DavMila", "comments": 104, "issues_authored": 25}
+{"key": "bkardell", "comments": 107, "issues_authored": 18}
+{"key": "myles", "irc_lines": 125}
+{"key": "patrickhlauke", "comments": 101, "issues_authored": 17}
+{"key": "AtkinsSJ", "comments": 75, "issues_authored": 42}
+{"key": "Zhang-Junzhi", "comments": 86, "issues_authored": 31}
+{"key": "JoshTumath", "comments": 106, "issues_authored": 9}
+{"key": "schenney-chromium", "comments": 101, "issues_authored": 14}
+{"key": "Myndex", "comments": 108, "issues_authored": 6}
+{"key": "dino", "irc_lines": 114}
+{"key": "BorisChiou", "comments": 77, "issues_authored": 34}
+{"key": "Dan503", "comments": 102, "issues_authored": 8}
+{"key": "andreubotella", "comments": 85, "issues_authored": 25}
+{"key": "sesse", "comments": 86, "issues_authored": 21}
+{"key": "ByteEater-pl", "comments": 95, "issues_authored": 11}
+{"key": "TabAtkins", "irc_lines": 106}
+{"key": "jihyerish", "comments": 91, "issues_authored": 14}
+{"key": "ExE-Boss", "comments": 87, "issues_authored": 17}
+{"key": "matthew-dean", "comments": 98, "issues_authored": 6}
+{"key": "SimonSapin", "comments": 67, "irc_lines": 5, "issues_authored": 30}
+{"key": "ghost", "comments": 73, "issues_authored": 29}
+{"key": "ccameron-chromium", "comments": 92, "issues_authored": 8}
+{"key": "dauwhe", "comments": 81, "issues_authored": 18}
+{"key": "jonathantneal", "comments": 72, "issues_authored": 26}
+{"key": "Psychpsyo", "comments": 61, "issues_authored": 35}
+{"key": "una", "comments": 88, "issues_authored": 7}
+{"key": "TalbotG", "comments": 77, "issues_authored": 17}
+{"key": "MurakamiShinyu", "comments": 74, "issues_authored": 14}
+{"key": "cvrebert", "comments": 44, "issues_authored": 42}
+{"key": "dirkschulze", "comments": 74, "issues_authored": 12}
+{"key": "fred-wang", "comments": 71, "issues_authored": 14}
+{"key": "scottkellum", "comments": 70, "issues_authored": 15}
+{"key": "grorg", "comments": 67, "issues_authored": 17}
+{"key": "danburzo", "comments": 72, "issues_authored": 11}
+{"key": "keithamus", "comments": 68, "issues_authored": 15}
+{"key": "bokand", "comments": 74, "issues_authored": 8}
+{"key": "delan", "comments": 61, "issues_authored": 20}
+{"key": "simevidas", "comments": 56, "issues_authored": 25}
+{"key": "aphillips", "comments": 68, "issues_authored": 12}
+{"key": "atotic", "comments": 67, "issues_authored": 11}
+{"key": "fergald", "comments": 65, "issues_authored": 12}
+{"key": "trusktr", "comments": 60, "issues_authored": 17}
+{"key": "karlcow", "comments": 54, "issues_authored": 22}
+{"key": "inoas", "comments": 72, "issues_authored": 1}
+{"key": "hiikezoe", "comments": 42, "issues_authored": 30}
+{"key": "sideshowbarker", "comments": 57, "issues_authored": 15}
+{"key": "sorvell", "comments": 65, "issues_authored": 7}
+{"key": "dshin-moz", "comments": 41, "issues_authored": 30}
+{"key": "shane", "irc_lines": 71}
+{"key": "davelab6", "comments": 64, "issues_authored": 6}
+{"key": "mayank99", "comments": 59, "issues_authored": 10}
+{"key": "domenic", "comments": 56, "issues_authored": 12}
+{"key": "kevers-google", "comments": 47, "issues_authored": 21}
+{"key": "nigelmegitt", "comments": 64, "issues_authored": 4}
+{"key": "stephenmcgruer", "comments": 45, "issues_authored": 21}
+{"key": "danielsakhapov", "comments": 49, "issues_authored": 16}
+{"key": "hober", "comments": 53, "issues_authored": 11}
+{"key": "mattwoodrow", "comments": 50, "issues_authored": 14}
+{"key": "atanassov", "comments": 57, "issues_authored": 6}
+{"key": "sanketj", "comments": 55, "issues_authored": 8}
+{"key": "skobes-chromium", "comments": 50, "issues_authored": 13}
+{"key": "tats-u", "comments": 58, "issues_authored": 5}
+{"key": "tomhodgins", "comments": 57, "issues_authored": 4}
+{"key": "Que-tin", "comments": 48, "issues_authored": 11}
+{"key": "meyerweb", "comments": 51, "issues_authored": 8}
+{"key": "tiroj", "comments": 59}
+{"key": "devongovett", "comments": 48, "issues_authored": 8}
+{"key": "Lorp", "comments": 51, "issues_authored": 4}
+{"key": "alice", "comments": 52, "issues_authored": 3}
+{"key": "anttijk", "comments": 46, "issues_authored": 9}
+{"key": "valtlai", "comments": 40, "issues_authored": 15}
+{"key": "jimmyfrasche", "comments": 52, "issues_authored": 2}
+{"key": "dandclark", "comments": 45, "issues_authored": 8}
+{"key": "macnmm", "comments": 44, "issues_authored": 9}
+{"key": "nex3", "comments": 44, "issues_authored": 8}
+{"key": "bleper", "comments": 48, "issues_authored": 3}
+{"key": "clshortfuse", "comments": 47, "issues_authored": 3}
+{"key": "jogibear9988", "comments": 42, "issues_authored": 8}
+{"key": "carlosame", "comments": 49}
+{"key": "visiblecode", "comments": 49}
+{"key": "RByers", "comments": 39, "issues_authored": 9}
+{"key": "KevinDoughty", "comments": 37, "issues_authored": 10}
+{"key": "Manishearth", "comments": 34, "issues_authored": 13}
+{"key": "Westbrook", "comments": 45, "issues_authored": 2}
+{"key": "eeeps", "comments": 42, "issues_authored": 5}
+{"key": "progers", "comments": 41, "issues_authored": 6}
+{"key": "tidoust", "comments": 19, "issues_authored": 28}
+{"key": "jpamental", "comments": 44, "issues_authored": 2}
+{"key": "justinfagnani", "comments": 41, "issues_authored": 5}
+{"key": "mysteryDate", "comments": 41, "issues_authored": 5}
+{"key": "pes10k", "comments": 42, "issues_authored": 4}
+{"key": "bernhardf-ro", "comments": 31, "issues_authored": 14}
+{"key": "cabanier", "comments": 43, "issues_authored": 2}
+{"key": "frehner", "comments": 43, "issues_authored": 2}
+{"key": "jamesnw", "comments": 41, "issues_authored": 4}
+{"key": "myakura", "comments": 38, "issues_authored": 7}
+{"key": "DarkWiiPlayer", "comments": 43, "issues_authored": 1}
+{"key": "Malvoz", "comments": 38, "issues_authored": 6}
+{"key": "SetTrend", "comments": 33, "issues_authored": 11}
+{"key": "csnardi", "comments": 33, "issues_authored": 11}
+{"key": "george-steel", "comments": 32, "issues_authored": 12}
+{"key": "jyasskin", "comments": 29, "issues_authored": 15}
+{"key": "KurtCattiSchmidt", "comments": 29, "issues_authored": 14}
+{"key": "castastrophe", "comments": 39, "issues_authored": 4}
+{"key": "keithjgrant", "comments": 39, "issues_authored": 4}
+{"key": "saschanaz", "comments": 24, "issues_authored": 19}
+{"key": "tomayac", "comments": 37, "issues_authored": 6}
+{"key": "ChrisL_", "irc_lines": 41}
+{"key": "dead-claudia", "comments": 34, "issues_authored": 7}
+{"key": "kidayasuo", "comments": 41}
+{"key": "pyoor", "comments": 10, "issues_authored": 30}
+{"key": "smaug----", "comments": 29, "issues_authored": 11}
+{"key": "nicksherman", "comments": 37, "issues_authored": 2}
+{"key": "theres-waldo", "comments": 32, "issues_authored": 7}
+{"key": "aethanyc", "comments": 30, "issues_authored": 8}
+{"key": "behdad", "comments": 37, "issues_authored": 1}
+{"key": "cathiechen", "comments": 30, "issues_authored": 8}
+{"key": "felipeerias", "comments": 33, "issues_authored": 5}
+{"key": "liamquin", "comments": 35, "issues_authored": 3}
+{"key": "jwatt", "comments": 15, "issues_authored": 22}
+{"key": "proimage", "comments": 35, "issues_authored": 2}
+{"key": "rcabanier", "comments": 34, "issues_authored": 3}
+{"key": "svillar", "comments": 30, "issues_authored": 7}
+{"key": "korenevskiy", "comments": 31, "issues_authored": 5}
+{"key": "nmn", "comments": 36}
+{"key": "o-t-w", "comments": 29, "issues_authored": 7}
+{"key": "JaneOri", "comments": 30, "issues_authored": 5}
+{"key": "chriskirknielsen", "comments": 29, "issues_authored": 6}
+{"key": "jpzwarte", "comments": 31, "issues_authored": 4}
+{"key": "sb3nder", "comments": 31, "issues_authored": 4}
+{"key": "vitorroriz", "comments": 20, "issues_authored": 15}
+{"key": "Marat-Tanalin", "comments": 33, "issues_authored": 1}
+{"key": "TKDev7", "comments": 28, "issues_authored": 6}
+{"key": "wangxianzhu", "comments": 26, "issues_authored": 8}
+{"key": "dontcallmedom-bot", "issues_authored": 33}
+{"key": "hunboy", "comments": 25, "issues_authored": 8}
+{"key": "miragecraft", "comments": 27, "issues_authored": 6}
+{"key": "matthewp", "comments": 31, "issues_authored": 1}
+{"key": "szager-chromium", "comments": 26, "issues_authored": 6}
+{"key": "ChumpChief", "comments": 26, "issues_authored": 5}
+{"key": "GPHemsley", "comments": 26, "issues_authored": 5}
+{"key": "craigkovatch", "comments": 28, "issues_authored": 3}
+{"key": "oSamDavis", "comments": 24, "issues_authored": 7}
+{"key": "jav099", "comments": 22, "issues_authored": 8}
+{"key": "aardrian", "comments": 26, "issues_authored": 3}
+{"key": "darktears", "comments": 27, "issues_authored": 2}
+{"key": "diekus", "comments": 23, "issues_authored": 6}
+{"key": "dlibby-", "comments": 28, "issues_authored": 1}
+{"key": "oleedd", "comments": 25, "issues_authored": 4}
+{"key": "Afif13", "comments": 23, "issues_authored": 5}
+{"key": "Nokel81", "comments": 23, "issues_authored": 5}
+{"key": "brunoais", "comments": 27, "issues_authored": 1}
+{"key": "laukstein", "comments": 24, "issues_authored": 4}
+{"key": "phistuck", "comments": 23, "issues_authored": 5}
+{"key": "samuelbradshaw", "comments": 27, "issues_authored": 1}
+{"key": "verbessern", "comments": 21, "issues_authored": 7}
+{"key": "vrugtehagel", "comments": 24, "issues_authored": 4}
+{"key": "AutoSponge", "comments": 26, "issues_authored": 1}
+{"key": "BillGoldstein", "comments": 15, "issues_authored": 12}
+{"key": "hayatoito", "comments": 26, "issues_authored": 1}
+{"key": "therealglazou", "comments": 23, "issues_authored": 4}
+{"key": "tkent-google", "comments": 27}
+{"key": "yoavweiss", "comments": 26, "issues_authored": 1}
+{"key": "ffiori", "comments": 15, "issues_authored": 11}
+{"key": "jrus", "comments": 26}
+{"key": "othermaciej", "comments": 26}
+{"key": "palemieux", "comments": 20, "issues_authored": 6}
+{"key": "tuankiet65", "comments": 16, "issues_authored": 10}
+{"key": "hfhchan", "comments": 19, "issues_authored": 6}
+{"key": "js-choi", "comments": 25}
+{"key": "kannanwisen", "comments": 15, "issues_authored": 10}
+{"key": "patrickdark", "comments": 24, "issues_authored": 1}
+{"key": "celestepan", "comments": 16, "issues_authored": 8}
+{"key": "hsivonen", "comments": 23, "issues_authored": 1}
+{"key": "johanneswilm", "comments": 23, "issues_authored": 1}
+{"key": "yarusome", "comments": 8, "issues_authored": 16}
+{"key": "Alohci", "comments": 20, "issues_authored": 3}
+{"key": "DavidMacDonald", "comments": 22, "issues_authored": 1}
+{"key": "TakayoshiKochi", "comments": 20, "issues_authored": 3}
+{"key": "danegraphics", "comments": 22, "issues_authored": 1}
+{"key": "dlrobertson", "comments": 17, "issues_authored": 6}
+{"key": "kbhomes", "comments": 17, "issues_authored": 6}
+{"key": "mdubet", "comments": 21, "issues_authored": 2}
+{"key": "myfonj", "comments": 21, "issues_authored": 2}
+{"key": "nicoburns", "comments": 19, "issues_authored": 4}
+{"key": "shivamidow", "comments": 20, "issues_authored": 3}
+{"key": "tomasts248", "comments": 16, "issues_authored": 7}
+{"key": "vlevantovsky", "comments": 17, "issues_authored": 6}
+{"key": "chharvey", "comments": 17, "issues_authored": 5}
+{"key": "eqrion", "comments": 13, "issues_authored": 9}
+{"key": "gavinmcfarland", "comments": 20, "issues_authored": 2}
+{"key": "karl-police", "comments": 17, "issues_authored": 5}
+{"key": "tursunova", "comments": 13, "issues_authored": 9}
+{"key": "wesleyolis", "comments": 2, "issues_authored": 20}
+{"key": "x-Jake-x", "comments": 22}
+{"key": "CShepartd", "comments": 21}
+{"key": "CyberAP", "comments": 17, "issues_authored": 4}
+{"key": "Meteor0id", "comments": 13, "issues_authored": 8}
+{"key": "c933103", "comments": 16, "issues_authored": 5}
+{"key": "himorin", "comments": 17, "issues_authored": 4}
+{"key": "hugoholgersson", "comments": 19, "issues_authored": 2}
+{"key": "janvarga", "comments": 10, "issues_authored": 11}
+{"key": "kbrilla", "comments": 20, "issues_authored": 1}
+{"key": "mattgperry", "comments": 18, "issues_authored": 3}
+{"key": "PeterCon", "comments": 15, "issues_authored": 5}
+{"key": "RoelN", "comments": 17, "issues_authored": 3}
+{"key": "Rossen", "irc_lines": 20}
+{"key": "alancutter", "comments": 14, "issues_authored": 6}
+{"key": "anawhj", "comments": 19, "issues_authored": 1}
+{"key": "andyearnshaw", "comments": 17, "issues_authored": 3}
+{"key": "bmathwig", "comments": 18, "issues_authored": 2}
+{"key": "dizhang168", "comments": 18, "issues_authored": 2}
+{"key": "dontcallmedom", "comments": 13, "issues_authored": 7}
+{"key": "khaledhosny", "comments": 20}
+{"key": "matatk", "comments": 13, "issues_authored": 7}
+{"key": "praveenpuglia", "comments": 12, "issues_authored": 8}
+{"key": "vwkd", "comments": 10, "issues_authored": 10}
+{"key": "NightFurySL2001", "comments": 17, "issues_authored": 2}
+{"key": "OliverJAsh", "comments": 17, "issues_authored": 2}
+{"key": "SergeyMalkin", "comments": 17, "issues_authored": 2}
+{"key": "bakura10", "comments": 13, "issues_authored": 6}
+{"key": "chriseppstein", "comments": 17, "issues_authored": 2}
+{"key": "ianthedev", "comments": 17, "issues_authored": 2}
+{"key": "knowler", "comments": 12, "issues_authored": 7}
+{"key": "nuxodin", "comments": 16, "issues_authored": 3}
+{"key": "ogerchikov", "comments": 18, "issues_authored": 1}
+{"key": "prlbr", "comments": 16, "issues_authored": 3}
+{"key": "radogado", "comments": 16, "issues_authored": 3}
+{"key": "ramiy", "comments": 15, "issues_authored": 4}
+{"key": "ExtAnimal", "comments": 11, "issues_authored": 7}
+{"key": "arturjanc", "comments": 18}
+{"key": "karip", "comments": 14, "issues_authored": 4}
+{"key": "martrapp", "comments": 16, "issues_authored": 2}
+{"key": "robmck-ms", "comments": 15, "issues_authored": 3}
+{"key": "thebabydino", "comments": 18}
+{"key": "vrubleg", "comments": 18}
+{"key": "Array23", "comments": 9, "issues_authored": 8}
+{"key": "JoshuaLindquist", "comments": 16, "issues_authored": 1}
+{"key": "Kilian", "comments": 14, "issues_authored": 3}
+{"key": "leaverou", "irc_lines": 17}
+{"key": "manuelmeister", "comments": 14, "issues_authored": 3}
+{"key": "mgol", "comments": 14, "issues_authored": 3}
+{"key": "mind-bending-forks", "comments": 16, "issues_authored": 1}
+{"key": "stantonmarcum", "comments": 12, "issues_authored": 5}
+{"key": "waterplea", "comments": 14, "issues_authored": 3}
+{"key": "yairEO", "comments": 13, "issues_authored": 4}
+{"key": "AdamSobieski", "comments": 11, "issues_authored": 5}
+{"key": "CanadaHonk", "comments": 12, "issues_authored": 4}
+{"key": "DeeDeeG", "comments": 14, "issues_authored": 2}
+{"key": "Ms2ger", "comments": 5, "issues_authored": 11}
+{"key": "brechtDR", "comments": 12, "issues_authored": 4}
+{"key": "byung-woo", "comments": 12, "issues_authored": 4}
+{"key": "calinoracation", "comments": 16}
+{"key": "chcunningham", "comments": 15, "issues_authored": 1}
+{"key": "francescorn", "comments": 10, "issues_authored": 6}
+{"key": "longsonr", "comments": 14, "issues_authored": 2}
+{"key": "nearestnabors", "comments": 15, "issues_authored": 1}
+{"key": "ntounsi", "comments": 12, "issues_authored": 4}
+{"key": "smhigley", "comments": 11, "issues_authored": 5}
+{"key": "Aleksandra0056", "comments": 14, "issues_authored": 1}
+{"key": "Calme1709", "comments": 5, "issues_authored": 10}
+{"key": "CharlesBelov", "comments": 10, "issues_authored": 5}
+{"key": "DevSDK", "comments": 10, "issues_authored": 5}
+{"key": "Schepp", "comments": 12, "issues_authored": 3}
+{"key": "Wes1262", "comments": 5, "issues_authored": 10}
+{"key": "andyjakubowski", "comments": 9, "issues_authored": 6}
+{"key": "anjia", "comments": 15}
+{"key": "coreyworrell", "comments": 15}
+{"key": "ethanjv", "comments": 9, "issues_authored": 6}
+{"key": "fabiospampinato", "comments": 12, "issues_authored": 3}
+{"key": "flachware", "comments": 13, "issues_authored": 2}
+{"key": "hftf", "comments": 12, "issues_authored": 3}
+{"key": "kyerebo", "comments": 14, "issues_authored": 1}
+{"key": "mangelozzi", "comments": 9, "issues_authored": 6}
+{"key": "mstange", "comments": 11, "issues_authored": 4}
+{"key": "nattarnoff", "comments": 12, "issues_authored": 3}
+{"key": "nico3333fr", "comments": 11, "issues_authored": 4}
+{"key": "prjnt", "comments": 10, "issues_authored": 5}
+{"key": "siliu1", "comments": 12, "issues_authored": 3}
+{"key": "stubbornella", "comments": 13, "issues_authored": 2}
+{"key": "JAWS-test", "comments": 13, "issues_authored": 1}
+{"key": "MadeByMike", "comments": 13, "issues_authored": 1}
+{"key": "a2sheppy", "comments": 10, "issues_authored": 4}
+{"key": "ausi", "comments": 14}
+{"key": "c-smile", "comments": 13, "issues_authored": 1}
+{"key": "clagnut", "comments": 14}
+{"key": "daKmoR", "comments": 13, "issues_authored": 1}
+{"key": "dbates-wk", "comments": 11, "issues_authored": 3}
+{"key": "giuseppeg", "comments": 14}
+{"key": "ionas", "comments": 13, "issues_authored": 1}
+{"key": "jantimon", "comments": 14}
+{"key": "melanierichards", "comments": 11, "issues_authored": 3}
+{"key": "mruncreative", "comments": 14}
+{"key": "nathanchase", "comments": 14}
+{"key": "nox", "comments": 8, "issues_authored": 6}
+{"key": "rreno", "comments": 11, "issues_authored": 3}
+{"key": "rwlbuis", "comments": 11, "issues_authored": 3}
+{"key": "samweinig", "comments": 9, "issues_authored": 5}
+{"key": "squelart", "comments": 10, "issues_authored": 4}
+{"key": "triple-underscore", "comments": 10, "issues_authored": 4}
+{"key": "valler", "comments": 13, "issues_authored": 1}
+{"key": "Jamesernator", "comments": 12, "issues_authored": 1}
+{"key": "WebMechanic", "comments": 13}
+{"key": "aaaxx", "comments": 13}
+{"key": "acli", "comments": 13}
+{"key": "amn", "comments": 6, "issues_authored": 7}
+{"key": "benbucksch", "comments": 13}
+{"key": "bluquark", "comments": 13}
+{"key": "craigfrancis", "comments": 12, "issues_authored": 1}
+{"key": "dberlow", "comments": 13}
+{"key": "devknoll", "comments": 8, "issues_authored": 5}
+{"key": "dvoytenko", "comments": 13}
+{"key": "gibson042", "comments": 12, "issues_authored": 1}
+{"key": "hilts-vaughan", "comments": 11, "issues_authored": 2}
+{"key": "impressivewebs", "comments": 5, "issues_authored": 8}
+{"key": "jugglinmike", "comments": 12, "issues_authored": 1}
+{"key": "kdashg", "comments": 13}
+{"key": "kepstin", "comments": 13}
+{"key": "larsenwork", "comments": 12, "issues_authored": 1}
+{"key": "letochagone", "comments": 5, "issues_authored": 8}
+{"key": "marcoscaceres", "comments": 12, "issues_authored": 1}
+{"key": "markcellus", "comments": 10, "issues_authored": 3}
+{"key": "mgiuca", "comments": 10, "issues_authored": 3}
+{"key": "nicolo-ribaudo", "comments": 6, "issues_authored": 7}
+{"key": "raphaelokon", "comments": 11, "issues_authored": 2}
+{"key": "simontWork", "comments": 11, "issues_authored": 2}
+{"key": "stof", "comments": 12, "issues_authored": 1}
+{"key": "tiaanl", "comments": 6, "issues_authored": 7}
+{"key": "tigt", "comments": 8, "issues_authored": 5}
+{"key": "tmgldn", "comments": 9, "issues_authored": 4}
+{"key": "verdy-p", "comments": 11, "issues_authored": 2}
+{"key": "woody-li", "comments": 10, "issues_authored": 3}
+{"key": "zhangenming", "comments": 7, "issues_authored": 6}
+{"key": "ziadkh0", "comments": 13}
+{"key": "ziransun", "comments": 11, "issues_authored": 2}
+{"key": "Bryce-MW", "comments": 12}
+{"key": "EisenbergEffect", "comments": 12}
+{"key": "SYwaves", "comments": 12}
+{"key": "Tyler-H", "comments": 9, "issues_authored": 3}
+{"key": "asmusf", "comments": 12}
+{"key": "bgirard", "comments": 10, "issues_authored": 2}
+{"key": "dd8", "comments": 7, "issues_authored": 5}
+{"key": "emattias", "comments": 7, "issues_authored": 5}
+{"key": "eoghanmurray", "comments": 12}
+{"key": "goldenboy777", "comments": 11, "issues_authored": 1}
+{"key": "hax", "comments": 10, "issues_authored": 2}
+{"key": "henke37", "comments": 12}
+{"key": "hg42", "comments": 12}
+{"key": "lahmatiy", "comments": 6, "issues_authored": 6}
+{"key": "lubomirblazekcz", "comments": 11, "issues_authored": 1}
+{"key": "mantou132", "comments": 7, "issues_authored": 5}
+{"key": "mustaqahmed", "comments": 10, "issues_authored": 2}
+{"key": "notoriousb1t", "comments": 10, "issues_authored": 2}
+{"key": "oscarotero", "comments": 11, "issues_authored": 1}
+{"key": "rchrdnsh", "comments": 11, "issues_authored": 1}
+{"key": "scottaohara", "comments": 12}
+{"key": "shallawa", "comments": 9, "issues_authored": 3}
+{"key": "shans", "comments": 11, "issues_authored": 1}
+{"key": "CendioOssman", "comments": 8, "issues_authored": 3}
+{"key": "EricSL", "comments": 9, "issues_authored": 2}
+{"key": "Heydon", "comments": 11}
+{"key": "NavidZ", "comments": 10, "issues_authored": 1}
+{"key": "RobMayer", "comments": 7, "issues_authored": 4}
+{"key": "Th3S4mur41", "comments": 10, "issues_authored": 1}
+{"key": "WebReflection", "comments": 10, "issues_authored": 1}
+{"key": "arrowtype", "comments": 11}
+{"key": "bert-github", "comments": 7, "issues_authored": 4}
+{"key": "briansmith", "comments": 9, "issues_authored": 2}
+{"key": "chenpighead", "comments": 5, "issues_authored": 6}
+{"key": "chrisarmstrong", "comments": 11}
+{"key": "davidwebca", "comments": 11}
+{"key": "edbaafi", "comments": 11}
+{"key": "estelle", "comments": 5, "issues_authored": 6}
+{"key": "fserb", "comments": 7, "issues_authored": 4}
+{"key": "j9t", "comments": 4, "issues_authored": 7}
+{"key": "jonathandewitt-dev", "comments": 9, "issues_authored": 2}
+{"key": "lcchueri", "comments": 5, "issues_authored": 6}
+{"key": "lpd-au", "comments": 9, "issues_authored": 2}
+{"key": "masayuki-nakano", "comments": 9, "issues_authored": 2}
+{"key": "mclegrand", "comments": 7, "issues_authored": 4}
+{"key": "mhochk", "comments": 11}
+{"key": "nickcoury", "comments": 11}
+{"key": "pygy", "comments": 10, "issues_authored": 1}
+{"key": "revoltpuppy", "comments": 11}
+{"key": "richiksc", "comments": 10, "issues_authored": 1}
+{"key": "ruphin", "comments": 11}
+{"key": "sakupi01", "comments": 9, "issues_authored": 2}
+{"key": "sammygill", "comments": 2, "issues_authored": 9}
+{"key": "sdwlig", "comments": 10, "issues_authored": 1}
+{"key": "swick", "comments": 9, "issues_authored": 2}
+{"key": "webstrand", "comments": 11}
+{"key": "zed-vector", "comments": 10, "issues_authored": 1}
+{"key": "Jiang-Xuan", "comments": 7, "issues_authored": 3}
+{"key": "Link2Twenty", "comments": 10}
+{"key": "MattWilcox", "comments": 9, "issues_authored": 1}
+{"key": "RazrFalcon", "comments": 5, "issues_authored": 5}
+{"key": "SofyaPovarova", "comments": 5, "issues_authored": 5}
+{"key": "alystair", "comments": 9, "issues_authored": 1}
+{"key": "benfrain", "comments": 8, "issues_authored": 2}
+{"key": "bmaurer", "comments": 9, "issues_authored": 1}
+{"key": "captainbrosset", "comments": 8, "issues_authored": 2}
+{"key": "denk0403", "comments": 8, "issues_authored": 2}
+{"key": "elsiehupp", "comments": 9, "issues_authored": 1}
+{"key": "fireattack", "comments": 9, "issues_authored": 1}
+{"key": "fsoder", "comments": 9, "issues_authored": 1}
+{"key": "justingrant", "comments": 9, "issues_authored": 1}
+{"key": "kahsieh", "comments": 9, "issues_authored": 1}
+{"key": "madmoizo", "comments": 8, "issues_authored": 2}
+{"key": "michael-n-cooper", "comments": 10}
+{"key": "nmoucht", "comments": 3, "issues_authored": 7}
+{"key": "okikio", "comments": 10}
+{"key": "rakina", "comments": 9, "issues_authored": 1}
+{"key": "robglidden", "comments": 8, "issues_authored": 2}
+{"key": "rviscomi", "comments": 10}
+{"key": "shshaw", "comments": 9, "issues_authored": 1}
+{"key": "simonbuerger", "comments": 10}
+{"key": "surma", "comments": 5, "issues_authored": 5}
+{"key": "tshinnic", "comments": 4, "issues_authored": 6}
+{"key": "vidhill", "comments": 9, "issues_authored": 1}
+{"key": "BartolomeSintes", "comments": 4, "issues_authored": 5}
+{"key": "BenjaminAster", "comments": 6, "issues_authored": 3}
+{"key": "ChrisL", "irc_lines": 9}
+{"key": "EiraGe", "comments": 6, "issues_authored": 3}
+{"key": "IanBellomy", "comments": 6, "issues_authored": 3}
+{"key": "JanMiksovsky", "comments": 7, "issues_authored": 2}
+{"key": "KennethHoff", "comments": 9}
+{"key": "LaurenceZaysser", "comments": 1, "issues_authored": 8}
+{"key": "NateBaldwinDesign", "comments": 8, "issues_authored": 1}
+{"key": "NickGard", "comments": 6, "issues_authored": 3}
+{"key": "OnkarRuikar", "comments": 3, "issues_authored": 6}
+{"key": "WestonThayer", "comments": 9}
+{"key": "WickyNilliams", "comments": 9}
+{"key": "alastc", "comments": 7, "issues_authored": 2}
+{"key": "amir2mi", "comments": 7, "issues_authored": 2}
+{"key": "bathos", "comments": 7, "issues_authored": 2}
+{"key": "bungeman", "comments": 8, "issues_authored": 1}
+{"key": "caub", "comments": 5, "issues_authored": 4}
+{"key": "chris-morgan", "comments": 8, "issues_authored": 1}
+{"key": "chriscoyier", "comments": 9}
+{"key": "ddamato", "comments": 8, "issues_authored": 1}
+{"key": "dpk", "comments": 5, "issues_authored": 4}
+{"key": "dscorbett", "comments": 8, "issues_authored": 1}
+{"key": "equinusocio", "comments": 9}
+{"key": "fregante", "comments": 8, "issues_authored": 1}
+{"key": "gminky", "comments": 7, "issues_authored": 2}
+{"key": "greggman", "comments": 5, "issues_authored": 4}
+{"key": "infinity0", "comments": 8, "issues_authored": 1}
+{"key": "jayaddison", "comments": 9}
+{"key": "jcsteh", "comments": 9}
+{"key": "jh3y", "comments": 8, "issues_authored": 1}
+{"key": "joonghunpark", "comments": 7, "issues_authored": 2}
+{"key": "jparnzen", "comments": 8, "issues_authored": 1}
+{"key": "jridgewell", "comments": 6, "issues_authored": 3}
+{"key": "michaelwasserman", "comments": 6, "issues_authored": 3}
+{"key": "mkrause", "comments": 8, "issues_authored": 1}
+{"key": "nhoizey", "comments": 9}
+{"key": "otomad", "comments": 5, "issues_authored": 4}
+{"key": "philcunliffe", "comments": 9}
+{"key": "realskk", "comments": 8, "issues_authored": 1}
+{"key": "rickgregory", "comments": 9}
+{"key": "softworkz", "comments": 7, "issues_authored": 2}
+{"key": "xeenon", "comments": 9}
+{"key": "xi", "comments": 6, "issues_authored": 3}
+{"key": "zp1996", "comments": 8, "issues_authored": 1}
+{"key": "Fuseteam", "comments": 8}
+{"key": "Karric", "comments": 2, "issues_authored": 6}
+{"key": "MReschenberg", "comments": 6, "issues_authored": 2}
+{"key": "Martin-Pitt", "comments": 8}
+{"key": "NicTanghe", "comments": 6, "issues_authored": 2}
+{"key": "Shrinivassab", "comments": 8}
+{"key": "Smilebags", "comments": 8}
+{"key": "TremayneChrist", "comments": 7, "issues_authored": 1}
+{"key": "UnVuTWFu", "comments": 2, "issues_authored": 6}
+{"key": "Zefling", "comments": 5, "issues_authored": 3}
+{"key": "cat394", "comments": 8}
+{"key": "claviska", "comments": 7, "issues_authored": 1}
+{"key": "cncuckoo", "comments": 7, "issues_authored": 1}
+{"key": "flashymittens", "comments": 8}
+{"key": "flavi1", "comments": 7, "issues_authored": 1}
+{"key": "guidobouman", "comments": 7, "issues_authored": 1}
+{"key": "idoros", "comments": 7, "issues_authored": 1}
+{"key": "jakob-e", "comments": 6, "issues_authored": 2}
+{"key": "jetvillegas", "comments": 5, "issues_authored": 3}
+{"key": "jez9999", "comments": 5, "issues_authored": 3}
+{"key": "jorgecasar", "comments": 7, "issues_authored": 1}
+{"key": "kenrussell", "comments": 8}
+{"key": "kevinSuttle", "comments": 5, "issues_authored": 3}
+{"key": "miketaylr", "comments": 5, "issues_authored": 3}
+{"key": "momdo", "comments": 2, "issues_authored": 6}
+{"key": "mrobinson", "comments": 4, "issues_authored": 4}
+{"key": "mtom55", "comments": 6, "issues_authored": 2}
+{"key": "nickserv", "comments": 7, "issues_authored": 1}
+{"key": "pepelsbey", "comments": 8}
+{"key": "philkunz", "comments": 8}
+{"key": "pp-koch", "comments": 8}
+{"key": "quasicomputational", "comments": 5, "issues_authored": 3}
+{"key": "rjgotten", "comments": 8}
+{"key": "sashafirsov", "comments": 7, "issues_authored": 1}
+{"key": "sunright", "issues_authored": 8}
+{"key": "tobie", "comments": 6, "issues_authored": 2}
+{"key": "tylersticka", "comments": 3, "issues_authored": 5}
+{"key": "tzi", "comments": 7, "issues_authored": 1}
+{"key": "zealvurte", "comments": 7, "issues_authored": 1}
+{"key": "zlamma", "comments": 8}
+{"key": "zouhir", "comments": 5, "issues_authored": 3}
+{"key": "Archibald2", "comments": 7}
+{"key": "Awendel", "comments": 6, "issues_authored": 1}
+{"key": "CGQAQ", "comments": 6, "issues_authored": 1}
+{"key": "CJKu", "comments": 1, "issues_authored": 6}
+{"key": "DanMan", "comments": 6, "issues_authored": 1}
+{"key": "Eli-Black-Work", "comments": 7}
+{"key": "Ernedar", "comments": 5, "issues_authored": 2}
+{"key": "Florian", "irc_lines": 7}
+{"key": "GreLI", "comments": 7}
+{"key": "HT-7", "comments": 3, "issues_authored": 4}
+{"key": "JTensai", "comments": 3, "issues_authored": 4}
+{"key": "LcsGa", "comments": 5, "issues_authored": 2}
+{"key": "Monknow", "comments": 5, "issues_authored": 2}
+{"key": "NagayamaToshiaki", "issues_authored": 7}
+{"key": "Richard57", "comments": 7}
+{"key": "Rolf-B", "comments": 4, "issues_authored": 3}
+{"key": "SamB", "comments": 4, "issues_authored": 3}
+{"key": "Sora2455", "comments": 7}
+{"key": "arknu", "comments": 7}
+{"key": "atjn", "comments": 7}
+{"key": "aurelienpierre", "comments": 7}
+{"key": "battaglr", "comments": 7}
+{"key": "beaufortfrancois", "comments": 6, "issues_authored": 1}
+{"key": "behnam", "comments": 7}
+{"key": "bigandy", "comments": 5, "issues_authored": 2}
+{"key": "brianosman", "comments": 7}
+{"key": "chearon", "comments": 6, "issues_authored": 1}
+{"key": "clarfonthey", "comments": 6, "issues_authored": 1}
+{"key": "deniak", "comments": 7}
+{"key": "donovanglover", "comments": 7}
+{"key": "dpogue", "comments": 6, "issues_authored": 1}
+{"key": "drmacro", "comments": 2, "issues_authored": 5}
+{"key": "dyacob", "comments": 6, "issues_authored": 1}
+{"key": "ebraminio", "comments": 6, "issues_authored": 1}
+{"key": "fchristant", "comments": 7}
+{"key": "fd", "comments": 7}
+{"key": "fremy", "irc_lines": 7}
+{"key": "fvsch", "comments": 7}
+{"key": "ggedde", "comments": 6, "issues_authored": 1}
+{"key": "gregbenz", "comments": 6, "issues_authored": 1}
+{"key": "hamishwillee", "comments": 5, "issues_authored": 2}
+{"key": "hexalys", "comments": 7}
+{"key": "huijing", "comments": 3, "issues_authored": 4}
+{"key": "jeonghee27", "comments": 6, "issues_authored": 1}
+{"key": "jlukic", "comments": 6, "issues_authored": 1}
+{"key": "joezappie", "comments": 4, "issues_authored": 3}
+{"key": "jolleekin", "comments": 4, "issues_authored": 3}
+{"key": "jsalowey", "comments": 5, "issues_authored": 2}
+{"key": "jungshik", "comments": 7}
+{"key": "jwssnr", "comments": 7}
+{"key": "jyc", "comments": 4, "issues_authored": 3}
+{"key": "klimashkin", "comments": 6, "issues_authored": 1}
+{"key": "lazarljubenovic", "comments": 7}
+{"key": "liZe", "comments": 6, "issues_authored": 1}
+{"key": "markbrown", "comments": 5, "issues_authored": 2}
+{"key": "michaelwarren1106", "comments": 7}
+{"key": "mrleblanc101", "comments": 6, "issues_authored": 1}
+{"key": "muratcorlu", "comments": 6, "issues_authored": 1}
+{"key": "nonopolarity", "comments": 6, "issues_authored": 1}
+{"key": "oriadam", "comments": 6, "issues_authored": 1}
+{"key": "pixelass", "comments": 5, "issues_authored": 2}
+{"key": "pmccloghrylaing", "comments": 4, "issues_authored": 3}
+{"key": "pols12", "comments": 6, "issues_authored": 1}
+{"key": "robdodson", "comments": 7}
+{"key": "rsheeter", "comments": 5, "issues_authored": 2}
+{"key": "snigo", "comments": 5, "issues_authored": 2}
+{"key": "tolmasky", "comments": 6, "issues_authored": 1}
+{"key": "tomalec", "comments": 5, "issues_authored": 2}
+{"key": "tomasdev", "comments": 7}
+{"key": "twardoch", "comments": 7}
+{"key": "v-python", "comments": 5, "issues_authored": 2}
+{"key": "waldbaerkoch", "comments": 3, "issues_authored": 4}
+{"key": "xianshenglu", "comments": 5, "issues_authored": 2}
+{"key": "zoliszabo", "comments": 6, "issues_authored": 1}
+{"key": "0xekez", "comments": 4, "issues_authored": 2}
+{"key": "1jj", "comments": 5, "issues_authored": 1}
+{"key": "AlaskanEmily", "comments": 3, "issues_authored": 3}
+{"key": "AmeroHan", "comments": 4, "issues_authored": 2}
+{"key": "Anoesj", "comments": 6}
+{"key": "DavidJCobb", "comments": 5, "issues_authored": 1}
+{"key": "JacobDB", "comments": 4, "issues_authored": 2}
+{"key": "Kaiido", "comments": 5, "issues_authored": 1}
+{"key": "LJWatson", "comments": 6}
+{"key": "MartijnCuppens", "comments": 3, "issues_authored": 3}
+{"key": "Merci-chao", "comments": 5, "issues_authored": 1}
+{"key": "MrGrigri", "comments": 6}
+{"key": "Pomax", "comments": 4, "issues_authored": 2}
+{"key": "Ptico", "comments": 5, "issues_authored": 1}
+{"key": "RWDavid", "comments": 2, "issues_authored": 4}
+{"key": "SaraSoueidan", "comments": 5, "issues_authored": 1}
+{"key": "WesleyBranton", "comments": 4, "issues_authored": 2}
+{"key": "Wolfr", "comments": 6}
+{"key": "alkorlos", "comments": 5, "issues_authored": 1}
+{"key": "andresgalante", "comments": 2, "issues_authored": 4}
+{"key": "andrewbaxter", "comments": 5, "issues_authored": 1}
+{"key": "arif891", "comments": 4, "issues_authored": 2}
+{"key": "artit-io", "comments": 5, "issues_authored": 1}
+{"key": "autokagami", "issues_authored": 6}
+{"key": "bgrins", "comments": 6}
+{"key": "bobbytung", "comments": 6}
+{"key": "booluw", "comments": 6}
+{"key": "bramstein", "comments": 5, "issues_authored": 1}
+{"key": "brunostasse", "comments": 6}
+{"key": "charbelnicolas", "comments": 5, "issues_authored": 1}
+{"key": "chrislachance", "comments": 4, "issues_authored": 2}
+{"key": "darinadler", "comments": 5, "issues_authored": 1}
+{"key": "dgp1130", "comments": 5, "issues_authored": 1}
+{"key": "dtapuska", "comments": 6}
+{"key": "duerst", "comments": 6}
+{"key": "dylanb", "comments": 6}
+{"key": "ferenci84", "comments": 4, "issues_authored": 2}
+{"key": "fuzzbomb", "comments": 5, "issues_authored": 1}
+{"key": "jabcreations", "comments": 6}
+{"key": "jacobp100", "comments": 5, "issues_authored": 1}
+{"key": "jdm", "comments": 4, "issues_authored": 2}
+{"key": "jespertheend", "comments": 3, "issues_authored": 3}
+{"key": "jeysal", "comments": 5, "issues_authored": 1}
+{"key": "jfrech", "comments": 5, "issues_authored": 1}
+{"key": "jhpratt", "comments": 5, "issues_authored": 1}
+{"key": "jimmywarting", "comments": 3, "issues_authored": 3}
+{"key": "joanmarie", "comments": 6}
+{"key": "jonathanKingston", "comments": 3, "issues_authored": 3}
+{"key": "jorenbroekema", "comments": 5, "issues_authored": 1}
+{"key": "juner", "comments": 6}
+{"key": "lifaon74", "comments": 5, "issues_authored": 1}
+{"key": "matthiasclasen", "comments": 3, "issues_authored": 3}
+{"key": "mindplay-dk", "comments": 6}
+{"key": "mirabilos", "comments": 6}
+{"key": "mrmazda", "comments": 5, "issues_authored": 1}
+{"key": "muodov", "comments": 6}
+{"key": "nainar", "comments": 5, "issues_authored": 1}
+{"key": "nattokirai", "comments": 5, "issues_authored": 1}
+{"key": "nikosandronikos", "comments": 4, "issues_authored": 2}
+{"key": "nileshprajapati", "comments": 6}
+{"key": "plehegar", "comments": 6}
+{"key": "scottjehl", "comments": 3, "issues_authored": 3}
+{"key": "shubhamg13", "comments": 3, "issues_authored": 3}
+{"key": "tbondwilkinson", "comments": 6}
+{"key": "timdream", "comments": 4, "issues_authored": 2}
+{"key": "timreichen", "comments": 5, "issues_authored": 1}
+{"key": "vasilisvg", "comments": 5, "issues_authored": 1}
+{"key": "webdevelopers-eu", "comments": 6}
+{"key": "yi-gu", "comments": 2, "issues_authored": 4}
+{"key": "zestyping", "comments": 6}
+{"key": "ziyunfei", "comments": 5, "issues_authored": 1}
+{"key": "zrhoffman", "comments": 4, "issues_authored": 2}
+{"key": "5e-Cleric", "comments": 4, "issues_authored": 1}
+{"key": "AndySky21", "comments": 2, "issues_authored": 3}
+{"key": "Artoria2e5", "comments": 3, "issues_authored": 2}
+{"key": "Clqsin45", "comments": 3, "issues_authored": 2}
+{"key": "Demitrius", "comments": 4, "issues_authored": 1}
+{"key": "Flame-00", "comments": 4, "issues_authored": 1}
+{"key": "GCSBOSS", "comments": 4, "issues_authored": 1}
+{"key": "GrossDesignCo", "comments": 4, "issues_authored": 1}
+{"key": "HcySunYang", "comments": 3, "issues_authored": 2}
+{"key": "JasonWoof", "comments": 5}
+{"key": "KonnorRogers", "comments": 4, "issues_authored": 1}
+{"key": "MajPay", "comments": 4, "issues_authored": 1}
+{"key": "MarjaE2", "comments": 4, "issues_authored": 1}
+{"key": "MarkUK", "comments": 4, "issues_authored": 1}
+{"key": "Masa-Shin", "comments": 4, "issues_authored": 1}
+{"key": "MaxArt2501", "comments": 5}
+{"key": "MichaelAllenWarner", "comments": 4, "issues_authored": 1}
+{"key": "Nettsentrisk", "comments": 4, "issues_authored": 1}
+{"key": "OrKoN", "comments": 5}
+{"key": "PeterConstable", "comments": 5}
+{"key": "PupilTong", "comments": 4, "issues_authored": 1}
+{"key": "RolandHeinze", "comments": 3, "issues_authored": 2}
+{"key": "Roy-Orbison", "comments": 4, "issues_authored": 1}
+{"key": "Schweinepriester", "comments": 3, "issues_authored": 2}
+{"key": "SieuDoTia", "comments": 4, "issues_authored": 1}
+{"key": "Somnium7", "comments": 4, "issues_authored": 1}
+{"key": "TUSF", "comments": 3, "issues_authored": 2}
+{"key": "Yaffle", "comments": 3, "issues_authored": 2}
+{"key": "YummyBacon5", "comments": 5}
+{"key": "adam-lynch", "comments": 1, "issues_authored": 4}
+{"key": "apollolux", "comments": 4, "issues_authored": 1}
+{"key": "atirip", "comments": 5}
+{"key": "bennypowers", "comments": 5}
+{"key": "bicknellr", "comments": 4, "issues_authored": 1}
+{"key": "bkimmel", "comments": 5}
+{"key": "bottosson", "comments": 5}
+{"key": "buttercookie42", "comments": 3, "issues_authored": 2}
+{"key": "cdumez", "comments": 3, "issues_authored": 2}
+{"key": "chrisn", "comments": 4, "issues_authored": 1}
+{"key": "codermapuche", "comments": 3, "issues_authored": 2}
+{"key": "damian-dp", "comments": 4, "issues_authored": 1}
+{"key": "devmattrick", "comments": 4, "issues_authored": 1}
+{"key": "digilou", "comments": 2, "issues_authored": 3}
+{"key": "dpawson", "comments": 5}
+{"key": "dutchcelt", "comments": 5}
+{"key": "gnat", "comments": 5}
+{"key": "graphicore", "comments": 4, "issues_authored": 1}
+{"key": "htstudios", "comments": 5}
+{"key": "itkind", "comments": 4, "issues_authored": 1}
+{"key": "jcubic", "comments": 5}
+{"key": "jonrimmer", "comments": 4, "issues_authored": 1}
+{"key": "jstblck", "comments": 4, "issues_authored": 1}
+{"key": "juj", "comments": 5}
+{"key": "k2snowman69", "comments": 5}
+{"key": "kevinbrewster", "comments": 4, "issues_authored": 1}
+{"key": "lianghai", "comments": 5}
+{"key": "liminzhu", "comments": 4, "issues_authored": 1}
+{"key": "lozandier", "comments": 5}
+{"key": "lrosenthol", "comments": 4, "issues_authored": 1}
+{"key": "m6o", "comments": 2, "issues_authored": 3}
+{"key": "martinthomson", "comments": 3, "issues_authored": 2}
+{"key": "mikewest", "comments": 4, "issues_authored": 1}
+{"key": "mildred", "comments": 4, "issues_authored": 1}
+{"key": "mnater", "comments": 4, "issues_authored": 1}
+{"key": "mor10", "comments": 4, "issues_authored": 1}
+{"key": "mounirlamouri", "comments": 4, "issues_authored": 1}
+{"key": "mrdoob", "comments": 5}
+{"key": "murata2makoto", "comments": 5}
+{"key": "mwatson2", "comments": 5}
+{"key": "mwenge", "comments": 3, "issues_authored": 2}
+{"key": "neerjapancholi", "comments": 4, "issues_authored": 1}
+{"key": "noell", "comments": 5}
+{"key": "nolanlawson", "comments": 4, "issues_authored": 1}
+{"key": "npm1", "comments": 4, "issues_authored": 1}
+{"key": "platosha", "comments": 5}
+{"key": "ppaalanen", "comments": 5}
+{"key": "raphlinus", "comments": 4, "issues_authored": 1}
+{"key": "rianmurnen", "comments": 5}
+{"key": "roke-julian-lockhart", "comments": 4, "issues_authored": 1}
+{"key": "ryanbugden", "comments": 4, "issues_authored": 1}
+{"key": "shaolinkitty", "comments": 4, "issues_authored": 1}
+{"key": "shonya3", "comments": 5}
+{"key": "skynavga", "comments": 4, "issues_authored": 1}
+{"key": "ssokolow", "comments": 5}
+{"key": "stipsan", "comments": 5}
+{"key": "teo1978", "comments": 4, "issues_authored": 1}
+{"key": "thatcort", "comments": 4, "issues_authored": 1}
+{"key": "thibaudcolas", "comments": 5}
+{"key": "thierryk", "comments": 4, "issues_authored": 1}
+{"key": "toddpadwick", "comments": 5}
+{"key": "tremby", "comments": 5}
+{"key": "twilco", "comments": 3, "issues_authored": 2}
+{"key": "valdrinkoshi", "comments": 4, "issues_authored": 1}
+{"key": "wesbos", "comments": 5}
+{"key": "xaddict", "comments": 5}
+{"key": "xzyfer", "comments": 5}
+{"key": "yachiehwu-zz", "comments": 3, "issues_authored": 2}
+{"key": "yandodov", "comments": 4, "issues_authored": 1}
+{"key": "yashrajbharti", "comments": 3, "issues_authored": 2}
+{"key": "yiyix", "comments": 3, "issues_authored": 2}
+{"key": "ylafon", "comments": 3, "issues_authored": 2}
+{"key": "yoichio", "comments": 2, "issues_authored": 3}
+{"key": "zm-cttae", "comments": 5}
+{"key": "7devv", "comments": 3, "issues_authored": 1}
+{"key": "Aarbel", "comments": 4}
+{"key": "ArkadiuszMichalski", "comments": 3, "issues_authored": 1}
+{"key": "BigBadaboom", "comments": 2, "issues_authored": 2}
+{"key": "Boldewyn", "comments": 3, "issues_authored": 1}
+{"key": "DanielRuf", "comments": 4}
+{"key": "EbenSorkin", "comments": 4}
+{"key": "FabricioTeran", "comments": 2, "issues_authored": 2}
+{"key": "FirstByteFirst", "comments": 1, "issues_authored": 3}
+{"key": "GabbeV", "comments": 4}
+{"key": "GrimLink", "comments": 4}
+{"key": "HerrBertling", "comments": 4}
+{"key": "HolgerJeromin", "comments": 2, "issues_authored": 2}
+{"key": "Josh-Cena", "comments": 3, "issues_authored": 1}
+{"key": "KenjiBaheux", "comments": 4}
+{"key": "Lcfvs", "comments": 4}
+{"key": "Mr0grog", "comments": 4}
+{"key": "Ryuno-Ki", "comments": 3, "issues_authored": 1}
+{"key": "ShaunaGordon", "comments": 4}
+{"key": "StfBauer", "comments": 3, "issues_authored": 1}
+{"key": "SuzanneTaylor", "comments": 4}
+{"key": "TimVevida", "comments": 3, "issues_authored": 1}
+{"key": "Timmmm", "comments": 3, "issues_authored": 1}
+{"key": "Vanuan", "comments": 4}
+{"key": "YglesEyes", "comments": 2, "issues_authored": 2}
+{"key": "adactio", "comments": 3, "issues_authored": 1}
+{"key": "adamsilver", "comments": 4}
+{"key": "adamzea", "comments": 3, "issues_authored": 1}
+{"key": "alcinnz", "comments": 4}
+{"key": "aleventhal", "comments": 4}
+{"key": "alexreardon", "comments": 2, "issues_authored": 2}
+{"key": "amire80", "comments": 3, "issues_authored": 1}
+{"key": "andreamorales", "comments": 4}
+{"key": "ao5357", "comments": 3, "issues_authored": 1}
+{"key": "arnog", "comments": 4}
+{"key": "austinh", "comments": 4}
+{"key": "benjamin-otte", "comments": 3, "issues_authored": 1}
+{"key": "bernaferrari", "comments": 4}
+{"key": "boazsender", "comments": 3, "issues_authored": 1}
+{"key": "bobOnGitHub", "comments": 2, "issues_authored": 2}
+{"key": "bradwerth", "comments": 3, "issues_authored": 1}
+{"key": "brianjlacy", "comments": 3, "issues_authored": 1}
+{"key": "brob", "comments": 3, "issues_authored": 1}
+{"key": "chrisdavidmills", "comments": 3, "issues_authored": 1}
+{"key": "christin-goetz", "comments": 3, "issues_authored": 1}
+{"key": "chvndb", "comments": 3, "issues_authored": 1}
+{"key": "cjdunn", "comments": 4}
+{"key": "codersjj", "comments": 3, "issues_authored": 1}
+{"key": "comods", "comments": 3, "issues_authored": 1}
+{"key": "controversial", "comments": 4}
+{"key": "d-desiatkin", "comments": 3, "issues_authored": 1}
+{"key": "davidleininger", "comments": 3, "issues_authored": 1}
+{"key": "deanleigh", "comments": 4}
+{"key": "deian", "comments": 4}
+{"key": "desandro", "comments": 4}
+{"key": "devingfx", "comments": 4}
+{"key": "diligiant", "comments": 4}
+{"key": "djekanovic", "comments": 3, "issues_authored": 1}
+{"key": "djmarland", "comments": 4}
+{"key": "domfarolino", "comments": 2, "issues_authored": 2}
+{"key": "dragoncoder047", "comments": 3, "issues_authored": 1}
+{"key": "eevee", "comments": 3, "issues_authored": 1}
+{"key": "electric-skeptic", "comments": 3, "issues_authored": 1}
+{"key": "ell1e", "comments": 3, "issues_authored": 1}
+{"key": "emuller-amazon", "comments": 1, "issues_authored": 3}
+{"key": "fuchsia", "comments": 4}
+{"key": "gabriel-peracio", "comments": 4}
+{"key": "garretrieger", "comments": 3, "issues_authored": 1}
+{"key": "geddski", "comments": 4}
+{"key": "glmvc", "comments": 2, "issues_authored": 2}
+{"key": "guest271314", "comments": 2, "issues_authored": 2}
+{"key": "increpare", "comments": 3, "issues_authored": 1}
+{"key": "infusion", "comments": 3, "issues_authored": 1}
+{"key": "jacobbogers", "comments": 3, "issues_authored": 1}
+{"key": "jacobrask", "comments": 4}
+{"key": "jamiebuilds", "comments": 4}
+{"key": "jbasoo", "comments": 3, "issues_authored": 1}
+{"key": "jcayzac", "comments": 3, "issues_authored": 1}
+{"key": "jeisinger", "comments": 2, "issues_authored": 2}
+{"key": "jja08111", "comments": 1, "issues_authored": 3}
+{"key": "jpohhhh", "comments": 4}
+{"key": "jrmuizel", "comments": 4}
+{"key": "kainino0x", "comments": 4}
+{"key": "karlhorky", "comments": 3, "issues_authored": 1}
+{"key": "kenlunde", "comments": 4}
+{"key": "kuoe0", "comments": 3, "issues_authored": 1}
+{"key": "kylenowcrylater", "comments": 3, "issues_authored": 1}
+{"key": "lassediercks", "comments": 3, "issues_authored": 1}
+{"key": "liamdebeasi", "comments": 2, "issues_authored": 2}
+{"key": "ljharb", "comments": 4}
+{"key": "luis-pato", "comments": 4}
+{"key": "markusicu", "comments": 4}
+{"key": "mathiasbynens", "comments": 3, "issues_authored": 1}
+{"key": "mattdrose", "comments": 3, "issues_authored": 1}
+{"key": "mcareydsgn", "comments": 4}
+{"key": "megangardner", "comments": 3, "issues_authored": 1}
+{"key": "meirkoen", "comments": 3, "issues_authored": 1}
+{"key": "mm2t", "comments": 2, "issues_authored": 2}
+{"key": "mnussbaumer", "comments": 3, "issues_authored": 1}
+{"key": "nchevobbe", "comments": 1, "issues_authored": 3}
+{"key": "nightpool", "comments": 4}
+{"key": "noahlemen", "comments": 3, "issues_authored": 1}
+{"key": "nonphoto", "comments": 3, "issues_authored": 1}
+{"key": "nwidynski", "comments": 1, "issues_authored": 3}
+{"key": "nyarly", "comments": 3, "issues_authored": 1}
+{"key": "ohansemmanuel", "comments": 3, "issues_authored": 1}
+{"key": "oliviertassinari", "comments": 4}
+{"key": "ollicle", "comments": 4}
+{"key": "omzy", "comments": 3, "issues_authored": 1}
+{"key": "orstavik", "comments": 3, "issues_authored": 1}
+{"key": "paceaux", "comments": 2, "issues_authored": 2}
+{"key": "pcwalton", "comments": 4}
+{"key": "pepkin88", "comments": 4}
+{"key": "phaux", "comments": 4}
+{"key": "photopea", "comments": 3, "issues_authored": 1}
+{"key": "porg", "comments": 3, "issues_authored": 1}
+{"key": "pxlcoder", "comments": 3, "issues_authored": 1}
+{"key": "raphaelgoetter", "comments": 2, "issues_authored": 2}
+{"key": "realArcherL", "comments": 3, "issues_authored": 1}
+{"key": "rejhgadellaa", "comments": 3, "issues_authored": 1}
+{"key": "rik", "comments": 4}
+{"key": "robinwhittleton", "comments": 2, "issues_authored": 2}
+{"key": "rocallahan", "comments": 4}
+{"key": "runarberg", "comments": 3, "issues_authored": 1}
+{"key": "ryantownsend", "comments": 4}
+{"key": "samhed", "comments": 3, "issues_authored": 1}
+{"key": "sandstrom", "comments": 4}
+{"key": "seanmay", "comments": 4}
+{"key": "sebastien", "comments": 3, "issues_authored": 1}
+{"key": "sfortiner", "comments": 4}
+{"key": "shadeed", "comments": 3, "issues_authored": 1}
+{"key": "shaunrashid", "comments": 4}
+{"key": "silverwind", "comments": 4}
+{"key": "simlawr", "comments": 3, "issues_authored": 1}
+{"key": "simonbuchan", "comments": 4}
+{"key": "spacecakes", "comments": 3, "issues_authored": 1}
+{"key": "stefsullrew", "comments": 4}
+{"key": "stevennovaryo", "comments": 1, "issues_authored": 3}
+{"key": "suethepooh", "comments": 4}
+{"key": "sujato", "comments": 3, "issues_authored": 1}
+{"key": "sunhaitao", "comments": 4}
+{"key": "superpoincare", "comments": 3, "issues_authored": 1}
+{"key": "syj10", "comments": 2, "issues_authored": 2}
+{"key": "tgraham-antenna", "issues_authored": 4}
+{"key": "thePunderWoman", "comments": 4}
+{"key": "thecalamiity", "comments": 4}
+{"key": "tnikkel", "comments": 4}
+{"key": "tobiu", "comments": 4}
+{"key": "tobymackenzie", "comments": 3, "issues_authored": 1}
+{"key": "tounsoo", "comments": 3, "issues_authored": 1}
+{"key": "trchen1033", "comments": 2, "issues_authored": 2}
+{"key": "vi-dot-cpp", "comments": 4}
+{"key": "viktor-yakubiv", "comments": 4}
+{"key": "wargrey", "comments": 2, "issues_authored": 2}
+{"key": "wisniewskit", "comments": 2, "issues_authored": 2}
+{"key": "xyzdata", "comments": 3, "issues_authored": 1}
+{"key": "yanlingwang23", "comments": 2, "issues_authored": 2}
+{"key": "yatil", "comments": 4}
+{"key": "yukulele", "comments": 2, "issues_authored": 2}
+{"key": "zbianca", "comments": 3, "issues_authored": 1}
+{"key": "29thfloor", "comments": 3}
+{"key": "ADKaster", "comments": 2, "issues_authored": 1}
+{"key": "Ahmad-S792", "comments": 2, "issues_authored": 1}
+{"key": "AndreasKarz", "comments": 3}
+{"key": "Arkkimaagi", "comments": 2, "issues_authored": 1}
+{"key": "BaliBalo", "comments": 2, "issues_authored": 1}
+{"key": "BennyHinrichs", "comments": 1, "issues_authored": 2}
+{"key": "BigBlueHat", "comments": 3}
+{"key": "BoCupp-Microsoft", "comments": 2, "issues_authored": 1}
+{"key": "ChasBelov", "comments": 3}
+{"key": "Cipscis", "comments": 3}
+{"key": "Danetone", "comments": 2, "issues_authored": 1}
+{"key": "DylanDuff", "comments": 2, "issues_authored": 1}
+{"key": "Eccenux", "issues_authored": 3}
+{"key": "Evoke4350", "comments": 2, "issues_authored": 1}
+{"key": "GLRoylance", "comments": 2, "issues_authored": 1}
+{"key": "Garbee", "comments": 3}
+{"key": "GeeLaw", "comments": 2, "issues_authored": 1}
+{"key": "Gingeh", "comments": 2, "issues_authored": 1}
+{"key": "Grovkillen", "comments": 2, "issues_authored": 1}
+{"key": "Huji", "comments": 2, "issues_authored": 1}
+{"key": "IainIsCreative", "comments": 2, "issues_authored": 1}
+{"key": "IanPouncey", "comments": 1, "issues_authored": 2}
+{"key": "Kazimierzw-Google", "comments": 2, "issues_authored": 1}
+{"key": "KingSora", "comments": 2, "issues_authored": 1}
+{"key": "Krinkle", "comments": 2, "issues_authored": 1}
+{"key": "LemmaEOF", "comments": 2, "issues_authored": 1}
+{"key": "Luko248", "comments": 1, "issues_authored": 2}
+{"key": "MSanbira", "comments": 2, "issues_authored": 1}
+{"key": "MelSumner", "comments": 2, "issues_authored": 1}
+{"key": "MelvinIdema", "comments": 2, "issues_authored": 1}
+{"key": "Mookiepiece", "comments": 2, "issues_authored": 1}
+{"key": "MostafaFawzy7", "comments": 3}
+{"key": "Mouvedia", "comments": 3}
+{"key": "NOVALISTIC", "comments": 2, "issues_authored": 1}
+{"key": "Naryalin", "comments": 2, "issues_authored": 1}
+{"key": "Nax", "comments": 3}
+{"key": "NicolasJEngler", "comments": 2, "issues_authored": 1}
+{"key": "Noleli", "comments": 3}
+{"key": "PavelLaptev", "comments": 3}
+{"key": "RealHypnoticOcelot", "comments": 2, "issues_authored": 1}
+{"key": "SCKelemen", "comments": 2, "issues_authored": 1}
+{"key": "SaarthakMaini", "comments": 3}
+{"key": "Sainan", "comments": 3}
+{"key": "SephReed", "comments": 2, "issues_authored": 1}
+{"key": "Sharcoux", "comments": 2, "issues_authored": 1}
+{"key": "SmashingQuasar", "comments": 2, "issues_authored": 1}
+{"key": "SoniEx2", "comments": 2, "issues_authored": 1}
+{"key": "Splines", "comments": 3}
+{"key": "TahirAhmadov", "comments": 3}
+{"key": "ToBeJazz", "comments": 1, "issues_authored": 2}
+{"key": "VoxelPrismatic", "comments": 3}
+{"key": "WCWedin", "comments": 3}
+{"key": "XorAndre", "comments": 3}
+{"key": "afishhh", "comments": 1, "issues_authored": 2}
+{"key": "ahmadalfy", "comments": 3}
+{"key": "ai", "comments": 1, "issues_authored": 2}
+{"key": "alib-ms", "comments": 3}
+{"key": "alihardan", "comments": 2, "issues_authored": 1}
+{"key": "alolalo", "comments": 3}
+{"key": "alrdytaken", "comments": 1, "issues_authored": 2}
+{"key": "alvaromontoro", "comments": 1, "issues_authored": 2}
+{"key": "anasram", "comments": 2, "issues_authored": 1}
+{"key": "andersk", "comments": 3}
+{"key": "andjc", "comments": 3}
+{"key": "andrewhodel", "comments": 3}
+{"key": "anssiko", "comments": 2, "issues_authored": 1}
+{"key": "antonprowse", "comments": 3}
+{"key": "ap175", "comments": 2, "issues_authored": 1}
+{"key": "april", "comments": 2, "issues_authored": 1}
+{"key": "arei", "comments": 2, "issues_authored": 1}
+{"key": "arenevier", "comments": 2, "issues_authored": 1}
+{"key": "ariarzer", "comments": 3}
+{"key": "ascorbic", "comments": 3}
+{"key": "aviennas", "comments": 3}
+{"key": "awford", "comments": 3}
+{"key": "babatakao", "comments": 1, "issues_authored": 2}
+{"key": "bakkot", "comments": 3}
+{"key": "bbbbbbbbba", "comments": 2, "issues_authored": 1}
+{"key": "bendc", "comments": 2, "issues_authored": 1}
+{"key": "biancadanforth", "comments": 3}
+{"key": "bkimmelSQSP", "comments": 2, "issues_authored": 1}
+{"key": "blidblid", "comments": 2, "issues_authored": 1}
+{"key": "bluemoehre", "comments": 2, "issues_authored": 1}
+{"key": "bramdoppen", "comments": 2, "issues_authored": 1}
+{"key": "brandonferrua", "comments": 3}
+{"key": "bravecrayon", "comments": 3}
+{"key": "bryanrasmussen", "comments": 2, "issues_authored": 1}
+{"key": "caraitto", "comments": 3}
+{"key": "caridy", "comments": 3}
+{"key": "cathiechentx", "comments": 3}
+{"key": "caugner", "comments": 1, "issues_authored": 2}
+{"key": "cconcolato", "comments": 2, "issues_authored": 1}
+{"key": "ccprog", "comments": 1, "issues_authored": 2}
+{"key": "cferdinandi", "comments": 3}
+{"key": "chasebank", "comments": 3}
+{"key": "chengyin", "comments": 3}
+{"key": "cjpearson", "comments": 2, "issues_authored": 1}
+{"key": "clarumedia", "comments": 2, "issues_authored": 1}
+{"key": "claudepache", "comments": 2, "issues_authored": 1}
+{"key": "contentfree", "comments": 3}
+{"key": "cork", "comments": 3}
+{"key": "cpplearner", "comments": 3}
+{"key": "cr7pt0gr4ph7", "comments": 2, "issues_authored": 1}
+{"key": "cwilso", "comments": 3}
+{"key": "cyraid", "comments": 2, "issues_authored": 1}
+{"key": "danielhjacobs", "comments": 2, "issues_authored": 1}
+{"key": "darakeon", "comments": 3}
+{"key": "dartess", "comments": 2, "issues_authored": 1}
+{"key": "debiru", "comments": 3}
+{"key": "deimidis", "comments": 2, "issues_authored": 1}
+{"key": "denmch", "comments": 3}
+{"key": "denvercoder21", "comments": 1, "issues_authored": 2}
+{"key": "dfvalero", "comments": 3}
+{"key": "dilyanpalauzov", "comments": 1, "issues_authored": 2}
+{"key": "dotterian", "comments": 3}
+{"key": "dpino", "comments": 2, "issues_authored": 1}
+{"key": "dragontheory", "comments": 3}
+{"key": "dumbmoron", "comments": 1, "issues_authored": 2}
+{"key": "e111077", "comments": 3}
+{"key": "eaenet", "comments": 3}
+{"key": "eckmo", "comments": 3}
+{"key": "egirard", "comments": 2, "issues_authored": 1}
+{"key": "essenmitsosse", "comments": 3}
+{"key": "ewanm89", "comments": 3}
+{"key": "felixfbecker", "comments": 3}
+{"key": "ferdnyc", "comments": 2, "issues_authored": 1}
+{"key": "firefoxic", "comments": 3}
+{"key": "franciscolourenco", "comments": 3}
+{"key": "franckyK", "comments": 3}
+{"key": "franktopel", "comments": 2, "issues_authored": 1}
+{"key": "fredboyle", "comments": 3}
+{"key": "frewsxcv", "comments": 2, "issues_authored": 1}
+{"key": "fschroiff", "comments": 2, "issues_authored": 1}
+{"key": "fweth", "comments": 1, "issues_authored": 2}
+{"key": "getify", "comments": 3}
+{"key": "gferreira", "comments": 2, "issues_authored": 1}
+{"key": "gossi", "comments": 3}
+{"key": "guswelter", "comments": 3}
+{"key": "gwern", "comments": 3}
+{"key": "hassannteifeh", "comments": 1, "issues_authored": 2}
+{"key": "henrikhelmers", "comments": 2, "issues_authored": 1}
+{"key": "heyMP", "comments": 3}
+{"key": "hibachrach", "comments": 2, "issues_authored": 1}
+{"key": "hohoDigidea", "comments": 2, "issues_authored": 1}
+{"key": "i-am-dies", "comments": 3}
+{"key": "iank_", "irc_lines": 3}
+{"key": "iccir", "comments": 1, "issues_authored": 2}
+{"key": "inoyakaigor", "comments": 2, "issues_authored": 1}
+{"key": "jDavidnet", "comments": 3}
+{"key": "jacobrossi", "comments": 3}
+{"key": "jclark", "comments": 3}
+{"key": "jd-solanki", "comments": 1, "issues_authored": 2}
+{"key": "jessestricker", "comments": 2, "issues_authored": 1}
+{"key": "jgraham", "comments": 3}
+{"key": "jimmy-guo", "comments": 2, "issues_authored": 1}
+{"key": "jitendravyas", "comments": 1, "issues_authored": 2}
+{"key": "jjenzz", "comments": 3}
+{"key": "jnjaeschke", "issues_authored": 3}
+{"key": "jods4", "comments": 2, "issues_authored": 1}
+{"key": "johannesmutter", "comments": 3}
+{"key": "johnadney", "comments": 3}
+{"key": "joliss", "comments": 1, "issues_authored": 2}
+{"key": "jonsneyers", "comments": 3}
+{"key": "junaga", "comments": 3}
+{"key": "karlrim", "comments": 3}
+{"key": "kdrag0n", "comments": 2, "issues_authored": 1}
+{"key": "keithclark", "comments": 2, "issues_authored": 1}
+{"key": "kevin-powell", "comments": 3}
+{"key": "kiding", "comments": 3}
+{"key": "kirk-loretz-fsn", "comments": 3}
+{"key": "kleinfreund", "comments": 3}
+{"key": "kosek", "comments": 2, "issues_authored": 1}
+{"key": "krzksz", "comments": 3}
+{"key": "ldhasson", "comments": 3}
+{"key": "leandroruel", "comments": 2, "issues_authored": 1}
+{"key": "leefloyd", "comments": 2, "issues_authored": 1}
+{"key": "littledan", "comments": 1, "issues_authored": 2}
+{"key": "llebout", "comments": 3}
+{"key": "ln-north", "comments": 3}
+{"key": "lopugit", "comments": 3}
+{"key": "lukebjerring", "comments": 1, "issues_authored": 2}
+{"key": "m4heshd", "comments": 3}
+{"key": "malix0", "comments": 3}
+{"key": "maltenuhn", "comments": 3}
+{"key": "mantissa7", "comments": 2, "issues_authored": 1}
+{"key": "mariusGundersen", "comments": 3}
+{"key": "marnec", "comments": 2, "issues_authored": 1}
+{"key": "marrus-sh", "comments": 2, "issues_authored": 1}
+{"key": "marvindanig", "comments": 2, "issues_authored": 1}
+{"key": "matuzo", "comments": 3}
+{"key": "michaelcpuckett", "comments": 2, "issues_authored": 1}
+{"key": "michaeltaranto", "comments": 3}
+{"key": "mikemai2awesome", "comments": 3}
+{"key": "milasudril", "comments": 3}
+{"key": "mjf-g", "comments": 1, "issues_authored": 2}
+{"key": "moniuch", "comments": 2, "issues_authored": 1}
+{"key": "morganfeeney", "comments": 3}
+{"key": "mraccess77", "comments": 2, "issues_authored": 1}
+{"key": "myles__", "irc_lines": 3}
+{"key": "nanto", "comments": 2, "issues_authored": 1}
+{"key": "natematykiewicz", "comments": 3}
+{"key": "nickshanks", "comments": 1, "issues_authored": 2}
+{"key": "nilssolanki", "comments": 2, "issues_authored": 1}
+{"key": "ninevra", "comments": 1, "issues_authored": 2}
+{"key": "notwaldorf", "comments": 2, "issues_authored": 1}
+{"key": "perymimon", "comments": 2, "issues_authored": 1}
+{"key": "phax", "comments": 2, "issues_authored": 1}
+{"key": "phdave2005", "issues_authored": 3}
+{"key": "php4fan", "comments": 2, "issues_authored": 1}
+{"key": "pinksynth", "comments": 3}
+{"key": "pkra", "comments": 3}
+{"key": "pmaxhogan", "comments": 1, "issues_authored": 2}
+{"key": "pmoleri", "comments": 3}
+{"key": "qnighy", "comments": 1, "issues_authored": 2}
+{"key": "querkmachine", "comments": 3}
+{"key": "ravilov", "comments": 3}
+{"key": "remcohaszing", "comments": 2, "issues_authored": 1}
+{"key": "rgpublic", "comments": 3}
+{"key": "rillig", "issues_authored": 3}
+{"key": "robinmetral", "comments": 3}
+{"key": "rol4nd909", "comments": 3}
+{"key": "romainptit", "comments": 2, "issues_authored": 1}
+{"key": "rosshjb", "comments": 2, "issues_authored": 1}
+{"key": "sabithpocker", "comments": 2, "issues_authored": 1}
+{"key": "sapioit", "comments": 3}
+{"key": "sarajw", "comments": 3}
+{"key": "satgo1546", "comments": 2, "issues_authored": 1}
+{"key": "sciascia", "comments": 3}
+{"key": "sdras", "comments": 2, "issues_authored": 1}
+{"key": "shengha2", "issues_authored": 3}
+{"key": "smalllong", "comments": 2, "issues_authored": 1}
+{"key": "sneko", "comments": 3}
+{"key": "snuggs", "comments": 3}
+{"key": "spawnia", "comments": 3}
+{"key": "stwrt", "comments": 1, "issues_authored": 2}
+{"key": "sudo-barun", "comments": 2, "issues_authored": 1}
+{"key": "taksyon", "comments": 3}
+{"key": "taroyamamoto-451", "comments": 3}
+{"key": "tavin", "comments": 3}
+{"key": "tbrown", "comments": 2, "issues_authored": 1}
+{"key": "tcaptan-cr", "comments": 1, "issues_authored": 2}
+{"key": "the-Arioch", "comments": 2, "issues_authored": 1}
+{"key": "thecrypticace", "comments": 2, "issues_authored": 1}
+{"key": "tigrr", "comments": 1, "issues_authored": 2}
+{"key": "timotius02", "comments": 3}
+{"key": "tinchox5", "comments": 2, "issues_authored": 1}
+{"key": "tmjoen", "comments": 3}
+{"key": "topaxi", "comments": 3}
+{"key": "trackbot", "irc_lines": 3}
+{"key": "typemytype", "comments": 2, "issues_authored": 1}
+{"key": "tysonmatanich", "comments": 3}
+{"key": "vectorjohn", "comments": 3}
+{"key": "velsinki", "comments": 3}
+{"key": "victoriasu", "comments": 1, "issues_authored": 2}
+{"key": "vivienlacourba", "comments": 3}
+{"key": "volkantash", "comments": 3}
+{"key": "whsieh", "comments": 1, "issues_authored": 2}
+{"key": "wjhe1016", "comments": 2, "issues_authored": 1}
+{"key": "xgebi", "comments": 1, "issues_authored": 2}
+{"key": "yassh", "comments": 2, "issues_authored": 1}
+{"key": "yjugl", "comments": 2, "issues_authored": 1}
+{"key": "youknowriad", "comments": 3}
+{"key": "yroc", "issues_authored": 3}
+{"key": "yshalivskyy", "comments": 2, "issues_authored": 1}
+{"key": "yuito-git", "comments": 3}
+{"key": "zanina-yassine", "comments": 2, "issues_authored": 1}
+{"key": "zipper", "comments": 3}
+{"key": "0xdevwrite", "comments": 1, "issues_authored": 1}
+{"key": "5t3ph", "comments": 1, "issues_authored": 1}
+{"key": "747", "comments": 2}
+{"key": "7freaks-otte", "comments": 2}
+{"key": "AMUCOMO", "comments": 2}
+{"key": "AdaRoseCannon", "comments": 2}
+{"key": "AlbertMarashi", "comments": 2}
+{"key": "AlbertWiersch", "comments": 1, "issues_authored": 1}
+{"key": "AleksandrHovhannisyan", "comments": 1, "issues_authored": 1}
+{"key": "AlexanderDom", "comments": 2}
+{"key": "AlphaGo88", "comments": 1, "issues_authored": 1}
+{"key": "Amit0617", "comments": 2}
+{"key": "AndresRPerez12", "comments": 2}
+{"key": "Aps-x", "comments": 2}
+{"key": "ArvindKumar08", "comments": 1, "issues_authored": 1}
+{"key": "BenMorel", "comments": 2}
+{"key": "BevanR", "comments": 1, "issues_authored": 1}
+{"key": "BevansDesign", "comments": 2}
+{"key": "BlueGreenMagick", "comments": 1, "issues_authored": 1}
+{"key": "BlueskyFR", "comments": 2}
+{"key": "Buslowicz", "comments": 2}
+{"key": "CadenP", "comments": 2}
+{"key": "Cadienvan", "comments": 1, "issues_authored": 1}
+{"key": "CaliOn2", "comments": 1, "issues_authored": 1}
+{"key": "CavaliereDavid", "comments": 1, "issues_authored": 1}
+{"key": "Chealer", "comments": 1, "issues_authored": 1}
+{"key": "Conaclos", "comments": 1, "issues_authored": 1}
+{"key": "DYCDAMallgren", "comments": 1, "issues_authored": 1}
+{"key": "Dafrok", "comments": 1, "issues_authored": 1}
+{"key": "DaniGuardiola", "comments": 2}
+{"key": "DanielHeath", "comments": 2}
+{"key": "Darkicorn", "comments": 1, "issues_authored": 1}
+{"key": "DavidBradbury", "comments": 2}
+{"key": "DemiImp", "comments": 2}
+{"key": "Dorson", "comments": 1, "issues_authored": 1}
+{"key": "Ekanuel", "comments": 2}
+{"key": "Evengard", "comments": 2}
+{"key": "FeldrinH", "comments": 2}
+{"key": "Florian_", "irc_lines": 2}
+{"key": "FlorinDumitrescu", "comments": 2}
+{"key": "FrameMuse", "comments": 1, "issues_authored": 1}
+{"key": "Gankra", "comments": 1, "issues_authored": 1}
+{"key": "GermanJablo", "comments": 2}
+{"key": "Greedquest", "comments": 2}
+{"key": "Gregory-Potter", "comments": 2}
+{"key": "Griffork", "comments": 2}
+{"key": "Gunyon", "comments": 1, "issues_authored": 1}
+{"key": "Gutodotado24", "issues_authored": 2}
+{"key": "HarijsR", "comments": 1, "issues_authored": 1}
+{"key": "HeidiEkenstam", "comments": 1, "issues_authored": 1}
+{"key": "Hexstream", "comments": 2}
+{"key": "HeyHemi-dev", "comments": 2}
+{"key": "IanVS", "comments": 2}
+{"key": "IcyFoxe", "comments": 2}
+{"key": "Im-Beast", "comments": 1, "issues_authored": 1}
+{"key": "InSyncWithFoo", "comments": 1, "issues_authored": 1}
+{"key": "JJanz", "comments": 2}
+{"key": "Jakobud", "comments": 2}
+{"key": "JamesCoyle", "comments": 2}
+{"key": "JamesEggleton", "comments": 2}
+{"key": "JamesIves", "comments": 1, "issues_authored": 1}
+{"key": "JasonTheKitten", "comments": 1, "issues_authored": 1}
+{"key": "Jeffxz", "comments": 1, "issues_authored": 1}
+{"key": "Joozty", "comments": 1, "issues_authored": 1}
+{"key": "Juanmihd", "comments": 1, "issues_authored": 1}
+{"key": "JudahGabriel", "comments": 2}
+{"key": "Justineo", "comments": 2}
+{"key": "KSCooke", "comments": 1, "issues_authored": 1}
+{"key": "KiChjang", "comments": 1, "issues_authored": 1}
+{"key": "KieranP", "comments": 2}
+{"key": "Kinematics", "comments": 2}
+{"key": "KommuSoft", "comments": 1, "issues_authored": 1}
+{"key": "Konrud", "comments": 1, "issues_authored": 1}
+{"key": "LalitSinghRana", "comments": 2}
+{"key": "LarryLACa", "comments": 1, "issues_authored": 1}
+{"key": "LifeIsStrange", "comments": 1, "issues_authored": 1}
+{"key": "LorenAmelang", "comments": 2}
+{"key": "LucianoGrossi", "comments": 2}
+{"key": "MaherbanaliJ", "comments": 1, "issues_authored": 1}
+{"key": "MattyBalaam", "comments": 2}
+{"key": "MaximSagan", "comments": 1, "issues_authored": 1}
+{"key": "Maya-Fey", "comments": 2}
+{"key": "MeFoDy", "comments": 2}
+{"key": "Melluish", "comments": 2}
+{"key": "MetaHubbe", "comments": 1, "issues_authored": 1}
+{"key": "MikeMatusz", "comments": 1, "issues_authored": 1}
+{"key": "MoritzGlantz", "comments": 2}
+{"key": "MortezaMirmojarabian", "comments": 2}
+{"key": "MurhafSousli", "comments": 2}
+{"key": "NellWaliczek", "comments": 2}
+{"key": "NickColley", "comments": 2}
+{"key": "Nixinova", "comments": 2}
+{"key": "Nodws", "comments": 1, "issues_authored": 1}
+{"key": "ObjectAssign", "comments": 2}
+{"key": "Paper-Folding", "comments": 2}
+{"key": "Pauan", "comments": 2}
+{"key": "Pentadome", "comments": 1, "issues_authored": 1}
+{"key": "PeterNjeim", "comments": 2}
+{"key": "PhiSyX", "comments": 1, "issues_authored": 1}
+{"key": "PhilterPaper", "comments": 1, "issues_authored": 1}
+{"key": "PolariTOON", "comments": 2}
+{"key": "Pyrolistical", "comments": 1, "issues_authored": 1}
+{"key": "RSeidelsohn", "comments": 1, "issues_authored": 1}
+{"key": "Rayraz", "comments": 2}
+{"key": "Remiscan", "comments": 2}
+{"key": "RheingoldRiver", "comments": 2}
+{"key": "Rich-Harris", "comments": 1, "issues_authored": 1}
+{"key": "ShahriarKh", "comments": 2}
+{"key": "ShanonJackson", "comments": 2}
+{"key": "ShivamJoker", "comments": 2}
+{"key": "SimplyPhy", "comments": 2}
+{"key": "Spacefish", "comments": 2}
+{"key": "StephenHaney", "comments": 2}
+{"key": "Superuce", "issues_authored": 2}
+{"key": "Sxderp", "comments": 1, "issues_authored": 1}
+{"key": "Tenkir", "comments": 1, "issues_authored": 1}
+{"key": "TheSonOfThomp", "comments": 2}
+{"key": "ThomasGutmann", "comments": 2}
+{"key": "TigTog-uiux", "comments": 2}
+{"key": "TxHawks", "issues_authored": 2}
+{"key": "Ultinio", "comments": 2}
+{"key": "Vhy94849", "issues_authored": 2}
+{"key": "VivaRado", "comments": 2}
+{"key": "Wilto", "comments": 2}
+{"key": "YousufSSyed", "comments": 1, "issues_authored": 1}
+{"key": "ZachHaber", "comments": 1, "issues_authored": 1}
+{"key": "ZoeBijl", "comments": 2}
+{"key": "aaronth07", "comments": 2}
+{"key": "abhinaysindham45", "comments": 2}
+{"key": "achristensen07", "comments": 1, "issues_authored": 1}
+{"key": "adamwathan", "comments": 2}
+{"key": "adixon-adobe", "comments": 2}
+{"key": "adsingh14", "comments": 1, "issues_authored": 1}
+{"key": "aeharding", "comments": 2}
+{"key": "aitorllj93", "comments": 2}
+{"key": "alexander-schranz", "comments": 2}
+{"key": "alexiscordova", "comments": 2}
+{"key": "alexshalamov", "comments": 1, "issues_authored": 1}
+{"key": "alvaro-prieto", "comments": 1, "issues_authored": 1}
+{"key": "alyssamichelle", "comments": 2}
+{"key": "andremarcondesteixeira", "comments": 2}
+{"key": "andrewCodes", "comments": 2}
+{"key": "andrewplummer", "comments": 1, "issues_authored": 1}
+{"key": "andybarefoot", "comments": 2}
+{"key": "angelux", "comments": 2}
+{"key": "anhtaiH", "comments": 2}
+{"key": "ardov", "comments": 2}
+{"key": "atomiks", "comments": 1, "issues_authored": 1}
+{"key": "atscott", "comments": 1, "issues_authored": 1}
+{"key": "b-houghton", "comments": 2}
+{"key": "bcole808", "comments": 2}
+{"key": "bdc-stripe", "comments": 2}
+{"key": "benlesh", "comments": 2}
+{"key": "bennyschudel", "comments": 2}
+{"key": "bionicles", "comments": 1, "issues_authored": 1}
+{"key": "bitdivine", "comments": 2}
+{"key": "blairmacintyre", "comments": 2}
+{"key": "bocampbell", "comments": 2}
+{"key": "boutell", "comments": 1, "issues_authored": 1}
+{"key": "brawer", "comments": 1, "issues_authored": 1}
+{"key": "brend8c", "comments": 1, "issues_authored": 1}
+{"key": "brettmhoffman", "comments": 2}
+{"key": "brianewing", "comments": 1, "issues_authored": 1}
+{"key": "browsermage", "comments": 2}
+{"key": "brucelawson", "comments": 1, "issues_authored": 1}
+{"key": "cadonau", "comments": 2}
+{"key": "calebdwilliams", "comments": 2}
+{"key": "canalun", "comments": 2}
+{"key": "capjamesg", "comments": 2}
+{"key": "carnoxen", "comments": 1, "issues_authored": 1}
+{"key": "charliemarlow", "comments": 1, "issues_authored": 1}
+{"key": "cjbarth", "comments": 1, "issues_authored": 1}
+{"key": "coderfin", "comments": 1, "issues_authored": 1}
+{"key": "codewizard13", "comments": 2}
+{"key": "copyandpaetow", "comments": 2}
+{"key": "corysimmons", "comments": 1, "issues_authored": 1}
+{"key": "cruxicheiros", "comments": 1, "issues_authored": 1}
+{"key": "csvn", "comments": 2}
+{"key": "danielhjames", "comments": 2}
+{"key": "danielweck", "comments": 2}
+{"key": "darrnshn", "comments": 1, "issues_authored": 1}
+{"key": "dashouse", "comments": 1, "issues_authored": 1}
+{"key": "davatron5000", "comments": 2}
+{"key": "davidbukacek", "comments": 1, "issues_authored": 1}
+{"key": "davidkpiano", "comments": 2}
+{"key": "dcrousso", "comments": 2}
+{"key": "ddbeck", "comments": 2}
+{"key": "deant", "comments": 1, "issues_authored": 1}
+{"key": "dejayc", "comments": 2}
+{"key": "delucis", "comments": 1, "issues_authored": 1}
+{"key": "devatrox", "comments": 2}
+{"key": "devi-prsd", "comments": 1, "issues_authored": 1}
+{"key": "dfabulich", "comments": 1, "issues_authored": 1}
+{"key": "dgattey", "comments": 2}
+{"key": "dj2", "comments": 1, "issues_authored": 1}
+{"key": "dkilgore-eightfold", "comments": 2}
+{"key": "dletorey", "comments": 1, "issues_authored": 1}
+{"key": "dmeranda", "comments": 1, "issues_authored": 1}
+{"key": "dmurph", "comments": 2}
+{"key": "dokozero", "comments": 1, "issues_authored": 1}
+{"key": "dom111", "comments": 1, "issues_authored": 1}
+{"key": "doriantaylor", "comments": 1, "issues_authored": 1}
+{"key": "dot-miniscule", "issues_authored": 2}
+{"key": "dragon-architect", "comments": 1, "issues_authored": 1}
+{"key": "easrng", "comments": 2}
+{"key": "edent", "comments": 1, "issues_authored": 1}
+{"key": "ehind67", "comments": 1, "issues_authored": 1}
+{"key": "ericrannaud", "comments": 2}
+{"key": "ericwilligers", "comments": 2}
+{"key": "evanw", "comments": 1, "issues_authored": 1}
+{"key": "evayde", "comments": 1, "issues_authored": 1}
+{"key": "exikyut", "comments": 2}
+{"key": "extra808", "issues_authored": 2}
+{"key": "f820602h", "comments": 1, "issues_authored": 1}
+{"key": "fabb", "comments": 1, "issues_authored": 1}
+{"key": "fabdelgado", "comments": 1, "issues_authored": 1}
+{"key": "fallaciousreasoning", "comments": 1, "issues_authored": 1}
+{"key": "falldowngoboone", "comments": 2}
+{"key": "fbartho", "comments": 2}
+{"key": "felipehimself", "comments": 1, "issues_authored": 1}
+{"key": "frank-laemmer", "comments": 2}
+{"key": "freund17", "comments": 2}
+{"key": "frevds", "comments": 1, "issues_authored": 1}
+{"key": "fvpDev", "comments": 2}
+{"key": "g12n", "comments": 2}
+{"key": "gasrios", "comments": 1, "issues_authored": 1}
+{"key": "gdh1995", "comments": 2}
+{"key": "geoken", "comments": 2}
+{"key": "gilmoreorless", "comments": 2}
+{"key": "gilsonnunesfilho", "comments": 2}
+{"key": "gl3bl", "comments": 1, "issues_authored": 1}
+{"key": "glenn2223", "comments": 1, "issues_authored": 1}
+{"key": "gorlanova", "comments": 2}
+{"key": "graphemecluster", "comments": 1, "issues_authored": 1}
+{"key": "grigs", "comments": 2}
+{"key": "grncdr", "comments": 1, "issues_authored": 1}
+{"key": "guybedford", "comments": 2}
+{"key": "hacknug", "comments": 2}
+{"key": "harrisi", "comments": 1, "issues_authored": 1}
+{"key": "hashseed", "comments": 2}
+{"key": "hgl", "comments": 1, "issues_authored": 1}
+{"key": "hidde", "comments": 2}
+{"key": "hiroya-uga", "comments": 2}
+{"key": "hrj", "comments": 2}
+{"key": "hvanops", "comments": 2}
+{"key": "hyowon-igalia", "comments": 1, "issues_authored": 1}
+{"key": "hyperlogos", "comments": 2}
+{"key": "iNalgiev", "comments": 2}
+{"key": "iahu", "comments": 2}
+{"key": "iamdustan", "comments": 1, "issues_authored": 1}
+{"key": "iiinnniii", "comments": 1, "issues_authored": 1}
+{"key": "imkremen", "comments": 2}
+{"key": "indolering", "comments": 2}
+{"key": "initramfs", "comments": 1, "issues_authored": 1}
+{"key": "isellsoap", "comments": 2}
+{"key": "isomorphisms", "comments": 1, "issues_authored": 1}
+{"key": "ithinkihaveacat", "comments": 2}
+{"key": "j-f1", "comments": 2}
+{"key": "jackdoyle", "comments": 2}
+{"key": "jackfrankland", "comments": 1, "issues_authored": 1}
+{"key": "jamesej", "comments": 2}
+{"key": "jameshfisher", "comments": 1, "issues_authored": 1}
+{"key": "jan-tosovsky-cz", "comments": 1, "issues_authored": 1}
+{"key": "jaredcwhite", "comments": 2}
+{"key": "jasonanovak", "comments": 2}
+{"key": "jasonjgardner", "comments": 1, "issues_authored": 1}
+{"key": "jasonwilliams", "comments": 2}
+{"key": "jchv", "comments": 1, "issues_authored": 1}
+{"key": "jcrben", "comments": 1, "issues_authored": 1}
+{"key": "jdragonbae", "comments": 2}
+{"key": "jenli358", "issues_authored": 2}
+{"key": "jenseng", "comments": 1, "issues_authored": 1}
+{"key": "jeremyredhead", "comments": 2}
+{"key": "jerrygreen", "comments": 2}
+{"key": "jessebeach", "comments": 2}
+{"key": "jessicajaniuk", "comments": 1, "issues_authored": 1}
+{"key": "jhogue", "comments": 2}
+{"key": "jobs-git", "comments": 2}
+{"key": "johncmunson", "comments": 2}
+{"key": "johncrim", "comments": 2}
+{"key": "jonkoops", "comments": 1, "issues_authored": 1}
+{"key": "jonkwheeler", "comments": 1, "issues_authored": 1}
+{"key": "joshwcomeau", "comments": 2}
+{"key": "jouni", "comments": 2}
+{"key": "joyously", "issues_authored": 2}
+{"key": "joysyu", "comments": 1, "issues_authored": 1}
+{"key": "jp-crane", "comments": 1, "issues_authored": 1}
+{"key": "jrjohnson", "comments": 2}
+{"key": "jstsch", "comments": 2}
+{"key": "julientaq", "comments": 1, "issues_authored": 1}
+{"key": "junhoseo", "comments": 2}
+{"key": "just-boris", "comments": 1, "issues_authored": 1}
+{"key": "jverkoey", "comments": 1, "issues_authored": 1}
+{"key": "jwmcglynn", "comments": 1, "issues_authored": 1}
+{"key": "kcrwfrd", "comments": 2}
+{"key": "kearwood", "comments": 2}
+{"key": "keikoro", "comments": 2}
+{"key": "kellytk", "comments": 1, "issues_authored": 1}
+{"key": "kevinpschaaf", "comments": 2}
+{"key": "kgcreative", "comments": 2}
+{"key": "kitgrose", "comments": 2}
+{"key": "kizerkizer", "comments": 1, "issues_authored": 1}
+{"key": "kontur", "comments": 2}
+{"key": "kyr0", "comments": 2}
+{"key": "kyraseevers", "comments": 1, "issues_authored": 1}
+{"key": "laras126", "comments": 2}
+{"key": "leo60228", "comments": 1, "issues_authored": 1}
+{"key": "leobalter", "comments": 2}
+{"key": "lespacedunmatin", "comments": 2}
+{"key": "letrastudio", "comments": 2}
+{"key": "levrik", "comments": 2}
+{"key": "lilychen1388", "comments": 1, "issues_authored": 1}
+{"key": "lkj4", "comments": 2}
+{"key": "lknik", "comments": 2}
+{"key": "lkraav", "comments": 2}
+{"key": "lobo-tuerto", "comments": 2}
+{"key": "loganrosen", "comments": 2}
+{"key": "loonybear", "comments": 2}
+{"key": "lucacasonato", "comments": 1, "issues_authored": 1}
+{"key": "maanu1234", "comments": 1, "issues_authored": 1}
+{"key": "macchiati", "comments": 2}
+{"key": "maclockard", "comments": 1, "issues_authored": 1}
+{"key": "madrobby", "comments": 2}
+{"key": "majaha", "comments": 1, "issues_authored": 1}
+{"key": "makotokato", "issues_authored": 2}
+{"key": "mallory", "comments": 1, "issues_authored": 1}
+{"key": "mantaroh", "comments": 1, "issues_authored": 1}
+{"key": "marcvangend", "comments": 2}
+{"key": "matthewferry", "comments": 2}
+{"key": "matthias-margin", "comments": 1, "issues_authored": 1}
+{"key": "mattrq", "comments": 1, "issues_authored": 1}
+{"key": "mbacon-edocs", "comments": 2}
+{"key": "md84419", "comments": 2}
+{"key": "meduzen", "comments": 2}
+{"key": "metajack", "comments": 1, "issues_authored": 1}
+{"key": "mhxy13867806343", "issues_authored": 2}
+{"key": "michael-tugby", "comments": 2}
+{"key": "mikemcguire", "comments": 2}
+{"key": "mikkorantalainen", "comments": 2}
+{"key": "mlc", "comments": 1, "issues_authored": 1}
+{"key": "morrisonlevi", "comments": 2}
+{"key": "moyogo", "comments": 2}
+{"key": "mozesstumpf", "comments": 2}
+{"key": "muster-mark", "comments": 1, "issues_authored": 1}
+{"key": "nachtfunke", "comments": 2}
+{"key": "nc7s", "comments": 2}
+{"key": "neilj", "comments": 1, "issues_authored": 1}
+{"key": "nemzes", "comments": 2}
+{"key": "nextend", "issues_authored": 2}
+{"key": "ninep9up", "comments": 1, "issues_authored": 1}
+{"key": "nixkuroi", "comments": 1, "issues_authored": 1}
+{"key": "nomadshiba", "comments": 2}
+{"key": "npdoty", "comments": 2}
+{"key": "olets", "comments": 2}
+{"key": "oliverdunk", "comments": 2}
+{"key": "olsp", "comments": 1, "issues_authored": 1}
+{"key": "omgovich", "comments": 1, "issues_authored": 1}
+{"key": "omz13", "comments": 2}
+{"key": "onnodejong", "comments": 2}
+{"key": "orangecoloured", "comments": 2}
+{"key": "p2227", "comments": 1, "issues_authored": 1}
+{"key": "pageaffairs", "comments": 2}
+{"key": "papandreou", "comments": 1, "issues_authored": 1}
+{"key": "patrickgalbraith", "comments": 2}
+{"key": "paulcodeman", "comments": 1, "issues_authored": 1}
+{"key": "paulpopus", "comments": 2}
+{"key": "petamoriken", "comments": 1, "issues_authored": 1}
+{"key": "petergoes", "comments": 2}
+{"key": "peteroupc", "comments": 1, "issues_authored": 1}
+{"key": "petrvanblokland", "comments": 2}
+{"key": "pfgithub", "comments": 2}
+{"key": "philipwalton", "comments": 2}
+{"key": "phoenixsnake", "comments": 2}
+{"key": "piaoxuelia", "comments": 1, "issues_authored": 1}
+{"key": "pmitros", "comments": 2}
+{"key": "pnabbefeld", "comments": 1, "issues_authored": 1}
+{"key": "pnkapadia64", "comments": 2}
+{"key": "pomboverso", "comments": 1, "issues_authored": 1}
+{"key": "ppKrauss", "comments": 1, "issues_authored": 1}
+{"key": "prantlf", "comments": 2}
+{"key": "profezzorn", "comments": 1, "issues_authored": 1}
+{"key": "prushforth", "comments": 2}
+{"key": "queengooborg", "comments": 2}
+{"key": "rcampbellbassac", "comments": 2}
+{"key": "rctneil", "comments": 1, "issues_authored": 1}
+{"key": "reb-hash", "comments": 1, "issues_authored": 1}
+{"key": "reschke", "comments": 1, "issues_authored": 1}
+{"key": "retroriff", "comments": 2}
+{"key": "rezaei", "comments": 1, "issues_authored": 1}
+{"key": "rianby64", "comments": 1, "issues_authored": 1}
+{"key": "richarddunnebsc", "comments": 1, "issues_authored": 1}
+{"key": "ricktheartist", "comments": 2}
+{"key": "rigiddesign", "comments": 2}
+{"key": "rihok", "comments": 2}
+{"key": "rileybathurst", "comments": 2}
+{"key": "rokke-git", "comments": 1, "issues_authored": 1}
+{"key": "rolivo288", "comments": 1, "issues_authored": 1}
+{"key": "rootwork", "comments": 2}
+{"key": "rubenlg", "comments": 2}
+{"key": "rvanwijnen", "comments": 2}
+{"key": "rvveber", "comments": 2}
+{"key": "ryanleichty", "comments": 2}
+{"key": "ryanve", "comments": 1, "issues_authored": 1}
+{"key": "s10wen", "comments": 1, "issues_authored": 1}
+{"key": "sab39", "comments": 2}
+{"key": "sahafshar", "comments": 2}
+{"key": "samhenrigold", "comments": 2}
+{"key": "samjross", "comments": 2}
+{"key": "samuells", "comments": 1, "issues_authored": 1}
+{"key": "sandandsnow", "comments": 2}
+{"key": "sandwich", "comments": 2}
+{"key": "sangwoo108", "comments": 1, "issues_authored": 1}
+{"key": "sarony", "comments": 1, "issues_authored": 1}
+{"key": "sartang", "comments": 1, "issues_authored": 1}
+{"key": "scheib", "comments": 1, "issues_authored": 1}
+{"key": "seejamescode", "comments": 1, "issues_authored": 1}
+{"key": "seezee", "comments": 2}
+{"key": "severdia", "comments": 2}
+{"key": "seyedi", "comments": 2}
+{"key": "shalanah", "comments": 1, "issues_authored": 1}
+{"key": "shaylinko30", "comments": 1, "issues_authored": 1}
+{"key": "shervinafshar", "comments": 2}
+{"key": "shrpne", "comments": 2}
+{"key": "silasabbott", "comments": 2}
+{"key": "simonc", "comments": 2}
+{"key": "simonlindholm", "comments": 1, "issues_authored": 1}
+{"key": "sir-script", "comments": 1, "issues_authored": 1}
+{"key": "sirinath", "comments": 1, "issues_authored": 1}
+{"key": "sivakusayan", "comments": 1, "issues_authored": 1}
+{"key": "sky2", "comments": 1, "issues_authored": 1}
+{"key": "slafleche", "comments": 1, "issues_authored": 1}
+{"key": "slightlyoff", "comments": 2}
+{"key": "snowe2010", "issues_authored": 2}
+{"key": "some1else", "comments": 2}
+{"key": "spartanatreyu", "comments": 2}
+{"key": "srsgores", "comments": 1, "issues_authored": 1}
+{"key": "staktrace", "comments": 2}
+{"key": "stasoid", "comments": 1, "issues_authored": 1}
+{"key": "steffchep", "comments": 2}
+{"key": "stephanieyzhang", "comments": 2}
+{"key": "stephen", "issues_authored": 2}
+{"key": "stiiin", "comments": 1, "issues_authored": 1}
+{"key": "stoyan", "comments": 2}
+{"key": "stuartpb", "issues_authored": 2}
+{"key": "stucox", "comments": 2}
+{"key": "sword-2", "comments": 1, "issues_authored": 1}
+{"key": "sxzz", "comments": 2}
+{"key": "sysrqb", "comments": 2}
+{"key": "t-var-s", "comments": 2}
+{"key": "takenspc", "comments": 2}
+{"key": "taralx", "comments": 1, "issues_authored": 1}
+{"key": "tayfunerbilen", "comments": 2}
+{"key": "tbredin", "issues_authored": 2}
+{"key": "tcl3", "comments": 1, "issues_authored": 1}
+{"key": "tdresser", "comments": 2}
+{"key": "teddybradford", "comments": 1, "issues_authored": 1}
+{"key": "teetotum", "comments": 2}
+{"key": "tester1230293", "comments": 1, "issues_authored": 1}
+{"key": "thany", "comments": 2}
+{"key": "threepointone", "comments": 2}
+{"key": "thundernixon", "comments": 2}
+{"key": "tildelowengrimm", "comments": 2}
+{"key": "tim-loh", "comments": 1, "issues_authored": 1}
+{"key": "timothyis", "comments": 2}
+{"key": "titoBouzout", "comments": 2}
+{"key": "tiye", "comments": 2}
+{"key": "tobiasschmidt89", "comments": 2}
+{"key": "tofi86", "comments": 2}
+{"key": "tom-ricci", "comments": 1, "issues_authored": 1}
+{"key": "towerofnix", "comments": 2}
+{"key": "trescenzi", "comments": 1, "issues_authored": 1}
+{"key": "tunetheweb", "comments": 2}
+{"key": "twalichiewicz", "comments": 1, "issues_authored": 1}
+{"key": "u1f992", "comments": 1, "issues_authored": 1}
+{"key": "um83", "comments": 2}
+{"key": "ummagohil", "comments": 1, "issues_authored": 1}
+{"key": "unilobo", "comments": 2}
+{"key": "vintagedave", "comments": 2}
+{"key": "vkuprin", "comments": 1, "issues_authored": 1}
+{"key": "votemike", "comments": 1, "issues_authored": 1}
+{"key": "wUFr", "comments": 2}
+{"key": "wangmeijian", "comments": 1, "issues_authored": 1}
+{"key": "watershed", "comments": 2}
+{"key": "wezm", "comments": 1, "issues_authored": 1}
+{"key": "what1s1ove", "comments": 2}
+{"key": "whileloopa", "comments": 1, "issues_authored": 1}
+{"key": "whytspace", "comments": 2}
+{"key": "willcassella", "comments": 1, "issues_authored": 1}
+{"key": "wimbarelds", "comments": 2}
+{"key": "wis", "comments": 2}
+{"key": "wle8300", "comments": 2}
+{"key": "wolfbeast", "comments": 1, "issues_authored": 1}
+{"key": "xPaw", "comments": 2}
+{"key": "xgqfrms-GitHub", "comments": 2}
+{"key": "xlf1024", "comments": 2}
+{"key": "yeahforbes", "comments": 2}
+{"key": "yhatt", "comments": 1, "issues_authored": 1}
+{"key": "yoksel", "comments": 1, "issues_authored": 1}
+{"key": "yosinch", "comments": 1, "issues_authored": 1}
+{"key": "youennf", "comments": 1, "issues_authored": 1}
+{"key": "zachleat", "comments": 2}
+{"key": "zb3", "comments": 2}
+{"key": "zhouqicf", "comments": 2}
+{"key": "ziofat", "comments": 2}
+{"key": "zipus", "comments": 1, "issues_authored": 1}
+{"key": "zmajeed", "comments": 1, "issues_authored": 1}
+{"key": "zzzzBov", "comments": 1, "issues_authored": 1}
+{"key": "06b", "comments": 1}
+{"key": "111xiaolilili", "comments": 1}
+{"key": "1219521375", "comments": 1}
+{"key": "1911trp", "issues_authored": 1}
+{"key": "1aron", "issues_authored": 1}
+{"key": "32teeth", "comments": 1}
+{"key": "3axap4eHko", "comments": 1}
+{"key": "4thel00z", "comments": 1}
+{"key": "76creates", "issues_authored": 1}
+{"key": "777555777", "issues_authored": 1}
+{"key": "7oque", "comments": 1}
+{"key": "88jonhan", "issues_authored": 1}
+{"key": "AaronBeaudoin", "comments": 1}
+{"key": "Abid-speedcuber", "issues_authored": 1}
+{"key": "AdamJaggard", "comments": 1}
+{"key": "Agog-io", "issues_authored": 1}
+{"key": "Ajedi32", "issues_authored": 1}
+{"key": "Akiyamka", "comments": 1}
+{"key": "Akshay04722", "issues_authored": 1}
+{"key": "AlanDeSmet", "issues_authored": 1}
+{"key": "Amerlander", "comments": 1}
+{"key": "Amooryjubran", "comments": 1}
+{"key": "AndreasGalster", "comments": 1}
+{"key": "AndreiSva", "comments": 1}
+{"key": "AndresInSpace", "comments": 1}
+{"key": "AndriiBespalyi", "comments": 1}
+{"key": "Andy-set-studio", "comments": 1}
+{"key": "Antonio-Laguna", "issues_authored": 1}
+{"key": "AoDev", "comments": 1}
+{"key": "Aquaticat", "comments": 1}
+{"key": "Arezohayeman", "comments": 1}
+{"key": "ArthurMao", "comments": 1}
+{"key": "ArthurSonzogni", "comments": 1}
+{"key": "Asomeones222", "comments": 1}
+{"key": "Astryl-01", "issues_authored": 1}
+{"key": "Atnas-dev", "comments": 1}
+{"key": "Aurailus", "comments": 1}
+{"key": "AxSamyn", "comments": 1}
+{"key": "AyubM", "comments": 1}
+{"key": "Azmisov", "issues_authored": 1}
+{"key": "BEGEMOT9I", "comments": 1}
+{"key": "BHolterMedia", "comments": 1}
+{"key": "BI1LQV", "comments": 1}
+{"key": "Baedda", "comments": 1}
+{"key": "Bamieh", "issues_authored": 1}
+{"key": "Bammuri", "issues_authored": 1}
+{"key": "BananaAcid", "comments": 1}
+{"key": "Baoge2012", "comments": 1}
+{"key": "BattlemageBob", "comments": 1}
+{"key": "Bavo007", "issues_authored": 1}
+{"key": "Benimation", "comments": 1}
+{"key": "BenjaminGalliot", "issues_authored": 1}
+{"key": "BezPowell", "comments": 1}
+{"key": "BillyG83", "comments": 1}
+{"key": "BlackStar1991", "comments": 1}
+{"key": "BlueStormNetwork", "comments": 1}
+{"key": "BogdanBrinza", "irc_lines": 1}
+{"key": "CamdynR", "issues_authored": 1}
+{"key": "CaptainCodeman", "comments": 1}
+{"key": "CarelessCourage", "comments": 1}
+{"key": "CarolMcKay", "comments": 1}
+{"key": "CarterLi", "comments": 1}
+{"key": "Cazz2", "issues_authored": 1}
+{"key": "ChaosCrafter", "comments": 1}
+{"key": "CharfeddineMohamedAli", "comments": 1}
+{"key": "ChaseKnowlden", "issues_authored": 1}
+{"key": "ChazUK", "comments": 1}
+{"key": "ChrisShank", "comments": 1}
+{"key": "Chudesnov", "comments": 1}
+{"key": "Clarkkkk", "issues_authored": 1}
+{"key": "CoelacanthusHex", "comments": 1}
+{"key": "CraigglesO", "issues_authored": 1}
+{"key": "Cykelero", "comments": 1}
+{"key": "DFF-fred", "issues_authored": 1}
+{"key": "DJ-Miliciano", "comments": 1}
+{"key": "DUMIE505", "issues_authored": 1}
+{"key": "Dalzhim", "comments": 1}
+{"key": "DanHarkless", "comments": 1}
+{"key": "DannyMoerkerke", "issues_authored": 1}
+{"key": "DavidMulder0", "comments": 1}
+{"key": "DerKoun", "comments": 1}
+{"key": "DesignThinkerer", "comments": 1}
+{"key": "Devcon4", "issues_authored": 1}
+{"key": "DianaOlympos", "comments": 1}
+{"key": "Digitload", "comments": 1}
+{"key": "DinoMalin", "issues_authored": 1}
+{"key": "DmitryMakhnev", "comments": 1}
+{"key": "DreamOneX", "comments": 1}
+{"key": "Drewpeifer", "comments": 1}
+{"key": "DrummerHead", "comments": 1}
+{"key": "Durobot", "comments": 1}
+{"key": "EKotb456", "issues_authored": 1}
+{"key": "Elchi3", "comments": 1}
+{"key": "Elfalkin", "issues_authored": 1}
+{"key": "EliotSlevin", "comments": 1}
+{"key": "ElliottBear", "comments": 1}
+{"key": "EllyLoel", "issues_authored": 1}
+{"key": "Enokilis", "comments": 1}
+{"key": "EricBMoreno", "comments": 1}
+{"key": "Ericnr", "comments": 1}
+{"key": "Explorer09", "issues_authored": 1}
+{"key": "Ezekiel1349", "comments": 1}
+{"key": "FarSeeing", "issues_authored": 1}
+{"key": "Fast-Nick", "comments": 1}
+{"key": "Fayti1703", "issues_authored": 1}
+{"key": "FireRedDev", "comments": 1}
+{"key": "FirstVertex", "issues_authored": 1}
+{"key": "FlorianWendelborn", "comments": 1}
+{"key": "FredrikHubinette", "comments": 1}
+{"key": "Fyrnx", "comments": 1}
+{"key": "Gaubee", "comments": 1}
+{"key": "Genz-Ghub", "comments": 1}
+{"key": "GeorgeTailor", "issues_authored": 1}
+{"key": "GeorgiyIakunenko", "comments": 1}
+{"key": "Ghostavio", "comments": 1}
+{"key": "GideonCaspi", "comments": 1}
+{"key": "GitHubStig", "comments": 1}
+{"key": "GoGabIt", "issues_authored": 1}
+{"key": "GoldenFalls", "comments": 1}
+{"key": "Gonzalo-D-Sales", "comments": 1}
+{"key": "GrigorisParaskevakos", "comments": 1}
+{"key": "HGStyle", "comments": 1}
+{"key": "Haprog", "comments": 1}
+{"key": "Helixopp", "comments": 1}
+{"key": "HonzaKopecky", "comments": 1}
+{"key": "INeedJobToStartWork", "issues_authored": 1}
+{"key": "IS4Code", "comments": 1}
+{"key": "Iconejey", "comments": 1}
+{"key": "Impassiveexpedient", "comments": 1}
+{"key": "InvalidUsernameException", "issues_authored": 1}
+{"key": "J-F-Liu", "comments": 1}
+{"key": "JABClari", "comments": 1}
+{"key": "JF98", "issues_authored": 1}
+{"key": "JLademan", "comments": 1}
+{"key": "JRJurman", "comments": 1}
+{"key": "JReinhold", "comments": 1}
+{"key": "Jack-Anstey", "comments": 1}
+{"key": "JakubKubista", "comments": 1}
+{"key": "James-E-A", "comments": 1}
+{"key": "JanNorden", "issues_authored": 1}
+{"key": "JayBox325", "comments": 1}
+{"key": "JayPanoz", "comments": 1}
+{"key": "JensDeMuynck", "comments": 1}
+{"key": "Jeremy-Knudsen", "issues_authored": 1}
+{"key": "Jeremzzzz", "issues_authored": 1}
+{"key": "JeroenAdam", "comments": 1}
+{"key": "JeroenReumkens", "comments": 1}
+{"key": "Jesuis33", "issues_authored": 1}
+{"key": "JesusTheHun", "comments": 1}
+{"key": "JiaboHu", "comments": 1}
+{"key": "JimJJewett", "comments": 1}
+{"key": "Jinjiang", "issues_authored": 1}
+{"key": "Jintus", "comments": 1}
+{"key": "JoelDSmith", "comments": 1}
+{"key": "Joey-Gr", "comments": 1}
+{"key": "JohnAlbin", "comments": 1}
+{"key": "Johnrobmiller", "comments": 1}
+{"key": "Jolg42", "comments": 1}
+{"key": "JoshMLeslie", "comments": 1}
+{"key": "Jothsa", "issues_authored": 1}
+{"key": "JulieBlanc", "issues_authored": 1}
+{"key": "JulienWilhelm", "comments": 1}
+{"key": "Juribiyan", "comments": 1}
+{"key": "KES777", "comments": 1}
+{"key": "KMNTJ", "comments": 1}
+{"key": "KOEGlike", "comments": 1}
+{"key": "KTibow", "comments": 1}
+{"key": "Kaleidea", "issues_authored": 1}
+{"key": "Kangz", "comments": 1}
+{"key": "KarelDiaz", "issues_authored": 1}
+{"key": "Kasbr305", "issues_authored": 1}
+{"key": "KazimirPodolski", "comments": 1}
+{"key": "KenBallou", "issues_authored": 1}
+{"key": "Kerrick", "comments": 1}
+{"key": "KeviinCosmos", "comments": 1}
+{"key": "KevinGrajeda", "comments": 1}
+{"key": "Keyes", "comments": 1}
+{"key": "Kinmfer", "issues_authored": 1}
+{"key": "Kout", "comments": 1}
+{"key": "KuznetsovRoman", "comments": 1}
+{"key": "Kykydysik", "issues_authored": 1}
+{"key": "Kymy", "comments": 1}
+{"key": "L3P3", "comments": 1}
+{"key": "LB--", "comments": 1}
+{"key": "LE0616", "comments": 1}
+{"key": "LKielar", "comments": 1}
+{"key": "LLyaudet", "comments": 1}
+{"key": "Lancear", "comments": 1}
+{"key": "LasyIsLazy", "issues_authored": 1}
+{"key": "Lewiscowles1986", "comments": 1}
+{"key": "LoganDark", "comments": 1}
+{"key": "LucaRed", "comments": 1}
+{"key": "LukaszJaro", "issues_authored": 1}
+{"key": "LukeTOBrien", "comments": 1}
+{"key": "Lutrian1", "issues_authored": 1}
+{"key": "MGSimard", "comments": 1}
+{"key": "MSP-Greg", "issues_authored": 1}
+{"key": "Magaav", "comments": 1}
+{"key": "Maid-Sabanovic", "comments": 1}
+{"key": "MakhBeth", "comments": 1}
+{"key": "Manuel87", "comments": 1}
+{"key": "MappingSteve", "comments": 1}
+{"key": "Marcos323232", "issues_authored": 1}
+{"key": "Marina21416", "issues_authored": 1}
+{"key": "MarkJeronimus", "comments": 1}
+{"key": "MartinMa", "comments": 1}
+{"key": "Martinspire", "comments": 1}
+{"key": "MatmaRex", "comments": 1}
+{"key": "MattAppleton", "comments": 1}
+{"key": "MatteoWebDeveloper", "comments": 1}
+{"key": "MatthewLewis1981", "issues_authored": 1}
+{"key": "MatthewRaymond", "comments": 1}
+{"key": "Matthewow", "comments": 1}
+{"key": "Maximaximum", "comments": 1}
+{"key": "Media-Evil", "issues_authored": 1}
+{"key": "Meowu", "comments": 1}
+{"key": "MicahZoltu", "comments": 1}
+{"key": "Mike-Lobbezoo", "issues_authored": 1}
+{"key": "MireilleMedhat", "comments": 1}
+{"key": "MladenJanjetovic", "comments": 1}
+{"key": "MoritzKn", "comments": 1}
+{"key": "Mr-Array22", "comments": 1}
+{"key": "MrabetOussama0", "issues_authored": 1}
+{"key": "Mushr0000m", "comments": 1}
+{"key": "MustafaHaddara", "comments": 1}
+{"key": "NE-SmallTown", "comments": 1}
+{"key": "Naeemo", "comments": 1}
+{"key": "Nantris", "comments": 1}
+{"key": "Naturalisticjet", "comments": 1}
+{"key": "NerdyDeedsLLC", "comments": 1}
+{"key": "NetOpWibby", "comments": 1}
+{"key": "Netail", "comments": 1}
+{"key": "Ngranger", "comments": 1}
+{"key": "Nic787", "comments": 1}
+{"key": "NiedziolkaMichal", "comments": 1}
+{"key": "Nness", "comments": 1}
+{"key": "Noahs007", "comments": 1}
+{"key": "Nooshu", "issues_authored": 1}
+{"key": "NorbertLindenberg", "comments": 1}
+{"key": "Nozy1282", "issues_authored": 1}
+{"key": "NullVoxPopuli", "comments": 1}
+{"key": "Offbeatmammal", "issues_authored": 1}
+{"key": "Offroaders123", "comments": 1}
+{"key": "OliverBrotchie", "issues_authored": 1}
+{"key": "OnlyWick", "issues_authored": 1}
+{"key": "OnurGumus", "comments": 1}
+{"key": "OverflowCat", "comments": 1}
+{"key": "OxyDesign", "issues_authored": 1}
+{"key": "Parakoos", "comments": 1}
+{"key": "PaulKinlan", "issues_authored": 1}
+{"key": "PauloHDSousa", "issues_authored": 1}
+{"key": "Pelm3shka", "comments": 1}
+{"key": "Peppertop", "comments": 1}
+{"key": "Perelandric", "issues_authored": 1}
+{"key": "Phum7895", "issues_authored": 1}
+{"key": "PieterjanDeClippel", "comments": 1}
+{"key": "Prabhat-D-M", "comments": 1}
+{"key": "PrudveeT", "comments": 1}
+{"key": "PsiRadish", "comments": 1}
+{"key": "PurpleVsGreen", "comments": 1}
+{"key": "QINGCHARLES", "comments": 1}
+{"key": "Ragnar-Oock", "comments": 1}
+{"key": "RanKarat", "issues_authored": 1}
+{"key": "RealAlphabet", "comments": 1}
+{"key": "Reinmar", "comments": 1}
+{"key": "RemiKalbe", "comments": 1}
+{"key": "Rezi", "comments": 1}
+{"key": "RichardTjokroutomo", "issues_authored": 1}
+{"key": "Rinzwind", "comments": 1}
+{"key": "Robbendebiene", "comments": 1}
+{"key": "RodoYolo", "issues_authored": 1}
+{"key": "RonnyO", "comments": 1}
+{"key": "Rvtea", "comments": 1}
+{"key": "SEUH", "comments": 1}
+{"key": "SKOLZ", "comments": 1}
+{"key": "SabineWren", "comments": 1}
+{"key": "SachaG", "comments": 1}
+{"key": "Said182", "comments": 1}
+{"key": "SaidMarar", "comments": 1}
+{"key": "SamiNmnkani", "issues_authored": 1}
+{"key": "Sandstedt", "issues_authored": 1}
+{"key": "SashimiEthan", "comments": 1}
+{"key": "Saw-mon-and-Natalie", "comments": 1}
+{"key": "Sawsqr68", "issues_authored": 1}
+{"key": "SebastianSimon", "comments": 1}
+{"key": "Seirdy", "comments": 1}
+{"key": "SelfMadeSystem", "issues_authored": 1}
+{"key": "Semigradsky", "issues_authored": 1}
+{"key": "SerenaLynas", "issues_authored": 1}
+{"key": "ShacharHarshuv", "comments": 1}
+{"key": "ShaneHudson", "issues_authored": 1}
+{"key": "ShaunRoselt", "comments": 1}
+{"key": "ShayDavidson", "comments": 1}
+{"key": "Sheraff", "comments": 1}
+{"key": "ShikiSuen", "comments": 1}
+{"key": "ShivanKaul", "issues_authored": 1}
+{"key": "ShobujDash", "comments": 1}
+{"key": "Showcase-Joz", "comments": 1}
+{"key": "SiarheiBobryk", "issues_authored": 1}
+{"key": "Silas-3D", "comments": 1}
+{"key": "SilenNaihin", "comments": 1}
+{"key": "SilentImp", "issues_authored": 1}
+{"key": "Silverium", "comments": 1}
+{"key": "SimonEast", "issues_authored": 1}
+{"key": "SimonHogstromRonbol", "issues_authored": 1}
+{"key": "SirTwsted", "issues_authored": 1}
+{"key": "Siricee", "comments": 1}
+{"key": "SkyeYoung", "comments": 1}
+{"key": "Snugug", "issues_authored": 1}
+{"key": "SrGeneroso", "comments": 1}
+{"key": "SteGreig", "comments": 1}
+{"key": "SteveComstock", "issues_authored": 1}
+{"key": "Stolzenhain", "comments": 1}
+{"key": "Sugarteeth", "comments": 1}
+{"key": "SystemParadox", "comments": 1}
+{"key": "T-Hugs", "comments": 1}
+{"key": "TALlama", "comments": 1}
+{"key": "TanawatJukmongkol", "comments": 1}
+{"key": "TarryDan", "comments": 1}
+{"key": "Tavmjong", "comments": 1}
+{"key": "Techn1x", "comments": 1}
+{"key": "TejasQ", "comments": 1}
+{"key": "ThaDaVos", "comments": 1}
+{"key": "Thaina", "comments": 1}
+{"key": "The-Peppester", "comments": 1}
+{"key": "TheAlexLichter", "issues_authored": 1}
+{"key": "TheBigApple", "comments": 1}
+{"key": "TheComputerM", "comments": 1}
+{"key": "TheDecryptor", "comments": 1}
+{"key": "TheElegantCoding", "comments": 1}
+{"key": "TheJaredWilcurt", "comments": 1}
+{"key": "TheUnlocked", "comments": 1}
+{"key": "Theshrink", "comments": 1}
+{"key": "ThomasCorbin", "comments": 1}
+{"key": "TimChinye", "comments": 1}
+{"key": "TimeTerminal", "comments": 1}
+{"key": "TimmiX88", "comments": 1}
+{"key": "TimothyGu", "issues_authored": 1}
+{"key": "Timoti", "comments": 1}
+{"key": "TomerAberbach", "comments": 1}
+{"key": "Trve", "comments": 1}
+{"key": "TrySound", "comments": 1}
+{"key": "TzviyaSiegman", "comments": 1}
+{"key": "UmerYousaf0260", "comments": 1}
+{"key": "UtterDonkey", "comments": 1}
+{"key": "VaJoy", "comments": 1}
+{"key": "VicGUTT", "comments": 1}
+{"key": "W1Real", "comments": 1}
+{"key": "Walrus117", "comments": 1}
+{"key": "WangXBruc", "comments": 1}
+{"key": "WilcoFiers", "issues_authored": 1}
+{"key": "WillsterJohnson", "comments": 1}
+{"key": "WodarekLy", "comments": 1}
+{"key": "Wolfeur", "comments": 1}
+{"key": "XIYO", "issues_authored": 1}
+{"key": "Xcalibur53", "issues_authored": 1}
+{"key": "XiBOR", "comments": 1}
+{"key": "Xiophiderdotcom", "issues_authored": 1}
+{"key": "XtinaSchelin", "issues_authored": 1}
+{"key": "Yay295", "comments": 1}
+{"key": "Yejneshwar", "comments": 1}
+{"key": "Yusuf-KaYeht", "comments": 1}
+{"key": "Zakim", "irc_lines": 1}
+{"key": "ZanderBrown", "comments": 1}
+{"key": "Zatnosk", "comments": 1}
+{"key": "ZhaoTim", "comments": 1}
+{"key": "Ziplodocus", "comments": 1}
+{"key": "Zireael07", "comments": 1}
+{"key": "Zygzaq", "comments": 1}
+{"key": "a-a-GiTHuB-a-a", "comments": 1}
+{"key": "a-type", "comments": 1}
+{"key": "aapoalas", "issues_authored": 1}
+{"key": "aaron-ai", "comments": 1}
+{"key": "abrad1212", "issues_authored": 1}
+{"key": "absurdprofit", "issues_authored": 1}
+{"key": "achalv", "comments": 1}
+{"key": "ackvf", "comments": 1}
+{"key": "acobster", "comments": 1}
+{"key": "acpirate", "comments": 1}
+{"key": "adambelis", "comments": 1}
+{"key": "adambernath", "issues_authored": 1}
+{"key": "adamkudrna", "comments": 1}
+{"key": "adamschwartz", "comments": 1}
+{"key": "adarshrkumar", "comments": 1}
+{"key": "addyosmani", "comments": 1}
+{"key": "aderchox", "comments": 1}
+{"key": "adiabatic", "comments": 1}
+{"key": "adomasven", "comments": 1}
+{"key": "adviva", "comments": 1}
+{"key": "aehlke", "comments": 1}
+{"key": "aentwist", "comments": 1}
+{"key": "aersida", "comments": 1}
+{"key": "aexis-b", "comments": 1}
+{"key": "afdw", "comments": 1}
+{"key": "aghArdeshir", "comments": 1}
+{"key": "aghassemi", "issues_authored": 1}
+{"key": "aharon-lanin", "comments": 1}
+{"key": "ahmadrasyidsalim", "issues_authored": 1}
+{"key": "ahmed-esmail-1", "comments": 1}
+{"key": "ahtohbi4", "issues_authored": 1}
+{"key": "airbr", "comments": 1}
+{"key": "airen", "comments": 1}
+{"key": "ajkandy", "comments": 1}
+{"key": "akaia-shadowfox", "comments": 1}
+{"key": "akantsc", "comments": 1}
+{"key": "akatuku", "comments": 1}
+{"key": "akira-cn", "comments": 1}
+{"key": "akiseino", "comments": 1}
+{"key": "alastor0325", "comments": 1}
+{"key": "aleclarson", "comments": 1}
+{"key": "alessiomaffeis", "comments": 1}
+{"key": "alex-bacart", "comments": 1}
+{"key": "alex-krasikau", "comments": 1}
+{"key": "alexandergitter", "issues_authored": 1}
+{"key": "alexanderkjeldaas", "issues_authored": 1}
+{"key": "alexdima", "comments": 1}
+{"key": "alexdln", "comments": 1}
+{"key": "alexgagnon", "comments": 1}
+{"key": "alexluongfm", "issues_authored": 1}
+{"key": "alexnozer", "comments": 1}
+{"key": "alienself", "comments": 1}
+{"key": "alijuytre", "issues_authored": 1}
+{"key": "alin04", "issues_authored": 1}
+{"key": "alinnert", "issues_authored": 1}
+{"key": "alligatorio", "issues_authored": 1}
+{"key": "alsoLut", "comments": 1}
+{"key": "aluhrs13", "comments": 1}
+{"key": "amandabaker", "issues_authored": 1}
+{"key": "amazingrando", "comments": 1}
+{"key": "amjedidiah", "comments": 1}
+{"key": "amk221", "comments": 1}
+{"key": "ananya-ky", "issues_authored": 1}
+{"key": "andbits", "comments": 1}
+{"key": "andreacfromtheapp", "comments": 1}
+{"key": "andreasbovens", "comments": 1}
+{"key": "andreasrosdalw", "issues_authored": 1}
+{"key": "andrei9669", "comments": 1}
+{"key": "andreififiita", "comments": 1}
+{"key": "andreineculau", "comments": 1}
+{"key": "andrejsharapov", "comments": 1}
+{"key": "andreluizmartinsramos", "comments": 1}
+{"key": "andrew79pl", "issues_authored": 1}
+{"key": "andrewf-work", "comments": 1}
+{"key": "andrezero", "comments": 1}
+{"key": "andrilla-francis", "comments": 1}
+{"key": "andy-blum", "comments": 1}
+{"key": "andylacko", "comments": 1}
+{"key": "annejan", "comments": 1}
+{"key": "annopnod", "issues_authored": 1}
+{"key": "answershuto", "issues_authored": 1}
+{"key": "anthonyrivas", "comments": 1}
+{"key": "antoniosdi", "comments": 1}
+{"key": "apasov", "issues_authored": 1}
+{"key": "ar-nelson", "comments": 1}
+{"key": "aradalvand", "comments": 1}
+{"key": "arcanis", "issues_authored": 1}
+{"key": "aress31", "comments": 1}
+{"key": "ariofrio", "comments": 1}
+{"key": "arnt", "comments": 1}
+{"key": "arpit-agr", "comments": 1}
+{"key": "arronei", "comments": 1}
+{"key": "aruku7230", "issues_authored": 1}
+{"key": "ashishjat", "comments": 1}
+{"key": "ashleykolodziej", "comments": 1}
+{"key": "ashly1111111", "issues_authored": 1}
+{"key": "asiljan", "comments": 1}
+{"key": "astrit", "comments": 1}
+{"key": "astronautintheocean", "comments": 1}
+{"key": "aswan", "issues_authored": 1}
+{"key": "asyncliz", "comments": 1}
+{"key": "atg", "comments": 1}
+{"key": "australianpokies", "comments": 1}
+{"key": "avh4", "issues_authored": 1}
+{"key": "awesomekling", "issues_authored": 1}
+{"key": "awesomesk1ll", "comments": 1}
+{"key": "axelboc", "comments": 1}
+{"key": "axinging", "issues_authored": 1}
+{"key": "ayaka14732", "comments": 1}
+{"key": "ayyash", "comments": 1}
+{"key": "azbo", "comments": 1}
+{"key": "b-strauss", "comments": 1}
+{"key": "babakfp", "issues_authored": 1}
+{"key": "backflip", "comments": 1}
+{"key": "bahrus", "issues_authored": 1}
+{"key": "bameyrick", "issues_authored": 1}
+{"key": "bansavage", "comments": 1}
+{"key": "barrelltech", "comments": 1}
+{"key": "bartoshsu", "issues_authored": 1}
+{"key": "bashidagha", "comments": 1}
+{"key": "basiclines", "comments": 1}
+{"key": "baybal", "comments": 1}
+{"key": "bb010g", "comments": 1}
+{"key": "bbag", "comments": 1}
+{"key": "bbarker", "comments": 1}
+{"key": "bcdewitt", "comments": 1}
+{"key": "bdsexton", "comments": 1}
+{"key": "beantaxi", "issues_authored": 1}
+{"key": "becka11y", "issues_authored": 1}
+{"key": "beckiechoi", "comments": 1}
+{"key": "belluzj", "comments": 1}
+{"key": "benbenbenbenbenben", "comments": 1}
+{"key": "benbyford", "comments": 1}
+{"key": "benedikt", "comments": 1}
+{"key": "benhammondmusic", "comments": 1}
+{"key": "benhatsor", "comments": 1}
+{"key": "benjamindenboer", "comments": 1}
+{"key": "benschwarz", "comments": 1}
+{"key": "beratbayram", "comments": 1}
+{"key": "berlysia", "issues_authored": 1}
+{"key": "bertdida", "issues_authored": 1}
+{"key": "besworks", "comments": 1}
+{"key": "beverloo", "issues_authored": 1}
+{"key": "bhamblok", "issues_authored": 1}
+{"key": "binyamin", "comments": 1}
+{"key": "blessanm86", "comments": 1}
+{"key": "blm768", "comments": 1}
+{"key": "bloodykheeng", "comments": 1}
+{"key": "bloycey", "comments": 1}
+{"key": "blueimp", "comments": 1}
+{"key": "blynx", "comments": 1}
+{"key": "bmakuh", "comments": 1}
+{"key": "bmeck", "comments": 1}
+{"key": "bobwxc", "comments": 1}
+{"key": "bogger33", "comments": 1}
+{"key": "boggydigital", "comments": 1}
+{"key": "bolicos", "issues_authored": 1}
+{"key": "botmad", "comments": 1}
+{"key": "bouzlibop", "issues_authored": 1}
+{"key": "brad-mccormick", "issues_authored": 1}
+{"key": "bradtriebwasser", "issues_authored": 1}
+{"key": "brendastorer", "comments": 1}
+{"key": "brenfwd", "comments": 1}
+{"key": "brentjett", "comments": 1}
+{"key": "brilliapps", "comments": 1}
+{"key": "brock-crashchampions", "issues_authored": 1}
+{"key": "bryanmcquade", "comments": 1}
+{"key": "brycethomas", "issues_authored": 1}
+{"key": "bskibinski", "comments": 1}
+{"key": "buitrbao222", "comments": 1}
+{"key": "bundyo", "comments": 1}
+{"key": "burlog", "issues_authored": 1}
+{"key": "burtonrodman", "comments": 1}
+{"key": "bvaughn", "comments": 1}
+{"key": "bxff", "comments": 1}
+{"key": "c0debabe", "comments": 1}
+{"key": "c9mb", "comments": 1}
+{"key": "cactysman", "comments": 1}
+{"key": "caduvieira", "comments": 1}
+{"key": "caillou", "comments": 1}
+{"key": "camillelamy", "comments": 1}
+{"key": "camsteffen", "comments": 1}
+{"key": "canova", "comments": 1}
+{"key": "cany1985", "issues_authored": 1}
+{"key": "caoimhinsmo", "comments": 1}
+{"key": "capr", "comments": 1}
+{"key": "caraya", "comments": 1}
+{"key": "carmacleod", "comments": 1}
+{"key": "carsonpowers", "comments": 1}
+{"key": "cartr", "issues_authored": 1}
+{"key": "catalinred", "comments": 1}
+{"key": "caucik", "issues_authored": 1}
+{"key": "cdll", "comments": 1}
+{"key": "cekkr", "comments": 1}
+{"key": "certainlyakey", "comments": 1}
+{"key": "cg757", "issues_authored": 1}
+{"key": "cgrobb", "comments": 1}
+{"key": "chaals", "comments": 1}
+{"key": "chandu193", "comments": 1}
+{"key": "chanon", "comments": 1}
+{"key": "chartgerink", "comments": 1}
+{"key": "chasm", "comments": 1}
+{"key": "chbndrhnns", "comments": 1}
+{"key": "chee", "comments": 1}
+{"key": "chenggwang", "comments": 1}
+{"key": "chenglou", "comments": 1}
+{"key": "cherscarlett", "comments": 1}
+{"key": "chinchang", "comments": 1}
+{"key": "chris70c", "issues_authored": 1}
+{"key": "chrisbowes", "comments": 1}
+{"key": "chrisosaurus", "issues_authored": 1}
+{"key": "christian-bromann", "comments": 1}
+{"key": "chriswales95", "comments": 1}
+{"key": "chriswks", "comments": 1}
+{"key": "chronosirius", "comments": 1}
+{"key": "citriqa", "comments": 1}
+{"key": "clairebaire", "issues_authored": 1}
+{"key": "claritise", "comments": 1}
+{"key": "claudioc", "comments": 1}
+{"key": "cletusw", "comments": 1}
+{"key": "clevermissfox", "comments": 1}
+{"key": "clulece", "comments": 1}
+{"key": "cmahnke", "comments": 1}
+{"key": "cnrkuo", "comments": 1}
+{"key": "codes001", "comments": 1}
+{"key": "codesyofo", "comments": 1}
+{"key": "codewisenate", "comments": 1}
+{"key": "cofenster-michal", "issues_authored": 1}
+{"key": "coleholyoake", "comments": 1}
+{"key": "colinmford", "comments": 1}
+{"key": "coltpini", "comments": 1}
+{"key": "conteui", "issues_authored": 1}
+{"key": "contreforme", "comments": 1}
+{"key": "cookiengineer", "issues_authored": 1}
+{"key": "coolaj86", "comments": 1}
+{"key": "coreh", "comments": 1}
+{"key": "coreo881", "comments": 1}
+{"key": "cornedor", "comments": 1}
+{"key": "cornelius-dol", "comments": 1}
+{"key": "cosmicvibes", "comments": 1}
+{"key": "cramforce", "comments": 1}
+{"key": "creativeer", "comments": 1}
+{"key": "cscott", "issues_authored": 1}
+{"key": "csicky", "comments": 1}
+{"key": "cssence", "issues_authored": 1}
+{"key": "cssinate", "comments": 1}
+{"key": "ctjlewis", "comments": 1}
+{"key": "cullophid", "comments": 1}
+{"key": "curiousduck-dev", "comments": 1}
+{"key": "cw789", "comments": 1}
+{"key": "cwadrupldijjit", "comments": 1}
+{"key": "cxh194311", "comments": 1}
+{"key": "cyns", "comments": 1}
+{"key": "dSalieri", "issues_authored": 1}
+{"key": "da2x", "comments": 1}
+{"key": "dagadbm", "comments": 1}
+{"key": "dakom", "comments": 1}
+{"key": "dakur", "comments": 1}
+{"key": "dalboris", "issues_authored": 1}
+{"key": "dalecurtis", "comments": 1}
+{"key": "damienroche", "comments": 1}
+{"key": "danbeam", "comments": 1}
+{"key": "danchristofi", "issues_authored": 1}
+{"key": "dancork", "comments": 1}
+{"key": "dandv", "issues_authored": 1}
+{"key": "dangerlettuce", "comments": 1}
+{"key": "danieltj27", "comments": 1}
+{"key": "danielwaltz", "comments": 1}
+{"key": "danilovaz", "comments": 1}
+{"key": "dannote", "comments": 1}
+{"key": "danny0838", "comments": 1}
+{"key": "dannyjhonston", "comments": 1}
+{"key": "dannysmith", "comments": 1}
+{"key": "danosek", "comments": 1}
+{"key": "dansajin", "comments": 1}
+{"key": "dansoper", "issues_authored": 1}
+{"key": "darobin", "comments": 1}
+{"key": "davejsdev", "comments": 1}
+{"key": "davemaxwell77", "comments": 1}
+{"key": "davewallace", "comments": 1}
+{"key": "davidbernegger", "comments": 1}
+{"key": "davidcmoulton", "comments": 1}
+{"key": "daviddarnes", "comments": 1}
+{"key": "davidfitzgibbon", "comments": 1}
+{"key": "davidhmays", "comments": 1}
+{"key": "davmillar", "comments": 1}
+{"key": "davwheat", "comments": 1}
+{"key": "davydepauw", "comments": 1}
+{"key": "deafninja", "comments": 1}
+{"key": "decivilizator", "comments": 1}
+{"key": "dektar", "issues_authored": 1}
+{"key": "dennisfrank", "comments": 1}
+{"key": "dennisgaebel", "comments": 1}
+{"key": "deokjinkim", "issues_authored": 1}
+{"key": "derekjohnson", "issues_authored": 1}
+{"key": "design1online", "comments": 1}
+{"key": "destradaxcheckapp", "comments": 1}
+{"key": "detlevhfischer", "comments": 1}
+{"key": "dev-nicolaos", "comments": 1}
+{"key": "developit", "comments": 1}
+{"key": "dharmi04", "comments": 1}
+{"key": "dianaqu", "comments": 1}
+{"key": "didier", "comments": 1}
+{"key": "diekus-zz", "comments": 1}
+{"key": "digeomel", "comments": 1}
+{"key": "digitaldonkey", "comments": 1}
+{"key": "diondiondion", "comments": 1}
+{"key": "djrrb", "comments": 1}
+{"key": "dk8dn", "comments": 1}
+{"key": "dmethvin", "comments": 1}
+{"key": "dmland", "comments": 1}
+{"key": "dnistreanuu", "comments": 1}
+{"key": "domchristie", "comments": 1}
+{"key": "domenichelfenstein", "comments": 1}
+{"key": "donnysim", "comments": 1}
+{"key": "dopry", "comments": 1}
+{"key": "dougalg-js-tw", "comments": 1}
+{"key": "drecali", "comments": 1}
+{"key": "drewm", "comments": 1}
+{"key": "drhodius", "comments": 1}
+{"key": "dryan", "comments": 1}
+{"key": "dstoc", "issues_authored": 1}
+{"key": "dstorey", "issues_authored": 1}
+{"key": "dtruffaut", "comments": 1}
+{"key": "duanemoody", "comments": 1}
+{"key": "dubrowsky", "issues_authored": 1}
+{"key": "dufemeng", "comments": 1}
+{"key": "dulldaydudes", "comments": 1}
+{"key": "dustypomerleau", "comments": 1}
+{"key": "dvdherron", "comments": 1}
+{"key": "dveditz", "comments": 1}
+{"key": "dwds", "comments": 1}
+{"key": "e-oz", "comments": 1}
+{"key": "eae", "comments": 1}
+{"key": "ebisucomtechlab", "comments": 1}
+{"key": "ecartz", "comments": 1}
+{"key": "ecbypi", "comments": 1}
+{"key": "eddyw", "issues_authored": 1}
+{"key": "edemaine", "comments": 1}
+{"key": "edg2s", "issues_authored": 1}
+{"key": "edokeh", "comments": 1}
+{"key": "efstajas", "comments": 1}
+{"key": "ehvana", "comments": 1}
+{"key": "einarpersson", "comments": 1}
+{"key": "el22or", "comments": 1}
+{"key": "elad2412", "comments": 1}
+{"key": "eligrey", "comments": 1}
+{"key": "elmi-pd", "comments": 1}
+{"key": "elmvguia", "comments": 1}
+{"key": "emilfihlman", "issues_authored": 1}
+{"key": "emolr", "comments": 1}
+{"key": "enbee81", "issues_authored": 1}
+{"key": "endymion1818", "comments": 1}
+{"key": "er-parag91", "comments": 1}
+{"key": "eric-dos-reis", "comments": 1}
+{"key": "erikjung", "comments": 1}
+{"key": "erosman", "comments": 1}
+{"key": "esprehn", "comments": 1}
+{"key": "estesmax", "comments": 1}
+{"key": "evanminto", "comments": 1}
+{"key": "evgeniy-kolmak", "comments": 1}
+{"key": "exdeniz", "comments": 1}
+{"key": "exkc", "comments": 1}
+{"key": "fabslab", "comments": 1}
+{"key": "faciens", "comments": 1}
+{"key": "fb55", "issues_authored": 1}
+{"key": "felds", "comments": 1}
+{"key": "felipecrv", "issues_authored": 1}
+{"key": "felippe-regazio", "comments": 1}
+{"key": "felix-bohlin", "issues_authored": 1}
+{"key": "fgalarza1983", "issues_authored": 1}
+{"key": "filimon-danopoulos", "comments": 1}
+{"key": "finnp", "issues_authored": 1}
+{"key": "florian", "comments": 1}
+{"key": "fmalita", "comments": 1}
+{"key": "folletto", "comments": 1}
+{"key": "fosple", "comments": 1}
+{"key": "frank-topel-dbi", "comments": 1}
+{"key": "frankelavsky", "comments": 1}
+{"key": "frankofranko1", "issues_authored": 1}
+{"key": "fredck", "comments": 1}
+{"key": "freedebreuil", "issues_authored": 1}
+{"key": "freedimension", "comments": 1}
+{"key": "frmlnd", "comments": 1}
+{"key": "frogcat", "issues_authored": 1}
+{"key": "fromaline", "comments": 1}
+{"key": "froschman", "comments": 1}
+{"key": "frunkad", "comments": 1}
+{"key": "fshafique", "comments": 1}
+{"key": "fstrr", "comments": 1}
+{"key": "fujii", "issues_authored": 1}
+{"key": "funorpain", "issues_authored": 1}
+{"key": "gabrielgrant", "comments": 1}
+{"key": "galmacky", "issues_authored": 1}
+{"key": "gaokun", "issues_authored": 1}
+{"key": "garawaa", "comments": 1}
+{"key": "garykac", "comments": 1}
+{"key": "gastonrod", "issues_authored": 1}
+{"key": "gavinmorrow", "comments": 1}
+{"key": "geelen", "comments": 1}
+{"key": "gender404", "comments": 1}
+{"key": "gerritvanaaken", "comments": 1}
+{"key": "gerry-xero-api285", "comments": 1}
+{"key": "geryogam", "comments": 1}
+{"key": "gethinoakes", "comments": 1}
+{"key": "gevgeny", "comments": 1}
+{"key": "gg-phntms", "comments": 1}
+{"key": "gi11es", "issues_authored": 1}
+{"key": "gibbok", "issues_authored": 1}
+{"key": "gipoezcan", "comments": 1}
+{"key": "giveap", "comments": 1}
+{"key": "gkalpak", "comments": 1}
+{"key": "gked", "comments": 1}
+{"key": "gmile", "comments": 1}
+{"key": "gmksupernova", "comments": 1}
+{"key": "goddamit-io", "comments": 1}
+{"key": "gongpeione", "comments": 1}
+{"key": "gorgoglionemeister", "issues_authored": 1}
+{"key": "goury212", "comments": 1}
+{"key": "gterminator", "comments": 1}
+{"key": "guilhermesimoes", "comments": 1}
+{"key": "guiseek", "comments": 1}
+{"key": "gunnarbittersmann", "issues_authored": 1}
+{"key": "gyurmey2", "comments": 1}
+{"key": "hackademix", "issues_authored": 1}
+{"key": "hackvertor", "issues_authored": 1}
+{"key": "hanfengv", "issues_authored": 1}
+{"key": "hanshillen", "comments": 1}
+{"key": "happy2deepak", "comments": 1}
+{"key": "harellevy", "comments": 1}
+{"key": "harunaamadu", "comments": 1}
+{"key": "hathiphant", "issues_authored": 1}
+{"key": "hattapoglu-trt", "issues_authored": 1}
+{"key": "hcesar", "issues_authored": 1}
+{"key": "heapwolf", "comments": 1}
+{"key": "hediyi", "issues_authored": 1}
+{"key": "heembomj-hub", "issues_authored": 1}
+{"key": "heftig", "issues_authored": 1}
+{"key": "hejtmii", "comments": 1}
+{"key": "helloyou2012", "issues_authored": 1}
+{"key": "hermosawave", "comments": 1}
+{"key": "herrernst", "comments": 1}
+{"key": "hfhchan-plb", "issues_authored": 1}
+{"key": "himo1122", "issues_authored": 1}
+{"key": "hingbong", "comments": 1}
+{"key": "hiroshige-g", "comments": 1}
+{"key": "hitautodestruct", "comments": 1}
+{"key": "homerjam", "comments": 1}
+{"key": "hoshi411", "comments": 1}
+{"key": "howard-e", "issues_authored": 1}
+{"key": "hrithiksawhney", "comments": 1}
+{"key": "hshm10", "issues_authored": 1}
+{"key": "hua03", "comments": 1}
+{"key": "huan", "comments": 1}
+{"key": "hudochenkov", "issues_authored": 1}
+{"key": "hugolh110-svg", "issues_authored": 1}
+{"key": "hwikyounglee", "comments": 1}
+{"key": "hybrist", "comments": 1}
+{"key": "i-am-the-slime", "comments": 1}
+{"key": "i124q2n8", "issues_authored": 1}
+{"key": "iChenLei", "comments": 1}
+{"key": "iamvdo", "comments": 1}
+{"key": "iandevlin", "comments": 1}
+{"key": "ianvollick", "comments": 1}
+{"key": "icecreamx3", "issues_authored": 1}
+{"key": "ideadapt", "issues_authored": 1}
+{"key": "ihorzenich", "comments": 1}
+{"key": "iker803", "issues_authored": 1}
+{"key": "imageck", "issues_authored": 1}
+{"key": "instylevii", "comments": 1}
+{"key": "internettrans", "comments": 1}
+{"key": "iqbalbhatti49", "issues_authored": 1}
+{"key": "isat7", "comments": 1}
+{"key": "its-me-mario", "comments": 1}
+{"key": "itsdonnix", "comments": 1}
+{"key": "itsmanojb", "comments": 1}
+{"key": "ivanduka", "comments": 1}
+{"key": "ivansandrk", "comments": 1}
+{"key": "j2is", "comments": 1}
+{"key": "jackholden", "comments": 1}
+{"key": "jamesdoc", "comments": 1}
+{"key": "jamesgulland-nodelondon", "comments": 1}
+{"key": "jandre3000", "comments": 1}
+{"key": "janosh", "comments": 1}
+{"key": "jarek-foksa", "issues_authored": 1}
+{"key": "jarodtaylor", "comments": 1}
+{"key": "jaygeorge", "comments": 1}
+{"key": "jazzie-bee", "comments": 1}
+{"key": "jchiem", "comments": 1}
+{"key": "jcjolley", "comments": 1}
+{"key": "jcklpe", "comments": 1}
+{"key": "jcnevess", "comments": 1}
+{"key": "jdatapple", "comments": 1}
+{"key": "jdcrisamore", "comments": 1}
+{"key": "jdsteinbach", "comments": 1}
+{"key": "jeff-wolff", "comments": 1}
+{"key": "jefferyto", "comments": 1}
+{"key": "jenniferlwilson", "issues_authored": 1}
+{"key": "jens-struct", "comments": 1}
+{"key": "jeremenichelli", "comments": 1}
+{"key": "jeremyfuksa", "comments": 1}
+{"key": "jernoble", "comments": 1}
+{"key": "jescalan", "comments": 1}
+{"key": "jfrazzano", "comments": 1}
+{"key": "jgerken", "comments": 1}
+{"key": "jgthms", "comments": 1}
+{"key": "jgw96", "issues_authored": 1}
+{"key": "jholt1", "comments": 1}
+{"key": "jiangtao", "comments": 1}
+{"key": "jihye", "irc_lines": 1}
+{"key": "jipema", "comments": 1}
+{"key": "jjcm", "comments": 1}
+{"key": "jjhiggz", "comments": 1}
+{"key": "jjjalkanen", "issues_authored": 1}
+{"key": "jkuss", "comments": 1}
+{"key": "jlarmstrongiv", "issues_authored": 1}
+{"key": "jludddy", "comments": 1}
+{"key": "jmdurdin", "comments": 1}
+{"key": "jnurthen", "comments": 1}
+{"key": "joakimnl", "comments": 1}
+{"key": "joallard", "comments": 1}
+{"key": "joe-watkins", "issues_authored": 1}
+{"key": "joekingTheThird3", "issues_authored": 1}
+{"key": "joelanman", "comments": 1}
+{"key": "joelmiguelvalente", "issues_authored": 1}
+{"key": "joemcgill", "comments": 1}
+{"key": "joeshub", "comments": 1}
+{"key": "johannhof", "issues_authored": 1}
+{"key": "john-cj", "comments": 1}
+{"key": "john-hascall", "comments": 1}
+{"key": "john-melin", "comments": 1}
+{"key": "johnfoliot", "comments": 1}
+{"key": "joma74", "comments": 1}
+{"key": "jonaskuske", "comments": 1}
+{"key": "jonbell-lot23", "comments": 1}
+{"key": "jondaiello", "comments": 1}
+{"key": "jonesiscoding", "issues_authored": 1}
+{"key": "jongeorgeff", "comments": 1}
+{"key": "jonnyjames", "issues_authored": 1}
+{"key": "jonsherrard", "comments": 1}
+{"key": "jorrit", "comments": 1}
+{"key": "josephrocca", "comments": 1}
+{"key": "joshjg", "comments": 1}
+{"key": "joshuakraemer", "comments": 1}
+{"key": "joshuaptfan", "issues_authored": 1}
+{"key": "joshuat", "comments": 1}
+{"key": "jossmac", "issues_authored": 1}
+{"key": "jpiesing", "comments": 1}
+{"key": "jplevene", "issues_authored": 1}
+{"key": "jpmedley", "issues_authored": 1}
+{"key": "jponch", "comments": 1}
+{"key": "jr-grenoble", "comments": 1}
+{"key": "jsamr", "issues_authored": 1}
+{"key": "jsanthosh-godaddy", "comments": 1}
+{"key": "jsebrech", "comments": 1}
+{"key": "jtbandes", "comments": 1}
+{"key": "jtyjty99999", "comments": 1}
+{"key": "juanrgon", "comments": 1}
+{"key": "juanz11", "issues_authored": 1}
+{"key": "juliandescottes", "issues_authored": 1}
+{"key": "juliusstoerrle", "comments": 1}
+{"key": "juliuszsielski", "comments": 1}
+{"key": "jumde", "comments": 1}
+{"key": "justinasmussen", "comments": 1}
+{"key": "justingolden21", "comments": 1}
+{"key": "jwdallas", "comments": 1}
+{"key": "jwdevel", "comments": 1}
+{"key": "k-j-kim", "issues_authored": 1}
+{"key": "k3a", "comments": 1}
+{"key": "kaelig", "comments": 1}
+{"key": "kalleboo", "comments": 1}
+{"key": "kamikadza", "comments": 1}
+{"key": "kappesante", "comments": 1}
+{"key": "kareldonk", "issues_authored": 1}
+{"key": "karimsabbagh", "comments": 1}
+{"key": "kartikadur", "comments": 1}
+{"key": "katerlouis", "comments": 1}
+{"key": "katzlbt", "comments": 1}
+{"key": "kdiazomitsis", "issues_authored": 1}
+{"key": "kdzwinel", "issues_authored": 1}
+{"key": "keith0305", "comments": 1}
+{"key": "keller-mark", "comments": 1}
+{"key": "kenbellows", "comments": 1}
+{"key": "kennethormandy", "comments": 1}
+{"key": "kennethzuniga", "issues_authored": 1}
+{"key": "kennyluck", "comments": 1}
+{"key": "kentcdodds", "comments": 1}
+{"key": "kerryj89", "comments": 1}
+{"key": "keviinnch", "comments": 1}
+{"key": "kevinmarks", "issues_authored": 1}
+{"key": "kfranqueiro", "comments": 1}
+{"key": "killaragorn", "comments": 1}
+{"key": "kinkoazc", "comments": 1}
+{"key": "klasjersevi", "comments": 1}
+{"key": "koko236", "comments": 1}
+{"key": "kokoshneta", "comments": 1}
+{"key": "kolkov", "comments": 1}
+{"key": "koller18", "comments": 1}
+{"key": "konieckropka", "comments": 1}
+{"key": "konkit", "comments": 1}
+{"key": "kornelski", "comments": 1}
+{"key": "kospl", "comments": 1}
+{"key": "kratther", "issues_authored": 1}
+{"key": "krogovin", "issues_authored": 1}
+{"key": "krsfryr", "comments": 1}
+{"key": "ksqsf", "comments": 1}
+{"key": "kumatysynekfxxt-cmd", "issues_authored": 1}
+{"key": "kurtextrem", "issues_authored": 1}
+{"key": "kush-agra", "issues_authored": 1}
+{"key": "kwangminini", "issues_authored": 1}
+{"key": "kwkbtr", "comments": 1}
+{"key": "kylehotchkiss", "comments": 1}
+{"key": "kyosheek", "comments": 1}
+{"key": "lamjay2704", "issues_authored": 1}
+{"key": "laszlokorte", "comments": 1}
+{"key": "lautarodragan", "issues_authored": 1}
+{"key": "laverdet", "comments": 1}
+{"key": "lcichanowicz", "comments": 1}
+{"key": "leaanthony", "comments": 1}
+{"key": "lefoulkrod", "comments": 1}
+{"key": "legendofmi", "comments": 1}
+{"key": "lencioni", "comments": 1}
+{"key": "lentschi", "comments": 1}
+{"key": "leonardo-fernandes", "comments": 1}
+{"key": "lestertraumatic", "comments": 1}
+{"key": "leswatts", "issues_authored": 1}
+{"key": "leuvi", "comments": 1}
+{"key": "lexa4832", "issues_authored": 1}
+{"key": "lgarron", "comments": 1}
+{"key": "lhecker", "comments": 1}
+{"key": "lifeiscontent", "issues_authored": 1}
+{"key": "linc", "comments": 1}
+{"key": "linrf", "comments": 1}
+{"key": "lionel-rowe", "issues_authored": 1}
+{"key": "liuhaitao827", "issues_authored": 1}
+{"key": "lloydk", "comments": 1}
+{"key": "lochie", "comments": 1}
+{"key": "loia5tqd001", "comments": 1}
+{"key": "lolbinarycat", "issues_authored": 1}
+{"key": "lozcalver", "comments": 1}
+{"key": "lseeman", "issues_authored": 1}
+{"key": "lu-yuan", "issues_authored": 1}
+{"key": "lucasmicheli", "comments": 1}
+{"key": "lucijanblagonic", "comments": 1}
+{"key": "luckynos", "issues_authored": 1}
+{"key": "lucpotage", "issues_authored": 1}
+{"key": "ludela4", "issues_authored": 1}
+{"key": "luiscobot", "comments": 1}
+{"key": "luisjuansp", "issues_authored": 1}
+{"key": "luizgfranca", "issues_authored": 1}
+{"key": "lukaszpolowczyk", "issues_authored": 1}
+{"key": "lukejagodzinski", "comments": 1}
+{"key": "lukewhitmore", "comments": 1}
+{"key": "lumynou5", "comments": 1}
+{"key": "lunelson", "comments": 1}
+{"key": "lurch", "issues_authored": 1}
+{"key": "luxuryluke", "comments": 1}
+{"key": "lwolberg", "comments": 1}
+{"key": "lyjk-underdog", "comments": 1}
+{"key": "mabeyj", "issues_authored": 1}
+{"key": "madprops", "issues_authored": 1}
+{"key": "magicalskye", "comments": 1}
+{"key": "magnus195", "issues_authored": 1}
+{"key": "maheshREACT", "issues_authored": 1}
+{"key": "mahjs", "issues_authored": 1}
+{"key": "majidvp", "irc_lines": 1}
+{"key": "mandel59", "issues_authored": 1}
+{"key": "mandymichael", "comments": 1}
+{"key": "manuel-za", "comments": 1}
+{"key": "marblewraith", "comments": 1}
+{"key": "marcebdev", "comments": 1}
+{"key": "marcelhageman", "comments": 1}
+{"key": "marchbox", "comments": 1}
+{"key": "marcospgp", "comments": 1}
+{"key": "marcysutton", "issues_authored": 1}
+{"key": "marekgebka", "comments": 1}
+{"key": "maria-gourevitch", "comments": 1}
+{"key": "mario-aleo", "comments": 1}
+{"key": "marisademeglio", "comments": 1}
+{"key": "markacianfrani", "comments": 1}
+{"key": "markdavidmc0", "comments": 1}
+{"key": "markfswe", "comments": 1}
+{"key": "markhicken", "comments": 1}
+{"key": "markwylde", "comments": 1}
+{"key": "martijnmegens", "comments": 1}
+{"key": "martinalderson", "comments": 1}
+{"key": "marto55555", "comments": 1}
+{"key": "maryamrmz", "comments": 1}
+{"key": "maryjom", "comments": 1}
+{"key": "marzieh-kazemi", "comments": 1}
+{"key": "masoudgs", "issues_authored": 1}
+{"key": "mateitudor", "issues_authored": 1}
+{"key": "mateusfg7", "comments": 1}
+{"key": "matial", "comments": 1}
+{"key": "mattalxndr", "issues_authored": 1}
+{"key": "mattbrundage", "comments": 1}
+{"key": "matteobortolazzo", "issues_authored": 1}
+{"key": "matteosistisette", "issues_authored": 1}
+{"key": "matthewlopez0977", "issues_authored": 1}
+{"key": "mauriciabad", "comments": 1}
+{"key": "mauriciogior", "comments": 1}
+{"key": "maverick74", "comments": 1}
+{"key": "maxhoffmann", "comments": 1}
+{"key": "maxnordlund", "comments": 1}
+{"key": "mazhiwen", "comments": 1}
+{"key": "mbarker84", "comments": 1}
+{"key": "mbinette91", "issues_authored": 1}
+{"key": "mcdurdin", "comments": 1}
+{"key": "mdesco-crgl", "comments": 1}
+{"key": "mdmoreau", "comments": 1}
+{"key": "meadowsjared", "comments": 1}
+{"key": "meandmimicry", "comments": 1}
+{"key": "mediumjones", "comments": 1}
+{"key": "megancw", "comments": 1}
+{"key": "meisterluk", "comments": 1}
+{"key": "melaniephilipp", "comments": 1}
+{"key": "melihoeztuerk", "comments": 1}
+{"key": "meloseven", "comments": 1}
+{"key": "menaechmi", "comments": 1}
+{"key": "mfalken", "issues_authored": 1}
+{"key": "mfishma", "issues_authored": 1}
+{"key": "mfluehr", "issues_authored": 1}
+{"key": "mgiuffrida", "issues_authored": 1}
+{"key": "mgmolisani", "comments": 1}
+{"key": "mgrsskls", "comments": 1}
+{"key": "michaelficarra", "issues_authored": 1}
+{"key": "micolous", "comments": 1}
+{"key": "mightyiam", "comments": 1}
+{"key": "mihaiav", "comments": 1}
+{"key": "mikeday", "comments": 1}
+{"key": "mikerreed", "comments": 1}
+{"key": "mikokm", "issues_authored": 1}
+{"key": "miloush", "comments": 1}
+{"key": "mindej", "comments": 1}
+{"key": "minomikula", "comments": 1}
+{"key": "minzojian", "issues_authored": 1}
+{"key": "missmatsuko", "issues_authored": 1}
+{"key": "missouriwind", "comments": 1}
+{"key": "mitar", "comments": 1}
+{"key": "mitchellevan", "comments": 1}
+{"key": "mitsukuri", "comments": 1}
+{"key": "mix5003", "comments": 1}
+{"key": "miyconst", "comments": 1}
+{"key": "mjamesderocher", "comments": 1}
+{"key": "mkimitch", "comments": 1}
+{"key": "mkotsollaris", "comments": 1}
+{"key": "mlandisbqs", "comments": 1}
+{"key": "mmghv", "comments": 1}
+{"key": "mmorgan4x", "issues_authored": 1}
+{"key": "mnik01", "comments": 1}
+{"key": "mnpenner", "comments": 1}
+{"key": "mobeigi", "comments": 1}
+{"key": "mobinakhalilzade", "comments": 1}
+{"key": "mohd-akram", "comments": 1}
+{"key": "mohsen1", "comments": 1}
+{"key": "mohsinnawaz04", "comments": 1}
+{"key": "momomon", "issues_authored": 1}
+{"key": "montemartin", "comments": 1}
+{"key": "mootari", "comments": 1}
+{"key": "moritzjacobs", "comments": 1}
+{"key": "morki", "comments": 1}
+{"key": "movahhedi", "comments": 1}
+{"key": "mr-cheffy", "issues_authored": 1}
+{"key": "mrbig", "issues_authored": 1}
+{"key": "mreinstein", "comments": 1}
+{"key": "mrshoekstra", "issues_authored": 1}
+{"key": "ms609", "issues_authored": 1}
+{"key": "mscuthbert", "comments": 1}
+{"key": "mtechamit", "issues_authored": 1}
+{"key": "muan", "comments": 1}
+{"key": "murakami", "irc_lines": 1}
+{"key": "murshex", "comments": 1}
+{"key": "murtaugh", "comments": 1}
+{"key": "mvduin", "comments": 1}
+{"key": "mwsundberg", "comments": 1}
+{"key": "myboof222", "comments": 1}
+{"key": "myfaverate", "issues_authored": 1}
+{"key": "mzaini30", "comments": 1}
+{"key": "mzur", "comments": 1}
+{"key": "n0099", "issues_authored": 1}
+{"key": "na-pel", "issues_authored": 1}
+{"key": "nadangergeo", "comments": 1}
+{"key": "nadavsinai-philips", "issues_authored": 1}
+{"key": "nareshkvs", "comments": 1}
+{"key": "nasif-co", "comments": 1}
+{"key": "natechapin", "comments": 1}
+{"key": "nategreen", "comments": 1}
+{"key": "nathanbabcock", "comments": 1}
+{"key": "nathggns", "comments": 1}
+{"key": "nboliver-ventureweb", "comments": 1}
+{"key": "nbrugger-tgm", "comments": 1}
+{"key": "ncallaway", "comments": 1}
+{"key": "nchan0154", "comments": 1}
+{"key": "nd-", "comments": 1}
+{"key": "nedley", "comments": 1}
+{"key": "neetij", "comments": 1}
+{"key": "neneodonkor", "comments": 1}
+{"key": "nerdkid93", "comments": 1}
+{"key": "ngdangtu-vn", "comments": 1}
+{"key": "nhnhwsnh", "comments": 1}
+{"key": "nichita-pasecinic", "comments": 1}
+{"key": "nickLeidman", "comments": 1}
+{"key": "nickautomatic", "comments": 1}
+{"key": "nickburris", "comments": 1}
+{"key": "nickfla1-mxm", "comments": 1}
+{"key": "nicktrav", "comments": 1}
+{"key": "nicoseijas", "comments": 1}
+{"key": "nikolaGrancharov", "comments": 1}
+{"key": "niutech", "comments": 1}
+{"key": "njvack", "comments": 1}
+{"key": "nmccully", "comments": 1}
+{"key": "noahblon", "comments": 1}
+{"key": "nohns", "comments": 1}
+{"key": "nopkop", "issues_authored": 1}
+{"key": "normanr", "comments": 1}
+{"key": "normanzb", "comments": 1}
+{"key": "nornagon", "comments": 1}
+{"key": "notrealdev", "comments": 1}
+{"key": "nowthis", "comments": 1}
+{"key": "nstepien", "comments": 1}
+{"key": "numonium", "comments": 1}
+{"key": "nuts-n-bits", "comments": 1}
+{"key": "nxtman123", "comments": 1}
+{"key": "nzpropertytax", "issues_authored": 1}
+{"key": "oberocks", "comments": 1}
+{"key": "ocavue", "comments": 1}
+{"key": "octref", "comments": 1}
+{"key": "oczki", "comments": 1}
+{"key": "odil-io", "comments": 1}
+{"key": "ole-thoeb", "comments": 1}
+{"key": "oliviercailloux", "comments": 1}
+{"key": "oluoluoxenfree", "issues_authored": 1}
+{"key": "oly-wan-kenobi", "comments": 1}
+{"key": "omixann", "comments": 1}
+{"key": "ondras", "issues_authored": 1}
+{"key": "ooglek", "comments": 1}
+{"key": "opllama2", "comments": 1}
+{"key": "oriol", "comments": 1}
+{"key": "oussama1478", "issues_authored": 1}
+{"key": "owennicol", "comments": 1}
+{"key": "oy3o", "comments": 1}
+{"key": "oyvind-stenhaug", "comments": 1}
+{"key": "p-bakker", "comments": 1}
+{"key": "pandasoli", "issues_authored": 1}
+{"key": "paperboyo", "comments": 1}
+{"key": "pat270", "comments": 1}
+{"key": "paulirish", "comments": 1}
+{"key": "pavelkornev", "comments": 1}
+{"key": "pavelspichonak", "comments": 1}
+{"key": "pavi2410", "comments": 1}
+{"key": "payalord", "comments": 1}
+{"key": "pbi-qfs", "comments": 1}
+{"key": "pc-erin", "comments": 1}
+{"key": "pcraig3", "issues_authored": 1}
+{"key": "pdokas", "comments": 1}
+{"key": "pedi", "comments": 1}
+{"key": "penx", "comments": 1}
+{"key": "peppergraphics", "comments": 1}
+{"key": "peremen", "comments": 1}
+{"key": "pfaffe", "comments": 1}
+{"key": "pft", "comments": 1}
+{"key": "phd", "comments": 1}
+{"key": "philiprenich", "comments": 1}
+{"key": "philipschm1tt", "comments": 1}
+{"key": "philljenkins", "comments": 1}
+{"key": "philsward", "comments": 1}
+{"key": "picitujeromanov", "issues_authored": 1}
+{"key": "pietervdvn", "comments": 1}
+{"key": "piotrekprzychodzen30-web", "comments": 1}
+{"key": "piperhaywood", "comments": 1}
+{"key": "pitus", "comments": 1}
+{"key": "pketh", "comments": 1}
+{"key": "pkuczynski", "issues_authored": 1}
+{"key": "pmnzt", "comments": 1}
+{"key": "pont1s", "issues_authored": 1}
+{"key": "potch", "comments": 1}
+{"key": "pr3tori4n", "comments": 1}
+{"key": "prarsena", "issues_authored": 1}
+{"key": "prateekbh", "comments": 1}
+{"key": "prosperva", "issues_authored": 1}
+{"key": "protoEvangelion", "comments": 1}
+{"key": "psnet", "comments": 1}
+{"key": "psylok", "issues_authored": 1}
+{"key": "pxeger", "issues_authored": 1}
+{"key": "pyronaur", "comments": 1}
+{"key": "qpn6ph9q", "comments": 1}
+{"key": "qxuken", "comments": 1}
+{"key": "radium-v", "comments": 1}
+{"key": "rafaelbeirigo", "issues_authored": 1}
+{"key": "rahulthewall", "comments": 1}
+{"key": "rainxh11", "comments": 1}
+{"key": "ralyodio", "comments": 1}
+{"key": "ras52", "comments": 1}
+{"key": "rauschma", "comments": 1}
+{"key": "rdhelms", "comments": 1}
+{"key": "realBathrobe", "issues_authored": 1}
+{"key": "regina-henschel", "issues_authored": 1}
+{"key": "renatodeleao", "comments": 1}
+{"key": "rene78", "comments": 1}
+{"key": "renet", "comments": 1}
+{"key": "renyuns", "comments": 1}
+{"key": "retail-robot", "comments": 1}
+{"key": "retyui", "issues_authored": 1}
+{"key": "rgant", "comments": 1}
+{"key": "rgembalik", "comments": 1}
+{"key": "rhuanbarreto", "issues_authored": 1}
+{"key": "rhyek", "comments": 1}
+{"key": "rhythmone", "comments": 1}
+{"key": "rickyp-ms", "comments": 1}
+{"key": "rileymcmaster", "comments": 1}
+{"key": "rinarakaki", "comments": 1}
+{"key": "ringbell", "issues_authored": 1}
+{"key": "rinogo", "comments": 1}
+{"key": "rober423", "comments": 1}
+{"key": "robert-king", "comments": 1}
+{"key": "robertknight", "comments": 1}
+{"key": "robertwbradford", "comments": 1}
+{"key": "robinetmiller", "comments": 1}
+{"key": "robizzt", "comments": 1}
+{"key": "robrez", "comments": 1}
+{"key": "robsonvleite", "comments": 1}
+{"key": "rockwotj", "comments": 1}
+{"key": "rodighiero", "comments": 1}
+{"key": "rolfen", "comments": 1}
+{"key": "ronakrrb", "comments": 1}
+{"key": "roryashfordbentley", "comments": 1}
+{"key": "rthomazel", "comments": 1}
+{"key": "rubywwwilde", "comments": 1}
+{"key": "runofthemillgeek", "comments": 1}
+{"key": "rutherfordcraze", "comments": 1}
+{"key": "ry5n", "comments": 1}
+{"key": "ryuran", "issues_authored": 1}
+{"key": "sahandnayebaziz", "comments": 1}
+{"key": "sahirv", "issues_authored": 1}
+{"key": "sairuspatel", "comments": 1}
+{"key": "saithis", "comments": 1}
+{"key": "saivan", "comments": 1}
+{"key": "sakura90", "issues_authored": 1}
+{"key": "salvan13", "comments": 1}
+{"key": "samdbeckham", "issues_authored": 1}
+{"key": "samdenty", "comments": 1}
+{"key": "samnabi", "comments": 1}
+{"key": "sanderjson", "comments": 1}
+{"key": "sanoodles", "issues_authored": 1}
+{"key": "sarazhang123", "comments": 1}
+{"key": "sarimarton", "comments": 1}
+{"key": "sboukortt", "comments": 1}
+{"key": "sbrl", "comments": 1}
+{"key": "scherii", "comments": 1}
+{"key": "schuelermine", "comments": 1}
+{"key": "scottcheng", "issues_authored": 1}
+{"key": "scriptype", "comments": 1}
+{"key": "sdsnatcher", "comments": 1}
+{"key": "sdussaut", "comments": 1}
+{"key": "seanand-dev", "comments": 1}
+{"key": "seannherdy", "comments": 1}
+{"key": "sebfriedrich", "comments": 1}
+{"key": "sedrakpc", "comments": 1}
+{"key": "seedee", "comments": 1}
+{"key": "seeratawan01", "comments": 1}
+{"key": "sergio9929", "comments": 1}
+{"key": "sewe", "issues_authored": 1}
+{"key": "sfinevelir", "comments": 1}
+{"key": "sgarciagallego", "comments": 1}
+{"key": "sgwilym", "comments": 1}
+{"key": "sh1boot", "comments": 1}
+{"key": "shanekunz", "comments": 1}
+{"key": "shannonbooth", "issues_authored": 1}
+{"key": "shannonmoeller", "comments": 1}
+{"key": "shanthambi", "comments": 1}
+{"key": "shayded-exe", "comments": 1}
+{"key": "sheerun", "comments": 1}
+{"key": "shiivan", "issues_authored": 1}
+{"key": "shinglyu", "issues_authored": 1}
+{"key": "shospodarets", "comments": 1}
+{"key": "shsteimer", "comments": 1}
+{"key": "shuai-z", "issues_authored": 1}
+{"key": "shuishuidelin", "comments": 1}
+{"key": "shuklaayush", "comments": 1}
+{"key": "shuvyA", "comments": 1}
+{"key": "shyamkushwaha23", "issues_authored": 1}
+{"key": "sidhu663", "comments": 1}
+{"key": "sillvva", "comments": 1}
+{"key": "simonlayfield", "comments": 1}
+{"key": "simonwuelker", "issues_authored": 1}
+{"key": "sindresorhus", "comments": 1}
+{"key": "sir-captainmorgan21", "comments": 1}
+{"key": "sirisian", "comments": 1}
+{"key": "skk", "irc_lines": 1}
+{"key": "sleepy-monax", "issues_authored": 1}
+{"key": "sliepke", "issues_authored": 1}
+{"key": "smartcorestudio", "comments": 1}
+{"key": "smartin85", "comments": 1}
+{"key": "smhmd", "issues_authored": 1}
+{"key": "smustgrave", "comments": 1}
+{"key": "snorp", "comments": 1}
+{"key": "sobotka", "comments": 1}
+{"key": "softwaredevkev", "comments": 1}
+{"key": "softwaredevomar", "issues_authored": 1}
+{"key": "songmelted", "comments": 1}
+{"key": "sparklerl", "comments": 1}
+{"key": "spectranaut", "comments": 1}
+{"key": "spencer246", "issues_authored": 1}
+{"key": "spinda", "comments": 1}
+{"key": "srambach", "issues_authored": 1}
+{"key": "ssmokie", "issues_authored": 1}
+{"key": "ssmooncoder", "comments": 1}
+{"key": "st3v0", "comments": 1}
+{"key": "stalkerg", "comments": 1}
+{"key": "starball5", "comments": 1}
+{"key": "stefanbrand-rldatix", "issues_authored": 1}
+{"key": "stefanhamburger", "comments": 1}
+{"key": "steffanhalv", "issues_authored": 1}
+{"key": "stephband", "comments": 1}
+{"key": "stephenmcghee", "comments": 1}
+{"key": "steren", "comments": 1}
+{"key": "steve-flood", "issues_authored": 1}
+{"key": "stevefulghum", "comments": 1}
+{"key": "stevenlafl", "comments": 1}
+{"key": "stitchng", "comments": 1}
+{"key": "stordahl", "comments": 1}
+{"key": "stormwarning", "issues_authored": 1}
+{"key": "stroobandt", "comments": 1}
+{"key": "studiosciences", "comments": 1}
+{"key": "sturobson", "comments": 1}
+{"key": "stylpe", "comments": 1}
+{"key": "suchfot", "issues_authored": 1}
+{"key": "sudheer-gowrigari", "comments": 1}
+{"key": "sukhvi", "issues_authored": 1}
+{"key": "summercms", "comments": 1}
+{"key": "sunkanmii", "issues_authored": 1}
+{"key": "sunpietro", "comments": 1}
+{"key": "superuserpro", "comments": 1}
+{"key": "superwesker1988", "comments": 1}
+{"key": "surahotoke", "comments": 1}
+{"key": "suraj-sundariya", "comments": 1}
+{"key": "svefro", "comments": 1}
+{"key": "svoisen", "issues_authored": 1}
+{"key": "swickr", "comments": 1}
+{"key": "sword4869", "comments": 1}
+{"key": "swyxio", "comments": 1}
+{"key": "synecdokey", "comments": 1}
+{"key": "syriaca", "comments": 1}
+{"key": "systematixrahul", "comments": 1}
+{"key": "t0byman", "comments": 1}
+{"key": "t2757341306", "comments": 1}
+{"key": "takahirox", "comments": 1}
+{"key": "tallys", "comments": 1}
+{"key": "tarjep", "comments": 1}
+{"key": "tateshelby28", "comments": 1}
+{"key": "tayloraucoin", "comments": 1}
+{"key": "tcicit", "issues_authored": 1}
+{"key": "techbridgedev", "comments": 1}
+{"key": "techsin", "comments": 1}
+{"key": "tegtmeier", "comments": 1}
+{"key": "teh-maxh", "comments": 1}
+{"key": "tenphi", "comments": 1}
+{"key": "teoli2003", "issues_authored": 1}
+{"key": "tettoffensive", "comments": 1}
+{"key": "thadguidry", "comments": 1}
+{"key": "theAdhocracy", "comments": 1}
+{"key": "theguybyte", "comments": 1}
+{"key": "theinfinit", "comments": 1}
+{"key": "theking2", "comments": 1}
+{"key": "theseanl", "issues_authored": 1}
+{"key": "thexeos", "comments": 1}
+{"key": "thisisjaymehta", "comments": 1}
+{"key": "thomascallahan", "comments": 1}
+{"key": "thomasduenser", "comments": 1}
+{"key": "thunderfreak", "comments": 1}
+{"key": "thusmiley", "comments": 1}
+{"key": "thysultan", "comments": 1}
+{"key": "tiansh", "comments": 1}
+{"key": "timuric", "comments": 1}
+{"key": "titaniumbones", "comments": 1}
+{"key": "tleydxdy", "comments": 1}
+{"key": "tmlayton", "issues_authored": 1}
+{"key": "toastal", "comments": 1}
+{"key": "tol-is", "comments": 1}
+{"key": "tomahl", "comments": 1}
+{"key": "tombigel", "comments": 1}
+{"key": "tomchiverton", "comments": 1}
+{"key": "tomcur", "issues_authored": 1}
+{"key": "tomhicks", "issues_authored": 1}
+{"key": "tommoor", "comments": 1}
+{"key": "tomwhoiscontrary", "comments": 1}
+{"key": "tophf", "comments": 1}
+{"key": "torickjdavis", "comments": 1}
+{"key": "toufali", "comments": 1}
+{"key": "toughengineer", "comments": 1}
+{"key": "tphinney", "comments": 1}
+{"key": "travisleithead", "issues_authored": 1}
+{"key": "travisvalerius", "comments": 1}
+{"key": "trflynn89", "comments": 1}
+{"key": "tristan-mcdonald", "comments": 1}
+{"key": "trondhuso", "comments": 1}
+{"key": "troxler", "comments": 1}
+{"key": "trullock", "comments": 1}
+{"key": "tryoxiss", "comments": 1}
+{"key": "tsbertalan", "comments": 1}
+{"key": "tsiq-swyx", "comments": 1}
+{"key": "tsmd", "issues_authored": 1}
+{"key": "tszyuloveyou", "comments": 1}
+{"key": "tubbo", "comments": 1}
+{"key": "tunelinks", "comments": 1}
+{"key": "tungbuinguyen", "issues_authored": 1}
+{"key": "tux-", "comments": 1}
+{"key": "txdm", "comments": 1}
+{"key": "tyrasd", "issues_authored": 1}
+{"key": "uazo", "comments": 1}
+{"key": "uhyo", "comments": 1}
+{"key": "ullaskunder1", "comments": 1}
+{"key": "usrtax", "comments": 1}
+{"key": "vHeemstra", "issues_authored": 1}
+{"key": "vbmark", "comments": 1}
+{"key": "vermaprashant1", "issues_authored": 1}
+{"key": "vexx32", "comments": 1}
+{"key": "vicdf", "comments": 1}
+{"key": "vicols92", "comments": 1}
+{"key": "viking185", "comments": 1}
+{"key": "viktor-ulyankin", "comments": 1}
+{"key": "vincentriemer", "comments": 1}
+{"key": "vincerubinetti", "comments": 1}
+{"key": "vinhill", "issues_authored": 1}
+{"key": "viniciusbavosa", "comments": 1}
+{"key": "viralipurbey", "comments": 1}
+{"key": "vmukhachev", "comments": 1}
+{"key": "volcanicll", "comments": 1}
+{"key": "vospascal", "comments": 1}
+{"key": "voxpelli", "issues_authored": 1}
+{"key": "vucurovicmarko", "comments": 1}
+{"key": "wangp", "issues_authored": 1}
+{"key": "wareid", "comments": 1}
+{"key": "warengonzaga", "comments": 1}
+{"key": "waruyama", "comments": 1}
+{"key": "waterworx", "comments": 1}
+{"key": "wavebeem", "comments": 1}
+{"key": "wbamberg", "issues_authored": 1}
+{"key": "wbond", "comments": 1}
+{"key": "web-padawan", "comments": 1}
+{"key": "webark", "comments": 1}
+{"key": "wentin", "comments": 1}
+{"key": "weolar", "comments": 1}
+{"key": "wernerglinka", "comments": 1}
+{"key": "wessberg", "issues_authored": 1}
+{"key": "whimboo", "comments": 1}
+{"key": "willetto", "comments": 1}
+{"key": "willfs84", "comments": 1}
+{"key": "windsywinds", "comments": 1}
+{"key": "wine-fall", "issues_authored": 1}
+{"key": "wjmoner", "comments": 1}
+{"key": "wlbksy", "comments": 1}
+{"key": "woeoio", "comments": 1}
+{"key": "wolfhechel", "comments": 1}
+{"key": "workhours", "issues_authored": 1}
+{"key": "wortwart", "issues_authored": 1}
+{"key": "x-strong", "comments": 1}
+{"key": "xamir82", "comments": 1}
+{"key": "xavortm", "comments": 1}
+{"key": "xckai", "comments": 1}
+{"key": "xcrap", "comments": 1}
+{"key": "xidachen", "issues_authored": 1}
+{"key": "xmacinfo", "comments": 1}
+{"key": "xypnox", "comments": 1}
+{"key": "y122972", "comments": 1}
+{"key": "yairopro", "comments": 1}
+{"key": "yelhouti", "issues_authored": 1}
+{"key": "yinonov", "comments": 1}
+{"key": "yuan3721", "comments": 1}
+{"key": "yurikhan", "comments": 1}
+{"key": "yyx990803", "comments": 1}
+{"key": "zDaleZ", "issues_authored": 1}
+{"key": "zac-semolina-solutions", "comments": 1}
+{"key": "zachjensz", "comments": 1}
+{"key": "zakjan", "comments": 1}
+{"key": "zamadatix", "comments": 1}
+{"key": "zarahzachz", "comments": 1}
+{"key": "zebuloncolor", "comments": 1}
+{"key": "zeldman", "comments": 1}
+{"key": "zellwk", "comments": 1}
+{"key": "zeluspudding", "comments": 1}
+{"key": "zetareticoli", "comments": 1}
+{"key": "zhiyongsun", "issues_authored": 1}
+{"key": "zhylmzr", "comments": 1}
+{"key": "zim32", "comments": 1}
+{"key": "zocky", "comments": 1}
+{"key": "zoltan-dulac", "comments": 1}
+{"key": "zoonman", "comments": 1}
+{"key": "zpaolo11x", "comments": 1}
+{"key": "zstarvit", "comments": 1}
+{"key": "zubiden", "comments": 1}
+{"key": "zxti", "comments": 1}

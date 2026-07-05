@@ -86,7 +86,7 @@
 - css-multicol-2 | FPWD | 2024-12-19 | 27 open | no
 - css-namespaces-3 | REC | 2014-03-20 | 5 open | no
 - css-nav-1 | WD | 2019-11-26 | 17 open | no
-- css-nesting-1 | WD | 2026-01-22 | 23 open | no
+- css-nesting-1 | WD | 2026-01-22 | 23 open | yes
 - css-overflow-3 | WD | 2025-10-07 | 47 open | no
 - css-overflow-4 | WD | 2023-03-21 | 58 open | no
 - css-overflow-5 | FPWD | 2024-12-17 | 37 open | no

@@ -9,13 +9,13 @@ Entry point for every query. One line per page; update on every ingest.
 
 | Feature | Status | Specs | Summary |
 |---|---|---|---|
-| *(none yet — Phase 2 starts with CSS Nesting)* | | | |
+| [CSS Nesting](features/css-nesting.md) | shipped | css-nesting-1 | Native nesting of style rules; history dominated by the "syntax wars" (Option 3 + parser lookahead) and the `&`-as-`:is()` specificity tail |
 
 ## Specs
 
 | Spec | Maturity | Features tracked |
 |---|---|---|
-| *(none yet)* | | |
+| [css-nesting-1](specs/css-nesting-1.md) | WD | css-nesting |
 
 ## Families
 
@@ -31,5 +31,5 @@ Entry point for every query. One line per page; update on every ingest.
 
 ## Not yet ingested
 
-Planned pilot order: `css-nesting`, `anchor-positioning`, `container-queries`.
+Next in the pilot order: `anchor-positioning`, `container-queries`.
 Candidates surfaced by `/triage` land here before they get pages.

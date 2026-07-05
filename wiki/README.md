@@ -41,7 +41,7 @@ and [JSON Feed](https://sakupi01.github.io/csswg-llm-wiki/feed.json). Sources in
 
 | Week | Period |
 |---|---|
-| *(first digest pending)* | |
+| [2026-W27](digests/2026-W27.md) | 2026-06-28 – 2026-07-05 |
 
 ## Not yet ingested
 

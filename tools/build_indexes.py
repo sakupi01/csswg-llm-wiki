@@ -12,11 +12,17 @@ Outputs: _generated/resolutions-index.{md,jsonl}
          _generated/people-activity.jsonl
          _generated/people-unmapped.txt
 
-Resolution extraction: lines in css-meeting-bot comments matching RESOLVED_LINE_RE.
-Known format variants 2017-2026: with/without leading "* ", with/without backticks,
-"RESOLUTION:" in some early comments. The resolution *date* is the bot comment's
-created_at (bot bodies carry no date). Sanity check: as of 2026-07 about 3,324 issues
-contain RESOLVED text; a large deviation means the extraction regex drifted.
+Resolution extraction: lines matching RESOLVED_LINE_RE in comments. Bot comments
+(css-meeting-bot, 2017-04-) are official telecon/F2F minutes; non-bot matches are
+kept as source=manual (hand-pasted minutes 2015-2017, async resolutions) with lower
+trust. Blockquoted lines never match (quotations). The resolution *date* is the
+comment's created_at (bodies carry no date). Known format variants: with/without
+leading "* ", with/without backticks, "RESOLUTION:" in early comments.
+
+Sanity baseline (corpus-measured 2026-07): 2,578 items yield structured resolutions;
+2,711 files contain the literal string at all (rest = prose/body mentions). The
+research-time figure of 3,324 came from GitHub's search index and overcounts.
+A future count *below* the baseline means the regex or mirror regressed.
 """
 
 import json
@@ -30,7 +36,7 @@ GITHUB = ROOT / "raw" / "data" / "github"
 W3C = ROOT / "raw" / "data" / "w3c-api" / "specifications"
 GEN = ROOT / "_generated"
 BOT = "css-meeting-bot"
-EXPECTED_RESOLVED_ISSUES = 3324  # 2026-07 baseline for the sanity check
+EXPECTED_RESOLVED_ISSUES = 2578  # corpus-measured 2026-07 baseline (see docstring)
 
 SENTINEL_RE = re.compile(
     r"^<!-- comment id=(\d+) author=(\S+) created=(\S+) url=(\S+?)( resolution=true)? -->$",
@@ -102,42 +108,51 @@ def main() -> None:
                 "closed_at": meta.get("closed_at"),
                 "comments": meta.get("comments"),
                 "has_resolution": bool(meta.get("has_resolution")),
+                "async_resolution": any(l.startswith("Async Resolution") for l in labels),
                 "url": meta.get("url"),
             }
         )
         activity[meta.get("author") or "ghost"]["issues_authored"] += 1
-        if meta.get("has_resolution"):
-            resolved_issue_count += 1
         for l in spec_labels:
             by_spec[l].append(
                 ((meta.get("created_at") or "")[:10], f"opened #{n}: {meta.get('title')}")
             )
 
+        item_has_res = False
         for c in comments:
             activity[c["author"]]["comments"] += 1
-            if c["author"] != BOT:
-                continue
+            is_bot = c["author"] == BOT
             date = (c["created_at"] or "")[:10]
-            meetings[date]["topics"] += 1
-            meetings[date]["issues"].add(n)
-            for nick in IRC_NICK_RE.findall(c["body"]):
-                if nick.lower() not in HTML_TAGS:
-                    activity[nick]["irc_lines"] += 1
+            if is_bot:
+                meetings[date]["topics"] += 1
+                meetings[date]["issues"].add(n)
+                for nick in IRC_NICK_RE.findall(c["body"]):
+                    if nick.lower() not in HTML_TAGS:
+                        activity[nick]["irc_lines"] += 1
+            # bot comments = official telecon/F2F minutes; non-bot matches are
+            # hand-pasted minutes (pre-2017) or async resolutions — kept with
+            # source=manual and a caveat: `date` is the comment date, and the
+            # text may be a quotation rather than a new resolution.
             for res in RESOLVED_LINE_RE.findall(c["body"]):
+                item_has_res = True
                 resolutions.append(
                     {
                         "date": date,
                         "issue": n,
                         "kind": kind,
+                        "source": "bot" if is_bot else "manual",
                         "labels": spec_labels,
                         "title": meta.get("title"),
                         "resolution": res.strip(),
                         "comment_url": c["url"],
                     }
                 )
-                meetings[date]["resolutions"] += 1
+                if is_bot:
+                    meetings[date]["resolutions"] += 1
                 for l in spec_labels:
                     by_spec[l].append((date, f"RESOLVED #{n}: {res.strip()}"))
+        if item_has_res:
+            resolved_issue_count += 1
 
     GEN.mkdir(exist_ok=True)
     (GEN / "by-spec").mkdir(exist_ok=True)
@@ -145,10 +160,17 @@ def main() -> None:
     # --- resolutions-index
     resolutions.sort(key=lambda r: (r["date"], r["issue"], r["comment_url"], r["resolution"]))
     (GEN / "resolutions-index.jsonl").write_text(jsonl(resolutions))
-    md = [HEADER + "# Resolutions index", "", "`date | issue | labels | resolution | permalink`", ""]
+    md = [
+        HEADER + "# Resolutions index",
+        "",
+        "`date | issue | labels | resolution | permalink`",
+        "(manual) = hand-pasted minutes or async resolution: date is the comment date,",
+        "and the text may quote an existing resolution — verify at the permalink.",
+        "",
+    ]
     md += [
         f"- {r['date']} | #{r['issue']} | {','.join(r['labels']) or '-'} | "
-        f"RESOLVED: {r['resolution']} | {r['comment_url']}"
+        f"RESOLVED: {r['resolution']}{' (manual)' if r['source'] == 'manual' else ''} | {r['comment_url']}"
         for r in resolutions
     ]
     (GEN / "resolutions-index.md").write_text("\n".join(md) + "\n")
@@ -237,15 +259,16 @@ def main() -> None:
     (GEN / "people-unmapped.txt").write_text("\n".join(unmapped) + "\n")
 
     # --- sanity check
-    n_res_files = resolved_issue_count
-    drift = abs(n_res_files - EXPECTED_RESOLVED_ISSUES) / EXPECTED_RESOLVED_ISSUES
     print(
         f"[build_indexes] {len(files)} mirror files, {len(resolutions)} resolutions, "
-        f"{n_res_files} items with RESOLVED (baseline {EXPECTED_RESOLVED_ISSUES}), "
+        f"{resolved_issue_count} items with RESOLVED (baseline {EXPECTED_RESOLVED_ISSUES}), "
         f"{len(mrows)} meeting dates"
     )
-    if n_res_files >= EXPECTED_RESOLVED_ISSUES and drift > 0.5:
-        print("[build_indexes] WARNING: RESOLVED count drifted >50% from baseline — check regexes")
+    if resolved_issue_count < EXPECTED_RESOLVED_ISSUES:
+        print(
+            "[build_indexes] WARNING: fewer RESOLVED items than the 2026-07 baseline "
+            "— extraction regex or mirror likely regressed"
+        )
 
 
 if __name__ == "__main__":

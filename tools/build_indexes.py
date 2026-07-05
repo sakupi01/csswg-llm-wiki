@@ -34,9 +34,22 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 GITHUB = ROOT / "raw" / "data" / "github"
 W3C = ROOT / "raw" / "data" / "w3c-api" / "specifications"
+WWW_STYLE = ROOT / "raw" / "data" / "www-style"
 GEN = ROOT / "_generated"
 BOT = "css-meeting-bot"
 EXPECTED_RESOLVED_ISSUES = 2578  # corpus-measured 2026-07 baseline (see docstring)
+
+# www-style minutes emails (2008-2017, pre-bot). RESOLVED lines wrap: the rule
+# (also stated in AGENTS.md, R1) is "join the RESOLVED line with immediately
+# following continuation lines — non-empty, indented, not a new bullet, not a
+# heading underline — then collapse every whitespace run to a single space".
+MINUTES_SUBJECT_RE = re.compile(r"^\[CSSWG\]\s+(?:Minutes|Resolutions)\b", re.I)
+EMAIL_RESOLVED_RE = re.compile(r"^(\s*)(?:[*-]\s*)?(?:RESOLVED|RESOLUTION):\s*(.*)$")
+CONTINUATION_RE = re.compile(r"^\s+\S")
+BULLET_OR_RULE_RE = re.compile(r"^\s*(?:[*-]\s|-{3,}\s*$|={3,}\s*$)")
+HEADING_RE = re.compile(r"^(\S.*)\n\s*-{3,}\s*$", re.M)
+MEETING_DATE_RE = re.compile(r"\b(\d{4}-\d{2}-\d{2})\b")
+PARTIAL_DATE_RE = re.compile(r"\b(\d{4}-\d{2})\b")
 
 SENTINEL_RE = re.compile(
     r"^<!-- comment id=(\d+) author=(\S+) created=(\S+) url=(\S+?)( resolution=true)? -->$",
@@ -78,9 +91,126 @@ def jsonl(rows: list) -> str:
     return "".join(json.dumps(r, ensure_ascii=False) + "\n" for r in rows)
 
 
+def extract_email_resolutions(body: str) -> list[str]:
+    """Apply the continuation-joining rule documented above."""
+    lines = body.split("\n")
+    out = []
+    i = 0
+    while i < len(lines):
+        m = EMAIL_RESOLVED_RE.match(lines[i])
+        if not m:
+            i += 1
+            continue
+        parts = [m.group(2)]
+        i += 1
+        while (
+            i < len(lines)
+            and lines[i].strip()
+            and CONTINUATION_RE.match(lines[i])
+            and not BULLET_OR_RULE_RE.match(lines[i])
+            and not EMAIL_RESOLVED_RE.match(lines[i])
+        ):
+            parts.append(lines[i])
+            i += 1
+        text = re.sub(r"\s+", " ", " ".join(parts)).strip()
+        if text:
+            out.append(text)
+    return out
+
+
+def normalize_subject(subject: str) -> str:
+    s = subject
+    while True:
+        stripped = re.sub(r"(?i)^\s*(?:re(?:\[\d+\])?|fwd?|aw):\s*", "", s)
+        if stripped == s:
+            break
+        s = stripped
+    return re.sub(r"\s+", " ", s).strip().casefold()
+
+
+def meeting_type_from_subject(subject: str) -> str:
+    s = subject.lower()
+    if "tpac" in s:
+        return "tpac"
+    if "f2f" in s:
+        return "f2f"
+    if "breakout" in s:
+        return "breakout"
+    return "telecon"
+
+
+def scan_www_style() -> tuple[list, list, list]:
+    """Read per-month sidecars; parse minutes bodies for resolutions.
+
+    Returns (minutes_rows, email_resolutions, all_message_rows)."""
+    minutes_rows, email_resolutions, messages = [], [], []
+    for sidecar in sorted(WWW_STYLE.glob("*/.messages.jsonl")):
+        month = sidecar.parent.name
+        for line in sidecar.read_text().splitlines():
+            row = json.loads(line)
+            row["month"] = month
+            messages.append(row)
+            subject = row.get("subject") or ""
+            if not MINUTES_SUBJECT_RE.match(subject):
+                continue
+            m = MEETING_DATE_RE.search(subject)
+            uncertain = False
+            if m:
+                meeting_date = m.group(1)
+            else:
+                pm = PARTIAL_DATE_RE.search(subject)
+                meeting_date = (pm.group(1) if pm else (row.get("date") or "")[:10]) or None
+                uncertain = True
+            body = (sidecar.parent / f"{row['nnnn']}.md").read_text().split("\n---\n", 1)[1]
+            topics = HEADING_RE.findall(body)
+            # minutes mails repeat each RESOLVED in the summary AND the log,
+            # sometimes with punctuation drift — dedupe within one mail on an
+            # alphanumeric-only key, keeping the first occurrence's text
+            seen_keys, resolutions = set(), []
+            for res in extract_email_resolutions(body):
+                key = re.sub(r"[^a-z0-9]+", "", res.casefold())
+                if key not in seen_keys:
+                    seen_keys.add(key)
+                    resolutions.append(res)
+            minutes_rows.append(
+                {
+                    "date": meeting_date,
+                    "date_uncertain": uncertain,
+                    "type": meeting_type_from_subject(subject),
+                    "subject": subject,
+                    "topics": len(topics),
+                    "resolutions": len(resolutions),
+                    "archived_at": row.get("archived_at"),
+                }
+            )
+            for res in resolutions:
+                email_resolutions.append(
+                    {
+                        "date": meeting_date,
+                        "issue": None,
+                        "kind": "email",
+                        "source": "minutes-email",
+                        "labels": [],
+                        "title": subject,
+                        "resolution": res,
+                        "comment_url": row.get("archived_at"),
+                    }
+                )
+    return minutes_rows, email_resolutions, messages
+
+
 def main() -> None:
     issues_rows, resolutions, activity = [], [], defaultdict(Counter)
-    meetings = defaultdict(lambda: {"topics": 0, "issues": set(), "resolutions": 0})
+    meetings = defaultdict(
+        lambda: {
+            "topics": 0,
+            "issues": set(),
+            "resolutions": 0,
+            "sources": set(),
+            "minutes_urls": [],
+            "type": None,
+        }
+    )
     by_spec = defaultdict(list)
     resolved_issue_count = 0
 
@@ -126,6 +256,7 @@ def main() -> None:
             if is_bot:
                 meetings[date]["topics"] += 1
                 meetings[date]["issues"].add(n)
+                meetings[date]["sources"].add("bot")
                 for nick in IRC_NICK_RE.findall(c["body"]):
                     if nick.lower() not in HTML_TAGS:
                         activity[nick]["irc_lines"] += 1
@@ -154,11 +285,27 @@ def main() -> None:
         if item_has_res:
             resolved_issue_count += 1
 
+    # --- www-style minutes emails (pre-bot era)
+    minutes_rows, email_resolutions, ws_messages = scan_www_style()
+    resolutions += email_resolutions
+    for mr in minutes_rows:
+        if not mr["date"] or len(mr["date"]) < 10:
+            continue  # partial dates stay out of the meetings merge
+        mt = meetings[mr["date"]]
+        mt["sources"].add("minutes-email")
+        mt["minutes_urls"].append(mr["archived_at"])
+        mt["type"] = mt["type"] or mr["type"]
+        if "bot" not in mt["sources"]:  # bot data wins where both exist
+            mt["topics"] = max(mt["topics"], mr["topics"])
+            mt["resolutions"] += mr["resolutions"]
+
     GEN.mkdir(exist_ok=True)
     (GEN / "by-spec").mkdir(exist_ok=True)
 
     # --- resolutions-index
-    resolutions.sort(key=lambda r: (r["date"], r["issue"], r["comment_url"], r["resolution"]))
+    resolutions.sort(
+        key=lambda r: (r["date"] or "", r["issue"] or 0, r["comment_url"] or "", r["resolution"])
+    )
     (GEN / "resolutions-index.jsonl").write_text(jsonl(resolutions))
     md = [
         HEADER + "# Resolutions index",
@@ -169,8 +316,9 @@ def main() -> None:
         "",
     ]
     md += [
-        f"- {r['date']} | #{r['issue']} | {','.join(r['labels']) or '-'} | "
-        f"RESOLVED: {r['resolution']}{' (manual)' if r['source'] == 'manual' else ''} | {r['comment_url']}"
+        f"- {r['date']} | {'#' + str(r['issue']) if r['issue'] else 'email'} | "
+        f"{','.join(r['labels']) or '-'} | RESOLVED: {r['resolution']}"
+        f"{' (' + r['source'] + ')' if r['source'] != 'bot' else ''} | {r['comment_url']}"
         for r in resolutions
     ]
     (GEN / "resolutions-index.md").write_text("\n".join(md) + "\n")
@@ -186,25 +334,66 @@ def main() -> None:
     ]
     (GEN / "issues-index.md").write_text("\n".join(md) + "\n")
 
-    # --- meetings-index
+    # --- meetings-index (bot comments 2017- merged with minutes emails 2008-17)
     mrows = [
         {
             "date": d,
-            "type_guess": "f2f" if v["topics"] >= 13 else "telecon",
+            "type_guess": v["type"] or ("f2f" if v["topics"] >= 13 else "telecon"),
             "topics": v["topics"],
             "resolutions": v["resolutions"],
+            "sources": sorted(v["sources"]),
             "issues": sorted(v["issues"]),
+            "minutes_urls": v["minutes_urls"],
         }
         for d, v in sorted(meetings.items())
     ]
     (GEN / "meetings-index.jsonl").write_text(jsonl(mrows))
-    md = [HEADER + "# Meetings index", "", "`date | type? | topics | resolutions | issues`", ""]
+    md = [HEADER + "# Meetings index", "", "`date | type? | topics | resolutions | sources | issues`", ""]
     md += [
         f"- {m['date']} | {m['type_guess']} | {m['topics']} topics | "
-        f"{m['resolutions']} resolutions | " + " ".join(f"#{i}" for i in m["issues"])
+        f"{m['resolutions']} resolutions | {'+'.join(m['sources'])} | "
+        + (" ".join(f"#{i}" for i in m["issues"]) or " ".join(m["minutes_urls"]))
         for m in mrows
     ]
     (GEN / "meetings-index.md").write_text("\n".join(md) + "\n")
+
+    # --- www-style minutes index + thread summary
+    minutes_rows.sort(key=lambda r: (r["date"] or "", r["archived_at"] or ""))
+    (GEN / "www-style-minutes-index.jsonl").write_text(jsonl(minutes_rows))
+    md = [HEADER + "# www-style minutes index (2008-2017 pre-bot era)", "",
+          "`meeting date | subject | archived-at`", ""]
+    md += [
+        f"- {r['date'] or '?'}{' (uncertain)' if r['date_uncertain'] else ''} | "
+        f"{r['subject']} | {r['archived_at']}"
+        for r in minutes_rows
+    ]
+    (GEN / "www-style-minutes-index.md").write_text("\n".join(md) + "\n")
+
+    if ws_messages:
+        by_id = {m["message_id"]: m for m in ws_messages if m.get("message_id")}
+        roots: dict[str, dict] = {}
+        for m in ws_messages:
+            cur, hops = m, 0
+            while cur.get("in_reply_to") in by_id and hops < 100:
+                cur, hops = by_id[cur["in_reply_to"]], hops + 1
+            key = cur.get("message_id") or normalize_subject(cur.get("subject") or "")
+            g = roots.setdefault(
+                key,
+                {"subject": cur.get("subject"), "root_url": cur.get("archived_at"),
+                 "count": 0, "first": None, "last": None},
+            )
+            g["count"] += 1
+            d = m.get("date") or ""
+            g["first"] = min(filter(None, [g["first"], d]), default=d) or None
+            g["last"] = max(filter(None, [g["last"], d]), default=d) or None
+        trows = sorted(roots.values(), key=lambda g: (g["first"] or "", g["root_url"] or ""))
+        md = [HEADER + "# www-style thread summary (mirrored messages only)", "",
+              "`first date | msgs | subject | root`", ""]
+        md += [
+            f"- {(g['first'] or '?')[:10]} | {g['count']} | {g['subject']} | {g['root_url']}"
+            for g in trows
+        ]
+        (GEN / "www-style-threads.md").write_text("\n".join(md) + "\n")
 
     # --- by-spec digests
     open_by_label = Counter()
@@ -258,10 +447,13 @@ def main() -> None:
     ][:200]
     (GEN / "people-unmapped.txt").write_text("\n".join(unmapped) + "\n")
 
-    # --- sanity check
+    # --- sanity check (github-mirror baseline is source-scoped: email additions
+    #     must not mask a bot-extraction regression)
+    n_email = len(email_resolutions)
     print(
-        f"[build_indexes] {len(files)} mirror files, {len(resolutions)} resolutions, "
-        f"{resolved_issue_count} items with RESOLVED (baseline {EXPECTED_RESOLVED_ISSUES}), "
+        f"[build_indexes] {len(files)} mirror files, {len(resolutions)} resolutions "
+        f"({n_email} from minutes emails, {len(minutes_rows)} minutes mails), "
+        f"{resolved_issue_count} github items with RESOLVED (baseline {EXPECTED_RESOLVED_ISSUES}), "
         f"{len(mrows)} meeting dates"
     )
     if resolved_issue_count < EXPECTED_RESOLVED_ISSUES:

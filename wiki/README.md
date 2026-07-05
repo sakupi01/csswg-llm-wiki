@@ -42,8 +42,17 @@ Entry point for every query. One line per page; update on every ingest.
 | Date | Type | Summary |
 |---|---|---|
 | [2026-07-01](meetings/2026/2026-07-01-telecon.md) | telecon | `:nav-source` pseudo, web-animations range parse-error, non-existing pseudo inheritance, anchor `flip-self-*` for `::picker(select)` |
+| [2026-06-25](meetings/2026/2026-06-25-telecon.md) | telecon | `::interest-button` media-query gating voided (reverses 06-11) |
 | [2026-06-24](meetings/2026/2026-06-24-telecon.md) | telecon | functional-notation serialization, `@position-try` global scope, `sibling-index()` returns 1, `outline-offset: inset`, `<meta text-scale>` limit reverted |
 | [2026-06-17](meetings/2026/2026-06-17-telecon.md) | telecon | scroll-snap physics, logical `caption-side`, `zoom: normal`, `::picker(select)` fallbacks, `param()` ≥2 values |
+| [2026-06-11](meetings/2026/2026-06-11-telecon.md) | telecon | `::interest-button` gated behind an inline media condition (later voided) |
+| [2026-06-10](meetings/2026/2026-06-10-telecon.md) | telecon | `<a-n-plus-b>` rename, `random()` caching, loosely-matched timeline names, Link Params FPWD, mixins return type |
+| [2026-06-03](meetings/2026/2026-06-03-telecon.md) | telecon | `align-content: baseline` unshipped, scroll-timeline async source/fragmented subject, animation-triggers `play-always` |
+| [2026-05-28](meetings/2026/2026-05-28-telecon.md) | telecon | shadow-DOM inheritance survey tasked to emilio; `::interest-button` discussed |
+| [2026-05-27](meetings/2026/2026-05-27-telecon.md) | telecon | inactive scroll timelines, orthogonal-flow `justify-self: normal`, anchor transforms feature-detect, typed-OM all-or-nothing reification |
+| [2026-05-20](meetings/2026/2026-05-20-telecon.md) | telecon | masonry repeat heuristic, highlight shadow cascade, `SnapEvent` nullable init, `path-length` |
+| [2026-05-13](meetings/2026/2026-05-13-telecon.md) | telecon | `getTriggers()`, `animation-delay-start/-end` longhands |
+| [2026-05-06](meetings/2026/2026-05-06-telecon.md) | telecon | elementFromPoint shadow retargeting, scroll-into-view snap, `light-dark(…, none)`, unresolved timelines as null |
 
 ## Digests
 

@@ -41,7 +41,9 @@ Entry point for every query. One line per page; update on every ingest.
 
 | Date | Type | Summary |
 |---|---|---|
-| *(none yet)* | | |
+| [2026-07-01](meetings/2026/2026-07-01-telecon.md) | telecon | `:nav-source` pseudo, web-animations range parse-error, non-existing pseudo inheritance, anchor `flip-self-*` for `::picker(select)` |
+| [2026-06-24](meetings/2026/2026-06-24-telecon.md) | telecon | functional-notation serialization, `@position-try` global scope, `sibling-index()` returns 1, `outline-offset: inset`, `<meta text-scale>` limit reverted |
+| [2026-06-17](meetings/2026/2026-06-17-telecon.md) | telecon | scroll-snap physics, logical `caption-side`, `zoom: normal`, `::picker(select)` fallbacks, `param()` ≥2 values |
 
 ## Digests
 

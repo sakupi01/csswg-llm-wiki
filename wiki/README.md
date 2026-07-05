@@ -9,6 +9,7 @@ Entry point for every query. One line per page; update on every ingest.
 
 | Feature | Status | Specs | Summary |
 |---|---|---|---|
+| [Absolute Lengths & the Pixel Unit](features/absolute-lengths.md) | shipped | css-values-3, css-values-4 | `px` is an angular measure (the reference pixel), not a physical dot; on screen it is the *anchor* and physical units fall out of it — physical-size units repeatedly rejected (#614/#708/#5221) |
 | [CSS Nesting](features/css-nesting.md) | shipped | css-nesting-1 | Native nesting of style rules; history dominated by the "syntax wars" (Option 3 + parser lookahead) and the `&`-as-`:is()` specificity tail |
 
 ## Specs
@@ -16,6 +17,8 @@ Entry point for every query. One line per page; update on every ingest.
 | Spec | Maturity | Features tracked |
 |---|---|---|
 | [css-nesting-1](specs/css-nesting-1.md) | WD | css-nesting |
+| [css-values-3](specs/css-values-3.md) | CRD | absolute-lengths |
+| [css-values-4](specs/css-values-4.md) | WD | absolute-lengths |
 
 ## Families
 

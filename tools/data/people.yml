@@ -204,3 +204,17 @@
   irc_nicks: [khush]
   affiliation: Google
   roles: [view transitions]
+
+- slug: patrickhlauke
+  name: Patrick H. Lauke
+  github: patrickhlauke
+  irc_nicks: []
+  affiliation: (accessibility; not in CSSWG participants snapshot)
+  roles: []
+
+- slug: nicksherman
+  name: Nick Sherman
+  github: nicksherman
+  irc_nicks: []
+  affiliation: (type designer; not in CSSWG participants snapshot)
+  roles: []

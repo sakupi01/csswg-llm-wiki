@@ -7,3 +7,4 @@ Append-only. One line per operation: `## [YYYY-MM-DD] <kind> | <summary>`.
 ## [2026-07-05] update | www-style minutes 2008-2017 mirrored (685 mails); resolutions extended to 7,090 (3,510 from minutes emails); meetings 1,015 dates
 ## [2026-07-05] update | CI weekly sync (see Actions run summary)
 ## [2026-07-05] ingest | css-nesting: feature + spec page (syntax wars, & semantics, CSSOM arc); 48 resolutions cited, shipping verified vs vendor sources
+## [2026-07-05] query | absolute-lengths: feature + css-values-3/4 spec pages (px = reference-pixel viewing angle vs physical anchor; #614/#708/#5221); 3 resolutions cited; added patrickhlauke, nicksherman to people.yml

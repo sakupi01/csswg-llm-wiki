@@ -305,3 +305,4 @@
 - 2026-04-22 opened #13834: [css-box-4][css-inline-3] margin-trim on inline boxes
 - 2026-05-21 opened #13951: [css-inline-3] Alignment behavior of `vertical-align: middle` differs from existing CSS2 implementation
 - 2026-06-28 opened #14097: [css-inline-3] Add `hanging` value to `text-box-edge`
+- 2026-06-29 opened #14104: [css-break] `box-decoration-break: clone` on inline box should exclude fragments around block-level

@@ -7095,3 +7095,5 @@ and the text may quote an existing resolution — verify at the permalink.
 - 2026-07-01 | #13904 | css-view-transitions-1,cssom-1 | RESOLVED: non existing pseudo-elements are considered to inherit from their ultimate originating element if you query the computed style | https://github.com/w3c/csswg-drafts/issues/13904#issuecomment-4858013386
 - 2026-07-01 | #14062 | css-anchor-position-1,css-forms-1 | RESOLVED: Use these values for ::picker(select) | https://github.com/w3c/csswg-drafts/issues/14062#issuecomment-4857805306
 - 2026-07-01 | #14062 | css-anchor-position-1,css-forms-1 | RESOLVED: add flip-self-inline and flip-self-block to position-try | https://github.com/w3c/csswg-drafts/issues/14062#issuecomment-4857805306
+- 2026-07-08 | #11469 | scroll-animations-1,web-animations-2 | RESOLVED: change spec to meet the comment in the issue | https://github.com/w3c/csswg-drafts/issues/11469#issuecomment-4916924373
+- 2026-07-08 | #13816 | css-overflow-3,css-writing-modes-4 | RESOLVED: close no change | https://github.com/w3c/csswg-drafts/issues/13816#issuecomment-4917114479

@@ -275,3 +275,4 @@
 - 2026-06-03 RESOLVED #13818: when VT is on fragmented subjects, it includes boudning box of fragmetns (matching INtersectionObserver)
 - 2026-06-03 RESOLVED #13844: start/endOffset are nullable
 - 2026-06-10 RESOLVED #13974: Make scroll timeline names loosely-matched
+- 2026-07-08 RESOLVED #11469: change spec to meet the comment in the issue

@@ -1018,3 +1018,4 @@
 - 2026-06-24 | telecon | 9 topics | 8 resolutions | bot | #6900 #9720 #12801 #13557 #13567 #13736 #13765 #13870 #13946
 - 2026-06-25 | telecon | 1 topics | 1 resolutions | bot | #13980
 - 2026-07-01 | telecon | 5 topics | 6 resolutions | bot | #11801 #13652 #13853 #13904 #14062
+- 2026-07-08 | telecon | 5 topics | 2 resolutions | bot | #10853 #11469 #13506 #13816

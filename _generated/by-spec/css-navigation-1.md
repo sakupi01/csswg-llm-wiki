@@ -8,6 +8,7 @@
 - 2023-07-18 RESOLVED #8784: Reloads don't trigger view transitions by default.
 - 2025-02-28 opened #11801: [css-navigation-1] Add pseudo-class selector to target the element that initiated the outgoing navigation
 - 2025-08-12 opened #12594: [css-navigation] Exposing navigation/route matching
+- 2025-09-18 opened #12829: [css-view-transitions-2][css-navigation-1] Starting a cross-document view-transition instantly
 - 2025-11-14 RESOLVED #12594: Start a css-navigation ED
 - 2025-11-19 opened #13122: [css-navigation-1] Rename `urlpattern()` to `url-pattern()`
 - 2025-11-21 opened #13136: [css-navigation-1] conditions that query the navigation type

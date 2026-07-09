@@ -314,3 +314,4 @@
 - 2026-04-30 opened #13869: [selectors] Selecting elements that use a specific default cursor
 - 2026-05-31 opened #13993: [css-color][css-images][css-ui] Allow `light-dark(<image>, <image>)` in cursor
 - 2026-06-24 RESOLVED #13765: Add inset keyword to the outline-offset property
+- 2026-07-08 opened #14143: [css-ui] Maybe reconsider the :hover / :active top layer propagation rules?

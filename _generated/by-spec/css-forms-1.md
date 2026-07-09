@@ -194,3 +194,4 @@
 - 2026-06-22 opened #14077: [css-forms-1] `field-sizing` should have a way to have the size be (conceptually) `max(placeholder, content)`
 - 2026-07-01 RESOLVED #14062: Use these values for ::picker(select)
 - 2026-07-01 RESOLVED #14062: add flip-self-inline and flip-self-block to position-try
+- 2026-07-07 opened #14140: [css-forms-1] control-value() meta issue

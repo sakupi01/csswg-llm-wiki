@@ -219,7 +219,7 @@
 - 2025-07-28 RESOLVED #12241: -ua- prefixed idents are invalid for authors in `view-transition-name
 - 2025-07-28 RESOLVED #12407: Add `activeViewTransition` to `Document` and `Element
 - 2025-08-12 opened #12594: [css-navigation] Exposing navigation/route matching
-- 2025-09-18 opened #12829: [css-view-transitions-2] Starting a cross-document view-transition instantly
+- 2025-09-18 opened #12829: [css-view-transitions-2][css-navigation-1] Starting a cross-document view-transition instantly
 - 2025-10-15 opened #12953: [css-view-transitions-2][scoped] Allow starting a scoped view transition on a shadow root
 - 2025-10-24 opened #13013: [css-view-transitions-2] Extend `waitUntil` so that it can delay the start of the View Transition (animating phase)
 - 2025-10-24 opened #13014: [css-view-transitions-2] Extend `waitUntil` so that it can replace a set promise

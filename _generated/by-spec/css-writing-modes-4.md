@@ -63,3 +63,4 @@
 - 2026-04-16 opened #13816: [css-overflow] Scroll direction of unicode-bidi: plaintext.
 - 2026-05-27 RESOLVED #12600: Add an example for this to writing-mode spec
 - 2026-05-27 RESOLVED #12600: Clarify that css-writing-modes/CSS2 sizing rules map to 'normal', and other sizing effects of 'justify-self' take precedence over that.
+- 2026-07-08 RESOLVED #13816: close no change

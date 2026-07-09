@@ -177,3 +177,4 @@
 - 2026-02-25 RESOLVED #13257: close no change
 - 2026-04-16 opened #13816: [css-overflow] Scroll direction of unicode-bidi: plaintext.
 - 2026-05-04 opened #13883: [css-overflow] Clarify the bounds for the scrollable overflow additional padding
+- 2026-07-08 RESOLVED #13816: close no change

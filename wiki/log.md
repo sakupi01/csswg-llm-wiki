@@ -23,3 +23,4 @@ Append-only. One line per operation: `## [YYYY-MM-DD] <kind> | <summary>`.
 ## [2026-07-05] summarise | first meeting summaries: 2026-06-17, 06-24, 07-01 telecons (wiki/meetings/2026/) — 20 topics, 20 resolutions verbatim + permalinks; anchor-positioning cross-linked (#13567 @position-try global scope, #14062 flip-self); README recent-meetings table populated. Backlog 2026-05-06..06-11 (9 telecons) left for follow-up
 ## [2026-07-05] summarise | backlog cleared: 2026-05-06/05-13/05-20/05-27/05-28/06-03/06-10/06-11/06-25 telecons (9 pages) — verbatim resolutions + permalinks, cross-links to scroll-driven-animations/anchor-positioning/masonry; README recent-meetings now lists all 12 recent telecons. All 2026 recent telecons summarised
 ## [2026-07-09] update | CI weekly sync (see Actions run summary)
+## [2026-07-09] digest | 2026-W28: 1 notable item (scroll-driven animations play() re-align, #11469); 2 resolutions, 3 fresh; feed rebuilt + links validated

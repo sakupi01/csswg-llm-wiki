@@ -138,7 +138,7 @@ and `:heading(1), :heading(2), :heading(3)` works anyway. The debate:
   it did feel weird to have it be different than the existing pseudo-classes," and later that
   `An+B#` "does feel like overkill for `:heading()`"
   ([comment](https://github.com/w3c/csswg-drafts/issues/12599#issuecomment-3184123765)).
-- [fantasai](../people/fantasai.md), [frivoal](../people/frivoal.md) (florian) and noamr backed
+- [fantasai](../people/fantasai.md), [frivoal](../people/frivoal.md) ([florian](../people/frivoal.md)) and noamr backed
   a list of integers; noamr and [fantasai](../people/fantasai.md) cited precedent for
   comma-separated arguments (`active-view-transition-type()`, `:lang()`, `:not()`).
 - [lea](../people/lea.md) argued for **ranges** (a-to-b) instead of bare commas, pointing at the

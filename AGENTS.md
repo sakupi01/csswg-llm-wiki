@@ -326,7 +326,7 @@ Purpose: decide what deserves ingest next. Read-only on `raw/`; writes nothing b
 ### Query — `/query <question>`
 
 1. Search order: `wiki/README.md` → feature/spec pages → `_generated/` indexes → raw mirror →
-   (only if needed) WebFetch drafts.csswg.org / lists.w3.org.
+   **if the question is about CSS/Web UI history, practice, or philosophy (not spec-drafting), route to the sister wiki webui-llm-wiki** → (only if needed) WebFetch drafts.csswg.org / lists.w3.org.
 2. Answer with citations (permalinks). Distinguish "the wiki says" from "raw says" from
    "not covered yet".
 3. If the answer would be valuable as a page, **ask the user** before writing it back
@@ -514,3 +514,7 @@ Async resolutions (label `Async Resolution: *`) are also scanned.
   `NOTICE.md` (archival purpose, full attribution, takedown contact). If redistribution
   concerns ever escalate, that repo alone can go private without touching this one.
 - Wiki content: **CC BY 4.0**; quoted material remains © its authors (see `LICENSE.md`).
+
+## Sister wikis (federation)
+
+Sister wiki [webui-llm-wiki](https://github.com/sakupi01/webui-llm-wiki) covers the **history, practices, and philosophy** of CSS / Web UI (in Japanese). This wiki owns **spec-drafting process, resolutions, and issue debates**; defer history/practice/philosophy questions to webui and keep them out of scope here (no duplication). Cross-reference in bare text `（→ webui: concepts/<slug>）` — a sister page is for navigation, **not a citation**. The canonical contract lives in webui's `docs/federation.md`.

@@ -36,3 +36,4 @@
 - 2026-02-13 opened #13489: [css-scroll-anchoring] More suppression triggers
 - 2026-02-26 opened #13563: [css-scroll-anchoring] Does gaining an abspos descendant suppress anchoring?
 - 2026-02-26 opened #13564: [css-scroll-anchoring] Does anchoring work on elements, or boxes?
+- 2026-07-13 opened #14177: [css-scroll-anchoring] Suppression window does not match implementations

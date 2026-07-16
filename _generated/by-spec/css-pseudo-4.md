@@ -332,3 +332,4 @@
 - 2026-04-29 opened #13860: [css-pseudo] `::before(<ident>)` / `::after(<ident>)`: A possible path forwards for multiple gencontent pseudos?
 - 2026-05-14 opened #13926: [css-pseudo] Spec clearly whether text inputs are supposed to support first-line / first-letter
 - 2026-06-29 opened #14108: [css-pseudo][css-highlight-api] Highlight painting over replaced elements
+- 2026-07-15 RESOLVED #13926: ::first-line / ::first-letter don't apply to input / textarea for now, revisit once we have better-defined layout for them

@@ -1014,3 +1014,5 @@
 {"date": "2026-06-25", "type_guess": "telecon", "topics": 1, "resolutions": 1, "sources": ["bot"], "issues": [13980], "minutes_urls": []}
 {"date": "2026-07-01", "type_guess": "telecon", "topics": 5, "resolutions": 6, "sources": ["bot"], "issues": [11801, 13652, 13853, 13904, 14062], "minutes_urls": []}
 {"date": "2026-07-08", "type_guess": "telecon", "topics": 5, "resolutions": 2, "sources": ["bot"], "issues": [10853, 11469, 13506, 13816], "minutes_urls": []}
+{"date": "2026-07-09", "type_guess": "telecon", "topics": 2, "resolutions": 0, "sources": ["bot"], "issues": [13980, 14143], "minutes_urls": []}
+{"date": "2026-07-15", "type_guess": "telecon", "topics": 5, "resolutions": 3, "sources": ["bot"], "issues": [11644, 13428, 13500, 13925, 13926], "minutes_urls": []}

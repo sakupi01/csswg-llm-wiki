@@ -17,8 +17,10 @@
 - 2021-12-28 opened #6917: [css-conditional-5] Add `container()` as a leaf of the @when rule
 - 2022-01-19 RESOLVED #3936: Close no-change
 - 2022-01-19 opened #6966: [css-conditional-5] Add ability to test for at-rule preludes
+- 2022-01-25 opened #6985: [css-scroll-snap] Proposing `:snapped`: exposing private snapped item browser state for developers and designers
 - 2022-02-08 opened #7023: [css-conditional-5] @supports elements queries
 - 2022-02-12 opened #7040: [syntax-3][cssom-1][selectors-3][mediaqueries-4][cascade-3][css-counter-styles-3] Improve the procedures used for parsing a CSS input
+- 2022-02-23 RESOLVED #6985: Start Scroll Snap 2 ED, with :snapped and snapping event model, with Adam Argyle as additional editor
 - 2022-03-31 opened #7185: [css-contain-3] Move style queries of standard properties to level 4
 - 2022-06-15 opened #7369: [css-conditional-5] Extra whitespace in value definition of `<supports-font-format-fn>` and `<supports-font-tech-fn>`
 - 2022-06-29 opened #7429: [css-contain-3] Clarify Container Relative Lengths
@@ -52,6 +54,7 @@
 - 2024-05-09 opened #10300: [css-contain] Stacking Context is undesired
 - 2024-06-08 opened #10405: Feature: @Container support zoom and re-evaluation of queries on mobile
 - 2024-06-13 RESOLVED #10043: both container query units and container queries should take into account relevant scrollbar gutters when theyre present
+- 2024-06-13 RESOLVED #6985: Publish css-scroll-snap-2 as FPWD minus scroll-start property
 - 2024-06-17 opened #10457: [css-values-4][Editorial] `<condition>` type that other specs reference
 - 2024-06-19 opened #10472: [Container Queries] consider keep links to CQ features in contain-3 or redirect them to conditional-5
 - 2024-06-26 RESOLVED #10268: use chrome/firefox behavior

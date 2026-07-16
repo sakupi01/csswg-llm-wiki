@@ -5084,7 +5084,7 @@ and the text may quote an existing resolution — verify at the permalink.
 - 2022-02-23 | #6230 | css-tables-3 | RESOLVED: Accept current Tables 3 spec text regarding calculation of shared borders in collapsed-border mode between table and cells. | https://github.com/w3c/csswg-drafts/issues/6230#issuecomment-1049044173
 - 2022-02-23 | #6376 | css-contain-3 | RESOLVED: Close no change. | https://github.com/w3c/csswg-drafts/issues/6376#issuecomment-1049052128
 - 2022-02-23 | #6405 | css-contain-3 | RESOLVED: Restrict container-name to just idents | https://github.com/w3c/csswg-drafts/issues/6405#issuecomment-1049056338
-- 2022-02-23 | #6985 | css-scroll-snap-2,selectors-4,selectors-5 | RESOLVED: Start Scroll Snap 2 ED, with :snapped and snapping event model, with Adam Argyle as additional editor | https://github.com/w3c/csswg-drafts/issues/6985#issuecomment-1049029573
+- 2022-02-23 | #6985 | css-conditional-5,css-scroll-snap-2 | RESOLVED: Start Scroll Snap 2 ED, with :snapped and snapping event model, with Adam Argyle as additional editor | https://github.com/w3c/csswg-drafts/issues/6985#issuecomment-1049029573
 - 2022-03-03 | #6692 | css-grid-3 | RESOLVED: Add this functionality to grid L3 | https://github.com/w3c/csswg-drafts/issues/6692#issuecomment-1057549631
 - 2022-03-03 | #6850 | cssom-view-1 | RESOLVED: Add isVisible to element as defined in the issue. Work out the corner case in a separate issue | https://github.com/w3c/csswg-drafts/issues/6850#issuecomment-1057555124
 - 2022-03-03 | #6855 | css-flexbox-1 | RESOLVED: Treat items as not monolithic | https://github.com/w3c/csswg-drafts/issues/6855#issuecomment-1057547095
@@ -5974,7 +5974,7 @@ and the text may quote an existing resolution — verify at the permalink.
 - 2024-06-12 | #10371 | css-properties-values-api-1 | RESOLVED: <color> values returned by getComputedStyle() on standard CSS properties or registered custom properties is the used value | https://github.com/w3c/csswg-drafts/issues/10371#issuecomment-2162491973
 - 2024-06-12 | #10371 | css-properties-values-api-1 | RESOLVED: computed <color> values returned by TypedOM are the actual computed value | https://github.com/w3c/csswg-drafts/issues/10371#issuecomment-2162491973
 - 2024-06-12 | #10393 | css-gaps-1 | RESOLVED: import the draft with shortname css-gaps and title CSS Gap Decorations with kbabbitt as editor. | https://github.com/w3c/csswg-drafts/issues/10393#issuecomment-2162458484
-- 2024-06-13 | #6985 | css-scroll-snap-2,selectors-4,selectors-5 | RESOLVED: Publish css-scroll-snap-2 as FPWD minus scroll-start property | https://github.com/w3c/csswg-drafts/issues/6985#issuecomment-2166073296
+- 2024-06-13 | #6985 | css-conditional-5,css-scroll-snap-2 | RESOLVED: Publish css-scroll-snap-2 as FPWD minus scroll-start property | https://github.com/w3c/csswg-drafts/issues/6985#issuecomment-2166073296
 - 2024-06-13 | #8282 | css-view-transitions-2 | RESOLVED: We will design an optimization for VT of "offscreen" elements wherein we don't capture the bitmap for their offscreen state. Details TBD. | https://github.com/w3c/csswg-drafts/issues/8282#issuecomment-2165842379
 - 2024-06-13 | #9230 | css-display-4 | RESOLVED: reading-flow does not affect whether an element is focusable | https://github.com/w3c/csswg-drafts/issues/9230#issuecomment-2165098385
 - 2024-06-13 | #9852 | css-ui-4 | RESOLVED: Precompose semi-transparent accent-colors over Canvas | https://github.com/w3c/csswg-drafts/issues/9852#issuecomment-2166096835
@@ -7097,3 +7097,6 @@ and the text may quote an existing resolution — verify at the permalink.
 - 2026-07-01 | #14062 | css-anchor-position-1,css-forms-1 | RESOLVED: add flip-self-inline and flip-self-block to position-try | https://github.com/w3c/csswg-drafts/issues/14062#issuecomment-4857805306
 - 2026-07-08 | #11469 | scroll-animations-1,web-animations-2 | RESOLVED: change spec to meet the comment in the issue | https://github.com/w3c/csswg-drafts/issues/11469#issuecomment-4916924373
 - 2026-07-08 | #13816 | css-overflow-3,css-writing-modes-4 | RESOLVED: close no change | https://github.com/w3c/csswg-drafts/issues/13816#issuecomment-4917114479
+- 2026-07-15 | #11644 | scroll-animations-1 | RESOLVED: spec is right, fix the tests | https://github.com/w3c/csswg-drafts/issues/11644#issuecomment-4982811693
+- 2026-07-15 | #13500 | css-values-4,scroll-animations-1 | RESOLVED: Spec is right, fix tests, add some tests for the animated value | https://github.com/w3c/csswg-drafts/issues/13500#issuecomment-4982841033
+- 2026-07-15 | #13926 | css-pseudo-4 | RESOLVED: ::first-line / ::first-letter don't apply to input / textarea for now, revisit once we have better-defined layout for them | https://github.com/w3c/csswg-drafts/issues/13926#issuecomment-4983249817

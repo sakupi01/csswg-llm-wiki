@@ -96,3 +96,8 @@
 - 2026-04-22 RESOLVED #13754: gaps that fall on an external fragmentation boundary consume a decoration from the pattern
 - 2026-06-16 opened #14058: [css-gaps] Precise control over how decorations apply to wrapping flex layout
 - 2026-06-24 opened #14083: [css-gaps] Allow percentage values with rule-width to account for fluid gaps
+- 2026-07-09 opened #14153: [css-gaps-1] Define gaps for grid lanes
+- 2026-07-09 opened #14154: [css-gaps-1] Empty space in the stacking axis should not be part of a gap
+- 2026-07-09 opened #14155: [css-gaps-1] In grid lanes containers, alignment should not shift gap-decoration placement
+- 2026-07-09 opened #14156: [css-gaps-1] Define how repeated / listed gap-decoration values map to gaps in grid lanes containers
+- 2026-07-10 opened #14169: [css-gaps-1] Define rule-break: normal for grid lanes containers

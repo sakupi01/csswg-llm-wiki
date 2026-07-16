@@ -65,8 +65,6 @@
 - 2021-10-17 opened #6737: [selectors][Editorial] Are things like :is(.foo *) still a <compound-selector>?
 - 2021-11-23 opened #6825: [css-pseudo-4] Do we need a specialized :target pseudoclass for scroll-to-element?
 - 2021-12-08 opened #6867: [selectors] Pseudo-class to indicate when a slot has content
-- 2022-01-25 opened #6985: [css-scroll-snap] Proposing `:snapped`: exposing private snapped item browser state for developers and designers
-- 2022-02-23 RESOLVED #6985: Start Scroll Snap 2 ED, with :snapped and snapping event model, with Adam Argyle as additional editor
 - 2022-02-24 opened #7085: [selectors-4] Allow more pseudo-classes following a pseudo-element
 - 2022-05-11 opened #7269: [selectors] `:focusable` pseudo-class
 - 2022-06-09 opened #7346: [selectors] Child & descendant pseudo element combinators
@@ -82,7 +80,7 @@
 - 2022-11-30 RESOLVED #4805: merge a limited version of https://github.com/WICG/webcomponents/blob/gh-pages/proposals/custom-states-and-state-pseudo-class.md into Selectors 5
 - 2022-11-30 RESOLVED #6867: Take this up for Selectors 5, fantasai and tabatkins will come back with proposed text
 - 2022-12-01 opened #8167: [selectors] Adding infinity loop pseudo-classes and :contains() to the snapshot profile
-- 2023-01-23 opened #8352: [selectors-4] Grid-structural selectors like :nth-col(): having pseudo-classes for rows e.g. :nth-row() is needed for CSS to cope with tables and rowSpan
+- 2023-01-23 opened #8352: [selectors-5] Grid-structural selectors like :nth-col(): having pseudo-classes for rows e.g. :nth-row() is needed for CSS to cope with tables and rowSpan
 - 2023-02-21 opened #8483: [css-selectors] Proposal: "Middle Out" sibling selectors
 - 2023-03-22 opened #8632: [css-selectors] Be able to select for partial attribute names
 - 2023-04-14 opened #8720: [selectors-5] Clarify :lang() behavior when the language range is not a well-formed BCP 47 code
@@ -91,7 +89,6 @@
 - 2023-07-19 RESOLVED #4140: Work on the problem of expressing ranges of children in selectors in a more intuitive way.
 - 2023-08-03 RESOLVED #4805: Change from -- to state
 - 2024-02-26 opened #10001: [selectors] New selector to facilitate utility classes (`[name~^=value]`? `.prefix-*`?)
-- 2024-06-13 RESOLVED #6985: Publish css-scroll-snap-2 as FPWD minus scroll-start property
 - 2024-07-12 opened #10567: [selectors] Parameterized selectors
 - 2024-09-27 opened #10970: [selectors] `/idref()/` combinator to follow element references for arbitrary IDREF attributes
 - 2024-09-30 opened #10976: [selectors] :local-link definition's comparison of URLs should be more precise than "matches"

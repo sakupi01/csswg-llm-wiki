@@ -1,0 +1,1158 @@
+{
+  "span": "week",
+  "since": "2026-07-09",
+  "until": "2026-07-16",
+  "generated_at": "2026-07-16T01:14:49Z",
+  "resolutions": [
+    {
+      "date": "2026-07-15",
+      "issue": 11644,
+      "labels": [
+        "scroll-animations-1"
+      ],
+      "resolution": "spec is right, fix the tests",
+      "url": "https://github.com/w3c/csswg-drafts/issues/11644#issuecomment-4982811693",
+      "feature": "scroll-driven-animations",
+      "background": "Based on the test `view-timelines/view-timeline-snapport.html`, it is expected that `ViewTimelines` without a user specified timeline inset should avoid using the scroll-padding property as the inset. However, inset is defined as below in [ViewTimelineOptions](https://drafts.csswg.org/scroll-animations-1/#viewtimeline-interface):",
+      "related": [],
+      "irc": [
+        "<emilio> emilio: Spec says default is auto",
+        "<emilio> ... but chrome uses = []",
+        "<emilio> flackr: I think there's no issue with using `auto`",
+        "<emilio> graouts: I think the main issue is that auto has the side effect of using scroll-padding",
+        "<dshin-moz> FWIW the change was made thru this PR: https://chromium-review.googlesource.com/c/chromium/src/+/3898695",
+        "<emilio> ... and there's no way to distinguish explicit from non-explicit auto",
+        "<emilio> https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/core/animation/view_timeline_options.idl;l=12;drc=4eac913913af0d1865ea2cdce0018d36a1d2322b fwiw",
+        "<emilio> flackr: I think it's an edge case enough to have scroll-padding set",
+        "<emilio> ... probably not an issue?",
+        "<emilio> graouts: This only applies to usage via the API and not CSS",
+        "<emilio> flackr: I don't think you shouldn't differentiate between empty value and auto",
+        "<emilio> ... we do that elsewhere",
+        "<emilio> graouts: So you'd need explicit [] to opt out of scroll-padding",
+        "<emilio> emilio: yes",
+        "<another-astearns> ack fantasai",
+        "<emilio> fantasai: default value of view-timeline-inset is 0",
+        "<emilio> s/0/auto",
+        "<dshin-moz> q+",
+        "<emilio> ... so it makes sense for it to be the default on the API",
+        "<fantasai> https://drafts.csswg.org/scroll-animations-1/#view-timeline-inset",
+        "<emilio> graouts: mdn differs from the spec",
+        "<another-astearns> ack dshin-moz",
+        "<fantasai> ??? MDN says initial value is 'auto' https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/view-timeline-inset",
+        "<emilio> dshin-moz: we were confused internally because auto is by default because the tests assume empty",
+        "<emilio> ... it seems chrome folks considered opting into snapport an optional behavior",
+        "<emilio> ... see the PR linked above",
+        "<emilio> fantasai: the default value is auto, if you set it to an invalid value (or no value) it should fall back to its default",
+        "<flackr> +1",
+        "<fantasai> emilio: [missed]",
+        "<fantasai> scribe+",
+        "<fantasai> emilio: An array is technically valid",
+        "<estelle> MDN says initial value is 'auto' b/c the spec says it's auto",
+        "<emilio> PROPOSED RESOLUTION: spec is right, fix the tests",
+        "<emilio> flackr: I think this is enough of an edge case",
+        "<emilio> fantasai: if an empty array is explicitly valid is it 0 or auto?",
+        "<weinig> The says \"If it has zero values or more than two values, or if it contains a CSSKeywordValue whose value is not \"auto\", throw a TypeError.\"",
+        "<emilio> astearns: are there tests for that?",
+        "<emilio> flackr: the spec is explicit",
+        "<weinig> s/The says/The spec says/",
+        "<emilio> RESOLVED: spec is right, fix the tests",
+        "<emilio> graouts: It's part of interop, can fix the test asap",
+        "<fantasai> ACTION: Add a test for empty array",
+        "<fantasai> s/explicit/explicit that an empty array is a type error (like 3 values)/",
+        "<emilio> emilio: Empty array should probably be tested, since chrome presumably would fail that"
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "issue": 13500,
+      "labels": [
+        "css-values-4",
+        "scroll-animations-1"
+      ],
+      "resolution": "Spec is right, fix tests, add some tests for the animated value",
+      "url": "https://github.com/w3c/csswg-drafts/issues/13500#issuecomment-4982841033",
+      "feature": "absolute-lengths",
+      "background": "How should the shorthand associated with a [coordinated value list](https://drafts.csswg.org/css-values-4/#linked-properties), such as the [`animation`](https://drafts.csswg.org/css-animations/#animation) shorthand property or the [`scroll-timeline`](https://drafts.csswg.org/scroll-animations/#scroll-timeline-shorthand) shorthand property, serialize when the [coordinating list base property](https",
+      "related": [],
+      "irc": [
+        "<emilio> graouts: weinig should be able to introduce this",
+        "<emilio> weinig: I think this was chrome folks making a change to a test that contradicts the resolution we had in a separate issue",
+        "<emilio> ... about serializing shorthands of coordinated value lists",
+        "<emilio> ... I think just the test is wrong and we should change it",
+        "<fantasai> Spec seems pretty clear ... https://github.com/w3c/csswg-drafts/commit/a15676f47ecc6838b555210f0f1e32c77dee8239",
+        "<emilio> emilio: agree, spec is clear and it seems just a chrome bug",
+        "<emilio> PROPOSED RESOLUTION: Spec is right, fix the test",
+        "<emilio> graouts: This applies to serialization",
+        "<emilio> ... there's also the test that looks at the animated value read through the computed value",
+        "<emilio> ... as opposed to the serialized value",
+        "<emilio> ... not entirely sure I'll have time to author those, but can try",
+        "<emilio> RESOLVED: Spec is right, fix tests, add some tests for the animated value",
+        "<emilio> ACTION: Add animated value tests"
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "issue": 13926,
+      "labels": [
+        "css-pseudo-4"
+      ],
+      "resolution": "::first-line / ::first-letter don't apply to input / textarea for now, revisit once we have better-defined layout for them",
+      "url": "https://github.com/w3c/csswg-drafts/issues/13926#issuecomment-4983249817",
+      "feature": null,
+      "background": "Test-case:",
+      "related": [],
+      "irc": [
+        "<fantasai> emilio: Blink only supports :first-line somehow",
+        "<fantasai> emilio: It feels weird. I almost changed this in Gecko accidentally, while fixing support for field-sizing.",
+        "<fantasai> emilio: Spec is ambiguous, but I wouldn't expect it to dig into contents of a replaced element.",
+        "<lea> q?",
+        "<fantasai> emilio: So I think we should be explicit that they don't apply to replaced elements, same way as ::before/::after don't apply",
+        "<tantek> presumably our reasoning on this is specific to inputs rather than generalizing to say, any use of contenteditable?",
+        "<fantasai> astearns: I don't see a problem with ::first-letter, but ::first-line seems odd",
+        "<lea> q+",
+        "<fantasai> emilio: I would prefer not to support any of them. I'm half-sure it is accidental in Blink.",
+        "<astearns> ack lea",
+        "<PaulG> order matters, if you put scrollLeft first, it will scroll left but not up. So, I understand now.",
+        "<emilio> lea: from an author-facing perspective they expect it to work",
+        "<fantasai> lea: From author-facing, I think if they're using it they're expecting it to work",
+        "<emilio> ... not sure that's undesirable",
+        "<emilio> ... the argument they're replaced elements make sense",
+        "<emilio> ... I wish ::before / ::after would work",
+        "<emilio> ... if we could make it work that'd be the better outcome",
+        "<tantek> do those pseudos work on a contenteditable element?",
+        "<emilio> ... do we want to put theoretical purity",
+        "<emilio> ... I don't see a huge user need",
+        "<emilio> ... so if it complicates implementations I don't think it's worth it",
+        "<PaulG> q+",
+        "<emilio> ... no strong opinion either way",
+        "<PaulG> q-",
+        "<fantasai> emilio: They do work on contenteditable",
+        "<fantasai> emilio: Big issue is that the layout is not fun.",
+        "<lea> s/do we want to put theoretical purity/per the PoC, do we want to put theoretical purity above author needs?/",
+        "<dbaron> the proposal seems reasonable to me; I don't think ::first-letter and ::first-line make much sense in input and textarea",
+        "<fantasai> emilio: Even without auto appearance, the way these elements are laid out internally is not specced and does not match across implementations",
+        "<fantasai> emilio: Making them work reliably is sketchy",
+        "<fantasai> emilio: There are some extra elements, for example, in a password input. Is that part of the ::first-line or not?",
+        "<fantasai> emilio: I think the real issue is, same for ::before/::after, they shouldn't work because we don't have interoperable layout for these elements",
+        "<TabAtkins> +1 to emilio here",
+        "<fantasai> emilio: Need to define how it interacts with ::placeholder, etc. etc.",
+        "<fantasai> emilio: Internal contents of these elements are not defined per spec",
+        "<fantasai> +1 to emilio",
+        "<kbabbitt> +1 to emilio",
+        "<emilio> astearns: I think we should define these not to work for now given that",
+        "<schenney> I suspect the Chrome behavior is an accidental artifact of recent changes to the internal layout structure of text areas. If so definitely something not easy to spec. +1 to emilio.",
+        "<tantek> not apply for now is reasonable because we can expand it in the future with new information",
+        "<emilio> RESOLVED: ::first-line / ::first-letter don't apply to input / textarea for now, revisit once we have better-defined layout for them"
+      ]
+    }
+  ],
+  "agenda": [
+    {
+      "issue": 14143,
+      "title": "[css-ui] Maybe reconsider the :hover / :active top layer propagation rules?",
+      "labels": [
+        "Agenda+",
+        "css-ui-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14143",
+      "feature": null,
+      "comments_in_window": 12
+    },
+    {
+      "issue": 13506,
+      "title": "[css-borders-4] Allow overriding single-shape `border-shape` color/width",
+      "labels": [
+        "Agenda+",
+        "css-borders-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13506",
+      "feature": null,
+      "comments_in_window": 9
+    },
+    {
+      "issue": 14150,
+      "title": "[css-borders-4] Defer two-shape `border-shape` for L5",
+      "labels": [
+        "Agenda+",
+        "css-borders-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14150",
+      "feature": null,
+      "comments_in_window": 5
+    },
+    {
+      "issue": 2259,
+      "title": "[selectors-4] HTML and case-sensitivity",
+      "labels": [
+        "Needs Edits",
+        "selectors-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/2259",
+      "feature": null,
+      "comments_in_window": 3
+    },
+    {
+      "issue": 13731,
+      "title": "[css-box-4] Scope margin-trim down to block & multi-column containers only?",
+      "labels": [
+        "Agenda+",
+        "css-box-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13731",
+      "feature": null,
+      "comments_in_window": 3
+    },
+    {
+      "issue": 14149,
+      "title": "[css-borders] Interaction between `border-shape` and other border properties",
+      "labels": [
+        "Agenda+",
+        "css-borders-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14149",
+      "feature": null,
+      "comments_in_window": 3
+    },
+    {
+      "issue": 6985,
+      "title": "[css-scroll-snap] Proposing `:snapped`: exposing private snapped item browser state for developers and designers",
+      "labels": [
+        "Needs Edits",
+        "css-conditional-5",
+        "css-scroll-snap-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/6985",
+      "feature": "container-queries",
+      "comments_in_window": 2
+    },
+    {
+      "issue": 13428,
+      "title": "[css-view-transitions-2] scoped VT: we should apply content-visibility: hidden for the duration of capture",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-view-transitions-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13428",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 13589,
+      "title": "[css-sizing][repsonsive-iframe] The behavior when content navigates out",
+      "labels": [
+        "Agenda+",
+        "Needs Testcase (WPT)"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13589",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 13727,
+      "title": "[css-mixins-1] Using a scoping rule breaks author expectations, can we get rid of it?",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13727",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 13946,
+      "title": "[css-values] attr() banning type(<url>) is kind of arbitrary.",
+      "labels": [
+        "Agenda+",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13946",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 14090,
+      "title": "[wpt] Allowing *.any.js tests in CSS folders.",
+      "labels": [
+        "Agenda+"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14090",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 14112,
+      "title": "[css-anchor-position-1] What is supposed to happen with scrolling?",
+      "labels": [
+        "Agenda+"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14112",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 5619,
+      "title": "[selectors] Does :target match elements with ids that were set after hashchange time?",
+      "labels": [
+        "Needs Edits",
+        "selectors-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/5619",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 7467,
+      "title": "[selectors-4] additional resource state pseudo-classes for img / picture elements",
+      "labels": [
+        "Needs Edits",
+        "Needs Thought",
+        "selectors-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/7467",
+      "feature": "heading-selector",
+      "comments_in_window": 1
+    },
+    {
+      "issue": 9706,
+      "title": "[selectors] Should `:checked` and `:indeterminate` be exclusive?",
+      "labels": [
+        "Agenda+",
+        "Needs Feedback/Review",
+        "a11y-tracker",
+        "selectors-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/9706",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 10579,
+      "title": "[css-color-4] Evaluate static gamut mapping algorithms for oklab/oklch spaces",
+      "labels": [
+        "Needs Edits",
+        "css-color-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/10579",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 11469,
+      "title": "[web-animations-2] [scroll-animations] should calling `play()` reset the start time of a scroll-driven animation?",
+      "labels": [
+        "Needs Edits",
+        "scroll-animations-1",
+        "web-animations-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/11469",
+      "feature": "scroll-driven-animations",
+      "comments_in_window": 1
+    },
+    {
+      "issue": 11644,
+      "title": "[scroll-animations] Inset parameter of ViewTimelineOptions should be optional",
+      "labels": [
+        "Closed Rejected as Wontfix by CSSWG Resolution",
+        "Commenter Timed Out (Assumed Satisfied)",
+        "Needs Testcase (WPT)",
+        "scroll-animations-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/11644",
+      "feature": "scroll-driven-animations",
+      "comments_in_window": 1
+    },
+    {
+      "issue": 12380,
+      "title": "[css-env][css-fonts-5] New `<meta text-scale>` tag to make UA initial font size respond to OS text scale setting",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Edits",
+        "a11y-tracker",
+        "css-fonts-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12380",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 12417,
+      "title": "[css-mixins-1] Are @mixin rules valid within other at-rules?",
+      "labels": [
+        "Needs Edits",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12417",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13015,
+      "title": "[css-mixins-1] Mixins can be called (but not defined) without params",
+      "labels": [
+        "Needs Testcase (WPT)",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13015",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13500,
+      "title": "[css-value] Clarification on the serialization of the shorthand associated with coordinated value lists",
+      "labels": [
+        "Needs Testcase (WPT)",
+        "css-values-4",
+        "scroll-animations-1",
+        "spec-test-mismatch"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13500",
+      "feature": "absolute-lengths",
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13926,
+      "title": "[css-pseudo] Spec clearly whether text inputs are supposed to support first-line / first-letter",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-pseudo-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13926",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13958,
+      "title": "[css-typed-om-1] Clarify reification of computed 1–4 side values",
+      "labels": [
+        "Agenda+",
+        "css-typed-om",
+        "spec-test-mismatch"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13958",
+      "feature": null,
+      "comments_in_window": 1
+    }
+  ],
+  "hot": [
+    {
+      "issue": 14143,
+      "title": "[css-ui] Maybe reconsider the :hover / :active top layer propagation rules?",
+      "labels": [
+        "Agenda+",
+        "css-ui-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14143",
+      "comments_in_window": 12,
+      "feature": null,
+      "recent": [
+        {
+          "author": "mfreed7",
+          "date": "2026-07-13",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14143#issuecomment-4960920164",
+          "gist": "+1 to this - this was roughly why the decision was made. Since popovers (and generally top layer elements) escape most/all of their ancestors and behave as if they're the last child of `<body>`, it fe"
+        },
+        {
+          "author": "jakearchibald",
+          "date": "2026-07-14",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14143#issuecomment-4967171365",
+          "gist": "I think it only makes sense because we're trying to pretend the select & picker are siblings, even though they're not, so we're hacking around that. There will be more things that break this pretence "
+        },
+        {
+          "author": "mfreed7",
+          "date": "2026-07-15",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14143#issuecomment-4985954340",
+          "gist": "I think it's that we're trying to pretend that any popover is a child-of-body. (That's how popovers were commonly implemented, before the popover API.)"
+        }
+      ]
+    },
+    {
+      "issue": 14147,
+      "title": "[css-shapes-2] An overflow-safe `shape-inside`",
+      "labels": [
+        "css-shapes-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14147",
+      "comments_in_window": 10,
+      "feature": null,
+      "recent": [
+        {
+          "author": "noamr",
+          "date": "2026-07-10",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14147#issuecomment-4936320973",
+          "gist": "@LeaVerou"
+        },
+        {
+          "author": "bfgeek",
+          "date": "2026-07-10",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14147#issuecomment-4938091362",
+          "gist": "Part of the issue here is the cyclic nature between determining the height, and avoiding the shape-area at the bottom of the shape (the \"top\" is fine)."
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-07-10",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14147#issuecomment-4938172135",
+          "gist": "Right, that's exactly the issue I was talking about in my comment, and why my suggestion is shaped the way it is - it avoids *most* of that problem by doing the stretch purely with straight lines at t"
+        }
+      ]
+    },
+    {
+      "issue": 13506,
+      "title": "[css-borders-4] Allow overriding single-shape `border-shape` color/width",
+      "labels": [
+        "Agenda+",
+        "css-borders-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13506",
+      "comments_in_window": 9,
+      "feature": null,
+      "recent": [
+        {
+          "author": "noamr",
+          "date": "2026-07-10",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13506#issuecomment-4934008595",
+          "gist": "Thats an interesting thought but wouldn't work if the stroke needs to be wider than the border-width."
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-07-10",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13506#issuecomment-4939883382",
+          "gist": "...huh, interesting. So, by default, a one-path border-shape would use the border-width/color/style for the \"relevant side\", but if you set border-style:stroke, you'd get access to all the border-shap"
+        },
+        {
+          "author": "noamr",
+          "date": "2026-07-11",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13506#issuecomment-4943758185",
+          "gist": "Right. We could somehow utilize this for box borders with a uniform width but it seems a bit contrived."
+        }
+      ]
+    },
+    {
+      "issue": 14173,
+      "title": "[web-animations-2] Auto-aligning the start time should apply a pending playback rate",
+      "labels": [
+        "Async Resolution: Call For Consensus",
+        "Closed Accepted as Obvious Bugfix",
+        "web-animations-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14173",
+      "comments_in_window": 6,
+      "feature": null,
+      "recent": [
+        {
+          "author": "astearns",
+          "date": "2026-07-13",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14173#issuecomment-4962599264",
+          "gist": "Normative changes (even straightforward bug fixes) need a resolution. I’ll start the process and give folks a week to raise concerns"
+        },
+        {
+          "author": "astearns",
+          "date": "2026-07-13",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14173#issuecomment-4962624879",
+          "gist": "The CSSWG will automatically accept this resolution one week from now if no objections are raised here. Anyone can add an emoji to this comment to express support. If you do not support this resolutio"
+        },
+        {
+          "author": "graouts",
+          "date": "2026-07-14",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14173#issuecomment-4966672103",
+          "gist": "Sorry about the eager closure of this issue, I wasn't sure how this would be dealt with. I'll keep that in mind in the future."
+        }
+      ]
+    },
+    {
+      "issue": 13889,
+      "title": "[css-borders-4] `corner` shorthand slashes conflict with optional forward slashs in border-*-radius long hands",
+      "labels": [
+        "css-borders-4",
+        "editorial"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13889",
+      "comments_in_window": 5,
+      "feature": null,
+      "recent": [
+        {
+          "author": "jsnkuhn",
+          "date": "2026-07-15",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13889#issuecomment-4981419308",
+          "gist": "1. Still not sure how the browser is going to recognize the different uses of the forward slash. For example:"
+        },
+        {
+          "author": "noamr",
+          "date": "2026-07-15",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13889#issuecomment-4981471412",
+          "gist": "`corner-shape` doesn't use slashes. So this would simply be invalid."
+        },
+        {
+          "author": "fantasai",
+          "date": "2026-07-15",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13889#issuecomment-4982966226",
+          "gist": "+1 to @noamr. The current syntax, <'border-radius'> <'corner-shape'>, implies the following abilities:"
+        }
+      ]
+    },
+    {
+      "issue": 14150,
+      "title": "[css-borders-4] Defer two-shape `border-shape` for L5",
+      "labels": [
+        "Agenda+",
+        "css-borders-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14150",
+      "comments_in_window": 5,
+      "feature": null,
+      "recent": [
+        {
+          "author": "LeaVerou",
+          "date": "2026-07-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14150#issuecomment-4928994730",
+          "gist": "\"Defer\" doesn't mean \"we won't do this, ever\", and it doesn't mean \"this is not useful\". We often defer many very useful things to make it easier to define and ship features (e.g. `contrast-color()` r"
+        },
+        {
+          "author": "noamr",
+          "date": "2026-07-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14150#issuecomment-4929189225",
+          "gist": "What I see as not useful is playing with what's in L4 vs L5. Let's talk about what's missing specifically and how to resolve it."
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-07-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14150#issuecomment-4929394205",
+          "gist": "I agree with Noam. The two-path syntax doesn't seem to be meaningfully underspecified; it has some open issues, same as single-path, but in all the important ways both variants work essentially identi"
+        }
+      ]
+    },
+    {
+      "issue": 14170,
+      "title": "[cssom-view] Restrict cross-origin information leak",
+      "labels": [],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14170",
+      "comments_in_window": 5,
+      "feature": null,
+      "recent": [
+        {
+          "author": "jogibear9988",
+          "date": "2026-07-11",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14170#issuecomment-4949068990",
+          "gist": "I look to create a pull to change the spec & my chrome implementation. Also I check what FF does and what then need to be changed"
+        },
+        {
+          "author": "jogibear9988",
+          "date": "2026-07-12",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14170#issuecomment-4950796318",
+          "gist": "@progers I adjusted the spec: https://github.com/w3c/csswg-drafts/pull/14131"
+        },
+        {
+          "author": "progers",
+          "date": "2026-07-13",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14170#issuecomment-4961585347",
+          "gist": "Thank you for the quick update. Your spec change looks good to me, and we can close this when it lands."
+        }
+      ]
+    }
+  ],
+  "notable": [
+    {
+      "issue": 14130,
+      "title": "[css-values-5] Blink and WPT disagree with spec on handling of invalid substituted if() conditions",
+      "labels": [
+        "Closed as Question Answered",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14130",
+      "comments_in_window": 4,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-07-13",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14130#issuecomment-4963286061",
+          "gist": "(Gonna close this as Question Answered, but I'll also go fix that test.)"
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-07-13",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14130#issuecomment-4963608963",
+          "gist": "(And tracked in <https://g-issues.chromium.org/issues/534464220> for those following at home.)"
+        },
+        {
+          "author": "AtkinsSJ",
+          "date": "2026-07-14",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14130#issuecomment-4966873667",
+          "gist": "Thanks!"
+        }
+      ]
+    },
+    {
+      "issue": 14004,
+      "title": "[css-variables][css-mixins] In-place hygienic rewriting?",
+      "labels": [
+        "css-mixins-1",
+        "css-mixins-2",
+        "css-variables-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14004",
+      "comments_in_window": 3,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-07-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14004#issuecomment-4929271688",
+          "gist": "Yeah, I recognize the value of doing something like this. I've thought about doing it inline before, to simplify potentially-complex math expressions that use a lot of vars, but doing it via something"
+        },
+        {
+          "author": "kbabbitt",
+          "date": "2026-07-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14004#issuecomment-4930082270",
+          "gist": "I like the direction. Not only does it pave the way towards not needing `@result` anymore, it also makes it cleaner to ship parameter-less mixins first and layer in parameters+locals later."
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-07-15",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14004#issuecomment-4986317684",
+          "gist": "@kbabbitt If you play with this in implementation, I'm curious about your opinion on the final bullet point in my remaining issues. Should we expose the rewritten name in the few odd cases that make i"
+        }
+      ]
+    },
+    {
+      "issue": 13946,
+      "title": "[css-values] attr() banning type(<url>) is kind of arbitrary.",
+      "labels": [
+        "Agenda+",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13946",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "emilio",
+          "date": "2026-07-13",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13946#issuecomment-4962170316",
+          "gist": "Yes, that's correct."
+        },
+        {
+          "author": "emilio",
+          "date": "2026-07-13",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13946#issuecomment-4962173813",
+          "gist": "There's no security issue afaict because of how the tainting works."
+        }
+      ]
+    },
+    {
+      "issue": 13727,
+      "title": "[css-mixins-1] Using a scoping rule breaks author expectations, can we get rid of it?",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13727",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "kbabbitt",
+          "date": "2026-07-15",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13727#issuecomment-4983491314",
+          "gist": "If we..."
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-07-15",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13727#issuecomment-4986104794",
+          "gist": "Nope, with those adopted the two would merge completely and we would just drop `@mixin`."
+        }
+      ]
+    },
+    {
+      "issue": 13428,
+      "title": "[css-view-transitions-2] scoped VT: we should apply content-visibility: hidden for the duration of capture",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-view-transitions-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13428",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "vmpstr",
+          "date": "2026-07-15",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13428#issuecomment-4982635625",
+          "gist": "Another consideration here is a11y tree. If we use `content-visibility: hidden`, the content is going to temporarily disappear from the a11y tree. That's not ideal."
+        }
+      ]
+    },
+    {
+      "issue": 9350,
+      "title": "Proposal: Custom CSS Functions & Mixins",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/9350",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-07-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/9350#issuecomment-4928960453",
+          "gist": "Closing this issue, as both custom functions and mixins have been accepted by the WG and are already in the draft."
+        }
+      ]
+    },
+    {
+      "issue": 11644,
+      "title": "[scroll-animations] Inset parameter of ViewTimelineOptions should be optional",
+      "labels": [
+        "Closed Rejected as Wontfix by CSSWG Resolution",
+        "Commenter Timed Out (Assumed Satisfied)",
+        "Needs Testcase (WPT)",
+        "scroll-animations-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/11644",
+      "comments_in_window": 1,
+      "feature": "scroll-driven-animations",
+      "recent": []
+    },
+    {
+      "issue": 11469,
+      "title": "[web-animations-2] [scroll-animations] should calling `play()` reset the start time of a scroll-driven animation?",
+      "labels": [
+        "Needs Edits",
+        "scroll-animations-1",
+        "web-animations-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/11469",
+      "comments_in_window": 1,
+      "feature": "scroll-driven-animations",
+      "recent": [
+        {
+          "author": "graouts",
+          "date": "2026-07-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/11469#issuecomment-4923110478",
+          "gist": "Removed the \"Needs Testcase (WPT)\" because [scroll-animations/scroll-timelines/play-animation.html](https://github.com/web-platform-tests/wpt/blob/master/scroll-animations/scroll-timelines/play-animat"
+        }
+      ]
+    },
+    {
+      "issue": 11852,
+      "title": "[css-forms-1] `::field-component` mechanism to determine what type of separator",
+      "labels": [
+        "css-forms-1",
+        "i18n-tracker"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/11852",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "xfq",
+          "date": "2026-07-11",
+          "url": "https://github.com/w3c/csswg-drafts/issues/11852#issuecomment-4942800835",
+          "gist": "For `::field-component`, a functional variant seems useful, because the identity of a date/time field is semantic even when order, presence, width, numbering system, and rendering vary by locale. I wo"
+        }
+      ]
+    },
+    {
+      "issue": 12417,
+      "title": "[css-mixins-1] Are @mixin rules valid within other at-rules?",
+      "labels": [
+        "Needs Edits",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12417",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "kbabbitt",
+          "date": "2026-07-15",
+          "url": "https://github.com/w3c/csswg-drafts/issues/12417#issuecomment-4983610349",
+          "gist": "These resolutions were reverted in https://github.com/w3c/csswg-drafts/issues/13041#issuecomment-3819756713"
+        }
+      ]
+    },
+    {
+      "issue": 5675,
+      "title": "[css-grid] Masonry layout in CSS Grid 3 has potential to cause accessibility problems with reading order.",
+      "labels": [
+        "css-grid-3",
+        "topic: masonry"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/5675",
+      "comments_in_window": 1,
+      "feature": "masonry",
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-07-13",
+          "url": "https://github.com/w3c/csswg-drafts/issues/5675#issuecomment-4962909253",
+          "gist": "I don't feel like that algorithms matches human reading order very well, which is the point of defining this. My algorithm was attempting to approximate the sort of reading flows that are often implie"
+        }
+      ]
+    },
+    {
+      "issue": 13926,
+      "title": "[css-pseudo] Spec clearly whether text inputs are supposed to support first-line / first-letter",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-pseudo-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13926",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": []
+    },
+    {
+      "issue": 13500,
+      "title": "[css-value] Clarification on the serialization of the shorthand associated with coordinated value lists",
+      "labels": [
+        "Needs Testcase (WPT)",
+        "css-values-4",
+        "scroll-animations-1",
+        "spec-test-mismatch"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13500",
+      "comments_in_window": 1,
+      "feature": "absolute-lengths",
+      "recent": []
+    },
+    {
+      "issue": 13015,
+      "title": "[css-mixins-1] Mixins can be called (but not defined) without params",
+      "labels": [
+        "Needs Testcase (WPT)",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13015",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "cdoublev",
+          "date": "2026-07-14",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13015#issuecomment-4964996526",
+          "gist": "Sorry to nitpick: isn't it possible to directly use `<dashed-ident>` instead of `<ident-token>` in the recently updated [definition](https://drafts.csswg.org/css-mixins-1/#mixin-rule)?"
+        }
+      ]
+    },
+    {
+      "issue": 10884,
+      "title": "[css-grid] Decide on a name for `item-slack`",
+      "labels": [
+        "css-grid-3",
+        "topic: masonry"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/10884",
+      "comments_in_window": 1,
+      "feature": "masonry",
+      "recent": [
+        {
+          "author": "mirisuzanne",
+          "date": "2026-07-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/10884#issuecomment-4927509712",
+          "gist": "The meeting notes mention that \"Discussion on item-slack in Flexbox is at https://github.com/w3c/csswg-drafts/issues/11480\" but that issue was closed as a 'unifying theory' and again tolerance in flex"
+        }
+      ]
+    },
+    {
+      "issue": 14007,
+      "title": "[css-mixins-1] Further restrict `<css-type>`",
+      "labels": [
+        "Closed Accepted by Editor Discretion",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14007",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-07-10",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14007#issuecomment-4938113883",
+          "gist": "All right, done. (Note: dunno what I was smoking up above; the arg type was always using `<syntax-component>`, not `<syntax-single-component>`. Only difference is that it allows multipliers.)"
+        }
+      ]
+    },
+    {
+      "issue": 14154,
+      "title": "[css-gaps-1] Empty space in the stacking axis should not be part of a gap",
+      "labels": [
+        "css-gaps-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14154",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-07-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14154#issuecomment-4930481291",
+          "gist": "Yes indeed, only the actual gaps created by the 'gap' property are gutters for this purpose."
+        }
+      ]
+    },
+    {
+      "issue": 14156,
+      "title": "[css-gaps-1] Define how repeated / listed gap-decoration values map to gaps in grid lanes containers",
+      "labels": [
+        "css-gaps-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14156",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "celestepan",
+          "date": "2026-07-13",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14156#issuecomment-4963511249",
+          "gist": "I'm also curious about how these should look in the case of `fill-reverse` -- in your examples, would the red decorations be at the bottom of the container? I think it would make sense for the gap dec"
+        }
+      ]
+    },
+    {
+      "issue": 14137,
+      "title": "[animation-triggers-1] Term suggestion: trigger-using element",
+      "labels": [
+        "animation-triggers-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14137",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "ydaniv",
+          "date": "2026-07-10",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14137#issuecomment-4934488538",
+          "gist": "@estelle, thanks for the feedback, and great to see an article coming up on MDN!"
+        }
+      ]
+    },
+    {
+      "issue": 14155,
+      "title": "[css-gaps-1] In grid lanes containers, alignment should not shift gap-decoration placement",
+      "labels": [
+        "css-gaps-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14155",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-07-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14155#issuecomment-4930450587",
+          "gist": "Ah, and this isn't a problem in the other layout modes, because you either can't have staggered gaps (Grid) or can't have spanners across that axis (Flexbox), right?"
+        }
+      ]
+    },
+    {
+      "issue": 14100,
+      "title": "[css-color-5] Example 32 is outdated",
+      "labels": [
+        "css-color-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14100",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "romainmenke",
+          "date": "2026-07-14",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14100#issuecomment-4971970053",
+          "gist": "For relative color syntax:"
+        }
+      ]
+    }
+  ],
+  "fresh": [
+    {
+      "issue": 14188,
+      "title": "[scroll-animations][css-viewport] How should the `zoom` property affect `animation-range-start`/`animation-range-end`",
+      "labels": [
+        "css-viewport-1",
+        "scroll-animations-1",
+        "web-animations-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14188",
+      "feature": "scroll-driven-animations",
+      "created_at": "2026-07-15",
+      "background": "I'd like to clarify how the [`zoom`](https://drafts.csswg.org/css-viewport/#zoom-property) property should work with [`animation-range-start`](https://drafts.csswg.org/scroll-animations/#propdef-animation-range-start) and [`animation-range-end`](https://drafts.csswg.org/scroll-animations/#propdef-animation-range-end).",
+      "related": []
+    },
+    {
+      "issue": 14179,
+      "title": "[css-view-transitions-2] Scoped transitions on non-layout containable elements",
+      "labels": [
+        "Async Resolution: Proposed",
+        "css-view-transitions-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14179",
+      "feature": null,
+      "created_at": "2026-07-14",
+      "background": "We have [scoped view transitions](https://drafts.csswg.org/css-view-transitions-2/#scoped-vt) that require that an element has layout containment.",
+      "related": []
+    },
+    {
+      "issue": 14181,
+      "title": "[scroll-animations-1] Add range name `stuck`",
+      "labels": [
+        "scroll-animations-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14181",
+      "feature": "scroll-driven-animations",
+      "created_at": "2026-07-14",
+      "background": "Using scroll-driven animations in conjunction with a `sticky` positioned layout is quite common, especially in \"scrolltelling\". It's often desired to tie the start of a range to the scroll position when an element becomes \"stuck\", and tie the end of the range to the position when it becomes \"unstuck\".",
+      "related": []
+    },
+    {
+      "issue": 14173,
+      "title": "[web-animations-2] Auto-aligning the start time should apply a pending playback rate",
+      "labels": [
+        "Async Resolution: Call For Consensus",
+        "Closed Accepted as Obvious Bugfix",
+        "web-animations-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14173",
+      "feature": null,
+      "created_at": "2026-07-13",
+      "background": "Throughout the Web Animations spec we typically [apply the pending playback rate](https://drafts.csswg.org/web-animations-1/#apply-any-pending-playback-rate) of an animation when setting its [start time](https://www.w3.org/TR/web-animations-1/#animation-start-time). It seems an oversight not to do so within the procedure to [auto-aligning the start time](https://drafts.csswg.org/web-animations-2/#",
+      "related": []
+    },
+    {
+      "issue": 14169,
+      "title": "[css-gaps-1] Define rule-break: normal for grid lanes containers",
+      "labels": [
+        "css-gaps-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14169",
+      "feature": null,
+      "created_at": "2026-07-10",
+      "background": "The `normal` initial value is defined per container type: for **grid**, a decoration starts and ends at \"T\" intersections (it stops when it meets an item spanning across the gap) but continues through \"cross\" intersections; for **flex**, `normal` behaves like `none` (each line's decorations are continuous and independent). Grid lanes containers are not yet covered.",
+      "related": []
+    }
+  ],
+  "spec_changes": [
+    {
+      "shortname": "css-color-4",
+      "title": "CSS Color Module Level 4",
+      "maturity": "CRD",
+      "date": "2026-07-15",
+      "url": "https://www.w3.org/TR/2026/CRD-css-color-4-20260715/"
+    },
+    {
+      "shortname": "css-link-params-1",
+      "title": "CSS Linked Parameters Module Level 1",
+      "maturity": "FPWD",
+      "date": "2026-07-14",
+      "url": "https://www.w3.org/TR/2026/WD-css-link-params-1-20260714/"
+    }
+  ]
+}

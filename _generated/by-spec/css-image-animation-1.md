@@ -13,3 +13,6 @@
 - 2026-04-09 opened #13783: [css-image-animation] Suggest a different term than "decorative"
 - 2026-04-09 opened #13784: [css-image-animation] Conveying role, states, properties to platform AAPIs
 - 2026-04-09 opened #13785: [css-image-animation] alt-less (decorative) images need to be addressed
+- 2026-07-10 opened #14161: [css-image-animation] horizontal review tracker
+- 2026-07-10 opened #14163: [css-image-animation] i18n self review
+- 2026-07-10 opened #14164: [css-image-animation] Security and privacy questionaire

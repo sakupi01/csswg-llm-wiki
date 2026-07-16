@@ -356,3 +356,4 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - 2026-06-22 opened #14079: [css-values-5] weighted values for random-item()
 - 2026-06-24 RESOLVED #13736: if sibling-index() or sibling-count() fails to find a thing to count, it will return 1
 - 2026-06-25 opened #14084: [css-values-5][css-conditionals-3] Clarifications on `random()` support evaluation
+- 2026-07-03 opened #14130: [css-values-5] Blink and WPT disagree with spec on handling of invalid substituted if() conditions

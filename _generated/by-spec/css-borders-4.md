@@ -127,3 +127,6 @@
 - 2026-04-02 RESOLVED #13599: text-underline-width gets snapped as a border width
 - 2026-04-22 opened #13835: [css-borders-4] Allow overriding the stroke style of `border-shape`
 - 2026-05-05 opened #13889: [css-borders-4] `corner` shorthand slashes conflict with optional forward slashs in border-*-radius long hands
+- 2026-07-09 opened #14149: [css-borders] Interaction between `border-shape` and other border properties
+- 2026-07-09 opened #14150: [css-borders-4] Defer two-shape `border-shape` for L5
+- 2026-07-10 opened #14168: [css-borders-4] Default `shape-inside` and `shape-outside` when using `border-shape`

@@ -52,3 +52,4 @@
 - 2026-06-17 opened #14060: [animation-triggers-1][css-animations-2] Should reset action trigger CSS animation events?
 - 2026-06-26 opened #14089: [animation-triggers-1] consolidate events & timelines into a single shared state source
 - 2026-07-03 opened #14129: [animation-triggers-1] formalize the <event-trigger-event> value
+- 2026-07-06 opened #14137: [animation-triggers-1] Term suggestion: trigger-using element

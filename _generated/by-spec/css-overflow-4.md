@@ -199,3 +199,4 @@
 - 2026-04-10 opened #13786: [css-overflow] `block-ellipsis` displaced line strut clarification
 - 2026-06-15 opened #14047: [css-overflow-4] `block-ellipsis`, floats, and line-box clearance
 - 2026-06-18 opened #14067: [css-overflow-4] Effect of border-radius on line-clamp float clipping
+- 2026-07-15 opened #14189: [css-overflow] Is shipping line-clamp: -webkit-legacy acceptable?

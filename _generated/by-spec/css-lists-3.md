@@ -132,3 +132,4 @@
 - 2024-10-04 opened #11003: [css-content] ::marker content available for assistive technology
 - 2025-09-18 opened #12822: [css-lists][css-pseudo] Allow text decoration properties on ::marker
 - 2026-04-02 RESOLVED #6800: Automatically negate the increment on reversed counters.
+- 2026-07-15 opened #14187: [css-lists] Can replaced elements or widgets be list items?

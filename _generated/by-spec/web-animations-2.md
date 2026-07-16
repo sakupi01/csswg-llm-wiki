@@ -122,3 +122,5 @@
 - 2026-06-27 opened #14092: [web-animations-2] How do relative units get evaluated when being processed as offsets in KeyframeEffect.setKeyframes
 - 2026-07-01 RESOLVED #13853: make it a parse error to set string values or typed CSSOM values that require an element to resolve
 - 2026-07-08 RESOLVED #11469: change spec to meet the comment in the issue
+- 2026-07-13 opened #14173: [web-animations-2] Auto-aligning the start time should apply a pending playback rate
+- 2026-07-15 opened #14188: [scroll-animations][css-viewport] How should the `zoom` property affect `animation-range-start`/`animation-range-end`

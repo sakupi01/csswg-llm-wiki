@@ -305,3 +305,4 @@
 - 2026-05-06 RESOLVED #556: These methods use the DOM retargetting rules to omit elements inside shadow trees and remove consecutive duplicates that result from these
 - 2026-05-13 opened #13925: [cssom] newly performed scroll should only abort smooth scroll in the same axis
 - 2026-07-01 opened #14121: [cssom-view-1] `scrollParent` incorrectly returns `null` for non-overflow-propagating `body` element
+- 2026-07-14 opened #14182: [cssom-view-1] Zooming should acknowledge some UAs have "text zoom"

@@ -171,7 +171,6 @@
 - 2020-11-25 opened #5745: [selectors][css-nesting] Move nest-containing and nest-prefixed selector definitions to Selectors
 - 2020-12-10 opened #5775: [selectors] :autofill pseudo-class
 - 2020-12-23 opened #5822: [selectors] :focus-visible on a <select> element
-- 2020-12-24 opened #5823: [selectors] add :transition (styles applied during transition)
 - 2020-12-29 opened #5827: [selectors] :visible pseudo-class for targeting only visible elements
 - 2021-01-07 RESOLVED #5775: : Add an :autofill pseudo-class to selectors
 - 2021-01-09 opened #5847: [selectors] Define how "legacy aliases" work on selectors.
@@ -179,7 +178,6 @@
 - 2021-01-21 opened #5885: [selectors] :focus-visible matches on initial programmatic focus
 - 2021-01-25 opened #5893: [selectors] :focus-visible and Shadow DOM
 - 2021-02-09 RESOLVED #4278: remove the example
-- 2021-02-26 opened #6042: [selectors] Multi-value attribute selectors
 - 2021-04-16 opened #6218: [selectors-4] bikeshed failure
 - 2021-04-22 opened #6237: [selectors-4] Add a :media pseudo-class, to match the set of elements matching the media pseudo-classes
 - 2021-04-28 RESOLVED #6237: Close no change
@@ -204,12 +202,10 @@
 - 2022-01-16 opened #6957: [selectors] “any <a> or <area> elements are hyperlinks” is incorrect
 - 2022-01-19 RESOLVED #3936: Close no-change
 - 2022-01-19 opened #6965: [selectors] Add :modal-dialog pseudo-class
-- 2022-01-25 opened #6985: [css-scroll-snap] Proposing `:snapped`: exposing private snapped item browser state for developers and designers
 - 2022-02-03 opened #7012: [selectors] Add pseudo-classes for only counting rendered children
 - 2022-02-07 opened #7016: [css-selectors-4] Clarify the grammar of a functional pseudo-class
 - 2022-02-09 opened #7027: [css-selectors-4] Include whitespace in non-optional `<combinator>`
 - 2022-02-15 opened #7053: [selectors-4] Republish
-- 2022-02-23 RESOLVED #6985: Start Scroll Snap 2 ED, with :snapped and snapping event model, with Adam Argyle as additional editor
 - 2022-02-24 opened #7085: [selectors-4] Allow more pseudo-classes following a pseudo-element
 - 2022-03-23 RESOLVED #1703: closing this issue as defered
 - 2022-03-31 opened #7186: [css-selectors-4] Have textual description of pseudo-elements match pseudo-classes
@@ -268,7 +264,6 @@
 - 2023-01-05 RESOLVED #5093: Accept the edit
 - 2023-01-06 opened #8285: [selectors-4] Clarity about whitespace between `:nth-child()`'s "of" and "S"
 - 2023-01-12 opened #8305: [selectors] Don't make requirements in notes
-- 2023-01-23 opened #8352: [selectors-4] Grid-structural selectors like :nth-col(): having pseudo-classes for rows e.g. :nth-row() is needed for CSS to cope with tables and rowSpan
 - 2023-01-25 RESOLVED #2517: Revert previous resolution
 - 2023-01-25 RESOLVED #2517: Revert previous resolution; accept :blank works for this use case
 - 2023-01-25 opened #8356: [selectors] consider preserving invalid selectors in :is() and :where()
@@ -322,7 +317,6 @@
 - 2024-06-08 opened #10401: CSS Attribute presence and value selectors - Numerical Comparison <,>,<=,>=,== bitflagsOps + inspect width, height
 - 2024-06-09 opened #10407: [selectors] Add selector match custom element
 - 2024-06-12 RESOLVED #10298: :current() will never match ::search-text
-- 2024-06-13 RESOLVED #6985: Publish css-scroll-snap-2 as FPWD minus scroll-start property
 - 2024-06-25 opened #10492: [selectors] Behavior of :root inside Shadow DOM
 - 2024-06-28 opened #10510: Elements spanned by <col> are not easily selectable
 - 2024-08-05 opened #10693: [selectors][css-scoping] Should `:host:has()` match?
@@ -382,3 +376,4 @@
 - 2026-03-12 opened #13647: [selectors-4] language tag note nits
 - 2026-03-25 opened #13720: [selectors-4] Clarify that :picture-in-picture applies to element in opener window
 - 2026-05-20 opened #13947: [selectors-4] Changes since Level 3 wildly out of date
+- 2026-07-13 opened #14174: [css-selectors][css-values] Proposal: A Unified Data API for CSS via the `:data()` pseudo-class and `data()` function

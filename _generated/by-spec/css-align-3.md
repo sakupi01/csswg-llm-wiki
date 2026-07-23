@@ -302,3 +302,4 @@
 - 2026-06-03 RESOLVED #13421: Unship align-content: baseline/last baseline for now
 - 2026-06-03 opened #14008: [css-align-3][css-anchor-position-1] overflow limit rect behaviour with fixedpos & default anchor.
 - 2026-06-15 opened #14052: [css-grid-3][masonry] For `align-items`/`justify-items`, should `fill-reverse` affect the definition of `start` and `end`?
+- 2026-07-16 opened #14190: [css-align][html] Should `align-content` work on a block-container `<button>`?

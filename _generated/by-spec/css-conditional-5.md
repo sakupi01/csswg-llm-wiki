@@ -152,3 +152,4 @@
 - 2026-05-27 RESOLVED #13678: Add an anchor-position-follows-transforms keyword to feature-detect whether anchor positioning follows transforms
 - 2026-05-27 opened #13975: [css-conditional] Allow feature detection of style queries
 - 2026-06-19 opened #14071: [mediaqueries-5][css-conditional-5] `@custom-media` and `@supports-condition`
+- 2026-07-22 opened #14217: [css-conditional-5] container-type:scroll-state and single-axis scrollers

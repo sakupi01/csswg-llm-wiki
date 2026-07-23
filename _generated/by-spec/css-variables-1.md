@@ -88,3 +88,4 @@
 - 2025-02-07 opened #11676: Allow registered custom properties to have a guaranteed-invalid initial value?
 - 2025-02-19 RESOLVED #11500: Specify this new parsing behavior for all substitution functions, and some sort of spread-like thing
 - 2026-05-15 opened #13933: [css-variables] Remove "animation taint" when inheriting values
+- 2026-07-16 opened #14191: [css-variables-2][css-values-4] Cannot assign counter() output to a registered <string> custom property

@@ -142,3 +142,4 @@
 - 2026-05-27 RESOLVED #9256: Scroll and view timelines don't become inactive when there's no scroll range
 - 2026-05-29 opened #13988: [web-animations-1][scroll-animations-1] View Timelines should not become inactive (or not be ready) on containers with no scrollable overflow
 - 2026-06-30 opened #14113: [web-animations-1] null or undefined keyframe in iterable keyframe object causes an assertion failure
+- 2026-07-20 opened #14206: [web-animations-1] What should happen when `duration` of `EffectTiming` is a string that is not `auto`?

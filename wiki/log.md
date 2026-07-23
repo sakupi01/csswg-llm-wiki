@@ -25,3 +25,4 @@ Append-only. One line per operation: `## [YYYY-MM-DD] <kind> | <summary>`.
 ## [2026-07-09] update | CI weekly sync (see Actions run summary)
 ## [2026-07-09] digest | 2026-W28: 1 notable item (scroll-driven animations play() re-align, #11469); 2 resolutions, 3 fresh; feed rebuilt + links validated
 ## [2026-07-16] update | CI weekly sync (see Actions run summary)
+## [2026-07-23] update | CI weekly sync (see Actions run summary)

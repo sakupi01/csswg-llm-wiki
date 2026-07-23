@@ -200,3 +200,4 @@
 - 2026-06-15 opened #14047: [css-overflow-4] `block-ellipsis`, floats, and line-box clearance
 - 2026-06-18 opened #14067: [css-overflow-4] Effect of border-radius on line-clamp float clipping
 - 2026-07-15 opened #14189: [css-overflow] Is shipping line-clamp: -webkit-legacy acceptable?
+- 2026-07-17 opened #14195: ScrollbarLength property

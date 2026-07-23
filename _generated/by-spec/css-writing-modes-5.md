@@ -6,3 +6,4 @@
 - 2020-04-06 opened #4921: [css-writing-modes] addition of "writing-mode:upright-tb;" and "text-orientation: upwards;"
 - 2020-07-29 opened #5373: [css-writing-mode] Why is writing-mode not inferred from the lang attribute?
 - 2024-11-03 opened #11149: [css-writing-modes] Suggest use <bdi> tag also
+- 2026-07-22 opened #14216: [css-writing-modes] flow-relative text-orientation

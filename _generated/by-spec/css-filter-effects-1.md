@@ -12,3 +12,5 @@
 - 2026-02-10 opened #13473: [meta] Change naming scheme of FXTF specs?
 - 2026-05-21 opened #13949: [filter-effects] chained filter support, aka href on the filter element
 - 2026-05-25 opened #13964: [css-filter-effects] Clarify the `filter region` for CSS reference filters
+- 2026-07-22 RESOLVED #13949: drop href attribute in filter element
+- 2026-07-22 RESOLVED #13964: define filter region as either border box or bounding client rects for split inline

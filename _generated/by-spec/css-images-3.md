@@ -79,3 +79,4 @@
 - 2025-10-13 opened #12944: [css-images] Should `object-position` affect `<iframe>`?
 - 2026-04-16 opened #13814: circle()/ellipse(): <radial-size> vs <shape-radius>{2} for corner keywords
 - 2026-06-04 opened #14010: [css-shapes][css-images] Browsers require either 0 or 2 `<radial-extent>` for `ellipse()`
+- 2026-07-22 opened #14215: [css-images-3] Deprecate 'image-orientation'?

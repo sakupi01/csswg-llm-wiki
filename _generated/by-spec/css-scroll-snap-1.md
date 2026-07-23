@@ -106,3 +106,4 @@
 - 2026-06-05 opened #14018: [css-scroll-snap] Clarify snapping behavior with multiple single-axis scrollers
 - 2026-06-11 opened #14036: [css-scroll-snap-1] Specify that re-snapping is deferred until an active scrolling gesture ends
 - 2026-06-17 RESOLVED #13673: addd the equivelant to the suggested diff
+- 2026-07-22 RESOLVED #14018: Snap positions affect the nearest ancestor scroll container in each axis they align to

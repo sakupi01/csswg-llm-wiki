@@ -420,3 +420,6 @@
 - 2026-06-28 opened #14095: [css-color-4] powerless `hue` when chroma/saturation is `none`
 - 2026-07-04 opened #14133: [css-color-4] Use `0` chroma when hue is powerless during conversion
 - 2026-07-04 opened #14134: [css-color-4] Confusing statement about carrying-forward step order vs. powerless component handling.
+- 2026-07-17 opened #14192: [css-color-4] [css-ui-4] `color: AccentColor; accent-color: currentColor` cycle
+- 2026-07-17 opened #14193: [css-color-4] [css-ui-4] computed value of `accent-color: AccentColor`
+- 2026-07-20 opened #14207: [css-color-4] Should we recommend DeltaE OK2 over the original DeltaE OK?

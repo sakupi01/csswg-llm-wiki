@@ -90,3 +90,5 @@
 - 2026-06-04 opened #14015: [css-mixins] Should mixin arguments be `;` separated?
 - 2026-06-04 opened #14016: [css-mixins-1] More consistent handling of function return type
 - 2026-06-10 RESOLVED #14016: Return type of the CSS function return type behaves as a registered custom property
+- 2026-07-17 opened #14194: [css-mixins] `@apply` should accept a comma-separated list of identifiers
+- 2026-07-21 opened #14212: [css-mixins-1] Is `!important` valid in functions and/or mixins?

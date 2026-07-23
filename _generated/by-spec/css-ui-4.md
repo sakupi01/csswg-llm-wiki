@@ -315,3 +315,5 @@
 - 2026-05-31 opened #13993: [css-color][css-images][css-ui] Allow `light-dark(<image>, <image>)` in cursor
 - 2026-06-24 RESOLVED #13765: Add inset keyword to the outline-offset property
 - 2026-07-08 opened #14143: [css-ui] Maybe reconsider the :hover / :active top layer propagation rules?
+- 2026-07-17 opened #14192: [css-color-4] [css-ui-4] `color: AccentColor; accent-color: currentColor` cycle
+- 2026-07-17 opened #14193: [css-color-4] [css-ui-4] computed value of `accent-color: AccentColor`

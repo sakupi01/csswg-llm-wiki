@@ -68,3 +68,4 @@
 - 2026-01-14 RESOLVED #13251: Adding a FontFace to a document other than the one it was created throws an exception
 - 2026-03-11 RESOLVED #6236: If a FontFace is constructed with an invalid font-family name, treat it as a quoted string rather than throwing
 - 2026-05-10 opened #13909: [css-font-loading] When using FontFace on a worker, what viewport should viewport relative units use?
+- 2026-07-17 opened #14196: [css-font-loading-3] Add support for the new `width` terminology and alias the old `stretch`

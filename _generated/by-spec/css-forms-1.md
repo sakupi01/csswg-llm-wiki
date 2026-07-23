@@ -195,3 +195,4 @@
 - 2026-07-01 RESOLVED #14062: Use these values for ::picker(select)
 - 2026-07-01 RESOLVED #14062: add flip-self-inline and flip-self-block to position-try
 - 2026-07-07 opened #14140: [css-forms-1] control-value() meta issue
+- 2026-07-13 opened #14172: [css-forms-1] Better default sizing for custom select?

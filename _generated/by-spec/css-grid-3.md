@@ -208,3 +208,4 @@
 - 2026-05-29 opened #13987: [css-grid-3][masonry] Should auto-placement cursor be updated after placing an explicitly-placed item?
 - 2026-06-15 opened #14052: [css-grid-3][masonry] For `align-items`/`justify-items`, should `fill-reverse` affect the definition of `start` and `end`?
 - 2026-06-19 opened #14072: [css-grid-3][masonry] Impact of grid-auto-* on default direction
+- 2026-07-22 RESOLVED #13931: we will do reversals of static positions in grid-lanes

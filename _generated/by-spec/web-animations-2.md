@@ -124,3 +124,5 @@
 - 2026-07-08 RESOLVED #11469: change spec to meet the comment in the issue
 - 2026-07-13 opened #14173: [web-animations-2] Auto-aligning the start time should apply a pending playback rate
 - 2026-07-15 opened #14188: [scroll-animations][css-viewport] How should the `zoom` property affect `animation-range-start`/`animation-range-end`
+- 2026-07-20 RESOLVED #14173: [apply the pending playback rate](https://drafts.csswg.org/web-animations-1/#apply-any-pending-playback-rate) of an animation when [auto-aligning the start time](https://drafts.csswg.org/web-animations-2/#auto-aligning-start-time).
+- 2026-07-20 opened #14205: [web-animations-2] rangeStart and rangeEnd invalidly returns dictionaries as attribute values

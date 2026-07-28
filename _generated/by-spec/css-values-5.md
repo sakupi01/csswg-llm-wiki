@@ -358,3 +358,6 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - 2026-06-25 opened #14084: [css-values-5][css-conditionals-3] Clarifications on `random()` support evaluation
 - 2026-07-03 opened #14130: [css-values-5] Blink and WPT disagree with spec on handling of invalid substituted if() conditions
 - 2026-07-20 opened #14208: [css-values-5] calc-size(any, ...) keyword feels confusing
+- 2026-07-21 opened #14213: [css-values-5] Should ident() be an arbitrary substitution function?
+- 2026-07-23 opened #14221: [css-values-5] Should `no-clamp` be separated with a comma in `progress()`?
+- 2026-07-24 opened #14223: [css-values-5] Feedback on `<size-keyword>` for `calc-size()`

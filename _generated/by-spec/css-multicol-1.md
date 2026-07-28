@@ -91,6 +91,4 @@
 - 2024-12-16 opened #11380: [resize-observer] Wording of spec seems to be incorrect for multi-column layouts
 - 2025-01-13 opened #11494: [css-gaps-1] Computed value of column-rule-width with none|hidden style and lists of values
 - 2025-01-31 RESOLVED #11494: Do the above.
-- 2026-04-09 opened #13781: [css-break] Fragmenting of monolithic content when the alternative is overflow
-- 2026-05-06 opened #13890: [css-multicol][css-scroll-snap] Snapping to columns
 - 2026-05-23 opened #13957: [css-multicol] Examples 30 & 31 do not follow from the spec - column balancing is under-specified and/or incorrect

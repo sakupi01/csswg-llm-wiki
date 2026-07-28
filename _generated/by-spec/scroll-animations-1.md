@@ -276,7 +276,7 @@
 - 2026-06-03 RESOLVED #13844: start/endOffset are nullable
 - 2026-06-10 RESOLVED #13974: Make scroll timeline names loosely-matched
 - 2026-07-08 RESOLVED #11469: change spec to meet the comment in the issue
-- 2026-07-14 opened #14181: [scroll-animations-1] Add range name `stuck`
+- 2026-07-14 opened #14181: [scroll-animations-1] Proposal: add range name `stuck`
 - 2026-07-15 RESOLVED #11644: spec is right, fix the tests
 - 2026-07-15 RESOLVED #13500: Spec is right, fix tests, add some tests for the animated value
 - 2026-07-15 opened #14188: [scroll-animations][css-viewport] How should the `zoom` property affect `animation-range-start`/`animation-range-end`

@@ -61,7 +61,7 @@
 - 2021-06-21 opened #6400: [css-ui][selectors][mediaqueries] Expose current scrolling direction
 - 2021-07-03 opened #6420: [css-scoping][selectors] Should :where(:host) work?
 - 2021-08-29 opened #6556: [selectors-4] A :state() pseudo-class selector and state() function
-- 2021-09-02 opened #6571: [selectors-4] Attribute match syntax extended to cover tag selectors
+- 2021-09-02 opened #6571: [selectors] Partial element selectors
 - 2021-10-17 opened #6737: [selectors][Editorial] Are things like :is(.foo *) still a <compound-selector>?
 - 2021-11-23 opened #6825: [css-pseudo-4] Do we need a specialized :target pseudoclass for scroll-to-element?
 - 2021-12-08 opened #6867: [selectors] Pseudo-class to indicate when a slot has content
@@ -88,7 +88,7 @@
 - 2023-06-03 opened #8911: Universal selector is described incorrectly
 - 2023-07-19 RESOLVED #4140: Work on the problem of expressing ranges of children in selectors in a more intuitive way.
 - 2023-08-03 RESOLVED #4805: Change from -- to state
-- 2024-02-26 opened #10001: [selectors] New selector to facilitate utility classes (`[name~^=value]`? `.prefix-*`?)
+- 2024-02-26 opened #10001: [selectors] New class prefix selector to facilitate utility classes (`.prefix-*`?)
 - 2024-07-12 opened #10567: [selectors] Parameterized selectors
 - 2024-09-27 opened #10970: [selectors] `/idref()/` combinator to follow element references for arbitrary IDREF attributes
 - 2024-09-30 opened #10976: [selectors] :local-link definition's comparison of URLs should be more precise than "matches"
@@ -138,3 +138,4 @@
 - 2026-06-06 opened #14020: [css-selectors-5][mediaqueries-5] Add feature to target idle pointer
 - 2026-07-01 RESOLVED #11801: Applies not just to links
 - 2026-07-01 RESOLVED #11801: add :nav-source pseudo for this use case
+- 2026-07-25 opened #14228: [selectors] Partial attribute name selectors

@@ -312,3 +312,4 @@
 - 2026-06-24 RESOLVED #13567: @position-try uses a globally scoped name like @keyframes
 - 2026-07-01 RESOLVED #14062: Use these values for ::picker(select)
 - 2026-07-01 RESOLVED #14062: add flip-self-inline and flip-self-block to position-try
+- 2026-07-24 opened #14222: [css-anchor-position-1] margins against the original CB

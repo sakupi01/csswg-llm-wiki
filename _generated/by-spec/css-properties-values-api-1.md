@@ -2,7 +2,7 @@
 # css-properties-values-api-1 — chronological digest
 
 - 2021-02-02 opened #5920: [css-properties-values-api-1] Allow customizing property animation interpolation curve
-- 2021-12-06 opened #13212: [css-properties-values-api] Mass property registration
+- 2021-12-06 opened #13212: [css-properties-values-api] Mass property registration by prefix
 - 2022-07-21 opened #7523: [css-properties-values-api] Shorthand for custom property declaration
 - 2022-10-11 opened #7866: [css-properties-values-api] add support for scope-global variables
 - 2023-07-17 opened #9077: [css-properties-values-api] [css-cascade] Interaction of @scope and @property
@@ -35,3 +35,5 @@
 - 2026-03-11 RESOLVED #13211: make all property descriptors in @property optional
 - 2026-03-11 opened #13628: [css-values] Can we remove the limit for @property initial-value being computationally independent?
 - 2026-06-12 opened #14041: [cssom-1] Should `CSS.*()` register state in the relevant global object?
+- 2026-07-24 opened #14225: [css-properties-values-api] `@property` should be able to define multiple properties with the same descriptors by just comma-separating them
+- 2026-07-25 opened #14227: [css-properties-values] CSSOM for multi-name and shorthand `@property`

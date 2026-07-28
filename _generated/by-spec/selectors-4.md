@@ -186,7 +186,7 @@
 - 2021-06-21 opened #6399: [selectors-4] Remove the :scope dependency from the relative selectors definition
 - 2021-07-03 opened #6420: [css-scoping][selectors] Should :where(:host) work?
 - 2021-08-29 opened #6556: [selectors-4] A :state() pseudo-class selector and state() function
-- 2021-09-02 opened #6571: [selectors-4] Attribute match syntax extended to cover tag selectors
+- 2021-09-02 opened #6571: [selectors] Partial element selectors
 - 2021-09-10 opened #6590: [selectors-4] "Grid-Structural Selectors" needs clarity as to whether it applies to tables only, or also to CSS Grid (`display: grid`)
 - 2021-09-23 opened #6669: [css-selectors-4] [css-pseudo-elements-4] ::placeholder and :placeholder-shown should explicitly apply to textarea elements
 - 2021-10-17 opened #6737: [selectors][Editorial] Are things like :is(.foo *) still a <compound-selector>?
@@ -377,3 +377,5 @@
 - 2026-03-25 opened #13720: [selectors-4] Clarify that :picture-in-picture applies to element in opener window
 - 2026-05-20 opened #13947: [selectors-4] Changes since Level 3 wildly out of date
 - 2026-07-13 opened #14174: [css-selectors][css-values] Proposal: A Unified Data API for CSS via the `:data()` pseudo-class and `data()` function
+- 2026-07-25 opened #14228: [selectors] Partial attribute name selectors
+- 2026-07-27 opened #14232: :lang() pseudo-class should consider maximized language code

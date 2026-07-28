@@ -120,6 +120,7 @@
 - 2026-02-16 opened #13503: [css-animations-2] calling `cancel()` on a CSS Animation should prevent further changes made from CSS to apply
 - 2026-02-26 opened #13569: [scroll-animations-1][css-animations-2] Move the definition of animation-range-start and animation-range-end (and their shorthand) into css-animations-2
 - 2026-03-14 opened #13655: [css-values][css-conditional][css-animations] Proposal for time-based CSS
+- 2026-03-16 opened #13664: [css-animations][web-animations] Animations based on absolute/wall time
 - 2026-04-14 opened #13806: [css-animations-2] Editors draft missing Previous Versions section
 - 2026-04-14 opened #13807: [css-animations-2][web-animations-2][scroll-animations-1] Timeline returned for scope with no timeline providing that name.
 - 2026-04-29 opened #13863: [css-animations-2] Add the `animation-end-delay` property
@@ -129,3 +130,5 @@
 - 2026-05-13 RESOLVED #13863: Introduce animation-delay-start and animation-delay-end as longhands of animation-delay, making the animation-delay-end value optional and defaulting to zero (not duplicating start)
 - 2026-05-31 opened #13991: [css-animations-2] §4.9. The animation-timeline property links to wrong scroll-animations-1 section
 - 2026-06-29 opened #14098: [css-animations-2] Behavior of grouping together <keyframe-block> declarations is underspecified
+- 2026-07-23 opened #14219: [css-animations-2] Should a single value for `animation-delay` reset `animation-delay-end`?
+- 2026-07-23 opened #14220: [css-animations-2] Should `animation-delay-end` be added to `animation`?

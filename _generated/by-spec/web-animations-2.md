@@ -7,7 +7,7 @@
 - 2017-12-05 opened #2044: [web-animations-2] Groups / AnimationNodeList should be iterable
 - 2017-12-05 opened #2045: [web-animations-2] Add interface for getting the value of timing function
 - 2017-12-05 opened #2051: [web-animations-1] suggestion: make Animation play method more convenient (add 'time' parameter)
-- 2017-12-05 opened #2052: [web-animations-1] Add Animation.compositeBefore/compositeAfter
+- 2017-12-05 opened #2052: [web-animations-2] Add Animation.compositeBefore/compositeAfter
 - 2017-12-05 opened #2060: [web-animations-2] Allow keyframe to specify multiple offsets
 - 2017-12-05 opened #2061: [web-animations-2] Proposal, custom transitions
 - 2017-12-05 opened #2062: [web-animations-2] Idea: Custom Effects
@@ -110,6 +110,7 @@
 - 2025-12-18 opened #13236: [web-animations-2] Playing newly created animations with finite timelines doesn't schedule play task
 - 2026-02-10 opened #13473: [meta] Change naming scheme of FXTF specs?
 - 2026-02-17 opened #13509: [web-animations-2] [scroll-animations] "at progress timeline boundary" for view timelines
+- 2026-03-16 opened #13664: [css-animations][web-animations] Animations based on absolute/wall time
 - 2026-04-14 opened #13807: [css-animations-2][web-animations-2][scroll-animations-1] Timeline returned for scope with no timeline providing that name.
 - 2026-04-16 opened #13817: [web-animations-2][scroll-animations-1] Playing an animation with an unresolved scroll-timeline
 - 2026-04-28 opened #13853: [web-animations] How/when do the "rangeStart/rangeEnd" attributes the Animation interface get evaluated

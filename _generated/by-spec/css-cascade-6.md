@@ -121,3 +121,4 @@
 - 2026-03-29 opened #13741: [cssom-1] Add a `CSSImportRule` attribute for scopes?
 - 2026-04-02 opened #13759: [css-cascade-6] `supports()` for `@import` should accept a top-level `<supports-condition-name>`
 - 2026-04-20 opened #13829: [css-cascade] What is the encapsulation context of the user and user agent style sheets?
+- 2026-07-27 opened #14230: [css-cascade-6] Stylesheet level effects

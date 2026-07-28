@@ -92,3 +92,4 @@
 - 2026-06-10 RESOLVED #14016: Return type of the CSS function return type behaves as a registered custom property
 - 2026-07-17 opened #14194: [css-mixins] `@apply` should accept a comma-separated list of identifiers
 - 2026-07-21 opened #14212: [css-mixins-1] Is `!important` valid in functions and/or mixins?
+- 2026-07-27 RESOLVED #13015: Mixins with no parameters serialize without parentheses

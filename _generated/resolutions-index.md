@@ -7106,3 +7106,4 @@ and the text may quote an existing resolution — verify at the permalink.
 - 2026-07-22 | #13949 | css-filter-effects-1 | RESOLVED: drop href attribute in filter element | https://github.com/w3c/csswg-drafts/issues/13949#issuecomment-5048768304
 - 2026-07-22 | #13964 | css-filter-effects-1 | RESOLVED: define filter region as either border box or bounding client rects for split inline | https://github.com/w3c/csswg-drafts/issues/13964#issuecomment-5048873342
 - 2026-07-22 | #14018 | css-scroll-snap-1 | RESOLVED: Snap positions affect the nearest ancestor scroll container in each axis they align to | https://github.com/w3c/csswg-drafts/issues/14018#issuecomment-5048738521
+- 2026-07-27 | #13015 | css-mixins-1 | RESOLVED: Mixins with no parameters serialize without parentheses (manual) | https://github.com/w3c/csswg-drafts/issues/13015#issuecomment-5095551489

@@ -55,3 +55,4 @@
 - 2026-05-26 opened #13966: [css-position] Painting algorithms are circular for inline-blocks
 - 2026-06-01 opened #13998: [css-position] Painting order of decorations of inline box that establishes stacking context
 - 2026-07-07 opened #14139: [css-position-4] Give an intro about why we're defining "Top Layer" and `overlay`
+- 2026-07-20 opened #14203: position: parent;

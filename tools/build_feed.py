@@ -147,7 +147,7 @@ def atom(items: list) -> str:
     for it in items:
         e += [f"<entry>",
               f"<title>{html.escape(it['title'])}</title>",
-              f'<link href="{it['url']}"/>',
+              f'<link href="{it["url"]}"/>',
               f"<id>{it['url']}</id>",
               f"<updated>{rfc3339(it['generated_at'])}</updated>",
               f"<published>{rfc3339(it['generated_at'])}</published>",

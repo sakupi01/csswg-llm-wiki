@@ -52,7 +52,7 @@ def render(p: dict, act: dict) -> str:
     comments = sum(act.get(k.lower(), {}).get("comments", 0) for k in keys if k)
     irc = sum(act.get(k.lower(), {}).get("irc_lines", 0) for k in keys if k)
     nicks = ", ".join(f"`{n}`" for n in p.get("irc_nicks", [])) or "-"
-    roles = "".join(f"- {r}\n" for r in p.get("roles", []))
+    roles = "".join(f"- {r}\n" for r in p.get("roles", [])) or "- (none recorded yet)\n"
     return f"""---
 name: {json.dumps(p.get('name'))}
 slug: {p['slug']}
@@ -71,7 +71,7 @@ generated_by: llm
 
 ## Roles
 
-{roles or '- (none recorded yet)\n'}
+{roles}
 ## Activity in the mirror
 
 Issues authored: {issues} / comments: {comments} / IRC minute lines: {irc}

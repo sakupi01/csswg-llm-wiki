@@ -2,7 +2,7 @@
   "span": "week",
   "since": "2026-07-16",
   "until": "2026-07-23",
-  "generated_at": "2026-07-23T01:00:34Z",
+  "generated_at": "2026-07-28T13:53:22Z",
   "resolutions": [
     {
       "date": "2026-07-22",
@@ -282,7 +282,7 @@
   "agenda": [
     {
       "issue": 10001,
-      "title": "[selectors] New selector to facilitate utility classes (`[name~^=value]`? `.prefix-*`?)",
+      "title": "[selectors] New class prefix selector to facilitate utility classes (`.prefix-*`?)",
       "labels": [
         "Agenda+ F2F",
         "selectors-5"
@@ -290,6 +290,30 @@
       "url": "https://github.com/w3c/csswg-drafts/issues/10001",
       "feature": "heading-selector",
       "comments_in_window": 15
+    },
+    {
+      "issue": 14004,
+      "title": "[css-variables][css-mixins] In-place hygienic rewriting?",
+      "labels": [
+        "Agenda+ F2F",
+        "css-mixins-1",
+        "css-mixins-2",
+        "css-variables-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14004",
+      "feature": null,
+      "comments_in_window": 14
+    },
+    {
+      "issue": 14143,
+      "title": "[css-ui] Maybe reconsider the :hover / :active top layer propagation rules?",
+      "labels": [
+        "Agenda+",
+        "css-ui-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14143",
+      "feature": null,
+      "comments_in_window": 9
     },
     {
       "issue": 14190,
@@ -304,15 +328,15 @@
       "comments_in_window": 9
     },
     {
-      "issue": 14143,
-      "title": "[css-ui] Maybe reconsider the :hover / :active top layer propagation rules?",
+      "issue": 10210,
+      "title": "[css-color-4] Expand the concept of analogous components to analogous sets of components to minimize `none` → `0` conversions",
       "labels": [
-        "Agenda+",
-        "css-ui-4"
+        "Needs Edits",
+        "css-color-4"
       ],
-      "url": "https://github.com/w3c/csswg-drafts/issues/14143",
+      "url": "https://github.com/w3c/csswg-drafts/issues/10210",
       "feature": null,
-      "comments_in_window": 7
+      "comments_in_window": 6
     },
     {
       "issue": 14188,
@@ -325,7 +349,19 @@
       ],
       "url": "https://github.com/w3c/csswg-drafts/issues/14188",
       "feature": "scroll-driven-animations",
-      "comments_in_window": 3
+      "comments_in_window": 6
+    },
+    {
+      "issue": 13015,
+      "title": "[css-mixins-1] Mixins can be called (but not defined) without params",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13015",
+      "feature": null,
+      "comments_in_window": 4
     },
     {
       "issue": 14192,
@@ -400,6 +436,17 @@
       "comments_in_window": 2
     },
     {
+      "issue": 13524,
+      "title": "[css-mixins-1] Auto-wrap mixin body in `@result` if omitted?",
+      "labels": [
+        "Agenda+ F2F",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13524",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
       "issue": 13949,
       "title": "[filter-effects] chained filter support, aka href on the filter element",
       "labels": [
@@ -420,6 +467,16 @@
         "css-filter-effects-1"
       ],
       "url": "https://github.com/w3c/csswg-drafts/issues/13964",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 14125,
+      "title": "Request for review: `application-context` media feature (Web App Manifest)",
+      "labels": [
+        "Agenda+ F2F"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14125",
       "feature": null,
       "comments_in_window": 2
     },
@@ -447,6 +504,17 @@
       "comments_in_window": 2
     },
     {
+      "issue": 14212,
+      "title": "[css-mixins-1] Is `!important` valid in functions and/or mixins?",
+      "labels": [
+        "Agenda+ F2F",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14212",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
       "issue": 5675,
       "title": "[css-grid] Masonry layout in CSS Grid 3 has potential to cause accessibility problems with reading order.",
       "labels": [
@@ -466,17 +534,6 @@
         "css-images-5"
       ],
       "url": "https://github.com/w3c/csswg-drafts/issues/7648",
-      "feature": null,
-      "comments_in_window": 1
-    },
-    {
-      "issue": 10210,
-      "title": "[css-color-4] Expand the concept of analogous components to analogous sets of components to minimize `none` → `0` conversions",
-      "labels": [
-        "Needs Edits",
-        "css-color-4"
-      ],
-      "url": "https://github.com/w3c/csswg-drafts/issues/10210",
       "feature": null,
       "comments_in_window": 1
     },
@@ -504,6 +561,17 @@
       "comments_in_window": 1
     },
     {
+      "issue": 12671,
+      "title": "[css-mixin-1] How does Shadow DOM influence mixin lookup?",
+      "labels": [
+        "Agenda+ F2F",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12671",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
       "issue": 13428,
       "title": "[css-view-transitions-2] scoped VT: we should apply content-visibility: hidden for the duration of capture",
       "labels": [
@@ -516,9 +584,22 @@
       "comments_in_window": 1
     },
     {
+      "issue": 13680,
+      "title": "[css-mixins-1] Review of @macro",
+      "labels": [
+        "Agenda+ F2F",
+        "Needs Edits",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13680",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
       "issue": 13727,
       "title": "[css-mixins-1] Using a scoping rule breaks author expectations, can we get rid of it?",
       "labels": [
+        "Agenda+ F2F",
         "Needs Edits",
         "Needs Testcase (WPT)",
         "css-mixins-1"
@@ -609,6 +690,17 @@
       "comments_in_window": 1
     },
     {
+      "issue": 14213,
+      "title": "[css-values-5] Should ident() be an arbitrary substitution function?",
+      "labels": [
+        "Agenda+ F2F",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14213",
+      "feature": null,
+      "comments_in_window": 0
+    },
+    {
       "issue": 14215,
       "title": "[css-images-3] Deprecate 'image-orientation'?",
       "labels": [
@@ -623,7 +715,7 @@
   "hot": [
     {
       "issue": 10001,
-      "title": "[selectors] New selector to facilitate utility classes (`[name~^=value]`? `.prefix-*`?)",
+      "title": "[selectors] New class prefix selector to facilitate utility classes (`.prefix-*`?)",
       "labels": [
         "Agenda+ F2F",
         "selectors-5"
@@ -656,6 +748,7 @@
       "issue": 14004,
       "title": "[css-variables][css-mixins] In-place hygienic rewriting?",
       "labels": [
+        "Agenda+ F2F",
         "css-mixins-1",
         "css-mixins-2",
         "css-variables-2"
@@ -717,37 +810,6 @@
       ]
     },
     {
-      "issue": 12799,
-      "title": "[selectors-4] Move to CR?",
-      "labels": [
-        "Administrative Tracker",
-        "selectors-4"
-      ],
-      "url": "https://github.com/w3c/csswg-drafts/issues/12799",
-      "comments_in_window": 9,
-      "feature": null,
-      "recent": [
-        {
-          "author": "svgeesus",
-          "date": "2026-07-22",
-          "url": "https://github.com/w3c/csswg-drafts/issues/12799#issuecomment-5048626473",
-          "gist": "Yes. @aphillips [said](https://github.com/w3c/csswg-drafts/issues/3022#issuecomment-4568519381)"
-        },
-        {
-          "author": "svgeesus",
-          "date": "2026-07-22",
-          "url": "https://github.com/w3c/csswg-drafts/issues/12799#issuecomment-5048664797",
-          "gist": "Okay. Looking at the [edit history](https://github.com/w3c/csswg-drafts/commits/main/selectors-4/Overview.bs), the [changes section](https://drafts.csswg.org/css-syntax/#changes-CR-20211224) is not up"
-        },
-        {
-          "author": "svgeesus",
-          "date": "2026-07-22",
-          "url": "https://github.com/w3c/csswg-drafts/issues/12799#issuecomment-5049019654",
-          "gist": "The [normative references checker](https://labs.w3.org/normative-references/check?url=https%3A%2F%2Fwww.w3.org%2FTR%2Fselectors-4%2F) flags several maybe-normative things including Syntax 3"
-        }
-      ]
-    },
-    {
       "issue": 14190,
       "title": "[css-align][html] Should `align-content` work on a block-container `<button>`?",
       "labels": [
@@ -787,26 +849,57 @@
         "css-ui-4"
       ],
       "url": "https://github.com/w3c/csswg-drafts/issues/14143",
-      "comments_in_window": 7,
+      "comments_in_window": 9,
       "feature": null,
       "recent": [
         {
           "author": "emilio",
           "date": "2026-07-16",
-          "url": "https://github.com/w3c/csswg-drafts/issues/14143#issuecomment-4990066971",
-          "gist": "As in, that the containing block of a top layer element is different than the DOM parent is not really different to the containing block of any other abspos / fixedpos being different to their DOM par"
+          "url": "https://github.com/w3c/csswg-drafts/issues/14143#issuecomment-4994298091",
+          "gist": "Well, but it's not, that's only for rendering, the same way fixed-pos \"escape\" non-transformed/filtered ancestors. Selection / mouse events / etc still work the same :)"
         },
         {
-          "author": "nt1m",
-          "date": "2026-07-16",
-          "url": "https://github.com/w3c/csswg-drafts/issues/14143#issuecomment-4994257234",
-          "gist": "abspos still takes in account the DOM ancestor chain when finding the containing block, like if you have a relative positioned parent, that becomes the containing block."
+          "author": "mfreed7",
+          "date": "2026-07-23",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14143#issuecomment-5060630180",
+          "gist": "As far as I can tell, everything being discussed here was also discussed at great length on the original issue (https://github.com/w3c/csswg-drafts/issues/11185), which we [resolved 1.5 years ago](htt"
         },
         {
           "author": "emilio",
-          "date": "2026-07-16",
-          "url": "https://github.com/w3c/csswg-drafts/issues/14143#issuecomment-4994298091",
-          "gist": "Well, but it's not, that's only for rendering, the same way fixed-pos \"escape\" non-transformed/filtered ancestors. Selection / mouse events / etc still work the same :)"
+          "date": "2026-07-23",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14143#issuecomment-5061877347",
+          "gist": "@mfreed7 I think the things not that have changed, but that (at least to my knowledge) weren't considered originally, and why I think this might deserve a second look, are:"
+        }
+      ]
+    },
+    {
+      "issue": 12799,
+      "title": "[selectors-4] Move to CR?",
+      "labels": [
+        "Administrative Tracker",
+        "selectors-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12799",
+      "comments_in_window": 9,
+      "feature": null,
+      "recent": [
+        {
+          "author": "svgeesus",
+          "date": "2026-07-22",
+          "url": "https://github.com/w3c/csswg-drafts/issues/12799#issuecomment-5048626473",
+          "gist": "Yes. @aphillips [said](https://github.com/w3c/csswg-drafts/issues/3022#issuecomment-4568519381)"
+        },
+        {
+          "author": "svgeesus",
+          "date": "2026-07-22",
+          "url": "https://github.com/w3c/csswg-drafts/issues/12799#issuecomment-5048664797",
+          "gist": "Okay. Looking at the [edit history](https://github.com/w3c/csswg-drafts/commits/main/css-syntax-3), the [changes section](https://drafts.csswg.org/css-syntax/#changes-CR-20211224) is not up to date."
+        },
+        {
+          "author": "svgeesus",
+          "date": "2026-07-22",
+          "url": "https://github.com/w3c/csswg-drafts/issues/12799#issuecomment-5049019654",
+          "gist": "The [normative references checker](https://labs.w3.org/normative-references/check?url=https%3A%2F%2Fwww.w3.org%2FTR%2Fselectors-4%2F) flags several maybe-normative things including Syntax 3"
         }
       ]
     },
@@ -817,56 +910,90 @@
         "a11y-tracker"
       ],
       "url": "https://github.com/w3c/csswg-drafts/issues/13980",
-      "comments_in_window": 5,
+      "comments_in_window": 8,
       "feature": null,
       "recent": [
-        {
-          "author": "Psychpsyo",
-          "date": "2026-07-22",
-          "url": "https://github.com/w3c/csswg-drafts/issues/13980#issuecomment-5048681390",
-          "gist": "I know this is probably besides the point, but I'd love to know how to express interest on a printed sheet of paper. 😄"
-        },
-        {
-          "author": "mfreed7",
-          "date": "2026-07-22",
-          "url": "https://github.com/w3c/csswg-drafts/issues/13980#issuecomment-5048693316",
-          "gist": "I'd love to know how a printed sheet of paper pops up a hovercard. 😄"
-        },
         {
           "author": "bkardell",
           "date": "2026-07-22",
           "url": "https://github.com/w3c/csswg-drafts/issues/13980#issuecomment-5048706784",
           "gist": "This requires CSS For Popup Books"
+        },
+        {
+          "author": "mfreed7",
+          "date": "2026-07-23",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13980#issuecomment-5060952133",
+          "gist": "FYI, I added the \"use `::before` and `::after`\" idea to the layout tree shape issue: https://github.com/w3c/csswg-drafts/issues/13981#issuecomment-5060804089"
+        },
+        {
+          "author": "mfreed7",
+          "date": "2026-07-23",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13980#issuecomment-5063366575",
+          "gist": "Also, since \"cow paths\" came up a lot in the discussion this morning, I've collected some examples from design systems. Just about all design systems have either an explicit component for this pattern"
         }
       ]
     },
     {
-      "issue": 14187,
-      "title": "[css-lists] Can replaced elements or widgets be list items?",
+      "issue": 14188,
+      "title": "[scroll-animations][css-viewport] How should the `zoom` property affect `animation-range-start`/`animation-range-end`",
       "labels": [
-        "css-lists-3"
+        "Agenda+",
+        "css-viewport-1",
+        "scroll-animations-1",
+        "web-animations-2"
       ],
-      "url": "https://github.com/w3c/csswg-drafts/issues/14187",
-      "comments_in_window": 5,
-      "feature": null,
+      "url": "https://github.com/w3c/csswg-drafts/issues/14188",
+      "comments_in_window": 6,
+      "feature": "scroll-driven-animations",
       "recent": [
         {
-          "author": "Loirooriol",
-          "date": "2026-07-16",
-          "url": "https://github.com/w3c/csswg-drafts/issues/14187#issuecomment-4990403663",
-          "gist": "Well, `list-item` can only be combined with specific display types. So it wouldn't be that surprising if it wouldn't work with `<button>`, since a `flow-root` inner display type generates an anonymous"
+          "author": "emilio",
+          "date": "2026-07-23",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14188#issuecomment-5061049591",
+          "gist": "So the CSS case should be uncontroversial, it should be resolved like every other length. You can make the same argument with `position: absolute; top: 10px;` or so being relative to the containing bl"
+        },
+        {
+          "author": "weinig",
+          "date": "2026-07-23",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14188#issuecomment-5061843482",
+          "gist": "In the WebKit implementation, I opted to ignore zoom for any value set using the JS API regardless of whether it is a style originated Animation or not because it was slightly simpler and avoided a bu"
         },
         {
           "author": "emilio",
-          "date": "2026-07-16",
-          "url": "https://github.com/w3c/csswg-drafts/issues/14187#issuecomment-4990703061",
-          "gist": "Button no longer has an anonymous box in blink and gecko afaict."
+          "date": "2026-07-23",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14188#issuecomment-5062595188",
+          "gist": "That works for me FWIW. In general I think the values that the API should return should generally be unzoomed, otherwise you hit that round-tripping issue right? And it probably makes sense that for t"
+        }
+      ]
+    },
+    {
+      "issue": 10210,
+      "title": "[css-color-4] Expand the concept of analogous components to analogous sets of components to minimize `none` → `0` conversions",
+      "labels": [
+        "Needs Edits",
+        "css-color-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/10210",
+      "comments_in_window": 6,
+      "feature": null,
+      "recent": [
+        {
+          "author": "LeaVerou",
+          "date": "2026-07-23",
+          "url": "https://github.com/w3c/csswg-drafts/issues/10210#issuecomment-5063852627",
+          "gist": "That should be an easy fix, since analogous components are plugged in at the end of the conversion, so we can just say that it applies to the start and end space, not intermediate ones."
         },
         {
-          "author": "Loirooriol",
-          "date": "2026-07-22",
-          "url": "https://github.com/w3c/csswg-drafts/issues/14187#issuecomment-5046760200",
-          "gist": "https://drafts.csswg.org/css-lists/#counters-without-boxes"
+          "author": "nex3",
+          "date": "2026-07-23",
+          "url": "https://github.com/w3c/csswg-drafts/issues/10210#issuecomment-5063946528",
+          "gist": "The issue isn't necessarily pulling the missing components through intermediate spaces, it's that if you default them to 0 you get `hsl(120deg 0% 0%)` which converts to `color(srgb 0 0 0)` which conve"
+        },
+        {
+          "author": "facelessuser",
+          "date": "2026-07-23",
+          "url": "https://github.com/w3c/csswg-drafts/issues/10210#issuecomment-5064360992",
+          "gist": "At least with hsl and hwb, you could special case this as the hue is the same for hsl and hwb, but this is only because these models are based on the same hue calculations. As soon as you convert thes"
         }
       ]
     },
@@ -899,6 +1026,36 @@
           "gist": "Seems very sensible to me"
         }
       ]
+    },
+    {
+      "issue": 14187,
+      "title": "[css-lists] Can replaced elements or widgets be list items?",
+      "labels": [
+        "css-lists-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14187",
+      "comments_in_window": 5,
+      "feature": null,
+      "recent": [
+        {
+          "author": "Loirooriol",
+          "date": "2026-07-16",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14187#issuecomment-4990403663",
+          "gist": "Well, `list-item` can only be combined with specific display types. So it wouldn't be that surprising if it wouldn't work with `<button>`, since a `flow-root` inner display type generates an anonymous"
+        },
+        {
+          "author": "emilio",
+          "date": "2026-07-16",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14187#issuecomment-4990703061",
+          "gist": "Button no longer has an anonymous box in blink and gecko afaict."
+        },
+        {
+          "author": "Loirooriol",
+          "date": "2026-07-22",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14187#issuecomment-5046760200",
+          "gist": "https://drafts.csswg.org/css-lists/#counters-without-boxes"
+        }
+      ]
     }
   ],
   "notable": [
@@ -906,7 +1063,8 @@
       "issue": 13015,
       "title": "[css-mixins-1] Mixins can be called (but not defined) without params",
       "labels": [
-        "Async Resolution: Call For Consensus",
+        "Needs Edits",
+        "Needs Testcase (WPT)",
         "css-mixins-1"
       ],
       "url": "https://github.com/w3c/csswg-drafts/issues/13015",
@@ -930,6 +1088,37 @@
           "date": "2026-07-20",
           "url": "https://github.com/w3c/csswg-drafts/issues/13015#issuecomment-5026379236",
           "gist": "The CSSWG will automatically accept this resolution one week from now if no objections are raised here. Anyone can add an emoji to this comment to express support. If you do not support this resolutio"
+        }
+      ]
+    },
+    {
+      "issue": 14179,
+      "title": "[css-view-transitions-2] Scoped transitions on non-layout containable elements",
+      "labels": [
+        "Async Resolution: Call For Consensus",
+        "css-view-transitions-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14179",
+      "comments_in_window": 3,
+      "feature": null,
+      "recent": [
+        {
+          "author": "emilio",
+          "date": "2026-07-16",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14179#issuecomment-4993905585",
+          "gist": "I think that's a reasonable starting step."
+        },
+        {
+          "author": "astearns",
+          "date": "2026-07-20",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14179#issuecomment-5026460294",
+          "gist": "I have questions."
+        },
+        {
+          "author": "vmpstr",
+          "date": "2026-07-20",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14179#issuecomment-5026940056",
+          "gist": "Re first part:"
         }
       ]
     },
@@ -967,66 +1156,129 @@
       ]
     },
     {
-      "issue": 14179,
-      "title": "[css-view-transitions-2] Scoped transitions on non-layout containable elements",
+      "issue": 11477,
+      "title": "[scroll-animations] `ViewTimelineOptions.inset` should use `CSSKeywordish` over `CSSKeywordValue`",
       "labels": [
-        "Async Resolution: Proposed",
-        "css-view-transitions-2"
+        "Agenda+",
+        "scroll-animations-1"
       ],
-      "url": "https://github.com/w3c/csswg-drafts/issues/14179",
-      "comments_in_window": 3,
-      "feature": null,
+      "url": "https://github.com/w3c/csswg-drafts/issues/11477",
+      "comments_in_window": 2,
+      "feature": "scroll-driven-animations",
       "recent": [
         {
-          "author": "emilio",
-          "date": "2026-07-16",
-          "url": "https://github.com/w3c/csswg-drafts/issues/14179#issuecomment-4993905585",
-          "gist": "I think that's a reasonable starting step."
+          "author": "BorisChiou",
+          "date": "2026-07-17",
+          "url": "https://github.com/w3c/csswg-drafts/issues/11477#issuecomment-5007620612",
+          "gist": "This may block interop as well. It seems the implementation of WebKit and Blink don't follow the current spec but all of us agree to change this to `CSSKeywordish`."
         },
         {
-          "author": "astearns",
-          "date": "2026-07-20",
-          "url": "https://github.com/w3c/csswg-drafts/issues/14179#issuecomment-5026460294",
-          "gist": "I have questions."
-        },
-        {
-          "author": "vmpstr",
-          "date": "2026-07-20",
-          "url": "https://github.com/w3c/csswg-drafts/issues/14179#issuecomment-5026940056",
-          "gist": "Re first part:"
+          "author": "BorisChiou",
+          "date": "2026-07-17",
+          "url": "https://github.com/w3c/csswg-drafts/issues/11477#issuecomment-5007783558",
+          "gist": "Just one question for this. Should we accept the `auto` string case-sensitively? It seems [WebKit](https://searchfox.org/wubkat/rev/d221d71a6a560cb45bb3e9b23e526b6bcfa9e4b3/Source/WebCore/animation/Vi"
         }
       ]
     },
     {
-      "issue": 14188,
-      "title": "[scroll-animations][css-viewport] How should the `zoom` property affect `animation-range-start`/`animation-range-end`",
+      "issue": 14204,
+      "title": "[css-color-5] Drop `Required conversion:` wording?",
       "labels": [
-        "Agenda+",
-        "css-viewport-1",
-        "scroll-animations-1",
-        "web-animations-2"
+        "Closed Accepted as Obvious Bugfix",
+        "Commenter Satisfied",
+        "css-color-5"
       ],
-      "url": "https://github.com/w3c/csswg-drafts/issues/14188",
-      "comments_in_window": 3,
-      "feature": "scroll-driven-animations",
+      "url": "https://github.com/w3c/csswg-drafts/issues/14204",
+      "comments_in_window": 2,
+      "feature": null,
       "recent": [
         {
-          "author": "ydaniv",
-          "date": "2026-07-17",
-          "url": "https://github.com/w3c/csswg-drafts/issues/14188#issuecomment-5003282961",
-          "gist": "An important thing to note about `animation-range-*` properties is that they are set on the animation effect's target, but are actually [calculated against the animation's associated timeline](https:/"
+          "author": "svgeesus",
+          "date": "2026-07-20",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14204#issuecomment-5023462845",
+          "gist": "Indeed the second interpretation is what was intended."
         },
         {
-          "author": "weinig",
-          "date": "2026-07-17",
-          "url": "https://github.com/w3c/csswg-drafts/issues/14188#issuecomment-5005661512",
-          "gist": "As far as I can tell, the [`zoom`](https://drafts.csswg.org/css-viewport/#zoom-property) property doesn't take anything like that into account. It only cares about the value of [`zoom`](https://drafts"
+          "author": "svgeesus",
+          "date": "2026-07-20",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14204#issuecomment-5023482187",
+          "gist": "As the term is referenced all over the place, my suggested clarification is to change \"required conversion\" to \"conversion, if required\"."
+        }
+      ]
+    },
+    {
+      "issue": 14212,
+      "title": "[css-mixins-1] Is `!important` valid in functions and/or mixins?",
+      "labels": [
+        "Agenda+ F2F",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14212",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-07-21",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14212#issuecomment-5040244897",
+          "gist": "In parameters (function or mixin), no, invalid. They're not declarations."
         },
         {
-          "author": "ydaniv",
+          "author": "kbabbitt",
           "date": "2026-07-22",
-          "url": "https://github.com/w3c/csswg-drafts/issues/14188#issuecomment-5048972992",
-          "gist": "Sure, what this means is that `zoom` on the animation target - the element `animation-range` is specified on - shouldn't affect the lengths specified in `animation-range`, but `zoom` specified on the "
+          "url": "https://github.com/w3c/csswg-drafts/issues/14212#issuecomment-5049631416",
+          "gist": "Oh right, that makes sense for mixin results. Not sure it does for mixin locals, or `@locals` block contents if we end up adopting that - they also don't have anything to cascade against except each o"
+        }
+      ]
+    },
+    {
+      "issue": 14208,
+      "title": "[css-values-5] calc-size(any, ...) keyword feels confusing",
+      "labels": [
+        "Agenda+",
+        "Needs Naming (Request to Bikeshed)",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14208",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-07-20",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14208#issuecomment-5027225800",
+          "gist": "Exactly correct."
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-07-20",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14208#issuecomment-5028031621",
+          "gist": "Okay, pushed some reorg of the intro section defining all the basises in a more standard way (`dl` with each possible value) so it shouldn't require reading between the lines anymore. ^_^"
+        }
+      ]
+    },
+    {
+      "issue": 13524,
+      "title": "[css-mixins-1] Auto-wrap mixin body in `@result` if omitted?",
+      "labels": [
+        "Agenda+ F2F",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13524",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "kbabbitt",
+          "date": "2026-07-23",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13524#issuecomment-5061101680",
+          "gist": "If we resolve on `@locals` per #14004 I think we can get rid of `@result` entirely."
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-07-23",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13524#issuecomment-5062626304",
+          "gist": "Correct, can and *should*."
         }
       ]
     },
@@ -1082,107 +1334,6 @@
       ]
     },
     {
-      "issue": 14212,
-      "title": "[css-mixins-1] Is `!important` valid in functions and/or mixins?",
-      "labels": [
-        "css-mixins-1"
-      ],
-      "url": "https://github.com/w3c/csswg-drafts/issues/14212",
-      "comments_in_window": 2,
-      "feature": null,
-      "recent": [
-        {
-          "author": "tabatkins",
-          "date": "2026-07-21",
-          "url": "https://github.com/w3c/csswg-drafts/issues/14212#issuecomment-5040244897",
-          "gist": "In parameters (function or mixin), no, invalid. They're not declarations."
-        },
-        {
-          "author": "kbabbitt",
-          "date": "2026-07-22",
-          "url": "https://github.com/w3c/csswg-drafts/issues/14212#issuecomment-5049631416",
-          "gist": "Oh right, that makes sense for mixin results. Not sure it does for mixin locals, or `@locals` block contents if we end up adopting that - they also don't have anything to cascade against except each o"
-        }
-      ]
-    },
-    {
-      "issue": 14208,
-      "title": "[css-values-5] calc-size(any, ...) keyword feels confusing",
-      "labels": [
-        "Agenda+",
-        "Needs Naming (Request to Bikeshed)",
-        "css-values-5"
-      ],
-      "url": "https://github.com/w3c/csswg-drafts/issues/14208",
-      "comments_in_window": 2,
-      "feature": null,
-      "recent": [
-        {
-          "author": "tabatkins",
-          "date": "2026-07-20",
-          "url": "https://github.com/w3c/csswg-drafts/issues/14208#issuecomment-5027225800",
-          "gist": "Exactly correct."
-        },
-        {
-          "author": "tabatkins",
-          "date": "2026-07-20",
-          "url": "https://github.com/w3c/csswg-drafts/issues/14208#issuecomment-5028031621",
-          "gist": "Okay, pushed some reorg of the intro section defining all the basises in a more standard way (`dl` with each possible value) so it shouldn't require reading between the lines anymore. ^_^"
-        }
-      ]
-    },
-    {
-      "issue": 14204,
-      "title": "[css-color-5] Drop `Required conversion:` wording?",
-      "labels": [
-        "Closed Accepted as Obvious Bugfix",
-        "Commenter Satisfied",
-        "css-color-5"
-      ],
-      "url": "https://github.com/w3c/csswg-drafts/issues/14204",
-      "comments_in_window": 2,
-      "feature": null,
-      "recent": [
-        {
-          "author": "svgeesus",
-          "date": "2026-07-20",
-          "url": "https://github.com/w3c/csswg-drafts/issues/14204#issuecomment-5023462845",
-          "gist": "Indeed the second interpretation is what was intended."
-        },
-        {
-          "author": "svgeesus",
-          "date": "2026-07-20",
-          "url": "https://github.com/w3c/csswg-drafts/issues/14204#issuecomment-5023482187",
-          "gist": "As the term is referenced all over the place, my suggested clarification is to change \"required conversion\" to \"conversion, if required\"."
-        }
-      ]
-    },
-    {
-      "issue": 11477,
-      "title": "[scroll-animations] `ViewTimelineOptions.inset` should use `CSSKeywordish` over `CSSKeywordValue`",
-      "labels": [
-        "Agenda+",
-        "scroll-animations-1"
-      ],
-      "url": "https://github.com/w3c/csswg-drafts/issues/11477",
-      "comments_in_window": 2,
-      "feature": "scroll-driven-animations",
-      "recent": [
-        {
-          "author": "BorisChiou",
-          "date": "2026-07-17",
-          "url": "https://github.com/w3c/csswg-drafts/issues/11477#issuecomment-5007620612",
-          "gist": "This may block interop as well. It seems the implementation of WebKit and Blink don't follow the current spec but all of us agree to change this to `CSSKeywordish`."
-        },
-        {
-          "author": "BorisChiou",
-          "date": "2026-07-17",
-          "url": "https://github.com/w3c/csswg-drafts/issues/11477#issuecomment-5007783558",
-          "gist": "Just one question for this. Should we accept the `auto` string case-sensitively? It seems [WebKit](https://searchfox.org/wubkat/rev/d221d71a6a560cb45bb3e9b23e526b6bcfa9e4b3/Source/WebCore/animation/Vi"
-        }
-      ]
-    },
-    {
       "issue": 8356,
       "title": "[selectors] consider preserving invalid selectors in :is() and :where()",
       "labels": [
@@ -1209,94 +1360,22 @@
       ]
     },
     {
-      "issue": 13931,
-      "title": "[css-grid-3][masonry] Static positions of out-of-flow items in fill-reverse",
+      "issue": 5675,
+      "title": "[css-grid] Masonry layout in CSS Grid 3 has potential to cause accessibility problems with reading order.",
       "labels": [
-        "Needs Edits",
-        "Needs Testcase (WPT)",
+        "Agenda+ F2F",
         "css-grid-3",
         "topic: masonry"
       ],
-      "url": "https://github.com/w3c/csswg-drafts/issues/13931",
+      "url": "https://github.com/w3c/csswg-drafts/issues/5675",
       "comments_in_window": 1,
       "feature": "masonry",
-      "recent": []
-    },
-    {
-      "issue": 13716,
-      "title": "[css-anchor-position-1] allow anchor() within shape()",
-      "labels": [
-        "Needs Design / Proposal",
-        "css-anchor-position-1",
-        "css-anchor-position-2"
-      ],
-      "url": "https://github.com/w3c/csswg-drafts/issues/13716",
-      "comments_in_window": 1,
-      "feature": "anchor-positioning",
       "recent": [
         {
-          "author": "Gazook89",
-          "date": "2026-07-16",
-          "url": "https://github.com/w3c/csswg-drafts/issues/13716#issuecomment-4987225762",
-          "gist": "Just want to support the idea of `anchor()` in `shape()` for `border-shape`. I'm using [Una's implementation](https://una.im/border-shape#tooltips-with-border-shape) of the tooltip that flips the tool"
-        }
-      ]
-    },
-    {
-      "issue": 13428,
-      "title": "[css-view-transitions-2] scoped VT: we should apply content-visibility: hidden for the duration of capture",
-      "labels": [
-        "Needs Edits",
-        "Needs Testcase (WPT)",
-        "css-view-transitions-2"
-      ],
-      "url": "https://github.com/w3c/csswg-drafts/issues/13428",
-      "comments_in_window": 1,
-      "feature": null,
-      "recent": [
-        {
-          "author": "vmpstr",
+          "author": "nattarnoff",
           "date": "2026-07-21",
-          "url": "https://github.com/w3c/csswg-drafts/issues/13428#issuecomment-5034989140",
-          "gist": "One hiccup here is the ability to have a meaningful size remembered. From https://drafts.csswg.org/css-sizing-4/#last-remembered:"
-        }
-      ]
-    },
-    {
-      "issue": 13727,
-      "title": "[css-mixins-1] Using a scoping rule breaks author expectations, can we get rid of it?",
-      "labels": [
-        "Needs Edits",
-        "Needs Testcase (WPT)",
-        "css-mixins-1"
-      ],
-      "url": "https://github.com/w3c/csswg-drafts/issues/13727",
-      "comments_in_window": 1,
-      "feature": null,
-      "recent": [
-        {
-          "author": "LeaVerou",
-          "date": "2026-07-17",
-          "url": "https://github.com/w3c/csswg-drafts/issues/13727#issuecomment-5003846645",
-          "gist": "We should drop `@macro`, not `@mixin`. `@mixin` is the term of art for this functionality."
-        }
-      ]
-    },
-    {
-      "issue": 13944,
-      "title": "[scroll-animation-1][interop-2026] Clarify when named timeline (re-) lookup is processed",
-      "labels": [
-        "scroll-animations-1"
-      ],
-      "url": "https://github.com/w3c/csswg-drafts/issues/13944",
-      "comments_in_window": 1,
-      "feature": "scroll-driven-animations",
-      "recent": [
-        {
-          "author": "dshin-moz",
-          "date": "2026-07-21",
-          "url": "https://github.com/w3c/csswg-drafts/issues/13944#issuecomment-5035354513",
-          "gist": "(To clarify, I filed #13963 which is effectively a dupe, which then got discussed)"
+          "url": "https://github.com/w3c/csswg-drafts/issues/5675#issuecomment-5035023037",
+          "gist": "I know I have been absent from this thread for a while. Apologies for that. I see a lot of effort and attention has been thrown at this. From what is latest posted, I do see a lot of positive ideas. I"
         }
       ]
     },
@@ -1417,27 +1496,151 @@
       ]
     },
     {
-      "issue": 5675,
-      "title": "[css-grid] Masonry layout in CSS Grid 3 has potential to cause accessibility problems with reading order.",
+      "issue": 13727,
+      "title": "[css-mixins-1] Using a scoping rule breaks author expectations, can we get rid of it?",
       "labels": [
         "Agenda+ F2F",
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13727",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "LeaVerou",
+          "date": "2026-07-17",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13727#issuecomment-5003846645",
+          "gist": "We should drop `@macro`, not `@mixin`. `@mixin` is the term of art for this functionality."
+        }
+      ]
+    },
+    {
+      "issue": 13931,
+      "title": "[css-grid-3][masonry] Static positions of out-of-flow items in fill-reverse",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
         "css-grid-3",
         "topic: masonry"
       ],
-      "url": "https://github.com/w3c/csswg-drafts/issues/5675",
+      "url": "https://github.com/w3c/csswg-drafts/issues/13931",
       "comments_in_window": 1,
       "feature": "masonry",
+      "recent": []
+    },
+    {
+      "issue": 13680,
+      "title": "[css-mixins-1] Review of @macro",
+      "labels": [
+        "Agenda+ F2F",
+        "Needs Edits",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13680",
+      "comments_in_window": 1,
+      "feature": null,
       "recent": [
         {
-          "author": "nattarnoff",
+          "author": "kbabbitt",
+          "date": "2026-07-23",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13680#issuecomment-5061124501",
+          "gist": "I think we have a path to get rid of `@macro` entirely; see https://github.com/w3c/csswg-drafts/issues/13727#issuecomment-4983491314"
+        }
+      ]
+    },
+    {
+      "issue": 13944,
+      "title": "[scroll-animation-1][interop-2026] Clarify when named timeline (re-) lookup is processed",
+      "labels": [
+        "scroll-animations-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13944",
+      "comments_in_window": 1,
+      "feature": "scroll-driven-animations",
+      "recent": [
+        {
+          "author": "dshin-moz",
           "date": "2026-07-21",
-          "url": "https://github.com/w3c/csswg-drafts/issues/5675#issuecomment-5035023037",
-          "gist": "I know I have been absent from this thread for a while. Apologies for that. I see a lot of effort and attention has been thrown at this. From what is latest posted, I do see a lot of positive ideas. I"
+          "url": "https://github.com/w3c/csswg-drafts/issues/13944#issuecomment-5035354513",
+          "gist": "(To clarify, I filed #13963 which is effectively a dupe, which then got discussed)"
+        }
+      ]
+    },
+    {
+      "issue": 13716,
+      "title": "[css-anchor-position-1] allow anchor() within shape()",
+      "labels": [
+        "Needs Design / Proposal",
+        "css-anchor-position-1",
+        "css-anchor-position-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13716",
+      "comments_in_window": 1,
+      "feature": "anchor-positioning",
+      "recent": [
+        {
+          "author": "Gazook89",
+          "date": "2026-07-16",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13716#issuecomment-4987225762",
+          "gist": "Just want to support the idea of `anchor()` in `shape()` for `border-shape`. I'm using [Una's implementation](https://una.im/border-shape#tooltips-with-border-shape) of the tooltip that flips the tool"
+        }
+      ]
+    },
+    {
+      "issue": 13428,
+      "title": "[css-view-transitions-2] scoped VT: we should apply content-visibility: hidden for the duration of capture",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-view-transitions-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13428",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "vmpstr",
+          "date": "2026-07-21",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13428#issuecomment-5034989140",
+          "gist": "One hiccup here is the ability to have a meaningful size remembered. From https://drafts.csswg.org/css-sizing-4/#last-remembered:"
+        }
+      ]
+    },
+    {
+      "issue": 12671,
+      "title": "[css-mixin-1] How does Shadow DOM influence mixin lookup?",
+      "labels": [
+        "Agenda+ F2F",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12671",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "kbabbitt",
+          "date": "2026-07-23",
+          "url": "https://github.com/w3c/csswg-drafts/issues/12671#issuecomment-5061145820",
+          "gist": "Reviewing the minutes from last time, it sounds like loosely matched is going to be pretty important for authors. Tagging F2F so we can discuss again. @fantasai any update on a Webkit position?"
         }
       ]
     }
   ],
   "fresh": [
+    {
+      "issue": 14221,
+      "title": "[css-values-5] Should `no-clamp` be separated with a comma in `progress()`?",
+      "labels": [
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14221",
+      "feature": null,
+      "created_at": "2026-07-23",
+      "background": "The [current syntax](https://drafts.csswg.org/css-values-5/#funcdef-progress) is `progress(no-clamp? <calc-sum>, <calc-sum>, <calc-sum>)`.",
+      "related": []
+    },
     {
       "issue": 14215,
       "title": "[css-images-3] Deprecate 'image-orientation'?",
@@ -1455,12 +1658,26 @@
       "issue": 14212,
       "title": "[css-mixins-1] Is `!important` valid in functions and/or mixins?",
       "labels": [
+        "Agenda+ F2F",
         "css-mixins-1"
       ],
       "url": "https://github.com/w3c/csswg-drafts/issues/14212",
       "feature": null,
       "created_at": "2026-07-21",
       "background": "https://drafts.csswg.org/css-mixins-1/#function-rule specifies that: - the default value of a parameter is `<declaration-value>` which does not accept `!important` - the function body is `<declaration-rule-list>` which *could* accept `!important` on declarations",
+      "related": []
+    },
+    {
+      "issue": 14213,
+      "title": "[css-values-5] Should ident() be an arbitrary substitution function?",
+      "labels": [
+        "Agenda+ F2F",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14213",
+      "feature": null,
+      "created_at": "2026-07-21",
+      "background": "Apparently it makes implementing simpler. @anttijk or @emilio can elaborate",
       "related": []
     },
     {
@@ -1580,13 +1797,5 @@
       "related": []
     }
   ],
-  "spec_changes": [
-    {
-      "shortname": "css-color-4",
-      "title": "CSS Color Module Level 4",
-      "maturity": "CRD",
-      "date": "2026-07-17",
-      "url": "https://www.w3.org/TR/2026/CRD-css-color-4-20260717/"
-    }
-  ]
+  "spec_changes": []
 }

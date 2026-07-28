@@ -67,6 +67,8 @@ monthly = deeper arcs/contention (`/monthly-digest`).
 | Digest | Period |
 |---|---|
 | [July 2026](digests/2026-07.md) (monthly) | 2026-07-01 – 2026-07-31 |
+| [2026-W30](digests/2026-W30.md) (weekly) | 2026-07-16 – 2026-07-23 |
+| [2026-W29](digests/2026-W29.md) (weekly) | 2026-07-09 – 2026-07-16 |
 | [2026-W28](digests/2026-W28.md) (weekly) | 2026-07-02 – 2026-07-09 |
 | [2026-W27](digests/2026-W27.md) (weekly) | 2026-06-28 – 2026-07-05 |
 | [June 2026](digests/2026-06.md) (monthly) | 2026-06-01 – 2026-06-30 |

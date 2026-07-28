@@ -288,3 +288,10 @@
   irc_nicks: [dshin]
   affiliation: Mozilla (Gecko; not in CSSWG participants snapshot)
   roles: []
+
+- slug: dholbert
+  name: Daniel Holbert
+  github: dholbert
+  irc_nicks: [dholbert]
+  affiliation: Mozilla (Gecko flexbox implementer)
+  roles: []

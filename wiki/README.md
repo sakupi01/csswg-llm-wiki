@@ -16,6 +16,7 @@ Entry point for every query. One line per page; update on every ingest.
 | [Scroll-driven Animations](features/scroll-driven-animations.md) | shipping | scroll-animations-1 | Drive animations by scroll/view timelines; 2021 declarative reboot (fantasai/Miriam) replaced the offset+ID model with `animation-timeline: scroll()`/named timelines; 2026 work aligns timeline-name scoping with view transitions |
 | [CSS Anchor Positioning](features/anchor-positioning.md) | shipping | css-anchor-position-1, css-anchor-position-2 | Tether a popover/tooltip to an anchor in CSS (`anchor()`, `position-area`, `@position-try`); heavy post-ship renaming (`inset-area`→`position-area`, `anchor-default`→`position-anchor`) and a contested 2025 reversal to follow transforms (#8584) |
 | [Container Queries](features/container-queries.md) | shipped | css-conditional-5 | Query an ancestor container's size/style/scroll-state (`@container`, `container-type`, `cq*` units); solved the decade-old circularity by querying a contained ancestor; `@container` picks its container from the query (#6644); moved contain-3→conditional-5 (#10433) |
+| [The flex Shorthand & its Longhands](features/flex-shorthand.md) | shipped | css-flexbox-1 | Why the spec says "use `flex`, not the longhands": the shorthand predates its longhands (split at Hamburg 2012), its omitted-component "magic" defaults were debated and kept, and the omitted-basis `0` vs `0%` gap (#5742) is still open |
 
 ## Specs
 
@@ -30,6 +31,7 @@ Entry point for every query. One line per page; update on every ingest.
 | [css-anchor-position-1](specs/css-anchor-position-1.md) | WD | anchor-positioning |
 | [css-anchor-position-2](specs/css-anchor-position-2.md) | FPWD | anchor-positioning |
 | [css-conditional-5](specs/css-conditional-5.md) | WD | container-queries |
+| [css-flexbox-1](specs/css-flexbox-1.md) | CRD | flex-shorthand |
 
 ## Families
 

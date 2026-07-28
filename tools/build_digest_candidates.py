@@ -194,10 +194,16 @@ def main() -> None:
         since = f"{args.month}-01"
         until = (date(y + (mo == 12), mo % 12 + 1, 1) - timedelta(days=1)).isoformat()
         span, out_stem = "month", args.month
+        # exclusive lower bound: a monthly window must include its own first day
+        # (an item dated the 1st belongs to exactly one month)
+        lo = (date(y, mo, 1) - timedelta(days=1)).isoformat()
     else:
         until = args.until or datetime.now(timezone.utc).strftime("%Y-%m-%d")
         since = (datetime.strptime(until, "%Y-%m-%d") - timedelta(days=args.days)).strftime("%Y-%m-%d")
         span, out_stem = "week", until
+        # weekly runs chain on the boundary date (each `until` is the next run's
+        # `since`), so the lower bound stays exclusive to avoid double-reporting
+        lo = since
     l2f = spec_label_to_feature()
     mirror = mirror_index()
 
@@ -205,7 +211,7 @@ def main() -> None:
     # discussion behind each: background, related issues, verbatim IRC log.
     resolutions = []
     for r in load_jsonl("resolutions-index.jsonl"):
-        if r.get("source") != "bot" or not (since < (r.get("date") or "") <= until):
+        if r.get("source") != "bot" or not (lo < (r.get("date") or "") <= until):
             continue
         feature = next((l2f[l] for l in r.get("labels", []) if l in l2f), None)
         item = {"date": r["date"], "issue": r["issue"], "labels": r.get("labels", []),
@@ -229,7 +235,7 @@ def main() -> None:
     for n, r in issues.items():
         if not (IMPORTANT_LABELS & set(r["labels"])):
             continue
-        if since < (r.get("created_at") or "")[:10] <= until or activity.get(n, 0):
+        if lo < (r.get("created_at") or "")[:10] <= until or activity.get(n, 0):
             feature = next((l2f[l] for l in r["labels"] if l in l2f), None)
             agenda.append({"issue": n, "title": r["title"], "labels": r["labels"],
                            "url": r["url"], "feature": feature,
@@ -274,7 +280,7 @@ def main() -> None:
     # new proposals & requests that carry no discussion yet but may be developer-notable.
     fresh = []
     for n, r in issues.items():
-        if not (since < (r.get("created_at") or "")[:10] <= until):
+        if not (lo < (r.get("created_at") or "")[:10] <= until):
             continue
         if not ((HIGH_INTEREST_LABELS | IMPORTANT_LABELS) & set(r["labels"])):
             continue
@@ -313,7 +319,7 @@ def main() -> None:
     for f in sorted(W3C.glob("*.json")):
         spec = json.loads(f.read_text())
         vs = spec.get("versions") or []
-        if vs and since < (vs[-1].get("date") or "") <= until:
+        if vs and lo < (vs[-1].get("date") or "") <= until:
             spec_changes.append({"shortname": spec["shortname"], "title": spec.get("title"),
                                  "maturity": vs[-1].get("maturity"), "date": vs[-1].get("date"),
                                  "url": vs[-1].get("uri")})

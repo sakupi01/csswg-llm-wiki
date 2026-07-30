@@ -280,3 +280,4 @@
 - 2026-07-15 RESOLVED #11644: spec is right, fix the tests
 - 2026-07-15 RESOLVED #13500: Spec is right, fix tests, add some tests for the animated value
 - 2026-07-15 opened #14188: [scroll-animations][css-viewport] How should the `zoom` property affect `animation-range-start`/`animation-range-end`
+- 2026-07-29 RESOLVED #13959: change the spec to make the constructor take a non-optional dictionary, and dictionary makes element required, and impls check compat of that

@@ -44,8 +44,8 @@
 - css-color-4 | CRD | 2026-07-28 | 36 open | no
 - css-color-5 | WD | 2026-06-18 | 28 open | no
 - css-color-adjust-1 | CR | 2025-12-16 | 17 open | no
-- css-color-hdr-1 | WD | 2026-06-24 | 11 open | no
-- css-conditional-3 | CRD | 2024-08-15 | 8 open | no
+- css-color-hdr-1 | WD | 2026-07-28 | 11 open | no
+- css-conditional-3 | CRD | 2024-08-15 | 7 open | no
 - css-conditional-4 | CRD | 2025-09-04 | 4 open | no
 - css-conditional-5 | WD | 2025-10-30 | 70 open | yes
 - css-contain-1 | REC | 2024-06-25 | 2 open | no
@@ -77,7 +77,7 @@
 - css-inline-3 | WD | 2024-12-18 | 91 open | no
 - css-layout-api-1 | FPWD | 2018-04-12 | 0 open | no
 - css-line-grid-1 | WD | 2014-09-16 | 8 open | no
-- css-link-params-1 | FPWD | 2026-07-14 | 8 open | no
+- css-link-params-1 | FPWD | 2026-07-14 | 9 open | no
 - css-lists-3 | WD | 2020-11-17 | 52 open | no
 - css-logical-1 | WD | 2025-12-04 | 16 open | no
 - css-masking-1 | CRD | 2021-08-05 | 6 open | no
@@ -132,7 +132,7 @@
 - css-ui-4 | WD | 2026-01-20 | 120 open | no
 - css-values-3 | CRD | 2024-03-22 | 1 open | yes
 - css-values-4 | WD | 2024-03-12 | 52 open | yes
-- css-values-5 | WD | 2024-11-11 | 162 open | no
+- css-values-5 | WD | 2024-11-11 | 161 open | no
 - css-variables-1 | CR | 2022-06-16 | 10 open | no
 - css-view-transitions-1 | CRD | 2024-03-28 | 40 open | no
 - css-view-transitions-2 | WD | 2024-11-13 | 69 open | no
@@ -166,8 +166,8 @@
 - scroll-animations-1 | WD | 2023-06-06 | 62 open | yes
 - selectors-3 | REC | 2018-11-06 | 4 open | no
 - selectors-4 | WD | 2026-01-22 | 100 open | no
-- selectors-5 | FPWD | 2026-02-17 | 92 open | yes
+- selectors-5 | FPWD | 2026-02-17 | 91 open | yes
 - selectors-nonelement-1 | RETIRED | 2019-04-02 | 0 open | no
-- web-animations-1 | WD | 2023-06-05 | 59 open | no
+- web-animations-1 | WD | 2023-06-05 | 56 open | no
 - web-animations-2 | WD | 2025-11-20 | 78 open | no
 - worklets-1 | RETIRED | 2021-07-29 | 0 open | no

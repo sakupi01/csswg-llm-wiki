@@ -107,3 +107,5 @@
 - 2026-06-11 opened #14036: [css-scroll-snap-1] Specify that re-snapping is deferred until an active scrolling gesture ends
 - 2026-06-17 RESOLVED #13673: addd the equivelant to the suggested diff
 - 2026-07-22 RESOLVED #14018: Snap positions affect the nearest ancestor scroll container in each axis they align to
+- 2026-07-29 RESOLVED #13490: Snap the bounding box, but if it is bigger than the viewport, adjust the alignment [TBD] to keep the element in view.
+- 2026-07-29 RESOLVED #9519: Add TBD keyword to do joined-axis snapping

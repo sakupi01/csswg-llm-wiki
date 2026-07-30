@@ -1,8 +1,8 @@
   1278  cdoublev
-  1143  noamr
+  1144  noamr
   1069  litherum
   1030  Crissov
-   784  romainmenke
+   786  romainmenke
    769  FremyCompany
    705  upsuper
    704  AmeliaBR
@@ -20,11 +20,11 @@
    346  bradkemper
    341  jonjohnjohnson
    341  tantek
-   334  lukewarlow
-   330  kbabbitt
+   335  lukewarlow
+   331  kbabbitt
    305  gsnedders
    288  josepharhar
-   280  facelessuser
+   281  facelessuser
    263  jsnkuhn
    259  xfq
    255  gregwhitworth
@@ -56,8 +56,8 @@
    115  BorisChiou
    114  Myndex
    114  dino
+   111  Dan503
    111  andreubotella
-   110  Dan503
    108  sesse
    106  ByteEater-pl
    105  jihyerish
@@ -96,9 +96,9 @@
     69  mayank99
     68  domenic
     68  nigelmegitt
+    66  hober
     66  stephenmcgruer
     65  danielsakhapov
-    64  hober
     64  mattwoodrow
     63  sanketj
     63  skobes-chromium
@@ -152,13 +152,13 @@
     41  kidayasuo
     41  smaug----
     40  pyoor
+    39  sb3nder
     39  theres-waldo
     38  aethanyc
     38  behdad
     38  cathiechen
     38  felipeerias
     38  liamquin
-    38  sb3nder
     37  jwatt
     37  proimage
     37  rcabanier

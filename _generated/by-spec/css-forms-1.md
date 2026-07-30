@@ -8,6 +8,7 @@
 - 2019-10-10 opened #4410: [css-pseudo-4] Standardizing input[type="range"] styling
 - 2020-03-14 opened #4875: [css-text] Provide CSS support for automatic spacing (or other separators) in text input field
 - 2020-06-09 opened #5187: Allow specifying the "accent color" of a form control element
+- 2020-07-27 opened #5365: [css-selectors] Expose <input type=search> clear icon as a standard pseudo element
 - 2020-08-26 RESOLVED #5187: The group wants to add accent-color and discussion on details will continue
 - 2020-09-09 RESOLVED #4410: Continue working on standardizing these 3 pseudos
 - 2020-10-23 RESOLVED #5187: Mason Freed added as UI 4 editor

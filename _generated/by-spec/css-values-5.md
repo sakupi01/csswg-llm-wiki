@@ -361,3 +361,4 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - 2026-07-21 opened #14213: [css-values-5] Should ident() be an arbitrary substitution function?
 - 2026-07-23 opened #14221: [css-values-5] Should `no-clamp` be separated with a comma in `progress()`?
 - 2026-07-24 opened #14223: [css-values-5] Feedback on `<size-keyword>` for `calc-size()`
+- 2026-07-29 RESOLVED #13839: calc-mix() simplifies like calc() as described in the issue, except the mixed-type case resolves to calc(0px + 0%)

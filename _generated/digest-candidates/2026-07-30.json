@@ -1,0 +1,1896 @@
+{
+  "span": "week",
+  "since": "2026-07-23",
+  "until": "2026-07-30",
+  "generated_at": "2026-07-30T00:56:44Z",
+  "resolutions": [
+    {
+      "date": "2026-07-29",
+      "issue": 5742,
+      "labels": [
+        "css-flexbox-1"
+      ],
+      "resolution": "Switch omitted flex-basis back to 0% for compat, add a note to the spec about it",
+      "url": "https://github.com/w3c/csswg-drafts/issues/5742#issuecomment-5120741577",
+      "feature": "flex-shorthand",
+      "background": "Per spec it should be `0`, but it used to be `0%` and it was never changed in browsers, see https://drafts.csswg.org/css-flexbox/#change-201505-substantive:",
+      "related": [],
+      "irc": [
+        "<fantasai> TabAtkins: Along while ago, we defined that the value of flex-basis when you don't specify the basis would be 0%",
+        "<fantasai> TabAtkins: This was specifically to trigger indeterminate behavior",
+        "<fantasai> TabAtkins: Later tried to change it, to say that you get 0px",
+        "<fantasai> TabAtkins: We were unclear at the time whether it would be Web-compatible to do",
+        "<fantasai> TabAtkins: Implementations have not really followed the spec change here. They've kept 0%",
+        "<fantasai> TabAtkins: At this point, we're fairly certain it can't be changed",
+        "<fantasai> TabAtkins: So that it doesn't go down to zero",
+        "<fantasai> TabAtkins: We see cases where they are depending on that.",
+        "<fantasai> TabAtkins: So proposal is to revert",
+        "<fantasai> TabAtkins: Probably need to call out in the spec that it's a little weird but required for back-compat",
+        "<TabAtkins> fantasai: I think at this point this is probably correct",
+        "<TabAtkins> fantasai: the original idea is we would rely on automatic minimum to prevent these problems we were trying to solve with 0%, that gives a little more flexilibity",
+        "<TabAtkins> fantasai: but that does give slightly different behavior, basis of max-content vs flooring it at min-content is quite different, or at least can be different",
+        "<fantasai> PROPOSED: Switch back to 0% for compat, add a note to the spec about it",
+        "<fantasai> RESOLVED: Switch omitted flex-basis back to 0% for compat, add a note to the spec about it"
+      ]
+    },
+    {
+      "date": "2026-07-29",
+      "issue": 9519,
+      "labels": [
+        "css-scroll-snap-1"
+      ],
+      "resolution": "Add TBD keyword to do joined-axis snapping",
+      "url": "https://github.com/w3c/csswg-drafts/issues/9519#issuecomment-5121002451",
+      "feature": null,
+      "background": "In the [css-scroll-snap-1 spec section 4.1.1](https://drafts.csswg.org/css-scroll-snap-1/#snap-axis) it states that for the scroll-snap-axis both: > The [scroll container](https://drafts.csswg.org/css-overflow-3/#scroll-container) [snaps](https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap) to [snap positions](https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap-position) in both of its axe",
+      "related": [],
+      "irc": [
+        "<TabAtkins> flackr: currently in scroll-snap we treat the axises independently, and allow you to snap to different elements on each axis",
+        "<TabAtkins> flackr: there are certainly cases where that's desirable",
+        "<TabAtkins> flackr: in most cases you can only snap in one axis anyway",
+        "<TabAtkins> flackr: but i think when you ahve an element that can snap in both directions, the intent is usually to snap to the element entirely, or not at all",
+        "<TabAtkins> flackr: so i wanted to revisit whether we can at least support this (Tab mentioned this as a possibility in a comment) or if this should even be the default and we add a way to go back to independent-axis snapping",
+        "<Rossen> ack fantasai",
+        "<TabAtkins> fantasai: we discussed this pretty extensively at one point and concluded we needed both behaviors, but for level 1 we'd only do independent",
+        "<TabAtkins> fantasai: but we did recognize we'd want the joined behavior and would need a different behavior. definitely not opposed to adding it",
+        "<TabAtkins> Rossen: so adding it in level 2?",
+        "<TabAtkins> fantasai:",
+        "<TabAtkins> fantasai: yeah",
+        "<TabAtkins> flackr: and specifically with a new keyword?",
+        "<TabAtkins> fantasai: yes",
+        "<TabAtkins> fantasai: we have scroll-snap-2 spec, do we want to go ahead and add it?",
+        "<TabAtkins> PROPOSED: Add TBD keyword to do joined-axis snapping",
+        "<TabAtkins> fantasai: I suggest keyword 'pair'",
+        "<TabAtkins> (flackr suggested 'element' which I also like)",
+        "<TabAtkins> RESOLVED: Add TBD keyword to do joined-axis snapping",
+        "<fantasai> (it's not an element it's a box :)"
+      ]
+    },
+    {
+      "date": "2026-07-29",
+      "issue": 13490,
+      "labels": [
+        "css-scroll-snap-1"
+      ],
+      "resolution": "Snap the bounding box, but if it is bigger than the viewport, adjust the alignment [TBD] to keep the element in view.",
+      "url": "https://github.com/w3c/csswg-drafts/issues/13490#issuecomment-5120957622",
+      "feature": null,
+      "background": "While I am investigating why [multicol-001.html](https://wpt.fyi/results/css/css-scroll-snap/multicol-001.html?label=master&label=experimental&aligned&view=interop&q=label%3Ainterop-2026-scroll-snap) fails on Firefox, I realized fragmented box cases such as multi columns are not simple.",
+      "related": [],
+      "irc": [
+        "<TabAtkins> emilio: when a snap target is split across multiple boxes due to fragmentation/etc, it's not super clear in the spec what we snap to, like what's the center",
+        "<TabAtkins> emilio: and some related cases, like what if you have a scroll destination between the boxes",
+        "<TabAtkins> emilio: i think there's reasonable answers, like maybe we use bounding box of the fragments like anchor does",
+        "<TabAtkins> emilio: but it would be good to confirm",
+        "<TabAtkins> (i think it's either bounding box, or first fragment; weak preference to match anchoring)",
+        "<TabAtkins> fantasai: This is actually pretty tricky",
+        "<TabAtkins> fantasai: if you have a fragmented element across columns, and you can see both columns, using the boudning box isn't unreasoanble, you'll always see at least part of the element",
+        "<flackr> q+",
+        "<Rossen> ack fantasai",
+        "<Rossen> ack flackr",
+        "<TabAtkins> fantasai: but if you have multiple columns and the viewport is shorter than the columns, and the elemnt is split between bottom of one and top of another, the viewport centering on the boudning box might not let you see anything",
+        "<TabAtkins> flackr: We ahve exceptions for elements larger than the scrollport",
+        "<TabAtkins> fantasai: We allow you to pan around the whole area, but your initial view (for 'center' alignment) won't show anything",
+        "<TabAtkins> flackr: that's fair",
+        "<emilio> q+",
+        "<flackr> q+",
+        "<TabAtkins> fantasai: So I haven't given this a lot of thought yet, but I think we should *try* to do something that ensures the user can see part of the element",
+        "<TabAtkins> Rossen: [restating example, tiny viewport + tall columns]",
+        "<TabAtkins> fantasai: yes",
+        "<TabAtkins> fantasai: and if you ask for start alignment, you'll snap to the top left corner of the bounding box where the element doesn't exist",
+        "<TabAtkins> fantasai: so many failure possibilities here",
+        "<TabAtkins> fantasai: i think we need to somehow keep at least one of the fragments in the viewport.",
+        "<smfr> q+",
+        "<TabAtkins> fantasai: so like align *towards* the center, but only to the extent that we can still see some of the fragments we're snapping to",
+        "<Rossen> ack emilio",
+        "<TabAtkins> emilio: q for Rob, do you know what Blink implements here?",
+        "<TabAtkins> flackr: I *think* Blink implements bounding box. would have to double check but I think that's right",
+        "<Rossen> ack flackr",
+        "<TabAtkins> flackr: possible solution - we already have some special cases for the initial alignment for things larger than the scrollport. maybe this is a special case for that - if the bounding box is larger thant he scrollport, we instead align to the first fragment",
+        "<TabAtkins> flackr: haven't thought thru all the use-cases but it seems like a possiblity",
+        "<TabAtkins> fantasai: seems like a good option",
+        "<TabAtkins> I also think this sounds plausible",
+        "<TabAtkins> fantasai: maybe if you say \"end\" it uses the last fragment",
+        "<Rossen> ack smfr",
+        "<TabAtkins> flackr: yeah it might be direction-aware",
+        "<smfr> let me rejion",
+        "<TabAtkins> Rossen: So rob's path forward sounds pretty good. I assume we don't have anything like this in the spec currently?",
+        "<TabAtkins> TabAtkins:  yes",
+        "<flackr> q+",
+        "<TabAtkins> smfr: i'm back. scroll-snap-align:start use first frag, end use last, center decide on what to do... would it be crazy to just generate snap points for each fragment independently?",
+        "<TabAtkins> fantasai: could do that, I guess?",
+        "<TabAtkins> fantasai: but when you try to bring something into view that won't work as you expect",
+        "<flackr> q-",
+        "<TabAtkins> fantasai: if you are elsewhere in the page, and the multicol is *smaller* than the viewport, you dont' want to center the one small fragment at the end of the first column. You want to bring the whole thing into view if you can",
+        "<TabAtkins> flackr: agree with elika here, there are cases where snapping to fragments is worse than teh bounding box",
+        "<TabAtkins> fantasai: so i think this needs a writeup and we can come back to it, because there are some subtleties around relative sizes of things",
+        "<TabAtkins> flackr: we already have this carveout for writing modes, i think this is just extending that",
+        "<fantasai> PROPOSAL: Snap the bounding box, but if it is bigger than the viewport, adjust the alignment [TBD].",
+        "<fantasai> PROPOSAL: Snap the bounding box, but if it is bigger than the viewport, adjust the alignment [TBD] to keep the element in view.",
+        "<emilio> +1",
+        "<flackr> +1",
+        "<fantasai> RESOLVED: Snap the bounding box, but if it is bigger than the viewport, adjust the alignment [TBD] to keep the element in view.",
+        "<TabAtkins> fantasai: Rob, do you want to take a stab at the spec text?",
+        "<TabAtkins> flackr: sure",
+        "<fantasai> ACTION: flackr to write up a proposal for the adjustment"
+      ]
+    },
+    {
+      "date": "2026-07-29",
+      "issue": 13839,
+      "labels": [
+        "css-values-5"
+      ],
+      "resolution": "calc-mix() simplifies like calc() as described in the issue, except the mixed-type case resolves to calc(0px + 0%)",
+      "url": "https://github.com/w3c/csswg-drafts/issues/13839#issuecomment-5120811698",
+      "feature": null,
+      "background": "I starting to try and implement [calc-mix()](https://drafts.csswg.org/css-values-5/#calc-mix) and I am not sure when its ok to simplify the function.",
+      "related": [],
+      "irc": [
+        "<TabAtkins> weinig: I implemented calc-mix(), but ther'es no simplification rules so I made my own up and specified them ehre",
+        "<TabAtkins> q+",
+        "<Rossen> ack TabAtkins",
+        "<fantasai> TabAtkins: Proposed answers to answers Sam brought up are all correct in general",
+        "<fantasai> TabAtkins: Basic rule is that calc-mix() is a convenience function for linear interpolation",
+        "<fantasai> TabAtkins: So we should simplify the same as calc() would",
+        "<kbabbitt> +1",
+        "<fantasai> TabAtkins: Only one where I disagree with is the final example",
+        "<fantasai> TabAtkins: One of the questions he asked is, do we drop 0% cases",
+        "<TabAtkins> calc-mix(10% 0%, 10px 0%)",
+        "<fantasai> TabAtkins: Generally yes, that matches how we drop products from calc()",
+        "<fantasai> TabAtkins: But we can't drop entire thing, need to leave a value behind",
+        "<fantasai> TabAtkins: Here's an example that needs to simplify to something zero.",
+        "<fantasai> TabAtkins: His suggestion is to use first arg, and 0% vs 0px can lead to different behaviors",
+        "<TabAtkins> calc(0px  + 0%)",
+        "<fantasai> TabAtkins: So my suggestion is we should use the resolved type of the calc-mix(), which is a blend of the two",
+        "<fantasai> TabAtkins: and resolve to calc(0px + 0%)",
+        "<TabAtkins> weinig: I think that's a better solution, so great",
+        "<fantasai> +1",
+        "<fantasai> PROPOSED: calc-mix() simplifies like calc() as described in the issue, except the mixed-type case resolves to calc(0px + 0%)",
+        "<TabAtkins> PROPOSED: Specify calc-mix() simplification to match clac() (and Sam's proposal in the issue), save for the \"drop everything\" case where we instead keep all the types around",
+        "<fantasai> RESOLVED: calc-mix() simplifies like calc() as described in the issue, except the mixed-type case resolves to calc(0px + 0%)"
+      ]
+    },
+    {
+      "date": "2026-07-29",
+      "issue": 13959,
+      "labels": [
+        "scroll-animations-1"
+      ],
+      "resolution": "change the spec to make the constructor take a non-optional dictionary, and dictionary makes element required, and impls check compat of that",
+      "url": "https://github.com/w3c/csswg-drafts/issues/13959#issuecomment-5120698511",
+      "feature": "scroll-driven-animations",
+      "background": "The [ViewTimeline IDL](https://drafts.csswg.org/scroll-animations/#viewtimeline) specifies that the `subject` attribute is non-null",
+      "related": [
+        {
+          "issue": 13844,
+          "url": "https://github.com/w3c/csswg-drafts/issues/13844"
+        }
+      ],
+      "irc": [
+        "<TabAtkins> weinig: I think this is just an IDL bug",
+        "<TabAtkins> weinig: in ViewTimeline, there's a constructor that takes ViewTimelineOptions, and one of the options is the element. Because the whole constructor is optional, and element isn't required in the dict, you can call the constructor and the element is null",
+        "<TabAtkins> weinig: But in the interface itself the element isn't nullable. So that's a contradiction.",
+        "<ydaniv> q+",
+        "<TabAtkins> weinig: So I think the element just needs to be nullable, or we change the ViewTimeline constructor.",
+        "<TabAtkins> ydaniv: since it's also readonly, it's practically useless without a subject. I'm not sure what use-case it woudl serve to make it nullable",
+        "<TabAtkins> weinig: Yeah, that's an option. Just make the dictionary non-optional and make element a required piece",
+        "<TabAtkins> ydaniv: if that's compatible",
+        "<flackr> q+",
+        "<Rossen> ack ydaniv",
+        "<TabAtkins> weinig: well like you said, what would people be doing with a null ViewTimeline object?",
+        "<bramus> q+",
+        "<TabAtkins> ydaniv: probably getting an inactive VT object, but now they'd be throwing an error, so it might be a compat issue",
+        "<Rossen> ack flackr",
+        "<TabAtkins> flackr: I was going to ask what it does today, but I checked, and it's just returning a null subject",
+        "<TabAtkins> flackr: I'm fine with trying to throw an error",
+        "<Rossen> ack bramus",
+        "<TabAtkins> flackr: But I\"m also fine with the element being null and the timeline being useless is okay if compat requires that",
+        "<TabAtkins> bramus: yeah just reiterating that the VT object is worthless without a subject, so it makes sense to require it",
+        "<TabAtkins> bramus: ignoring compat, we shoudl require it",
+        "<ydaniv> +1",
+        "<TabAtkins> flackr: So maybe we should try to require it, but check usage first?",
+        "<ydaniv> +1 to flackr",
+        "<TabAtkins> Rossen: Can we just resolve to require it, and then bring it back if compat says we can't do it?",
+        "<TabAtkins> bramus: One thought, maybe it was nullable in the case that we create a viewtimeline linked to an existing element, but later destroy that element, you still have a lingering VT",
+        "<TabAtkins> weinig: That's the opposite problem, currently the interface's element is non-nullable",
+        "<TabAtkins> weinig: But usually the way this works is the VT would be a strong reference to the element so it's not destroyed",
+        "<ydaniv> and the subject is readonly",
+        "<flackr> +1",
+        "<TabAtkins> (no dangling pointers)",
+        "<TabAtkins> weinig: so proposed resolution is we change the spec to make the constructor take a non-optional dictionary, and dictionary makes element required, and impls check compat of that",
+        "<TabAtkins> RESOLVED: change the spec to make the constructor take a non-optional dictionary, and dictionary makes element required, and impls check compat of that"
+      ]
+    }
+  ],
+  "agenda": [
+    {
+      "issue": 10001,
+      "title": "[selectors] New class prefix selector to facilitate utility classes (`.prefix-*`?)",
+      "labels": [
+        "Agenda+ F2F",
+        "selectors-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/10001",
+      "feature": "heading-selector",
+      "comments_in_window": 9
+    },
+    {
+      "issue": 10210,
+      "title": "[css-color-4] Expand the concept of analogous components to analogous sets of components to minimize `none` → `0` conversions",
+      "labels": [
+        "Needs Edits",
+        "css-color-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/10210",
+      "feature": null,
+      "comments_in_window": 8
+    },
+    {
+      "issue": 13997,
+      "title": "[filter-effects-2] Support fast simple css blurs",
+      "labels": [
+        "Agenda+",
+        "css-filter-effects-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13997",
+      "feature": null,
+      "comments_in_window": 6
+    },
+    {
+      "issue": 14229,
+      "title": "[css-typed-om] Should parts of the CSS namespace be exposed on workers?",
+      "labels": [
+        "Agenda+",
+        "css-typed-om",
+        "cssom-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14229",
+      "feature": null,
+      "comments_in_window": 6
+    },
+    {
+      "issue": 13108,
+      "title": "[css-nesting-1] [selectors-4] Figure out the specificity of nesting with pseudos and non-pseudos",
+      "labels": [
+        "Agenda+",
+        "css-nesting-1",
+        "selectors-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13108",
+      "feature": "css-nesting",
+      "comments_in_window": 5
+    },
+    {
+      "issue": 13609,
+      "title": "[css-forms-1] Proposed 'controls shouldn't look weird' design principle",
+      "labels": [
+        "Agenda+ F2F",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13609",
+      "feature": null,
+      "comments_in_window": 5
+    },
+    {
+      "issue": 14207,
+      "title": "[css-color-4] Should we recommend DeltaE OK2 over the original DeltaE OK?",
+      "labels": [
+        "Agenda+ F2F",
+        "css-color-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14207",
+      "feature": null,
+      "comments_in_window": 5
+    },
+    {
+      "issue": 14227,
+      "title": "[css-properties-values] CSSOM for multi-name and shorthand `@property`",
+      "labels": [
+        "Agenda+",
+        "Agenda+ F2F",
+        "css-properties-values-api-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14227",
+      "feature": null,
+      "comments_in_window": 5
+    },
+    {
+      "issue": 14125,
+      "title": "Request for review: `application-context` media feature (Web App Manifest)",
+      "labels": [
+        "Agenda+ F2F"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14125",
+      "feature": null,
+      "comments_in_window": 4
+    },
+    {
+      "issue": 14235,
+      "title": "[css-link-params] Harmonize param() fragments with the :~: fragment directive",
+      "labels": [
+        "Agenda+",
+        "Agenda+ F2F",
+        "css-link-params-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14235",
+      "feature": null,
+      "comments_in_window": 4
+    },
+    {
+      "issue": 3208,
+      "title": "[css-pseudo-4] `::nth-letter` pseudo-element",
+      "labels": [
+        "Agenda+ F2F",
+        "css-pseudo-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/3208",
+      "feature": null,
+      "comments_in_window": 3
+    },
+    {
+      "issue": 10884,
+      "title": "[css-grid] Decide on a name for `item-slack`",
+      "labels": [
+        "Agenda+ F2F",
+        "css-grid-3",
+        "topic: masonry"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/10884",
+      "feature": "masonry",
+      "comments_in_window": 3
+    },
+    {
+      "issue": 14143,
+      "title": "[css-ui] Maybe reconsider the :hover / :active top layer propagation rules?",
+      "labels": [
+        "Agenda+",
+        "css-ui-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14143",
+      "feature": null,
+      "comments_in_window": 3
+    },
+    {
+      "issue": 14188,
+      "title": "[scroll-animations][css-viewport] How should the `zoom` property affect `animation-range-start`/`animation-range-end`",
+      "labels": [
+        "Agenda+",
+        "css-viewport-1",
+        "scroll-animations-1",
+        "web-animations-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14188",
+      "feature": "scroll-driven-animations",
+      "comments_in_window": 3
+    },
+    {
+      "issue": 13524,
+      "title": "[css-mixins-1] Auto-wrap mixin body in `@result` if omitted?",
+      "labels": [
+        "Agenda+ F2F",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13524",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 13728,
+      "title": "Proposal: Declarative Web Haptics",
+      "labels": [
+        "Agenda+ F2F",
+        "css-haptics?"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13728",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 13860,
+      "title": "[css-pseudo] `::before(<ident>)` / `::after(<ident>)`: A possible path forwards for multiple gencontent pseudos?",
+      "labels": [
+        "Agenda+ F2F",
+        "css-pseudo-4",
+        "css-pseudo-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13860",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 14153,
+      "title": "[css-gaps-1] Define gaps for grid lanes",
+      "labels": [
+        "Needs Edits",
+        "css-gaps-1",
+        "css-grid-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14153",
+      "feature": "masonry",
+      "comments_in_window": 2
+    },
+    {
+      "issue": 6429,
+      "title": "[css-display] Why is display listed as not animatable instead of animation type: discrete?",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Edits",
+        "css-display-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/6429",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 7266,
+      "title": "[mediaqueries-4] Need to describe how to serialize <general-enclosed> in mediaqueries.",
+      "labels": [
+        "Agenda+ F2F",
+        "cssom-1",
+        "mediaqueries-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/7266",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 7523,
+      "title": "[css-properties-values-api] Shorthand for custom property declaration",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-properties-values-api-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/7523",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 8884,
+      "title": "[css-flexbox] Intrinsic main size algorithm for row flexboxes not web compatible",
+      "labels": [
+        "Agenda+",
+        "Needs Edits",
+        "css-flexbox-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/8884",
+      "feature": "flex-shorthand",
+      "comments_in_window": 1
+    },
+    {
+      "issue": 9484,
+      "title": "[css-color-4] How to handle conversions that result in negative lightness?",
+      "labels": [
+        "Needs Testcase (WPT)",
+        "css-color-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/9484",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 9706,
+      "title": "[selectors] Should `:checked` and `:indeterminate` be exclusive?",
+      "labels": [
+        "Agenda+",
+        "Agenda+ TPAC",
+        "HTML",
+        "Needs Feedback/Review",
+        "a11y-tracker",
+        "selectors-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/9706",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 11369,
+      "title": "[css-values-4] Math functions have both a type and a return type, is this intended?",
+      "labels": [
+        "Closed Accepted as Obvious Bugfix",
+        "Needs Edits",
+        "css-values-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/11369",
+      "feature": "absolute-lengths",
+      "comments_in_window": 1
+    },
+    {
+      "issue": 12023,
+      "title": "[css-grid-3][masonry] Adjustments/additions to `grid` shorthanding",
+      "labels": [
+        "Agenda+ F2F",
+        "Needs Design / Proposal",
+        "css-grid-3",
+        "topic: masonry"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12023",
+      "feature": "masonry",
+      "comments_in_window": 1
+    },
+    {
+      "issue": 12430,
+      "title": "[css-forms-1] Checkbox and radio sizing should meet WCAG minimum sizing",
+      "labels": [
+        "Needs Testcase (WPT)",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12430",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 12594,
+      "title": "[css-navigation] Exposing navigation/route matching",
+      "labels": [
+        "Agenda+ F2F",
+        "css-navigation-1",
+        "css-view-transitions-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12594",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 12671,
+      "title": "[css-mixin-1] How does Shadow DOM influence mixin lookup?",
+      "labels": [
+        "Agenda+ F2F",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12671",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13015,
+      "title": "[css-mixins-1] Mixins can be called (but not defined) without params",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13015",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13506,
+      "title": "[css-borders-4] Allow overriding single-shape `border-shape` color/width",
+      "labels": [
+        "Agenda+",
+        "Agenda+ F2F",
+        "css-borders-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13506",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13680,
+      "title": "[css-mixins-1] Review of @macro",
+      "labels": [
+        "Agenda+ F2F",
+        "Needs Edits",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13680",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13742,
+      "title": "[css-values-5] Are <url>s with attr() tainted values allowed in custom properties?",
+      "labels": [
+        "Agenda+",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13742",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13774,
+      "title": "[css-text-4] Allow text-autospace: normal replace",
+      "labels": [
+        "Agenda+ F2F",
+        "Agenda+ i18n",
+        "css-text-4",
+        "i18n-clreq",
+        "i18n-jlreq",
+        "i18n-needs-resolution"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13774",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13789,
+      "title": "[css-text-4] Split text-spacing-trim into different values",
+      "labels": [
+        "Agenda+",
+        "Agenda+ F2F",
+        "css-text-4",
+        "i18n-clreq",
+        "i18n-jlreq",
+        "i18n-needs-resolution"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13789",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13902,
+      "title": "[css-values-4] Calc simplification of slightly non-trivial products",
+      "labels": [
+        "Agenda+ F2F",
+        "css-values-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13902",
+      "feature": "absolute-lengths",
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13950,
+      "title": "[css-grid-3] Should align-self/justify-self: stretch override explicit size?",
+      "labels": [
+        "Agenda+",
+        "Agenda+ F2F",
+        "css-grid-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13950",
+      "feature": "masonry",
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13987,
+      "title": "[css-grid-3][masonry] Should auto-placement cursor be updated after placing an explicitly-placed item?",
+      "labels": [
+        "Agenda+ F2F",
+        "css-grid-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13987",
+      "feature": "masonry",
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14070,
+      "title": "[css-color-5] Omissable alpha in relative color serialization",
+      "labels": [
+        "Agenda+",
+        "Agenda+ F2F",
+        "css-color-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14070",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14156,
+      "title": "[css-gaps-1] Define how repeated / listed gap-decoration values map to gaps in grid lanes containers",
+      "labels": [
+        "Agenda+ F2F",
+        "css-gaps-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14156",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14224,
+      "title": "[Meta] Wildcards in CSS syntax",
+      "labels": [
+        "Agenda+ F2F",
+        "meta"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14224",
+      "feature": null,
+      "comments_in_window": 0
+    },
+    {
+      "issue": 14237,
+      "title": "[css-grid-3][masonry] Should the start edge of placement remain the same even with `track-reverse`?",
+      "labels": [
+        "Agenda+",
+        "Agenda+ F2F",
+        "css-grid-3",
+        "topic: masonry"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14237",
+      "feature": "masonry",
+      "comments_in_window": 0
+    }
+  ],
+  "hot": [
+    {
+      "issue": 13957,
+      "title": "[css-multicol] Examples 30 & 31 do not follow from the spec - column balancing is under-specified and/or incorrect",
+      "labels": [
+        "css-multicol-1",
+        "css-multicol-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13957",
+      "comments_in_window": 11,
+      "feature": null,
+      "recent": [
+        {
+          "author": "rachelandrew",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13957#issuecomment-5114941888",
+          "gist": "@mstensho do you feel there are changes we need to make in the level 1 specification? The reason I spotted this issue is I'm trying to sort out the tests so we can get this to REC, so I'd like to make"
+        },
+        {
+          "author": "mstensho",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13957#issuecomment-5116742272",
+          "gist": "I realize now that both L1 and L2 both sort of suggest that what @Psychpsyo implemented in Ladybird is actually wrong. But maybe that's just a spec issue."
+        },
+        {
+          "author": "mstensho",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13957#issuecomment-5116905817",
+          "gist": "L1 also has this:"
+        }
+      ]
+    },
+    {
+      "issue": 191,
+      "title": "[css-sizing] How to shrink to fit the width?",
+      "labels": [
+        "css-sizing-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/191",
+      "comments_in_window": 10,
+      "feature": null,
+      "recent": [
+        {
+          "author": "Dan503",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/191#issuecomment-5121247845",
+          "gist": "I'm not sure if this would be within scope, but I think this would be a great way to make `1fr` behave like `minmax(0, 1fr)`with much cleaner syntax."
+        },
+        {
+          "author": "LeaVerou",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/191#issuecomment-5121593475",
+          "gist": "But this doesn't affect wrapping itself."
+        },
+        {
+          "author": "Loirooriol",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/191#issuecomment-5121859923",
+          "gist": "That's completely unrelated to `max-content` sizing"
+        }
+      ]
+    },
+    {
+      "issue": 10001,
+      "title": "[selectors] New class prefix selector to facilitate utility classes (`.prefix-*`?)",
+      "labels": [
+        "Agenda+ F2F",
+        "selectors-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/10001",
+      "comments_in_window": 9,
+      "feature": "heading-selector",
+      "recent": [
+        {
+          "author": "LeaVerou",
+          "date": "2026-07-25",
+          "url": "https://github.com/w3c/csswg-drafts/issues/10001#issuecomment-5078625995",
+          "gist": "@Crissov Please add any such issues to #14224 (or ask me to add them if you don't have permission) so we could keep track of them in one place."
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/10001#issuecomment-5123664396",
+          "gist": "By \"hyphen separated prefixes that @tabatkins proposed\", Lea is referring to [this comment](https://github.com/w3c/csswg-drafts/issues/10001#issuecomment-5006057731)"
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/10001#issuecomment-5123707710",
+          "gist": "Note: the parsing issue with `[foo*=\"bar\"]` being ambiguous is resolved by just not allowing the wildcard syntax to test values. That is, `[foo*]` is fine, but `[foo* = \"bar\"]` is invalid, and `[foo*="
+        }
+      ]
+    },
+    {
+      "issue": 10210,
+      "title": "[css-color-4] Expand the concept of analogous components to analogous sets of components to minimize `none` → `0` conversions",
+      "labels": [
+        "Needs Edits",
+        "css-color-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/10210",
+      "comments_in_window": 8,
+      "feature": null,
+      "recent": [
+        {
+          "author": "facelessuser",
+          "date": "2026-07-23",
+          "url": "https://github.com/w3c/csswg-drafts/issues/10210#issuecomment-5064360992",
+          "gist": "At least with hsl and hwb, you could special case this as the hue is the same for hsl and hwb, but this is only because these models are based on the same hue calculations. As soon as you convert thes"
+        },
+        {
+          "author": "nex3",
+          "date": "2026-07-24",
+          "url": "https://github.com/w3c/csswg-drafts/issues/10210#issuecomment-5064824956",
+          "gist": "The same is generally true for forwarding missing channels; the green in `color(srgb none 0.5 none)` could be a range of different greens in `display-p3`, but in practice it converts to `color(display"
+        },
+        {
+          "author": "facelessuser",
+          "date": "2026-07-24",
+          "url": "https://github.com/w3c/csswg-drafts/issues/10210#issuecomment-5064892079",
+          "gist": "It's a bit worse, probably for hues. There are times when red would translate to orange or blue to purple, but to be fair, I haven't really compared such impacts to any great extent."
+        }
+      ]
+    },
+    {
+      "issue": 13212,
+      "title": "[css-properties-values-api] Mass property registration by prefix",
+      "labels": [
+        "css-properties-values-api-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13212",
+      "comments_in_window": 8,
+      "feature": null,
+      "recent": [
+        {
+          "author": "LeaVerou",
+          "date": "2026-07-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13212#issuecomment-5086070273",
+          "gist": "We resolved in another thread to make `initial-value` optional, and default to the guaranteed-invalid value, wouldn't that create the same issue for regular registered properties? (I'm not 100% sure I"
+        },
+        {
+          "author": "Loirooriol",
+          "date": "2026-07-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13212#issuecomment-5089036399",
+          "gist": "No. Let me try to explain the problem again:"
+        },
+        {
+          "author": "Crissov",
+          "date": "2026-07-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13212#issuecomment-5089492714",
+          "gist": "If everybody is gonna use this only with simple types in the `syntax` descriptor anyway, it might make more sense to move these into a family of new at-rules instead:"
+        }
+      ]
+    },
+    {
+      "issue": 11310,
+      "title": "[css-contain] Should `contentvisibilityautostatechange` events bubble?",
+      "labels": [
+        "Async Resolution: Call For Consensus",
+        "css-contain-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/11310",
+      "comments_in_window": 7,
+      "feature": null,
+      "recent": [
+        {
+          "author": "LeaVerou",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/11310#issuecomment-5116529086",
+          "gist": "I think the rule of thumb is _would bubbling prevent more bugs than it would cause?_"
+        },
+        {
+          "author": "vmpstr",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/11310#issuecomment-5122308858",
+          "gist": "I admit that I didn't have any use cases that specifically require bubbling. Blink currently implements this as bubbling, so it would be a compat risk to change that in the implementation. As for whet"
+        },
+        {
+          "author": "vmpstr",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/11310#issuecomment-5122430750",
+          "gist": "@smaug---- just a question out of curiosity, is toggle event not bubbling per spec because none of the events are bubbling unless explicitly stated that \"bubbles is initialized to true\". I just can't "
+        }
+      ]
+    },
+    {
+      "issue": 14229,
+      "title": "[css-typed-om] Should parts of the CSS namespace be exposed on workers?",
+      "labels": [
+        "Agenda+",
+        "css-typed-om",
+        "cssom-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14229",
+      "comments_in_window": 6,
+      "feature": null,
+      "recent": [
+        {
+          "author": "janvarga",
+          "date": "2026-07-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14229#issuecomment-5093365662",
+          "gist": "Yes, this would help with converting more Typed OM WPT to any.js"
+        },
+        {
+          "author": "javifernandez",
+          "date": "2026-07-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14229#issuecomment-5094072025",
+          "gist": "I'm working on the [PR 61330](https://github.com/web-platform-tests/wpt/pull/61330) to updated some of these tests to any.js"
+        },
+        {
+          "author": "lilles",
+          "date": "2026-07-28",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14229#issuecomment-5101943796",
+          "gist": "Yes. sgtm to expose this in workers (and layout and paint worklets)"
+        }
+      ]
+    },
+    {
+      "issue": 13997,
+      "title": "[filter-effects-2] Support fast simple css blurs",
+      "labels": [
+        "Agenda+",
+        "css-filter-effects-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13997",
+      "comments_in_window": 6,
+      "feature": null,
+      "recent": [
+        {
+          "author": "jakearchibald",
+          "date": "2026-07-28",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13997#issuecomment-5101791441",
+          "gist": "@bramus"
+        },
+        {
+          "author": "jakearchibald",
+          "date": "2026-07-28",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13997#issuecomment-5102345231",
+          "gist": "https://random-stuff.jakearchibald.com/blurs/ - I slopped around a bit. I'm worried about the quality and animatability of \"low resolution rendering and using simple gpu scaling\", but maybe I'm missin"
+        },
+        {
+          "author": "flackr",
+          "date": "2026-07-28",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13997#issuecomment-5103766464",
+          "gist": "Backdrop-filter is a very important use case given the prevalance of glass effects. I also expect this to be used in blur extensions like the linear-blur #13285. I'm open to defining it in the functio"
+        }
+      ]
+    },
+    {
+      "issue": 14207,
+      "title": "[css-color-4] Should we recommend DeltaE OK2 over the original DeltaE OK?",
+      "labels": [
+        "Agenda+ F2F",
+        "css-color-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14207",
+      "comments_in_window": 5,
+      "feature": null,
+      "recent": [
+        {
+          "author": "facelessuser",
+          "date": "2026-07-24",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14207#issuecomment-5070384140",
+          "gist": "Yep, definitely more complex, but not drastically so. Either way, I thought it was something interesting to point out."
+        },
+        {
+          "author": "svgeesus",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14207#issuecomment-5117358655",
+          "gist": "I updated [the investigation to add that as well](https://github.com/svgeesus/deltaE-OK2/blob/main/README.md). Oddly the unscaled ΔEOKr was a bit worse than unscaled ΔEOK, while scaled ΔEOKr2 was bett"
+        },
+        {
+          "author": "facelessuser",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14207#issuecomment-5118258798",
+          "gist": "I guess that doesn't surprise me. I'm sure the lightness helps \"on average\". The distance of every color doesn't necessarily correlate better with ∆E2000, but on average it does, but only when values "
+        }
+      ]
+    },
+    {
+      "issue": 14217,
+      "title": "[css-conditional-5] container-type:scroll-state and single-axis scrollers",
+      "labels": [
+        "css-conditional-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14217",
+      "comments_in_window": 5,
+      "feature": "container-queries",
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-07-23",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14217#issuecomment-5061579969",
+          "gist": "The choice of what signal to use to make yourself a query container is, I think, somewhat separate from this question (actually being *capable* of answering a given query). I'm fine with sticking with"
+        },
+        {
+          "author": "lilles",
+          "date": "2026-07-24",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14217#issuecomment-5068471889",
+          "gist": "My original proposal was to have separate container-types, but the [WG discussion](https://github.com/w3c/csswg-drafts/issues/6402#issuecomment-1812973013"
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-07-24",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14217#issuecomment-5072757233",
+          "gist": "Yeah, that was a *very* fast discussion that didn't touch on the issues:"
+        }
+      ]
+    },
+    {
+      "issue": 14227,
+      "title": "[css-properties-values] CSSOM for multi-name and shorthand `@property`",
+      "labels": [
+        "Agenda+",
+        "Agenda+ F2F",
+        "css-properties-values-api-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14227",
+      "comments_in_window": 5,
+      "feature": null,
+      "recent": [
+        {
+          "author": "Loirooriol",
+          "date": "2026-07-26",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14227#issuecomment-5084262598",
+          "gist": "What do you mean with the syntax shorthand?"
+        },
+        {
+          "author": "LeaVerou",
+          "date": "2026-07-26",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14227#issuecomment-5084295388",
+          "gist": "The `@property --name <syntax>: initial-value, --name2 <syntax2>: initial-value2, ...` shorthand discussed in #7523"
+        },
+        {
+          "author": "Loirooriol",
+          "date": "2026-07-26",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14227#issuecomment-5084528369",
+          "gist": "Isn't it the other way round, that the shorthand statement syntax would expand to the normal rule syntax? So I'm not sure why it would be a concern here. I'm not getting the \"plural versions of all de"
+        }
+      ]
+    },
+    {
+      "issue": 13108,
+      "title": "[css-nesting-1] [selectors-4] Figure out the specificity of nesting with pseudos and non-pseudos",
+      "labels": [
+        "Agenda+",
+        "css-nesting-1",
+        "selectors-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13108",
+      "comments_in_window": 5,
+      "feature": "css-nesting",
+      "recent": [
+        {
+          "author": "josepharhar",
+          "date": "2026-07-24",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13108#issuecomment-5073007541",
+          "gist": "Is the issue that `::picker(select)` has less specificity than `[popover]`?"
+        },
+        {
+          "author": "emilio",
+          "date": "2026-07-24",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13108#issuecomment-5073014021",
+          "gist": "Yes, basically"
+        },
+        {
+          "author": "josepharhar",
+          "date": "2026-07-24",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13108#issuecomment-5073424807",
+          "gist": "Maybe we could have some way of saying that the UA style rule has a big selector so it gets more specificity? I think Anne brought up specificity issues with these before"
+        }
+      ]
+    },
+    {
+      "issue": 13609,
+      "title": "[css-forms-1] Proposed 'controls shouldn't look weird' design principle",
+      "labels": [
+        "Agenda+ F2F",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13609",
+      "comments_in_window": 5,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-07-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13609#issuecomment-5097091935",
+          "gist": "I agree that the biggest thing we need to worry about is it being *usable* and not looking broken/confusing. It needs to look *okay*, but without employing too much styling that'll need to be reverted"
+        },
+        {
+          "author": "lukewarlow",
+          "date": "2026-07-28",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13609#issuecomment-5103627714",
+          "gist": "I also think it's worth pointing out that the resolution this followed seems to not have stuck? (Border radius change on select) In which case it suggests that this idea of \"distasteful\" is even harde"
+        },
+        {
+          "author": "fantasai",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13609#issuecomment-5124189116",
+          "gist": "The current `<select>` styles are \"usable\". They're just so ugly that no self-respecting web designer would be willing to ship them as-is. That's the problem this principle is intending to solve."
+        }
+      ]
+    }
+  ],
+  "notable": [
+    {
+      "issue": 14235,
+      "title": "[css-link-params] Harmonize param() fragments with the :~: fragment directive",
+      "labels": [
+        "Agenda+",
+        "Agenda+ F2F",
+        "css-link-params-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14235",
+      "comments_in_window": 4,
+      "feature": null,
+      "recent": [
+        {
+          "author": "hober",
+          "date": "2026-07-28",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14235#issuecomment-5109063893",
+          "gist": "It'd be nice to do a corpus search for `id=param` vs. `id=text`, to understand the magnitude of the compat problem, but I think the consistency argument holds even if the compat story turns out to be "
+        },
+        {
+          "author": "hober",
+          "date": "2026-07-28",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14235#issuecomment-5109077253",
+          "gist": "Also, this isn't just about matching the STTF syntax, it's also to match STTF's behavior in terms of [what gets exposed to the page and how](https://wicg.github.io/scroll-to-text-fragment/#the-fragmen"
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14235#issuecomment-5120325801",
+          "gist": "Hm, my current design was just based on extending the existing [SVG fragment identifiers](https://www.w3.org/TR/SVG2/linking.html#SVGFragmentIdentifiersDefinitions), but that obviously predates the ST"
+        }
+      ]
+    },
+    {
+      "issue": 10884,
+      "title": "[css-grid] Decide on a name for `item-slack`",
+      "labels": [
+        "Agenda+ F2F",
+        "css-grid-3",
+        "topic: masonry"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/10884",
+      "comments_in_window": 3,
+      "feature": "masonry",
+      "recent": [
+        {
+          "author": "alisonmaher",
+          "date": "2026-07-24",
+          "url": "https://github.com/w3c/csswg-drafts/issues/10884#issuecomment-5073827734",
+          "gist": "I don't want to spend too much time relitigating this issue, but given some of the author confusion around this property, re-opening to discuss the following options and decide if we want to keep or c"
+        },
+        {
+          "author": "chriskirknielsen",
+          "date": "2026-07-24",
+          "url": "https://github.com/w3c/csswg-drafts/issues/10884#issuecomment-5074457363",
+          "gist": "With CSS grid, you can use `repeat(auto-fit|auto-fill, ...)`, so would that also cause confusion? And agreed on `fill` being more confusing, I associate that with colour/SVG, and it'd definitely look "
+        },
+        {
+          "author": "alisonmaher",
+          "date": "2026-07-24",
+          "url": "https://github.com/w3c/csswg-drafts/issues/10884#issuecomment-5074683512",
+          "gist": "Good point, another reason why \"fill\" here could be confusing."
+        }
+      ]
+    },
+    {
+      "issue": 14072,
+      "title": "[css-grid-3][masonry] Impact of grid-auto-* on default direction",
+      "labels": [
+        "css-grid-3",
+        "topic: masonry"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14072",
+      "comments_in_window": 3,
+      "feature": "masonry",
+      "recent": [
+        {
+          "author": "fantasai",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14072#issuecomment-5123835469",
+          "gist": "`grid-auto-rows` is often used for the secondary axis, so I think I'd prefer to keep things simple here and only key off of the `grid-template-*` properties."
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14072#issuecomment-5123877647",
+          "gist": "Agreed. I don't think we need to do anything particularly smart here in the first place; not providing *any grid-template at all* is an unusual thing to do, and it's fine to just give it a default beh"
+        },
+        {
+          "author": "alisonmaher",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14072#issuecomment-5124242598",
+          "gist": "Sounds good, yeah was just an idea I had when I hit this case writing some tests and was confused why it worked in grid and not grid lanes at first."
+        }
+      ]
+    },
+    {
+      "issue": 14143,
+      "title": "[css-ui] Maybe reconsider the :hover / :active top layer propagation rules?",
+      "labels": [
+        "Agenda+",
+        "css-ui-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14143",
+      "comments_in_window": 3,
+      "feature": null,
+      "recent": [
+        {
+          "author": "mfreed7",
+          "date": "2026-07-23",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14143#issuecomment-5060630180",
+          "gist": "As far as I can tell, everything being discussed here was also discussed at great length on the original issue (https://github.com/w3c/csswg-drafts/issues/11185), which we [resolved 1.5 years ago](htt"
+        },
+        {
+          "author": "emilio",
+          "date": "2026-07-23",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14143#issuecomment-5061877347",
+          "gist": "@mfreed7 I think the things not that have changed, but that (at least to my knowledge) weren't considered originally, and why I think this might deserve a second look, are:"
+        },
+        {
+          "author": "mfreed7",
+          "date": "2026-07-28",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14143#issuecomment-5107280768",
+          "gist": "Well, [my comment from December 2024](https://github.com/w3c/csswg-drafts/issues/11185#issuecomment-2551909017) does include customizable-select vs. \"non-top-layer use cases\", and it's discussed a lot"
+        }
+      ]
+    },
+    {
+      "issue": 14188,
+      "title": "[scroll-animations][css-viewport] How should the `zoom` property affect `animation-range-start`/`animation-range-end`",
+      "labels": [
+        "Agenda+",
+        "css-viewport-1",
+        "scroll-animations-1",
+        "web-animations-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14188",
+      "comments_in_window": 3,
+      "feature": "scroll-driven-animations",
+      "recent": [
+        {
+          "author": "emilio",
+          "date": "2026-07-23",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14188#issuecomment-5061049591",
+          "gist": "So the CSS case should be uncontroversial, it should be resolved like every other length. You can make the same argument with `position: absolute; top: 10px;` or so being relative to the containing bl"
+        },
+        {
+          "author": "weinig",
+          "date": "2026-07-23",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14188#issuecomment-5061843482",
+          "gist": "In the WebKit implementation, I opted to ignore zoom for any value set using the JS API regardless of whether it is a style originated Animation or not because it was slightly simpler and avoided a bu"
+        },
+        {
+          "author": "emilio",
+          "date": "2026-07-23",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14188#issuecomment-5062595188",
+          "gist": "That works for me FWIW. In general I think the values that the API should return should generally be unzoomed, otherwise you hit that round-tripping issue right? And it probably makes sense that for t"
+        }
+      ]
+    },
+    {
+      "issue": 14153,
+      "title": "[css-gaps-1] Define gaps for grid lanes",
+      "labels": [
+        "Needs Edits",
+        "css-gaps-1",
+        "css-grid-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14153",
+      "comments_in_window": 2,
+      "feature": "masonry",
+      "recent": [
+        {
+          "author": "kbabbitt",
+          "date": "2026-07-24",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14153#issuecomment-5064797866",
+          "gist": "There is a section about this in Grid 3 already: https://drafts.csswg.org/css-grid-3/#gutters"
+        },
+        {
+          "author": "fantasai",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14153#issuecomment-5123879111",
+          "gist": "Seems like this is just an editing issue in css-gaps-1, not something for the WG to discuss. Though I think, as with Grid L2, the Grid L3 needs to define how they apply."
+        }
+      ]
+    },
+    {
+      "issue": 14028,
+      "title": "[css-link-params-1] Time for FPWD",
+      "labels": [
+        "Administrative Tracker",
+        "css-link-params-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14028",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "bramus",
+          "date": "2026-07-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14028#issuecomment-5091562421",
+          "gist": "That link is not working for me. It says “Invalid ID”."
+        },
+        {
+          "author": "kbabbitt",
+          "date": "2026-07-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14028#issuecomment-5093797033",
+          "gist": "Corrected link: https://issues.chromium.org/issues/41482962"
+        }
+      ]
+    },
+    {
+      "issue": 13524,
+      "title": "[css-mixins-1] Auto-wrap mixin body in `@result` if omitted?",
+      "labels": [
+        "Agenda+ F2F",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13524",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "kbabbitt",
+          "date": "2026-07-23",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13524#issuecomment-5061101680",
+          "gist": "If we resolve on `@locals` per #14004 I think we can get rid of `@result` entirely."
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-07-23",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13524#issuecomment-5062626304",
+          "gist": "Correct, can and *should*."
+        }
+      ]
+    },
+    {
+      "issue": 13839,
+      "title": "[css-values] Clarifications on how calc-mix() simplification should work",
+      "labels": [
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13839",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13839#issuecomment-5120191955",
+          "gist": "Simple answer: as soon as you can, matching normal calc simplification rules. calc-mix(), somewhat unique among the mix functions, is purely a convenience method for just writing out the calc() manual"
+        }
+      ]
+    },
+    {
+      "issue": 13860,
+      "title": "[css-pseudo] `::before(<ident>)` / `::after(<ident>)`: A possible path forwards for multiple gencontent pseudos?",
+      "labels": [
+        "Agenda+ F2F",
+        "css-pseudo-4",
+        "css-pseudo-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13860",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-07-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13860#issuecomment-5096571287",
+          "gist": "(tldr note: there's an actual proposal at the end, after my commentary)"
+        },
+        {
+          "author": "LeaVerou",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13860#issuecomment-5121491018",
+          "gist": "There is absolutely a meaningful difference when it comes to human factors. `::before(ua-foo)` tells you what it does, how it works, where it is in the DOM, what pseudo-classes are supported, what pro"
+        }
+      ]
+    },
+    {
+      "issue": 12430,
+      "title": "[css-forms-1] Checkbox and radio sizing should meet WCAG minimum sizing",
+      "labels": [
+        "Needs Testcase (WPT)",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12430",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "phaux",
+          "date": "2026-07-24",
+          "url": "https://github.com/w3c/csswg-drafts/issues/12430#issuecomment-5068195477",
+          "gist": "24x24 is quite large. I've never seen a design system which makes checkboxes so big."
+        }
+      ]
+    },
+    {
+      "issue": 12594,
+      "title": "[css-navigation] Exposing navigation/route matching",
+      "labels": [
+        "Agenda+ F2F",
+        "css-navigation-1",
+        "css-view-transitions-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12594",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "noamr",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/12594#issuecomment-5118003200",
+          "gist": "For the CSSWG F2F, we want to discuss (and are hoping to resolve on) the basics of route matching:"
+        }
+      ]
+    },
+    {
+      "issue": 12671,
+      "title": "[css-mixin-1] How does Shadow DOM influence mixin lookup?",
+      "labels": [
+        "Agenda+ F2F",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12671",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "kbabbitt",
+          "date": "2026-07-23",
+          "url": "https://github.com/w3c/csswg-drafts/issues/12671#issuecomment-5061145820",
+          "gist": "Reviewing the minutes from last time, it sounds like loosely matched is going to be pretty important for authors. Tagging F2F so we can discuss again. @fantasai any update on a Webkit position?"
+        }
+      ]
+    },
+    {
+      "issue": 12023,
+      "title": "[css-grid-3][masonry] Adjustments/additions to `grid` shorthanding",
+      "labels": [
+        "Agenda+ F2F",
+        "Needs Design / Proposal",
+        "css-grid-3",
+        "topic: masonry"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12023",
+      "comments_in_window": 1,
+      "feature": "masonry",
+      "recent": [
+        {
+          "author": "fantasai",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/12023#issuecomment-5123503730",
+          "gist": "@alisonmaher and I discussed this topic a bit, and we would like to propose that both `grid` and any possible `grid-lanes` shorthand we add will reset all the properties currently reset by `grid` as w"
+        }
+      ]
+    },
+    {
+      "issue": 10804,
+      "title": "Incremental rollout plan for form controls",
+      "labels": [
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/10804",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "phaux",
+          "date": "2026-07-24",
+          "url": "https://github.com/w3c/csswg-drafts/issues/10804#issuecomment-5068747443",
+          "gist": "`<audio>` and `<video>` could also support `appearance: base` in the future"
+        }
+      ]
+    },
+    {
+      "issue": 14179,
+      "title": "[css-view-transitions-2] Scoped transitions on non-layout containable elements",
+      "labels": [
+        "Async Resolution: Call For Consensus",
+        "css-view-transitions-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14179",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "astearns",
+          "date": "2026-07-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14179#issuecomment-5095755511",
+          "gist": "The CSSWG will automatically accept this resolution one week from now if no objections are raised here. Anyone can add an emoji to this comment to express support. If you do not support this resolutio"
+        }
+      ]
+    },
+    {
+      "issue": 14070,
+      "title": "[css-color-5] Omissable alpha in relative color serialization",
+      "labels": [
+        "Agenda+",
+        "Agenda+ F2F",
+        "css-color-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14070",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14070#issuecomment-5123864834",
+          "gist": "I think omitting the alpha component from the alpha() function is fairly nonsensical. I *understand* the argument that this is just yet another relative-color-syntax function and following along with "
+        }
+      ]
+    },
+    {
+      "issue": 14223,
+      "title": "[css-values-5] Feedback on `<size-keyword>` for `calc-size()`",
+      "labels": [
+        "Closed as Question Answered",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14223",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-07-24",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14223#issuecomment-5072729795",
+          "gist": "The behavior of a size-keyword argument is distinct from a calc-size() or length-percentage argument, which is why they're separated the way they are."
+        }
+      ]
+    },
+    {
+      "issue": 14156,
+      "title": "[css-gaps-1] Define how repeated / listed gap-decoration values map to gaps in grid lanes containers",
+      "labels": [
+        "Agenda+ F2F",
+        "css-gaps-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14156",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "kbabbitt",
+          "date": "2026-07-24",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14156#issuecomment-5064862216",
+          "gist": "I think it should be consistent with Flexbox."
+        }
+      ]
+    },
+    {
+      "issue": 14084,
+      "title": "[css-values-5][css-conditionals-3] Clarifications on `random()` support evaluation",
+      "labels": [
+        "Closed as Question Answered",
+        "css-conditional-3",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14084",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14084#issuecomment-5124163039",
+          "gist": "At parse time, that `random()` is a `<number>`, which is invalid for `animation-duration` in the first place."
+        }
+      ]
+    },
+    {
+      "issue": 13226,
+      "title": "[css-forms-1] Use visibility for checkmark control?",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13226",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "lukewarlow",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13226#issuecomment-5118968843",
+          "gist": "I think this is in the spec and has test coverage so going to go ahead and close this issue."
+        }
+      ]
+    },
+    {
+      "issue": 13987,
+      "title": "[css-grid-3][masonry] Should auto-placement cursor be updated after placing an explicitly-placed item?",
+      "labels": [
+        "Agenda+ F2F",
+        "css-grid-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13987",
+      "comments_in_window": 1,
+      "feature": "masonry",
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13987#issuecomment-5123826408",
+          "gist": "I think the cursor *should not* be updated after an explicit placement. We want to, as much as possible, fill things in start-to-end, and while an explicitly-placed item violates that (at the author's"
+        }
+      ]
+    },
+    {
+      "issue": 13600,
+      "title": "[css-values-5][css-inline-3] Rounding to device pixels",
+      "labels": [
+        "css-inline-3",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13600",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "mindplay-dk",
+          "date": "2026-07-24",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13600#issuecomment-5069615811",
+          "gist": "Borders, padding and margins is where this currently hurts the most."
+        }
+      ]
+    },
+    {
+      "issue": 13680,
+      "title": "[css-mixins-1] Review of @macro",
+      "labels": [
+        "Agenda+ F2F",
+        "Needs Edits",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13680",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "kbabbitt",
+          "date": "2026-07-23",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13680#issuecomment-5061124501",
+          "gist": "I think we have a path to get rid of `@macro` entirely; see https://github.com/w3c/csswg-drafts/issues/13727#issuecomment-4983491314"
+        }
+      ]
+    },
+    {
+      "issue": 13015,
+      "title": "[css-mixins-1] Mixins can be called (but not defined) without params",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13015",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "astearns",
+          "date": "2026-07-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13015#issuecomment-5095551489",
+          "gist": "RESOLVED: Mixins with no parameters serialize without parentheses"
+        }
+      ]
+    },
+    {
+      "issue": 13950,
+      "title": "[css-grid-3] Should align-self/justify-self: stretch override explicit size?",
+      "labels": [
+        "Agenda+",
+        "Agenda+ F2F",
+        "css-grid-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13950",
+      "comments_in_window": 1,
+      "feature": "masonry",
+      "recent": [
+        {
+          "author": "fantasai",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13950#issuecomment-5123751975",
+          "gist": "@celestepan Would it make sense in this case for the author to set their heights with `min-height`? That would allow alignment to stretch it."
+        }
+      ]
+    },
+    {
+      "issue": 13742,
+      "title": "[css-values-5] Are <url>s with attr() tainted values allowed in custom properties?",
+      "labels": [
+        "Agenda+",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13742",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-07-29",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13742#issuecomment-5124190418",
+          "gist": "@anttijk Did my comment sufficiently resolve your question?"
+        }
+      ]
+    },
+    {
+      "issue": 13959,
+      "title": "[scroll-animations] ViewTimeline IDL specifies that the `subject` attribute is non-null, but allows construction with no `subject` specified",
+      "labels": [
+        "scroll-animations-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13959",
+      "comments_in_window": 1,
+      "feature": "scroll-driven-animations",
+      "recent": []
+    },
+    {
+      "issue": 13512,
+      "title": "[css-grid] grid-auto-flow: normal for display: grid?",
+      "labels": [
+        "Needs Data",
+        "css-grid-1",
+        "css-grid-2",
+        "css-grid-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13512",
+      "comments_in_window": 1,
+      "feature": "masonry",
+      "recent": [
+        {
+          "author": "fantasai",
+          "date": "2026-07-24",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13512#issuecomment-5073523112",
+          "gist": "Seems like a really high number, I wonder how much of that is for grids where the number of items matches the number of rows in the template (i.e. we don't generate any implicit rows anyway)..."
+        }
+      ]
+    }
+  ],
+  "fresh": [
+    {
+      "issue": 14237,
+      "title": "[css-grid-3][masonry] Should the start edge of placement remain the same even with `track-reverse`?",
+      "labels": [
+        "Agenda+",
+        "Agenda+ F2F",
+        "css-grid-3",
+        "topic: masonry"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14237",
+      "feature": "masonry",
+      "created_at": "2026-07-29",
+      "background": "For context, `track-reverse` is where we reverse the placement direction of items. In `grid-template-columsn`, that would mean instead of placing items from left-to-right, we'd place items from right-to-left, and in `grid-template-rows`, that would mean we're placing items from bottom-to-top.",
+      "related": [
+        {
+          "issue": 12971,
+          "url": "https://github.com/w3c/csswg-drafts/issues/12971"
+        }
+      ]
+    },
+    {
+      "issue": 14235,
+      "title": "[css-link-params] Harmonize param() fragments with the :~: fragment directive",
+      "labels": [
+        "Agenda+",
+        "Agenda+ F2F",
+        "css-link-params-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14235",
+      "feature": null,
+      "created_at": "2026-07-28",
+      "background": "The current spec defines link parameters with a bare fragment:",
+      "related": []
+    },
+    {
+      "issue": 14229,
+      "title": "[css-typed-om] Should parts of the CSS namespace be exposed on workers?",
+      "labels": [
+        "Agenda+",
+        "css-typed-om",
+        "cssom-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14229",
+      "feature": null,
+      "created_at": "2026-07-27",
+      "background": "TypedOM currently extends the `CSS` namespace like [this](https://drafts.css-houdini.org/css-typed-om-1/#:~:text=clamp%22%2C%20%7D%3B-,partial%20namespace%20CSS):",
+      "related": []
+    },
+    {
+      "issue": 14227,
+      "title": "[css-properties-values] CSSOM for multi-name and shorthand `@property`",
+      "labels": [
+        "Agenda+",
+        "Agenda+ F2F",
+        "css-properties-values-api-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14227",
+      "feature": null,
+      "created_at": "2026-07-25",
+      "background": "In https://github.com/w3c/csswg-drafts/issues/7523#issuecomment-3683970305 we resolved to adopt a comma-separated syntax for `<custom-property-name>` to support registering multiple properties that share the same descriptors in one go.",
+      "related": [
+        {
+          "issue": 7523,
+          "url": "https://github.com/w3c/csswg-drafts/issues/7523"
+        }
+      ]
+    },
+    {
+      "issue": 14222,
+      "title": "[css-anchor-position-1] margins against the original CB",
+      "labels": [
+        "css-anchor-position-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14222",
+      "feature": "anchor-positioning",
+      "created_at": "2026-07-24",
+      "background": "This is probably unfixable at this point, but it seems we don't have a good way to apply margins only for the purpose of managing spacing once we're in an \"overflow the CB but not the original CB\" situation.",
+      "related": []
+    },
+    {
+      "issue": 14223,
+      "title": "[css-values-5] Feedback on `<size-keyword>` for `calc-size()`",
+      "labels": [
+        "Closed as Question Answered",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14223",
+      "feature": null,
+      "created_at": "2026-07-24",
+      "background": "[`<size-keyword>`](https://drafts.csswg.org/css-values-5/#typedef-calc-size-size-keyword) has recently been [updated](https://github.com/w3c/csswg-drafts/commit/8c67ba03f553e5697424ac13a5d3f3188bc82bf2) to accept sizing *functions* like `fit-content()`, in addition to sizing *keywords*.",
+      "related": []
+    },
+    {
+      "issue": 14224,
+      "title": "[Meta] Wildcards in CSS syntax",
+      "labels": [
+        "Agenda+ F2F",
+        "meta"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14224",
+      "feature": null,
+      "created_at": "2026-07-24",
+      "background": "This is meant as a parent issue to track selective wildcarding of parts of css-syntax: classes, attributes, CSS properties, whatever. Tracking these issues together is important to end up with an architecturally coherent design, rather than individual ad hoc solutions.",
+      "related": []
+    }
+  ],
+  "spec_changes": [
+    {
+      "shortname": "css-color-4",
+      "title": "CSS Color Module Level 4",
+      "maturity": "CRD",
+      "date": "2026-07-28",
+      "url": "https://www.w3.org/TR/2026/CRD-css-color-4-20260728/"
+    },
+    {
+      "shortname": "css-color-hdr-1",
+      "title": "CSS Color HDR Module Level 1",
+      "maturity": "WD",
+      "date": "2026-07-28",
+      "url": "https://www.w3.org/TR/2026/WD-css-color-hdr-1-20260728/"
+    }
+  ]
+}

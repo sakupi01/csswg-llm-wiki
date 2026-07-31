@@ -170,6 +170,13 @@
   affiliation: Invited Expert
   roles: []
 
+- slug: tkent-google
+  name: Kent Tamura
+  github: tkent-google
+  irc_nicks: [tkent]
+  affiliation: Google
+  roles: [text-fit prototype / spec contributor]
+
 - slug: sebastianz
   name: Sebastian Zartner
   github: SebastianZ

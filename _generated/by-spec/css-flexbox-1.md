@@ -246,4 +246,3 @@
 - 2026-05-17 opened #13937: Flexbox stretch issue: aspect-ratio width ignored compared to explicit width
 - 2026-06-11 opened #14039: [css-flexbox-1] Flex container intrinsic sizing should disregard flex items with 'visibility:collapse'
 - 2026-07-01 opened #14118: [css-flexbox] Parsing ambiguity with `flex: 1 0`
-- 2026-07-29 RESOLVED #5742: Switch omitted flex-basis back to 0% for compat, add a note to the spec about it

@@ -132,4 +132,3 @@
 - 2026-06-29 opened #14098: [css-animations-2] Behavior of grouping together <keyframe-block> declarations is underspecified
 - 2026-07-23 opened #14219: [css-animations-2] Should a single value for `animation-delay` reset `animation-delay-end`?
 - 2026-07-23 opened #14220: [css-animations-2] Should `animation-delay-end` be added to `animation`?
-- 2026-08-05 opened #14281: [css-animations-2] [scroll-animations-1] The choice of the matched 0%/100% keyframes when filling the missing property values

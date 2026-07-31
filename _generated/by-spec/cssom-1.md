@@ -408,4 +408,3 @@
 - 2026-07-03 opened #14127: [cssom-1][css-cascade] Should `getComputedStyle()` return the empty string when element is not connected, part of the flat tree, etc?
 - 2026-07-21 opened #14210: [cssom] Browsers disagree on `getComputedStyle()` values of some pseudo-elements
 - 2026-07-27 opened #14229: [css-typed-om] Should parts of the CSS namespace be exposed on workers?
-- 2026-08-04 opened #14263: unicode-range descriptor should serialize codepoint hex digits as ASCII case-insensitive?

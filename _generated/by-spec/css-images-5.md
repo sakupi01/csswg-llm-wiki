@@ -20,4 +20,3 @@
 - 2026-03-25 opened #13725: [css-color-5] Move `light-dark()`?
 - 2026-03-31 RESOLVED #13724: No change to this spec. Move image() other than image(<color>) to next level of css-images. Add image(<color>) to CSS Snapshot 2026 "safe to release" list
 - 2026-03-31 RESOLVED #13725: Move to color-adjust (with the image version) once color 5 goes through wide review (with the image version)
-- 2026-08-05 opened #14278: [css-images] Use fragment directive delimiter for image fragments

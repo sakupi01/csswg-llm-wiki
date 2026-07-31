@@ -53,8 +53,3 @@
 - 2026-06-26 opened #14089: [animation-triggers-1] consolidate events & timelines into a single shared state source
 - 2026-07-03 opened #14129: [animation-triggers-1] formalize the <event-trigger-event> value
 - 2026-07-06 opened #14137: [animation-triggers-1] Term suggestion: trigger-using element
-- 2026-08-04 RESOLVED #13608: Adopt timeline-trigger-range as shorthand
-- 2026-08-04 RESOLVED #14060: Reset does not fire AnimationStart or AnimationEnd events
-- 2026-08-04 RESOLVED #14129: Align supported events with the events we have in DOM
-- 2026-08-04 RESOLVED #14129: UNRESOLVE “Align supported events with the events we have in DOM”
-- 2026-08-04 RESOLVED #14129: triggers can be written as functions

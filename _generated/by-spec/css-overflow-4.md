@@ -201,5 +201,3 @@
 - 2026-06-18 opened #14067: [css-overflow-4] Effect of border-radius on line-clamp float clipping
 - 2026-07-15 opened #14189: [css-overflow] Is shipping line-clamp: -webkit-legacy acceptable?
 - 2026-07-17 opened #14195: ScrollbarLength property
-- 2026-07-30 opened #14239: [css-overflow] Interaction between `block-ellipsis` and min/max-content sizes
-- 2026-07-30 opened #14240: [css-overflow] Should line-clamp hidden content create empty fragments?

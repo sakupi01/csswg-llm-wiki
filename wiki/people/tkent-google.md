@@ -1,26 +1,26 @@
 ---
-name: "Ian Kilpatrick"
-slug: bfgeek
+name: "Kent Tamura"
+slug: tkent-google
 kind: person
-github: "bfgeek"
-irc_nicks: ["iank_", "bfgeek"]
+github: "tkent-google"
+irc_nicks: ["tkent"]
 affiliation: "Google"
 generated_by: llm
 ---
 
-# Ian Kilpatrick
+# Kent Tamura
 
-- GitHub: [@bfgeek](https://github.com/bfgeek)
-- IRC nicks: `iank_`, `bfgeek`
+- GitHub: [@tkent-google](https://github.com/tkent-google)
+- IRC nicks: `tkent`
 - Affiliation: Google *(verify against `raw/data/w3c-api/group/css/participants.json` before citing)*
 
 ## Roles
 
-- masonry alternative proposal
+- text-fit prototype / spec contributor
 
 ## Activity in the mirror
 
-Issues authored: 148 / comments: 932 / IRC minute lines: 3
+Issues authored: 0 / comments: 30 / IRC minute lines: 0
 (from `_generated/people-activity.jsonl`)
 
 ---

@@ -1018,6 +1018,3 @@
 {"date": "2026-07-15", "type_guess": "telecon", "topics": 5, "resolutions": 3, "sources": ["bot"], "issues": [11644, 13428, 13500, 13925, 13926], "minutes_urls": []}
 {"date": "2026-07-22", "type_guess": "telecon", "topics": 8, "resolutions": 5, "sources": ["bot"], "issues": [12799, 13832, 13931, 13949, 13958, 13964, 13976, 14018], "minutes_urls": []}
 {"date": "2026-07-23", "type_guess": "telecon", "topics": 1, "resolutions": 0, "sources": ["bot"], "issues": [13980], "minutes_urls": []}
-{"date": "2026-07-29", "type_guess": "telecon", "topics": 7, "resolutions": 5, "sources": ["bot"], "issues": [5742, 9519, 9706, 10809, 13490, 13839, 13959], "minutes_urls": []}
-{"date": "2026-08-04", "type_guess": "f2f", "topics": 16, "resolutions": 15, "sources": ["bot"], "issues": [3208, 9849, 11007, 12594, 12671, 13608, 13860, 14060, 14089, 14125, 14129, 14181, 14212, 14224, 14243], "minutes_urls": []}
-{"date": "2026-08-05", "type_guess": "f2f", "topics": 25, "resolutions": 28, "sources": ["bot"], "issues": [5675, 9556, 10884, 11506, 12023, 12971, 13260, 13728, 13731, 13834, 13930, 13950, 13983, 13987, 14052, 14112, 14153, 14154, 14155, 14156, 14169, 14172, 14190, 14235, 14237], "minutes_urls": []}

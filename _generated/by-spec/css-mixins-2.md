@@ -4,8 +4,3 @@
 - 2025-11-14 opened #13107: [css-mixins] Syntax to alias mixins
 - 2026-06-03 opened #14004: [css-variables][css-mixins] In-place hygienic rewriting?
 - 2026-06-04 opened #14015: [css-mixins] Should mixin arguments be `;` separated?
-- 2026-07-30 opened #14243: [css-mixins-1][Meta] Converging the mixin authoring model (@result, locals, @mixin/@macro merge)
-- 2026-08-04 RESOLVED #14243: Drop @result, use @private for mixin locals and the rest of the mixin body is the result
-- 2026-08-04 RESOLVED #14243: drop @macro and use @mixin
-- 2026-08-04 RESOLVED #14243: specify @private that gets nested inside style rules for now
-- 2026-08-04 RESOLVED #14243: we start specify @private

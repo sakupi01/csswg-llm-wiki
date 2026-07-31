@@ -302,8 +302,7 @@
 - 2026-02-05 opened #13458: [css-align][css-inline] Resolution of `align-content: normal` on table cells needs to take into account that `vertical-align` is no longer a longhand
 - 2026-02-16 RESOLVED #13327: Add `hanging` to `alignment-baseline` to match `dominant-baseline
 - 2026-03-04 opened #13600: [css-values-5][css-inline-3] Rounding to device pixels
-- 2026-04-22 opened #13834: [css-box-4][css-inline-3] trimming margins on inline boxes
+- 2026-04-22 opened #13834: [css-box-4][css-inline-3] margin-trim on inline boxes
 - 2026-05-21 opened #13951: [css-inline-3] Alignment behavior of `vertical-align: middle` differs from existing CSS2 implementation
 - 2026-06-28 opened #14097: [css-inline-3] Add `hanging` value to `text-box-edge`
 - 2026-06-29 opened #14104: [css-break] `box-decoration-break: clone` on inline box should exclude fragments around block-level
-- 2026-08-05 RESOLVED #13834: Apply margin-break to inline-axis margins of inline-level boxes (after white space collapsing). The initial value behaves as 'keep' for compat. End margin hangs if subsequent spaces are hanging.

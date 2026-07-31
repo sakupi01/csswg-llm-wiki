@@ -313,4 +313,3 @@
 - 2026-07-01 RESOLVED #14062: Use these values for ::picker(select)
 - 2026-07-01 RESOLVED #14062: add flip-self-inline and flip-self-block to position-try
 - 2026-07-24 opened #14222: [css-anchor-position-1] margins against the original CB
-- 2026-08-05 opened #14274: [css-anchor-position] Match alignment's new % behavior in anchor()

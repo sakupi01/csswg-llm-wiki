@@ -48,6 +48,7 @@
 - 2020-04-10 opened #4940: [css-selectors] Nearest descendant selector
 - 2020-04-24 opened #5000: [css-selectors] Add a :scrolling-element selector
 - 2020-05-09 opened #5057: [css-selectors] Proposal: Selector Boundary
+- 2020-07-27 opened #5365: [css-selectors] Expose <input type=search> clear icon as a standard pseudo element
 - 2020-08-26 opened #5472: [selectors‑5] Making `::` a (pseudo‑)combinator
 - 2020-11-04 opened #5694: [selectors] New selector based on the amount of child elements
 - 2020-11-25 opened #5745: [selectors][css-nesting] Move nest-containing and nest-prefixed selector definitions to Selectors

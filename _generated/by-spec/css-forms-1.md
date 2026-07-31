@@ -8,7 +8,6 @@
 - 2019-10-10 opened #4410: [css-pseudo-4] Standardizing input[type="range"] styling
 - 2020-03-14 opened #4875: [css-text] Provide CSS support for automatic spacing (or other separators) in text input field
 - 2020-06-09 opened #5187: Allow specifying the "accent color" of a form control element
-- 2020-07-27 opened #5365: [css-selectors] Expose <input type=search> clear icon as a standard pseudo element
 - 2020-08-26 RESOLVED #5187: The group wants to add accent-color and discussion on details will continue
 - 2020-09-09 RESOLVED #4410: Continue working on standardizing these 3 pseudos
 - 2020-10-23 RESOLVED #5187: Mason Freed added as UI 4 editor
@@ -197,11 +196,3 @@
 - 2026-07-01 RESOLVED #14062: add flip-self-inline and flip-self-block to position-try
 - 2026-07-07 opened #14140: [css-forms-1] control-value() meta issue
 - 2026-07-13 opened #14172: [css-forms-1] Better default sizing for custom select?
-- 2026-07-31 opened #14249: [css-forms-1] Adopt box-sizing on all form control parts
-- 2026-07-31 opened #14250: [css-forms-1] Inherit all typography, but not into icons
-- 2026-07-31 opened #14251: [css-forms-1] Cursors for base appearance
-- 2026-07-31 opened #14252: [css-forms-1] Adopt box-shadow on ::picker()
-- 2026-07-31 opened #14254: [css-forms-1] Refine base appearance colors
-- 2026-07-31 opened #14255: [css-forms-1] Apply overflow and wrapping control to select buttons
-- 2026-08-01 opened #14256: [css-forms-1] Improve appearance: base <select> styling to be usable as-is
-- 2026-08-05 opened #14273: [css-forms-1] Should size restrictions for custom selects also apply to inline size?

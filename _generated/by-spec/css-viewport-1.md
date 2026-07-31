@@ -58,4 +58,3 @@
 - 2026-01-14 opened #13350: [css-border][css-viewport] Consider moving border-width pixel snapping from computed value to used value
 - 2026-03-09 RESOLVED #8757: Define whitespace for `<meta>` parsing using WHATWG infra (adding `U+000C FF`)
 - 2026-07-15 opened #14188: [scroll-animations][css-viewport] How should the `zoom` property affect `animation-range-start`/`animation-range-end`
-- 2026-08-04 opened #14260: [css-viewport][css-fonts] Effect of the `zoom` property on font metrics as applied to length units

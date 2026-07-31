@@ -20,8 +20,3 @@
 - 2026-01-28 RESOLVED #13199: Add between with space-separated arguments
 - 2026-07-01 RESOLVED #11801: Applies not just to links
 - 2026-07-01 RESOLVED #11801: add :nav-source pseudo for this use case
-- 2026-08-04 RESOLVED #12594: Drop 'with' from the spec for now, open an issue with motivating examples to add it back in when we have those
-- 2026-08-04 RESOLVED #12594: change @route to @location
-- 2026-08-04 opened #14266: [css-navigation-1] Base URL for CSS-defined URL patterns
-- 2026-08-04 opened #14267: [css-navigation-1] Do we need `with` or a notion of the "Other URL"
-- 2026-08-04 opened #14268: [css-navigation-1] Selecting based on URLPattern parameters

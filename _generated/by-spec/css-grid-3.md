@@ -211,3 +211,16 @@
 - 2026-07-09 opened #14153: [css-gaps-1] Define gaps for grid lanes
 - 2026-07-22 RESOLVED #13931: we will do reversals of static positions in grid-lanes
 - 2026-07-29 opened #14237: [css-grid-3][masonry] Should the start edge of placement remain the same even with `track-reverse`?
+- 2026-08-05 RESOLVED #10884: Rename to 'fit-tolerance'.
+- 2026-08-05 RESOLVED #12023: Both grid and any grid-lanes shorthand we introduce reset all of the container properties for both grid and grid-lanes.
+- 2026-08-05 RESOLVED #12023: Pursue a grid-lanes shorthand syntax.
+- 2026-08-05 RESOLVED #12971: reversing placement does not affect line track ordering or explicit placement
+- 2026-08-05 RESOLVED #13950: Priority of stretch alignment vs sizing properties is same as in flex/grid
+- 2026-08-05 RESOLVED #13983: Accommodate subgrid gutters and margin/border/padding even if subgrid tracks are empty
+- 2026-08-05 RESOLVED #13983: Fix the spec to handle gaps properly
+- 2026-08-05 RESOLVED #13987: Remove issue, leave spec as-is (not updating auto-placement cursor with explicit placement)
+- 2026-08-05 RESOLVED #14052: Introduce flow-start/flow-end as value aliases for flex-start/flex-end; they respond to flex-flow as well as grid-auto-flow and any grid-lanes controllers; and canonical values are flow-* unless compat requires flex-*
+- 2026-08-05 RESOLVED #14153: each item generates a rule for itself start-wise in the stacking direction
+- 2026-08-05 RESOLVED #14237: this falls out of resolution in 14052
+- 2026-08-05 RESOLVED #5675: Draft this proposal as an experimental, informative appendix of Grid L3 and collect feedback.
+- 2026-08-05 RESOLVED #5675: put a per lane reading flow value into the reading flow spec

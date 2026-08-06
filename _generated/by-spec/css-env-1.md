@@ -66,3 +66,4 @@
 - 2026-01-09 opened #13319: Support Negative Indexing in env(viewport-segment-* x y) for Right/Bottom Referencing
 - 2026-01-14 RESOLVED #12780: Add env(safe-area-inset-*) to Safe to Release exceptions
 - 2026-03-30 opened #13744: [css-conditional-5][css-env-1] Evaluation of support of custom environment variables
+- 2026-07-30 opened #14241: [css-env-1] How exactly should custom environment variables resolve?

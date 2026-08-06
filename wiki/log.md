@@ -32,3 +32,4 @@ Append-only. One line per operation: `## [YYYY-MM-DD] <kind> | <summary>`.
 ## [2026-07-28] digest | 2026-07 (monthly) refreshed with local sync through 07-28: #13015 async RESOLVED (param-less mixins serialize without parens), #14179 async proposed (startViewTransition throws w/o layout containment), #10001 wildcard bikeshed + #14224, css-color-4 CRD refreshed 07-28, link-params Chromium tracking; feed rebuilt + links validated (98 gated URLs)
 ## [2026-07-28] digest | backfill missing weeklies 2026-W29 (07-09..16: ::first-line/input #13926, SDA fix-the-tests #11644/#13500) + 2026-W30 (07-16..23: per-axis scroll snap #14018 + flat tree #13832, masonry static positions #13931, filter-effects cleanups #13949/#13964); packs 2026-07-16/2026-07-23 generated; feed now 6 digests, links validated
 ## [2026-07-30] update | CI weekly sync (see Actions run summary)
+## [2026-08-06] update | CI weekly sync (see Actions run summary)

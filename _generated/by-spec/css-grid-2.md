@@ -101,3 +101,6 @@
 - 2026-05-06 opened #13890: [css-multicol][css-scroll-snap] Snapping to columns
 - 2026-05-15 opened #13930: [css-grid-1] Abspos with an overflowing grid CB
 - 2026-05-28 opened #13983: [css-grid-2][css-grid-3] Subgrid gap contributions when empty
+- 2026-08-05 RESOLVED #13930: when grid-placement is fully auto in an axis, use the scrollport edges (otherwise do as specced)
+- 2026-08-05 RESOLVED #13983: Accommodate subgrid gutters and margin/border/padding even if subgrid tracks are empty
+- 2026-08-05 RESOLVED #13983: Fix the spec to handle gaps properly

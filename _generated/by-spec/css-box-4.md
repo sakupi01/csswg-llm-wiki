@@ -32,5 +32,8 @@
 - 2025-01-15 opened #11506: [css-box-4] Does margin-trim affect the computed values of margins?
 - 2025-10-17 opened #12965: [css-box][css-shapes][css-masking] `half-border-box` in Box-Edge Keywords
 - 2026-03-26 opened #13731: [css-box-4] Scope margin-trim down to block & multi-column containers only?
-- 2026-04-22 opened #13834: [css-box-4][css-inline-3] margin-trim on inline boxes
+- 2026-04-22 opened #13834: [css-box-4][css-inline-3] trimming margins on inline boxes
 - 2026-05-06 RESOLVED #11397: trim margins the same as 0 margins for alignment
+- 2026-08-05 RESOLVED #11506: margin-trim doesn't affect the resolved value of margin properties
+- 2026-08-05 RESOLVED #13731: margin-trim only applies to block / multicol
+- 2026-08-05 RESOLVED #13834: Apply margin-break to inline-axis margins of inline-level boxes (after white space collapsing). The initial value behaves as 'keep' for compat. End margin hangs if subsequent spaces are hanging.

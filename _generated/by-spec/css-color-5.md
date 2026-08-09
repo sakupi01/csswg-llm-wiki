@@ -263,3 +263,5 @@
 - 2026-06-29 opened #14100: [css-color-5] Example 32 is outdated
 - 2026-06-30 opened #14115: [css-color-5] 11.2. Serializing Origin Colors does not cover light-dark()
 - 2026-07-20 opened #14204: [css-color-5] Drop `Required conversion:` wording?
+- 2026-08-06 RESOLVED #14070: Don't omit alpha of 1 in relative color syntax
+- 2026-08-06 RESOLVED #14070: alpha is required in alpha()

@@ -280,3 +280,7 @@
 - 2026-07-15 RESOLVED #11644: spec is right, fix the tests
 - 2026-07-15 RESOLVED #13500: Spec is right, fix tests, add some tests for the animated value
 - 2026-07-15 opened #14188: [scroll-animations][css-viewport] How should the `zoom` property affect `animation-range-start`/`animation-range-end`
+- 2026-07-29 RESOLVED #13959: change the spec to make the constructor take a non-optional dictionary, and dictionary makes element required, and impls check compat of that
+- 2026-08-04 RESOLVED #14181: Start specifying animation-range: stuck
+- 2026-08-05 opened #14281: [css-animations-2] [scroll-animations-1] The choice of the multiple matched 0%/100% keyframes when using <timeline-range-offset> offsets
+- 2026-08-07 opened #14296: [scroll-animations-1] What should a view progress timeline do when its subject is position:fixed?

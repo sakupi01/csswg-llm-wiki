@@ -259,5 +259,4 @@
 - 2025-07-17 opened #12491: [css-text] Clarify line breaking for atomic inlines within `white-space: nowrap`
 - 2025-09-17 RESOLVED #12008: Rendering should be equivalent to line breaking at that soft wrap opportunity, and applying white space processing part 2 before inserting ellipsis at the end
 - 2025-12-30 opened #13277: [css-inline-3][css-text-3] Clarification on vertical-align shorthand and text boundary shaping
-- 2026-03-19 opened #13688: Support for double hyphenation across line breaks (typographic convention)
 - 2026-03-20 opened #13695: [css-text-4] White Space Processing Phase 2 questions

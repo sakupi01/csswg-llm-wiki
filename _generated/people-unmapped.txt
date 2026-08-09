@@ -1,30 +1,30 @@
-  1278  cdoublev
-  1143  noamr
+  1280  cdoublev
+  1153  noamr
   1069  litherum
-  1030  Crissov
-   784  romainmenke
+  1034  Crissov
+   790  romainmenke
    769  FremyCompany
    705  upsuper
    704  AmeliaBR
    696  kojiishi
+   526  jakearchibald
    518  jfkthame
-   517  jakearchibald
-   510  ydaniv
+   513  ydaniv
    493  MatsPalmgren
    474  faceless2
    459  zcorpan
    451  yisibl
    440  SelenIT
-   407  r12a
-   365  weinig
-   346  bradkemper
+   408  r12a
+   369  weinig
+   353  bradkemper
+   342  kbabbitt
    341  jonjohnjohnson
    341  tantek
-   334  lukewarlow
-   330  kbabbitt
+   338  lukewarlow
    305  gsnedders
-   288  josepharhar
-   280  facelessuser
+   289  josepharhar
+   282  facelessuser
    263  jsnkuhn
    259  xfq
    255  gregwhitworth
@@ -51,19 +51,19 @@
    125  myles
    121  AtkinsSJ
    117  Zhang-Junzhi
+   117  schenney-chromium
+   116  BorisChiou
    116  JoshTumath
-   116  schenney-chromium
-   115  BorisChiou
    114  Myndex
+   114  andreubotella
    114  dino
-   111  andreubotella
-   110  Dan503
+   111  Dan503
    108  sesse
+   107  Psychpsyo
    106  ByteEater-pl
    105  jihyerish
    104  ExE-Boss
    104  matthew-dean
-   103  Psychpsyo
    102  SimonSapin
    102  ghost
    100  ccameron-chromium
@@ -81,11 +81,11 @@
     81  delan
     81  simevidas
     80  aphillips
+    79  sorvell
     78  atotic
+    78  trusktr
     77  fergald
-    77  trusktr
     76  karlcow
-    74  sorvell
     73  inoas
     72  hiikezoe
     72  sideshowbarker
@@ -96,9 +96,9 @@
     69  mayank99
     68  domenic
     68  nigelmegitt
+    66  hober
     66  stephenmcgruer
     65  danielsakhapov
-    64  hober
     64  mattwoodrow
     63  sanketj
     63  skobes-chromium
@@ -106,12 +106,12 @@
     59  Que-tin
     59  meyerweb
     59  tiroj
+    57  anttijk
     56  devongovett
+    56  nex3
     56  valtlai
     55  Lorp
     55  alice
-    55  anttijk
-    55  nex3
     54  jimmyfrasche
     53  dandclark
     53  jogibear9988
@@ -127,8 +127,8 @@
     47  KevinDoughty
     47  Manishearth
     47  Westbrook
+    47  justinfagnani
     46  jpamental
-    46  justinfagnani
     46  mysteryDate
     46  pes10k
     45  Malvoz
@@ -137,40 +137,40 @@
     45  frehner
     45  jamesnw
     45  myakura
+    45  smaug----
     44  DarkWiiPlayer
     44  SetTrend
+    44  castastrophe
     44  csnardi
     44  george-steel
     44  jyasskin
     44  saschanaz
+    44  tomayac
     43  KurtCattiSchmidt
-    43  castastrophe
     43  keithjgrant
-    43  tomayac
     41  ChrisL_
     41  dead-claudia
     41  kidayasuo
-    41  smaug----
+    41  sb3nder
+    40  jwatt
     40  pyoor
     39  theres-waldo
     38  aethanyc
     38  behdad
     38  cathiechen
     38  felipeerias
+    38  jav099
     38  liamquin
-    38  sb3nder
-    37  jwatt
+    37  jpzwarte
     37  proimage
     37  rcabanier
     37  svillar
+    37  vitorroriz
     36  chriskirknielsen
     36  korenevskiy
     36  nmn
     36  o-t-w
     35  JaneOri
-    35  jav099
-    35  jpzwarte
-    35  vitorroriz
     34  Marat-Tanalin
     34  TKDev7
     34  wangxianzhu
@@ -181,10 +181,11 @@
     32  szager-chromium
     31  ChumpChief
     31  GPHemsley
+    31  aardrian
+    31  celestepan
     31  craigkovatch
     31  oSamDavis
     30  tuankiet65
-    29  aardrian
     29  darktears
     29  diekus
     29  dlibby-
@@ -197,4 +198,3 @@
     28  samuelbradshaw
     28  verbessern
     28  vrugtehagel
-    27  AutoSponge

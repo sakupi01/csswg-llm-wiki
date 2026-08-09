@@ -361,3 +361,8 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - 2026-07-21 opened #14213: [css-values-5] Should ident() be an arbitrary substitution function?
 - 2026-07-23 opened #14221: [css-values-5] Should `no-clamp` be separated with a comma in `progress()`?
 - 2026-07-24 opened #14223: [css-values-5] Feedback on `<size-keyword>` for `calc-size()`
+- 2026-07-29 RESOLVED #13839: calc-mix() simplifies like calc() as described in the issue, except the mixed-type case resolves to calc(0px + 0%)
+- 2026-08-06 RESOLVED #13978: All functions that always return either <integer> or <number> are "numeric functions", and these are range-clamped, rounded to <integer> in integer contexts, and are not wrapped in calc() when serialized (because the relevant behavior is built in).
+- 2026-08-06 RESOLVED #14213: ident() is an arbitrary substitution function
+- 2026-08-06 RESOLVED #14288: Rename toggle() to cycle()
+- 2026-08-06 opened #14288: [css-values-5] Rename toggle() function

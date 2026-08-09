@@ -104,3 +104,4 @@
 - 2026-01-24 opened #13392: [mediaqueries-4] Steps to Recommendation
 - 2026-01-26 opened #13398: Need for detecting the typical viewing distance in media queries
 - 2026-03-31 RESOLVED #13377: (prefers-color-scheme) reflects <meta name=color-scheme>. Add (bikeshed-color-scheme) to always reflect the preference coming from the browser. (pending feedback from other commenters in the issue)
+- 2026-08-03 opened #14258: [mediaqueries] Can you clarify the note about the future deprecation of media types?

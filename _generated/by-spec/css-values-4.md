@@ -392,3 +392,4 @@
 - 2026-06-30 opened #14117: [css-values][svg] Should the `width`/`height` attr of `<svg>` require literal for determining natural sizes?
 - 2026-07-13 opened #14174: [css-selectors][css-values] Proposal: A Unified Data API for CSS via the `:data()` pseudo-class and `data()` function
 - 2026-07-15 RESOLVED #13500: Spec is right, fix tests, add some tests for the animated value
+- 2026-08-09 opened #14300: [css-values] Percentages and unit arithmetic

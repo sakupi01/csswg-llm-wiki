@@ -504,3 +504,5 @@
 - 2026-05-18 RESOLVED #8291: Make explicit that `oblique 14deg` computes and serializes to `oblique 14deg
 - 2026-05-22 opened #13953: [css-fonts-4] Should CSSFontFeatureValuesRule attributes be [SameObject]?
 - 2026-06-30 opened #14116: [css-fonts-4] When are relative units, calc(), var() and env() evaluated for values in @font-palette-values descriptors
+- 2026-08-04 opened #14260: [css-viewport][css-fonts] Effect of the `zoom` property on font metrics as applied to length units
+- 2026-08-04 opened #14263: unicode-range descriptor should serialize codepoint hex digits as ASCII case-insensitive?

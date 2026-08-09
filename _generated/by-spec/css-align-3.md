@@ -303,3 +303,5 @@
 - 2026-06-03 opened #14008: [css-align-3][css-anchor-position-1] overflow limit rect behaviour with fixedpos & default anchor.
 - 2026-06-15 opened #14052: [css-grid-3][masonry] For `align-items`/`justify-items`, should `fill-reverse` affect the definition of `start` and `end`?
 - 2026-07-16 opened #14190: [css-align][html] Should `align-content` work on a block-container `<button>`?
+- 2026-08-05 RESOLVED #14052: Introduce flow-start/flow-end as value aliases for flex-start/flex-end; they respond to flex-flow as well as grid-auto-flow and any grid-lanes controllers; and canonical values are flow-* unless compat requires flex-*
+- 2026-08-05 RESOLVED #14190: Adopt overrideable UA stylesheet rules for centering contents of form controls via align-content per Emilio's comment, instead of UA magic.

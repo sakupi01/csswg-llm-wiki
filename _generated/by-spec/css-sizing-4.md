@@ -232,3 +232,4 @@
 - 2026-02-10 opened #13478: [css-sizing] Production for values common to max/min/preferred widths and heights
 - 2026-03-13 opened #13652: [css-sizing] "behaves as auto" needs clarifications
 - 2026-04-01 RESOLVED #12333: for non replaced elements, while computing the initial block size, min-content, max-content etc. are considered indefinite
+- 2026-08-05 RESOLVED #13260: Resolve the margin behavior against the same containing block that we resolve percentages against

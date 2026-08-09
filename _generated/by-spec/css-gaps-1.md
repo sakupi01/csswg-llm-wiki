@@ -98,6 +98,14 @@
 - 2026-06-24 opened #14083: [css-gaps] Allow percentage values with rule-width to account for fluid gaps
 - 2026-07-09 opened #14153: [css-gaps-1] Define gaps for grid lanes
 - 2026-07-09 opened #14154: [css-gaps-1] Empty space in the stacking axis should not be part of a gap
-- 2026-07-09 opened #14155: [css-gaps-1] In grid lanes containers, alignment should not shift gap-decoration placement
+- 2026-07-09 opened #14155: [css-gaps-1] In grid lanes containers, alignment should shift gap-decoration placement
 - 2026-07-09 opened #14156: [css-gaps-1] Define how repeated / listed gap-decoration values map to gaps in grid lanes containers
 - 2026-07-10 opened #14169: [css-gaps-1] Define rule-break: normal for grid lanes containers
+- 2026-08-05 RESOLVED #14153: each item generates a rule for itself start-wise in the stacking direction
+- 2026-08-05 RESOLVED #14154: Gap is exactly the gap that is specified, not including space left over due to placement (which could in theory be used for dense packing or alignment). The gap is adjacent to the spanner (it does not drift into this space).
+- 2026-08-05 RESOLVED #14155: close no change
+- 2026-08-05 RESOLVED #14156: Colors/styles/etc are assigned independently per track, from placement start.
+- 2026-08-05 RESOLVED #14156: In flex, grid, and grid lanes, assignment is in placement direction (which may not be writing direction, if reversed)
+- 2026-08-05 RESOLVED #14156: There's no such thing as a continous rule across lanes, always done per lane even for spanning items.
+- 2026-08-05 RESOLVED #14169: Grid axis rules match Grid
+- 2026-08-05 RESOLVED #14169: Stacking axis rules are always split, per previous resolution.

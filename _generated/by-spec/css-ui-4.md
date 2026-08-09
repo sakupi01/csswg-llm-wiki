@@ -317,3 +317,6 @@
 - 2026-07-08 opened #14143: [css-ui] Maybe reconsider the :hover / :active top layer propagation rules?
 - 2026-07-17 opened #14192: [css-color-4] [css-ui-4] `color: AccentColor; accent-color: currentColor` cycle
 - 2026-07-17 opened #14193: [css-color-4] [css-ui-4] computed value of `accent-color: AccentColor`
+- 2026-08-06 RESOLVED #14192: 'AccentColor' and 'AccentColorText' resolve against the element's own 'accent-color' in 'color' (and everywhere else other than 'accent-color' itself)
+- 2026-08-06 RESOLVED #14192: AccentColor/AccentColorText on either 'color' or 'accent-color' looks at 'accent-color' on the parent.
+- 2026-08-06 RESOLVED #14193: accentcolor/accentcolortext resolve at computed value time

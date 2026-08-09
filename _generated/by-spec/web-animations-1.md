@@ -143,3 +143,4 @@
 - 2026-05-29 opened #13988: [web-animations-1][scroll-animations-1] View Timelines should not become inactive (or not be ready) on containers with no scrollable overflow
 - 2026-06-30 opened #14113: [web-animations-1] null or undefined keyframe in iterable keyframe object causes an assertion failure
 - 2026-07-20 opened #14206: [web-animations-1] What should happen when `duration` of `EffectTiming` is a string that is not `auto`?
+- 2026-07-31 opened #14246: [web-animations] Restrict lengths in the <easing-function> production parsed from the EffectTiming/OptionalEffectTiming dictionaries to absolute lengths

@@ -79,3 +79,4 @@
 - 2026-01-29 RESOLVED #10961: Add inline-grid-lanes, and remove indication that inline- syntaxes are legacy or otherwise inferior.
 - 2026-05-13 opened #13920: Define fieldset & legend rendering in CSS
 - 2026-05-27 opened #13969: Define frameset rendering in CSS
+- 2026-08-06 opened #14290: [css-grid-3][css-display-4] Naming for grid lanes reading-flow values

@@ -116,6 +116,7 @@
 - 2026-01-28 RESOLVED #13044: outline-style: auto cannot be listified
 - 2026-01-29 opened #13410: [css-borders][css-tables] Define how listified borders collapse
 - 2026-02-17 opened #13506: [css-borders-4] Allow overriding single-shape `border-shape` color/width
+- 2026-02-17 opened #13511: [css-border][css-animation][css-transition] Animations/Transitions of border-width after change of computed value definition in issue #11494
 - 2026-02-18 RESOLVED #13308: Close no change, don't mind the inconsistency with listified borders
 - 2026-02-25 RESOLVED #12906: Round outline-offset same as outline-width and border-width
 - 2026-03-04 RESOLVED #3720: Add <line-width> to gap and text-decoration-thickness and stroke-width.

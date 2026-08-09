@@ -82,3 +82,4 @@
 - 2026-02-20 opened #13537: [css-overflow-5] Accessible semantics for `:target-current`
 - 2026-02-25 RESOLVED #12122: adapt the rest of may 29th proposal with the Tabs links terminology
 - 2026-02-25 RESOLVED #13407: update scrollbar-gutters feature to include the View Transitions use-case
+- 2026-08-06 opened #14287: [css-overflow-5] More scroll axis locking behavior control

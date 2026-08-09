@@ -90,6 +90,13 @@
 - 2026-06-04 opened #14015: [css-mixins] Should mixin arguments be `;` separated?
 - 2026-06-04 opened #14016: [css-mixins-1] More consistent handling of function return type
 - 2026-06-10 RESOLVED #14016: Return type of the CSS function return type behaves as a registered custom property
+- 2026-07-10 opened #14165: [css-mixins-1] How should missing non-defaulted arguments for custom functions be handled?
 - 2026-07-17 opened #14194: [css-mixins] `@apply` should accept a comma-separated list of identifiers
 - 2026-07-21 opened #14212: [css-mixins-1] Is `!important` valid in functions and/or mixins?
 - 2026-07-27 RESOLVED #13015: Mixins with no parameters serialize without parentheses
+- 2026-07-30 opened #14243: [css-mixins-1][Meta] Converging the mixin authoring model (@result, locals, @mixin/@macro merge)
+- 2026-08-04 RESOLVED #14212: in function bodies, function and mix in arguments, and all private blocks !important is invalid and causes declaration to be invalid
+- 2026-08-04 RESOLVED #14243: Drop @result, use @private for mixin locals and the rest of the mixin body is the result
+- 2026-08-04 RESOLVED #14243: drop @macro and use @mixin
+- 2026-08-04 RESOLVED #14243: specify @private that gets nested inside style rules for now
+- 2026-08-04 RESOLVED #14243: we start specify @private

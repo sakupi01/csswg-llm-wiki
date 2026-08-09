@@ -14,3 +14,10 @@
 - 2026-06-10 opened #14030: [css-link-params] Allowing for efficient animation
 - 2026-06-17 RESOLVED #13767: require at least 2 values in the param function
 - 2026-06-17 opened #14063: [css-link-params] Do we need tainting?
+- 2026-07-28 opened #14235: [css-link-params] Harmonize param() fragments with the :~: fragment directive
+- 2026-07-29 opened #14238: [css-link-params] can a URL-fragment param() contain var()?
+- 2026-07-30 opened #14241: [css-env-1] How exactly should custom environment variables resolve?
+- 2026-07-31 opened #14247: [css-link-params] Are two references with different parameters independent instances?
+- 2026-08-05 RESOLVED #14235: Prefix with :~: -- and write an explainer and send this over to the TAG.
+- 2026-08-05 opened #14275: [css-link-params] `param()` should use a colon, not a comma
+- 2026-08-05 opened #14276: [css-link-params] `param()` should accept multiple key-value pairs

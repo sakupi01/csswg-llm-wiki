@@ -252,3 +252,5 @@
 - 2026-04-21 opened #13831: [css-view-transitions] Capture the old state / capture the new state is missing content-visibilty check.
 - 2026-06-22 opened #14081: [view-transitions-2] Does @view-transition 'types' `<custom-ident> support values that start with "-ua-"?
 - 2026-07-14 opened #14179: [css-view-transitions-2] Scoped transitions on non-layout containable elements
+- 2026-08-04 RESOLVED #12594: Drop 'with' from the spec for now, open an issue with motivating examples to add it back in when we have those
+- 2026-08-04 RESOLVED #12594: change @route to @location

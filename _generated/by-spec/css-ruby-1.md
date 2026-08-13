@@ -107,3 +107,4 @@
 - 2025-12-23 opened #13261: [css-ruby-1] Overlapping new `display` values
 - 2026-02-19 opened #13533: [css-ruby] glyph placement inside bopomofo ruby
 - 2026-05-01 opened #13875: [css-ruby] The bounds of ruby boxes seem necessary, but the spec suggests that they are not
+- 2026-07-08 opened #14144: [css-ruby] rt and rtc should probably reset `text-indent` to zero

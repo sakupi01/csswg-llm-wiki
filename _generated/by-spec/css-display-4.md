@@ -80,3 +80,4 @@
 - 2026-05-13 opened #13920: Define fieldset & legend rendering in CSS
 - 2026-05-27 opened #13969: Define frameset rendering in CSS
 - 2026-08-06 opened #14290: [css-grid-3][css-display-4] Naming for grid lanes reading-flow values
+- 2026-08-09 opened #14299: [css-display] Reading-flow, normal vs. source-order vs. grid-order

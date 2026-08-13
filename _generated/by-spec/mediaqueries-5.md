@@ -219,6 +219,8 @@
 - 2026-01-06 opened #13303: [mediaqueries-5] Wording in spec for preference override for colorScheme unclear how it affects used color scheme
 - 2026-01-26 opened #13398: Need for detecting the typical viewing distance in media queries
 - 2026-01-29 RESOLVED #13041: Revert earlier resolution about order-dependence, instead make @custom-media/supports and @mixins use the mechanism in this issue to resolve name collisions
+- 2026-03-07 opened #13613: [mediaqueries-5] Ability to detect a preference override being cleared
+- 2026-03-08 opened #13615: [mediaqueries-5] Add a prefers-lang media feature to expose user language preference
 - 2026-03-18 RESOLVED #11575: Script preferences and user preferences have identical expressivity. Order of priority (least to most) is: OS, UA, user, preferences API, forced overrides (forced-colors mode or other forced automatic color conversions)
 - 2026-04-13 opened #13796: [css-mediaqueries] Edge cases of `prefers-color-scheme` and iframe color-scheme
 - 2026-06-19 opened #14071: [mediaqueries-5][css-conditional-5] `@custom-media` and `@supports-condition`

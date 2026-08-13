@@ -137,6 +137,9 @@
 - 2025-11-20 opened #13129: [css-fonts] TAG review for <meta name="text-scale" content="scale" /> ?
 - 2025-12-03 RESOLVED #12475: When opting into user-preferred font-sizing, the UA tweaks not only medium, but also the other absolute font-size keywords may be adjusted non-uniformly to match the user's preferred text scale
 - 2025-12-23 opened #13263: [css-fonts] Rename `<*-family-name>` to `<*-font-family-name>`?
+- 2026-01-12 opened #13331: Font optical size multiplication factor
+- 2026-01-13 opened #13339: [css-fonts] Remove `font-width` in favor of `font-stretch`
 - 2026-02-25 opened #13557: [css-fonts-5] <meta text-scale> limits
+- 2026-03-31 opened #13750: [css-fonts] Preload a specific font by `unicode-range`
 - 2026-04-02 RESOLVED #13557: Add NUMBERpx to values of text-scale meta, deprecate 'scale' keyword (and make it optional for conformance).
 - 2026-06-24 RESOLVED #13557: Revert previous resolution and don't have a limit on meta text-scale for now

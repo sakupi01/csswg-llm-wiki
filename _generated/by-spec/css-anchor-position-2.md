@@ -49,8 +49,11 @@
 - 2025-10-15 RESOLVED #10258: auto margins are disabled if position-area is not none
 - 2025-10-15 RESOLVED #10258: remove the dialog value of the alignment properties and revert the UA default styles for [popover] and dialog
 - 2025-11-10 RESOLVED #10258: Auto margins are disabled if align-self is set to anchor-center
+- 2025-11-11 opened #13088: When using anchor positioning, the final edge alignment needs to be known
 - 2025-11-11 opened #13092: [css-anchor-position-2] `<anchored-feature>` is undefined In the anchor container feature syntax definition
 - 2026-02-19 opened #13534: [css-anchor-position] How to style anchor based on anchored's chosen fallback?
+- 2026-02-25 opened #13558: Allow anchor-size() as a value for scroll-padding-*
+- 2026-02-27 opened #13573: Anchor positioning, should the fallbacks re-calculate to respect my default?
 - 2026-03-09 opened #13617: [css-anchor-position] Fairly common use-case seems pretty difficult
 - 2026-03-25 opened #13716: [css-anchor-position-1] allow anchor() within shape()
 - 2026-04-02 RESOLVED #13716: Work on this, details TBD

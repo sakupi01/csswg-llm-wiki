@@ -1,7 +1,7 @@
-  1280  cdoublev
-  1153  noamr
+  1281  cdoublev
+  1156  noamr
   1069  litherum
-  1034  Crissov
+  1035  Crissov
    790  romainmenke
    769  FremyCompany
    705  upsuper
@@ -16,21 +16,21 @@
    451  yisibl
    440  SelenIT
    408  r12a
-   369  weinig
-   353  bradkemper
+   371  weinig
+   354  bradkemper
    342  kbabbitt
    341  jonjohnjohnson
    341  tantek
    338  lukewarlow
    305  gsnedders
    289  josepharhar
-   282  facelessuser
+   283  facelessuser
    263  jsnkuhn
-   259  xfq
+   260  xfq
    255  gregwhitworth
    253  mrego
    243  gitspeaks
-   228  drott
+   231  drott
    222  johannesodland
    215  brandonmcconnell
    205  benface
@@ -50,12 +50,12 @@
    126  bkardell
    125  myles
    121  AtkinsSJ
+   118  JoshTumath
+   117  BorisChiou
    117  Zhang-Junzhi
    117  schenney-chromium
-   116  BorisChiou
-   116  JoshTumath
+   115  andreubotella
    114  Myndex
-   114  andreubotella
    114  dino
    111  Dan503
    108  sesse
@@ -78,10 +78,10 @@
     84  grorg
     83  danburzo
     82  bokand
+    82  sorvell
     81  delan
     81  simevidas
     80  aphillips
-    79  sorvell
     78  atotic
     78  trusktr
     77  fergald
@@ -138,6 +138,7 @@
     45  jamesnw
     45  myakura
     45  smaug----
+    45  tomayac
     44  DarkWiiPlayer
     44  SetTrend
     44  castastrophe
@@ -145,7 +146,6 @@
     44  george-steel
     44  jyasskin
     44  saschanaz
-    44  tomayac
     43  KurtCattiSchmidt
     43  keithjgrant
     41  ChrisL_
@@ -189,6 +189,7 @@
     29  darktears
     29  diekus
     29  dlibby-
+    29  kbhomes
     29  oleedd
     28  Afif13
     28  Nokel81
@@ -197,4 +198,3 @@
     28  phistuck
     28  samuelbradshaw
     28  verbessern
-    28  vrugtehagel

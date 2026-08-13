@@ -58,4 +58,5 @@
 - 2026-03-16 opened #13665: [css-multicol-2] Fixed column width mode for multi-column layout
 - 2026-05-06 opened #13890: [css-multicol][css-scroll-snap] Snapping to columns
 - 2026-05-23 opened #13957: [css-multicol] Examples 30 & 31 do not follow from the spec - column balancing is under-specified and/or incorrect
+- 2026-06-16 opened #14057: [css-multicol-2] Is column-rule repaint defined for a self-scrolling, column-wrap:wrap multicol? (possible Blink paint bug)
 - 2026-08-05 opened #14272: [css-multicol] Define a ::row pseudo-element for multicol

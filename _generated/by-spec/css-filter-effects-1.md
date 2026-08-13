@@ -11,6 +11,8 @@
 - 2026-01-22 opened #13385: [css filters] Editorial: Github issues should be linked to the CSS issues not fxtf-drafts
 - 2026-02-10 opened #13473: [meta] Change naming scheme of FXTF specs?
 - 2026-05-21 opened #13949: [filter-effects] chained filter support, aka href on the filter element
+- 2026-05-23 opened #13956: [filter-effects] Does per-fragment value resolution imply separate filter effect groups?
 - 2026-05-25 opened #13964: [css-filter-effects] Clarify the `filter region` for CSS reference filters
+- 2026-06-19 opened #14068: [css-filters] Wrong links to SVG 2, and links to SVG11 should probably be updated.
 - 2026-07-22 RESOLVED #13949: drop href attribute in filter element
 - 2026-07-22 RESOLVED #13964: define filter region as either border box or bounding client rects for split inline

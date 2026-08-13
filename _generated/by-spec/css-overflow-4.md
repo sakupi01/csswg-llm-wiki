@@ -203,6 +203,7 @@
 - 2026-07-17 opened #14195: ScrollbarLength property
 - 2026-07-30 opened #14239: [css-overflow] Interaction between `block-ellipsis` and min/max-content sizes
 - 2026-07-30 opened #14240: [css-overflow] Should line-clamp hidden content create empty fragments?
+- 2026-08-04 opened #14265: [css-overflow-4] `scrollbar-gutter: stable` does not provide a stable layout when the OS switches between classic and overlay scrollbars
 - 2026-08-06 RESOLVED #12859: Make line-clamp consistent with overflow-y: clip. If there's a problem with that behavior we should fix it for both
 - 2026-08-06 RESOLVED #13786: use only the root inline strut when displacing a line due to block-ellipsis
 - 2026-08-06 RESOLVED #14047: If the ellipsized line would fit back up next to the float, it moves up accordingly

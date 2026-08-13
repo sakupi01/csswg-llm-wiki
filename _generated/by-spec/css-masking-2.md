@@ -3,3 +3,4 @@
 
 - 2024-08-20 opened #10759: [css-masking-2] Cross-fade incompatible clip-paths
 - 2026-02-10 opened #13473: [meta] Change naming scheme of FXTF specs?
+- 2026-03-15 opened #13660: [css-masking] Add mask-position-x and mask-position-y longhands

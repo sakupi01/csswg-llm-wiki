@@ -318,6 +318,7 @@
 - 2025-10-21 opened #12998: [css-content-3] `content: none` does not work as universally as the spec claims it does.
 - 2025-10-29 RESOLVED #12162: revert previous resolution (do not add .pseudoAll() for now, wait for more compelling use-cases)
 - 2025-10-30 RESOLVED #12163: pseudoTarget on selected event objects. no change to addEventListener. pseudoTarget is a CSSPseudoElement
+- 2025-11-12 opened #13096: [css-pseudo-4] Let ::details-content opened details correctly set expanded
 - 2025-11-14 RESOLVED #12161: Add selectorText to the pseudo object
 - 2025-11-20 opened #13125: [css-pseudo-4]Why is there no level 3
 - 2025-12-08 opened #13192: [css-pseudo] Allow outline/box-shadow on highlight pseudo-elements
@@ -331,6 +332,9 @@
 - 2026-04-29 opened #13856: Add a new pseudo-element ::NEXT
 - 2026-04-29 opened #13860: [css-pseudo] `::before(<ident>)` / `::after(<ident>)`: A possible path forwards for multiple gencontent pseudos?
 - 2026-05-14 opened #13926: [css-pseudo] Spec clearly whether text inputs are supposed to support first-line / first-letter
+- 2026-05-21 opened #13948: [css-pseudo-4] `::first-letter`: under-specified behaviour when the first character is a Mark (`M*`) or Format (`Cf`)
+- 2026-06-06 opened #14023: [css-pseudo] Expandable contents pseudo-element too specific
 - 2026-06-29 opened #14108: [css-pseudo][css-highlight-api] Highlight painting over replaced elements
 - 2026-07-15 RESOLVED #13926: ::first-line / ::first-letter don't apply to input / textarea for now, revisit once we have better-defined layout for them
 - 2026-08-04 RESOLVED #9849: Clarify that spacing is about layout-introduced spacing, not about spacing characters (which are just considered text). Update WPTs
+- 2026-08-12 opened #14312: [css-pseudo-4] Should highlights support interactivity declarations?

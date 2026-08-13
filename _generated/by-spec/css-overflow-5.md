@@ -76,10 +76,13 @@
 - 2025-08-26 opened #12659: [css-overflow-5] `:target-current` pseudo class should also imply `aria-current=true` on an active scroll marker
 - 2025-10-15 RESOLVED #11213: For scroll marker groups, the relevant size container cannot be its sibling scroller
 - 2025-12-11 opened #13207: [css-overflow-5] Allow controlling scroll axis locking behavior
+- 2025-12-21 opened #13258: Can't target ::scroll-button with :has()
 - 2026-01-23 opened #13388: [css-overflow-5] overflow-clip-margin: content-box should not apply border radius to the content box.
 - 2026-01-28 RESOLVED #13207: scroll-axis-lock:auto|none, applies to scroll containers, not inherited, UNLESS smfr objects
 - 2026-01-28 opened #13407: [css-overflow] Understanding the shape of the clip with scrollbar-gutters
+- 2026-02-13 opened #13497: Enhanced `labelledby` for Scroll Markers
 - 2026-02-20 opened #13537: [css-overflow-5] Accessible semantics for `:target-current`
 - 2026-02-25 RESOLVED #12122: adapt the rest of may 29th proposal with the Tabs links terminology
 - 2026-02-25 RESOLVED #13407: update scrollbar-gutters feature to include the View Transitions use-case
+- 2026-07-23 opened #14218: [css-overflow-5]: CSS scroll-marker and scroll-button create a wide array of developer footguns for questionable benefit
 - 2026-08-06 opened #14287: [css-overflow-5] More scroll axis locking behavior control

@@ -9,3 +9,4 @@
 - 2021-02-17 RESOLVED #5970: The stuff inside @page or @margin rule are descriptors but act like properties for behavior and cascade
 - 2024-12-23 opened #11410: [css-page] - spec gap: no way to continue page flow when using two named pages.
 - 2025-10-27 opened #13025: [paginated / print] Multiple flows for paginated content
+- 2026-03-22 opened #13700: Dynamic backsides for print layout?

@@ -17,6 +17,7 @@
 - 2025-04-04 opened #12048: [css-ui] OS cursor size units and property
 - 2025-10-30 opened #13040: [css-ui] `interactivity: focusable`
 - 2025-12-10 opened #13198: Proposal for ::drag-image to style the after-image of dragged elements
+- 2026-01-05 opened #13295: Proposal: new `cursor: info` value
 - 2026-03-03 opened #13587: [css-ui] Proposal: change `outline-offset` initial value to `auto`
 - 2026-04-03 opened #13765: Add outline-offset: inset
 - 2026-06-24 RESOLVED #13765: Add inset keyword to the outline-offset property

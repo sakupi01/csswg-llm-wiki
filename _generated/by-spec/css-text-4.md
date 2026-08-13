@@ -283,4 +283,5 @@
 - 2026-04-08 opened #13777: [css-text] Puzzling classification of some punctuation
 - 2026-04-09 opened #13779: [css-text] `trim-both` and `trim-start`
 - 2026-04-10 opened #13789: [css-text-4] Split text-spacing-trim into different values
+- 2026-05-10 opened #13908: [css-text] New values for the text-transform property
 - 2026-08-06 opened #14286: [css-text-4] Broken link for "French typographic guidelines" at #text-autospace-property

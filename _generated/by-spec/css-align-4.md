@@ -16,3 +16,4 @@
 - 2023-11-02 opened #9556: [css-align] Add percentage values for alignment
 - 2025-01-20 opened #11539: [css-multicol] [css-align] Should `row-gap: normal` in multicol have a used value of 1em or 0?
 - 2025-01-31 RESOLVED #11539: in multicol, both row-gap and column-gap 'normal' resolves to 1em
+- 2026-07-15 opened #14186: Add a snapping threshold to CSS grid alignment and justification

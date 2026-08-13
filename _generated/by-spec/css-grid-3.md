@@ -197,6 +197,7 @@
 - 2026-02-17 opened #13512: [css-grid] grid-auto-flow: normal for display: grid?
 - 2026-02-18 opened #13529: [css-grid-3] Track definition of 'subgrid' in the direction of the stacking axis of a parent grid lanes container
 - 2026-02-19 opened #13530: [css-grid-3][masonry] Handling baseline shim for multi-span items in intrinsic track sizing
+- 2026-02-27 opened #13574: [css-grid-3][masonry] Negative margins should affect gaps between items
 - 2026-03-20 opened #13693: [css-grid-3] Subgrids and virtual item grouping
 - 2026-04-01 RESOLVED #13529: if you attempt to subgrid in stacking axis, it's overridden to none
 - 2026-04-01 RESOLVED #13530: No change
@@ -209,6 +210,7 @@
 - 2026-06-15 opened #14052: [css-grid-3][masonry] For `align-items`/`justify-items`, should `fill-reverse` affect the definition of `start` and `end`?
 - 2026-06-19 opened #14072: [css-grid-3][masonry] Impact of grid-auto-* on default direction
 - 2026-07-09 opened #14153: [css-gaps-1] Define gaps for grid lanes
+- 2026-07-15 opened #14186: Add a snapping threshold to CSS grid alignment and justification
 - 2026-07-22 RESOLVED #13931: we will do reversals of static positions in grid-lanes
 - 2026-07-29 opened #14237: [css-grid-3][masonry] Should the start edge of placement remain the same even with `track-reverse`?
 - 2026-08-05 RESOLVED #10884: Rename to 'fit-tolerance'.

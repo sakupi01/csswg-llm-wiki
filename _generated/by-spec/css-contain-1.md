@@ -100,3 +100,4 @@
 - 2022-10-19 RESOLVED #7875: for overflow:auto and size containment, 1st phase sizes without scrollbars, 2nd pass adding scrollbars doesn't change the size (b/c it is fixed). Clarify
 - 2024-10-09 RESOLVED #7875: Take 2nd option (reserve space as for scrollbar-gutter) and add a new value to scrollbar-gutter for inline-axis scrollbars (tbd)
 - 2024-11-30 opened #11304: [css-contain] ruby container missing from size containment exclusions
+- 2025-12-04 opened #13184: [css-contain] Clarification: does content-visibility: hidden affect id references?

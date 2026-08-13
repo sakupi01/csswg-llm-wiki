@@ -263,6 +263,7 @@
 - 2026-04-30 opened #13872: The implicit keyframes (0% and 100%) if specified keyframes use <timeline-range-name>
 - 2026-05-06 RESOLVED #13807: unresolved timelines are represented in the OM as null
 - 2026-05-06 RESOLVED #13807: we try to preserve the requested animation state, details TBD
+- 2026-05-07 opened #13899: [scroll-animations-1] Should switching from `animation-timeline: none` to `animation-timeine: --scroll-timeline` cause the animation to pause?
 - 2026-05-20 opened #13944: [scroll-animation-1][interop-2026] Clarify when named timeline (re-) lookup is processed
 - 2026-05-22 opened #13955: [scroll-animations-1] Condition for returning null vs inactive timeline for missing named timeline reference
 - 2026-05-23 opened #13959: [scroll-animations] ViewTimeline IDL specifies that the `subject` attribute is non-null, but allows construction with no `subject` specified
@@ -280,6 +281,7 @@
 - 2026-07-15 RESOLVED #11644: spec is right, fix the tests
 - 2026-07-15 RESOLVED #13500: Spec is right, fix tests, add some tests for the animated value
 - 2026-07-15 opened #14188: [scroll-animations][css-viewport] How should the `zoom` property affect `animation-range-start`/`animation-range-end`
+- 2026-07-28 opened #14234: [scroll-animations-1] Clarify what pseudo-elements can be scroll/view timelines other than `::before` and `::after`, if any
 - 2026-07-29 RESOLVED #13959: change the spec to make the constructor take a non-optional dictionary, and dictionary makes element required, and impls check compat of that
 - 2026-08-04 RESOLVED #14181: Start specifying animation-range: stuck
 - 2026-08-05 opened #14281: [css-animations-2] [scroll-animations-1] The choice of the multiple matched 0%/100% keyframes when using <timeline-range-offset> offsets

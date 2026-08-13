@@ -7,12 +7,14 @@
 - 2026-02-02 opened #13429: Changing `normal` to `running`
 - 2026-02-03 opened #13434: Question and suggestion about paused property value
 - 2026-02-03 opened #13435: About special elements propagation
+- 2026-02-03 opened #13440: [css-image-animation] Definition of content and decorative image
 - 2026-03-12 opened #13641: [css-image-animation] Applicability of image-animation to the poster image of video elements
 - 2026-03-30 opened #13745: [css-image-animation] Should likely rely on Web Animation concepts rather than creating new ones.
 - 2026-03-31 RESOLVED #13641: image-animation applies to <video> poster images
 - 2026-04-09 opened #13783: [css-image-animation] Suggest a different term than "decorative"
 - 2026-04-09 opened #13784: [css-image-animation] Conveying role, states, properties to platform AAPIs
 - 2026-04-09 opened #13785: [css-image-animation] alt-less (decorative) images need to be addressed
+- 2026-05-19 opened #13941: [css-image-animation] Support `<percentage>` value for controlling playback progress
 - 2026-07-10 opened #14161: [css-image-animation] horizontal review tracker
 - 2026-07-10 opened #14163: [css-image-animation] i18n self review
 - 2026-07-10 opened #14164: [css-image-animation] Security and privacy questionaire

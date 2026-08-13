@@ -35,5 +35,6 @@
 - 2025-01-20 opened #11543: [css-variables-2] Lazy / Late resolving variable mappings
 - 2025-07-16 opened #12488: [css-values] Provide functions for resolving relative units based on type
 - 2025-09-15 opened #12800: @element query
+- 2025-12-05 opened #13188: [css-values] "inherits: declaration" @property syntax
 - 2026-01-27 RESOLVED #12488: add value/type conversion functions to css-values-5
 - 2026-06-03 opened #14004: [css-variables][css-mixins] In-place hygienic rewriting?

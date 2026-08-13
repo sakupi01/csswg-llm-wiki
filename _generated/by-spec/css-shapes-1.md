@@ -75,6 +75,8 @@
 - 2025-09-03 RESOLVED #12697: close, no change
 - 2025-09-10 opened #12768: [css-shapes-1] Shape() ability to round path corners without having to manually calculate fillets
 - 2025-10-17 opened #12965: [css-box][css-shapes][css-masking] `half-border-box` in Box-Edge Keywords
+- 2025-12-24 opened #13267: [css-shapes] Basic shapes for regular polygons
 - 2026-05-06 opened #13893: [css-shapes] define default empty behaviors for the `inset()`, `xywh()`, and `rect()` functions
+- 2026-05-11 opened #13914: [css-borders-4][css-shapes-1]The `round` algorithm is not continuous
 - 2026-06-04 opened #14009: [css-shapes] The shape-radius argument of `circle()` should resolve percentages against the "direction-agnostic size"
 - 2026-06-04 opened #14010: [css-shapes][css-images] Browsers require either 0 or 2 `<radial-extent>` for `ellipse()`

@@ -496,6 +496,8 @@
 - 2025-11-01 opened #13050: `:lang(lzh)` elements in non-traditional-Chinese CJK elements should not switch font to Traditional Chinese one
 - 2025-12-23 opened #13263: [css-fonts] Rename `<*-family-name>` to `<*-font-family-name>`?
 - 2026-01-10 opened #13323: [cssom] Serialization of `@font-face` assumes `font-family` descriptor is always present
+- 2026-01-12 opened #13331: Font optical size multiplication factor
+- 2026-01-13 opened #13339: [css-fonts] Remove `font-width` in favor of `font-stretch`
 - 2026-02-11 RESOLVED #5846: option 2 for both specified and computed value, if that's web compatible
 - 2026-02-13 opened #13495: [css-fonts-4] Add `hkna` & `vkna` (& `pkna`) OpenType feature settings to `font-variant-east-asian` (e.g. `horizontal-kana` & `vertical-kana` & `proportional-kana`)
 - 2026-03-10 opened #13626: [css-fonts-3] Composite font faces with non-identical descriptors
@@ -506,3 +508,4 @@
 - 2026-06-30 opened #14116: [css-fonts-4] When are relative units, calc(), var() and env() evaluated for values in @font-palette-values descriptors
 - 2026-08-04 opened #14260: [css-viewport][css-fonts] Effect of the `zoom` property on font metrics as applied to length units
 - 2026-08-04 opened #14263: unicode-range descriptor should serialize codepoint hex digits as ASCII case-insensitive?
+- 2026-08-11 opened #14306: [css-values][css-fonts] Make the set of properties referred to as "font-*" more clear

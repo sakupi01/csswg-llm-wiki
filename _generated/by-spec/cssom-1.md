@@ -398,6 +398,7 @@
 - 2026-02-11 RESOLVED #12959: we will  specify serialization to be nesting-aware and see what breaks
 - 2026-02-11 RESOLVED #5846: option 2 for both specified and computed value, if that's web compatible
 - 2026-03-07 opened #13612: Can't find spec support for setting importRule.styleSheet.parentStyleSheet to null after deleting that import rule
+- 2026-03-13 opened #13650: [cssom-1] Browsers do not really implement the "disallow modification" flag
 - 2026-03-29 opened #13741: [cssom-1] Add a `CSSImportRule` attribute for scopes?
 - 2026-05-09 opened #13904: [css-view-transitions] [cssom] Inheritance of non-existing pseudo-elements.
 - 2026-06-12 opened #14041: [cssom-1] Should `CSS.*()` register state in the relevant global object?

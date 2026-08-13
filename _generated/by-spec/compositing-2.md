@@ -2,3 +2,4 @@
 # compositing-2 — chronological digest
 
 - 2026-02-10 opened #13473: [meta] Change naming scheme of FXTF specs?
+- 2026-08-08 opened #14297: [compositing-2] Is plus-lighter intended to be valid in background-blend-mode?

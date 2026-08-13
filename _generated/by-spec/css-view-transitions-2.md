@@ -248,9 +248,13 @@
 - 2026-04-02 RESOLVED #13438: note recommending a console warning
 - 2026-04-02 RESOLVED #13438: when dupe VT names, that particular name doesn't transition, but the rest does
 - 2026-04-02 RESOLVED #13637: running view-transition is effectively vt-scope:all during the transition
+- 2026-04-02 opened #13758: [css-view-transition-2] Test for opt-in to cross-document view transitions does not need to wait for external stylesheets
 - 2026-04-13 RESOLVED #13639: When a scope element generates a `::view-transition-group-children` and clips its overflow in the x and/or y axes, then the generated `::view-transition-group-children` gets `overflow-x: clip` and/or `overflow-y: clip` depending in which axes the scope element clips its overflow.
+- 2026-04-15 opened #13812: [css-view-transitions-2] Nit: leftover `contain: view-transition`
 - 2026-04-21 opened #13831: [css-view-transitions] Capture the old state / capture the new state is missing content-visibilty check.
+- 2026-05-29 opened #13986: [css-view-transitions-2] Consider `document.activeViewTransitions`: array with all active view transitions within this document
 - 2026-06-22 opened #14081: [view-transitions-2] Does @view-transition 'types' `<custom-ident> support values that start with "-ua-"?
 - 2026-07-14 opened #14179: [css-view-transitions-2] Scoped transitions on non-layout containable elements
 - 2026-08-04 RESOLVED #12594: Drop 'with' from the spec for now, open an issue with motivating examples to add it back in when we have those
 - 2026-08-04 RESOLVED #12594: change @route to @location
+- 2026-08-11 RESOLVED #14179: `startViewTransition` throws an invalid state exception for elements that cannot have layout containment

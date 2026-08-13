@@ -295,6 +295,8 @@
 - 2025-11-13 opened #13101: Define possibly inheritable behaviour for `app-region` (now `window-drag`)
 - 2025-11-13 opened #13102: New name for `app-region` property?
 - 2025-11-26 RESOLVED #12651: close issue, no change
+- 2025-11-27 opened #13166: [css-ui][css-anchor] Anchors in Focus Navigation properties `nav-*`
+- 2026-01-05 opened #13295: Proposal: new `cursor: info` value
 - 2026-01-14 RESOLVED #12781: Add accent-color and auto value once css-ui-4 has been republished
 - 2026-01-14 opened #13349: [css-ui] Disentangle `outline-style` from the `outline-color` computed style
 - 2026-01-21 RESOLVED #13101: window-drag is inherited
@@ -303,6 +305,7 @@
 - 2026-02-04 opened #13451: [css-ui-4] Fallout of change from resulting from https://github.com/w3c/csswg-drafts/issues/11494
 - 2026-02-05 RESOLVED #13430: Mint a new pseudo-element for this, name TBD. It comes after ::after.
 - 2026-02-19 RESOLVED #13430: ::expand-icon
+- 2026-02-22 opened #13544: [css-ui-4] `pointer` may be used on other interactive elements
 - 2026-02-25 RESOLVED #12906: Round outline-offset same as outline-width and border-width
 - 2026-03-03 opened #13587: [css-ui] Proposal: change `outline-offset` initial value to `auto`
 - 2026-03-16 RESOLVED #12781: Add `<url-set>` for `cursor` to the Safe to Release exception list
@@ -311,10 +314,13 @@
 - 2026-03-31 RESOLVED #13723: Default value for this new second color is "auto", letting the UA decide on the contrasting color
 - 2026-04-01 RESOLVED #13102: add a note to the spec mentioning that 'app-region' might be a supported alias for the feature
 - 2026-04-03 opened #13765: Add outline-offset: inset
+- 2026-04-24 opened #13838: [css-ui] Limit `user-select` due to popular misuse
 - 2026-04-30 opened #13869: [selectors] Selecting elements that use a specific default cursor
 - 2026-05-31 opened #13993: [css-color][css-images][css-ui] Allow `light-dark(<image>, <image>)` in cursor
 - 2026-06-24 RESOLVED #13765: Add inset keyword to the outline-offset property
 - 2026-07-08 opened #14143: [css-ui] Maybe reconsider the :hover / :active top layer propagation rules?
+- 2026-07-09 opened #14148: [css-ui-4] `outline-color: auto` should not be required to represent the accent color
+- 2026-07-14 opened #14178: [css-ui] Allow customization of the text cursor selected by `cursor: auto`
 - 2026-07-17 opened #14192: [css-color-4] [css-ui-4] `color: AccentColor; accent-color: currentColor` cycle
 - 2026-07-17 opened #14193: [css-color-4] [css-ui-4] computed value of `accent-color: AccentColor`
 - 2026-08-06 RESOLVED #14192: 'AccentColor' and 'AccentColorText' resolve against the element's own 'accent-color' in 'color' (and everywhere else other than 'accent-color' itself)

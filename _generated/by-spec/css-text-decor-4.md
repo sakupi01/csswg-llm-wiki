@@ -110,6 +110,8 @@
 - 2025-12-10 RESOLVED #12696: Snap text-decoration-thickness as a border width (https://drafts.csswg.org/css-values-4/#snap-a-length-as-a-border-width) at used-value time
 - 2025-12-10 opened #13202: [css-text-decor-4] how should text-underline-offset be pixel-snapped?
 - 2025-12-13 opened #13216: [css-text-decor-4] Definition of `from-font` value for `text-decoration-thickness`
+- 2025-12-31 opened #13284: [css-text-decor] Informal Western text emphasis and arbitrary marks
+- 2026-01-12 opened #13335: [css-text-decor][css-lists][css-counter-styles] `text-emphasis` is similar to (symbolic) counters
 - 2026-03-25 RESOLVED #13036: Go with option 2 (computes as-is, but animates as length when interpolating with a length).
 - 2026-03-30 opened #13746: [css-text-decor-4] The illustration (and possibly description) for `text-decoration-inset: auto` needs to be updated to reflect the latest clreq
 - 2026-04-02 RESOLVED #8403: add %s, and they resolve on either sum of segments or individual segments depending on b-d-b

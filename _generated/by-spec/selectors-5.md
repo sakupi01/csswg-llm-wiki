@@ -131,12 +131,16 @@
 - 2026-03-18 RESOLVED #1525: use proposed functional syntax for invalid and user-invalid
 - 2026-03-18 RESOLVED #5890: accept proposal but limited to just numbers, not lengths or percentages
 - 2026-03-18 opened #13679: [css-selectors] What should the specificity of functional :invalid() and :user-invalid()
+- 2026-03-23 opened #13702: Attribute Selectors with CURIEs
+- 2026-03-24 opened #13714: [selectors] Next of type selector
 - 2026-03-30 RESOLVED #8720: Any `:lang()` argument or `lang` attribute that cannot be parsed with the BCP-47 syntax causes `:lang()` selectors to not match
 - 2026-04-30 opened #13869: [selectors] Selecting elements that use a specific default cursor
 - 2026-05-17 opened #13936: Proposal for pseudo class matching form element submitting state
 - 2026-06-06 opened #14020: [css-selectors-5][mediaqueries-5] Add feature to target idle pointer
+- 2026-06-16 opened #14055: [css-selectors-5] Proposal: `:external-link` pseudo-class
 - 2026-07-01 RESOLVED #11801: Applies not just to links
 - 2026-07-01 RESOLVED #11801: add :nav-source pseudo for this use case
+- 2026-07-14 opened #14180: [css-selectors-5] @selector function for creating custom selectors
 - 2026-07-25 opened #14228: [selectors] Partial attribute name selectors
 - 2026-08-06 RESOLVED #10001: .foo-* syntax, where it's specifically a hyphen-separated prefix
 - 2026-08-06 opened #14289: [selectors] Relax `|=` to also match value parts separated by spaces

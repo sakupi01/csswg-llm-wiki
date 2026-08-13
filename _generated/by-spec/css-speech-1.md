@@ -20,4 +20,13 @@
 - 2024-03-14 opened #10080: [css-speech-1] Replace percentage types by combined <*-percentage> types
 - 2025-04-26 opened #12126: [css-speech-1] new value `auto` for `speak-as`
 - 2025-12-23 opened #13262: [css-speech] Discrepancy between syntax and prose regarding negative frequencies in `voice-*`
+- 2026-01-07 opened #13311: [css-speech-1] Missing syntax definition for `voice-family-name`
 - 2026-01-26 opened #13396: New needs for new goals in CSS Speech
+- 2026-01-27 opened #13402: [css-speech-1] Useful values to drive TTS engines
+- 2026-02-03 opened #13439: [css-speech-1] The expression CSS "Speech" is too restrictive now
+- 2026-02-03 opened #13441: [css-speech-1] Set volume and balance on cues too
+- 2026-02-03 opened #13442: [css-speech-1]  Group "Pause" and "Rest properties" into a single "Break" section
+- 2026-02-03 opened #13443: [css-speech-1] TTS default value
+- 2026-02-03 opened #13444: [css-speech-1] CSS speech, a first step toward standardized TTS APIs?
+- 2026-02-04 opened #13449: [css-speech-1] Add 3.2 Crosswalk between SSML & CSS Speech
+- 2026-04-14 opened #13808: [css-speech-1] defaults for phrasing elements and voice-character

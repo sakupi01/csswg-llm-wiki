@@ -137,3 +137,4 @@
 - 2024-10-09 RESOLVED #7875: Take 2nd option (reserve space as for scrollbar-gutter) and add a new value to scrollbar-gutter for inline-axis scrollbars (tbd)
 - 2025-08-13 opened #12604: [css-contain-3] Container Variables
 - 2025-11-11 opened #13093: [css-contain-3] Querying only the name of a container
+- 2025-12-04 opened #13184: [css-contain] Clarification: does content-visibility: hidden affect id references?

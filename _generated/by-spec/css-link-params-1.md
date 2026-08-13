@@ -12,6 +12,7 @@
 - 2026-06-09 opened #14028: [css-link-params-1] Time for FPWD
 - 2026-06-10 RESOLVED #14028: publish LInk Params as FPWD
 - 2026-06-10 opened #14030: [css-link-params] Allowing for efficient animation
+- 2026-06-16 opened #14053: [css-variables] Inheriting Variables' Values from Variables in Parent Scopes
 - 2026-06-17 RESOLVED #13767: require at least 2 values in the param function
 - 2026-06-17 opened #14063: [css-link-params] Do we need tainting?
 - 2026-07-28 opened #14235: [css-link-params] Harmonize param() fragments with the :~: fragment directive

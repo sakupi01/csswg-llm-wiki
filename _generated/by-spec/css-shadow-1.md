@@ -5,3 +5,4 @@
 - 2026-01-12 opened #13333: [css-shadow-1][editorial] Add a note for the merge and renaming
 - 2026-01-16 opened #13360: [css-shadow] Confusing spec naming
 - 2026-02-18 opened #13523: [css-shadow-1] Move definitions for `part` and `exportparts` attributes to host language specs
+- 2026-08-11 opened #14307: [css-shadow] :has-slotted spec contradicts itself

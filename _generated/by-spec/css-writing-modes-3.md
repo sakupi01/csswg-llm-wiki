@@ -48,3 +48,4 @@
 - 2025-02-26 opened #11789: [css-writing-modes-3] Writing-modes spec has broken link to css-sizing-3
 - 2025-08-08 opened #12586: [css-writing-modes] body propagation of writing-mode/direction/text-orientation and computed vs used styles
 - 2025-12-31 opened #13282: [css-writing-modes-3] vertical-lr and vertical-rl
+- 2026-06-22 opened #14078: [css-writing-modes] vo=Tr characters should fall back to rotated if vertical glyphs are missing

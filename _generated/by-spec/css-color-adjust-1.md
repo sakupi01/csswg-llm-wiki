@@ -131,6 +131,7 @@
 - 2025-09-21 opened #12837: [css-color-adjust][css-color] Expose user agent native theme colors to CSS
 - 2025-11-13 RESOLVED #12815: Publish CR Snapshot of css-color-adjust-1
 - 2026-02-06 opened #13460: [css-color-adjust-1] Specification can define non-author color adjustment behavior more clearly
+- 2026-02-12 opened #13486: [css-color-adjust] Opt-out mechanism from auto dark/forced dark for dark-by-design pages in `<meta name="color-scheme">`
 - 2026-03-25 opened #13725: [css-color-5] Move `light-dark()`?
 - 2026-03-31 RESOLVED #13725: Move to color-adjust (with the image version) once color 5 goes through wide review (with the image version)
 - 2026-04-23 opened #13836: [css-color-5] `light-dark()` should resolve at used value time, not computed value time

@@ -93,4 +93,5 @@
 - 2025-05-29 opened #12250: [css-forms-1] Investigate the content property with pseudo-elements.
 - 2025-08-02 opened #12565: [css-ui][css-pseudo][selection-api] Interop issue: Selecting the default quotes on <q> elements (+implications for selectable pseudo-elements)
 - 2025-10-21 opened #12998: [css-content-3] `content: none` does not work as universally as the spec claims it does.
+- 2025-12-18 opened #13244: [css-content] Clarify valid and default values of `string-set`
 - 2026-06-03 opened #14003: [css-content-3]: Allow `content: <list-style-type>` as shorthand for `content: counter(dummy, <list-style-type>)`.

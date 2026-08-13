@@ -76,6 +76,7 @@
 - 2025-04-02 RESOLVED #9091: Specificity of * in highlight pseudo is 0
 - 2025-04-03 opened #12045: [css-highlight-api] highlightsFromPoint(): Inconsistency between spec and test regarding shadow DOM
 - 2025-05-07 RESOLVED #12031: Accept the proposal in the issue.
+- 2026-01-21 opened #13375: [css-highlight-api][css-pseudo] Highlight Types
 - 2026-01-22 opened #13381: [css-highlight-api] Use marker nodes to declaratively annotate highlights
 - 2026-05-05 opened #13888: [css-highlight-api] CSS.highlights getter realm is underspecified for cross-realm access
 - 2026-06-29 opened #14108: [css-pseudo][css-highlight-api] Highlight painting over replaced elements

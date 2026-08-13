@@ -20,7 +20,7 @@ generated_by: llm
 
 ## Activity in the mirror
 
-Issues authored: 1312 / comments: 9346 / IRC minute lines: 1124
+Issues authored: 1334 / comments: 9378 / IRC minute lines: 1124
 (from `_generated/people-activity.jsonl`)
 
 ---

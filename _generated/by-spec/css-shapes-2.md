@@ -63,5 +63,6 @@
 - 2025-08-13 opened #12598: [css-shapes-1] Proposal: Option for the radii of `round` on `<basic-shape-rect>` to resolve percentages against the rectangle itself instead of the reference box
 - 2025-08-19 opened #12620: [css-borders-4] Clarify the non-elliptical nature of `corner-shape: scoop`
 - 2025-09-10 opened #12768: [css-shapes-1] Shape() ability to round path corners without having to manually calculate fillets
+- 2025-12-24 opened #13267: [css-shapes] Basic shapes for regular polygons
 - 2026-04-29 opened #13862: [css-syntax][css-shapes] Repeating segments in `shape()` (and perhaps as a generic thing?)
 - 2026-07-08 opened #14147: [css-shapes-2] An overflow-safe `shape-inside`

@@ -324,5 +324,6 @@
 - 2026-04-30 opened #13870: [css-grid-1] Clarify that rows can fragment
 - 2026-05-06 opened #13890: [css-multicol][css-scroll-snap] Snapping to columns
 - 2026-05-15 opened #13930: [css-grid-1] Abspos with an overflowing grid CB
+- 2026-06-10 opened #14032: [css-grid] Implicitly-named areas underspecified
 - 2026-06-24 RESOLVED #13870: accept this PR clarifying that rows can fragment, with whatever editorial changes are needed
 - 2026-08-05 RESOLVED #13930: when grid-placement is fully auto in an axis, use the scrollport edges (otherwise do as specced)

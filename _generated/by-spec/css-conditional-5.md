@@ -148,6 +148,7 @@
 - 2026-03-31 RESOLVED #13157: Whatever we resolve for comparing colors is also used to determine whether a transition starts
 - 2026-03-31 RESOLVED #13157: style() and transitions use the same color comparison method
 - 2026-04-02 RESOLVED #13729: Start working on spec for grid and tables in css-conditional-5
+- 2026-04-10 opened #13787: [css-conditional-5] Anchor fragment scrolls should update scroll-state(scrolled) direction to stay consistent with scroll-padding
 - 2026-04-27 RESOLVED #13157: Define ε as `0.00001` for `oklab
 - 2026-05-27 RESOLVED #13678: Add an anchor-position-follows-transforms keyword to feature-detect whether anchor positioning follows transforms
 - 2026-05-27 opened #13975: [css-conditional] Allow feature detection of style queries

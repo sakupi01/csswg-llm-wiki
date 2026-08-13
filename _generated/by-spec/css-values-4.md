@@ -377,6 +377,7 @@
 - 2025-08-30 opened #12690: [css-values-4] What is the unit of `round(A, B)` if `A` and `B` have different units?
 - 2025-10-20 opened #12982: [css-values] Are the codepoints in an indentifier stored in escaped form or not?
 - 2025-10-27 opened #13020: [css-values-4] Incomplete simplification of calculation sum node containing inverted sum nodes
+- 2025-11-26 opened #13162: [css-values-4][@property url] [Curiosity] URL interpretation differences with @property in CSS
 - 2026-01-25 opened #13393: [css-values] Introduce Exceptions to Productions in Value Definition Syntax
 - 2026-02-16 opened #13500: [css-value] Clarification on the serialization of the shorthand associated with coordinated value lists
 - 2026-02-19 opened #13535: [css-values] Clarification on Simplification for clamp() with none values
@@ -386,6 +387,7 @@
 - 2026-05-07 opened #13896: [css-values-4] Clarify the definition of device pixel
 - 2026-05-08 opened #13902: [css-values-4] Calc simplification of slightly non-trivial products
 - 2026-05-13 opened #13919: [css-values-4] Agressively simplifying a Sum node can change the sign of 0
+- 2026-05-13 opened #13921: [css-values-4] Duplicated definition of `<string>`
 - 2026-06-10 opened #14033: [css-values] Wrong mathematical statement about tangent
 - 2026-06-10 opened #14034: [css-values] Wrong plural: "constants"
 - 2026-06-24 RESOLVED #9720: accept this PR as the start of serialization of functional notation, open new issues based on text
@@ -393,3 +395,4 @@
 - 2026-07-13 opened #14174: [css-selectors][css-values] Proposal: A Unified Data API for CSS via the `:data()` pseudo-class and `data()` function
 - 2026-07-15 RESOLVED #13500: Spec is right, fix tests, add some tests for the animated value
 - 2026-08-09 opened #14300: [css-values] Percentages and unit arithmetic
+- 2026-08-11 opened #14306: [css-values][css-fonts] Make the set of properties referred to as "font-*" more clear

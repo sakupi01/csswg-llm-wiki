@@ -32,3 +32,4 @@
 - 2023-08-08 opened #9171: [css-cascade] Specify how `@import` cycles work
 - 2024-02-26 opened #9998: [css-cascade] 'output of the cascade' typo in all levels of Cascading & Inheritance spec?
 - 2024-12-01 opened #11305: [css-cascade] Clarify the specificity of a declaration.
+- 2025-12-13 opened #13213: [css-values] Proposal: a way to revert a property to use presentational hints if any

@@ -129,6 +129,8 @@
 - 2025-09-03 RESOLVED #12702: move cascade-5 to the Reliable CR section
 - 2025-09-23 opened #12846: [css-cascade-5] [cssom] Serialization of shorthands with reset-only subproperties is under-defined
 - 2025-10-22 opened #13003: [css-syntax-3][css-cascade][css-conditional] Missing definition of `<declaration>`
+- 2025-12-13 opened #13213: [css-values] Proposal: a way to revert a property to use presentational hints if any
+- 2026-02-17 opened #13510: [css-cascade-5] How does 'revert' interact with !important?
 - 2026-03-01 opened #13576: [css-cascade] `revert-layer` is at risk, but `revert-rule` isn't?
 - 2026-04-20 opened #13829: [css-cascade] What is the encapsulation context of the user and user agent style sheets?
 - 2026-05-12 opened #13916: [css-cascade-5] Clarify possible loop in revert-rule

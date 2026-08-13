@@ -10,6 +10,7 @@
 - 2025-08-12 opened #12594: [css-navigation] Exposing navigation/route matching
 - 2025-09-18 opened #12829: [css-view-transitions-2][css-navigation-1] Starting a cross-document view-transition instantly
 - 2025-11-14 RESOLVED #12594: Start a css-navigation ED
+- 2025-11-18 opened #13117: [css-navigation] Concerns about `at` navigation rules creating CSS bloat
 - 2025-11-19 opened #13122: [css-navigation-1] Rename `urlpattern()` to `url-pattern()`
 - 2025-11-21 opened #13136: [css-navigation-1] conditions that query the navigation type
 - 2025-11-26 opened #13163: [css-navigation-1] :link-to() pseudo-class for links that are related to the current navigation
@@ -25,3 +26,4 @@
 - 2026-08-04 opened #14266: [css-navigation-1] Base URL for CSS-defined URL patterns
 - 2026-08-04 opened #14267: [css-navigation-1] Do we need `with` or a notion of the "Other URL"
 - 2026-08-04 opened #14268: [css-navigation-1] Selecting based on URLPattern parameters
+- 2026-08-10 opened #14303: [css-navigation-1] Rename `:nav-source` to `:navigation-source`

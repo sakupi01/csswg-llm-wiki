@@ -185,9 +185,11 @@
 - 2026-04-01 RESOLVED #11983: Fieldset border becomes 'border: 1px solid currentColor' in appearance:base
 - 2026-04-01 RESOLVED #11983: Remove all layout magic from fieldset and legend when fieldset has appearance:base
 - 2026-04-01 RESOLVED #13738: Change select picker positioning (position-area + try fallbacks) to use self-block-start / self-inline-start rather than block-start / inline-start
+- 2026-04-01 opened #13757: [css-forms-1] Add a way to reproduce fieldset/legend border magic in CSS
 - 2026-04-10 opened #13790: [css-forms-1] Should presentation attributes work when in base appearance mode?
 - 2026-04-13 opened #13800: [css-forms-1] Specify UA styles for file input
 - 2026-04-14 opened #13809: [css-forms-1] accent-color and base appearance.
+- 2026-04-30 opened #13868: [css-forms-1] Radio buttons inline alignment
 - 2026-04-30 opened #13873: [css-forms-1] Properties inherited from fieldset to anonymous content box
 - 2026-06-17 RESOLVED #13541: change the position try fallbacks for select to what's described in issue
 - 2026-06-17 opened #14061: [css-forms-1] Should `select:not(:open)::picker(select)` use `display: none !important`?
@@ -196,6 +198,7 @@
 - 2026-07-01 RESOLVED #14062: Use these values for ::picker(select)
 - 2026-07-01 RESOLVED #14062: add flip-self-inline and flip-self-block to position-try
 - 2026-07-07 opened #14140: [css-forms-1] control-value() meta issue
+- 2026-07-07 opened #14141: [css-forms-1] Which form controls should control-value() apply to?
 - 2026-07-13 opened #14172: [css-forms-1] Better default sizing for custom select?
 - 2026-07-31 opened #14249: [css-forms-1] Adopt box-sizing on all form control parts
 - 2026-07-31 opened #14250: [css-forms-1] Inherit all typography, but not into icons
@@ -205,3 +208,14 @@
 - 2026-07-31 opened #14255: [css-forms-1] Apply overflow and wrapping control to select buttons
 - 2026-08-01 opened #14256: [css-forms-1] Improve appearance: base <select> styling to be usable as-is
 - 2026-08-05 opened #14273: [css-forms-1] Should size restrictions for custom selects also apply to inline size?
+- 2026-08-11 opened #14308: [css-forms-1] Apply border-radius to all base appearance controls
+- 2026-08-12 opened #14316: [css-forms-1] Use empty alt text for ::picker-icon and ::checkmark
+- 2026-08-12 opened #14317: [css-forms-1] select picker-icon glyph
+- 2026-08-12 opened #14318: [css-forms-1] Handle prefers-contrast and forced-colors by default
+- 2026-08-12 opened #14319: [css-forms-1] Vertically centering form control content
+- 2026-08-12 opened #14320: [css-forms-1] Vertically centering form controls that don't contain text
+- 2026-08-12 opened #14321: [css-forms-1] Refine internal spacing in appearance: base controls
+- 2026-08-12 opened #14322: [css-forms-1] Inherit currentColor into ::picker()
+- 2026-08-12 opened #14323: [css-forms-1] Apply ::field-text/::field-content to select button contents
+- 2026-08-13 opened #14324: [css-forms-1] Add margin to the picker
+- 2026-08-13 opened #14325: [css-forms-1] Transitions for ::picker open/close

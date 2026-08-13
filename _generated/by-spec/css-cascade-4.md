@@ -78,6 +78,8 @@
 - 2025-08-20 opened #12627: [css-conditional][css-mixins][css-cascade] How should global at-rules work inside of "contextual conditionals" like `@container`?
 - 2025-10-22 opened #13003: [css-syntax-3][css-cascade][css-conditional] Missing definition of `<declaration>`
 - 2025-11-01 opened #13049: [css-cascade-4][css-syntax-3] *Fetch `@import`* should *create a CSS style sheet*
+- 2025-12-13 opened #13213: [css-values] Proposal: a way to revert a property to use presentational hints if any
 - 2025-12-17 RESOLVED #12627: Treat contextual conditionals as always true for global rules i.e. the condition doesn't affect the rule
+- 2026-02-17 opened #13510: [css-cascade-5] How does 'revert' interact with !important?
 - 2026-04-20 opened #13829: [css-cascade] What is the encapsulation context of the user and user agent style sheets?
 - 2026-06-29 opened #14099: [cssom-1] Clarify initialization and access of a loading `CSSImportRule.styleSheet`

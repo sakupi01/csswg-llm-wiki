@@ -149,5 +149,6 @@
 - 2025-08-31 opened #12699: [css-2025][css-contain-2] Add CSS Containment 2 to Rough Interop
 - 2025-09-12 RESOLVED #12699: css-contain-2 goes into rough interop
 - 2025-11-23 opened #13142: [css-nav][css-contain] Navigation containment
+- 2025-12-04 opened #13184: [css-contain] Clarification: does content-visibility: hidden affect id references?
 - 2026-03-27 opened #13737: [css-contain-2] Size containment is under-specified if used inside of a BFC. (and maybe elsewhere)
 - 2026-05-07 opened #13898: [css-contain] `scroll-state(stuck)` CQs can easily cause flickering that is very hard to work around

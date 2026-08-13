@@ -274,12 +274,15 @@
 - 2025-10-31 opened #13048: [css-anchor-position-1] Interaction between trying position options and CSS transitions
 - 2025-11-05 opened #13067: [css-anchor-position-1] Back-compat of scrollable containing block for all abspos with implicit anchors
 - 2025-11-06 opened #13076: [css-anchor-position] Which writing-mode is used for position-try-order ?
+- 2025-11-07 opened #13079: [css-anchor-position] Scrollable Containing Block + Fallbacks/`position-visibility: no-overflow` & visibility of positioned element to users
 - 2025-11-10 RESOLVED #10258: Auto margins are disabled if align-self is set to anchor-center
 - 2025-11-13 RESOLVED #13067: add none value to position-anchor, make it the initial value, change UA stylesheet for popover
 - 2025-11-13 RESOLVED #9408: Accept the edits
 - 2025-12-01 opened #13176: [css-anchor-position-1] anchors-visible still needs more details
 - 2025-12-23 opened #13265: [css-anchor-position-1] Horizontal Review
 - 2025-12-25 opened #13268: [css-anchor-position] Clarification: effect of `position-try-fallbacks` and `position-try-order` when the positioned box does not overflow
+- 2026-01-14 opened #13352: [css-anchor-position] Anchor Recalculation Point + Initial Load
+- 2026-01-15 opened #13353: [css-anchor-position] Clarify the expected behavior of anchor-center with scrollable containers
 - 2026-01-16 opened #13364: [css-anchor-position-1][css-animations-2][scroll-animations-1] Fix name visibility for descendants
 - 2026-01-21 RESOLVED #12759: close no change
 - 2026-01-21 RESOLVED #12783: anchor-scope and similar scoping properties operate on the flattened element tree (not box tree)
@@ -289,7 +292,9 @@
 - 2026-01-28 RESOLVED #13364: name lookup for timeline-name, anchor-name, etc. walks up the ancestor chain (up to stopping point) first, then looks for last-defined within scope
 - 2026-02-09 opened #13468: [css-position-3] Should there be a special fixedpos ICB?
 - 2026-02-18 opened #13514: [css-anchor-position] Is it intended that `(justify|align)-items: anchor-center` doesn't apply to anchored abspos boxes with `(justify|align)-items: auto`?
+- 2026-02-25 opened #13558: Allow anchor-size() as a value for scroll-padding-*
 - 2026-02-26 opened #13567: [css-anchor-position-1] Clarify the nature of `@position-try` tree-scoped name
+- 2026-02-27 opened #13573: Anchor positioning, should the fallbacks re-calculate to respect my default?
 - 2026-03-01 opened #13577: [css-anchor-position] Make `position-area` discretely animatable, for now.
 - 2026-03-18 opened #13678: [css-conditional] [css-anchor-position] Allow feature detection of anchoring taking transforms into account.
 - 2026-03-25 opened #13716: [css-anchor-position-1] allow anchor() within shape()
@@ -310,7 +315,10 @@
 - 2026-06-03 opened #14008: [css-align-3][css-anchor-position-1] overflow limit rect behaviour with fixedpos & default anchor.
 - 2026-06-17 opened #14062: [css-anchor-position-1] Add flip-self-inline/flip-self-block keywords
 - 2026-06-24 RESOLVED #13567: @position-try uses a globally scoped name like @keyframes
+- 2026-06-30 opened #14112: [css-anchor-position-1] What is supposed to happen with scrolling?
 - 2026-07-01 RESOLVED #14062: Use these values for ::picker(select)
 - 2026-07-01 RESOLVED #14062: add flip-self-inline and flip-self-block to position-try
+- 2026-07-10 opened #14159: [css-anchor-position-1] Popover text direction/writing-mode bugs
 - 2026-07-24 opened #14222: [css-anchor-position-1] margins against the original CB
+- 2026-08-05 RESOLVED #14112: Once the UA is confident that the scroll operation has stopped, MUST ensure the layout is consistent with a full relayout at that point. UA MAY relayout during scroll; and if not relaying out, then MUST slide the anchorpos with the scroll operation as currently specified.
 - 2026-08-05 opened #14274: [css-anchor-position] Match alignment's new % behavior in anchor()

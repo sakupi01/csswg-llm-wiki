@@ -285,7 +285,10 @@
 - 2025-10-09 opened #12924: [cssom-view-1] Type of event to append to pending scroll events when an element gets scrolled?
 - 2025-10-13 opened #12940: [cssom-view-1] Missing tasks in parallel steps in CSSOM View Module Level 1
 - 2025-10-15 RESOLVED #11541: Use stitched-together geometry for offset*
+- 2025-12-20 opened #13256: [cssom-view] minor editorial errors
 - 2026-01-05 opened #13294: getVisibleClientRect API analogous to getBoundingClientRect
+- 2026-01-06 opened #13301: [cssom-view] "Perform a scroll of a viewport" is passed an associated element it doesn't use
+- 2026-01-06 opened #13302: [cssom-view] Ambiguous phrase "in a fixed position containing block" in offsetParent algorithm
 - 2026-01-29 opened #13411: [cssom-view-1] Clip aligned element box by intermediate scrollers
 - 2026-02-06 opened #13461: [cssom-view-1] Wrong sentence placing or missing algorithm in the scroll section
 - 2026-02-06 opened #13462: [cssom-view-1] What happens when the user tries to scroll during an ongoing smooth scroll?
@@ -304,5 +307,7 @@
 - 2026-05-06 RESOLVED #13772: snapshot the event queue and empty it before dispatching all the events
 - 2026-05-06 RESOLVED #556: These methods use the DOM retargetting rules to omit elements inside shadow trees and remove consecutive duplicates that result from these
 - 2026-05-13 opened #13925: [cssom] newly performed scroll should only abort smooth scroll in the same axis
+- 2026-05-20 opened #13945: [cssom-view] `scrollLeftMax` and `scrollTopMax`
 - 2026-07-01 opened #14121: [cssom-view-1] `scrollParent` incorrectly returns `null` for non-overflow-propagating `body` element
+- 2026-07-11 opened #14170: [cssom-view] Restrict cross-origin information leak
 - 2026-07-14 opened #14182: [cssom-view-1] Zooming should acknowledge some UAs have "text zoom"

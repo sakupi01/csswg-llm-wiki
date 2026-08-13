@@ -52,7 +52,10 @@
 - 2025-10-10 opened #12929: Absolute position respecting the padding of the parent element
 - 2025-10-21 opened #12998: [css-content-3] `content: none` does not work as universally as the spec claims it does.
 - 2025-12-10 opened #13200: [css-position-4] Consider removing the overlay property
+- 2026-03-03 opened #13595: [css-position-4][css-anchor-position] Top layer exit animations require tracking a lot of state for implicit anchors
+- 2026-04-30 RESOLVED #13595: Accept Keith's PR adjusting the timing, modulo editorial nits.
 - 2026-05-26 opened #13966: [css-position] Painting algorithms are circular for inline-blocks
 - 2026-06-01 opened #13998: [css-position] Painting order of decorations of inline box that establishes stacking context
 - 2026-07-07 opened #14139: [css-position-4] Give an intro about why we're defining "Top Layer" and `overlay`
 - 2026-07-20 opened #14203: position: parent;
+- 2026-08-07 opened #14292: [css-position-4] Allow author stylesheets to remove elements from the top layer

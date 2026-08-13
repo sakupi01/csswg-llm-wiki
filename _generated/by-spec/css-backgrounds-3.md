@@ -107,6 +107,8 @@
 - 2025-10-01 RESOLVED #7103: take the last option in the testcase
 - 2025-11-04 opened #13056: [css-backgrounds-3][css-text-decor-4] Move `<shadow>` to CSS Text Decoration 4
 - 2025-11-13 RESOLVED #11169: Keep spec. Add tests. Revisit if implementers notice a problem.
+- 2026-01-09 opened #13318: [css-backgrounds-3] `spread` variable is undefined in "adjusted radius dimension"
+- 2026-02-05 opened #13455: [css-tables][css-shadow] shadow of a row in the context of a rowspan
 - 2026-02-17 opened #13511: [css-border][css-animation][css-transition] Animations/Transitions of border-width after change of computed value definition in issue #11494
 - 2026-03-11 RESOLVED #12791: no change, update WPT to match the spec's expectations and see if there's web compat issues
 - 2026-03-24 opened #13706: [css-break] box-decoration-break:clone on the root

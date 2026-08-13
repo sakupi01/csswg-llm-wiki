@@ -1,0 +1,1694 @@
+{
+  "span": "week",
+  "since": "2026-08-06",
+  "until": "2026-08-13",
+  "generated_at": "2026-08-13T02:52:31Z",
+  "resolutions": [],
+  "agenda": [
+    {
+      "issue": 7648,
+      "title": "[css-images] Mesh gradient / Freeform gradient / 2D gradient",
+      "labels": [
+        "Agenda+",
+        "css-images-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/7648",
+      "feature": null,
+      "comments_in_window": 17
+    },
+    {
+      "issue": 14067,
+      "title": "[css-overflow-4] Effect of border-radius on line-clamp float clipping",
+      "labels": [
+        "Agenda+",
+        "Closed Accepted by CSSWG Resolution",
+        "Tested",
+        "css-overflow-4",
+        "topic: line-clamp"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14067",
+      "feature": null,
+      "comments_in_window": 7
+    },
+    {
+      "issue": 14291,
+      "title": "[selectors] Should `.foo-*` match `foo-`?",
+      "labels": [
+        "Agenda+",
+        "selectors-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14291",
+      "feature": "heading-selector",
+      "comments_in_window": 7
+    },
+    {
+      "issue": 14300,
+      "title": "[css-values] Percentages and unit arithmetic",
+      "labels": [
+        "Agenda+",
+        "css-values-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14300",
+      "feature": "absolute-lengths",
+      "comments_in_window": 5
+    },
+    {
+      "issue": 5675,
+      "title": "[css-grid] Masonry layout in CSS Grid 3 has potential to cause accessibility problems with reading order.",
+      "labels": [
+        "Needs Edits",
+        "css-grid-3",
+        "topic: masonry"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/5675",
+      "feature": "masonry",
+      "comments_in_window": 3
+    },
+    {
+      "issue": 13962,
+      "title": "[css-typed-om-1] vertical-align should likely reify as unsupported after becoming a shorthand",
+      "labels": [
+        "Agenda+",
+        "css-typed-om"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13962",
+      "feature": null,
+      "comments_in_window": 3
+    },
+    {
+      "issue": 14192,
+      "title": "[css-color-4] [css-ui-4] `color: AccentColor; accent-color: currentColor` cycle",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-color-4",
+        "css-ui-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14192",
+      "feature": null,
+      "comments_in_window": 3
+    },
+    {
+      "issue": 14285,
+      "title": "[css-color-4] Drop powerless components and just have `none`?",
+      "labels": [
+        "Agenda+",
+        "css-color-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14285",
+      "feature": null,
+      "comments_in_window": 3
+    },
+    {
+      "issue": 3937,
+      "title": "[css-overflow-4] Ellipsizing of text in middle of string",
+      "labels": [
+        "Needs Edits",
+        "Needs Process Help",
+        "css-overflow-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/3937",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 10001,
+      "title": "[selectors] New class prefix selector to facilitate utility classes (`.prefix-*`?)",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "selectors-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/10001",
+      "feature": "heading-selector",
+      "comments_in_window": 2
+    },
+    {
+      "issue": 10372,
+      "title": "[css-color] Mitigating fingerprinting for AccentColor/AccentColorText",
+      "labels": [
+        "Needs Edits",
+        "Needs Feedback/Review",
+        "Needs Testcase (WPT)",
+        "css-color-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/10372",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 13789,
+      "title": "[css-text-4] Split text-spacing-trim into different values",
+      "labels": [
+        "Agenda+",
+        "Agenda+ F2F",
+        "css-text-4",
+        "i18n-clreq",
+        "i18n-jlreq",
+        "i18n-needs-resolution"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13789",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 14104,
+      "title": "[css-break] `box-decoration-break: clone` on inline box should exclude fragments around block-level",
+      "labels": [
+        "Agenda+",
+        "css-break-3",
+        "css-inline-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14104",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 14143,
+      "title": "[css-ui] Maybe reconsider the :hover / :active top layer propagation rules?",
+      "labels": [
+        "Agenda+",
+        "css-ui-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14143",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 14193,
+      "title": "[css-color-4] [css-ui-4] computed value of `accent-color: AccentColor`",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-color-4",
+        "css-ui-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14193",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 14288,
+      "title": "[css-values-5] Rename toggle() function",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14288",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 5715,
+      "title": "[css-sizing-4] Add `margin-box` for box-sizing?",
+      "labels": [
+        "Agenda+",
+        "css-sizing-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/5715",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 8403,
+      "title": "[css-text-decor-4] Allow percentages in `text-decoration-inset`",
+      "labels": [
+        "Needs Testcase (WPT)",
+        "css-text-decor-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/8403",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 10193,
+      "title": "[css-text] Reconsidering the CSS letter-spacing model",
+      "labels": [
+        "Agenda+",
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Testcase (WPT)",
+        "css-text-4",
+        "i18n-needs-resolution"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/10193",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 10210,
+      "title": "[css-color-4] Expand the concept of analogous components to analogous sets of components to minimize `none` → `0` conversions",
+      "labels": [
+        "Needs Edits",
+        "css-color-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/10210",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 12386,
+      "title": "[css-text] Reconsider the initial value of the `text-autospace` property",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Testcase (WPT)",
+        "css-text-4",
+        "i18n-clreq",
+        "i18n-jlreq",
+        "i18n-tracker"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12386",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 12859,
+      "title": "[css-overflow] Line-clamp and screen readers",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Commenter Response Pending",
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "a11y-tracker",
+        "css-overflow-4",
+        "topic: line-clamp"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12859",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13044,
+      "title": "[css-borders] Allow multiple borders by listifying them",
+      "labels": [
+        "Needs Edits",
+        "css-borders-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13044",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13211,
+      "title": "[css-properties-values-api] `@property` descriptors should be optional whenever possible",
+      "labels": [
+        "Needs Testcase (WPT)",
+        "css-properties-values-api-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13211",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13731,
+      "title": "[css-box-4] Scope margin-trim down to block & multi-column containers only?",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-box-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13731",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13747,
+      "title": "[meta][bikeshed] Collapsing inlined WPT tests in drafts",
+      "labels": [
+        "Agenda+",
+        "meta"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13747",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13952,
+      "title": "[css-position-3] Should \"padding edges\" instead of \"content edge\" be used to form containing block by fragmented inlines?",
+      "labels": [
+        "Needs Edits",
+        "css-position-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13952",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13978,
+      "title": "[css-values-5] Are sibling-count() and sibling-index() math functions?",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13978",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14008,
+      "title": "[css-align-3][css-anchor-position-1] overflow limit rect behaviour with fixedpos & default anchor.",
+      "labels": [
+        "Agenda+",
+        "css-align-3",
+        "css-anchor-position-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14008",
+      "feature": "anchor-positioning",
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14070,
+      "title": "[css-color-5] Omissable alpha in relative color serialization",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-color-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14070",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14129,
+      "title": "[animation-triggers-1] formalize the <event-trigger-event> value",
+      "labels": [
+        "Needs Edits",
+        "animation-triggers-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14129",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14133,
+      "title": "[css-color-4] Use `0` chroma when hue is powerless during conversion",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-color-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14133",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14172,
+      "title": "[css-forms-1] Better default sizing for custom select?",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14172",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14179,
+      "title": "[css-view-transitions-2] Scoped transitions on non-layout containable elements",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-view-transitions-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14179",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14213,
+      "title": "[css-values-5] Should ident() be an arbitrary substitution function?",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14213",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14227,
+      "title": "[css-properties-values] CSSOM for multi-name and shorthand `@property`",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-properties-values-api-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14227",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14239,
+      "title": "[css-overflow] Interaction between `block-ellipsis` and min/max-content sizes",
+      "labels": [
+        "Closed Rejected as Wontfix by CSSWG Resolution",
+        "Needs Testcase (WPT)",
+        "css-overflow-4",
+        "topic: line-clamp"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14239",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14312,
+      "title": "[css-pseudo-4] Should highlights support interactivity declarations?",
+      "labels": [
+        "Agenda+",
+        "css-pseudo-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14312",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14314,
+      "title": "[fullscreen] [css-overflow] Fullscreen subdocuments and scrollbar gutter",
+      "labels": [
+        "Agenda+",
+        "css-overflow-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14314",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14294,
+      "title": "[css-env-1] define keyboard-inset-* instead of VirtualKeyboard API?",
+      "labels": [
+        "Agenda+",
+        "css-env-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14294",
+      "feature": null,
+      "comments_in_window": 0
+    }
+  ],
+  "hot": [
+    {
+      "issue": 7648,
+      "title": "[css-images] Mesh gradient / Freeform gradient / 2D gradient",
+      "labels": [
+        "Agenda+",
+        "css-images-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/7648",
+      "comments_in_window": 17,
+      "feature": null,
+      "recent": [
+        {
+          "author": "bramus",
+          "date": "2026-08-11",
+          "url": "https://github.com/w3c/csswg-drafts/issues/7648#issuecomment-5253522743",
+          "gist": "OK, I think I figured it out: in https://github.com/w3c/csswg-drafts/issues/7648#issuecomment-5251415247 I noted that I could adjust the rendering of my app to fix the top-right patch but that it woul"
+        },
+        {
+          "author": "bramus",
+          "date": "2026-08-11",
+          "url": "https://github.com/w3c/csswg-drafts/issues/7648#issuecomment-5256633813",
+          "gist": "Skia also seems to render things correctly (modulo a few white pixel glitches): https://fiddle.skia.org/c/7809027f37cf1412bdf76b8a93a5cd79 (scroll past the code to see the resulting visual)."
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-08-12",
+          "url": "https://github.com/w3c/csswg-drafts/issues/7648#issuecomment-5260882754",
+          "gist": "At least for SVG2, the tech goes either way. If *we* settled on one particular 2d gradient tech, they'd copy; if they settled on one, we'd copy."
+        }
+      ]
+    },
+    {
+      "issue": 14256,
+      "title": "[css-forms-1] Improve appearance: base <select> styling to be usable as-is",
+      "labels": [
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14256",
+      "comments_in_window": 9,
+      "feature": null,
+      "recent": [
+        {
+          "author": "phaux",
+          "date": "2026-08-06",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14256#issuecomment-5208555819",
+          "gist": "Another option is to use `background-color: Canvas` and let the user override it with a new property `canvas-color` similar to how `accent-color` property is supposed to set the color for `AccentColor"
+        },
+        {
+          "author": "jensimmons",
+          "date": "2026-08-07",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14256#issuecomment-5220698171",
+          "gist": "There may be people in this thread who did not attend the meeting where I presented our proposal. Here are the slides (with speaker notes you can read). Please do check it out to get the context of th"
+        },
+        {
+          "author": "fantasai",
+          "date": "2026-08-13",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14256#issuecomment-5274393389",
+          "gist": "I've split out most of the delta between Apple's proposal and the current UA styles into individual issues:"
+        }
+      ]
+    },
+    {
+      "issue": 14291,
+      "title": "[selectors] Should `.foo-*` match `foo-`?",
+      "labels": [
+        "Agenda+",
+        "selectors-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14291",
+      "comments_in_window": 7,
+      "feature": "heading-selector",
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-08-12",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14291#issuecomment-5260857748",
+          "gist": "Hmm, should `foo--bar` match `foo-*`? Or `foo--*?`"
+        },
+        {
+          "author": "LeaVerou",
+          "date": "2026-08-12",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14291#issuecomment-5265583617",
+          "gist": "@tabatkins they're common in BEM-style naming."
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-08-12",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14291#issuecomment-5272956974",
+          "gist": "So the mental model is that an empty dashed-segment is allowed, we just don't treat a *final* dash as defining a final empty segment."
+        }
+      ]
+    },
+    {
+      "issue": 14067,
+      "title": "[css-overflow-4] Effect of border-radius on line-clamp float clipping",
+      "labels": [
+        "Agenda+",
+        "Closed Accepted by CSSWG Resolution",
+        "Tested",
+        "css-overflow-4",
+        "topic: line-clamp"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14067",
+      "comments_in_window": 7,
+      "feature": null,
+      "recent": [
+        {
+          "author": "frivoal",
+          "date": "2026-08-11",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14067#issuecomment-5251698374",
+          "gist": "Oops, went a bit too fast. While the spec does define the overflow-clip-edge to be a shaped edge, it also does say:"
+        },
+        {
+          "author": "andreubotella",
+          "date": "2026-08-11",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14067#issuecomment-5252513362",
+          "gist": "For what's worth, I understood the resolution as meaning \"like `overflow-y: clip` except on the content edge\" (or with `overflow-clip-margin: content-box`)."
+        },
+        {
+          "author": "frivoal",
+          "date": "2026-08-11",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14067#issuecomment-5252938066",
+          "gist": "test at https://github.com/web-platform-tests/wpt/pull/61850"
+        }
+      ]
+    },
+    {
+      "issue": 13860,
+      "title": "[css-pseudo] `::before(<ident>)` / `::after(<ident>)`: A possible path forwards for multiple gencontent pseudos?",
+      "labels": [
+        "css-pseudo-4",
+        "css-pseudo-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13860",
+      "comments_in_window": 7,
+      "feature": null,
+      "recent": [
+        {
+          "author": "bradkemper",
+          "date": "2026-08-11",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13860#issuecomment-5248181241",
+          "gist": "I disagree. I'm not talking about indexing each pseudo, I'm talking about a convenient way for conflicts within each group to be resolved by the author. We have precedent with `order` and `reading-ord"
+        },
+        {
+          "author": "LeaVerou",
+          "date": "2026-08-12",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13860#issuecomment-5266209725",
+          "gist": "Btw the idea I mentioned at the end of the meeting was, if resolving pseudo existence via `content` is too expensive, instead of having a double-opt in via a property (which is error-prone), we **make"
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-08-12",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13860#issuecomment-5272747343",
+          "gist": "@bradkemper"
+        }
+      ]
+    },
+    {
+      "issue": 14300,
+      "title": "[css-values] Percentages and unit arithmetic",
+      "labels": [
+        "Agenda+",
+        "css-values-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14300",
+      "comments_in_window": 5,
+      "feature": "absolute-lengths",
+      "recent": [
+        {
+          "author": "kbhomes",
+          "date": "2026-08-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14300#issuecomment-5233435715",
+          "gist": "I think this is where my confusion comes in, which is that my understanding was `line-height` _doesn't_ leave percentages unresolved, and always computes them to a length (whether or not `calc()` is i"
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-08-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14300#issuecomment-5233706149",
+          "gist": "Argh sorry I'm being dumb. It's *numbers* that inherit weird, %s resolve at computed-value time, right. Brain fart."
+        },
+        {
+          "author": "emilio",
+          "date": "2026-08-12",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14300#issuecomment-5268228675",
+          "gist": "@tabatkins I guess the thing I find it weird is that `<number>` parses differently depending on which property it is set on, but..."
+        }
+      ]
+    },
+    {
+      "issue": 13728,
+      "title": "Proposal: Declarative Web Haptics",
+      "labels": [
+        "css-haptics?"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13728",
+      "comments_in_window": 5,
+      "feature": null,
+      "recent": [
+        {
+          "author": "bramus",
+          "date": "2026-08-10",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13728#issuecomment-5238672522",
+          "gist": "I like B, but perhaps we should allow authors to skip storing the event into a named trigger?"
+        },
+        {
+          "author": "flackr",
+          "date": "2026-08-10",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13728#issuecomment-5242273270",
+          "gist": "I think this is just a matter of coming up with a good anonymous trigger construction syntax, which could also be used in the `animation-trigger` property. E.g."
+        },
+        {
+          "author": "liminzhu",
+          "date": "2026-08-10",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13728#issuecomment-5245674358",
+          "gist": "// fyi I am on vacation for the week so may not be super responsive :)"
+        }
+      ]
+    }
+  ],
+  "notable": [
+    {
+      "issue": 14290,
+      "title": "[css-grid-3][css-display-4] Naming for grid lanes reading-flow values",
+      "labels": [
+        "css-display-4",
+        "css-grid-3",
+        "topic: masonry"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14290",
+      "comments_in_window": 4,
+      "feature": "masonry",
+      "recent": [
+        {
+          "author": "alisonmaher",
+          "date": "2026-08-06",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14290#issuecomment-5208551964",
+          "gist": "I would be somewhat hesitant to use row and column here since there are only ever columns _or_ rows in grid lanes layout, but _not both_ (like in classic grid)."
+        },
+        {
+          "author": "bradkemper",
+          "date": "2026-08-07",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14290#issuecomment-5211935750",
+          "gist": "Me too. On the other hand, reading-flow already has a lot of values, most of them meaningless when they don't match the display type."
+        },
+        {
+          "author": "bradkemper",
+          "date": "2026-08-07",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14290#issuecomment-5212306988",
+          "gist": "Nm. One is for paying attention to `order` and the other to `reading-order`. Sorry for the noise."
+        }
+      ]
+    },
+    {
+      "issue": 14192,
+      "title": "[css-color-4] [css-ui-4] `color: AccentColor; accent-color: currentColor` cycle",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-color-4",
+        "css-ui-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14192",
+      "comments_in_window": 3,
+      "feature": null,
+      "recent": [
+        {
+          "author": "fantasai",
+          "date": "2026-08-06",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14192#issuecomment-5202712565",
+          "gist": "@svgeesus That text only applies to `currentColor`. It's not solving this problem, which is about `AccentColor` and `AccentColorText`."
+        }
+      ]
+    },
+    {
+      "issue": 14056,
+      "title": "[css-values-5] Proposal for a new `<request-url-modifier>` called `<cross-origin-storage>`",
+      "labels": [
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14056",
+      "comments_in_window": 3,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tomayac",
+          "date": "2026-08-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14056#issuecomment-5230677821",
+          "gist": "While testing whether `cross-origin-storage()` degrades gracefully in engines that don't recognize it yet, I found that the two engines I checked disagree on how they recover from an unrecognized `<ur"
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-08-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14056#issuecomment-5233320390",
+          "gist": "Ooh, good catch. I think making the entire `url()` invalid is the more forward-compatible option. We can't tell a priori whether a given modifier is *required* to get the author's desired behavior, or"
+        },
+        {
+          "author": "tomayac",
+          "date": "2026-08-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14056#issuecomment-5233401237",
+          "gist": "Safari's behavior works for this proposal. It just needs to be spec'ed. Falling through to the next rule is also a very common CSS progressive enhancement flow, so no worries there either."
+        }
+      ]
+    },
+    {
+      "issue": 14296,
+      "title": "[scroll-animations-1] What should a view progress timeline do when its subject is position:fixed?",
+      "labels": [
+        "scroll-animations-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14296",
+      "comments_in_window": 3,
+      "feature": "scroll-driven-animations",
+      "recent": [
+        {
+          "author": "kizu",
+          "date": "2026-08-07",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14296#issuecomment-5217437052",
+          "gist": "Even without scrolling displacement an element could have different progress values in its scrollport, and that could be useful information to have for styling. And it can change its position based on"
+        },
+        {
+          "author": "jwatt",
+          "date": "2026-08-07",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14296#issuecomment-5218127492",
+          "gist": "Good point. I think the spec still needs to define what the [ranges](https://drafts.csswg.org/scroll-animations-1/#view-timelines-ranges) mean in this scenario though. Some possibilities(?):"
+        },
+        {
+          "author": "jwatt",
+          "date": "2026-08-07",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14296#issuecomment-5218152886",
+          "gist": "Correction to what I said about WPT testing: there is scroll-animations/scroll-timelines/custom-property.html"
+        }
+      ]
+    },
+    {
+      "issue": 13277,
+      "title": "[css-inline-3][css-text-3] Clarification on vertical-align shorthand and text boundary shaping",
+      "labels": [
+        "Async Resolution: Proposed",
+        "Closed Accepted by Editor Discretion",
+        "css-inline-3",
+        "css-text-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13277",
+      "comments_in_window": 3,
+      "feature": null,
+      "recent": [
+        {
+          "author": "fantasai",
+          "date": "2026-08-11",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13277#issuecomment-5255777955",
+          "gist": "I think the simplest solution here is to say “If `vertical-align` is not its [=initial value=].”"
+        },
+        {
+          "author": "fantasai",
+          "date": "2026-08-11",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13277#issuecomment-5255938616",
+          "gist": "Pushed up edits to this effect. Agenda+ Async to check that everyone is happy with this. CC @bfgeek"
+        },
+        {
+          "author": "kbhomes",
+          "date": "2026-08-11",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13277#issuecomment-5256634889",
+          "gist": "Ah, thanks for clarifying on `baseline-source`. I'm curious about how the \"applies to\" change for `baseline-source` is implemented in practice -- does that mean that a declaration like `baseline-sourc"
+        }
+      ]
+    },
+    {
+      "issue": 5675,
+      "title": "[css-grid] Masonry layout in CSS Grid 3 has potential to cause accessibility problems with reading order.",
+      "labels": [
+        "Needs Edits",
+        "css-grid-3",
+        "topic: masonry"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/5675",
+      "comments_in_window": 3,
+      "feature": "masonry",
+      "recent": [
+        {
+          "author": "thejohnjansen",
+          "date": "2026-08-07",
+          "url": "https://github.com/w3c/csswg-drafts/issues/5675#issuecomment-5213877325",
+          "gist": "I want to get clarity on the minutes. After the issue was resolved to use an \"informative appendix ... and collect feedback\" there is an additional \"summary\" note that isn't quite clear: \"... cycle ba"
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-08-10",
+          "url": "https://github.com/w3c/csswg-drafts/issues/5675#issuecomment-5243830921",
+          "gist": "The gist there was that experimental/flagged implementation was allowed and *encouraged*, but don't publicly ship new values before confirming with the group about it."
+        },
+        {
+          "author": "astearns",
+          "date": "2026-08-11",
+          "url": "https://github.com/w3c/csswg-drafts/issues/5675#issuecomment-5248312698",
+          "gist": "Or in other words, this is one of the incubation methods we sometime use. We weren’t quite ready to put these values in normative text, but felt it would be useful to promote the proposal we mostly ag"
+        }
+      ]
+    },
+    {
+      "issue": 14308,
+      "title": "[css-forms-1] Apply border-radius to all base appearance controls",
+      "labels": [
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14308",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "emilio",
+          "date": "2026-08-11",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14308#issuecomment-5260055261",
+          "gist": "I strongly think that `select` should have the same radius as buttons. They're pretty much the same. A single `<select>` is a button that triggers a dropdown on click, sorta-kinda :)"
+        },
+        {
+          "author": "fantasai",
+          "date": "2026-08-12",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14308#issuecomment-5272079004",
+          "gist": "@emilio The complication with buttons is that (unlike `<select>`, which has a ::picker-icon), we need some way of distinguishing buttons from regular input fields. There are ways to do that besides th"
+        }
+      ]
+    },
+    {
+      "issue": 14288,
+      "title": "[css-values-5] Rename toggle() function",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14288",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "therealadityashankar",
+          "date": "2026-08-06",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14288#issuecomment-5206100833",
+          "gist": "I couldn't find an MDN page for cycle() (what was toggle), not sure if one exists, I can create one if it does not."
+        }
+      ]
+    },
+    {
+      "issue": 14143,
+      "title": "[css-ui] Maybe reconsider the :hover / :active top layer propagation rules?",
+      "labels": [
+        "Agenda+",
+        "css-ui-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14143",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "smaug----",
+          "date": "2026-08-06",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14143#issuecomment-5205926980",
+          "gist": "Not super great, and nothing new here, but still, a [testcase](https://mozilla.pettay.fi/top-layer-hover-vs-pointerenter.html) showing the differences between events vs :hover vs :has(:hover). Just so"
+        },
+        {
+          "author": "mfreed7",
+          "date": "2026-08-06",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14143#issuecomment-5209768741",
+          "gist": "Nice demo! The interactive part does line up with my understanding of the current specs (and Chrome's shipping behavior)."
+        }
+      ]
+    },
+    {
+      "issue": 14193,
+      "title": "[css-color-4] [css-ui-4] computed value of `accent-color: AccentColor`",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-color-4",
+        "css-ui-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14193",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "fantasai",
+          "date": "2026-08-06",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14193#issuecomment-5202843567",
+          "gist": "See also discussion in https://github.com/w3c/csswg-drafts/issues/14192"
+        }
+      ]
+    },
+    {
+      "issue": 14317,
+      "title": "[css-forms-1] select picker-icon glyph",
+      "labels": [
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14317",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-08-12",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14317#issuecomment-5272975608",
+          "gist": "Honestly I *hate* the disclosure-open/closed icons anyway, and wouldn't be sad to see us just change the recommended rendering and have browsers update."
+        },
+        {
+          "author": "fantasai",
+          "date": "2026-08-12",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14317#issuecomment-5273379629",
+          "gist": "The arrows don't point the same way anyway, so I think this would have to be a new thing anyway. :)"
+        }
+      ]
+    },
+    {
+      "issue": 14104,
+      "title": "[css-break] `box-decoration-break: clone` on inline box should exclude fragments around block-level",
+      "labels": [
+        "Agenda+",
+        "css-break-3",
+        "css-inline-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14104",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "Loirooriol",
+          "date": "2026-08-06",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14104#issuecomment-5202312135",
+          "gist": "Agreed. But I mentioned `box-decoation-break: clone` because with `slice` it could be thought that the decorations are just not visible because the inline fragment is 0px wide (this happens in Servo a"
+        },
+        {
+          "author": "fantasai",
+          "date": "2026-08-07",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14104#issuecomment-5217556521",
+          "gist": "@alanbaradlay fixed this for WebKit in https://github.com/WebKit/WebKit/commit/4b5123221d3b52683ca5d44e1728f614d2d946b5"
+        }
+      ]
+    },
+    {
+      "issue": 14079,
+      "title": "[css-values-5] weighted values for random-item()",
+      "labels": [
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14079",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "fantasai",
+          "date": "2026-08-06",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14079#issuecomment-5206287383",
+          "gist": "Could also flip it around and put the percentage at the end, which makes optionality feel more natural."
+        }
+      ]
+    },
+    {
+      "issue": 13287,
+      "title": "[css-color-4] Please consider CIE Luv & CIE LCHuv",
+      "labels": [
+        "css-color-4",
+        "css-color-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13287",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "facelessuser",
+          "date": "2026-08-11",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13287#issuecomment-5257469519",
+          "gist": "I believe Luv was discussed [here](https://github.com/w3c/csswg-drafts/issues/6061) before. Just noting as a reference."
+        },
+        {
+          "author": "mm2t",
+          "date": "2026-08-12",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13287#issuecomment-5269186329",
+          "gist": "@facelessuser Thank you for sharing this very interesting discussion 👍"
+        }
+      ]
+    },
+    {
+      "issue": 14061,
+      "title": "[css-forms-1] Should `select:not(:open)::picker(select)` use `display: none !important`?",
+      "labels": [
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14061",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "fantasai",
+          "date": "2026-08-12",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14061#issuecomment-5273882665",
+          "gist": "Do we need a UA \"sort of important\" level that gets overridden by author !important?"
+        }
+      ]
+    },
+    {
+      "issue": 14251,
+      "title": "[css-forms-1] Cursors for base appearance",
+      "labels": [
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14251",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "kizu",
+          "date": "2026-08-07",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14251#issuecomment-5217834499",
+          "gist": "I know it is unlikely this will lead to anything, but if we’re talking about cursors… I can’t not mention `cursor: pointer`, which many many web sites and design systems already apply to buttons & sel"
+        }
+      ]
+    },
+    {
+      "issue": 14115,
+      "title": "[css-color-5] 11.2. Serializing Origin Colors does not cover light-dark()",
+      "labels": [
+        "css-color-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14115",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "svgeesus",
+          "date": "2026-08-06",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14115#issuecomment-5202914814",
+          "gist": "@emilio drawing this to your attention"
+        }
+      ]
+    },
+    {
+      "issue": 14129,
+      "title": "[animation-triggers-1] formalize the <event-trigger-event> value",
+      "labels": [
+        "Needs Edits",
+        "animation-triggers-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14129",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "ydaniv",
+          "date": "2026-08-08",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14129#issuecomment-5225199400",
+          "gist": "@flackr, these are good references, that was sort of my understanding as well, but I was concerened about those slight differences. Also, I believe most authors still consider `click` as mostly being "
+        }
+      ]
+    },
+    {
+      "issue": 14008,
+      "title": "[css-align-3][css-anchor-position-1] overflow limit rect behaviour with fixedpos & default anchor.",
+      "labels": [
+        "Agenda+",
+        "css-align-3",
+        "css-anchor-position-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14008",
+      "comments_in_window": 1,
+      "feature": "anchor-positioning",
+      "recent": [
+        {
+          "author": "fantasai",
+          "date": "2026-08-06",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14008#issuecomment-5203754655",
+          "gist": "Based on https://github.com/w3c/csswg-drafts/issues/14172 the proposal here is:"
+        }
+      ]
+    },
+    {
+      "issue": 14254,
+      "title": "[css-forms-1] Refine base appearance colors",
+      "labels": [
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14254",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "fantasai",
+          "date": "2026-08-12",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14254#issuecomment-5273892171",
+          "gist": "@Psychpsyo If the author sets the border color to _literally anything_, it'll override this effect. This is because author rules absolutely override UA rules, regardless of specificity."
+        }
+      ]
+    },
+    {
+      "issue": 14312,
+      "title": "[css-pseudo-4] Should highlights support interactivity declarations?",
+      "labels": [
+        "Agenda+",
+        "css-pseudo-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14312",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "emilio",
+          "date": "2026-08-12",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14312#issuecomment-5265669356",
+          "gist": "It's not just due to the \"affect layout\" constraint, fwiw. `opacity` needs to introduce a stacking context and it seems like it'd be complicated to define what the stacking order is there, specially i"
+        }
+      ]
+    },
+    {
+      "issue": 14234,
+      "title": "[scroll-animations-1] Clarify what pseudo-elements can be scroll/view timelines other than `::before` and `::after`, if any",
+      "labels": [
+        "scroll-animations-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14234",
+      "comments_in_window": 1,
+      "feature": "scroll-driven-animations",
+      "recent": [
+        {
+          "author": "kizu",
+          "date": "2026-08-07",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14234#issuecomment-5217972942",
+          "gist": "Something that authors seemed to discover: attaching view timelines to the range input’s thumbs: https://master.dev/blog/custom-range-slider-using-anchor-positioning-scroll-driven-animations/"
+        }
+      ]
+    },
+    {
+      "issue": 14179,
+      "title": "[css-view-transitions-2] Scoped transitions on non-layout containable elements",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-view-transitions-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14179",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "astearns",
+          "date": "2026-08-11",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14179#issuecomment-5248161588",
+          "gist": "RESOLVED: `startViewTransition` throws an invalid state exception for elements that cannot have layout containment"
+        }
+      ]
+    },
+    {
+      "issue": 14172,
+      "title": "[css-forms-1] Better default sizing for custom select?",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14172",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "lukewarlow",
+          "date": "2026-08-06",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14172#issuecomment-5205729213",
+          "gist": "Just FYI this will need an update to the HTML spec rather than a CSS spec, as HTML now owns the select element styles."
+        }
+      ]
+    },
+    {
+      "issue": 14213,
+      "title": "[css-values-5] Should ident() be an arbitrary substitution function?",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14213",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": []
+    },
+    {
+      "issue": 14070,
+      "title": "[css-color-5] Omissable alpha in relative color serialization",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-color-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14070",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": []
+    },
+    {
+      "issue": 13978,
+      "title": "[css-values-5] Are sibling-count() and sibling-index() math functions?",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13978",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": []
+    },
+    {
+      "issue": 13096,
+      "title": "[css-pseudo-4] Let ::details-content opened details correctly set expanded",
+      "labels": [
+        "Commenter Response Pending",
+        "css-pseudo-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13096",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "fantasai",
+          "date": "2026-08-11",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13096#issuecomment-5256948490",
+          "gist": "Can you explain why you're forcing it open when it's DOM state is closed?"
+        }
+      ]
+    },
+    {
+      "issue": 13365,
+      "title": "[css-gaps-1] Seek wide review",
+      "labels": [
+        "css-gaps-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13365",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "kbabbitt",
+          "date": "2026-08-06",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13365#issuecomment-5203127784",
+          "gist": "RE: \"the groups listed in the WG's charter, especially those who manage dependencies\""
+        }
+      ]
+    },
+    {
+      "issue": 13839,
+      "title": "[css-values] Clarifications on how calc-mix() simplification should work",
+      "labels": [
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13839",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "cdoublev",
+          "date": "2026-08-07",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13839#issuecomment-5213374157",
+          "gist": "Don't you want to partially resolve it to `calc-mix(10px 25%, 5em 75%)`? If so, what should be the order of the items for eg. `calc-mix(1px, 1em, 1px * sibling-count(), 1em, 1px)`?"
+        }
+      ]
+    },
+    {
+      "issue": 3377,
+      "title": "[css-nav-1] Reordered sequential navigation",
+      "labels": [
+        "css-nav-1",
+        "css-ui-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/3377",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "md84419",
+          "date": "2026-08-07",
+          "url": "https://github.com/w3c/csswg-drafts/issues/3377#issuecomment-5213853990",
+          "gist": "- Browser-based TVs, Opera, Firefox, Chrome and Edge have had spatial navigation support for ages."
+        }
+      ]
+    },
+    {
+      "issue": 1910,
+      "title": "[css-ui-4] Make directional navigation more composable",
+      "labels": [
+        "css-ui-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/1910",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "md84419",
+          "date": "2026-08-07",
+          "url": "https://github.com/w3c/csswg-drafts/issues/1910#issuecomment-5213888094",
+          "gist": "See also #3377"
+        }
+      ]
+    },
+    {
+      "issue": 11276,
+      "title": "[web-animations-2] procedure to convert a time-based animation to a proportional animation might yield a division by 0",
+      "labels": [
+        "scroll-animations-1",
+        "web-animations-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/11276",
+      "comments_in_window": 1,
+      "feature": "scroll-driven-animations",
+      "recent": [
+        {
+          "author": "BorisChiou",
+          "date": "2026-08-11",
+          "url": "https://github.com/w3c/csswg-drafts/issues/11276#issuecomment-5258424114",
+          "gist": "Just noticed this. This may be the same as https://github.com/w3c/csswg-drafts/issues/7459"
+        }
+      ]
+    }
+  ],
+  "fresh": [
+    {
+      "issue": 14324,
+      "title": "[css-forms-1] Add margin to the picker",
+      "labels": [
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14324",
+      "feature": null,
+      "created_at": "2026-08-13",
+      "background": "One of the complaints we got about the picker styling for `<select>` was the double-border effect of the drop-down being placed immediately adjacent to the button. Because jamming the picker right up against the button looks awkward, we propose a margin (which is a commonly used effect) of 4px. This also addresses the concern @jakearchibald raised in https://github.com/w3c/csswg-drafts/issues/1417",
+      "related": [
+        {
+          "issue": 5715,
+          "url": "https://github.com/w3c/csswg-drafts/issues/5715"
+        },
+        {
+          "issue": 14172,
+          "url": "https://github.com/w3c/csswg-drafts/issues/14172"
+        }
+      ]
+    },
+    {
+      "issue": 14325,
+      "title": "[css-forms-1] Transitions for ::picker open/close",
+      "labels": [
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14325",
+      "feature": null,
+      "created_at": "2026-08-13",
+      "background": "Transitional animations moderate the abruptness of UI, making it feel softer and more natural to interact with. We suggest adding some basic transitions to the appearance of the picker:",
+      "related": []
+    },
+    {
+      "issue": 14309,
+      "title": "[web-animations-2] Incorporate implicit keyframe generation override from scroll animations",
+      "labels": [
+        "web-animations-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14309",
+      "feature": null,
+      "created_at": "2026-08-12",
+      "background": "",
+      "related": [
+        {
+          "issue": 8202,
+          "url": "https://github.com/w3c/csswg-drafts/issues/8202"
+        }
+      ]
+    },
+    {
+      "issue": 14312,
+      "title": "[css-pseudo-4] Should highlights support interactivity declarations?",
+      "labels": [
+        "Agenda+",
+        "css-pseudo-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14312",
+      "feature": null,
+      "created_at": "2026-08-12",
+      "background": "[`3.2 Styling Highlights`](https://drafts.csswg.org/css-pseudo-4/#highlight-styling) enumerates the list of allowed properties as:",
+      "related": []
+    },
+    {
+      "issue": 14313,
+      "title": "[css-values-5] `*-interpolate()` with equal stop positions or without segments",
+      "labels": [
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14313",
+      "feature": null,
+      "created_at": "2026-08-12",
+      "background": "https://drafts.csswg.org/css-values-5/#interpolation-notation",
+      "related": []
+    },
+    {
+      "issue": 14314,
+      "title": "[fullscreen] [css-overflow] Fullscreen subdocuments and scrollbar gutter",
+      "labels": [
+        "Agenda+",
+        "css-overflow-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14314",
+      "feature": null,
+      "created_at": "2026-08-12",
+      "background": "Check out [this test-case](https://bugzilla.mozilla.org/attachment.cgi?id=9625728) from [Mozilla bug 2061066](https://bugzilla.mozilla.org/show_bug.cgi?id=2061066) on a browser with classic scrollbars.",
+      "related": []
+    },
+    {
+      "issue": 14316,
+      "title": "[css-forms-1] Use empty alt text for ::picker-icon and ::checkmark",
+      "labels": [
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14316",
+      "feature": null,
+      "created_at": "2026-08-12",
+      "background": "The icons we use for ::checkmark and ::picker-icon are not particularly useful to read aloud. The status of the control is already exposed to AT independently, so we propose using empty alt text for these glyphs:",
+      "related": []
+    },
+    {
+      "issue": 14317,
+      "title": "[css-forms-1] select picker-icon glyph",
+      "labels": [
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14317",
+      "feature": null,
+      "created_at": "2026-08-12",
+      "background": "The UA stylesheet for `<select>` currently uses `disclosure-open` for the `::picker-icon`. However this kind of large filled triangle tends to be too bold and pointy in comparison to the adjacent text, which has led many design systems, including the demo styles from last week's `<select>` styling discussion, to adopt a chevron design.",
+      "related": [
+        {
+          "issue": 14003,
+          "url": "https://github.com/w3c/csswg-drafts/issues/14003"
+        }
+      ]
+    },
+    {
+      "issue": 14318,
+      "title": "[css-forms-1] Handle prefers-contrast and forced-colors by default",
+      "labels": [
+        "a11y-tracker",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14318",
+      "feature": null,
+      "created_at": "2026-08-12",
+      "background": "Although any color styling that the author sets will override all our rules, including those in a media query, we might want to make sure that if the author doesn't set anything, users get appropriate contrast.",
+      "related": []
+    },
+    {
+      "issue": 14319,
+      "title": "[css-forms-1] Vertically centering form control content",
+      "labels": [
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14319",
+      "feature": null,
+      "created_at": "2026-08-12",
+      "background": "The UA stylesheet currently applies block-axis centering in a few places: options, radio buttons, checkboxes, and [buttons](https://github.com/w3c/csswg-drafts/issues/14190). But actually, when an input or select is sized larger than the text and icons it contains, its contents should also be centered.",
+      "related": [
+        {
+          "issue": 14190,
+          "url": "https://github.com/w3c/csswg-drafts/issues/14190"
+        }
+      ]
+    },
+    {
+      "issue": 14320,
+      "title": "[css-forms-1] Vertically centering form controls that don't contain text",
+      "labels": [
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14320",
+      "feature": null,
+      "created_at": "2026-08-12",
+      "background": "The text-containing form controls (text inputs, select, button, etc.) use baseline alignment in reference to their text contents. However checkbox, radio button, and range controls do not contain text. So currently, they sit on the baseline. This looks fine if they happen to be sized to match the text, but that's not always the case.",
+      "related": []
+    },
+    {
+      "issue": 14321,
+      "title": "[css-forms-1] Refine internal spacing in appearance: base controls",
+      "labels": [
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14321",
+      "feature": null,
+      "created_at": "2026-08-12",
+      "background": "The default padding for `<select>`’s base appearance right now a) doesn’t adhere to good optical alignment due to the ::picker-icon and b) doesn’t provide enough spacing within the interactive elements (like option).",
+      "related": []
+    },
+    {
+      "issue": 14322,
+      "title": "[css-forms-1] Inherit currentColor into ::picker()",
+      "labels": [
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14322",
+      "feature": null,
+      "created_at": "2026-08-12",
+      "background": "We decided to set the ::picker() colors to `CanvasText` on `Canvas` because we needed to ensure an opaque background for the overlay, but actually, we can probably do better here in matching the author's colors.",
+      "related": []
+    },
+    {
+      "issue": 14323,
+      "title": "[css-forms-1] Apply ::field-text/::field-content to select button contents",
+      "labels": [
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14323",
+      "feature": null,
+      "created_at": "2026-08-12",
+      "background": "This is a follow-up from https://github.com/w3c/csswg-drafts/issues/14255. The `<select>` element has two possible markup patterns. \"Customizable select\" adds an extra `button` and optional `selectedcontent` element to represent the duplicated `option` content and allow it to be styled independently. But traditional markup doesn't have these elements, it just contains `option`s.",
+      "related": [
+        {
+          "issue": 13516,
+          "url": "https://github.com/w3c/csswg-drafts/issues/13516"
+        },
+        {
+          "issue": 14255,
+          "url": "https://github.com/w3c/csswg-drafts/issues/14255"
+        }
+      ]
+    },
+    {
+      "issue": 14308,
+      "title": "[css-forms-1] Apply border-radius to all base appearance controls",
+      "labels": [
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14308",
+      "feature": null,
+      "created_at": "2026-08-11",
+      "background": "A survey of design systems shows that a vast majority round the corners of their input controls to make them not-sharp: usually by 4px, sometimes by 6px. We propose adopting this general consensus by adding `border-radius: 4px` to the base appearance for `input`, `textarea`, `select` and `::picker`.",
+      "related": []
+    },
+    {
+      "issue": 14300,
+      "title": "[css-values] Percentages and unit arithmetic",
+      "labels": [
+        "Agenda+",
+        "css-values-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14300",
+      "feature": "absolute-lengths",
+      "created_at": "2026-08-09",
+      "background": "So for context, this discussion comes from [this Firefox commit](https://phabricator.services.mozilla.com/D317242).",
+      "related": []
+    },
+    {
+      "issue": 14294,
+      "title": "[css-env-1] define keyboard-inset-* instead of VirtualKeyboard API?",
+      "labels": [
+        "Agenda+",
+        "css-env-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14294",
+      "feature": null,
+      "created_at": "2026-08-07",
+      "background": "Currently, `keyboard-inset-*` is defined in [VirtualKeyboard API](https://w3c.github.io/virtual-keyboard/#keyboard-inset-variables). In Blink, these variables seem to be set when `navigator.virtualKeyboard.overlaysContent = true;`.",
+      "related": []
+    },
+    {
+      "issue": 14296,
+      "title": "[scroll-animations-1] What should a view progress timeline do when its subject is position:fixed?",
+      "labels": [
+        "scroll-animations-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14296",
+      "feature": "scroll-driven-animations",
+      "created_at": "2026-08-07",
+      "background": "https://drafts.csswg.org/scroll-animations-1/#viewtimeline-interface",
+      "related": [
+        {
+          "issue": 13988,
+          "url": "https://github.com/w3c/csswg-drafts/issues/13988"
+        }
+      ]
+    }
+  ],
+  "spec_changes": [
+    {
+      "shortname": "css-fonts-4",
+      "title": "CSS Fonts Module Level 4",
+      "maturity": "WD",
+      "date": "2026-08-11",
+      "url": "https://www.w3.org/TR/2026/WD-css-fonts-4-20260811/"
+    },
+    {
+      "shortname": "css-fonts-5",
+      "title": "CSS Fonts Module Level 5",
+      "maturity": "WD",
+      "date": "2026-08-11",
+      "url": "https://www.w3.org/TR/2026/WD-css-fonts-5-20260811/"
+    }
+  ]
+}

@@ -107,6 +107,7 @@
 - 2025-12-09 opened #13196: [web-animations-2] Should CSSNumericValue number values be allowed for setting start and current time?
 - 2025-12-15 opened #13220: [web-animations-2] Iteration duration is never set if specified iteration duration is "auto" in "convert a time based animation to a proportional animation"
 - 2025-12-17 RESOLVED #13174: Use timeline-trigger-entry-range and timeline-trigger-active-range
+- 2025-12-17 opened #13230: [web-animations-2] Incorrect value for total time in "convert a time based animation to a proportional animation"
 - 2025-12-18 opened #13236: [web-animations-2] Playing newly created animations with finite timelines doesn't schedule play task
 - 2026-02-10 opened #13473: [meta] Change naming scheme of FXTF specs?
 - 2026-02-17 opened #13509: [web-animations-2] [scroll-animations] "at progress timeline boundary" for view timelines
@@ -127,3 +128,4 @@
 - 2026-07-15 opened #14188: [scroll-animations][css-viewport] How should the `zoom` property affect `animation-range-start`/`animation-range-end`
 - 2026-07-20 RESOLVED #14173: [apply the pending playback rate](https://drafts.csswg.org/web-animations-1/#apply-any-pending-playback-rate) of an animation when [auto-aligning the start time](https://drafts.csswg.org/web-animations-2/#auto-aligning-start-time).
 - 2026-07-20 opened #14205: [web-animations-2] rangeStart and rangeEnd invalidly returns dictionaries as attribute values
+- 2026-08-12 opened #14309: [web-animations-2] Incorporate implicit keyframe generation override from scroll animations

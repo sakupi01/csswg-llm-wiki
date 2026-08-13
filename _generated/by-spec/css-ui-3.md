@@ -41,3 +41,4 @@
 - 2026-03-04 RESOLVED #13019: Keep edits that makes resize apply to scroll containers
 - 2026-03-04 RESOLVED #13019: Keep spec as-is, outline-width snaps like border-width
 - 2026-03-04 RESOLVED #13019: Remove the comment
+- 2026-07-09 opened #14148: [css-ui-4] `outline-color: auto` should not be required to represent the accent color

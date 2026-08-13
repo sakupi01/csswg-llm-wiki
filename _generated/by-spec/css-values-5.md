@@ -312,6 +312,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - 2026-01-12 opened #13337: [css-values-5] What order to use for the "index of usage" for the default random() keys?
 - 2026-01-27 RESOLVED #12488: add value/type conversion functions to css-values-5
 - 2026-02-01 opened #13426: [css-values] Rename `inherit()` to `parent()`, add more `inherit`-like variant as `inherit()`
+- 2026-02-05 opened #13457: [css-values-5] Make specifying limits more convenient in random function
 - 2026-02-10 opened #13476: [css-values] Retrieve intrinsic/natural size of resources
 - 2026-02-11 RESOLVED #12721: all pseudo-elements other than ::slotted look at the originating element for attr(), sibling-index(), etc.
 - 2026-02-16 RESOLVED #12219: `ident()` is only valid within an element context
@@ -338,14 +339,17 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - 2026-04-01 RESOLVED #13337: Shortest serialization principle will not omit these minted idents
 - 2026-04-01 RESOLVED #13601: property-index-scoped for the last one
 - 2026-04-01 RESOLVED #13601: use element-scoped and property-scoped
+- 2026-04-01 opened #13753: [css-lists-3] [css-values-5] Potential issue with `toggle()` and `ul` in css-lists-3 Appendix A
 - 2026-04-02 RESOLVED #13599: Try for gaps, if it's web-compatible.
 - 2026-04-02 RESOLVED #13599: stroke-width does not snap as a border width
 - 2026-04-02 RESOLVED #13599: text-underline-width gets snapped as a border width
 - 2026-04-17 opened #13825: [css-values-5] Remove random(auto)
 - 2026-04-25 opened #13839: [css-values] Clarifications on how calc-mix() simplification should work
 - 2026-04-28 opened #13848: [css-values] Clarification on what the second `<easing-function>` in first clause in calc-interpolate do?
+- 2026-04-29 opened #13859: [css-values-5] Precedence of URL request modifiers over consumer-imposed fetch requirements
 - 2026-04-30 opened #13864: [css-values-5] Where should the random cache names be stored?
 - 2026-04-30 opened #13865: [css-values-5] When/why is a fixed random base value clamped?
+- 2026-05-13 opened #13921: [css-values-4] Duplicated definition of `<string>`
 - 2026-05-20 opened #13946: [css-values] attr() banning type(<url>) is kind of arbitrary.
 - 2026-05-28 opened #13978: [css-values-5] Are sibling-count() and sibling-index() math functions?
 - 2026-06-04 opened #14017: [css-values-5][Editorial] Incorrect WPT URL
@@ -366,3 +370,4 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - 2026-08-06 RESOLVED #14213: ident() is an arbitrary substitution function
 - 2026-08-06 RESOLVED #14288: Rename toggle() to cycle()
 - 2026-08-06 opened #14288: [css-values-5] Rename toggle() function
+- 2026-08-12 opened #14313: [css-values-5] `*-interpolate()` with equal stop positions or without segments

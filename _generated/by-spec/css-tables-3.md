@@ -160,4 +160,5 @@
 - 2026-01-28 opened #13406: [css-tables-3] How table borders should be painted at the corner? (border-collapse: collapse)
 - 2026-01-29 opened #13410: [css-borders][css-tables] Define how listified borders collapse
 - 2026-01-30 opened #13417: [css-borders][css-tables] The rowspan cell bottom-border takes the color of the last border shared adjacent cell
+- 2026-02-05 opened #13455: [css-tables][css-shadow] shadow of a row in the context of a rowspan
 - 2026-03-03 opened #13586: [css3-table] Are borders considered or not scrollable overflow?

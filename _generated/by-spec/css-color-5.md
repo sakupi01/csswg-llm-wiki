@@ -228,6 +228,7 @@
 - 2025-11-25 opened #13157: [css-conditional-5][css-color] Define `style()` color comparison in more precise terms
 - 2025-12-25 opened #13269: [css-color][css-animations] Is it specified anywhere that a color animation at time=0 exactly match the from color's computed value?
 - 2026-01-02 opened #13286: [css-color-5] "CIE LCH" is ambiguous
+- 2026-01-02 opened #13287: [css-color-4] Please consider CIE Luv & CIE LCHuv
 - 2026-01-09 opened #13320: [css-color-5] `color-mix()` serialization is outdated
 - 2026-01-27 RESOLVED #10254: if 'none' is used in hsl and hwb, we serialize with slashes and none; and for rgb, we serialize with color function
 - 2026-03-11 RESOLVED #12513: Overload light-dark() to accept image pairs

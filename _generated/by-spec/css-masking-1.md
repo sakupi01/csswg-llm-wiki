@@ -10,5 +10,6 @@
 - 2025-05-07 opened #12171: [css-masking] Define some way for clip-path to derive a path from an image, similar to shape-outside.
 - 2025-06-21 opened #12381: [css-masking][css-motion] Unify (non-ray() related) grammar of clip-path and motion-path
 - 2026-02-10 opened #13473: [meta] Change naming scheme of FXTF specs?
+- 2026-03-15 opened #13660: [css-masking] Add mask-position-x and mask-position-y longhands
 - 2026-03-19 opened #13682: [css-masking-1] Disallow negative values in `mask-border` longhands
 - 2026-03-19 opened #13684: [css-masking-1] Disallow trailing `/` in `mask-border`

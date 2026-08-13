@@ -117,6 +117,7 @@
 - 2026-01-16 opened #13364: [css-anchor-position-1][css-animations-2][scroll-animations-1] Fix name visibility for descendants
 - 2026-01-28 RESOLVED #13364: name lookup for timeline-name, anchor-name, etc. walks up the ancestor chain (up to stopping point) first, then looks for last-defined within scope
 - 2026-02-02 RESOLVED #11064: Accept the edits for the event order of cancelled transitions/animations
+- 2026-02-10 opened #13472: [css-animations-2] Setting `Animation.timeline` should override further changes to `animation-timeline`
 - 2026-02-16 opened #13503: [css-animations-2] calling `cancel()` on a CSS Animation should prevent further changes made from CSS to apply
 - 2026-02-26 opened #13569: [scroll-animations-1][css-animations-2] Move the definition of animation-range-start and animation-range-end (and their shorthand) into css-animations-2
 - 2026-03-14 opened #13655: [css-values][css-conditional][css-animations] Proposal for time-based CSS

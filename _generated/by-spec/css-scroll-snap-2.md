@@ -46,4 +46,5 @@
 - 2025-04-03 RESOLVED #10913: Close as fixed; dup of earlier issue
 - 2025-10-13 opened #12943: [css-scroll-snap-1] Drop 'scroll-padding: auto'?
 - 2026-02-01 opened #13425: [css-scroll-snap-2] scroll-initial-target has incorrect 'see individual properties' in computed value
+- 2026-02-25 opened #13558: Allow anchor-size() as a value for scroll-padding-*
 - 2026-06-17 RESOLVED #8549: accept the proposal in last comment of issue

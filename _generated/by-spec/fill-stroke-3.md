@@ -25,3 +25,4 @@
 - 2025-12-15 opened #13221: [fill-stroke-3][editorial] Image of figure 8 not shown in Firefox
 - 2026-02-10 opened #13473: [meta] Change naming scheme of FXTF specs?
 - 2026-03-29 opened #13740: [fill-stroke-3] Remove `arcs` and `miter-clip` from `stroke-linejoin`
+- 2026-05-08 opened #13900: [css-fill-and-stroke-3]  stroke-width grammar appears inconsistent between CSS Fill and Stroke and SVG2

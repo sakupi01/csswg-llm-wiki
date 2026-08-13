@@ -107,3 +107,5 @@
 - 2025-11-05 opened #13062: [css-backgrounds-4] Time for FPWD
 - 2025-11-13 RESOLVED #13062: FPWD css-backgrounds-4
 - 2026-01-27 RESOLVED #9083: close this issue, no change
+- 2026-02-16 opened #13501: [css-background-4] Set independent background for overscroll on any side
+- 2026-06-11 opened #14035: [Req] backdrop occlusion.

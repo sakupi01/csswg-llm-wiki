@@ -400,6 +400,7 @@
 - 2025-08-19 RESOLVED #12596: add display-p3-linear to the predefined color-spaces
 - 2025-08-19 RESOLVED #8629: Close issue as (now) invalid
 - 2025-08-19 RESOLVED #8629: Close issue as (now) invalid <br>
+- 2026-01-02 opened #13287: [css-color-4] Please consider CIE Luv & CIE LCHuv
 - 2026-01-09 opened #13322: [css-color-4] Discrepancy between § 19.1. ΔE2000 implementation and ISO 11664-6:2014/Sharma et al., 2005
 - 2026-01-27 RESOLVED #10211: split mandatory conversion into (1) Converting powerless components to missing  (2)  Converting to another color space. This either calls 1 at the end, or if the two color spaces are the same, it only calls 1
 - 2026-01-27 RESOLVED #10254: if 'none' is used in hsl and hwb, we serialize with slashes and none; and for rgb, we serialize with color function
@@ -411,6 +412,7 @@
 - 2026-04-01 opened #13752: [css-color-4] Clarify that `none` is allowed in calculations
 - 2026-06-06 opened #14021: [css-color-5][css-color-4] Unclear how to use `progress` in interpolation.
 - 2026-06-08 opened #14027: [css-color-4] Expected outcome for channels with `infinity` or `-infinity` as value
+- 2026-06-09 opened #14029: [css-color-4] Two small corrections for raytrace gamut mapping pseudocode
 - 2026-06-14 opened #14046: [css-color-4] Clarify how `hue` interacts with hue interpolation when both `hue` components are missing
 - 2026-06-15 opened #14049: [css-color-4] Use the phrase "prepare both colors for conversion" seems wrong in color interpolation algorithm
 - 2026-06-15 opened #14051: [css-color-4] Is CSS Gamut Mapping intended to apply to CSS gradients?

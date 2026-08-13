@@ -80,4 +80,5 @@
 - 2026-03-11 RESOLVED #12791: no change, update WPT to match the spec's expectations and see if there's web compat issues
 - 2026-03-25 RESOLVED #2435: No change to spec. Allowed keyframe names that can serialize as idents do so, and all others (requiring escapes or disallowed keywords like 'initial') serialize as strings.
 - 2026-03-31 RESOLVED #13269: Update the animations spec with an example
+- 2026-04-14 opened #13805: [css-animations-1] Editors draft missing link to 2023 working draft
 - 2026-06-28 opened #14096: [css-animations] How is a list of <easing-function> be handled when used for a keyframe specific animation-timing-function

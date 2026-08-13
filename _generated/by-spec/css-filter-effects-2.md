@@ -8,5 +8,8 @@
 - 2026-01-02 opened #13288: [filter-effects-2] Allow masking of filters
 - 2026-01-22 opened #13385: [css filters] Editorial: Github issues should be linked to the CSS issues not fxtf-drafts
 - 2026-02-10 opened #13473: [meta] Change naming scheme of FXTF specs?
+- 2026-04-06 opened #13770: [filter-effects-2] Property for binary "carveout" of filters at element granularity?
+- 2026-05-23 opened #13956: [filter-effects] Does per-fragment value resolution imply separate filter effect groups?
 - 2026-05-28 opened #13976: Image Orientation in <feImage> filter nodes
 - 2026-06-01 opened #13997: [filter-effects-2] Support fast simple css blurs
+- 2026-06-19 opened #14068: [css-filters] Wrong links to SVG 2, and links to SVG11 should probably be updated.

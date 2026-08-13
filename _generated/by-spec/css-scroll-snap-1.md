@@ -98,6 +98,7 @@
 - 2025-03-09 opened #11880: scroll snap duration
 - 2025-10-13 opened #12943: [css-scroll-snap-1] Drop 'scroll-padding: auto'?
 - 2026-02-13 opened #13490: [css-scroll-snap-1] [interop-2026] clarify how snap positions are calculated in the case where the target element is split into multiple boxes
+- 2026-02-25 opened #13558: Allow anchor-size() as a value for scroll-padding-*
 - 2026-03-17 opened #13673: [css-scroll-snap-1][interop-2026] Clarify how to handle the snap target having the focused element
 - 2026-05-06 RESOLVED #9576: add an auto value to scroll-into-view options
 - 2026-05-06 RESOLVED #9576: respecting the scroll snap align when performing scroll-into-view with auto is mandatory not optional
@@ -106,6 +107,7 @@
 - 2026-06-05 opened #14018: [css-scroll-snap] Clarify snapping behavior with multiple single-axis scrollers
 - 2026-06-11 opened #14036: [css-scroll-snap-1] Specify that re-snapping is deferred until an active scrolling gesture ends
 - 2026-06-17 RESOLVED #13673: addd the equivelant to the suggested diff
+- 2026-06-29 opened #14103: [css-scroll-snap] Undefined alignment when snap area or snapport is degenerate (zero/negative size)
 - 2026-07-22 RESOLVED #14018: Snap positions affect the nearest ancestor scroll container in each axis they align to
 - 2026-07-29 RESOLVED #13490: Snap the bounding box, but if it is bigger than the viewport, adjust the alignment [TBD] to keep the element in view.
 - 2026-07-29 RESOLVED #9519: Add TBD keyword to do joined-axis snapping

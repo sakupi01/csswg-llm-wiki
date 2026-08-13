@@ -105,7 +105,9 @@
 - 2025-11-03 RESOLVED #12961: Inset box-shadow spread renders like an inner border
 - 2025-11-13 RESOLVED #12861: Allow forward slash in these properties.
 - 2025-11-26 RESOLVED #13037: specify clip behaviour
+- 2025-12-31 opened #13280: [css-borders] `@border-style` for custom border designs
 - 2026-01-07 opened #13308: [css-borders-4]: `border-shape` order of shapes in the two-shape variant
+- 2026-01-09 opened #13318: [css-backgrounds-3] `spread` variable is undefined in "adjusted radius dimension"
 - 2026-01-14 opened #13350: [css-border][css-viewport] Consider moving border-width pixel snapping from computed value to used value
 - 2026-01-28 RESOLVED #13044: 'border-style: none' is not a listifiable value. It cancels the entire border.
 - 2026-01-28 RESOLVED #13044: Drop stripes() from css-images unless independent use cases come up to justify it.
@@ -128,6 +130,14 @@
 - 2026-04-02 RESOLVED #13599: text-underline-width gets snapped as a border width
 - 2026-04-22 opened #13835: [css-borders-4] Allow overriding the stroke style of `border-shape`
 - 2026-05-05 opened #13889: [css-borders-4] `corner` shorthand slashes conflict with optional forward slashs in border-*-radius long hands
+- 2026-05-11 opened #13914: [css-borders-4][css-shapes-1]The `round` algorithm is not continuous
+- 2026-06-11 opened #14035: [Req] backdrop occlusion.
 - 2026-07-09 opened #14149: [css-borders] Interaction between `border-shape` and other border properties
 - 2026-07-09 opened #14150: [css-borders-4] Defer two-shape `border-shape` for L5
+- 2026-07-09 opened #14157: [css-borders-4]  Stroke/hull direction uses the normalized (signed) half corner, but implementations require the convex half corner for concave shapes
+- 2026-07-09 opened #14158: [css-borders-4] Editorial: clarify "border-aligned corner clip-out path" (pre-clip path, curve intersection, keyword shapes
 - 2026-07-10 opened #14168: [css-borders-4] Default `shape-inside` and `shape-outside` when using `border-shape`
+- 2026-07-14 opened #14183: [css-borders-4] Editorial: doubled "the" in "get the border-aligned corner clip-out path
+- 2026-07-14 opened #14184: [css-borders-4] "get the border-aligned corner clip-out path" references undefined `outerCorner`
+- 2026-07-14 opened #14185: [css-borders-4] "get the border-aligned corner clip-out path" references undefined `unitVectorFromStartToControlPoint
+- 2026-08-04 opened #14270: [css-borders-4] How should outset_adjusted_border_radius apply to non-round corner shapes?

@@ -149,3 +149,5 @@
 - 2026-04-02 RESOLVED #13468: No change to the spec, position-attachment is defined the same way
 - 2026-04-15 RESOLVED #12852: auto margins are treated as zero for the purpose of calculating stickypos insets
 - 2026-04-15 RESOLVED #12852: no change to gCS() margin behavior (it still becomes a static length, as usual)
+- 2026-05-22 opened #13952: [css-position-3] Should "padding edges" instead of "content edge" be used to form containing block by fragmented inlines?
+- 2026-07-01 opened #14123: [css-position-3] Allow author to control scroll position of sticky-positioned boxes

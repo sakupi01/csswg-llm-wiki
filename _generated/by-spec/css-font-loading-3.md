@@ -66,6 +66,8 @@
 - 2025-12-18 opened #13235: [css-font-loading-3] FontFace.load() doesn't switch the FontFaceSet to `loading`
 - 2025-12-19 opened #13251: [css-font-loading-3] What is the behavior of adding a FontFace to documents.fonts in another document?
 - 2026-01-14 RESOLVED #13251: Adding a FontFace to a document other than the one it was created throws an exception
+- 2026-02-20 opened #13538: [css-font-loading-3] FontFaceSet.ready promise isn't resolved if no FontFaces are added
 - 2026-03-11 RESOLVED #6236: If a FontFace is constructed with an invalid font-family name, treat it as a quoted string rather than throwing
 - 2026-05-10 opened #13909: [css-font-loading] When using FontFace on a worker, what viewport should viewport relative units use?
 - 2026-07-17 opened #14196: [css-font-loading-3] Add support for the new `width` terminology and alias the old `stretch`
+- 2026-07-21 opened #14209: [css-font-loading-3] Web IDL syntax error

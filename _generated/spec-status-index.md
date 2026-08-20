@@ -166,7 +166,7 @@
 - scroll-animations-1 | WD | 2023-06-06 | 67 open | yes
 - selectors-3 | REC | 2018-11-06 | 4 open | no
 - selectors-4 | WD | 2026-01-22 | 100 open | no
-- selectors-5 | FPWD | 2026-02-17 | 96 open | yes
+- selectors-5 | FPWD | 2026-02-17 | 97 open | yes
 - selectors-nonelement-1 | RETIRED | 2019-04-02 | 0 open | no
 - web-animations-1 | WD | 2023-06-05 | 48 open | no
 - web-animations-2 | WD | 2025-11-20 | 80 open | no

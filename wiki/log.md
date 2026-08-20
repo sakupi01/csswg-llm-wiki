@@ -38,3 +38,4 @@ Append-only. One line per operation: `## [YYYY-MM-DD] <kind> | <summary>`.
 ## [2026-08-09] update | Synced 78 issues and 100 comments, added 15 new issue mirrors, refreshed CSS Color 4 status, updated csswg-wiki submodule, and rebuilt indexes
 ## [2026-08-13] update | CI weekly sync (see Actions run summary)
 ## [2026-08-20] update | CI weekly sync (see Actions run summary)
+## [2026-08-20] update | Incremental sync after CI: 10 issues, 11 comments, 0 spec versions; rebuilt indexes

@@ -1,8 +1,8 @@
   1283  cdoublev
   1158  noamr
   1069  litherum
-  1039  Crissov
-   796  romainmenke
+  1040  Crissov
+   797  romainmenke
    769  FremyCompany
    706  upsuper
    704  AmeliaBR
@@ -15,7 +15,7 @@
    459  zcorpan
    452  yisibl
    440  SelenIT
-   410  r12a
+   411  r12a
    371  weinig
    354  bradkemper
    342  kbabbitt
@@ -70,7 +70,7 @@
     99  dauwhe
     98  jonathantneal
     94  TalbotG
-    90  MurakamiShinyu
+    91  MurakamiShinyu
     86  cvrebert
     86  dirkschulze
     86  scottkellum
@@ -103,8 +103,8 @@
     63  sanketj
     63  skobes-chromium
     61  tomhodgins
+    60  anttijk
     59  Que-tin
-    59  anttijk
     59  meyerweb
     59  tiroj
     56  devongovett

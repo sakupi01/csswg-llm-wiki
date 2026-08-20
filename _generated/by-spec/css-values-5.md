@@ -373,4 +373,4 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - 2026-08-12 opened #14313: [css-values-5] `*-interpolate()` with equal stop positions or without segments
 - 2026-08-14 opened #14330: [css-values-5] Should random() and random-item() share indexing?
 - 2026-08-18 opened #14344: [css-values-5] Add `calc-range()`, inverse of `progress()`?
-- 2026-08-19 opened #14352: [css-values-5] Add `nth-item()` arbitrary substitution function for pulling values from lists
+- 2026-08-19 opened #14352: [css-values-5] Add `var-at()` arbitrary substitution function for pulling values from list valued variables

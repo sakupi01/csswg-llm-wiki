@@ -11032,10 +11032,12 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #14349 open [-] [css-color-4] Legacy and Modern RGB syntax
 - #14350 open [-] [css-anchor-position-2] Allow checking explicit fallback positions
 - #14351 open [-] [css-anchor-position-2] Anchored container query limitation
-- #14352 open [css-values-5] [css-values-5] Add `nth-item()` arbitrary substitution function for pulling values from lists
-- #14356 open [-] Proposal: Add dlm() as a CSS color space to represent spectral color mixing
+- #14352 open [css-values-5] [css-values-5] Add `var-at()` arbitrary substitution function for pulling values from list valued variables
+- #14356 open [-] [css-color-5] Proposal: Add dlm() as a CSS color space to represent spectral color mixing
 - #14357 open [css-overflow-3] [css-overflow] Clarify reasoning for making unprefixed line-clamp work on `-webkit-box`
 - #14358 open [css-fonts-4] [css-fonts-4] System fonts for Chinese
+- #14359 closed [-] [cssom]
+- #14360 open [selectors-5] [selectors-5] “initial state” selector
 - #2719 PR closed [-] Added the first proposal for a 'environment-blending' keyword. R
 - #2924 PR closed [Needs Testcase (WPT),cssom-1] [cssom-1] Replace steps of set a CSS declaration with some constraints R
 - #4150 PR closed [resize-observer-1] [resize-observer] remove SVG specific text

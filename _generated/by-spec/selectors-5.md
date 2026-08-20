@@ -145,3 +145,4 @@
 - 2026-08-06 RESOLVED #10001: .foo-* syntax, where it's specifically a hyphen-separated prefix
 - 2026-08-06 opened #14289: [selectors] Relax `|=` to also match value parts separated by spaces
 - 2026-08-06 opened #14291: [selectors] Should `.foo-*` match `foo-`?
+- 2026-08-20 opened #14360: [selectors-5] “initial state” selector

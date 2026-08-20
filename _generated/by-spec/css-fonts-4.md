@@ -509,3 +509,4 @@
 - 2026-08-04 opened #14260: [css-viewport][css-fonts] Effect of the `zoom` property on font metrics as applied to length units
 - 2026-08-04 opened #14263: unicode-range descriptor should serialize codepoint hex digits as ASCII case-insensitive?
 - 2026-08-11 opened #14306: [css-values][css-fonts] Make the set of properties referred to as "font-*" more clear
+- 2026-08-20 opened #14358: [css-fonts-4] System fonts for Chinese

@@ -210,7 +210,7 @@
 - 2026-08-05 opened #14273: [css-forms-1] Should size restrictions for custom selects also apply to inline size?
 - 2026-08-11 opened #14308: [css-forms-1] Apply border-radius to all base appearance controls
 - 2026-08-12 opened #14316: [css-forms-1] Use empty alt text for ::picker-icon and ::checkmark
-- 2026-08-12 opened #14317: [css-forms-1] select picker-icon glyph
+- 2026-08-12 opened #14317: [css-forms-1] Improve ::picker-icon glyph
 - 2026-08-12 opened #14318: [css-forms-1] Handle prefers-contrast and forced-colors by default
 - 2026-08-12 opened #14319: [css-forms-1] Vertically centering form control content
 - 2026-08-12 opened #14320: [css-forms-1] Vertically centering form controls that don't contain text
@@ -219,3 +219,6 @@
 - 2026-08-12 opened #14323: [css-forms-1] Apply ::field-text/::field-content to select button contents
 - 2026-08-13 opened #14324: [css-forms-1] Add margin to the picker
 - 2026-08-13 opened #14325: [css-forms-1] Transitions for ::picker open/close
+- 2026-08-19 RESOLVED #13516: rename field-text to field-content
+- 2026-08-19 RESOLVED #14317: Add new list-style keywords for picker icons. The opposite states must be rotated versions of the same glyph around an appropriate center point. Use these in 'content' for ::picker-icon.` (Names TBD.)
+- 2026-08-19 RESOLVED #14323: Add ::field-text wrapping the selected content representation when no button element provided; investigate compat to potentially apply also when button is provided, to give a more consistent API.

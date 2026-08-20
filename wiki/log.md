@@ -37,3 +37,4 @@ Append-only. One line per operation: `## [YYYY-MM-DD] <kind> | <summary>`.
 ## [2026-07-31] ingest | text-fit: feature + css-text-5 ED page (grow-only incubation → Chrome text-grow/text-shrink prototype → unified provisional text-fit; 200% zoom-safety proposal unresolved; text-only scaling compromise); 5 resolutions cited; added tkent-google to people.yml
 ## [2026-08-09] update | Synced 78 issues and 100 comments, added 15 new issue mirrors, refreshed CSS Color 4 status, updated csswg-wiki submodule, and rebuilt indexes
 ## [2026-08-13] update | CI weekly sync (see Actions run summary)
+## [2026-08-20] update | CI weekly sync (see Actions run summary)

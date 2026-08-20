@@ -95,3 +95,4 @@
 - 2025-10-21 opened #12998: [css-content-3] `content: none` does not work as universally as the spec claims it does.
 - 2025-12-18 opened #13244: [css-content] Clarify valid and default values of `string-set`
 - 2026-06-03 opened #14003: [css-content-3]: Allow `content: <list-style-type>` as shorthand for `content: counter(dummy, <list-style-type>)`.
+- 2026-08-19 RESOLVED #14003: Allow predefined symbolic counter keywords directly in 'content'

@@ -396,3 +396,4 @@
 - 2026-07-15 RESOLVED #13500: Spec is right, fix tests, add some tests for the animated value
 - 2026-08-09 opened #14300: [css-values] Percentages and unit arithmetic
 - 2026-08-11 opened #14306: [css-values][css-fonts] Make the set of properties referred to as "font-*" more clear
+- 2026-08-18 opened #14341: [css-values-4] Remove step 1 of serialize a math function?

@@ -286,3 +286,4 @@
 - 2026-08-04 RESOLVED #14181: Start specifying animation-range: stuck
 - 2026-08-05 opened #14281: [css-animations-2] [scroll-animations-1] The choice of the multiple matched 0%/100% keyframes when using <timeline-range-offset> offsets
 - 2026-08-07 opened #14296: [scroll-animations-1] What should a view progress timeline do when its subject is position:fixed?
+- 2026-08-17 opened #14337: [scroll-animations-1] [html] Stale timeline update needs clarifications

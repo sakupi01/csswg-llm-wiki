@@ -1,21 +1,21 @@
-  1281  cdoublev
-  1156  noamr
+  1283  cdoublev
+  1158  noamr
   1069  litherum
-  1035  Crissov
-   790  romainmenke
+  1039  Crissov
+   796  romainmenke
    769  FremyCompany
-   705  upsuper
+   706  upsuper
    704  AmeliaBR
    696  kojiishi
-   526  jakearchibald
+   534  jakearchibald
    518  jfkthame
    513  ydaniv
    493  MatsPalmgren
-   474  faceless2
+   476  faceless2
    459  zcorpan
-   451  yisibl
+   452  yisibl
    440  SelenIT
-   408  r12a
+   410  r12a
    371  weinig
    354  bradkemper
    342  kbabbitt
@@ -23,20 +23,20 @@
    341  tantek
    338  lukewarlow
    305  gsnedders
-   289  josepharhar
+   292  josepharhar
    283  facelessuser
-   263  jsnkuhn
-   260  xfq
+   264  jsnkuhn
+   264  xfq
    255  gregwhitworth
    253  mrego
    243  gitspeaks
    231  drott
-   222  johannesodland
+   223  johannesodland
    215  brandonmcconnell
    205  benface
    197  cookiecrook
    190  tobireif
-   184  graouts
+   188  graouts
    184  javifernandez
    182  ewilligers
    177  davidsgrogan
@@ -47,19 +47,19 @@
    136  heycam
    136  rniwa
    129  DavMila
+   126  JoshTumath
    126  bkardell
    125  myles
    121  AtkinsSJ
-   118  JoshTumath
-   117  BorisChiou
+   119  BorisChiou
+   118  schenney-chromium
    117  Zhang-Junzhi
-   117  schenney-chromium
-   115  andreubotella
+   116  andreubotella
    114  Myndex
    114  dino
+   113  Psychpsyo
    111  Dan503
    108  sesse
-   107  Psychpsyo
    106  ByteEater-pl
    105  jihyerish
    104  ExE-Boss
@@ -70,15 +70,15 @@
     99  dauwhe
     98  jonathantneal
     94  TalbotG
-    88  MurakamiShinyu
+    90  MurakamiShinyu
     86  cvrebert
     86  dirkschulze
     86  scottkellum
     85  fred-wang
     84  grorg
     83  danburzo
+    83  sorvell
     82  bokand
-    82  sorvell
     81  delan
     81  simevidas
     80  aphillips
@@ -86,15 +86,15 @@
     78  trusktr
     77  fergald
     76  karlcow
+    74  tats-u
     73  inoas
     72  hiikezoe
     72  sideshowbarker
-    72  tats-u
+    71  kevers-google
     71  shane
     70  davelab6
-    70  kevers-google
+    69  domenic
     69  mayank99
-    68  domenic
     68  nigelmegitt
     66  hober
     66  stephenmcgruer
@@ -104,9 +104,9 @@
     63  skobes-chromium
     61  tomhodgins
     59  Que-tin
+    59  anttijk
     59  meyerweb
     59  tiroj
-    57  anttijk
     56  devongovett
     56  nex3
     56  valtlai
@@ -148,10 +148,11 @@
     44  saschanaz
     43  KurtCattiSchmidt
     43  keithjgrant
+    42  sb3nder
     41  ChrisL_
     41  dead-claudia
     41  kidayasuo
-    41  sb3nder
+    40  jpzwarte
     40  jwatt
     40  pyoor
     39  theres-waldo
@@ -161,11 +162,10 @@
     38  felipeerias
     38  jav099
     38  liamquin
-    37  jpzwarte
+    38  vitorroriz
     37  proimage
     37  rcabanier
     37  svillar
-    37  vitorroriz
     36  chriskirknielsen
     36  korenevskiy
     36  nmn
@@ -177,6 +177,7 @@
     33  dontcallmedom-bot
     33  hunboy
     33  miragecraft
+    33  tuankiet65
     32  matthewp
     32  szager-chromium
     31  ChumpChief
@@ -184,12 +185,11 @@
     31  aardrian
     31  celestepan
     31  craigkovatch
+    31  kbhomes
     31  oSamDavis
-    30  tuankiet65
     29  darktears
     29  diekus
     29  dlibby-
-    29  kbhomes
     29  oleedd
     28  Afif13
     28  Nokel81

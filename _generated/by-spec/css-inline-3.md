@@ -309,3 +309,4 @@
 - 2026-06-29 opened #14104: [css-break] `box-decoration-break: clone` on inline box should exclude fragments around block-level
 - 2026-07-06 opened #14136: [css-inline-3] Clarification on text-box-trim propagation and independent block formatting contexts
 - 2026-08-05 RESOLVED #13834: Apply margin-break to inline-axis margins of inline-level boxes (after white space collapsing). The initial value behaves as 'keep' for compat. End margin hangs if subsequent spaces are hanging.
+- 2026-08-14 opened #14328: [css-inline-3] Does `text-box-trim` remove negative leading?

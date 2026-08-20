@@ -326,3 +326,4 @@
 - 2026-08-06 RESOLVED #14192: 'AccentColor' and 'AccentColorText' resolve against the element's own 'accent-color' in 'color' (and everywhere else other than 'accent-color' itself)
 - 2026-08-06 RESOLVED #14192: AccentColor/AccentColorText on either 'color' or 'accent-color' looks at 'accent-color' on the parent.
 - 2026-08-06 RESOLVED #14193: accentcolor/accentcolortext resolve at computed value time
+- 2026-08-14 opened #14329: [css-color-4] [css-ui] `accent-color: AccentColor` when parent's `accent-color` is `auto`?

@@ -432,3 +432,5 @@
 - 2026-08-06 RESOLVED #14193: accentcolor/accentcolortext resolve at computed value time
 - 2026-08-06 RESOLVED #14207: Add ok2r as distance measure
 - 2026-08-06 opened #14285: [css-color-4] Drop powerless components and just have `none`?
+- 2026-08-14 opened #14329: [css-color-4] [css-ui] `accent-color: AccentColor` when parent's `accent-color` is `auto`?
+- 2026-08-19 opened #14347: [css-color-4] rewrite `13. Color interpolation` to be more explicit about all the steps and effects

@@ -100,3 +100,4 @@
 - 2026-08-04 RESOLVED #14243: drop @macro and use @mixin
 - 2026-08-04 RESOLVED #14243: specify @private that gets nested inside style rules for now
 - 2026-08-04 RESOLVED #14243: we start specify @private
+- 2026-08-17 opened #14338: [css-mixins] Where exactly to evaluate arguments? Making random() work better in custom funcs

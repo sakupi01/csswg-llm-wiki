@@ -46,3 +46,4 @@
 - 2026-04-09 opened #13781: [css-break] Fragmenting of monolithic content when the alternative is overflow
 - 2026-06-24 RESOLVED #12801: accept the PR
 - 2026-06-29 opened #14104: [css-break] `box-decoration-break: clone` on inline box should exclude fragments around block-level
+- 2026-08-14 opened #14332: [css-break][css-masking] How does `clip-path` interact with `box-decoration-break`?

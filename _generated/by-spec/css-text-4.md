@@ -285,3 +285,6 @@
 - 2026-04-10 opened #13789: [css-text-4] Split text-spacing-trim into different values
 - 2026-05-10 opened #13908: [css-text] New values for the text-transform property
 - 2026-08-06 opened #14286: [css-text-4] Broken link for "French typographic guidelines" at #text-autospace-property
+- 2026-08-18 opened #14345: [css-text-4] Punctuation adjustment at the end of each line
+- 2026-08-19 RESOLVED #13774: we allow 'normal replace' as a value for text-autospace
+- 2026-08-19 RESOLVED #13789: use the syntax linked in IRC with the addition of the auto keyword

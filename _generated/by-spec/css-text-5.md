@@ -7,3 +7,4 @@
 - 2024-08-27 opened #10791: [css-text] Replacement for `text-align: <string>` and solution for numeric column alignment
 - 2025-07-03 opened #12441: [css-text] `text-transform` for local punctuation marks
 - 2025-09-28 opened #12868: [css-text-4] `text-autospace` should be able to change the space width to wider value e.g. 0.25ic
+- 2026-08-18 opened #14345: [css-text-4] Punctuation adjustment at the end of each line

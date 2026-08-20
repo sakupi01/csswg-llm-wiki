@@ -13,3 +13,4 @@
 - 2026-03-15 opened #13660: [css-masking] Add mask-position-x and mask-position-y longhands
 - 2026-03-19 opened #13682: [css-masking-1] Disallow negative values in `mask-border` longhands
 - 2026-03-19 opened #13684: [css-masking-1] Disallow trailing `/` in `mask-border`
+- 2026-08-14 opened #14332: [css-break][css-masking] How does `clip-path` interact with `box-decoration-break`?

@@ -62,7 +62,7 @@
 - css-flexbox-1 | CRD | 2025-10-14 | 47 open | yes
 - css-font-loading-3 | WD | 2023-04-06 | 45 open | no
 - css-fonts-3 | REC | 2018-09-20 | 5 open | no
-- css-fonts-4 | WD | 2026-08-25 | 124 open | no
+- css-fonts-4 | WD | 2026-08-25 | 127 open | no
 - css-fonts-5 | WD | 2026-08-11 | 49 open | no
 - css-forms-1 | FPWD | 2025-03-25 | 121 open | no
 - css-gaps-1 | WD | 2026-06-24 | 16 open | no

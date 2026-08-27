@@ -40,3 +40,4 @@ Append-only. One line per operation: `## [YYYY-MM-DD] <kind> | <summary>`.
 ## [2026-08-20] update | CI weekly sync (see Actions run summary)
 ## [2026-08-20] update | Incremental sync after CI: 10 issues, 11 comments, 0 spec versions; rebuilt indexes
 ## [2026-08-27] update | CI weekly sync (see Actions run summary)
+## [2026-08-27] update | Incremental sync after CI: 6 issues, 4 comments, 0 spec versions; rebuilt indexes; refreshed 2026-08 digest candidates

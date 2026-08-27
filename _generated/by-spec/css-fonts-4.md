@@ -510,3 +510,6 @@
 - 2026-08-04 opened #14263: unicode-range descriptor should serialize codepoint hex digits as ASCII case-insensitive?
 - 2026-08-11 opened #14306: [css-values][css-fonts] Make the set of properties referred to as "font-*" more clear
 - 2026-08-20 opened #14358: [css-fonts-4] System fonts for Chinese
+- 2026-08-27 opened #14396: [css-fonts] Problems with "font-affecting properties"
+- 2026-08-27 opened #14397: [css-fonts] Add `font-synthesis-position` to the list of `font-*` properties which are not longhands of `font`
+- 2026-08-27 opened #14398: [css-fonts] Typo s/shorthand/longhand/ ?

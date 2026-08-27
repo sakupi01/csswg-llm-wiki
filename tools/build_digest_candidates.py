@@ -98,10 +98,17 @@ def spec_label_to_feature() -> dict:
     return label_to_feature
 
 
+CSSWG_REPO = "w3c/csswg-drafts"
+
+
 def mirror_index() -> dict:
-    """{issue_number: path} over every mirrored issue/PR file."""
+    """{issue_number: path} over every mirrored csswg-drafts issue/PR file.
+
+    Digest scope is deliberately csswg-only (the feed is "This week in CSSWG");
+    other mirrored repos (open-ui, whatwg/html) reuse issue numbers and stay out."""
+    csswg = GITHUB / "csswg-drafts"
     idx = {}
-    for path in list(GITHUB.glob("*/issues/*/*.md")) + list(GITHUB.glob("*/pulls/*/*.md")):
+    for path in list(csswg.glob("issues/*/*.md")) + list(csswg.glob("pulls/*/*.md")):
         idx[int(path.stem)] = path
     return idx
 
@@ -211,6 +218,8 @@ def main() -> None:
     # discussion behind each: background, related issues, verbatim IRC log.
     resolutions = []
     for r in load_jsonl("resolutions-index.jsonl"):
+        if r.get("repo") not in (None, CSSWG_REPO):
+            continue
         if r.get("source") != "bot" or not (lo < (r.get("date") or "") <= until):
             continue
         feature = next((l2f[l] for l in r.get("labels", []) if l in l2f), None)
@@ -227,7 +236,8 @@ def main() -> None:
             item["irc"] = next((extract_irc(c["block"]) for c in comments if c["id"] == cid), [])
         resolutions.append(item)
 
-    issues = {r["number"]: r for r in load_jsonl("issues-index.jsonl")}
+    issues = {r["number"]: r for r in load_jsonl("issues-index.jsonl")
+              if r.get("repo") in (None, CSSWG_REPO)}
     activity = scan_comment_activity(mirror, since, until)
 
     # agenda: important-labeled issues created or commented in the window

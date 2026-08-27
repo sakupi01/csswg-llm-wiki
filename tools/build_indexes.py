@@ -37,6 +37,18 @@ W3C = ROOT / "raw" / "data" / "w3c-api" / "specifications"
 WWW_STYLE = ROOT / "raw" / "data" / "www-style"
 GEN = ROOT / "_generated"
 BOT = "css-meeting-bot"
+
+CSSWG_REPO = "w3c/csswg-drafts"
+REPO_URL_RE = re.compile(r"https://github\.com/([^/]+/[^/]+)/")
+MEETING_GROUPS = {CSSWG_REPO: "csswg", "openui/open-ui": "openui"}
+GROUP_REPO_PREFIX = {"csswg": "", "openui": "openui/open-ui"}
+
+
+def issue_ref(repo: str | None, n: int) -> str:
+    """Display form of an issue number: bare #N for csswg-drafts, qualified otherwise."""
+    return f"#{n}" if not repo or repo == CSSWG_REPO else f"{repo}#{n}"
+
+
 EXPECTED_RESOLVED_ISSUES = 2578  # corpus-measured 2026-07 baseline (see docstring)
 
 # www-style minutes emails (2008-2017, pre-bot). RESOLVED lines wrap: the rule
@@ -190,6 +202,7 @@ def scan_www_style() -> tuple[list, list, list]:
                 email_resolutions.append(
                     {
                         "date": meeting_date,
+                        "repo": None,
                         "issue": None,
                         "kind": "email",
                         "source": "minutes-email",
@@ -215,7 +228,7 @@ def main() -> None:
         }
     )
     by_spec = defaultdict(list)
-    resolved_issue_count = 0
+    resolved_by_repo = Counter()
 
     files = sorted(GITHUB.glob("*/issues/*/*.md")) + sorted(GITHUB.glob("*/pulls/*/*.md"))
     if not files:
@@ -227,10 +240,18 @@ def main() -> None:
         doc = parse_mirror(path)
         meta, comments = doc["meta"], doc["comments"]
         n, labels = meta["number"], meta.get("labels") or []
-        spec_labels = [l for l in labels if SPEC_LABEL_RE.match(l)]
+        rm = REPO_URL_RE.match(meta.get("url") or "")
+        repo = rm.group(1) if rm else path.parents[2].name
+        is_csswg = repo == CSSWG_REPO
+        group = MEETING_GROUPS.get(repo, repo)
+        # spec labels are CSSWG module labels; other repos keep their full label
+        # set on resolution rows for grep-ability but never feed by-spec
+        spec_labels = [l for l in labels if SPEC_LABEL_RE.match(l)] if is_csswg else []
+        res_labels = spec_labels if is_csswg else labels
 
         issues_rows.append(
             {
+                "repo": repo,
                 "number": n,
                 "kind": kind,
                 "state": meta.get("state"),
@@ -257,9 +278,10 @@ def main() -> None:
             is_bot = c["author"] == BOT
             date = (c["created_at"] or "")[:10]
             if is_bot:
-                meetings[date]["topics"] += 1
-                meetings[date]["issues"].add(n)
-                meetings[date]["sources"].add("bot")
+                mt = meetings[(date, group)]
+                mt["topics"] += 1
+                mt["issues"].add(n)
+                mt["sources"].add("bot")
                 for nick in IRC_NICK_RE.findall(c["body"]):
                     if nick.lower() not in HTML_TAGS:
                         activity[nick]["irc_lines"] += 1
@@ -272,21 +294,22 @@ def main() -> None:
                 resolutions.append(
                     {
                         "date": date,
+                        "repo": repo,
                         "issue": n,
                         "kind": kind,
                         "source": "bot" if is_bot else "manual",
-                        "labels": spec_labels,
+                        "labels": res_labels,
                         "title": meta.get("title"),
                         "resolution": res.strip(),
                         "comment_url": c["url"],
                     }
                 )
                 if is_bot:
-                    meetings[date]["resolutions"] += 1
+                    meetings[(date, group)]["resolutions"] += 1
                 for l in spec_labels:
                     by_spec[l].append((date, f"RESOLVED #{n}: {res.strip()}"))
         if item_has_res:
-            resolved_issue_count += 1
+            resolved_by_repo[repo] += 1
 
     # --- www-style minutes emails (pre-bot era)
     minutes_rows, email_resolutions, ws_messages = scan_www_style()
@@ -294,7 +317,7 @@ def main() -> None:
     for mr in minutes_rows:
         if not mr["date"] or len(mr["date"]) < 10:
             continue  # partial dates stay out of the meetings merge
-        mt = meetings[mr["date"]]
+        mt = meetings[(mr["date"], "csswg")]
         mt["sources"].add("minutes-email")
         mt["minutes_urls"].append(mr["archived_at"])
         mt["type"] = mt["type"] or mr["type"]
@@ -319,7 +342,7 @@ def main() -> None:
         "",
     ]
     md += [
-        f"- {r['date']} | {'#' + str(r['issue']) if r['issue'] else 'email'} | "
+        f"- {r['date']} | {issue_ref(r.get('repo'), r['issue']) if r['issue'] else 'email'} | "
         f"{','.join(r['labels']) or '-'} | RESOLVED: {r['resolution']}"
         f"{' (' + r['source'] + ')' if r['source'] != 'bot' else ''} | {r['comment_url']}"
         for r in resolutions
@@ -327,20 +350,22 @@ def main() -> None:
     (GEN / "resolutions-index.md").write_text("\n".join(md) + "\n")
 
     # --- issues-index
-    issues_rows.sort(key=lambda r: (r["kind"], r["number"]))
+    issues_rows.sort(key=lambda r: (r["kind"], r["repo"], r["number"]))
     (GEN / "issues-index.jsonl").write_text(jsonl(issues_rows))
     md = [HEADER + "# Issues index", "", "`number | state | labels | title (R = has resolution)`", ""]
     md += [
-        f"- #{r['number']} {'PR ' if r['kind'] == 'pull' else ''}{r['state']} "
+        f"- {issue_ref(r['repo'], r['number'])} {'PR ' if r['kind'] == 'pull' else ''}{r['state']} "
         f"[{','.join(r['labels']) or '-'}] {r['title']}{' R' if r['has_resolution'] else ''}"
         for r in issues_rows
     ]
     (GEN / "issues-index.md").write_text("\n".join(md) + "\n")
 
-    # --- meetings-index (bot comments 2017- merged with minutes emails 2008-17)
+    # --- meetings-index (bot comments 2017- merged with minutes emails 2008-17;
+    #     one row per (date, group) — csswg and openui telecons stay distinct)
     mrows = [
         {
             "date": d,
+            "group": g,
             "type_guess": v["type"] or ("f2f" if v["topics"] >= 13 else "telecon"),
             "topics": v["topics"],
             "resolutions": v["resolutions"],
@@ -348,14 +373,16 @@ def main() -> None:
             "issues": sorted(v["issues"]),
             "minutes_urls": v["minutes_urls"],
         }
-        for d, v in sorted(meetings.items())
+        for (d, g), v in sorted(meetings.items())
     ]
     (GEN / "meetings-index.jsonl").write_text(jsonl(mrows))
-    md = [HEADER + "# Meetings index", "", "`date | type? | topics | resolutions | sources | issues`", ""]
+    md = [HEADER + "# Meetings index", "", "`date | group | type? | topics | resolutions | sources | issues`", ""]
     md += [
-        f"- {m['date']} | {m['type_guess']} | {m['topics']} topics | "
+        f"- {m['date']} | {m['group']} | {m['type_guess']} | {m['topics']} topics | "
         f"{m['resolutions']} resolutions | {'+'.join(m['sources'])} | "
-        + (" ".join(f"#{i}" for i in m["issues"]) or " ".join(m["minutes_urls"]))
+        + (" ".join(
+            f"{GROUP_REPO_PREFIX.get(m['group'], m['group'])}#{i}" for i in m["issues"]
+        ) or " ".join(m["minutes_urls"]))
         for m in mrows
     ]
     (GEN / "meetings-index.md").write_text("\n".join(md) + "\n")
@@ -401,7 +428,7 @@ def main() -> None:
     # --- by-spec digests
     open_by_label = Counter()
     for r in issues_rows:
-        if r["state"] == "open" and r["kind"] == "issue":
+        if r["state"] == "open" and r["kind"] == "issue" and r["repo"] == CSSWG_REPO:
             for l in r["labels"]:
                 open_by_label[l] += 1
     for label, entries in sorted(by_spec.items()):
@@ -450,16 +477,21 @@ def main() -> None:
     ][:200]
     (GEN / "people-unmapped.txt").write_text("\n".join(unmapped) + "\n")
 
-    # --- sanity check (github-mirror baseline is source-scoped: email additions
-    #     must not mask a bot-extraction regression)
+    # --- sanity check (github-mirror baseline is source- and repo-scoped: email
+    #     or other-repo additions must not mask a bot-extraction regression)
     n_email = len(email_resolutions)
+    csswg_resolved = resolved_by_repo[CSSWG_REPO]
+    other_resolved = ", ".join(
+        f"{repo}: {c}" for repo, c in sorted(resolved_by_repo.items()) if repo != CSSWG_REPO
+    )
     print(
         f"[build_indexes] {len(files)} mirror files, {len(resolutions)} resolutions "
         f"({n_email} from minutes emails, {len(minutes_rows)} minutes mails), "
-        f"{resolved_issue_count} github items with RESOLVED (baseline {EXPECTED_RESOLVED_ISSUES}), "
-        f"{len(mrows)} meeting dates"
+        f"{csswg_resolved} csswg items with RESOLVED (baseline {EXPECTED_RESOLVED_ISSUES}"
+        + (f"; {other_resolved}" if other_resolved else "")
+        + f"), {len(mrows)} meeting rows"
     )
-    if resolved_issue_count < EXPECTED_RESOLVED_ISSUES:
+    if csswg_resolved < EXPECTED_RESOLVED_ISSUES:
         print(
             "[build_indexes] WARNING: fewer RESOLVED items than the 2026-07 baseline "
             "— extraction regex or mirror likely regressed"

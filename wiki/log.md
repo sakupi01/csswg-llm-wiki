@@ -46,3 +46,4 @@ Append-only. One line per operation: `## [YYYY-MM-DD] <kind> | <summary>`.
 ## [2026-09-03] update | CI weekly sync (see Actions run summary)
 ## [2026-09-10] update | CI weekly sync (see Actions run summary)
 ## [2026-08-27] ingest | masonry: documented the unresolved shape-vs-flow orientation split (#12803), `item-flow` abandonment (#11480/#12804), settled `normal` default, and pending grid-lanes shorthand; refreshed catalog and resolution count
+## [2026-08-27] wiki | multi-repo schema: open-ui full + whatwg/html selective mirrors, repo-qualified indexes, meetings (date, group), optional Current status feature section, qualified cross-repo link_refs, CI sync steps

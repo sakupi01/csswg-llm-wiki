@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """Auto-link referenceable entities in wiki prose. Idempotent; run at ingest and lint.
 
-Two kinds of links are inserted:
+Three kinds of links are inserted:
 - People: `@github`, github login, or IRC nick (length >= 4) -> wiki/people/<slug>.md
 - Issue/PR numbers: `#<N>` -> https://github.com/w3c/csswg-drafts/issues/<N>
   (GitHub redirects /issues/<N> to the PR when <N> is a PR, so one form covers both)
+- Qualified cross-repo refs: `<owner>/<name>#<N>` for the other mirrored repos
+  (openui/open-ui, whatwg/html) -> that repo's issue URL
 
 Conservative by design — never touches:
 - YAML frontmatter, fenced code blocks, inline code, bare URLs, existing links
@@ -14,8 +16,8 @@ Note on verbatim (AGENTS.md R1): a RESOLVED quotation may gain a `#<N>` link in 
 non-blockquote table cell. That wraps but does not alter the text — R1's verbatim
 check strips markdown link syntax before comparing.
 
-Scope is w3c/csswg-drafts. Houdini/FXTF issue numbers would mislink; when those
-repos are ingested (Phase 5), qualify them rather than writing a bare `#<N>`.
+Bare `#<N>` scope is w3c/csswg-drafts. Houdini/FXTF/open-ui/whatwg issue numbers
+would mislink as bare refs; always write them qualified (`openui/open-ui#<N>`).
 """
 
 import re
@@ -31,6 +33,11 @@ ISSUES_URL = "https://github.com/w3c/csswg-drafts/issues/"
 # `#` not preceded by a word char or another `#` (so `#708` in `#614/#708` links,
 # but `##2` headings and `foo#2` do not), followed by digits and a word boundary.
 ISSUE_RE = re.compile(r"(?<![\w#])#(\d+)\b")
+# qualified refs to the other mirrored repos (bare #N stays csswg-drafts)
+QUALIFIED_REPOS = ["openui/open-ui", "whatwg/html"]
+QUALIFIED_RE = re.compile(
+    r"(?<![\w/])(" + "|".join(re.escape(r) for r in QUALIFIED_REPOS) + r")#(\d+)\b"
+)
 # segments to leave untouched: inline code, existing markdown links, bare URLs
 PROTECT_RE = re.compile(r"(`[^`]*`|\[[^\]]*\]\([^)]*\)|https?://\S+)")
 
@@ -58,6 +65,7 @@ def link_line(line: str, people: dict[str, str], depth: int) -> str:
     for i, part in enumerate(parts):
         if i % 2 == 1:  # protected segment
             continue
+        part = QUALIFIED_RE.sub(r"[\1#\2](https://github.com/\1/issues/\2)", part)
         part = ISSUE_RE.sub(rf"[#\1]({ISSUES_URL}\1)", part)
         for token, slug in people.items():
             part = re.sub(

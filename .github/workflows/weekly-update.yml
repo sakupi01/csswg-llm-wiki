@@ -45,6 +45,23 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: python3 tools/sync_issues.py
 
+      - name: Sync open-ui issues (incremental)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 tools/sync_issues.py --repo openui/open-ui
+
+      - name: Refresh whatwg/html selective mirror
+        env:
+          GH_TOKEN: ${{ github.token }}
+        # guard: without recorded selective_issues a bare run would stream-sync
+        # the whole repo, which whatwg/html must never do
+        run: |
+          if [ -f raw/data/github/html/.sync-state.json ]; then
+            python3 tools/sync_issues.py --repo whatwg/html
+          else
+            echo "no selective state yet — skipping"
+          fi
+
       - name: Sync W3C API status snapshots
         run: python3 tools/sync_w3c_status.py
 

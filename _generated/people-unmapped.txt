@@ -1,10 +1,10 @@
-  1283  cdoublev
-  1158  noamr
+  1292  cdoublev
+  1164  noamr
   1069  litherum
-  1040  Crissov
-   797  romainmenke
+  1050  Crissov
+   807  romainmenke
    769  FremyCompany
-   706  upsuper
+   707  upsuper
    704  AmeliaBR
    696  kojiishi
    534  jakearchibald
@@ -12,26 +12,26 @@
    513  ydaniv
    493  MatsPalmgren
    476  faceless2
-   459  zcorpan
-   452  yisibl
+   460  zcorpan
+   453  yisibl
    440  SelenIT
-   411  r12a
-   371  weinig
-   354  bradkemper
-   342  kbabbitt
+   412  r12a
+   377  weinig
+   356  bradkemper
+   343  kbabbitt
    341  jonjohnjohnson
    341  tantek
-   338  lukewarlow
+   339  lukewarlow
    305  gsnedders
-   292  josepharhar
-   283  facelessuser
+   298  josepharhar
+   286  facelessuser
+   266  xfq
    264  jsnkuhn
-   264  xfq
    255  gregwhitworth
    253  mrego
    243  gitspeaks
    231  drott
-   223  johannesodland
+   225  johannesodland
    215  brandonmcconnell
    205  benface
    197  cookiecrook
@@ -50,14 +50,14 @@
    126  JoshTumath
    126  bkardell
    125  myles
-   121  AtkinsSJ
+   123  AtkinsSJ
    119  BorisChiou
-   118  schenney-chromium
+   119  andreubotella
+   119  schenney-chromium
    117  Zhang-Junzhi
-   116  andreubotella
    114  Myndex
+   114  Psychpsyo
    114  dino
-   113  Psychpsyo
    111  Dan503
    108  sesse
    106  ByteEater-pl
@@ -74,10 +74,10 @@
     86  cvrebert
     86  dirkschulze
     86  scottkellum
+    86  sorvell
     85  fred-wang
     84  grorg
     83  danburzo
-    83  sorvell
     82  bokand
     81  delan
     81  simevidas
@@ -86,7 +86,7 @@
     78  trusktr
     77  fergald
     76  karlcow
-    74  tats-u
+    75  tats-u
     73  inoas
     72  hiikezoe
     72  sideshowbarker
@@ -100,10 +100,10 @@
     66  stephenmcgruer
     65  danielsakhapov
     64  mattwoodrow
+    63  anttijk
     63  sanketj
     63  skobes-chromium
     61  tomhodgins
-    60  anttijk
     59  Que-tin
     59  meyerweb
     59  tiroj
@@ -113,8 +113,8 @@
     55  Lorp
     55  alice
     54  jimmyfrasche
+    54  jogibear9988
     53  dandclark
-    53  jogibear9988
     53  macnmm
     51  bleper
     50  clshortfuse
@@ -128,10 +128,11 @@
     47  Manishearth
     47  Westbrook
     47  justinfagnani
+    46  Malvoz
     46  jpamental
     46  mysteryDate
     46  pes10k
-    45  Malvoz
+    46  sb3nder
     45  bernhardf-ro
     45  cabanier
     45  frehner
@@ -148,7 +149,6 @@
     44  saschanaz
     43  KurtCattiSchmidt
     43  keithjgrant
-    42  sb3nder
     41  ChrisL_
     41  dead-claudia
     41  kidayasuo
@@ -176,17 +176,19 @@
     34  wangxianzhu
     33  dontcallmedom-bot
     33  hunboy
+    33  kbhomes
     33  miragecraft
     33  tuankiet65
     32  matthewp
     32  szager-chromium
+    32  vrugtehagel
     31  ChumpChief
     31  GPHemsley
     31  aardrian
     31  celestepan
     31  craigkovatch
-    31  kbhomes
     31  oSamDavis
+    31  yoavweiss
     29  darktears
     29  diekus
     29  dlibby-
@@ -196,5 +198,3 @@
     28  brunoais
     28  laukstein
     28  phistuck
-    28  samuelbradshaw
-    28  verbessern

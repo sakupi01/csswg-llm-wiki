@@ -101,7 +101,7 @@
 - 2023-04-19 RESOLVED #8251: Close as no longer relevant.
 - 2023-04-19 RESOLVED #8662: type selector remains required first; &div is invalid
 - 2023-04-19 opened #8738: [css-cascade] [css-nesting] Figure out whether we're fine with "shifting up" bare declarations after rules
-- 2023-04-22 opened #8752: [css-nesting] Allow CSS nesting for inline styles
+- 2023-04-22 opened #8752: [css-nesting][css-style-attr] Allow CSS nesting for inline styles
 - 2023-05-13 opened #8840: [css-nesting] Allow Group Rules and Relative Selector Lists in the Same Nested Style Rule
 - 2023-06-09 opened #8940: [css-nesting] Why does CSSStyleRule not inherit from CSSGroupingRule?
 - 2023-06-15 opened #8970: [css-nesting] Define how relative selectors serialize.

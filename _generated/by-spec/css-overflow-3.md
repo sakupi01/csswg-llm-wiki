@@ -180,3 +180,4 @@
 - 2026-07-08 RESOLVED #13816: close no change
 - 2026-08-12 opened #14314: [fullscreen] [css-overflow] Fullscreen subdocuments and scrollbar gutter
 - 2026-08-19 opened #14357: [css-overflow] Clarify reasoning for making unprefixed line-clamp work on `-webkit-box`
+- 2026-08-26 opened #14391: [css-overflow-3] make `text-overflow: ellipsis` infer `[title]`

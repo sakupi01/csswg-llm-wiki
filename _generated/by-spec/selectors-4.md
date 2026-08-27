@@ -379,3 +379,4 @@
 - 2026-07-13 opened #14174: [css-selectors][css-values] Proposal: A Unified Data API for CSS via the `:data()` pseudo-class and `data()` function
 - 2026-07-25 opened #14228: [selectors] Partial attribute name selectors
 - 2026-07-27 opened #14232: :lang() pseudo-class should consider maximized language code
+- 2026-08-26 opened #14394: [selectors-4][css-forms-1] Add pseudo class to select empty/unset file inputs

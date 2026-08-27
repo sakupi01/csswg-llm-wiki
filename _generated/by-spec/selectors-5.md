@@ -146,3 +146,4 @@
 - 2026-08-06 opened #14289: [selectors] Relax `|=` to also match value parts separated by spaces
 - 2026-08-06 opened #14291: [selectors] Should `.foo-*` match `foo-`?
 - 2026-08-20 opened #14360: [selectors-5] “initial state” selector
+- 2026-08-21 opened #14371: [selectors] Modifier for attribute selectors to split values into words

@@ -39,3 +39,4 @@ Append-only. One line per operation: `## [YYYY-MM-DD] <kind> | <summary>`.
 ## [2026-08-13] update | CI weekly sync (see Actions run summary)
 ## [2026-08-20] update | CI weekly sync (see Actions run summary)
 ## [2026-08-20] update | Incremental sync after CI: 10 issues, 11 comments, 0 spec versions; rebuilt indexes
+## [2026-08-27] update | CI weekly sync (see Actions run summary)

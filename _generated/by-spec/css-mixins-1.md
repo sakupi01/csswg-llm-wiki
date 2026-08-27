@@ -100,4 +100,9 @@
 - 2026-08-04 RESOLVED #14243: drop @macro and use @mixin
 - 2026-08-04 RESOLVED #14243: specify @private that gets nested inside style rules for now
 - 2026-08-04 RESOLVED #14243: we start specify @private
-- 2026-08-17 opened #14338: [css-mixins] Where exactly to evaluate arguments? Making random() work better in custom funcs
+- 2026-08-17 opened #14338: [css-mixins] Evaluation context for custom function arguments: typed vs untyped
+- 2026-08-21 opened #14370: [css-mixins] Should empty arguments be valid?
+- 2026-08-21 opened #14372: [css-mixins] Can we drop the "anonymous function" idea for mixin evaluation?
+- 2026-08-24 opened #14382: [css-mixins] multiple content blocks
+- 2026-08-25 opened #14387: [css-mixins-1] I don't think we should've removed @macro
+- 2026-08-26 RESOLVED #14338: Function arguments (including defaults), as well as locals and result, are evaluated in the context in which the function is called.

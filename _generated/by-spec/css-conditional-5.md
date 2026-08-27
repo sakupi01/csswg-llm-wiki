@@ -155,3 +155,4 @@
 - 2026-06-19 opened #14071: [mediaqueries-5][css-conditional-5] `@custom-media` and `@supports-condition`
 - 2026-07-22 opened #14217: [css-conditional-5] container-type:scroll-state and single-axis scrollers
 - 2026-07-24 opened #14226: [css-conditional-5] Split `container-type: scroll-state` back into 3 keywords
+- 2026-08-24 opened #14384: [css-conditional-5] How to resolve `cq*` values against a container size resolved at used value time?

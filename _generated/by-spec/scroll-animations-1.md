@@ -287,3 +287,5 @@
 - 2026-08-05 opened #14281: [css-animations-2] [scroll-animations-1] The choice of the multiple matched 0%/100% keyframes when using <timeline-range-offset> offsets
 - 2026-08-07 opened #14296: [scroll-animations-1] What should a view progress timeline do when its subject is position:fixed?
 - 2026-08-17 opened #14337: [scroll-animations-1] [html] Stale timeline update needs clarifications
+- 2026-08-20 opened #14364: [scroll-animations-1] Should SVG transforms be taken into account for view timelines?
+- 2026-08-24 RESOLVED #13852: Make it parse error to use values that require an element context for the [inset](https://drafts.csswg.org/scroll-animations/#dom-viewtimelineoptions-inset) property on [ViewTimelineOptions](https://drafts.csswg.org/scroll-animations/#dictdef-viewtimelineoptions)

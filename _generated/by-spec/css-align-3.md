@@ -305,3 +305,5 @@
 - 2026-07-16 opened #14190: [css-align][html] Should `align-content` work on a block-container `<button>`?
 - 2026-08-05 RESOLVED #14052: Introduce flow-start/flow-end as value aliases for flex-start/flex-end; they respond to flex-flow as well as grid-auto-flow and any grid-lanes controllers; and canonical values are flow-* unless compat requires flex-*
 - 2026-08-05 RESOLVED #14190: Adopt overrideable UA stylesheet rules for centering contents of form controls via align-content per Emilio's comment, instead of UA magic.
+- 2026-08-26 RESOLVED #14008: Do what fantasai says in the last comment
+- 2026-08-26 opened #14393: [css-align-3] A contradiction between sections 3 and 5.1 of css-align ?

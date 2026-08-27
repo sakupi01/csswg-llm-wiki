@@ -6,6 +6,6 @@
 - 2022-10-26 opened #7961: [css-nesting-1] Can we relax the syntax further?
 - 2023-04-19 RESOLVED #7961: Document restrictions on future syntax in Syntax, linking back to Nesting: 1. No semicolons in selectors 2. Nothing after {} in a declaration. 3. --ident always kicks off declaration (not rule) parsing.
 - 2023-04-19 RESOLVED #7961: Keep the current spec parsing behavior in an Appendix, update the spec to use the lookahead option
-- 2023-04-22 opened #8752: [css-nesting] Allow CSS nesting for inline styles
+- 2023-04-22 opened #8752: [css-nesting][css-style-attr] Allow CSS nesting for inline styles
 - 2023-10-20 opened #9502: Idea: Properties with Object Values
 - 2025-12-10 opened #13205: [Proposal] Selector Suffixing for Native CSS Nesting

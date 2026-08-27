@@ -108,3 +108,4 @@
 - 2026-02-19 opened #13533: [css-ruby] glyph placement inside bopomofo ruby
 - 2026-05-01 opened #13875: [css-ruby] The bounds of ruby boxes seem necessary, but the spec suggests that they are not
 - 2026-07-08 opened #14144: [css-ruby] rt and rtc should probably reset `text-indent` to zero
+- 2026-08-24 RESOLVED #14144: Add `text-indent: 0` to `rtc, rt` rule in the Default UA Style Sheet.

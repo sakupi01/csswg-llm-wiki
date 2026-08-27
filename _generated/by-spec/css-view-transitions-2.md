@@ -258,3 +258,4 @@
 - 2026-08-04 RESOLVED #12594: Drop 'with' from the spec for now, open an issue with motivating examples to add it back in when we have those
 - 2026-08-04 RESOLVED #12594: change @route to @location
 - 2026-08-11 RESOLVED #14179: `startViewTransition` throws an invalid state exception for elements that cannot have layout containment
+- 2026-08-21 opened #14368: [css-view-transitions-2] Delaying transitions until nested iframes are ready

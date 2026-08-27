@@ -260,3 +260,4 @@
 - 2025-09-17 RESOLVED #12008: Rendering should be equivalent to line breaking at that soft wrap opportunity, and applying white space processing part 2 before inserting ellipsis at the end
 - 2025-12-30 opened #13277: [css-inline-3][css-text-3] Clarification on vertical-align shorthand and text boundary shaping
 - 2026-03-20 opened #13695: [css-text-4] White Space Processing Phase 2 questions
+- 2026-08-24 RESOLVED #13277: Accept edits clarifying that that `baseline-source` doesn't apply to inline boxes

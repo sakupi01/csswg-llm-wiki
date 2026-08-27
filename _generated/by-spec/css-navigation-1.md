@@ -27,3 +27,4 @@
 - 2026-08-04 opened #14267: [css-navigation-1] Do we need `with` or a notion of the "Other URL"
 - 2026-08-04 opened #14268: [css-navigation-1] Selecting based on URLPattern parameters
 - 2026-08-10 opened #14303: [css-navigation-1] Rename `:nav-source` to `:navigation-source`
+- 2026-08-24 RESOLVED #14303: Rename `:nav-source` to `:navigation-source

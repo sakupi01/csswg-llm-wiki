@@ -323,3 +323,4 @@
 - 2026-08-05 RESOLVED #14112: Once the UA is confident that the scroll operation has stopped, MUST ensure the layout is consistent with a full relayout at that point. UA MAY relayout during scroll; and if not relaying out, then MUST slide the anchorpos with the scroll operation as currently specified.
 - 2026-08-05 opened #14274: [css-anchor-position] Match alignment's new % behavior in anchor()
 - 2026-08-19 opened #14348: [css-anchor-position-1] Clarify `position-anchor: match-parent` uses the flattened tree
+- 2026-08-26 RESOLVED #14008: Do what fantasai says in the last comment

@@ -136,7 +136,7 @@
 - 2025-12-16 opened #13226: [css-forms-1] Use visibility for checkmark control?
 - 2026-01-15 opened #13355: [css-forms-1] ::field-component and ::field-separator should be children of ::field-text
 - 2026-01-22 opened #13383: [css-forms-1] option hover/active styles inside of disabled select listbox
-- 2026-01-26 opened #13400: [css-forms-1] Which form controls does ::field-text apply to?
+- 2026-01-26 opened #13400: [css-forms-1] Which form controls does ::field-content apply to?
 - 2026-01-27 opened #13401: [css-forms-1] Specify behaviour of readonly and disabled temporal inputs
 - 2026-01-27 opened #13403: [css-forms-1] Radio buttons should have space between border and "checkmark"
 - 2026-01-27 opened #13405: [css-forms-1] Should `::checkmark` be allowed in appearance none?
@@ -216,9 +216,20 @@
 - 2026-08-12 opened #14320: [css-forms-1] Vertically centering form controls that don't contain text
 - 2026-08-12 opened #14321: [css-forms-1] Refine internal spacing in appearance: base controls
 - 2026-08-12 opened #14322: [css-forms-1] Inherit currentColor into ::picker()
-- 2026-08-12 opened #14323: [css-forms-1] Apply ::field-text/::field-content to select button contents
+- 2026-08-12 opened #14323: [css-forms-1] Apply ::field-content to select button contents
 - 2026-08-13 opened #14324: [css-forms-1] Add margin to the picker
 - 2026-08-13 opened #14325: [css-forms-1] Transitions for ::picker open/close
 - 2026-08-19 RESOLVED #13516: rename field-text to field-content
 - 2026-08-19 RESOLVED #14317: Add new list-style keywords for picker icons. The opposite states must be rotated versions of the same glyph around an appropriate center point. Use these in 'content' for ::picker-icon.` (Names TBD.)
 - 2026-08-19 RESOLVED #14323: Add ::field-text wrapping the selected content representation when no button element provided; investigate compat to potentially apply also when button is provided, to give a more consistent API.
+- 2026-08-20 RESOLVED #14249: Add box-sizing to internal form control parts as described in the issue.
+- 2026-08-20 RESOLVED #14250: Apply 'font: 100% system-ui' to ::picker-icon and ::checkmark and any other icon pseudos we add in the future
+- 2026-08-20 RESOLVED #14250: letter-spacing, word-spacing, text-shadow inherit on <select> for appearance: base
+- 2026-08-26 RESOLVED #14255: Move 'white-space: nowrap' from 'select option' to 'select' (not !important)
+- 2026-08-26 RESOLVED #14255: select, selectedcontent, select::field-content { overflow: clip; }
+- 2026-08-26 RESOLVED #14255: selectedcontent, select::field-content { min-inline-size: 0; }
+- 2026-08-26 RESOLVED #14255: selectedcontent, select::field-content { text-overflow: inherit; }
+- 2026-08-26 RESOLVED #14316: ::Picker-icon and ::checkmark are not in the a11y tree
+- 2026-08-26 RESOLVED #14319: input, select, option { align-content: unsafe center; align-items: unsafe center; }
+- 2026-08-26 opened #14394: [selectors-4][css-forms-1] Add pseudo class to select empty/unset file inputs
+- 2026-08-27 opened #14395: [css-forms-1] Use `::field-content { flex: 1 }` instead of `::picker-icon { margin-inline-start: auto; }`

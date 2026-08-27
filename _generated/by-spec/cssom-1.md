@@ -410,3 +410,4 @@
 - 2026-07-21 opened #14210: [cssom] Browsers disagree on `getComputedStyle()` values of some pseudo-elements
 - 2026-07-27 opened #14229: [css-typed-om] Should parts of the CSS namespace be exposed on workers?
 - 2026-08-04 opened #14263: unicode-range descriptor should serialize codepoint hex digits as ASCII case-insensitive?
+- 2026-08-20 opened #14365: [cssom] Make setProperty() strip leading/trailing whitespace

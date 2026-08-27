@@ -45,3 +45,4 @@ Append-only. One line per operation: `## [YYYY-MM-DD] <kind> | <summary>`.
 ## [2026-08-27] digest | 2026-08 (monthly, interim through Aug 27): 8 notable arcs (customizable select defaults, class-prefix selector, mixins @private convergence, 2D gradients, masonry reading order, animation-range: stuck, line-clamp a11y reversal, text-spacing-trim); 6 still contested; feed rebuilt + links validated
 ## [2026-09-03] update | CI weekly sync (see Actions run summary)
 ## [2026-09-10] update | CI weekly sync (see Actions run summary)
+## [2026-08-27] ingest | masonry: documented the unresolved shape-vs-flow orientation split (#12803), `item-flow` abandonment (#11480/#12804), settled `normal` default, and pending grid-lanes shorthand; refreshed catalog and resolution count

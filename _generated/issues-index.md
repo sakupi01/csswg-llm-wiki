@@ -11067,6 +11067,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #14396 open [css-fonts-4] [css-fonts] Problems with "font-affecting properties"
 - #14397 open [css-fonts-4] [css-fonts] Add `font-synthesis-position` to the list of `font-*` properties which are not longhands of `font`
 - #14398 open [css-fonts-4] [css-fonts] Typo s/shorthand/longhand/ ?
+- #14399 open [css-values-5] [css-values-5] How to replace `ident("")`?
 - #2719 PR closed [-] Added the first proposal for a 'environment-blending' keyword. R
 - #2924 PR closed [Needs Testcase (WPT),cssom-1] [cssom-1] Replace steps of set a CSS declaration with some constraints R
 - #4150 PR closed [resize-observer-1] [resize-observer] remove SVG specific text

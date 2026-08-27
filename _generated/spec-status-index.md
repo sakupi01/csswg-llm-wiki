@@ -132,7 +132,7 @@
 - css-ui-4 | WD | 2026-01-20 | 127 open | no
 - css-values-3 | CRD | 2024-03-22 | 1 open | yes
 - css-values-4 | WD | 2024-03-12 | 55 open | yes
-- css-values-5 | WD | 2024-11-11 | 169 open | no
+- css-values-5 | WD | 2024-11-11 | 170 open | no
 - css-variables-1 | CR | 2022-06-16 | 10 open | no
 - css-view-transitions-1 | CRD | 2024-03-28 | 39 open | no
 - css-view-transitions-2 | WD | 2024-11-13 | 70 open | no

@@ -375,3 +375,4 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - 2026-08-18 opened #14344: [css-values-5] Add `calc-range()`, inverse of `progress()`?
 - 2026-08-19 opened #14352: [css-values-5] Add `var-at()` arbitrary substitution function for pulling values from list valued variables
 - 2026-08-24 opened #14380: [css-values-5] Resolved progress of `*-interpolation()` when there is no corresponding `<'animation-timeline'>`
+- 2026-08-27 opened #14399: [css-values-5] How to replace `ident("")`?

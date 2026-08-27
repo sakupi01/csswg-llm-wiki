@@ -2,7 +2,7 @@
   "span": "month",
   "since": "2026-08-01",
   "until": "2026-08-31",
-  "generated_at": "2026-08-27T12:33:47Z",
+  "generated_at": "2026-08-27T13:58:07Z",
   "resolutions": [
     {
       "date": "2026-08-04",
@@ -4873,19 +4873,6 @@
       "comments_in_window": 9
     },
     {
-      "issue": 13277,
-      "title": "[css-inline-3][css-text-3] Clarification on vertical-align shorthand and text boundary shaping",
-      "labels": [
-        "Closed Accepted by Editor Discretion",
-        "Needs Testcase (WPT)",
-        "css-inline-3",
-        "css-text-3"
-      ],
-      "url": "https://github.com/w3c/csswg-drafts/issues/13277",
-      "feature": null,
-      "comments_in_window": 7
-    },
-    {
       "issue": 13670,
       "title": "[css-overflow-4] Syntax to opt into clamping at the earlier of a size and a number of line",
       "labels": [
@@ -4896,6 +4883,19 @@
         "topic: line-clamp"
       ],
       "url": "https://github.com/w3c/csswg-drafts/issues/13670",
+      "feature": null,
+      "comments_in_window": 8
+    },
+    {
+      "issue": 13277,
+      "title": "[css-inline-3][css-text-3] Clarification on vertical-align shorthand and text boundary shaping",
+      "labels": [
+        "Closed Accepted by Editor Discretion",
+        "Needs Testcase (WPT)",
+        "css-inline-3",
+        "css-text-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13277",
       "feature": null,
       "comments_in_window": 7
     },
@@ -5083,6 +5083,20 @@
       "comments_in_window": 4
     },
     {
+      "issue": 14190,
+      "title": "[css-align][html] Should `align-content` work on a block-container `<button>`?",
+      "labels": [
+        "Agenda+",
+        "HTML",
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-align-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14190",
+      "feature": null,
+      "comments_in_window": 4
+    },
+    {
       "issue": 14255,
       "title": "[css-forms-1] Apply overflow and wrapping control to select buttons",
       "labels": [
@@ -5249,20 +5263,6 @@
       ],
       "url": "https://github.com/w3c/csswg-drafts/issues/14181",
       "feature": "scroll-driven-animations",
-      "comments_in_window": 3
-    },
-    {
-      "issue": 14190,
-      "title": "[css-align][html] Should `align-content` work on a block-container `<button>`?",
-      "labels": [
-        "Agenda+",
-        "HTML",
-        "Needs Edits",
-        "Needs Testcase (WPT)",
-        "css-align-3"
-      ],
-      "url": "https://github.com/w3c/csswg-drafts/issues/14190",
-      "feature": null,
       "comments_in_window": 3
     },
     {
@@ -6270,6 +6270,36 @@
       ]
     },
     {
+      "issue": 5292,
+      "title": "[css-color-5] Add `currentBackgroundColor` Variable",
+      "labels": [
+        "css-color-6"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/5292",
+      "comments_in_window": 12,
+      "feature": null,
+      "recent": [
+        {
+          "author": "flackr",
+          "date": "2026-08-26",
+          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5428502310",
+          "gist": "In this case, like with overflowing content, the author has constructed a case in which it's not well known what is behind it. Just like how they have to be careful with the inherited color they'll ha"
+        },
+        {
+          "author": "svgeesus",
+          "date": "2026-08-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5437564724",
+          "gist": "The [gory details of why this is](https://drafts.csswg.org/css-color-4/#trivia) are noted in CSS Color 4."
+        },
+        {
+          "author": "Crissov",
+          "date": "2026-08-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5440067431",
+          "gist": "Many system color keywords furthermore [come](https://drafts.csswg.org/css-color/#css-system-colors)/[came](https://drafts.csswg.org/css-color/#deprecated-system-colors) in pairs (or larger sets), whe"
+        }
+      ]
+    },
+    {
       "issue": 14307,
       "title": "[css-shadow] :has-slotted spec contradicts itself",
       "labels": [
@@ -6297,36 +6327,6 @@
           "date": "2026-08-22",
           "url": "https://github.com/w3c/csswg-drafts/issues/14307#issuecomment-5381200148",
           "gist": "Forgive this apparent digression, but I think we need to clarify this potential issue with the spec of `::slotted()` since it's relationship to `:has-slotted` is relevant. I'll file this separately if"
-        }
-      ]
-    },
-    {
-      "issue": 5292,
-      "title": "[css-color-5] Add `currentBackgroundColor` Variable",
-      "labels": [
-        "css-color-6"
-      ],
-      "url": "https://github.com/w3c/csswg-drafts/issues/5292",
-      "comments_in_window": 11,
-      "feature": null,
-      "recent": [
-        {
-          "author": "djmarland",
-          "date": "2026-08-26",
-          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5428482041",
-          "gist": "So we have types of `<named-color>` which are lowercase and `<system-color>` which are PascalCase."
-        },
-        {
-          "author": "flackr",
-          "date": "2026-08-26",
-          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5428502310",
-          "gist": "In this case, like with overflowing content, the author has constructed a case in which it's not well known what is behind it. Just like how they have to be careful with the inherited color they'll ha"
-        },
-        {
-          "author": "svgeesus",
-          "date": "2026-08-27",
-          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5437564724",
-          "gist": "The [gory details of why this is](https://drafts.csswg.org/css-color-4/#trivia) are noted in CSS Color 4."
         }
       ]
     },
@@ -6831,6 +6831,71 @@
       ]
     },
     {
+      "issue": 13670,
+      "title": "[css-overflow-4] Syntax to opt into clamping at the earlier of a size and a number of line",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-overflow-4",
+        "topic: line-clamp"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13670",
+      "comments_in_window": 8,
+      "feature": null,
+      "recent": [
+        {
+          "author": "dshin-moz",
+          "date": "2026-08-26",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13670#issuecomment-5430505904",
+          "gist": "Hm, so Chrome does have an implementation for height-based line clamping - Is it the plan that the spec will follow that implementation? If so, is there any draft/explainer?"
+        },
+        {
+          "author": "andreubotella",
+          "date": "2026-08-26",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13670#issuecomment-5431503489",
+          "gist": "Hi, this is already in the spec, although maybe it's not as clear as it could be and we could add notes to clarify how everything fits together. Section 5.3.1 \"Line-clamp containers\" starts by listing"
+        },
+        {
+          "author": "dshin-moz",
+          "date": "2026-08-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13670#issuecomment-5439878294",
+          "gist": "Ah, missed that searching for \"height-based clamping\" and variations. Thanks! Will take it from that point and file any request for clarification separately."
+        }
+      ]
+    },
+    {
+      "issue": 5715,
+      "title": "[css-sizing-4] Add `margin-box` for box-sizing?",
+      "labels": [
+        "Needs Thought",
+        "css-sizing-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/5715",
+      "comments_in_window": 7,
+      "feature": null,
+      "recent": [
+        {
+          "author": "Loirooriol",
+          "date": "2026-08-13",
+          "url": "https://github.com/w3c/csswg-drafts/issues/5715#issuecomment-5276863416",
+          "gist": "I think it should happen for percentages. But maybe not for lengths. But then what about `calc()` mixing both?"
+        },
+        {
+          "author": "fantasai",
+          "date": "2026-08-13",
+          "url": "https://github.com/w3c/csswg-drafts/issues/5715#issuecomment-5285769650",
+          "gist": "Percentages are resolved against the containing block, and are otherwise exactly equivalent to the equivalent length. I don't think we want to change that."
+        },
+        {
+          "author": "JoshTumath",
+          "date": "2026-08-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/5715#issuecomment-5439689412",
+          "gist": "@bfgeek, so for the `stretch(<length>)` function you are suggesting that would be similar to `fit-content()`, would it basically use this formula: `max(min-content, min(the-author-specified-limit, str"
+        }
+      ]
+    },
+    {
       "issue": 14003,
       "title": "[css-content-3]: Allow `content: <list-style-type>` as shorthand for `content: counter(dummy, <list-style-type>)`.",
       "labels": [
@@ -6895,40 +6960,6 @@
       ]
     },
     {
-      "issue": 13670,
-      "title": "[css-overflow-4] Syntax to opt into clamping at the earlier of a size and a number of line",
-      "labels": [
-        "Closed Accepted by CSSWG Resolution",
-        "Needs Edits",
-        "Needs Testcase (WPT)",
-        "css-overflow-4",
-        "topic: line-clamp"
-      ],
-      "url": "https://github.com/w3c/csswg-drafts/issues/13670",
-      "comments_in_window": 7,
-      "feature": null,
-      "recent": [
-        {
-          "author": "andreubotella",
-          "date": "2026-08-25",
-          "url": "https://github.com/w3c/csswg-drafts/issues/13670#issuecomment-5417692107",
-          "gist": "Yeah, the proposed resolution here is actually wrong, now that I think about it. And part of this might have been me framing the issue in a way that was hard to understand, to the point where even I c"
-        },
-        {
-          "author": "dshin-moz",
-          "date": "2026-08-26",
-          "url": "https://github.com/w3c/csswg-drafts/issues/13670#issuecomment-5430505904",
-          "gist": "Hm, so Chrome does have an implementation for height-based line clamping - Is it the plan that the spec will follow that implementation? If so, is there any draft/explainer?"
-        },
-        {
-          "author": "andreubotella",
-          "date": "2026-08-26",
-          "url": "https://github.com/w3c/csswg-drafts/issues/13670#issuecomment-5431503489",
-          "gist": "Hi, this is already in the spec, although maybe it's not as clear as it could be and we could add notes to clarify how everything fits together. Section 5.3.1 \"Line-clamp containers\" starts by listing"
-        }
-      ]
-    },
-    {
       "issue": 13277,
       "title": "[css-inline-3][css-text-3] Clarification on vertical-align shorthand and text boundary shaping",
       "labels": [
@@ -6989,37 +7020,6 @@
           "date": "2026-08-24",
           "url": "https://github.com/w3c/csswg-drafts/issues/2083#issuecomment-5400273525",
           "gist": "The CSSWG will automatically accept this resolution one week from now if no objections are raised here. Anyone can add an emoji to this comment to express support. If you do not support this resolutio"
-        }
-      ]
-    },
-    {
-      "issue": 5715,
-      "title": "[css-sizing-4] Add `margin-box` for box-sizing?",
-      "labels": [
-        "Needs Thought",
-        "css-sizing-4"
-      ],
-      "url": "https://github.com/w3c/csswg-drafts/issues/5715",
-      "comments_in_window": 6,
-      "feature": null,
-      "recent": [
-        {
-          "author": "fantasai",
-          "date": "2026-08-13",
-          "url": "https://github.com/w3c/csswg-drafts/issues/5715#issuecomment-5274570789",
-          "gist": "@Loirooriol I'm not sure that we should treat margins as 0 in these cases. The idea of `stretch` is to fill the containing block. But you might set, for example, `max-height: 100vh; box-sizing: margin"
-        },
-        {
-          "author": "Loirooriol",
-          "date": "2026-08-13",
-          "url": "https://github.com/w3c/csswg-drafts/issues/5715#issuecomment-5276863416",
-          "gist": "I think it should happen for percentages. But maybe not for lengths. But then what about `calc()` mixing both?"
-        },
-        {
-          "author": "fantasai",
-          "date": "2026-08-13",
-          "url": "https://github.com/w3c/csswg-drafts/issues/5715#issuecomment-5285769650",
-          "gist": "Percentages are resolved against the containing block, and are otherwise exactly equivalent to the equivalent length. I don't think we want to change that."
         }
       ]
     },
@@ -9607,6 +9607,18 @@
       ]
     },
     {
+      "issue": 14399,
+      "title": "[css-values-5] How to replace `ident(\"\")`?",
+      "labels": [
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14399",
+      "feature": null,
+      "created_at": "2026-08-27",
+      "background": "The procedure to [replace an `ident()` function](https://drafts.csswg.org/css-values-5/#ident) says:",
+      "related": []
+    },
+    {
       "issue": 14394,
       "title": "[selectors-4][css-forms-1] Add pseudo class to select empty/unset file inputs",
       "labels": [
@@ -9884,28 +9896,6 @@
       "created_at": "2026-08-14",
       "background": "When the `line-height` is smaller than the font's ascent/descent, line boxes can have negative leading. If `text-box-trim` is applied to a block using a taller edge metric, does it remove this negative leading, thereby increasing the height of the text box? Blink and Gecko do this, but WebKit doesn't — see this [example](https://codepen.io/editor/kbhomes/pen/019ffe30-e39c-73f2-8973-252882a621c3).",
       "related": []
-    },
-    {
-      "issue": 14329,
-      "title": "[css-color-4] [css-ui] `accent-color: AccentColor` when parent's `accent-color` is `auto`?",
-      "labels": [
-        "css-color-4",
-        "css-ui-4"
-      ],
-      "url": "https://github.com/w3c/csswg-drafts/issues/14329",
-      "feature": null,
-      "created_at": "2026-08-14",
-      "background": "We recently [resolved](https://github.com/w3c/csswg-drafts/issues/14192#issuecomment-5202877510) that `accent-color: AccentColor` resolves at compute time to parent's `accent-color`. What should `accent-color: AccentColor` compute to, if the parent's `accent-color` is `auto`?",
-      "related": [
-        {
-          "issue": 10372,
-          "url": "https://github.com/w3c/csswg-drafts/issues/10372"
-        },
-        {
-          "issue": 14192,
-          "url": "https://github.com/w3c/csswg-drafts/issues/14192"
-        }
-      ]
     }
   ],
   "spec_changes": [
@@ -10703,6 +10693,103 @@
       ]
     },
     {
+      "issue": 5292,
+      "title": "[css-color-5] Add `currentBackgroundColor` Variable",
+      "labels": [
+        "css-color-6"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/5292",
+      "feature": null,
+      "comments_in_window": 12,
+      "resolved": false,
+      "ledger": [
+        {
+          "author": "fantasai",
+          "date": "2026-08-13",
+          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5286240570",
+          "resolution": false,
+          "gist": "**Proposal:**"
+        },
+        {
+          "author": "romainmenke",
+          "date": "2026-08-19",
+          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5340399166",
+          "resolution": false,
+          "gist": "I think @tabatkins's [proposal](https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-725564480) is also worth considering."
+        },
+        {
+          "author": "emilio",
+          "date": "2026-08-19",
+          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5341045440",
+          "resolution": false,
+          "gist": "Can't you (ab-)use `accent-color` / `AccentColor` (with the recent resolutions) for this? It seems more flexible since it doesn't force you to _actually_ use it as a background. And if you want to, yo"
+        },
+        {
+          "author": "phaux",
+          "date": "2026-08-19",
+          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5344945094",
+          "resolution": false,
+          "gist": "As I said in another issue, I think that to get a matching background color you should use `background-color: Canvas` and there should be a new property `canvas-color` to set that color, similar to ho"
+        },
+        {
+          "author": "LeaVerou",
+          "date": "2026-08-26",
+          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5427485102",
+          "resolution": false,
+          "gist": "+1 on the functionality, not a huge fan of adding another ad hoc keyword. We so far have `currentColor`, `AccentColor` (not `currentAccentColor`!), and now `currentBackgroundColor`. Plus some values t"
+        },
+        {
+          "author": "css-meeting-bot",
+          "date": "2026-08-26",
+          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5428412451",
+          "resolution": false,
+          "gist": "The CSS Working Group just discussed ``[css-color-5] Add `currentBackgroundColor` Variable``."
+        },
+        {
+          "author": "flackr",
+          "date": "2026-08-26",
+          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5428418049",
+          "resolution": false,
+          "gist": "I'm very concerned about the handling of partial transparency which is often used for highlight effects. Instead of just assuming the new partially transparent color, maybe we could composite it on to"
+        },
+        {
+          "author": "Loirooriol",
+          "date": "2026-08-26",
+          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5428440618",
+          "resolution": false,
+          "gist": "I'm not convinced about that, because what if the parent with semitransparent background is abspos and completely outside of the grandparent? Then compositing with the grandparent makes no sense at al"
+        },
+        {
+          "author": "djmarland",
+          "date": "2026-08-26",
+          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5428482041",
+          "resolution": false,
+          "gist": "So we have types of `<named-color>` which are lowercase and `<system-color>` which are PascalCase."
+        },
+        {
+          "author": "flackr",
+          "date": "2026-08-26",
+          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5428502310",
+          "resolution": false,
+          "gist": "In this case, like with overflowing content, the author has constructed a case in which it's not well known what is behind it. Just like how they have to be careful with the inherited color they'll ha"
+        },
+        {
+          "author": "svgeesus",
+          "date": "2026-08-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5437564724",
+          "resolution": false,
+          "gist": "The [gory details of why this is](https://drafts.csswg.org/css-color-4/#trivia) are noted in CSS Color 4."
+        },
+        {
+          "author": "Crissov",
+          "date": "2026-08-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5440067431",
+          "resolution": false,
+          "gist": "Many system color keywords furthermore [come](https://drafts.csswg.org/css-color/#css-system-colors)/[came](https://drafts.csswg.org/css-color/#deprecated-system-colors) in pairs (or larger sets), whe"
+        }
+      ]
+    },
+    {
       "issue": 14307,
       "title": "[css-shadow] :has-slotted spec contradicts itself",
       "labels": [
@@ -10797,96 +10884,6 @@
           "url": "https://github.com/w3c/csswg-drafts/issues/14307#issuecomment-5381200148",
           "resolution": false,
           "gist": "Forgive this apparent digression, but I think we need to clarify this potential issue with the spec of `::slotted()` since it's relationship to `:has-slotted` is relevant. I'll file this separately if"
-        }
-      ]
-    },
-    {
-      "issue": 5292,
-      "title": "[css-color-5] Add `currentBackgroundColor` Variable",
-      "labels": [
-        "css-color-6"
-      ],
-      "url": "https://github.com/w3c/csswg-drafts/issues/5292",
-      "feature": null,
-      "comments_in_window": 11,
-      "resolved": false,
-      "ledger": [
-        {
-          "author": "fantasai",
-          "date": "2026-08-13",
-          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5286240570",
-          "resolution": false,
-          "gist": "**Proposal:**"
-        },
-        {
-          "author": "romainmenke",
-          "date": "2026-08-19",
-          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5340399166",
-          "resolution": false,
-          "gist": "I think @tabatkins's [proposal](https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-725564480) is also worth considering."
-        },
-        {
-          "author": "emilio",
-          "date": "2026-08-19",
-          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5341045440",
-          "resolution": false,
-          "gist": "Can't you (ab-)use `accent-color` / `AccentColor` (with the recent resolutions) for this? It seems more flexible since it doesn't force you to _actually_ use it as a background. And if you want to, yo"
-        },
-        {
-          "author": "phaux",
-          "date": "2026-08-19",
-          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5344945094",
-          "resolution": false,
-          "gist": "As I said in another issue, I think that to get a matching background color you should use `background-color: Canvas` and there should be a new property `canvas-color` to set that color, similar to ho"
-        },
-        {
-          "author": "LeaVerou",
-          "date": "2026-08-26",
-          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5427485102",
-          "resolution": false,
-          "gist": "+1 on the functionality, not a huge fan of adding another ad hoc keyword. We so far have `currentColor`, `AccentColor` (not `currentAccentColor`!), and now `currentBackgroundColor`. Plus some values t"
-        },
-        {
-          "author": "css-meeting-bot",
-          "date": "2026-08-26",
-          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5428412451",
-          "resolution": false,
-          "gist": "The CSS Working Group just discussed ``[css-color-5] Add `currentBackgroundColor` Variable``."
-        },
-        {
-          "author": "flackr",
-          "date": "2026-08-26",
-          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5428418049",
-          "resolution": false,
-          "gist": "I'm very concerned about the handling of partial transparency which is often used for highlight effects. Instead of just assuming the new partially transparent color, maybe we could composite it on to"
-        },
-        {
-          "author": "Loirooriol",
-          "date": "2026-08-26",
-          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5428440618",
-          "resolution": false,
-          "gist": "I'm not convinced about that, because what if the parent with semitransparent background is abspos and completely outside of the grandparent? Then compositing with the grandparent makes no sense at al"
-        },
-        {
-          "author": "djmarland",
-          "date": "2026-08-26",
-          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5428482041",
-          "resolution": false,
-          "gist": "So we have types of `<named-color>` which are lowercase and `<system-color>` which are PascalCase."
-        },
-        {
-          "author": "flackr",
-          "date": "2026-08-26",
-          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5428502310",
-          "resolution": false,
-          "gist": "In this case, like with overflowing content, the author has constructed a case in which it's not well known what is behind it. Just like how they have to be careful with the inherited color they'll ha"
-        },
-        {
-          "author": "svgeesus",
-          "date": "2026-08-27",
-          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5437564724",
-          "resolution": false,
-          "gist": "The [gory details of why this is](https://drafts.csswg.org/css-color-4/#trivia) are noted in CSS Color 4."
         }
       ]
     },

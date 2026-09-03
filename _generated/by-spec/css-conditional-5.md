@@ -156,3 +156,4 @@
 - 2026-07-22 opened #14217: [css-conditional-5] container-type:scroll-state and single-axis scrollers
 - 2026-07-24 opened #14226: [css-conditional-5] Split `container-type: scroll-state` back into 3 keywords
 - 2026-08-24 opened #14384: [css-conditional-5] How to resolve `cq*` values against a container size resolved at used value time?
+- 2026-09-02 opened #14430: [css-conditional-5] Element.matchContainer has no termination rule for change event listeners

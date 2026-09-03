@@ -141,3 +141,4 @@
 - 2026-05-06 RESOLVED #13866: light-dark(..., none) computes to image(transparent) if none is the value that was chosen
 - 2026-05-12 opened #13917: [css-color-adjust-1] Nits in recent rework of color scheme concepts
 - 2026-06-11 opened #14040: [css-color-adjust-1] `<meta name=color-scheme` sets the "page color scheme" which is queryable by `@prefers-color-scheme`?
+- 2026-09-03 opened #14437: [css-color-4][css-color-adjust-1] Clarify the effect of forced colors mode on system colors

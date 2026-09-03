@@ -21,3 +21,4 @@
 - 2026-03-03 opened #13587: [css-ui] Proposal: change `outline-offset` initial value to `auto`
 - 2026-04-03 opened #13765: Add outline-offset: inset
 - 2026-06-24 RESOLVED #13765: Add inset keyword to the outline-offset property
+- 2026-08-30 opened #14411: [css-ui][css-content] Define generated content on widgets

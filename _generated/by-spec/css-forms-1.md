@@ -233,3 +233,7 @@
 - 2026-08-26 RESOLVED #14319: input, select, option { align-content: unsafe center; align-items: unsafe center; }
 - 2026-08-26 opened #14394: [selectors-4][css-forms-1] Add pseudo class to select empty/unset file inputs
 - 2026-08-27 opened #14395: [css-forms-1] Use `::field-content { flex: 1 }` instead of `::picker-icon { margin-inline-start: auto; }`
+- 2026-08-30 opened #14411: [css-ui][css-content] Define generated content on widgets
+- 2026-09-02 RESOLVED #14251: add :is(input, textarea, select, button):disabled { cursor: not-allowed; } to the UA stylesheet
+- 2026-09-02 RESOLVED #14255: inherit text-overflow from select to the button
+- 2026-09-02 RESOLVED #14395: Proposed resolution is to switch to ::field-content, selectedcontent { flex: 1; }

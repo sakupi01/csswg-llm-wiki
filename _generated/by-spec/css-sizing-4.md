@@ -179,10 +179,8 @@
 - 2024-09-22 opened #10933:  [css-sizing] aspect-ratio missing combined value definition
 - 2024-09-23 opened #10937: [css-tables][css-sizing] What sizing keywords allow fixed table mode?
 - 2024-09-27 opened #10967: [css-sizing][css-values] Is `stretch` intrinsic or not? Specs don't agree
-- 2024-10-05 opened #11006: [css-sizing] Does indefinite `stretch` behave as automatic size or as initial value?
 - 2024-10-09 RESOLVED #7875: Take 2nd option (reserve space as for scrollbar-gutter) and add a new value to scrollbar-gutter for inline-axis scrollbars (tbd)
 - 2024-10-17 opened #11044: [css-sizing-4] How does height: stretch interact with margin collapsing with parent
-- 2024-10-22 opened #11076: [css-sizing] `stretch` should enforce a non-negative content size
 - 2024-10-25 opened #11093: [css-sizing] Should `aspect-ratio: <ratio>` obey `box-sizing` on replaced elements with auto preferred sizes?
 - 2024-11-18 opened #11236: [css-sizing] How to transfer intrinsic keywords via aspect ratio?
 - 2024-11-28 opened #11293: [css-align][css-sizing] Should `place-self: stretch` and `width: stretch` result in different size for abspos?
@@ -197,9 +195,9 @@
 - 2025-02-14 opened #11718: [css-sizing] The "ratio-dependent axis" and "ratio-determining axis" are pure fiction
 - 2025-02-14 opened #11719: [css-sizing] Automatic minimum size needs to be capped by definite preferred size
 - 2025-02-19 RESOLVED #10937: fixed table layout is triggered except when inline-size is auto
-- 2025-02-19 RESOLVED #11006: min-size: stretch behaves as zero, max-size; stretch as infinity, when in an indefinite container
 - 2025-02-19 RESOLVED #11044: Accept proposal
 - 2025-02-26 opened #11784: [css-sizing][css-flexbox] It's false that `stretch` size behaves as `stretch` alignment
+- 2025-03-02 opened #11805: [css-sizing] Intrinsic contribution of `fit-content()` with cyclic percentages
 - 2025-03-05 opened #11840: [css-sizing] Name is inconsistent "min-intrinsic-sizing" or "min-intrinsic-size"?
 - 2025-03-05 opened #11843: [css-sizing] Additions Since Level 3 is missing new properties
 - 2025-03-11 opened #11905: [css-sizing] `height: stretch` on a float shouldn't ignore margins
@@ -210,6 +208,7 @@
 - 2025-04-06 opened #12053: [css-sizing] Where does the default aspect-ratio of a <video> come from?
 - 2025-06-13 opened #12333: [css-sizing] Intrinsic min/max block sizes with aspect ratio?
 - 2025-06-18 RESOLVED #11784: In a flex container's cross axis, stretch sizing keyword resolves initially against the container, then re-resolves against the line once the line's size is determined.
+- 2025-06-18 RESOLVED #11805: accept oriol's proposal
 - 2025-06-18 RESOLVED #12053: No change
 - 2025-06-30 opened #12421: [css-sizing][quirks] Should `stretch` be affected by percentage height calculation quirk?
 - 2025-07-20 opened #12505: [css-sizing] New value like `fit-content` that properly accounts for `text-wrap`?
@@ -233,3 +232,4 @@
 - 2026-03-13 opened #13652: [css-sizing] "behaves as auto" needs clarifications
 - 2026-04-01 RESOLVED #12333: for non replaced elements, while computing the initial block size, min-content, max-content etc. are considered indefinite
 - 2026-08-05 RESOLVED #13260: Resolve the margin behavior against the same containing block that we resolve percentages against
+- 2026-08-31 opened #14424: [css-sizing-3][css-sizing-4] Swap levels of fit-content and fit-content()

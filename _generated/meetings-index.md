@@ -1030,3 +1030,4 @@
 - 2026-08-19 | telecon | 8 topics | 6 resolutions | bot | #12134 #12829 #13516 #13774 #13789 #14003 #14317 #14323
 - 2026-08-20 | telecon | 3 topics | 3 resolutions | bot | #14143 #14249 #14250
 - 2026-08-26 | telecon | 7 topics | 8 resolutions | bot | #5292 #5715 #14008 #14255 #14316 #14319 #14338
+- 2026-09-02 | telecon | 7 topics | 5 resolutions | bot | #8884 #13500 #13997 #14251 #14254 #14255 #14395

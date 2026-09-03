@@ -327,3 +327,4 @@
 - 2026-08-06 RESOLVED #14192: AccentColor/AccentColorText on either 'color' or 'accent-color' looks at 'accent-color' on the parent.
 - 2026-08-06 RESOLVED #14193: accentcolor/accentcolortext resolve at computed value time
 - 2026-08-14 opened #14329: [css-color-4] [css-ui] `accent-color: AccentColor` when parent's `accent-color` is `auto`?
+- 2026-08-30 opened #14411: [css-ui][css-content] Define generated content on widgets

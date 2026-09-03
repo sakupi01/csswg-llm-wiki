@@ -6280,7 +6280,7 @@ and the text may quote an existing resolution — verify at the permalink.
 - 2025-02-19 | #1902 | css-rhythm-1 | RESOLVED: add a new "none" initial value to block-step-align; all other values turn on step sizing | https://github.com/w3c/csswg-drafts/issues/1902#issuecomment-2669268540
 - 2025-02-19 | #1902 | css-rhythm-1 | RESOLVED: block-step-size inherits, and does not activate step sizing | https://github.com/w3c/csswg-drafts/issues/1902#issuecomment-2669268540
 - 2025-02-19 | #10937 | css-sizing-3,css-sizing-4,css-tables-3 | RESOLVED: fixed table layout is triggered except when inline-size is auto | https://github.com/w3c/csswg-drafts/issues/10937#issuecomment-2669150397
-- 2025-02-19 | #11006 | css-sizing-4 | RESOLVED: min-size: stretch behaves as zero, max-size; stretch as infinity, when in an indefinite container | https://github.com/w3c/csswg-drafts/issues/11006#issuecomment-2669238301
+- 2025-02-19 | #11006 | css-sizing-3 | RESOLVED: min-size: stretch behaves as zero, max-size; stretch as infinity, when in an indefinite container | https://github.com/w3c/csswg-drafts/issues/11006#issuecomment-2669238301
 - 2025-02-19 | #11044 | css-sizing-4 | RESOLVED: Accept proposal | https://github.com/w3c/csswg-drafts/issues/11044#issuecomment-2669169423
 - 2025-02-19 | #11452 | css-sizing-3 | RESOLVED: See if implementations can match the spec and revisit issue later. | https://github.com/w3c/csswg-drafts/issues/11452#issuecomment-2669214167
 - 2025-02-19 | #11500 | css-mixins-1,css-values-5,css-variables-1 | RESOLVED: Specify this new parsing behavior for all substitution functions, and some sort of spread-like thing | https://github.com/w3c/csswg-drafts/issues/11500#issuecomment-2669358882
@@ -6447,7 +6447,7 @@ and the text may quote an existing resolution — verify at the permalink.
 - 2025-06-18 | #10674 | css-env-1,css-values-4 | RESOLVED: Use `preferred-text-scale` as the environment variable name (manual) | https://github.com/w3c/csswg-drafts/issues/10674#issuecomment-2982188621
 - 2025-06-18 | #11623 | css-borders-4 | RESOLVED: Add a corners shorthand (manual) | https://github.com/w3c/csswg-drafts/issues/11623#issuecomment-2982179370
 - 2025-06-18 | #11784 | css-flexbox-1,css-sizing-4 | RESOLVED: In a flex container's cross axis, stretch sizing keyword resolves initially against the container, then re-resolves against the line once the line's size is determined. | https://github.com/w3c/csswg-drafts/issues/11784#issuecomment-2984894646
-- 2025-06-18 | #11805 | css-sizing-3 | RESOLVED: accept oriol's proposal | https://github.com/w3c/csswg-drafts/issues/11805#issuecomment-2984920419
+- 2025-06-18 | #11805 | css-sizing-4 | RESOLVED: accept oriol's proposal | https://github.com/w3c/csswg-drafts/issues/11805#issuecomment-2984920419
 - 2025-06-18 | #11825 | css-values-5 | RESOLVED: progress clamps by default between 0 and 1; we'll add unclamped keyword, or other keyword if folks have suggestions | https://github.com/w3c/csswg-drafts/issues/11825#issuecomment-2984969769
 - 2025-06-18 | #12053 | css-sizing-3,css-sizing-4 | RESOLVED: No change | https://github.com/w3c/csswg-drafts/issues/12053#issuecomment-2984936895
 - 2025-06-18 | #12085 | css-forms-1 | RESOLVED: Use `calc-size()` in base styles for `<button>` and `<select>` min sizes (manual) | https://github.com/w3c/csswg-drafts/issues/12085#issuecomment-2982183163
@@ -6563,10 +6563,10 @@ and the text may quote an existing resolution — verify at the permalink.
 - 2025-08-20 | #12289 | css-overflow-4 | RESOLVED: Allow overflow: clip in other axis of a scrollable container. It is still a scroll container but prevents scrolling away from origin in that axis. Figure out what needs to change to respond to an axis not being scrollable. | https://github.com/w3c/csswg-drafts/issues/12289#issuecomment-3206223182
 - 2025-08-20 | #12336 | animation-triggers-1 | RESOLVED: use timeline-trigger-* and event-trigger-* separate property sets | https://github.com/w3c/csswg-drafts/issues/12336#issuecomment-3206545734
 - 2025-08-20 | #12416 | css-overflow-4 | RESOLVED: Rename block-ellipsis: none to no-ellipsis, make empty string behave the same as it. | https://github.com/w3c/csswg-drafts/issues/12416#issuecomment-3206816925
-- 2025-08-20 | #12417 | css-mixins-1 | RESOLVED: @layer is invalid inside mixins (for level 1) | https://github.com/w3c/csswg-drafts/issues/12417#issuecomment-3204738440
-- 2025-08-20 | #12417 | css-mixins-1 | RESOLVED: @mixin is valid wherever @keyframes is valid | https://github.com/w3c/csswg-drafts/issues/12417#issuecomment-3204738440
-- 2025-08-20 | #12417 | css-mixins-1 | RESOLVED: Custom media queries need to be defined before use | https://github.com/w3c/csswg-drafts/issues/12417#issuecomment-3204738440
-- 2025-08-20 | #12417 | css-mixins-1 | RESOLVED: Mixins have to be defined before use | https://github.com/w3c/csswg-drafts/issues/12417#issuecomment-3204738440
+- 2025-08-20 | #12417 | css-mixins-2 | RESOLVED: @layer is invalid inside mixins (for level 1) | https://github.com/w3c/csswg-drafts/issues/12417#issuecomment-3204738440
+- 2025-08-20 | #12417 | css-mixins-2 | RESOLVED: @mixin is valid wherever @keyframes is valid | https://github.com/w3c/csswg-drafts/issues/12417#issuecomment-3204738440
+- 2025-08-20 | #12417 | css-mixins-2 | RESOLVED: Custom media queries need to be defined before use | https://github.com/w3c/csswg-drafts/issues/12417#issuecomment-3204738440
+- 2025-08-20 | #12417 | css-mixins-2 | RESOLVED: Mixins have to be defined before use | https://github.com/w3c/csswg-drafts/issues/12417#issuecomment-3204738440
 - 2025-08-20 | #12536 | mediaqueries-5 | RESOLVED: @custom-media need to be declared before use | https://github.com/w3c/csswg-drafts/issues/12536#issuecomment-3204778132
 - 2025-08-20 | #12581 | animation-triggers-1 | RESOLVED: When multiple elements declare clashing trigger names, the last in tree order wins (matching anchorpos and now timelines) | https://github.com/w3c/csswg-drafts/issues/12581#issuecomment-3206707173
 - 2025-08-20 | #12581 | animation-triggers-1 | RESOLVED: change timeline clash resolution to use last in tree order | https://github.com/w3c/csswg-drafts/issues/12581#issuecomment-3206707173
@@ -6716,8 +6716,8 @@ and the text may quote an existing resolution — verify at the permalink.
 - 2025-11-14 | #12612 | css-sizing-3,css-sizing-4 | RESOLVED: spec what browsers are doing. | https://github.com/w3c/csswg-drafts/issues/12612#issuecomment-3530265966
 - 2025-11-14 | #12632 | css-multicol-2 | RESOLVED: accept Rachel's text/direction | https://github.com/w3c/csswg-drafts/issues/12632#issuecomment-3530740405
 - 2025-11-14 | #12787 | css-multicol-2 | RESOLVED: allow to be zero, let fragmentation spec ensure progress | https://github.com/w3c/csswg-drafts/issues/12787#issuecomment-3530646130
-- 2025-11-14 | #12946 | css-mixins-1 | RESOLVED: always allow passing @contents block | https://github.com/w3c/csswg-drafts/issues/12946#issuecomment-3530969952
-- 2025-11-14 | #12946 | css-mixins-1 | RESOLVED: remove @contents block from the args list | https://github.com/w3c/csswg-drafts/issues/12946#issuecomment-3530969952
+- 2025-11-14 | #12946 | css-mixins-2 | RESOLVED: always allow passing @contents block | https://github.com/w3c/csswg-drafts/issues/12946#issuecomment-3530969952
+- 2025-11-14 | #12946 | css-mixins-2 | RESOLVED: remove @contents block from the args list | https://github.com/w3c/csswg-drafts/issues/12946#issuecomment-3530969952
 - 2025-11-26 | #6900 | - | RESOLVED: New versions of content-3, logical-1 and transitions-1 | https://github.com/w3c/csswg-drafts/issues/6900#issuecomment-3582362134
 - 2025-11-26 | #6900 | - | RESOLVED: appointing keithamus as editor of tables-3 | https://github.com/w3c/csswg-drafts/issues/6900#issuecomment-3582362134
 - 2025-11-26 | #7762 | css-animations-1 | RESOLVED: The empty `<string>` should be parsed as invalid(`animation-name: ""` would be an invalid value). (manual) | https://github.com/w3c/csswg-drafts/issues/7762#issuecomment-3578801045
@@ -6744,7 +6744,7 @@ and the text may quote an existing resolution — verify at the permalink.
 - 2025-12-17 | #10926 | css-grid-3 | RESOLVED: Explicitly placed items in a subgrid contribute to all tracks (even if they can't actually go into that track); but only if the item is fully auto-placed (can start in any track). | https://github.com/w3c/csswg-drafts/issues/10926#issuecomment-3666295527
 - 2025-12-17 | #11395 | css-page-3 | RESOLVED: Accept edits for page-margin-safety descriptor | https://github.com/w3c/csswg-drafts/issues/11395#issuecomment-3666412272
 - 2025-12-17 | #12023 | css-grid-3 | RESOLVED: Whether we add grid-lanes or not, grid (and grid-lanes) will reset all the container-set grid-* properties that apply to grid or grid-lanes layout. | https://github.com/w3c/csswg-drafts/issues/12023#issuecomment-3666247995
-- 2025-12-17 | #12627 | css-cascade-4,css-conditional-5,css-mixins-1 | RESOLVED: Treat contextual conditionals as always true for global rules i.e. the condition doesn't affect the rule | https://github.com/w3c/csswg-drafts/issues/12627#issuecomment-3666535941
+- 2025-12-17 | #12627 | css-cascade-4,css-conditional-5,css-mixins-2 | RESOLVED: Treat contextual conditionals as always true for global rules i.e. the condition doesn't affect the rule | https://github.com/w3c/csswg-drafts/issues/12627#issuecomment-3666535941
 - 2025-12-17 | #12667 | css-overflow-4 | RESOLVED: No change. | https://github.com/w3c/csswg-drafts/issues/12667#issuecomment-3666517014
 - 2025-12-17 | #13174 | css-animations-2,web-animations-2 | RESOLVED: Use timeline-trigger-entry-range and timeline-trigger-active-range | https://github.com/w3c/csswg-drafts/issues/13174#issuecomment-3666401670
 - 2025-12-22 | #7523 | css-properties-values-api-1 | RESOLVED: Allow a comma-separated list of custom property names in the `@property` prelude (manual) | https://github.com/w3c/csswg-drafts/issues/7523#issuecomment-3683970305
@@ -6818,9 +6818,9 @@ and the text may quote an existing resolution — verify at the permalink.
 - 2026-01-29 | #10961 | css-display-4,css-grid-3 | RESOLVED: Add inline-grid-lanes, and remove indication that inline- syntaxes are legacy or otherwise inferior. | https://github.com/w3c/csswg-drafts/issues/10961#issuecomment-3820508516
 - 2026-01-29 | #11152 | css-view-transitions-2 | RESOLVED: Allow "*" as the parameter for active-view-transition-type, meaning "any type" | https://github.com/w3c/csswg-drafts/issues/11152#issuecomment-3819915770
 - 2026-01-29 | #11480 | css-flexbox-2,css-grid-3 | RESOLVED: Abandon grand item-flow theory in favor of smaller targeted unification attempts | https://github.com/w3c/csswg-drafts/issues/11480#issuecomment-3820776942
-- 2026-01-29 | #12927 | css-mixins-1 | RESOLVED: Accept the proposal | https://github.com/w3c/csswg-drafts/issues/12927#issuecomment-3819365691
-- 2026-01-29 | #12927 | css-mixins-1 | RESOLVED: Add an unscoped mixin variant (syntax TBD) | https://github.com/w3c/csswg-drafts/issues/12927#issuecomment-3819365691
-- 2026-01-29 | #13041 | css-conditional-5,css-mixins-1,mediaqueries-5 | RESOLVED: Revert earlier resolution about order-dependence, instead make @custom-media/supports and @mixins use the mechanism in this issue to resolve name collisions | https://github.com/w3c/csswg-drafts/issues/13041#issuecomment-3819756713
+- 2026-01-29 | #12927 | css-mixins-2 | RESOLVED: Accept the proposal | https://github.com/w3c/csswg-drafts/issues/12927#issuecomment-3819365691
+- 2026-01-29 | #12927 | css-mixins-2 | RESOLVED: Add an unscoped mixin variant (syntax TBD) | https://github.com/w3c/csswg-drafts/issues/12927#issuecomment-3819365691
+- 2026-01-29 | #13041 | css-conditional-5,css-mixins-2,mediaqueries-5 | RESOLVED: Revert earlier resolution about order-dependence, instead make @custom-media/supports and @mixins use the mechanism in this issue to resolve name collisions | https://github.com/w3c/csswg-drafts/issues/13041#issuecomment-3819756713
 - 2026-01-29 | #13115 | css-grid-3 | RESOLVED: Integrate the diff spec with grid | https://github.com/w3c/csswg-drafts/issues/13115#issuecomment-3820644949
 - 2026-01-29 | #13116 | css-grid-3 | RESOLVED: close issue no change | https://github.com/w3c/csswg-drafts/issues/13116#issuecomment-3820659393
 - 2026-01-29 | #13164 | css-grid-3 | RESOLVED: running position is updated by the outer size floored to zero | https://github.com/w3c/csswg-drafts/issues/13164#issuecomment-3820703184
@@ -6918,10 +6918,10 @@ and the text may quote an existing resolution — verify at the permalink.
 - 2026-03-25 | #2435 | css-animations-1 | RESOLVED: No change to spec. Allowed keyframe names that can serialize as idents do so, and all others (requiring escapes or disallowed keywords like 'initial') serialize as strings. | https://github.com/w3c/csswg-drafts/issues/2435#issuecomment-4128067883
 - 2026-03-25 | #10845 | css-conditional-5 | RESOLVED: Adopt emilio's proposed design. | https://github.com/w3c/csswg-drafts/issues/10845#issuecomment-4127930553
 - 2026-03-25 | #12622 | css-conditional-5,css-conditional-6 | RESOLVED: Use @supports (--foo) for custom supports conditions. | https://github.com/w3c/csswg-drafts/issues/12622#issuecomment-4128153714
-- 2026-03-25 | #13015 | css-mixins-1 | RESOLVED: Allow mixin definitions to drop the parentheses for consistency | https://github.com/w3c/csswg-drafts/issues/13015#issuecomment-4127410977
+- 2026-03-25 | #13015 | css-mixins-2 | RESOLVED: Allow mixin definitions to drop the parentheses for consistency | https://github.com/w3c/csswg-drafts/issues/13015#issuecomment-4127410977
 - 2026-03-25 | #13036 | css-text-decor-4 | RESOLVED: Go with option 2 (computes as-is, but animates as length when interpolating with a length). | https://github.com/w3c/csswg-drafts/issues/13036#issuecomment-4128224863
-- 2026-03-25 | #13522 | css-mixins-1 | RESOLVED: Last one wins | https://github.com/w3c/csswg-drafts/issues/13522#issuecomment-4127807374
-- 2026-03-25 | #13680 | css-mixins-1 | RESOLVED: Add a Note to the spec and will continue discussing this | https://github.com/w3c/csswg-drafts/issues/13680#issuecomment-4127755865
+- 2026-03-25 | #13522 | css-mixins-2 | RESOLVED: Last one wins | https://github.com/w3c/csswg-drafts/issues/13522#issuecomment-4127807374
+- 2026-03-25 | #13680 | css-mixins-2 | RESOLVED: Add a Note to the spec and will continue discussing this | https://github.com/w3c/csswg-drafts/issues/13680#issuecomment-4127755865
 - 2026-03-25 | #13710 | animation-triggers-1 | RESOLVED: Allow event triggers with the same name to combine into a single named trigger. | https://github.com/w3c/csswg-drafts/issues/13710#issuecomment-4128044742
 - 2026-03-30 | #8720 | selectors-5 | RESOLVED: Any `:lang()` argument or `lang` attribute that cannot be parsed with the BCP-47 syntax causes `:lang()` selectors to not match (manual) | https://github.com/w3c/csswg-drafts/issues/8720#issuecomment-4157312249
 - 2026-03-30 | #13060 | css-values-5 | RESOLVED: `attr(foo unknown-unit, fallback)` takes the fallback instead of becoming invalid (manual) | https://github.com/w3c/csswg-drafts/issues/13060#issuecomment-4157315269
@@ -6961,7 +6961,7 @@ and the text may quote an existing resolution — verify at the permalink.
 - 2026-04-01 | #11983 | css-forms-1 | RESOLVED: Remove all layout magic from fieldset and legend when fieldset has appearance:base | https://github.com/w3c/csswg-drafts/issues/11983#issuecomment-4173632845
 - 2026-04-01 | #12222 | css-flexbox-1 | RESOLVED: flooring of the hypothetical main size is limited to balanced wrapping flexboxes, and we're only using it for line breaking purposes. | https://github.com/w3c/csswg-drafts/issues/12222#issuecomment-4172091755
 - 2026-04-01 | #12333 | css-sizing-4 | RESOLVED: for non replaced elements, while computing the initial block size, min-content, max-content etc. are considered indefinite | https://github.com/w3c/csswg-drafts/issues/12333#issuecomment-4172359175
-- 2026-04-01 | #12631 | css-mixins-1 | RESOLVED: Contents blocks don't interact with the private variables of the mixin. Investigate allowing that in the next level. | https://github.com/w3c/csswg-drafts/issues/12631#issuecomment-4172934882
+- 2026-04-01 | #12631 | css-mixins-2 | RESOLVED: Contents blocks don't interact with the private variables of the mixin. Investigate allowing that in the next level. | https://github.com/w3c/csswg-drafts/issues/12631#issuecomment-4172934882
 - 2026-04-01 | #13102 | css-ui-4 | RESOLVED: add a note to the spec mentioning that 'app-region' might be a supported alias for the feature | https://github.com/w3c/csswg-drafts/issues/13102#issuecomment-4173439064
 - 2026-04-01 | #13132 | css-values-5 | RESOLVED: No further change | https://github.com/w3c/csswg-drafts/issues/13132#issuecomment-4171665138
 - 2026-04-01 | #13337 | css-values-5 | RESOLVED: Mint idents and extend grammar | https://github.com/w3c/csswg-drafts/issues/13337#issuecomment-4171516871
@@ -6976,8 +6976,8 @@ and the text may quote an existing resolution — verify at the permalink.
 - 2026-04-01 | #13530 | css-grid-3 | RESOLVED: No change | https://github.com/w3c/csswg-drafts/issues/13530#issuecomment-4172214752
 - 2026-04-01 | #13601 | css-values-5 | RESOLVED: property-index-scoped for the last one | https://github.com/w3c/csswg-drafts/issues/13601#issuecomment-4171573718
 - 2026-04-01 | #13601 | css-values-5 | RESOLVED: use element-scoped and property-scoped | https://github.com/w3c/csswg-drafts/issues/13601#issuecomment-4171573718
-- 2026-04-01 | #13722 | css-mixins-1 | RESOLVED: Cut a new version of mixins, leave functions in level 1 | https://github.com/w3c/csswg-drafts/issues/13722#issuecomment-4173383507
-- 2026-04-01 | #13727 | css-mixins-1 | RESOLVED: Drop @scope'ing from @mixin. Values that can't resolve because they're outside the subtree are guaranteed-invalid. | https://github.com/w3c/csswg-drafts/issues/13727#issuecomment-4173187508
+- 2026-04-01 | #13722 | css-mixins-1,css-mixins-2 | RESOLVED: Cut a new version of mixins, leave functions in level 1 | https://github.com/w3c/csswg-drafts/issues/13722#issuecomment-4173383507
+- 2026-04-01 | #13727 | css-mixins-2 | RESOLVED: Drop @scope'ing from @mixin. Values that can't resolve because they're outside the subtree are guaranteed-invalid. | https://github.com/w3c/csswg-drafts/issues/13727#issuecomment-4173187508
 - 2026-04-01 | #13738 | css-forms-1 | RESOLVED: Change select picker positioning (position-area + try fallbacks) to use self-block-start / self-inline-start rather than block-start / inline-start | https://github.com/w3c/csswg-drafts/issues/13738#issuecomment-4173520723
 - 2026-04-02 | #6800 | css-lists-3 | RESOLVED: Automatically negate the increment on reversed counters. | https://github.com/w3c/csswg-drafts/issues/6800#issuecomment-4173665433
 - 2026-04-02 | #6900 | - | RESOLVED: fix the Changes link and then repub WD of Sizing 3 and 4 | https://github.com/w3c/csswg-drafts/issues/6900#issuecomment-4179003025
@@ -7056,7 +7056,7 @@ and the text may quote an existing resolution — verify at the permalink.
 - 2026-05-27 | #13678 | css-anchor-position-1,css-conditional-5 | RESOLVED: Add an anchor-position-follows-transforms keyword to feature-detect whether anchor positioning follows transforms | https://github.com/w3c/csswg-drafts/issues/13678#issuecomment-4556655505
 - 2026-05-27 | #13687 | - | RESOLVED: Affirm that reification of subcomponents is all-or-nothing | https://github.com/w3c/csswg-drafts/issues/13687#issuecomment-4556566101
 - 2026-05-28 | #3248 | - | RESOLVED: emilio will start surveying various places where shadow dom is required and where slots exist and come up with various dispositions of properties | https://github.com/w3c/csswg-drafts/issues/3248#issuecomment-4565579232
-- 2026-06-01 | #13942 | css-nav-1 | RESOLVED: Rename the shortname of CSS Spatial Navigation from `css-nav` to `css-spatial-nav (manual) | https://github.com/w3c/csswg-drafts/issues/13942#issuecomment-4595744433
+- 2026-06-01 | #13942 | css-spatial-nav-1 | RESOLVED: Rename the shortname of CSS Spatial Navigation from `css-nav` to `css-spatial-nav (manual) | https://github.com/w3c/csswg-drafts/issues/13942#issuecomment-4595744433
 - 2026-06-03 | #13421 | css-align-3 | RESOLVED: Add a note to the spec so people don't get tripped-up (manual) | https://github.com/w3c/csswg-drafts/issues/13421#issuecomment-4614933730
 - 2026-06-03 | #13421 | css-align-3 | RESOLVED: Add a note to the spec so people don't get tripped-up (manual) | https://github.com/w3c/csswg-drafts/issues/13421#issuecomment-4614933730
 - 2026-06-03 | #13421 | css-align-3 | RESOLVED: Unship align-content: baseline/last baseline for now (manual) | https://github.com/w3c/csswg-drafts/issues/13421#issuecomment-4614933730
@@ -7106,7 +7106,7 @@ and the text may quote an existing resolution — verify at the permalink.
 - 2026-07-22 | #13949 | css-filter-effects-1 | RESOLVED: drop href attribute in filter element | https://github.com/w3c/csswg-drafts/issues/13949#issuecomment-5048768304
 - 2026-07-22 | #13964 | css-filter-effects-1 | RESOLVED: define filter region as either border box or bounding client rects for split inline | https://github.com/w3c/csswg-drafts/issues/13964#issuecomment-5048873342
 - 2026-07-22 | #14018 | css-scroll-snap-1 | RESOLVED: Snap positions affect the nearest ancestor scroll container in each axis they align to | https://github.com/w3c/csswg-drafts/issues/14018#issuecomment-5048738521
-- 2026-07-27 | #13015 | css-mixins-1 | RESOLVED: Mixins with no parameters serialize without parentheses (manual) | https://github.com/w3c/csswg-drafts/issues/13015#issuecomment-5095551489
+- 2026-07-27 | #13015 | css-mixins-2 | RESOLVED: Mixins with no parameters serialize without parentheses (manual) | https://github.com/w3c/csswg-drafts/issues/13015#issuecomment-5095551489
 - 2026-07-29 | #5742 | css-flexbox-1 | RESOLVED: Switch omitted flex-basis back to 0% for compat, add a note to the spec about it | https://github.com/w3c/csswg-drafts/issues/5742#issuecomment-5120741577
 - 2026-07-29 | #9519 | css-scroll-snap-1 | RESOLVED: Add TBD keyword to do joined-axis snapping | https://github.com/w3c/csswg-drafts/issues/9519#issuecomment-5121002451
 - 2026-07-29 | #13490 | css-scroll-snap-1 | RESOLVED: Snap the bounding box, but if it is bigger than the viewport, adjust the alignment [TBD] to keep the element in view. | https://github.com/w3c/csswg-drafts/issues/13490#issuecomment-5120957622
@@ -7121,12 +7121,12 @@ and the text may quote an existing resolution — verify at the permalink.
 - 2026-08-04 | #14129 | animation-triggers-1 | RESOLVED: triggers can be written as functions | https://github.com/w3c/csswg-drafts/issues/14129#issuecomment-5181442750
 - 2026-08-04 | #14129 | animation-triggers-1 | RESOLVED: UNRESOLVE “Align supported events with the events we have in DOM” | https://github.com/w3c/csswg-drafts/issues/14129#issuecomment-5181455671
 - 2026-08-04 | #14181 | scroll-animations-1 | RESOLVED: Start specifying animation-range: stuck | https://github.com/w3c/csswg-drafts/issues/14181#issuecomment-5176689299
-- 2026-08-04 | #14212 | css-mixins-1 | RESOLVED: in function bodies, function and mix in arguments, and all private blocks !important is invalid and causes declaration to be invalid | https://github.com/w3c/csswg-drafts/issues/14212#issuecomment-5180899628
+- 2026-08-04 | #14212 | css-mixins-1,css-mixins-2 | RESOLVED: in function bodies, function and mix in arguments, and all private blocks !important is invalid and causes declaration to be invalid | https://github.com/w3c/csswg-drafts/issues/14212#issuecomment-5180899628
 - 2026-08-04 | #14224 | - | RESOLVED: Unless there is good use case based motivation, the minimum to support is hyphen-asterisk for prefixes. We can explore potential relaxing on a case by case basis based on use cases, but it would need to be well motivated. | https://github.com/w3c/csswg-drafts/issues/14224#issuecomment-5177254686
-- 2026-08-04 | #14243 | css-mixins-1,css-mixins-2 | RESOLVED: Drop @result, use @private for mixin locals and the rest of the mixin body is the result | https://github.com/w3c/csswg-drafts/issues/14243#issuecomment-5180782117
-- 2026-08-04 | #14243 | css-mixins-1,css-mixins-2 | RESOLVED: drop @macro and use @mixin | https://github.com/w3c/csswg-drafts/issues/14243#issuecomment-5180782117
-- 2026-08-04 | #14243 | css-mixins-1,css-mixins-2 | RESOLVED: specify @private that gets nested inside style rules for now | https://github.com/w3c/csswg-drafts/issues/14243#issuecomment-5180782117
-- 2026-08-04 | #14243 | css-mixins-1,css-mixins-2 | RESOLVED: we start specify @private | https://github.com/w3c/csswg-drafts/issues/14243#issuecomment-5180782117
+- 2026-08-04 | #14243 | css-mixins-2 | RESOLVED: Drop @result, use @private for mixin locals and the rest of the mixin body is the result | https://github.com/w3c/csswg-drafts/issues/14243#issuecomment-5180782117
+- 2026-08-04 | #14243 | css-mixins-2 | RESOLVED: drop @macro and use @mixin | https://github.com/w3c/csswg-drafts/issues/14243#issuecomment-5180782117
+- 2026-08-04 | #14243 | css-mixins-2 | RESOLVED: specify @private that gets nested inside style rules for now | https://github.com/w3c/csswg-drafts/issues/14243#issuecomment-5180782117
+- 2026-08-04 | #14243 | css-mixins-2 | RESOLVED: we start specify @private | https://github.com/w3c/csswg-drafts/issues/14243#issuecomment-5180782117
 - 2026-08-05 | #5675 | css-grid-3 | RESOLVED: Draft this proposal as an experimental, informative appendix of Grid L3 and collect feedback. | https://github.com/w3c/csswg-drafts/issues/5675#issuecomment-5195085874
 - 2026-08-05 | #5675 | css-grid-3 | RESOLVED: put a per lane reading flow value into the reading flow spec | https://github.com/w3c/csswg-drafts/issues/5675#issuecomment-5195085874
 - 2026-08-05 | #10884 | css-grid-3 | RESOLVED: Rename to 'fit-tolerance'. | https://github.com/w3c/csswg-drafts/issues/10884#issuecomment-5192599929
@@ -7196,3 +7196,9 @@ and the text may quote an existing resolution — verify at the permalink.
 - 2026-08-26 | #14316 | css-forms-1 | RESOLVED: ::Picker-icon and ::checkmark are not in the a11y tree | https://github.com/w3c/csswg-drafts/issues/14316#issuecomment-5427379486
 - 2026-08-26 | #14319 | css-forms-1 | RESOLVED: input, select, option { align-content: unsafe center; align-items: unsafe center; } | https://github.com/w3c/csswg-drafts/issues/14319#issuecomment-5427495924
 - 2026-08-26 | #14338 | css-mixins-1 | RESOLVED: Function arguments (including defaults), as well as locals and result, are evaluated in the context in which the function is called. | https://github.com/w3c/csswg-drafts/issues/14338#issuecomment-5427887665
+- 2026-08-31 | #2083 | web-animations-1 | RESOLVED: Drop section 8 "Interaction with page display" from Web Animations level 1. (manual) | https://github.com/w3c/csswg-drafts/issues/2083#issuecomment-5483486503
+- 2026-09-02 | #8884 | css-flexbox-1 | RESOLVED: reaffirming previous resolution that the ideal algorithm should be non-normative | https://github.com/w3c/csswg-drafts/issues/8884#issuecomment-5512931957
+- 2026-09-02 | #13997 | css-filter-effects-2 | RESOLVED: we will add a param to the blur() fn that is optional, defaults to auto and will have two other options for fast and slow, names to be bikeshedded | https://github.com/w3c/csswg-drafts/issues/13997#issuecomment-5512789097
+- 2026-09-02 | #14251 | css-forms-1 | RESOLVED: add :is(input, textarea, select, button):disabled { cursor: not-allowed; } to the UA stylesheet | https://github.com/w3c/csswg-drafts/issues/14251#issuecomment-5512419301
+- 2026-09-02 | #14255 | css-forms-1 | RESOLVED: inherit text-overflow from select to the button | https://github.com/w3c/csswg-drafts/issues/14255#issuecomment-5511758098
+- 2026-09-02 | #14395 | css-forms-1 | RESOLVED: Proposed resolution is to switch to ::field-content, selectedcontent { flex: 1; } | https://github.com/w3c/csswg-drafts/issues/14395#issuecomment-5511812824

@@ -109,3 +109,4 @@
 - 2026-05-01 opened #13875: [css-ruby] The bounds of ruby boxes seem necessary, but the spec suggests that they are not
 - 2026-07-08 opened #14144: [css-ruby] rt and rtc should probably reset `text-indent` to zero
 - 2026-08-24 RESOLVED #14144: Add `text-indent: 0` to `rtc, rt` rule in the Default UA Style Sheet.
+- 2026-08-28 opened #14405: [css-ruby-1] Clarify whether line-over ruby annotations on the first line can overflow the block container

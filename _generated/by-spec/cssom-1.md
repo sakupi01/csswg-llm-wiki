@@ -411,3 +411,5 @@
 - 2026-07-27 opened #14229: [css-typed-om] Should parts of the CSS namespace be exposed on workers?
 - 2026-08-04 opened #14263: unicode-range descriptor should serialize codepoint hex digits as ASCII case-insensitive?
 - 2026-08-20 opened #14365: [cssom] Make setProperty() strip leading/trailing whitespace
+- 2026-08-31 opened #14421: [cssom] "Preferred shorthand order" seems weird?
+- 2026-08-31 opened #14422: [cssom] CSSOM serialization of declaration blocks is incompatible across browsers and a forward-compat landmine

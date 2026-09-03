@@ -60,3 +60,4 @@
 - 2026-05-11 opened #13911: [css-viewport] Define visual viewport.
 - 2026-07-15 opened #14188: [scroll-animations][css-viewport] How should the `zoom` property affect `animation-range-start`/`animation-range-end`
 - 2026-08-04 opened #14260: [css-viewport][css-fonts] Effect of the `zoom` property on font metrics as applied to length units
+- 2026-08-27 opened #14402: [css-viewport] Contradictory note in definition of `zoom` property

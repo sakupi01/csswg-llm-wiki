@@ -399,4 +399,4 @@
 - 2026-08-18 opened #14341: [css-values-4] Remove step 1 of serialize a math function?
 - 2026-08-23 opened #14376: [css-values-4][css-inline-3] Clarify how `lh` values of font-affecting properties are computed
 - 2026-08-23 opened #14377: [css-values] What counts as a context that allows `<percentage>`?
-- 2026-08-24 opened #14381: Proposal: Add a Visual-degree (vad) Unit for Perceptual Sizing in CSS.
+- 2026-08-24 opened #14381: Proposal: Add a New Visual Angle in Degrees (vad) Unit for Perceptual Sizing in CSS.

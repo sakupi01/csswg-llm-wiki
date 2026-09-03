@@ -1,0 +1,1442 @@
+{
+  "span": "week",
+  "since": "2026-08-27",
+  "until": "2026-09-03",
+  "generated_at": "2026-09-03T04:26:57Z",
+  "resolutions": [
+    {
+      "date": "2026-09-02",
+      "issue": 8884,
+      "labels": [
+        "css-flexbox-1"
+      ],
+      "resolution": "reaffirming previous resolution that the ideal algorithm should be non-normative",
+      "url": "https://github.com/w3c/csswg-drafts/issues/8884#issuecomment-5512931957",
+      "feature": "flex-shorthand",
+      "background": "Blink launched an implementation of the specified intrinsic sizing algorithm on Canary for a few days. It was quite clear that the [algorithm for computing the intrinsic main size for single-line row flexboxes](https://drafts.csswg.org/css-flexbox/#intrinsic-main-sizes) is not web compatible. `min-content` sizes are too big. Not yet sure about `max-content` sizes.",
+      "related": [],
+      "irc": [
+        "<JoshT> oriol: the flexbox spec had an algorithm for intrinsic sizing that was not web compat",
+        "<JoshT> ... no major browser was following it",
+        "<JoshT> ... now the spec has been changed and has two algirithms. the ideal algorithm and the web compat one that chrome does",
+        "<JoshT> ... spec says the implementations must choose one of them",
+        "<JoshT> ... but I don't see the point having both if we know one is not web compat",
+        "<JoshT> ... we didn't know that the spec was wrong and that browsers were doing something else",
+        "<JoshT> ... and having two makes testing more complicated",
+        "<JoshT> I don't think that will be useful. I would like to have tests passing",
+        "<JoshT> ... other than that, I don't think the ideal algorithm is ideal",
+        "<JoshT> ... we still have several reports complaining that different test cases were behaving in unexpected ways",
+        "<JoshT> ... like with nested boxes and the auto min size",
+        "<JoshT> ... the outcome can be text is forced to overflow instead of break lines which is not idea",
+        "<JoshT> ... so I propose we drop the other algorithm",
+        "<astearns> ack fantasai",
+        "<JoshT> fantasai: for a while we haven't addressed the issue of it not compat",
+        "<JoshT> ... now they are both in the spec and there is a note explaining",
+        "<JoshT> ... we left it in because we wanted to make it closer to the ideal behaviour if we could",
+        "<JoshT> ... we welcomed experimentation on it",
+        "<JoshT> ... it's called ideal because the def of max content is when you choose a size where nothing is wrapping or overflowing",
+        "<JoshT> ... the current algo don't give that result. it causes overflow",
+        "<JoshT> ... i don't understand what's happening in the test case you linked to",
+        "<JoshT> ... flex box that is block level should be constrained by the block",
+        "<JoshT> oriol: it's the auto min size that prevents shrinking",
+        "<JoshT> ... otherwise it's the same as min content. but if it uses the flex basis and that behaves as max content, then that will prevent line breaks",
+        "<JoshT> fantasai: it should be using the min size unless the item is inflexible",
+        "<JoshT> oriol: if you're requesting min content size, if you have a nested flex box and content behaves as max content, i went into the details and it was something on those lines",
+        "<JoshT> fantasai: the result in servo in this case is wrong",
+        "<JoshT> ... i don't think the spec would have wanted the result you're describing",
+        "<JoshT> oriol: what you are saying about having to ask browsers to experiment, maybe we could have that as a non-normative section but right now require the web compat algorithm",
+        "<JoshT> fantasai: there was a time when we only had the non compat algorithm.",
+        "<JoshT> ... i agree the test should either fail or pass and organising WPT to target a specific algo",
+        "<JoshT> ... in terms of the spec, i would be OK with moving it to an appendix if that would help",
+        "<JoshT> astearns: from my reading from the resolution for 3 years ago, the ideal algorithm was meant to be informative",
+        "<JoshT> ... but now we have two in the spec",
+        "<JoshT> ... we could just reapply the resolution from three years ago",
+        "<JoshT> ... maybe open a separate issue on how to get the web compat algorithm not to overflow in the cases where it does",
+        "<JoshT> PROPOSED: the ideal algorithm should be non-normative",
+        "<JoshT> RESOLVED: reaffirming previous resolution that the ideal algorithm should be non-normative"
+      ]
+    },
+    {
+      "date": "2026-09-02",
+      "issue": 13997,
+      "labels": [
+        "css-filter-effects-2"
+      ],
+      "resolution": "we will add a param to the blur() fn that is optional, defaults to auto and will have two other options for fast and slow, names to be bikeshedded",
+      "url": "https://github.com/w3c/csswg-drafts/issues/13997#issuecomment-5512789097",
+      "feature": null,
+      "background": "We frequently have bugs filed such as https://issues.chromium.org/516829766 where the rendering of a backdrop-filter or filter blur incurs a significant performance penalty. I believe css blurs are so expensive because they are calculated as a gaussian blur, https://drafts.csswg.org/filter-effects-1/#feGaussianBlurElement. In chrome, when you animate this blur we compile a new shader per blur radi",
+      "related": [],
+      "irc": [
+        "<JoshT> flackr: chrome we've seen us of backdrop-filter blur for masking",
+        "<JoshT> ... when the radius is large, it's expensive on CPU",
+        "<JoshT> ... wanted to explore a cheaper blur",
+        "<JoshT> ... useful for these cases where quality of blur is not important, we just want to obscure",
+        "<JoshT> ... discussion in issue. best outcome would be some param on the blur function",
+        "<JoshT> ... propose that as a way forward",
+        "<JoshT> ... don't know if we have a cheaper algorithm, but is this reasonable?",
+        "<smfr> q+",
+        "<emeyer> q+",
+        "<astearns> ack smfr",
+        "<JoshT> smfr: yes supportive",
+        "<JoshT> ... we see perf issues on pages",
+        "<JoshT> ... an author would have to have two rules for back compat",
+        "<JoshT> ... I wonder about drop shadow which would involve blurring",
+        "<JoshT> ... i agree i don't want a separate property for filtering quality",
+        "<JoshT> ... should in future think about cheaper versions of drop shadow and box shadow",
+        "<JoshT> astearns: agree having second property would aleviate the back compat issue",
+        "<JoshT> smfr: a separate property would help for cheaper mesh gradients as well, maybe?",
+        "<bramus> +1",
+        "<astearns> s/agree having/agree but having/",
+        "<bramus> (to both mesh gradients and the faster version)",
+        "<JoshT> emeyer: as an author, i can see circumstances where i might want to be able to make this distinction",
+        "<JoshT> ... i think most authors would ask why is the default not faster?",
+        "<JoshT> ... i don't care the type of blur, but I just want a good blur and for browsers to be fast",
+        "<JoshT> ... that's probably more difficult to do here, though",
+        "<JoshT> ... this feels like it's putting on to authors a job that should be done by UAs",
+        "<JoshT> ... 'is this page slow and is it because of the blur?' maybe authors find the perf doesn't change",
+        "<bramus> q+",
+        "<astearns> ack emilio",
+        "<JoshT> ... i think authors like me will be of two minds. some will think it's awesome to use what blur they want",
+        "<astearns> ack emeyer",
+        "<ydaniv> q+",
+        "<vmpstr> q+",
+        "<astearns> ack bramus",
+        "<schenney> q+",
+        "<JoshT> bramus: i think a lot of designers would not be happy if the rendering was lower quality",
+        "<JoshT> ... they look differently at how websites look verses someone like me",
+        "<JoshT> ... but I agree browsers should try to optimise for you",
+        "<JoshT> ... but i don't think we should sacrifice quality by default",
+        "<smfr> q+",
+        "<astearns> ack ydaniv",
+        "<JoshT> astearns: and the back compat makes it harder to make things fast by default",
+        "<JoshT> ydaniv: I agree with emeyer",
+        "<JoshT> ... we should figure out what is a sensible default",
+        "<JoshT> ... but also back compat",
+        "<JoshT> ... for animations, maybe we change to use the fast version by default",
+        "<JoshT> ... and there are other cases like backdrop",
+        "<astearns> ack vmpstr",
+        "<JoshT> ... so I think this is a more difficult issue. I'm unsure",
+        "<astearns> q+",
+        "<JoshT> vmpstr: I think there are bases people care about quality and speed",
+        "<JoshT> ... we could make the default auto",
+        "<JoshT> ... and then have the knob available anyway",
+        "<JoshT> ... switch between quality to performance and see if people complain",
+        "<JoshT> ... if we can switch it, we still then can go back",
+        "<astearns> ack schenney",
+        "<JoshT> schenney: yes agreed",
+        "<JoshT> ... let the browser choose and people who want the higher speed to opt in",
+        "<JoshT> ... developers often won't care",
+        "<JoshT> ... but there are some who will care"
+      ]
+    },
+    {
+      "date": "2026-09-02",
+      "issue": 14251,
+      "labels": [
+        "css-forms-1"
+      ],
+      "resolution": "add :is(input, textarea, select, button):disabled { cursor: not-allowed; } to the UA stylesheet",
+      "url": "https://github.com/w3c/csswg-drafts/issues/14251#issuecomment-5512419301",
+      "feature": null,
+      "background": "Disabled controls should indicate that they are unusable. Proposed to add:",
+      "related": [],
+      "irc": [
+        "<lwarlow> Fwiw I have no issue with border radius, doesn't affect usability for myself :p",
+        "<ydaniv> fantasai: we added a rule to disabled controls, to have a default cursor",
+        "<ydaniv> astearns: is the disucssion here about entirely this?",
+        "<ydaniv> fantasai: so if it also apply to auto as well",
+        "<ydaniv> astearns: should we take the not-allowed cursor first?",
+        "<ydaniv> fantasai: sure",
+        "<JoshT> q+",
+        "<keithamus> q+",
+        "<astearns> ack keithamus",
+        "<ydaniv> astearns: so anyone with concerns on adding default cursor: not-allowed on disabled form controls?",
+        "<ydaniv> keithamus: how common is it not to see the cursor outside of web content?",
+        "<emilio> q+",
+        "<ydaniv> ... I don't seeing it that much in use",
+        "<dbaron> I feel like the not allowed cursor is often used in drag-and-drop contexts",
+        "<ydaniv> astearns: I see a not-allowed in a lot of programs I hate",
+        "<astearns> ack JoshT",
+        "<lwarlow> q+",
+        "<ydaniv> JoshT: the OS's don't seem to be using it much",
+        "<ydaniv> ... so not much for conventions there",
+        "<astearns> ack emilio",
+        "<flackr> +1",
+        "<ydaniv> emilio: I'm feeling that not-allowed is... maybe just deemed down colors",
+        "<JoshT> q+",
+        "<ydaniv> ... which is more common in systems I know",
+        "<astearns> ack lwarlow",
+        "<ydaniv> lwarlow: I don't think OS's actually matters, the web is it's own thing",
+        "<masonf> q+",
+        "<ydaniv> ... I'm ambivilant about whether we should use it",
+        "<ydaniv> ... I think it's fine",
+        "<astearns> ack dbaron",
+        "<keithamus> qq+",
+        "<ydaniv> dbaron: my intution about not-allowed is that it's mainly about drag-n-drop concepts",
+        "<astearns> ack keithamus",
+        "<Zakim> keithamus, you wanted to react to dbaron",
+        "<ydaniv> keithamus: mostly depends on platform",
+        "<astearns> ack JoshT",
+        "<keithamus> s/mostly depends on platform/that's `no-drop`, which is different per platform (sometimes has a hand)",
+        "<lwarlow> https://webawesome.com/docs/components/button/ - web awesome uses not-allowed cursor fwiw",
+        "<ydaniv> JoshT: there's so much variance on how ppl design disabled content, so ppl don't really understand whether it's a disabled checkbox or just slightly grayed",
+        "<astearns> ack masonf",
+        "<ydaniv> masonf: would be great to see what design systems do, so cursor is often changes",
+        "<lwarlow> q+",
+        "<ydaniv> astearns: for rest of these issues, we need more data from the survey that would help us",
+        "<astearns> ack lwarlow",
+        "<ydaniv> lwarlow: so from systems I know, they all use disabled state, so no harm in doing it",
+        "<dbaron> feels worth checking different controls, e.g. disabled buttons vs. disabled text inputs",
+        "<ydaniv> astearns: that was going to be my suggestion, either go back to issue and get the data...",
+        "<ydaniv> ... masonf do you have suggesstion whether we should move on or decide now?",
+        "<ydaniv> masonf: [missed]",
+        "<masonf> ok to resolve now",
+        "<ydaniv> fantasai: so we can take resolution now, and come back to it later",
+        "<masonf> +1",
+        "<lwarlow> +1",
+        "<astearns> proposed: add :is(input, textarea, select, button):disabled { cursor: not-allowed; } to the UA stylesheet",
+        "<ydaniv> astearns: objections?",
+        "<ydaniv> masonf: is it appearance auto and base?",
+        "<ydaniv> astearns: just base",
+        "<fantasai> s/[missed]/It would be good to have the data. These decisions would be really easy if we could just say \"75% of design systems do Y\".",
+        "<ydaniv> ... we will resolve on that and come back when we have more data",
+        "<ydaniv> RESOLVED: add :is(input, textarea, select, button):disabled { cursor: not-allowed; } to the UA stylesheet"
+      ]
+    },
+    {
+      "date": "2026-09-02",
+      "issue": 14255,
+      "labels": [
+        "css-forms-1"
+      ],
+      "resolution": "inherit text-overflow from select to the button",
+      "url": "https://github.com/w3c/csswg-drafts/issues/14255#issuecomment-5511758098",
+      "feature": null,
+      "background": "Currently if the contents of an option are too long but wrappable, they will wrap onto multiple lines. But this can disturb the general page layout, so option text is typically restricted to one line in a `<select>` control. We should disable wrapping for the base appearance in-page select button text also, to help maintain this height expectation, by moving `white-space: nowrap` from `option` to ",
+      "related": [],
+      "irc": [
+        "<ydaniv> ScribeNick: ydaniv",
+        "<lwarlow> +1 sounds like an obvious fix",
+        "<ydaniv> fantasai: we resolved to inherit the text-overflow from select to selected-content",
+        "<emilio> q+",
+        "<ydaniv> emilio: checking, is it forecd to display selected-content?",
+        "<ydaniv> fantasai: yes",
+        "<ydaniv> emilio: ok",
+        "<emilio> s/display selected-content/display: contents",
+        "<ydaniv> astearns: any more concerns?",
+        "<masonf> +1",
+        "<emilio> emilio: then it's not an issue / can't end up with multiple ellipsis or so",
+        "<ydaniv> PROPOSED: inherit text-overflow from select to the button",
+        "<ydaniv> RESOLVED: inherit text-overflow from select to the button"
+      ]
+    },
+    {
+      "date": "2026-09-02",
+      "issue": 14395,
+      "labels": [
+        "css-forms-1"
+      ],
+      "resolution": "Proposed resolution is to switch to ::field-content, selectedcontent { flex: 1; }",
+      "url": "https://github.com/w3c/csswg-drafts/issues/14395#issuecomment-5511812824",
+      "feature": null,
+      "background": "Splitting this out from https://github.com/w3c/csswg-drafts/issues/14323 ...",
+      "related": [
+        {
+          "issue": 14323,
+          "url": "https://github.com/w3c/csswg-drafts/issues/14323"
+        }
+      ],
+      "irc": [
+        "<ydaniv> fantasai: we have picker-icon, and field-content, and selected-content for the text",
+        "<ydaniv> ... we have the margin-inline-start: auto on the selected-icon",
+        "<ydaniv> ... so the text is on the left-hand side",
+        "<ydaniv> ... the problem is, it's better to set flex on it, so if it stretches it becomes to big, rather then an auto margin",
+        "<ydaniv> ... in the future we may want to have more things in the form controls, and more custom things in the button that could also go in there",
+        "<ydaniv> ... so it's not a pattern we can reuse for other things",
+        "<ydaniv> ... so it's a better pattern, going forward, to do flex: 1, so proposal is to switch all of the elements to flex: 1",
+        "<emilio> sgtm",
+        "<ydaniv> astearns: which is same effect for the current contents we have now?",
+        "<ydaniv> fantasai: yes",
+        "<lwarlow> +1",
+        "<astearns> Proposed resolution is to switch to ::field-content, selectedcontent { flex: 1; }",
+        "<masonf> +1",
+        "<ydaniv> astearns: objections?",
+        "<flackr> +1",
+        "<fantasai> (and remove ::picker-icon { margin-inline-start: auto; })",
+        "<ydaniv> RESOLVED: Proposed resolution is to switch to ::field-content, selectedcontent { flex: 1; }"
+      ]
+    }
+  ],
+  "agenda": [
+    {
+      "issue": 10001,
+      "title": "[selectors] New class prefix selector to facilitate utility classes (`.prefix-*`?)",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Testcase (WPT)",
+        "selectors-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/10001",
+      "feature": "heading-selector",
+      "comments_in_window": 7
+    },
+    {
+      "issue": 14377,
+      "title": "[css-values] What counts as a context that allows `<percentage>`?",
+      "labels": [
+        "Agenda+",
+        "css-values-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14377",
+      "feature": "absolute-lengths",
+      "comments_in_window": 5
+    },
+    {
+      "issue": 5715,
+      "title": "[css-sizing-4] Add `margin-box` for box-sizing?",
+      "labels": [
+        "Agenda+",
+        "css-sizing-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/5715",
+      "feature": null,
+      "comments_in_window": 4
+    },
+    {
+      "issue": 13500,
+      "title": "[css-value] Clarification on the serialization of the shorthand associated with coordinated value lists",
+      "labels": [
+        "Needs Testcase (WPT)",
+        "css-values-4",
+        "scroll-animations-1",
+        "spec-test-mismatch"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13500",
+      "feature": "absolute-lengths",
+      "comments_in_window": 4
+    },
+    {
+      "issue": 13997,
+      "title": "[filter-effects-2] Support fast simple css blurs",
+      "labels": [
+        "Needs Edits",
+        "a11y-tracker",
+        "css-filter-effects-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13997",
+      "feature": null,
+      "comments_in_window": 4
+    },
+    {
+      "issue": 14323,
+      "title": "[css-forms-1] Apply ::field-content to select button contents",
+      "labels": [
+        "Agenda+",
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14323",
+      "feature": null,
+      "comments_in_window": 3
+    },
+    {
+      "issue": 3937,
+      "title": "[css-overflow-4] Ellipsizing of text in middle of string",
+      "labels": [
+        "Needs Edits",
+        "css-overflow-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/3937",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 9256,
+      "title": "[web-animations-1][scroll-animations-1] Animations on inactive timelines should still become ready",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "scroll-animations-1",
+        "web-animations-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/9256",
+      "feature": "scroll-driven-animations",
+      "comments_in_window": 2
+    },
+    {
+      "issue": 14190,
+      "title": "[css-align][html] Should `align-content` work on a block-container `<button>`?",
+      "labels": [
+        "Agenda+",
+        "HTML",
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-align-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14190",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 14251,
+      "title": "[css-forms-1] Cursors for base appearance",
+      "labels": [
+        "Needs Edits",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14251",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 14255,
+      "title": "[css-forms-1] Apply overflow and wrapping control to select buttons",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14255",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 14300,
+      "title": "[css-values] Percentages and unit arithmetic",
+      "labels": [
+        "Agenda+",
+        "css-values-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14300",
+      "feature": "absolute-lengths",
+      "comments_in_window": 2
+    },
+    {
+      "issue": 14425,
+      "title": "[css-properties-values-api] Descriptors should support fallbacks",
+      "labels": [
+        "Agenda+",
+        "css-properties-values-api-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14425",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 8155,
+      "title": "[cssom] Shortest serialization principle with multiple minimal possibilities",
+      "labels": [
+        "Agenda+",
+        "cssom-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/8155",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 8884,
+      "title": "[css-flexbox] Intrinsic main size algorithm for row flexboxes not web compatible",
+      "labels": [
+        "Needs Edits",
+        "css-flexbox-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/8884",
+      "feature": "flex-shorthand",
+      "comments_in_window": 1
+    },
+    {
+      "issue": 10210,
+      "title": "[css-color-4] Expand the concept of analogous components to analogous sets of components to minimize `none` → `0` conversions",
+      "labels": [
+        "Needs Edits",
+        "css-color-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/10210",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 10579,
+      "title": "[css-color-4] Evaluate static gamut mapping algorithms for oklab/oklch spaces",
+      "labels": [
+        "Needs Edits",
+        "css-color-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/10579",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 10937,
+      "title": "[css-tables][css-sizing] What sizing keywords allow fixed table mode?",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Testcase (WPT)",
+        "css-sizing-3",
+        "css-sizing-4",
+        "css-tables-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/10937",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 12920,
+      "title": "[css-align-3][css-anchor-position-1] Do we want to allow `safe` or `unsafe` keywords by themselves / in combination with `normal`?",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Testcase (WPT)",
+        "css-align-3",
+        "css-anchor-position-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12920",
+      "feature": "anchor-positioning",
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13036,
+      "title": "[css-text-decor-4] Allow to interpolate between `auto` and length values in `text-decoration-inset`",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-text-decor-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13036",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13211,
+      "title": "[css-properties-values-api] `@property` descriptors should be optional whenever possible",
+      "labels": [
+        "Needs Testcase (WPT)",
+        "css-properties-values-api-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13211",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13468,
+      "title": "[css-position-3] Should there be a special fixedpos ICB?",
+      "labels": [
+        "Agenda+",
+        "css-anchor-position-1",
+        "css-position-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13468",
+      "feature": "anchor-positioning",
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13670,
+      "title": "[css-overflow-4] Syntax to opt into clamping at the earlier of a size and a number of line",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-overflow-4",
+        "topic: line-clamp"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13670",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14187,
+      "title": "[css-lists] Can replaced elements or widgets be list items?",
+      "labels": [
+        "Agenda+",
+        "css-lists-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14187",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14212,
+      "title": "[css-mixins-1] Is `!important` valid in functions and/or mixins?",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-mixins-1",
+        "css-mixins-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14212",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14307,
+      "title": "[css-shadow] :has-slotted spec contradicts itself",
+      "labels": [
+        "Agenda+",
+        "css-shadow-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14307",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14312,
+      "title": "[css-pseudo-4] Should highlights support interactivity declarations?",
+      "labels": [
+        "Agenda+",
+        "css-pseudo-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14312",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14317,
+      "title": "[css-forms-1] Improve ::picker-icon glyph",
+      "labels": [
+        "Agenda+",
+        "Needs Naming (Request to Bikeshed)",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14317",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14357,
+      "title": "[css-overflow] Clarify reasoning for making unprefixed line-clamp work on `-webkit-box`",
+      "labels": [
+        "Agenda+",
+        "css-overflow-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14357",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14395,
+      "title": "[css-forms-1] Use `::field-content { flex: 1 }` instead of `::picker-icon { margin-inline-start: auto; }`",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14395",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14411,
+      "title": "[css-ui][css-content] Define generated content on widgets",
+      "labels": [
+        "Agenda+",
+        "css-forms-1",
+        "css-ui-4",
+        "css-ui-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14411",
+      "feature": null,
+      "comments_in_window": 0
+    },
+    {
+      "issue": 14422,
+      "title": "[cssom] CSSOM serialization of declaration blocks is incompatible across browsers and a forward-compat landmine",
+      "labels": [
+        "Agenda+",
+        "cssom-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14422",
+      "feature": null,
+      "comments_in_window": 0
+    },
+    {
+      "issue": 14424,
+      "title": "[css-sizing-3][css-sizing-4] Swap levels of fit-content and fit-content()",
+      "labels": [
+        "Agenda+",
+        "css-sizing-3",
+        "css-sizing-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14424",
+      "feature": null,
+      "comments_in_window": 0
+    },
+    {
+      "issue": 14429,
+      "title": "[css-sizing-3] resolved value of min-width: auto on block-level flex etc.",
+      "labels": [
+        "Agenda+",
+        "css-sizing-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14429",
+      "feature": null,
+      "comments_in_window": 0
+    }
+  ],
+  "hot": [
+    {
+      "issue": 10951,
+      "title": "[css-animations-2][css-style-attr] Anonymous inline keyframes (e.g. in a style attribute)",
+      "labels": [
+        "css-animations-2",
+        "css-style-attr-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/10951",
+      "comments_in_window": 9,
+      "feature": null,
+      "recent": [
+        {
+          "author": "LeaVerou",
+          "date": "2026-08-31",
+          "url": "https://github.com/w3c/csswg-drafts/issues/10951#issuecomment-5483301545",
+          "gist": "It _is_ tax. The idea is that if the names are private, the tax is significantly reduced."
+        },
+        {
+          "author": "noamr",
+          "date": "2026-08-31",
+          "url": "https://github.com/w3c/csswg-drafts/issues/10951#issuecomment-5483431645",
+          "gist": "I'm seriously interested in making that tax 0 if possible :)"
+        },
+        {
+          "author": "LeaVerou",
+          "date": "2026-08-31",
+          "url": "https://github.com/w3c/csswg-drafts/issues/10951#issuecomment-5483728194",
+          "gist": "0 is definitely better than ε, but it seems like diminishing returns."
+        }
+      ]
+    },
+    {
+      "issue": 5292,
+      "title": "[css-color-5] Add `currentBackgroundColor` Variable",
+      "labels": [
+        "css-color-6"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/5292",
+      "comments_in_window": 7,
+      "feature": null,
+      "recent": [
+        {
+          "author": "Loirooriol",
+          "date": "2026-08-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5440770456",
+          "gist": "Fair"
+        },
+        {
+          "author": "flackr",
+          "date": "2026-08-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5441280602",
+          "gist": "Right, personally I like calling this `canvas-color` as suggested in https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5344945094."
+        },
+        {
+          "author": "LeaVerou",
+          "date": "2026-09-01",
+          "url": "https://github.com/w3c/csswg-drafts/issues/5292#issuecomment-5494180737",
+          "gist": "Actually, we already have `canvas` as a system color. What if we redefined it to work like `currentBackgroundColor` except when used in `background-color`, where it would be what it is today. That's c"
+        }
+      ]
+    },
+    {
+      "issue": 10001,
+      "title": "[selectors] New class prefix selector to facilitate utility classes (`.prefix-*`?)",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Testcase (WPT)",
+        "selectors-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/10001",
+      "comments_in_window": 7,
+      "feature": "heading-selector",
+      "recent": [
+        {
+          "author": "anselmh",
+          "date": "2026-09-01",
+          "url": "https://github.com/w3c/csswg-drafts/issues/10001#issuecomment-5495500703",
+          "gist": "Fair enough, so let’s go further with the idea that we want to see CSS classes as sort of an API. BEM is a great example here again and, in comparison, the prefix suggested here doesn’t work as well. "
+        },
+        {
+          "author": "LeaVerou",
+          "date": "2026-09-01",
+          "url": "https://github.com/w3c/csswg-drafts/issues/10001#issuecomment-5498631523",
+          "gist": "CSS classes, variables, etc are absolutely an API, not sure where the \"sort of\" comes from. A JS library exposes functions as its API, a CSS framework / design system / icon system may expose classes "
+        },
+        {
+          "author": "vrugtehagel",
+          "date": "2026-09-02",
+          "url": "https://github.com/w3c/csswg-drafts/issues/10001#issuecomment-5512818303",
+          "gist": "This is an interesting angle, but I think it is a bit misguided by the fact that the `bi` part happens to be shared by the two classes."
+        }
+      ]
+    },
+    {
+      "issue": 14432,
+      "title": "[css-mixins-2] bring back `@result` and make `@private` more intuitive and generally useful?",
+      "labels": [
+        "css-mixins-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14432",
+      "comments_in_window": 5,
+      "feature": null,
+      "recent": [
+        {
+          "author": "romainmenke",
+          "date": "2026-09-02",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14432#issuecomment-5513490760",
+          "gist": "Could be specified that `@apply` is invalid outside of `@result`."
+        },
+        {
+          "author": "kbabbitt",
+          "date": "2026-09-02",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14432#issuecomment-5513796990",
+          "gist": "Re: issue tagging - we resolved in https://github.com/w3c/csswg-drafts/issues/13722 to split mixins-1 with functions in level 1 and mixins in level 2. That split hasn't happened yet, but I've started "
+        },
+        {
+          "author": "romainmenke",
+          "date": "2026-09-02",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14432#issuecomment-5513847957",
+          "gist": "Got it! Thanks 🙇"
+        }
+      ]
+    },
+    {
+      "issue": 14408,
+      "title": "[css-mixins-2] Why do mixins see private properties visible to the style rule it is substituted into?",
+      "labels": [
+        "css-mixins-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14408",
+      "comments_in_window": 5,
+      "feature": null,
+      "recent": [
+        {
+          "author": "romainmenke",
+          "date": "2026-09-02",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14408#issuecomment-5505473051",
+          "gist": "I might also be coming around to it :)"
+        },
+        {
+          "author": "romainmenke",
+          "date": "2026-09-02",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14408#issuecomment-5506499755",
+          "gist": "I think I initially also interpreted the current spec as implying that mixins could influence private properties outside of themselves."
+        },
+        {
+          "author": "sorvell",
+          "date": "2026-09-02",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14408#issuecomment-5509873901",
+          "gist": "@romainmenke"
+        }
+      ]
+    },
+    {
+      "issue": 14377,
+      "title": "[css-values] What counts as a context that allows `<percentage>`?",
+      "labels": [
+        "Agenda+",
+        "css-values-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14377",
+      "comments_in_window": 5,
+      "feature": "absolute-lengths",
+      "recent": [
+        {
+          "author": "weinig",
+          "date": "2026-08-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14377#issuecomment-5445706124",
+          "gist": "Hm, I really see this quite differently and I wonder why."
+        },
+        {
+          "author": "kbhomes",
+          "date": "2026-08-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14377#issuecomment-5445747584",
+          "gist": "@weinig I'm quite new to web standard implementations so it might just be my naivety 🙂 Would be super keen to hear @tabatkins's thoughts."
+        },
+        {
+          "author": "weinig",
+          "date": "2026-08-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14377#issuecomment-5446485310",
+          "gist": "@kbhomes I meant my question sincerely. I also could totally have this wrong, and am curious about it! Yeah, @tabatkins, your take would be greatly appreciated."
+        }
+      ]
+    }
+  ],
+  "notable": [
+    {
+      "issue": 13500,
+      "title": "[css-value] Clarification on the serialization of the shorthand associated with coordinated value lists",
+      "labels": [
+        "Needs Testcase (WPT)",
+        "css-values-4",
+        "scroll-animations-1",
+        "spec-test-mismatch"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13500",
+      "comments_in_window": 4,
+      "feature": "absolute-lengths",
+      "recent": [
+        {
+          "author": "fantasai",
+          "date": "2026-09-02",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13500#issuecomment-5512967047",
+          "gist": "@weinig Couldn't we just collapse that down to `scroll-timeline-axis: block`?"
+        },
+        {
+          "author": "astearns",
+          "date": "2026-09-02",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13500#issuecomment-5513300307",
+          "gist": "(taking Agenda+ off so that we can distill some of the discussion above and try to come to consensus here in the issue before taking it back to the meeting)"
+        },
+        {
+          "author": "dbaron",
+          "date": "2026-09-02",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13500#issuecomment-5514888795",
+          "gist": "So after a little further thought, I think I might be OK with an exception targeted to the following case:"
+        }
+      ]
+    },
+    {
+      "issue": 14323,
+      "title": "[css-forms-1] Apply ::field-content to select button contents",
+      "labels": [
+        "Agenda+",
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14323",
+      "comments_in_window": 3,
+      "feature": null,
+      "recent": [
+        {
+          "author": "fantasai",
+          "date": "2026-08-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14323#issuecomment-5433637351",
+          "gist": "Agenda+ to clarify that `::field-content` does not apply to `auto` appearance. If a UA supports it in that mode, it must apply `::field-content { all: unset !important; }` to make it unstyleable."
+        },
+        {
+          "author": "nt1m",
+          "date": "2026-08-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14323#issuecomment-5442561139",
+          "gist": "This effectively also breaks ::field-content for appearance: none fwiw"
+        },
+        {
+          "author": "josepharhar",
+          "date": "2026-08-28",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14323#issuecomment-5456278001",
+          "gist": "I'm fine with appearance:none being the same as appearance:auto."
+        }
+      ]
+    },
+    {
+      "issue": 14416,
+      "title": "[css-view-transitions-2] Scoped VT: when scope becomes not rendered or disconnected, transition skips",
+      "labels": [
+        "Async Resolution: Proposed",
+        "css-view-transitions-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14416",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "nt1m",
+          "date": "2026-08-31",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14416#issuecomment-5481272995",
+          "gist": "Sounds reasonable"
+        },
+        {
+          "author": "astearns",
+          "date": "2026-08-31",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14416#issuecomment-5483567040",
+          "gist": "(giving others a bit more time to respond before starting the async process)"
+        }
+      ]
+    },
+    {
+      "issue": 14255,
+      "title": "[css-forms-1] Apply overflow and wrapping control to select buttons",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14255",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "fantasai",
+          "date": "2026-08-28",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14255#issuecomment-5447811114",
+          "gist": "@josepharhar Yes, exactly."
+        }
+      ]
+    },
+    {
+      "issue": 14251,
+      "title": "[css-forms-1] Cursors for base appearance",
+      "labels": [
+        "Needs Edits",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14251",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "fantasai",
+          "date": "2026-09-02",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14251#issuecomment-5512480831",
+          "gist": "WebKit (and Blink?) also have `label { cursor: default; }`. And the full button selector is `input:is([type=\"button\"], [type=\"submit\"], [type=\"reset\"]), input[type=\"file\"]::file-selector-button, butto"
+        }
+      ]
+    },
+    {
+      "issue": 14013,
+      "title": "[css-color-5] color-mix() algorithm requires division by zero",
+      "labels": [
+        "Closed Accepted as Obvious Bugfix",
+        "css-color-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14013",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "yisibl",
+          "date": "2026-09-02",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14013#issuecomment-5505689136",
+          "gist": "@svgeesus @weinig I think the conclusion in Example 5(https://github.com/w3c/csswg-drafts/commit/8195d3746cc5e872957546bb8597deb785868be2) needs to be revised; the description of `color-mix(in oklch, "
+        },
+        {
+          "author": "svgeesus",
+          "date": "2026-09-02",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14013#issuecomment-5515862429",
+          "gist": "@yisibl to guard against this sort of thing in future (and because I have wanted such a tool for a while) behold"
+        }
+      ]
+    },
+    {
+      "issue": 14254,
+      "title": "[css-forms-1] Refine base appearance colors",
+      "labels": [
+        "Needs Data",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14254",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "keithamus",
+          "date": "2026-09-02",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14254#issuecomment-5512387293",
+          "gist": "I've [published a small html page that helps visualize contrast ratios based on OPs CSS](https://www.keithcirkel.co.uk/contrast-curve), it also adds some presets. Hopefully it's helpful to help unders"
+        }
+      ]
+    },
+    {
+      "issue": 14021,
+      "title": "[css-color-5][css-color-4] Unclear how to use `progress` in interpolation.",
+      "labels": [
+        "Closed Accepted by Editor Discretion",
+        "Commenter Satisfied",
+        "css-color-4",
+        "css-color-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14021",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "svgeesus",
+          "date": "2026-08-30",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14021#issuecomment-5470267031",
+          "gist": "@romainmenke Please see new sub-section [13.1. Component-wise Linear Interpolation ](https://www.w3.org/TR/css-color-4/#component-wise-linear-interpolation)"
+        },
+        {
+          "author": "romainmenke",
+          "date": "2026-08-30",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14021#issuecomment-5470381730",
+          "gist": "Perfect! Thank you 🙇"
+        }
+      ]
+    },
+    {
+      "issue": 8752,
+      "title": "[css-nesting][css-style-attr] Allow CSS nesting for inline styles",
+      "labels": [
+        "css-nesting-1",
+        "css-nesting-2",
+        "css-style-attr-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/8752",
+      "comments_in_window": 2,
+      "feature": "css-nesting",
+      "recent": [
+        {
+          "author": "Crissov",
+          "date": "2026-08-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/8752#issuecomment-5435455866",
+          "gist": "Aside: I recently thought about raising this very issue. I didn’t find this one since I was only looking for [`[css-style-attr]`](https://drafts.csswg.org/css-style-attr/). Could this please be tagged"
+        },
+        {
+          "author": "noamr",
+          "date": "2026-08-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/8752#issuecomment-5444725390",
+          "gist": "I think not. Img is marked as empty so the XML validator would fail."
+        }
+      ]
+    },
+    {
+      "issue": 9256,
+      "title": "[web-animations-1][scroll-animations-1] Animations on inactive timelines should still become ready",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "scroll-animations-1",
+        "web-animations-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/9256",
+      "comments_in_window": 2,
+      "feature": "scroll-driven-animations",
+      "recent": [
+        {
+          "author": "graouts",
+          "date": "2026-08-31",
+          "url": "https://github.com/w3c/csswg-drafts/issues/9256#issuecomment-5481403045",
+          "gist": "Would be good to get a spec update with this because WPT tests are already being updated based on that but it's not entirely clear to me how this is supposed to work in practice. For instance, the [We"
+        },
+        {
+          "author": "dshin-moz",
+          "date": "2026-08-31",
+          "url": "https://github.com/w3c/csswg-drafts/issues/9256#issuecomment-5482802306",
+          "gist": "Right, yeah, spec wording is currently specific about animation being in effect, and what Gecko has (Being in a playing state with unresolved start and current time) doesn't fit that definition. Thoug"
+        }
+      ]
+    },
+    {
+      "issue": 14212,
+      "title": "[css-mixins-1] Is `!important` valid in functions and/or mixins?",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-mixins-1",
+        "css-mixins-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14212",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "thejohnjansen",
+          "date": "2026-08-28",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14212#issuecomment-5457224740",
+          "gist": "Taking a look at making edits for this one. Assigning to myself."
+        }
+      ]
+    },
+    {
+      "issue": 14318,
+      "title": "[css-forms-1] Handle prefers-contrast and forced-colors by default",
+      "labels": [
+        "a11y-tracker",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14318",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "lukewarlow",
+          "date": "2026-09-02",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14318#issuecomment-5512485588",
+          "gist": "I think handling forced colors mode specially makes sense. I did raise an existing issue https://github.com/w3c/csswg-drafts/issues/12060"
+        }
+      ]
+    },
+    {
+      "issue": 14395,
+      "title": "[css-forms-1] Use `::field-content { flex: 1 }` instead of `::picker-icon { margin-inline-start: auto; }`",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14395",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": []
+    },
+    {
+      "issue": 14312,
+      "title": "[css-pseudo-4] Should highlights support interactivity declarations?",
+      "labels": [
+        "Agenda+",
+        "css-pseudo-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14312",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "schenney-chromium",
+          "date": "2026-09-02",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14312#issuecomment-5502662638",
+          "gist": "We do allow colors with alpha as highlight colors, which would be similar to opacity in some respects."
+        }
+      ]
+    },
+    {
+      "issue": 14317,
+      "title": "[css-forms-1] Improve ::picker-icon glyph",
+      "labels": [
+        "Agenda+",
+        "Needs Naming (Request to Bikeshed)",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14317",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "Crissov",
+          "date": "2026-08-30",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14317#issuecomment-5468501792",
+          "gist": "Please consider that some GUIs use two triangles or chevrons pointing in opposite vertical directions. Semantic naming may be more appropriate than visual naming."
+        }
+      ]
+    },
+    {
+      "issue": 14213,
+      "title": "[css-values-5] Should ident() be an arbitrary substitution function?",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14213",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-08-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14213#issuecomment-5433609281",
+          "gist": "That's what [first-valid()](https://drafts.csswg.org/css-values-5/#first-valid) is intended for."
+        }
+      ]
+    },
+    {
+      "issue": 13468,
+      "title": "[css-position-3] Should there be a special fixedpos ICB?",
+      "labels": [
+        "Agenda+",
+        "css-anchor-position-1",
+        "css-position-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13468",
+      "comments_in_window": 1,
+      "feature": "anchor-positioning",
+      "recent": [
+        {
+          "author": "bfgeek",
+          "date": "2026-08-27",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13468#issuecomment-5443109897",
+          "gist": "I was looking at implementing this issue, but there is a unspecified side-effect wrt. the top layer."
+        }
+      ]
+    },
+    {
+      "issue": 13166,
+      "title": "[css-ui][css-anchor] Anchors in Focus Navigation properties `nav-*`",
+      "labels": [
+        "css-spatial-nav-1",
+        "css-ui-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13166",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "Crissov",
+          "date": "2026-08-31",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13166#issuecomment-5476947549",
+          "gist": "[`anchor-name`](https://drafts.csswg.org/css-anchor-position/#name) only applies to elements that generate a principal box, i.e. not if they have `display: none` set. This makes sense for anchor-based"
+        }
+      ]
+    },
+    {
+      "issue": 12920,
+      "title": "[css-align-3][css-anchor-position-1] Do we want to allow `safe` or `unsafe` keywords by themselves / in combination with `normal`?",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Testcase (WPT)",
+        "css-align-3",
+        "css-anchor-position-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12920",
+      "comments_in_window": 1,
+      "feature": "anchor-positioning",
+      "recent": [
+        {
+          "author": "fantasai",
+          "date": "2026-09-01",
+          "url": "https://github.com/w3c/csswg-drafts/issues/12920#issuecomment-5487804976",
+          "gist": "Note for the future: allowing `safe` or `unsafe` by themselves would end up ambiguous in the `place-*` shorthands."
+        }
+      ]
+    },
+    {
+      "issue": 12802,
+      "title": "Proposal: make a consistent \"list\" syntax in CSS, and list of lists syntax in CSS.",
+      "labels": [
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12802",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "kbabbitt",
+          "date": "2026-09-01",
+          "url": "https://github.com/w3c/csswg-drafts/issues/12802#issuecomment-5501233534",
+          "gist": "I'm a big fan of consistency, but I'm not sure what new lists-in-lists syntax is being introduced in CSS Functions and Mixins... what am I missing?"
+        }
+      ]
+    }
+  ],
+  "fresh": [
+    {
+      "issue": 14435,
+      "title": "[css-values-5] /TR is stale, republish as WD",
+      "labels": [
+        "Administrative Tracker",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14435",
+      "feature": null,
+      "created_at": "2026-09-02",
+      "background": "The [latest ED](https://drafts.csswg.org/css-values-5/) is dated **20 Aug 2026**, while the [/TR version](https://www.w3.org/TR/css-values-5/) is dated **11 November 2024.**",
+      "related": []
+    },
+    {
+      "issue": 14425,
+      "title": "[css-properties-values-api] Descriptors should support fallbacks",
+      "labels": [
+        "Agenda+",
+        "css-properties-values-api-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14425",
+      "feature": null,
+      "created_at": "2026-09-01",
+      "background": "While we're on the subject of making `@property` more ergonomic, what about allowing fallback values for invalid descriptors?",
+      "related": []
+    },
+    {
+      "issue": 14429,
+      "title": "[css-sizing-3] resolved value of min-width: auto on block-level flex etc.",
+      "labels": [
+        "Agenda+",
+        "css-sizing-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14429",
+      "feature": null,
+      "created_at": "2026-09-01",
+      "background": "The spec currently specifies:",
+      "related": []
+    },
+    {
+      "issue": 14416,
+      "title": "[css-view-transitions-2] Scoped VT: when scope becomes not rendered or disconnected, transition skips",
+      "labels": [
+        "Async Resolution: Proposed",
+        "css-view-transitions-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14416",
+      "feature": null,
+      "created_at": "2026-08-31",
+      "background": "It's unclear from the spec right now what happens when the scope itself becomes disconnected or not rendered (via display: none for example).",
+      "related": []
+    },
+    {
+      "issue": 14422,
+      "title": "[cssom] CSSOM serialization of declaration blocks is incompatible across browsers and a forward-compat landmine",
+      "labels": [
+        "Agenda+",
+        "cssom-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14422",
+      "feature": null,
+      "created_at": "2026-08-31",
+      "background": "[\"Serialize a CSS declaration block\"](https://drafts.csswg.org/cssom/#serialize-a-css-declaration-block) attempts to consolidate longhand declarations into shorthands for serialization. For example, if you write `justify-self: start; align-self: start;`, this algorithm specifies that they are serialized as `place-self: start;`.",
+      "related": [
+        {
+          "issue": 820,
+          "url": "https://github.com/w3c/csswg-drafts/issues/820"
+        }
+      ]
+    },
+    {
+      "issue": 14424,
+      "title": "[css-sizing-3][css-sizing-4] Swap levels of fit-content and fit-content()",
+      "labels": [
+        "Agenda+",
+        "css-sizing-3",
+        "css-sizing-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14424",
+      "feature": null,
+      "created_at": "2026-08-31",
+      "background": "The `fit-content` keyword, which everyone supports, is in Level 4; whereas the `fit-content()` function, which no one does, is in Level 3.",
+      "related": []
+    },
+    {
+      "issue": 14411,
+      "title": "[css-ui][css-content] Define generated content on widgets",
+      "labels": [
+        "Agenda+",
+        "css-forms-1",
+        "css-ui-4",
+        "css-ui-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14411",
+      "feature": null,
+      "created_at": "2026-08-30",
+      "background": "CSS 2.1 [§12.1](https://www.w3.org/TR/CSS21/generate.html#before-after-content) said:",
+      "related": [
+        {
+          "issue": 124,
+          "url": "https://github.com/w3c/csswg-drafts/issues/124"
+        },
+        {
+          "issue": 1018,
+          "url": "https://github.com/w3c/csswg-drafts/issues/1018"
+        }
+      ]
+    }
+  ],
+  "spec_changes": [
+    {
+      "shortname": "css-color-4",
+      "title": "CSS Color Module Level 4",
+      "maturity": "CRD",
+      "date": "2026-09-01",
+      "url": "https://www.w3.org/TR/2026/CRD-css-color-4-20260901/"
+    },
+    {
+      "shortname": "css-color-5",
+      "title": "CSS Color Module Level 5",
+      "maturity": "WD",
+      "date": "2026-09-02",
+      "url": "https://www.w3.org/TR/2026/WD-css-color-5-20260902/"
+    },
+    {
+      "shortname": "css-fonts-4",
+      "title": "CSS Fonts Module Level 4",
+      "maturity": "WD",
+      "date": "2026-08-31",
+      "url": "https://www.w3.org/TR/2026/WD-css-fonts-4-20260831/"
+    }
+  ]
+}

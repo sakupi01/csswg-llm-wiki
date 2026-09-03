@@ -13,3 +13,4 @@
 - 2026-05-28 opened #13976: Image Orientation in <feImage> filter nodes
 - 2026-06-01 opened #13997: [filter-effects-2] Support fast simple css blurs
 - 2026-06-19 opened #14068: [css-filters] Wrong links to SVG 2, and links to SVG11 should probably be updated.
+- 2026-09-02 RESOLVED #13997: we will add a param to the blur() fn that is optional, defaults to auto and will have two other options for fast and slow, names to be bikeshedded

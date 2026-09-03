@@ -224,3 +224,4 @@
 - 2026-03-18 RESOLVED #11575: Script preferences and user preferences have identical expressivity. Order of priority (least to most) is: OS, UA, user, preferences API, forced overrides (forced-colors mode or other forced automatic color conversions)
 - 2026-04-13 opened #13796: [css-mediaqueries] Edge cases of `prefers-color-scheme` and iframe color-scheme
 - 2026-06-19 opened #14071: [mediaqueries-5][css-conditional-5] `@custom-media` and `@supports-condition`
+- 2026-09-02 opened #14431: [mediaqueries-5] Allow `<media-query-list>` to be omitted instead of empty

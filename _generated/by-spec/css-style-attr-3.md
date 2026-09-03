@@ -4,5 +4,6 @@
 - 2017-01-12 opened #899: [css-values] what's the base URL to be used for inline styles?
 - 2021-06-08 opened #6360: [css-style-attr] Revise the REC?
 - 2023-04-22 opened #8752: [css-nesting][css-style-attr] Allow CSS nesting for inline styles
+- 2024-09-26 opened #10951: [css-animations-2][css-style-attr] Anonymous inline keyframes (e.g. in a style attribute)
 - 2025-04-01 opened #12036: [css-style-attr] Feature suggestion: support for inline media queries in HTML
 - 2026-02-20 opened #13540: [css-style-attr] Level 2 or stable forever?

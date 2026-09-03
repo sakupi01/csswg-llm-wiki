@@ -37,6 +37,3 @@
 - 2021-08-26 opened #6548: [css-nav-1] Spatial navigation explainer conflates keyboard with desktop browser
 - 2022-11-16 opened #8081: [css-nav-1] Broken references in CSS Spatial Navigation Level 1
 - 2025-11-23 opened #13142: [css-nav][css-contain] Navigation containment
-- 2025-11-27 opened #13166: [css-ui][css-anchor] Anchors in Focus Navigation properties `nav-*`
-- 2026-05-19 opened #13942: [css-nav-1] Rename slug of CSS Spatial Navigation
-- 2026-06-01 RESOLVED #13942: Rename the shortname of CSS Spatial Navigation from `css-nav` to `css-spatial-nav

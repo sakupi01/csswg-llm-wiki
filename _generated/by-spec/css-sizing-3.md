@@ -124,15 +124,17 @@
 - 2024-09-23 opened #10938: [css-sizing] Circular link for `<calc-size()>`
 - 2024-09-27 opened #10969: [css-sizing] Nobody follows the spec about cyclic percentages in min sizing properties
 - 2024-10-01 opened #10985: [css-sizing] min/max-content contribution is an outer size, not an inner one
+- 2024-10-05 opened #11006: [css-sizing] Does indefinite `stretch` behave as automatic size or as initial value?
 - 2024-10-07 opened #11009: Auto Keyword value type of size Intrinsic vs Extrinsic.
+- 2024-10-22 opened #11076: [css-sizing] `stretch` should enforce a non-negative content size
 - 2024-10-28 opened #11101: [css-sizing-3]: `calc-size` links to itself
 - 2024-11-24 opened #11268: [css-sizing-3] Clarify auto value computation for width and height of inline elements
 - 2024-12-17 opened #11387: [css-sizing] Does an indefinite intrinsic block size transfer to inline axis when `stretch` would do so?
 - 2025-01-07 opened #11452: [css-sizing] Nobody follows the spec about cyclic percentages in preferred&max sizing properties of replaced element
 - 2025-02-14 opened #11716: [css-sizing] Resolved value of min size properties doesn't round-trip
 - 2025-02-19 RESOLVED #10937: fixed table layout is triggered except when inline-size is auto
+- 2025-02-19 RESOLVED #11006: min-size: stretch behaves as zero, max-size; stretch as infinity, when in an indefinite container
 - 2025-02-19 RESOLVED #11452: See if implementations can match the spec and revisit issue later.
-- 2025-03-02 opened #11805: [css-sizing] Intrinsic contribution of `fit-content()` with cyclic percentages
 - 2025-03-12 RESOLVED #10721: No normative change to spec, but add example like Oriol's and make the implication clearer in the spec.
 - 2025-03-26 RESOLVED #11716: When aspect-ratio is non-initial, then min-size:auto serializes as 'auto' in gCS() (rather than being censored to 0)
 - 2025-03-28 opened #12018: [css-flexbox-1] Clarify how indefinite percentage values are handled in the cross size of flex items
@@ -143,7 +145,6 @@
 - 2025-05-12 opened #12182: Should `min-content` really include the width/height of `flex-basis: 0%` scrollable items?
 - 2025-05-21 opened #12218: [css2][css-flow][css-sizing] How do min/max block sizes affect bottom margin collapse with last child?
 - 2025-05-23 opened #12229: [css-sizing] How should auto-sizing of iframes work?
-- 2025-06-18 RESOLVED #11805: accept oriol's proposal
 - 2025-06-18 RESOLVED #12053: No change
 - 2025-06-20 opened #12376: [css-sizing-3][css-values-4] Define `width` and `height` CSS values for SVG Elements in a mapping
 - 2025-08-01 opened #12563: [css-sizing-3][css-grid-3][Masonry] Compressible Replaced Elements
@@ -160,3 +161,5 @@
 - 2025-11-25 opened #13149: [css-sizing] Intrinsic sizes for stretchable replaced elements
 - 2026-02-10 opened #13478: [css-sizing] Production for values common to max/min/preferred widths and heights
 - 2026-03-13 opened #13652: [css-sizing] "behaves as auto" needs clarifications
+- 2026-08-31 opened #14424: [css-sizing-3][css-sizing-4] Swap levels of fit-content and fit-content()
+- 2026-09-01 opened #14429: [css-sizing-3] resolved value of min-width: auto on block-level flex etc.

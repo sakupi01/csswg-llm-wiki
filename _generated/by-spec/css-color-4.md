@@ -434,3 +434,4 @@
 - 2026-08-06 opened #14285: [css-color-4] Drop powerless components and just have `none`?
 - 2026-08-14 opened #14329: [css-color-4] [css-ui] `accent-color: AccentColor` when parent's `accent-color` is `auto`?
 - 2026-08-19 opened #14347: [css-color-4] rewrite `13. Color interpolation` to be more explicit about all the steps and effects
+- 2026-09-03 opened #14437: [css-color-4][css-color-adjust-1] Clarify the effect of forced colors mode on system colors

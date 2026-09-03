@@ -1,8 +1,8 @@
-  1293  cdoublev
-  1164  noamr
+  1296  cdoublev
+  1171  noamr
   1069  litherum
-  1051  Crissov
-   807  romainmenke
+  1061  Crissov
+   825  romainmenke
    769  FremyCompany
    707  upsuper
    704  AmeliaBR
@@ -13,30 +13,30 @@
    493  MatsPalmgren
    476  faceless2
    460  zcorpan
-   453  yisibl
+   457  yisibl
    440  SelenIT
    412  r12a
-   377  weinig
+   384  weinig
    356  bradkemper
-   343  kbabbitt
+   347  kbabbitt
    341  jonjohnjohnson
    341  tantek
-   339  lukewarlow
+   340  lukewarlow
    305  gsnedders
-   298  josepharhar
+   299  josepharhar
    286  facelessuser
-   266  xfq
-   264  jsnkuhn
+   267  xfq
+   265  jsnkuhn
    255  gregwhitworth
    253  mrego
    243  gitspeaks
    231  drott
    225  johannesodland
    215  brandonmcconnell
-   205  benface
+   206  benface
    197  cookiecrook
    190  tobireif
-   188  graouts
+   189  graouts
    184  javifernandez
    182  ewilligers
    177  davidsgrogan
@@ -51,9 +51,9 @@
    126  bkardell
    125  myles
    123  AtkinsSJ
+   122  schenney-chromium
    119  BorisChiou
    119  andreubotella
-   119  schenney-chromium
    117  Zhang-Junzhi
    114  Myndex
    114  Psychpsyo
@@ -70,11 +70,11 @@
     99  dauwhe
     98  jonathantneal
     94  TalbotG
+    93  sorvell
     91  MurakamiShinyu
     86  cvrebert
     86  dirkschulze
     86  scottkellum
-    86  sorvell
     85  fred-wang
     84  grorg
     83  danburzo
@@ -112,8 +112,8 @@
     56  valtlai
     55  Lorp
     55  alice
+    55  jogibear9988
     54  jimmyfrasche
-    54  jogibear9988
     53  dandclark
     53  macnmm
     51  bleper
@@ -149,9 +149,9 @@
     44  saschanaz
     43  KurtCattiSchmidt
     43  keithjgrant
+    42  kidayasuo
     41  ChrisL_
     41  dead-claudia
-    41  kidayasuo
     40  jpzwarte
     40  jwatt
     40  pyoor
@@ -167,6 +167,7 @@
     37  rcabanier
     37  svillar
     36  chriskirknielsen
+    36  kbhomes
     36  korenevskiy
     36  nmn
     36  o-t-w
@@ -176,12 +177,11 @@
     34  wangxianzhu
     33  dontcallmedom-bot
     33  hunboy
-    33  kbhomes
     33  miragecraft
     33  tuankiet65
+    33  vrugtehagel
     32  matthewp
     32  szager-chromium
-    32  vrugtehagel
     31  ChumpChief
     31  GPHemsley
     31  aardrian

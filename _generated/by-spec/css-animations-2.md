@@ -93,7 +93,7 @@
 - 2024-09-12 opened #10879: [css-animation] Is calc() allowed to be used for the <keyframe-selector> production in the @keyframes prelude?
 - 2024-09-12 opened #10880: [css-animations] How should relative-length values be interpreted when used in the <keyframe-selector> production in the @keyframes prelude?
 - 2024-09-26 RESOLVED #6982: add the 'animation-easing' as defined in the issue, and add a new initial value for animation-timing-function to something that computes to ease or linear depending on animation-easing
-- 2024-09-26 opened #10951: [css-animations-2] Anonymous inline keyframes (e.g. in a style attribute)
+- 2024-09-26 opened #10951: [css-animations-2][css-style-attr] Anonymous inline keyframes (e.g. in a style attribute)
 - 2024-10-21 opened #11054: [css-animations-2] interaction between the `timeline` property and `animation-timeline` property
 - 2024-10-22 opened #11064: [css-transitions-2][css-animations-2] The event order of the cancelled transitions/animations
 - 2025-01-24 opened #11564: [css-transforms] Feature request: Animate a part of an element

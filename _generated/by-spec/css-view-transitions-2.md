@@ -259,3 +259,4 @@
 - 2026-08-04 RESOLVED #12594: change @route to @location
 - 2026-08-11 RESOLVED #14179: `startViewTransition` throws an invalid state exception for elements that cannot have layout containment
 - 2026-08-21 opened #14368: [css-view-transitions-2] Delaying transitions until nested iframes are ready
+- 2026-08-31 opened #14416: [css-view-transitions-2] Scoped VT: when scope becomes not rendered or disconnected, transition skips

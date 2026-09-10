@@ -59,3 +59,4 @@
 - 2025-09-29 opened #12873: The `eps` = 0.001 factor, and SMPTE-ST-2094-50
 - 2025-11-25 opened #13155: [css-color-hdr-1] has invalid "CSSWG Issues Repository" link
 - 2026-03-04 opened #13597: [css-color-hdr-1] Clarify parsing and serialization of `hdr-color()`
+- 2026-09-06 opened #14454: [css-color-hdr] dynamic-range-limit-mix() should take an arbitrary number of components (like color-mix(), calc-mix(), etc.)

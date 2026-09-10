@@ -266,3 +266,5 @@
 - 2026-07-20 opened #14204: [css-color-5] Drop `Required conversion:` wording?
 - 2026-08-06 RESOLVED #14070: Don't omit alpha of 1 in relative color syntax
 - 2026-08-06 RESOLVED #14070: alpha is required in alpha()
+- 2026-09-09 opened #14463: [css-color-5] how to handle/avoid clamping in relative color syntax
+- 2026-09-09 opened #14465: [css-color-5] Allow omitting percentages when serializing color-mix() in more cases

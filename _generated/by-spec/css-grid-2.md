@@ -105,3 +105,4 @@
 - 2026-08-05 RESOLVED #13930: when grid-placement is fully auto in an axis, use the scrollport edges (otherwise do as specced)
 - 2026-08-05 RESOLVED #13983: Accommodate subgrid gutters and margin/border/padding even if subgrid tracks are empty
 - 2026-08-05 RESOLVED #13983: Fix the spec to handle gaps properly
+- 2026-09-10 opened #14470: [css-grid][css-sizing-3] Automatic minimum sizes of grid items during final sizing

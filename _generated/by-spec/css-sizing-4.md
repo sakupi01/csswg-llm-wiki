@@ -206,6 +206,7 @@
 - 2025-03-16 opened #11945: [css-sizing-4] Should the contain-intrinsic-* properties allow negative lengths?
 - 2025-03-26 RESOLVED #11716: When aspect-ratio is non-initial, then min-size:auto serializes as 'auto' in gCS() (rather than being censored to 0)
 - 2025-04-06 opened #12053: [css-sizing] Where does the default aspect-ratio of a <video> come from?
+- 2025-05-23 opened #12229: [css-sizing] How should auto-sizing of iframes work?
 - 2025-06-13 opened #12333: [css-sizing] Intrinsic min/max block sizes with aspect ratio?
 - 2025-06-18 RESOLVED #11784: In a flex container's cross axis, stretch sizing keyword resolves initially against the container, then re-resolves against the line once the line's size is determined.
 - 2025-06-18 RESOLVED #11805: accept oriol's proposal

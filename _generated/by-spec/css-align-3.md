@@ -307,3 +307,4 @@
 - 2026-08-05 RESOLVED #14190: Adopt overrideable UA stylesheet rules for centering contents of form controls via align-content per Emilio's comment, instead of UA magic.
 - 2026-08-26 RESOLVED #14008: Do what fantasai says in the last comment
 - 2026-08-26 opened #14393: [css-align-3] A contradiction between sections 3 and 5.1 of css-align ?
+- 2026-09-04 opened #14449: [css-align] Limit baseline content-alignment to block containers?

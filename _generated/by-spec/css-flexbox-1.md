@@ -233,6 +233,7 @@
 - 2025-11-03 opened #13054: [css-flexbox-1 ] What the meaning of the “definite used”
 - 2025-11-04 opened #13058: [css-flexbox] how 'flex-basis' property interact with 'width' property?
 - 2026-01-30 opened #13414: [css-flexbox] Flex lines count
+- 2026-02-10 opened #13478: [css-sizing] Production for values common to max/min/preferred widths and heights
 - 2026-04-01 RESOLVED #12222: flooring of the hypothetical main size is limited to balanced wrapping flexboxes, and we're only using it for line breaking purposes.
 - 2026-04-01 RESOLVED #13414: Percentages resolve against the container size, but available space is divided by the line count
 - 2026-04-01 RESOLVED #13414: flex lines continue to shrink around their contents. balance is the same as wrap in terms of line sizing.

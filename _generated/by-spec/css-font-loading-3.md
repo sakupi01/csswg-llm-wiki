@@ -72,3 +72,4 @@
 - 2026-07-17 opened #14196: [css-font-loading-3] Add support for the new `width` terminology and alias the old `stretch`
 - 2026-07-21 opened #14209: [css-font-loading-3] Web IDL syntax error
 - 2026-08-24 opened #14379: [css-font-loading] Expose the actual font / fallback status used for rendered text
+- 2026-09-05 opened #14451: [css-font-loading] Which value wins if both `stretch` and `width` are provided?

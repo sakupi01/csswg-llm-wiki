@@ -53,3 +53,4 @@
 - 2026-08-17 opened #14338: [css-mixins] Evaluation context for custom function arguments: typed vs untyped
 - 2026-08-21 opened #14370: [css-mixins] Should empty arguments be valid?
 - 2026-08-26 RESOLVED #14338: Function arguments (including defaults), as well as locals and result, are evaluated in the context in which the function is called.
+- 2026-09-03 opened #14442: [css-mixins] Types for private properties (in mixins and elsewhere) and probably function locals

@@ -7202,3 +7202,10 @@ and the text may quote an existing resolution — verify at the permalink.
 - 2026-09-02 | #14251 | css-forms-1 | RESOLVED: add :is(input, textarea, select, button):disabled { cursor: not-allowed; } to the UA stylesheet | https://github.com/w3c/csswg-drafts/issues/14251#issuecomment-5512419301
 - 2026-09-02 | #14255 | css-forms-1 | RESOLVED: inherit text-overflow from select to the button | https://github.com/w3c/csswg-drafts/issues/14255#issuecomment-5511758098
 - 2026-09-02 | #14395 | css-forms-1 | RESOLVED: Proposed resolution is to switch to ::field-content, selectedcontent { flex: 1; } | https://github.com/w3c/csswg-drafts/issues/14395#issuecomment-5511812824
+- 2026-09-03 | #11842 | css-forms-1 | RESOLVED: split control-value() into separate sub-type functions | https://github.com/w3c/csswg-drafts/issues/11842#issuecomment-5528088083
+- 2026-09-03 | #13981 | - | RESOLVED: Try implementing interest button positioning as an adjacent sibling | https://github.com/w3c/csswg-drafts/issues/13981#issuecomment-5528407811
+- 2026-09-07 | #14363 | css-image-animation-1 | RESOLVED: Use MAY to connect `:animated-image` to browser animation settings, and explain privacy/usability tradeoff (manual) | https://github.com/w3c/csswg-drafts/issues/14363#issuecomment-5576393167
+- 2026-09-09 | #14056 | css-values-5 | RESOLVED: Unknown url modifiers will cause declaration to be invalid. | https://github.com/w3c/csswg-drafts/issues/14056#issuecomment-5605312744
+- 2026-09-09 | #14247 | css-image-animation-1,css-link-params-1 | RESOLVED: Differing link parmeters cause images to draw differently, but don't affect animation timing. Details TBD. | https://github.com/w3c/csswg-drafts/issues/14247#issuecomment-5605240400
+- 2026-09-09 | #14251 | css-forms-1 | RESOLVED: select, button, label, checkbox, radio, range { cursor: default; } /* auto and base appearance */ | https://github.com/w3c/csswg-drafts/issues/14251#issuecomment-5606178556
+- 2026-09-09 | #14308 | css-forms-1 | RESOLVED: textarea, input[textish], select, buttonish, ::picker() { border-radius: 4px; } | https://github.com/w3c/csswg-drafts/issues/14308#issuecomment-5606451225

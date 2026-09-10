@@ -18,4 +18,7 @@
 - 2026-07-10 opened #14161: [css-image-animation] horizontal review tracker
 - 2026-07-10 opened #14163: [css-image-animation] i18n self review
 - 2026-07-10 opened #14164: [css-image-animation] Security and privacy questionaire
+- 2026-07-31 opened #14247: [css-link-params] Are two references with different parameters independent instances?
 - 2026-08-20 opened #14363: [css-image-animation] Security Horizontal Review
+- 2026-09-07 RESOLVED #14363: Use MAY to connect `:animated-image` to browser animation settings, and explain privacy/usability tradeoff
+- 2026-09-09 RESOLVED #14247: Differing link parmeters cause images to draw differently, but don't affect animation timing. Details TBD.

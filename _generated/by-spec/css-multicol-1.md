@@ -91,4 +91,5 @@
 - 2024-12-16 opened #11380: [resize-observer] Wording of spec seems to be incorrect for multi-column layouts
 - 2025-01-13 opened #11494: [css-gaps-1] Computed value of column-rule-width with none|hidden style and lists of values
 - 2025-01-31 RESOLVED #11494: Do the above.
+- 2026-02-10 opened #13478: [css-sizing] Production for values common to max/min/preferred widths and heights
 - 2026-05-23 opened #13957: [css-multicol] Examples 30 & 31 do not follow from the spec - column balancing is under-specified and/or incorrect

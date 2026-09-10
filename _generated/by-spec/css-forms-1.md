@@ -237,3 +237,9 @@
 - 2026-09-02 RESOLVED #14251: add :is(input, textarea, select, button):disabled { cursor: not-allowed; } to the UA stylesheet
 - 2026-09-02 RESOLVED #14255: inherit text-overflow from select to the button
 - 2026-09-02 RESOLVED #14395: Proposed resolution is to switch to ::field-content, selectedcontent { flex: 1; }
+- 2026-09-03 RESOLVED #11842: split control-value() into separate sub-type functions
+- 2026-09-03 opened #14440: [css-forms-1] How do custom elements tap into `control-value()`?
+- 2026-09-08 opened #14461: [css-forms-1] Lighten form control backgrounds slightly in dark mode
+- 2026-09-09 RESOLVED #14251: select, button, label, checkbox, radio, range { cursor: default; } /* auto and base appearance */
+- 2026-09-09 RESOLVED #14308: textarea, input[textish], select, buttonish, ::picker() { border-radius: 4px; }
+- 2026-09-09 opened #14468: [css-forms-1] Distinguishing <input> vs <button>

@@ -22,3 +22,7 @@
 - 2026-08-05 RESOLVED #14235: Prefix with :~: -- and write an explainer and send this over to the TAG.
 - 2026-08-05 opened #14275: [css-link-params] `param()` should use a colon, not a comma
 - 2026-08-05 opened #14276: [css-link-params] `param()` should accept multiple key-value pairs
+- 2026-09-02 opened #14436: [css-link-params] How should currentColor in a parameter value resolve?
+- 2026-09-04 opened #14446: [css-link-params] How to pass computed/used values?
+- 2026-09-04 opened #14447: [css-link-params] Passing `currentColor` (and other state) without requiring the receiving SVG to have a param
+- 2026-09-09 RESOLVED #14247: Differing link parmeters cause images to draw differently, but don't affect animation timing. Details TBD.

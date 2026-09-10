@@ -211,3 +211,4 @@
 - 2026-08-06 RESOLVED #14067: line-clamp clips the same way as overflow-y: clip works
 - 2026-08-06 RESOLVED #14239: close no change, update tests
 - 2026-08-06 RESOLVED #3937: add this proposal to Overflow 5
+- 2026-09-04 opened #14448: [css-overflow] line-clamp + ellipsis insertion at soft-wrap point +  white-space: pre

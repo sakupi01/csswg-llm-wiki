@@ -66,3 +66,4 @@
 - 2026-08-30 opened #14410: [css-mixins-2] How do private properties affect style queries?
 - 2026-09-01 opened #14427: [css-mixins] Specify OM for CSSPrivateRule
 - 2026-09-02 opened #14432: [css-mixins-2] bring back `@result` and make `@private` more intuitive and generally useful?
+- 2026-09-03 opened #14442: [css-mixins] Types for private properties (in mixins and elsewhere) and probably function locals

@@ -513,3 +513,4 @@
 - 2026-08-27 opened #14396: [css-fonts] Problems with "font-affecting properties"
 - 2026-08-27 opened #14397: [css-fonts] Add `font-synthesis-position` to the list of `font-*` properties which are not longhands of `font`
 - 2026-08-27 opened #14398: [css-fonts] Typo s/shorthand/longhand/ ?
+- 2026-09-05 opened #14452: [css-fonts] palette-mix() should take an arbitrary number of components (like color-mix(), calc-mix(), etc.)

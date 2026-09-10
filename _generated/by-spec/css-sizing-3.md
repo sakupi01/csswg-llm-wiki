@@ -137,14 +137,12 @@
 - 2025-02-19 RESOLVED #11452: See if implementations can match the spec and revisit issue later.
 - 2025-03-12 RESOLVED #10721: No normative change to spec, but add example like Oriol's and make the implication clearer in the spec.
 - 2025-03-26 RESOLVED #11716: When aspect-ratio is non-initial, then min-size:auto serializes as 'auto' in gCS() (rather than being censored to 0)
-- 2025-03-28 opened #12018: [css-flexbox-1] Clarify how indefinite percentage values are handled in the cross size of flex items
 - 2025-04-06 opened #12053: [css-sizing] Where does the default aspect-ratio of a <video> come from?
 - 2025-04-14 opened #12076: [css-sizing] How to handle min-content being bigger than max-content?
 - 2025-04-19 opened #12103: [css-sizing-3] Clarify equivalence of min-content, max-content, and fit-content on the block axis
 - 2025-04-28 opened #12133: [css-sizing-3] Make compressible replaced elements compress in the elements' inline axis, but not in the block axis
 - 2025-05-12 opened #12182: Should `min-content` really include the width/height of `flex-basis: 0%` scrollable items?
 - 2025-05-21 opened #12218: [css2][css-flow][css-sizing] How do min/max block sizes affect bottom margin collapse with last child?
-- 2025-05-23 opened #12229: [css-sizing] How should auto-sizing of iframes work?
 - 2025-06-18 RESOLVED #12053: No change
 - 2025-06-20 opened #12376: [css-sizing-3][css-values-4] Define `width` and `height` CSS values for SVG Elements in a mapping
 - 2025-08-01 opened #12563: [css-sizing-3][css-grid-3][Masonry] Compressible Replaced Elements
@@ -163,3 +161,4 @@
 - 2026-03-13 opened #13652: [css-sizing] "behaves as auto" needs clarifications
 - 2026-08-31 opened #14424: [css-sizing-3][css-sizing-4] Swap levels of fit-content and fit-content()
 - 2026-09-01 opened #14429: [css-sizing-3] resolved value of min-width: auto on block-level flex etc.
+- 2026-09-10 opened #14470: [css-grid][css-sizing-3] Automatic minimum sizes of grid items during final sizing

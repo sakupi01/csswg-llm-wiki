@@ -228,3 +228,4 @@
 - 2026-08-05 RESOLVED #5675: put a per lane reading flow value into the reading flow spec
 - 2026-08-06 opened #14290: [css-grid-3][css-display-4] Naming for grid lanes reading-flow values
 - 2026-08-25 opened #14390: [css-grid-3] What are the use cases for subgridding grid-lanes with grid and vice versa?
+- 2026-09-04 opened #14444: [css-grid-3] Synthesizing baselines for Grid Lanes containers

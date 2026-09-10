@@ -1,31 +1,31 @@
-  1296  cdoublev
+  1302  cdoublev
   1171  noamr
   1069  litherum
-  1061  Crissov
-   825  romainmenke
+  1063  Crissov
+   843  romainmenke
    769  FremyCompany
    707  upsuper
    704  AmeliaBR
    696  kojiishi
    534  jakearchibald
-   518  jfkthame
-   513  ydaniv
+   519  jfkthame
+   514  ydaniv
    493  MatsPalmgren
    476  faceless2
-   460  zcorpan
-   457  yisibl
+   461  zcorpan
+   459  yisibl
    440  SelenIT
    412  r12a
-   384  weinig
+   400  weinig
    356  bradkemper
-   347  kbabbitt
+   352  kbabbitt
    341  jonjohnjohnson
+   341  lukewarlow
    341  tantek
-   340  lukewarlow
    305  gsnedders
    299  josepharhar
    286  facelessuser
-   267  xfq
+   268  xfq
    265  jsnkuhn
    255  gregwhitworth
    253  mrego
@@ -33,7 +33,7 @@
    231  drott
    225  johannesodland
    215  brandonmcconnell
-   206  benface
+   210  benface
    197  cookiecrook
    190  tobireif
    189  graouts
@@ -47,7 +47,7 @@
    136  heycam
    136  rniwa
    129  DavMila
-   127  JoshTumath
+   129  JoshTumath
    126  bkardell
    125  myles
    123  AtkinsSJ
@@ -60,7 +60,7 @@
    114  dino
    111  Dan503
    108  sesse
-   106  ByteEater-pl
+   107  ByteEater-pl
    105  jihyerish
    104  ExE-Boss
    104  matthew-dean
@@ -69,24 +69,24 @@
    100  ccameron-chromium
     99  dauwhe
     98  jonathantneal
+    97  sorvell
     94  TalbotG
-    93  sorvell
     91  MurakamiShinyu
     86  cvrebert
     86  dirkschulze
+    86  fred-wang
     86  scottkellum
-    85  fred-wang
     84  grorg
     83  danburzo
     82  bokand
     81  delan
     81  simevidas
     80  aphillips
+    79  trusktr
     78  atotic
-    78  trusktr
     77  fergald
+    77  tats-u
     76  karlcow
-    75  tats-u
     73  inoas
     72  hiikezoe
     72  sideshowbarker
@@ -99,16 +99,16 @@
     66  hober
     66  stephenmcgruer
     65  danielsakhapov
+    64  anttijk
     64  mattwoodrow
-    63  anttijk
     63  sanketj
     63  skobes-chromium
     61  tomhodgins
     59  Que-tin
     59  meyerweb
     59  tiroj
+    57  nex3
     56  devongovett
-    56  nex3
     56  valtlai
     55  Lorp
     55  alice
@@ -161,13 +161,13 @@
     38  cathiechen
     38  felipeerias
     38  jav099
+    38  kbhomes
     38  liamquin
     38  vitorroriz
     37  proimage
     37  rcabanier
     37  svillar
     36  chriskirknielsen
-    36  kbhomes
     36  korenevskiy
     36  nmn
     36  o-t-w
@@ -193,8 +193,8 @@
     29  diekus
     29  dlibby-
     29  oleedd
+    29  stubbornella
     28  Afif13
     28  Nokel81
     28  brunoais
     28  laukstein
-    28  phistuck

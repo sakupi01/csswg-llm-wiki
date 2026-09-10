@@ -166,3 +166,4 @@
 - 2026-04-28 opened #13851: [css-syntax] Allow empty values for every production produced by `#`
 - 2026-04-29 opened #13862: [css-syntax][css-shapes] Repeating segments in `shape()` (and perhaps as a generic thing?)
 - 2026-06-10 RESOLVED #9473: Use <a-n-plus-b> instead of <an+b>
+- 2026-09-03 opened #14442: [css-mixins] Types for private properties (in mixins and elsewhere) and probably function locals

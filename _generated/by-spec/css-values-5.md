@@ -377,3 +377,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - 2026-08-24 opened #14380: [css-values-5] Resolved progress of `*-interpolation()` when there is no corresponding `<'animation-timeline'>`
 - 2026-08-27 opened #14399: [css-values-5] How to replace `ident("")`?
 - 2026-09-02 opened #14435: [css-values-5] /TR is stale, republish as WD
+- 2026-09-09 RESOLVED #14056: Unknown url modifiers will cause declaration to be invalid.
+- 2026-09-09 opened #14464: [css-values-5] Standardize serialization for mix function components
+- 2026-09-09 opened #14465: [css-color-5] Allow omitting percentages when serializing color-mix() in more cases
+- 2026-09-09 opened #14466: [css-values-5] Add syntax definitions for `sibling-count` and `sibling-index`

@@ -1,0 +1,1968 @@
+{
+  "span": "week",
+  "since": "2026-09-03",
+  "until": "2026-09-10",
+  "generated_at": "2026-09-10T04:46:52Z",
+  "resolutions": [
+    {
+      "date": "2026-09-09",
+      "issue": 14056,
+      "labels": [
+        "css-values-5"
+      ],
+      "resolution": "Unknown url modifiers will cause declaration to be invalid.",
+      "url": "https://github.com/w3c/csswg-drafts/issues/14056#issuecomment-5605312744",
+      "feature": null,
+      "background": "On the Chrome team, we're [considering](https://chromestatus.com/feature/5163371507875840) a new browser API and storage mechanism called [Cross-Origin Storage](https://github.com/wicg/cross-origin-storage) (COS), which would allow for resources (like huge AI models but also large Web fonts) that are identified by their hashes to be shared across origins. This proposed API is imperative (`navigato",
+      "related": [],
+      "irc": [
+        "<fantasai> TabAtkins: Several years ago, when discussing extra params to url(), we had a short discussion about whether unknown params should be invalid or silently ignored.",
+        "<fantasai> ... Discussion in minutes were very brief",
+        "<fantasai> ... we resolved to make it silently ignored",
+        "<fantasai> ... I think that was the wrong decision",
+        "<fantasai> ... At the time, the params we had access to were benign (ignorable)",
+        "<fantasai> ... but that's not necessarily the case for the future",
+        "<fantasai> ... and for some upcoming proposals probably not right",
+        "<fantasai> ... so think we should resolve to make them invalid",
+        "<fantasai> ... If you need fallbacks, write it twice like other values that are new.",
+        "<emilio> q+",
+        "<fantasai> ... Currently implementations treat them as forgiving, but probably not a dependency atm.",
+        "<fantasai> ... Opinions?",
+        "<fantasai> emilio: I think I agree",
+        "<astearns> ack emilio",
+        "<fantasai> <fantasai> +1",
+        "<CameronPsychpsyo> This sounds reasonable.",
+        "<fantasai> emilio: The behavior if you don't support is to reject the URL.",
+        "<fantasai> ... we can implement this.",
+        "<fantasai> emilio: Other point, as an author, if you want consistent URL params, then use @supports to compute the params list.",
+        "<fantasai> TabAtkins: Yeah, various ways to reduce repetition load",
+        "<fantasai> astearns: Last comments about using @supports seems like a good argument for making this invalid",
+        "<emilio> q+",
+        "<fantasai> TabAtkins: We do have a special case for something (forget) where we have an unforgiving parse only for @supports",
+        "<fantasai> ... but I still think we should make it invalid here.",
+        "<fantasai> emilio: Two cases, one is :where() or :is() or something",
+        "<astearns> ack emilio",
+        "<fantasai> ... the other is the unknown webkit pseudo shenanigans",
+        "<fantasai> ... but in any case, agreed on invalid in this case",
+        "<fantasai> PROPOSED: Unknown url modifiers will cause declaration to be invalid.",
+        "<fantasai> RESOLVED: Unknown url modifiers will cause declaration to be invalid.",
+        "<fantasai> astearns: Safari's current behavior, and Chrome will have to change, and Gecko to take it into account."
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "issue": 14247,
+      "labels": [
+        "css-image-animation-1",
+        "css-link-params-1"
+      ],
+      "resolution": "Differing link parmeters cause images to draw differently, but don't affect animation timing. Details TBD.",
+      "url": "https://github.com/w3c/csswg-drafts/issues/14247#issuecomment-5605240400",
+      "feature": null,
+      "background": "",
+      "related": [],
+      "irc": [
+        "<fantasai> TabAtkins: Question raised, now that linked params tying different values to same issue",
+        "<fantasai> ... what does this imply for implementations and re-use of document structures internally",
+        "<fantasai> ... I don't actually know, want to hear from implementers",
+        "<fantasai> ... My understanding is, currently, if you link to same URL from two different <img> they are considered same image. Animations are timed together, etc.",
+        "<fantasai> ... I suspect that's incompatible with passing link parameters to the image, because it can change how styling works",
+        "<fantasai> ... E.g. could use conditional styles",
+        "<kizu> q+",
+        "<emilio> q+",
+        "<fantasai> ... So I think this implies that if you change the params on e.g. an SVG, it's an independent document.",
+        "<dholbert> q+",
+        "<fantasai> ... What do implementers think?",
+        "<kbabbitt> q+",
+        "<astearns> ack kizu",
+        "<fantasai> kizu: Also question from author perspective, what are the differences in either case that we decide on",
+        "<fantasai> ... Another question is, how are the changes from Link Params different from e.g. viewport-based media query in an SVG",
+        "<fantasai> ... Same image could be present with same URL but different sizes on the same page.",
+        "<fantasai> ... How is that the same or different?",
+        "<astearns> ack emilio",
+        "<florian> q+",
+        "<fantasai> emilio: We already have this difference. E.g. styling light/dark differently based on 'color-scheme'.",
+        "<dholbert> scribe+",
+        "<dholbert> emilio: not sure if viewport media queries apply here?",
+        "<dholbert> fantasai: I think they do?",
+        "<dholbert> emilio: at least color-scheme then",
+        "<fantasai> emilio: Image cache caches the whole context as the key",
+        "<fantasai> ... I think you'd get a different document.",
+        "<fantasai> ... but I don't want to guarantee that right now",
+        "<fantasai> ... My point is we can test what happens now with color-scheme",
+        "<astearns> ack dholbert",
+        "<DaveLetorey> q+",
+        "<fantasai> dholbert: Wrt how to tell the difference, animations is the main way",
+        "<fantasai> ... If you have an svg that starts at time zero, and you create an image now and another one in 5s",
+        "<fantasai> ... in all implementations the animations will be synchronized",
+        "<fantasai> ... because they're sharing the same image cache entry",
+        "<fantasai> dholbert: I'm not sure that we need to require anything in the spec right now, since this behavior not specified",
+        "<fantasai> ... Just currently what implementations do",
+        "<fantasai> ... E.g. don't want the hamsters to all be out of sync",
+        "<fantasai> ... My intuition is we should share the same underlying structure, because you could have multiple copies of the same image up front that share the same set of parameters",
+        "<flackr> +1",
+        "<fantasai> ... and then later you dynamically change a parameter on one of them",
+        "<fantasai> ... quite odd if that resets the animation timer on that image",
+        "<fantasai> ... If you have a bunch of images with same params, should share. And if you change one on :hover for example",
+        "<fantasai> ... we don't want to swap out the underlying object and start fresh with a new document under the hood",
+        "<fantasai> ... (though browsers could do that if they want; but would need to sync the animation effects)",
+        "<fantasai> ... Last related point, single image with parameter that varies over time (e.g. red to green). Probably shouldn't mean that you throw away the document and start with a new one",
+        "<fantasai> ... so don't think you want separate documents per parameter",
+        "<fantasai> ... In practice for static images we cache the rasterizations",
+        "<fantasai> ... so if static, shouldn't be very expensive. If animated might get expensive, but that's inevitable.",
+        "<astearns> ack kbabbitt",
+        "<fantasai> kbabbitt: Working off secondhand knowledge",
+        "<fantasai> ... My understanding is that we do share the instances right now",
+        "<fantasai> ... if they're laid out into separate viewport sizes, we lay out one and then the other",
+        "<fantasai> ... If it's just the viewport size changes",
+        "<fantasai> ... once we plumb params, gets more interesting",
+        "<fantasai> ... My guess is that it would be architecturally feasible to keep in sync",
+        "<fantasai> ... Would need to share document, share timer, and have separate layout trees",
+        "<fantasai> ... Suspect feasible but can't commit to that just yet",
+        "<fantasai> TabAtkins: color-scheme tells me that there's an existing problem here",
+        "<fantasai> ... It [missed]",
+        "<smfr> q+"
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "issue": 14251,
+      "labels": [
+        "css-forms-1"
+      ],
+      "resolution": "select, button, label, checkbox, radio, range { cursor: default; } /* auto and base appearance */",
+      "url": "https://github.com/w3c/csswg-drafts/issues/14251#issuecomment-5606178556",
+      "feature": null,
+      "background": "Disabled controls should indicate that they are unusable. Proposed to add:",
+      "related": [],
+      "irc": [
+        "<TabAtkins> nsull: I analyzed around 60 design systems",
+        "<TabAtkins> nsull: different systems will have a different \"n\" value because you can find data for some of them, not for others",
+        "<TabAtkins> nsull: for this one (pointers) I think the data is straightforward",
+        "<TabAtkins> nsull: 27/33 systems that specify a cursor use pointer",
+        "<TabAtkins> nsull: so the UA baseline is the minority",
+        "<TabAtkins> nsull: most design systems disagree with it",
+        "<TabAtkins> nsull: I thought it might correlate with whether they use native select or not, but actually it goes in every direction",
+        "<TabAtkins> nsull: I also found the choice of cursor was always matched, in every system, to the button cursor",
+        "<TabAtkins> nsull: that was a little hard to figure out tho, so we only have 9 systems of data for that. but it's 9/9 so it's still a strong indicator",
+        "<emilio> q+",
+        "<lwarlow> q+",
+        "<masonf> q+",
+        "<TabAtkins> fantasai: so we do we want to resolve to use pointer for select and button?",
+        "<keithamus> q+",
+        "<astearns> ack emilio",
+        "<TabAtkins> emilio: I guess that means the \"not-allowed\" pointer for disable dcontrols is out? or did we look at that?",
+        "<TabAtkins> emilio: so currently it's two things, cursor on button/select and non-allowed on disabled ones. your data shows we should use \"pointer\" instead, which seems fine, but unsure about the other half",
+        "<TabAtkins> nsull: ah, didn't pull data on that other side",
+        "<astearns> ack lu",
+        "<astearns> weinig:",
+        "<astearns> ack lwarlow",
+        "<TabAtkins> lwarlow: I think using pointer makes sense",
+        "<TabAtkins> lwarlow: should it only be select/button? should it also apply to checkbox/radio/color and the range inputs?",
+        "<TabAtkins> nsull: in general, I found different controls tend to be consistent",
+        "<astearns> ack masonf",
+        "<TabAtkins> nsull: a design system will usually, say, choose one border-radius for every control. I haven't pulled the data for pointer cursor on the other controls, but I suspect it'll be consistent",
+        "<keithamus> q-",
+        "<TabAtkins> masonf: yeah I was also curious about other controls. making ti consistent across all interactives makes sense to me.",
+        "<TabAtkins> masonf: big q is the not-allowed cursor, it seems very jarring to see. v curious to see if design systems actually use it",
+        "<TabAtkins> nsull: looks like 31 systems use not-allowed, 6 use default",
+        "<emilio> That is... very surprising",
+        "<emilio> Is that data shareable?",
+        "<TabAtkins> nsull: context, I vendored a bunch of design systems into a single repo, then calc a bunch of data with Claude. some things are harder to check on, like spacing via margin/padding/gap, but for basic things like this the value stays pretty high",
+        "<astearns> ack dbaron",
+        "<emilio> e.g. https://getbootstrap.com/docs/4.0/components/buttons/#disabled-state for example uses `default` for disabled",
+        "<TabAtkins> dbaron: two things. one is I'm confused about \"no data\" for some design systems. for some of these, I think the decision not to style it is actually relevant, because it gives the browser default",
+        "<TabAtkins> dbaron: so i'm a little concerned with excluding design systems that didn't style something",
+        "<emilio> +1",
+        "<TabAtkins> dbaron: also, whether to exclude or not varies on the questions we're asking",
+        "<dbaron> https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor",
+        "<TabAtkins> dbaron: for this one in particular i'm concerned about",
+        "<emilio> (and button)",
+        "<TabAtkins> dbaron: second, want to make sure we're using terminology correctly. cursor:pointer is the default link cursor, usually a hand with one finger extended. so we're discussing using this cursor for select? not the arrow that's cursor:default?",
+        "<TabAtkins> dbaron: so is everyone saying \"pointer\" mean the pointy finger one?",
+        "<lwarlow> Yes that's how I understand it.",
+        "<TabAtkins> emilio: yes, that's what I meant",
+        "<TabAtkins> (me too)",
+        "<lwarlow> It's quite a common override to just mean \"Interactive\" on the web",
+        "<TabAtkins> emilio: the not-allowed data looks very surprising to me.",
+        "<TabAtkins> (I also usually use \"pointer\" for buttons in my personal webapps, that doesns't surprise me)",
+        "<TabAtkins> nsull: Bootstrap is kinda an exception because they use the native control while others don't",
+        "<TabAtkins> emilio: for buttons, not a question, but not-allowed applies to everything",
+        "<kizu> Bootstrap uses `pointer-events: none` on disabled buttons: https://getbootstrap.com/docs/5.3/components/buttons/#disabled-state:~:text=pointer%2Devents%3A%20none",
+        "<TabAtkins> nsull: one reason for low numbers is that I added systems in waves. wanted to see the delta as I added things, to see if I really *needed* to add a bunch of things",
+        "<TabAtkins> nsull: I found that data stayed pretty steady as I added more systems, tho",
+        "<TabAtkins> nsull: we certainly could add more, and I added specific examples in the issues",
+        "<TabAtkins> dbaron: ok, that sounds fine, i'd misinterpreted what you said, thought you were saying the low count was for when a lot of systems just didn't specify it",
+        "<TabAtkins> astearns: so we have a previous resolution to add \"not-allowed\" for disabled. it seems to be supported by the data; skeptics should probably bring up examples",
+        "<masonf> MaterialUI's page says it doesn't use not-allowed, and has a section specifically discussing this: https://mui.com/material-ui/react-button/",
+        "<TabAtkins> emilio: can the data be shared?"
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "issue": 14308,
+      "labels": [
+        "css-forms-1"
+      ],
+      "resolution": "textarea, input[textish], select, buttonish, ::picker() { border-radius: 4px; }",
+      "url": "https://github.com/w3c/csswg-drafts/issues/14308#issuecomment-5606451225",
+      "feature": null,
+      "background": "A survey of design systems shows that a vast majority round the corners of their input controls to make them not-sharp: usually by 4px, sometimes by 6px. We propose adopting this general consensus by adding `border-radius: 4px` to the base appearance for `input`, `textarea`, `select` and `::picker`.",
+      "related": [],
+      "irc": [
+        "<TabAtkins> nsull: [shows slides]",
+        "<TabAtkins> nsull: so first, why we need rounded corners is the user needs to understand it's interactive, not just a bordered box",
+        "<TabAtkins> nsull: 25/33 design systems match the border-radius of button/selects",
+        "<TabAtkins> nsull: when we look at button designs, a lot of them are gonna be rounded",
+        "<TabAtkins> nsull: more importantly, when they're square they often have very opinionated styles that prove they're interactive. probably not appropriate for UA stylesheet",
+        "<TabAtkins> nsull: at IKEA website I dind't realize this pay button was a button, because it's nearly square. the other buttons were obvious",
+        "<TabAtkins> nsull: only four systems had square corners, not common.",
+        "<TabAtkins> nsull: most design systems choose one of two values. 6px gets the most usage by views, these systems aren't for one company they're used by a bunch",
+        "<TabAtkins> nsull: 4px is the largest number of system by count",
+        "<TabAtkins> nsull: govts and enterprise software tends to choose 4px",
+        "<TabAtkins> nsull: I think the important thing here is just to match border-radius. I have a small pref for 6px, the emost popular/growing systems use that, but we can't go wrong with either value.",
+        "<TabAtkins> nsull: we should not average the values, nobody used 5px",
+        "<lwarlow> q+",
+        "<emilio> q+",
+        "<astearns> ack emilio",
+        "<TabAtkins> astearns: so we have nicole's preference for 6, emilio's for 4...",
+        "<astearns> ack lwarlow",
+        "<TabAtkins> emilio: I have a slight pref for 4 just because it's less likely to clobber some content. but these elements tend to have okay spacing/padding so it works either way. I'm fine with either",
+        "<TabAtkins> lwarlow: I prefer 6 on the basis that the existing base-apeparance:select style is 8px (actually .5em), and 6px is closer to that",
+        "<masonf> I vote for `calc(2 * pi)`",
+        "<TabAtkins> lwarlow: 4px seems like it's almost not rounded enough",
+        "<TabAtkins> lwarlow: per our current designs for base appearance, radius for select/button match, I agree. input don't have border-radius, partly to differentiate from button. if we make them all match, you lose some of that recognizability",
+        "<TabAtkins> lwarlow: for select you have the picker, but button vs input is harder. we should be careful on this",
+        "<emeyer> I think we should continue with .5em, personally.",
+        "<TabAtkins> lwarlow: color input should match the radius, it's a button. checkbox would be interesting. if inputs are square we want check boxes square, probably",
+        "<TabAtkins> nsull: in data checkbox and radio are very different. I left them out, they're very specific",
+        "<TabAtkins> nsull: color picker, if they're very small they sometimes use a different radius",
+        "<TabAtkins> nsull: some edge cases, some systems use a square corner, not very many.",
+        "<TabAtkins> nsull: some use a \"bump\" in the roundedness of buttons, 2-4px more rounded than the rest. but that's an exception, not the rule",
+        "<kizu> `round(clamp(4px, 0.?em, 6px), 2px)` :D",
+        "<TabAtkins> nsull: 3-4 systems use a full pill, semi-circular sides",
+        "<lwarlow> I guess most designs use a background on button and then you can tell the input apart from the button?",
+        "<TabAtkins> nsull: but those generally were def expressing their personal brand, rather than a generic design langauge",
+        "<astearns> q?",
+        "<astearns> ack fantasai",
+        "<emeyer> .25em?",
+        "<TabAtkins> fantasai: I think I agree with emilio that 4px is a more conservative number. not as concerned with cropping (4px vs 6px not a big diff) but the amount of padding you need goes up",
+        "<castastrophe> +1 to the 4px rounded-ness",
+        "<astearns> q+",
+        "<TabAtkins> fantasai: design trends change over time, don't think we can have a definite answer anyway",
+        "<TabAtkins> fantasai: regarding button rounding, need to discuss in concert with other things. if it matches input in terms of radius, we need another differentiator",
+        "<TabAtkins> fantasai: but making input/select match, at least, makes sense to me, and I think 4px is a good default",
+        "<castastrophe> Unless the rounding relates in some way to the sizing of the typography - and a case could maybe be made for it? - I’m not sure we should use ems or rems though",
+        "<TabAtkins> (I also agree it should be .25em, not 4px)",
+        "<TabAtkins> astearns: does the design systems data all use px value? or do some use em?",
+        "<castastrophe> +1",
+        "<castastrophe> +q",
+        "<JoshT> q+",
+        "<TabAtkins> nsull: no system uses .5em specifically, at least. I can ask about rem and other ems",
+        "<astearns> ack astearns",
+        "<lwarlow> q+",
+        "<TabAtkins> fantasai: regarding .25em vs 4px, Jen poked at it and concluding scaling with font-szie doesn't work as well",
+        "<TabAtkins> fantasai: if you had some inputs at different font-sizes they looked weirdly inconsistent",
+        "<kizu> `0.25rem`?",
+        "<emeyer> +1 to kizu",
+        "<astearns> ack castastrophe",
+        "<TabAtkins> fantasai: if we used a much bigger rounding it would connect with the size of the text more, and using em would make more sense, but with just a little bit of rounding that connection isn't there, and you rather want things consistent across the page",
+        "<TabAtkins> castastrophe: gonna say similar to fantasai, when talking with Spectrum w elooked at using em/rem, but the inconsistency across the page relative to font-szie was enough that it made things look werid",
+        "<TabAtkins> castastrophe: so we went with px over em",
+        "<fantasai> kizu, that would probably be great if people didn't do REALLY WEIRD things with rems sometimes (from what I remember)"
+      ]
+    }
+  ],
+  "agenda": [
+    {
+      "issue": 9484,
+      "title": "[css-color-4] How to handle conversions that result in negative lightness?",
+      "labels": [
+        "Closed Accepted as Editorial",
+        "Commenter Satisfied",
+        "Needs Testcase (WPT)",
+        "css-color-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/9484",
+      "feature": null,
+      "comments_in_window": 10
+    },
+    {
+      "issue": 14338,
+      "title": "[css-mixins] Evaluation context for custom function arguments: typed vs untyped",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14338",
+      "feature": null,
+      "comments_in_window": 5
+    },
+    {
+      "issue": 13478,
+      "title": "[css-sizing] Production for values common to max/min/preferred widths and heights",
+      "labels": [
+        "Closed Accepted as Editorial",
+        "Needs Edits",
+        "css-flexbox-1",
+        "css-multicol-1",
+        "css-sizing-3",
+        "css-sizing-4",
+        "editorial"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13478",
+      "feature": "flex-shorthand",
+      "comments_in_window": 4
+    },
+    {
+      "issue": 14190,
+      "title": "[css-align][html] Should `align-content` work on a block-container `<button>`?",
+      "labels": [
+        "Agenda+",
+        "HTML",
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-align-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14190",
+      "feature": null,
+      "comments_in_window": 4
+    },
+    {
+      "issue": 14382,
+      "title": "[css-mixins] multiple content blocks",
+      "labels": [
+        "Agenda+",
+        "css-mixins-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14382",
+      "feature": null,
+      "comments_in_window": 4
+    },
+    {
+      "issue": 14422,
+      "title": "[cssom] CSSOM serialization of declaration blocks is incompatible across browsers and a forward-compat landmine",
+      "labels": [
+        "Agenda+",
+        "cssom-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14422",
+      "feature": null,
+      "comments_in_window": 4
+    },
+    {
+      "issue": 14308,
+      "title": "[css-forms-1] Apply border-radius to all base appearance controls",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14308",
+      "feature": null,
+      "comments_in_window": 3
+    },
+    {
+      "issue": 10961,
+      "title": "[css-grid-3] Should there be an `inline-grid-lanes` legacy keyword for `display`?",
+      "labels": [
+        "Agenda+",
+        "Needs Edits",
+        "css-display-4",
+        "css-grid-3",
+        "topic: masonry"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/10961",
+      "feature": "masonry",
+      "comments_in_window": 2
+    },
+    {
+      "issue": 11842,
+      "title": "[css-forms-1] For `control-value()` to be useful it needs a way to convert to other types.",
+      "labels": [
+        "Needs Edits",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/11842",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 12182,
+      "title": "Should `min-content` really include the width/height of `flex-basis: 0%` scrollable items?",
+      "labels": [
+        "Agenda+ F2F",
+        "css-flexbox-1",
+        "css-sizing-3",
+        "topic: unsolved layout use cases"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12182",
+      "feature": "flex-shorthand",
+      "comments_in_window": 2
+    },
+    {
+      "issue": 13207,
+      "title": "[css-overflow-5] Allow controlling scroll axis locking behavior",
+      "labels": [
+        "Needs Edits",
+        "css-overflow-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13207",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 13772,
+      "title": "[cssom-view] Clarify number and order of `scroll` and `scrollend` events when a `scroll` event listener performs another scroll",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "cssom-view-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13772",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 14056,
+      "title": "[css-values-5] Proposal for a new `<request-url-modifier>` called `<cross-origin-storage>`",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14056",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 14247,
+      "title": "[css-link-params] Are two references with different parameters independent instances?",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-image-animation-1",
+        "css-link-params-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14247",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 14251,
+      "title": "[css-forms-1] Cursors for base appearance",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14251",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 14395,
+      "title": "[css-forms-1] Use `::field-content { flex: 1 }` instead of `::picker-icon { margin-inline-start: auto; }`",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14395",
+      "feature": null,
+      "comments_in_window": 2
+    },
+    {
+      "issue": 7961,
+      "title": "[css-nesting-1] Can we relax the syntax further?",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Testcase (WPT)",
+        "css-nesting-1",
+        "css-nesting-2",
+        "css-syntax-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/7961",
+      "feature": "css-nesting",
+      "comments_in_window": 1
+    },
+    {
+      "issue": 11259,
+      "title": "[css-align] Allow authors to choose a fallback alignment for distributed alignments",
+      "labels": [
+        "Agenda+",
+        "css-align-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/11259",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 12131,
+      "title": "[css-anchor-position] Simplifying math functions for `<percentage>` in `anchor()`?",
+      "labels": [
+        "Agenda+",
+        "Commenter Response Pending",
+        "css-anchor-position-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12131",
+      "feature": "anchor-positioning",
+      "comments_in_window": 1
+    },
+    {
+      "issue": 12399,
+      "title": "[web-animations-2][css-animations-2] Should an animation be allowed to have multiple triggers associated?",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "animation-triggers-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12399",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 12495,
+      "title": "[cssom-view] How to fulfill programmatic scroll promises?",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "cssom-view-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12495",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 12859,
+      "title": "[css-overflow] Line-clamp and screen readers",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Commenter Response Pending",
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "a11y-tracker",
+        "css-overflow-4",
+        "topic: line-clamp"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12859",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13036,
+      "title": "[css-text-decor-4] Allow to interpolate between `auto` and length values in `text-decoration-inset`",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-text-decor-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13036",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 13176,
+      "title": "[css-anchor-position-1] anchors-visible still needs more details",
+      "labels": [
+        "Needs Testcase (WPT)",
+        "css-anchor-position-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13176",
+      "feature": "anchor-positioning",
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14010,
+      "title": "[css-shapes][css-images] Browsers require either 0 or 2 `<radial-extent>` for `ellipse()`",
+      "labels": [
+        "Agenda+",
+        "css-images-3",
+        "css-images-4",
+        "css-shapes-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14010",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14140,
+      "title": "[css-forms-1] control-value() meta issue",
+      "labels": [
+        "Agenda+",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14140",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14212,
+      "title": "[css-mixins-1] Is `!important` valid in functions and/or mixins?",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-mixins-1",
+        "css-mixins-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14212",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14363,
+      "title": "[css-image-animation] Security Horizontal Review",
+      "labels": [
+        "Needs Edits",
+        "css-image-animation-1",
+        "security-tracker"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14363",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14411,
+      "title": "[css-ui][css-content] Define generated content on widgets",
+      "labels": [
+        "Agenda+",
+        "css-forms-1",
+        "css-ui-4",
+        "css-ui-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14411",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14429,
+      "title": "[css-sizing-3] resolved value of min-width: auto on block-level flex etc.",
+      "labels": [
+        "Agenda+",
+        "css-sizing-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14429",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14436,
+      "title": "[css-link-params] How should currentColor in a parameter value resolve?",
+      "labels": [
+        "Agenda+",
+        "css-link-params-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14436",
+      "feature": null,
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14444,
+      "title": "[css-grid-3] Synthesizing baselines for Grid Lanes containers",
+      "labels": [
+        "Agenda+",
+        "css-grid-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14444",
+      "feature": "masonry",
+      "comments_in_window": 1
+    },
+    {
+      "issue": 14466,
+      "title": "[css-values-5] Add syntax definitions for `sibling-count` and `sibling-index`",
+      "labels": [
+        "Needs Edits",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14466",
+      "feature": null,
+      "comments_in_window": 0
+    }
+  ],
+  "hot": [
+    {
+      "issue": 14452,
+      "title": "[css-fonts] palette-mix() should take an arbitrary number of components (like color-mix(), calc-mix(), etc.)",
+      "labels": [
+        "Closed Accepted as Obvious Bugfix",
+        "css-fonts-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14452",
+      "comments_in_window": 18,
+      "feature": null,
+      "recent": [
+        {
+          "author": "weinig",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14452#issuecomment-5605157556",
+          "gist": "I filed https://github.com/w3c/csswg-drafts/issues/14464 to get the serialization rule for color-mix() moved to CSS Values 5 so all mix functions can use them."
+        },
+        {
+          "author": "weinig",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14452#issuecomment-5605271427",
+          "gist": "I also filed https://github.com/w3c/csswg-drafts/issues/14465 to update color-mix() to support omitting percentages when balanced and sum to greater than 100."
+        },
+        {
+          "author": "cdoublev",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14452#issuecomment-5607002987",
+          "gist": "I misread the WPT tests, sorry. Thanks for proactively following those rules, and for opening those two issues."
+        }
+      ]
+    },
+    {
+      "issue": 9484,
+      "title": "[css-color-4] How to handle conversions that result in negative lightness?",
+      "labels": [
+        "Closed Accepted as Editorial",
+        "Commenter Satisfied",
+        "Needs Testcase (WPT)",
+        "css-color-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/9484",
+      "comments_in_window": 10,
+      "feature": null,
+      "recent": [
+        {
+          "author": "romainmenke",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/9484#issuecomment-5603151697",
+          "gist": "In my implementation the steps are roughly:"
+        },
+        {
+          "author": "romainmenke",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/9484#issuecomment-5603211163",
+          "gist": "A concrete example/illustration of what implementations seem to do today:"
+        },
+        {
+          "author": "svgeesus",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/9484#issuecomment-5603730814",
+          "gist": "Thanks for the explanation. This needs more discussion, could you move it to a new issue with a better title?"
+        }
+      ]
+    },
+    {
+      "issue": 14432,
+      "title": "[css-mixins-2] bring back `@result` and make `@private` more intuitive and generally useful?",
+      "labels": [
+        "css-mixins-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14432",
+      "comments_in_window": 7,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-09-04",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14432#issuecomment-5545989487",
+          "gist": "@romainmenke"
+        },
+        {
+          "author": "romainmenke",
+          "date": "2026-09-07",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14432#issuecomment-5571955441",
+          "gist": "That is even more nesting :)"
+        },
+        {
+          "author": "Crissov",
+          "date": "2026-09-07",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14432#issuecomment-5575729132",
+          "gist": "Couldn’t you get almost the same as `@private` if custom properties specified within `@mixin` (or `@function`) _could_ be accessed differently within `var()` (not original `env()`)?"
+        }
+      ]
+    },
+    {
+      "issue": 14442,
+      "title": "[css-mixins] Types for private properties (in mixins and elsewhere) and probably function locals",
+      "labels": [
+        "css-mixins-1",
+        "css-mixins-2",
+        "css-syntax-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14442",
+      "comments_in_window": 7,
+      "feature": null,
+      "recent": [
+        {
+          "author": "bramus",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14442#issuecomment-5598214861",
+          "gist": "I’m interpreting their request the other way: they have an `@property`-registered there in their code (globally) to be `<color>`, yet the local property inside the `@function` does not get treated as "
+        },
+        {
+          "author": "romainmenke",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14442#issuecomment-5598391177",
+          "gist": "@bramus is that kind of the `using` feature that was once part of the `@functions` spec?"
+        },
+        {
+          "author": "bramus",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14442#issuecomment-5600767383",
+          "gist": "IIRC `using` was more of a way to give the function access to custom properties that live “outside” of the function body, but now that happens automatically."
+        }
+      ]
+    },
+    {
+      "issue": 14338,
+      "title": "[css-mixins] Evaluation context for custom function arguments: typed vs untyped",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14338",
+      "comments_in_window": 5,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-09-04",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14338#issuecomment-5544893846",
+          "gist": "@anttijk note that `@property` registrations don't affect locals in a function at all; they're unrelated properties. Locals are (currently) always untyped."
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-09-04",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14338#issuecomment-5545246167",
+          "gist": "Sigh, that is indeed exactly the text I was missing/had forgotten about. Tho it's incomplete, as the property context you're calling the function from also affects things, as demonstrated by the testc"
+        },
+        {
+          "author": "andruud",
+          "date": "2026-09-07",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14338#issuecomment-5568886561",
+          "gist": "@tabatkins OK, then Chrome is working as intended here, as far as I can tell."
+        }
+      ]
+    },
+    {
+      "issue": 14454,
+      "title": "[css-color-hdr] dynamic-range-limit-mix() should take an arbitrary number of components (like color-mix(), calc-mix(), etc.)",
+      "labels": [
+        "Closed Accepted as Obvious Bugfix",
+        "Needs Review of Test Case(s)",
+        "css-color-hdr-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14454",
+      "comments_in_window": 5,
+      "feature": null,
+      "recent": [
+        {
+          "author": "weinig",
+          "date": "2026-09-07",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14454#issuecomment-5573999715",
+          "gist": "@svgeesus how about making the `<percentage>` optional as well, to match the other mix functions?"
+        },
+        {
+          "author": "weinig",
+          "date": "2026-09-07",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14454#issuecomment-5574026923",
+          "gist": "Also, I wonder if it would be practical to use the standard mix() normalization algorithm instead of the bespoke one in https://drafts.csswg.org/css-color-hdr/#computing-dynamic-range-limit."
+        },
+        {
+          "author": "svgeesus",
+          "date": "2026-09-08",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14454#issuecomment-5587913156",
+          "gist": "@ccameron both these suggestions seem reasonable to me, what do you think?"
+        }
+      ]
+    },
+    {
+      "issue": 14407,
+      "title": "[css-mixins-2] how do private properties interact with non-private properties in the same style rule?",
+      "labels": [
+        "Closed as Question Answered",
+        "css-mixins-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14407",
+      "comments_in_window": 5,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-09-04",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14407#issuecomment-5546076398",
+          "gist": "I do need to add an example, but the behavior *is* well-defined currently; having a \"private property\" lexically in scope causes it to shadow any global custom (or higher private) properties of the sa"
+        },
+        {
+          "author": "romainmenke",
+          "date": "2026-09-05",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14407#issuecomment-5550926539",
+          "gist": "I understand what you mean and I somewhat agree but `@private` makes things lexically scoped to the nearest style rule, not to itself."
+        },
+        {
+          "author": "tabatkins",
+          "date": "2026-09-06",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14407#issuecomment-5555719870",
+          "gist": "Whether it's written `@private { --foo: 1; --bar: 2; }` or `@private --foo: 1; @private --bar: 2;` is a trivial spelling difference. We *also* don't spell our variable definitions with `let`, after al"
+        }
+      ]
+    }
+  ],
+  "notable": [
+    {
+      "issue": 14254,
+      "title": "[css-forms-1] Refine base appearance colors",
+      "labels": [
+        "Needs Data",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14254",
+      "comments_in_window": 4,
+      "feature": null,
+      "recent": [
+        {
+          "author": "stubbornella",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14254#issuecomment-5597476909",
+          "gist": "This issue is a bizarre mix of unrelated features just because they happen to all impact colors. Can we split out the dark mode lighter background color and combine it with the drop shadow, because bo"
+        },
+        {
+          "author": "stubbornella",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14254#issuecomment-5597529071",
+          "gist": "We could have another issue about communicating state to the user. That would encompass hover, active, invalid, disabled, etc."
+        },
+        {
+          "author": "stubbornella",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14254#issuecomment-5599001690",
+          "gist": "I made this fake form to demonstrate why having the form control borders black and the text black makes it harder to process. If everything on a page is shouting, nothing is particularly important. Su"
+        }
+      ]
+    },
+    {
+      "issue": 14256,
+      "title": "[css-forms-1] Improve appearance: base <select> styling to be usable as-is",
+      "labels": [
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14256",
+      "comments_in_window": 4,
+      "feature": null,
+      "recent": [
+        {
+          "author": "stubbornella",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14256#issuecomment-5598790223",
+          "gist": "@flackr you brought up a bunch of good points."
+        },
+        {
+          "author": "stubbornella",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14256#issuecomment-5599227710",
+          "gist": "I thought when we started surveying design systems that I would see big variations in how they style their selects. I was expecting bimodal distributions and different use-cases. What I found instead "
+        },
+        {
+          "author": "stubbornella",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14256#issuecomment-5599260211",
+          "gist": "@sdras told you my animations were bad ;)"
+        }
+      ]
+    },
+    {
+      "issue": 13939,
+      "title": "[css-link-params] Composability of link parameters",
+      "labels": [
+        "css-link-params-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13939",
+      "comments_in_window": 3,
+      "feature": null,
+      "recent": [
+        {
+          "author": "LeaVerou",
+          "date": "2026-09-04",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13939#issuecomment-5544906407",
+          "gist": "Yes, this will be a problem. You can't expect unrelated libraries to coordinate like that."
+        },
+        {
+          "author": "kbabbitt",
+          "date": "2026-09-04",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13939#issuecomment-5546371137",
+          "gist": "I... think I was referring to the fallback values for each of the link parameters? But that's part of the var() syntax, so it should be achievable with my straw proposal as well."
+        },
+        {
+          "author": "LeaVerou",
+          "date": "2026-09-04",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13939#issuecomment-5546405380",
+          "gist": "Yup, this is the issue I pointed out in #14275…"
+        }
+      ]
+    },
+    {
+      "issue": 14464,
+      "title": "[css-values-5] Standardize serialization for mix function components",
+      "labels": [
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14464",
+      "comments_in_window": 3,
+      "feature": null,
+      "recent": [
+        {
+          "author": "weinig",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14464#issuecomment-5605144178",
+          "gist": "cc @svgeesus @tabatkins"
+        },
+        {
+          "author": "svgeesus",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14464#issuecomment-5606205842",
+          "gist": "Presumably not the whole of 11.1, right?"
+        },
+        {
+          "author": "weinig",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14464#issuecomment-5607380184",
+          "gist": "Yeah, not the whole thing. We would need to extract the part that deals with percentages."
+        }
+      ]
+    },
+    {
+      "issue": 14324,
+      "title": "[css-forms-1] Add margin to the picker",
+      "labels": [
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14324",
+      "comments_in_window": 3,
+      "feature": null,
+      "recent": [
+        {
+          "author": "stubbornella",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14324#issuecomment-5597759922",
+          "gist": "0px and -1px picker gaps lead to odd bugs which will surprise developers."
+        },
+        {
+          "author": "stubbornella",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14324#issuecomment-5598058942",
+          "gist": "I did a survey of a bunch of design systems. The picker margin is a little hard to figure out from source because it can be created with a lot of different properties, but 10 design systems document a"
+        },
+        {
+          "author": "stubbornella",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14324#issuecomment-5598333248",
+          "gist": "This image shows what the gaps look like chosen by these design systems. 4px is in the sweet spot, close enough to be connected, but far enough to avoid the bugs or complex styles required for a conne"
+        }
+      ]
+    },
+    {
+      "issue": 14308,
+      "title": "[css-forms-1] Apply border-radius to all base appearance controls",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14308",
+      "comments_in_window": 3,
+      "feature": null,
+      "recent": [
+        {
+          "author": "stubbornella",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14308#issuecomment-5596503154",
+          "gist": "In a design system survey I did recently, 25 of 33 design systems match the button, input, and select `border-radius`. So your instincts are spot on @Emilio. Most systems choose to make inputs, select"
+        },
+        {
+          "author": "emilio",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14308#issuecomment-5600139714",
+          "gist": "Thanks for the data @stubbornella!"
+        }
+      ]
+    },
+    {
+      "issue": 11842,
+      "title": "[css-forms-1] For `control-value()` to be useful it needs a way to convert to other types.",
+      "labels": [
+        "Needs Edits",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/11842",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "LeaVerou",
+          "date": "2026-09-03",
+          "url": "https://github.com/w3c/csswg-drafts/issues/11842#issuecomment-5527357884",
+          "gist": "I think we should just add a `convert()` function instead of adding ad hoc syntax in every function for this."
+        }
+      ]
+    },
+    {
+      "issue": 10961,
+      "title": "[css-grid-3] Should there be an `inline-grid-lanes` legacy keyword for `display`?",
+      "labels": [
+        "Agenda+",
+        "Needs Edits",
+        "css-display-4",
+        "css-grid-3",
+        "topic: masonry"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/10961",
+      "comments_in_window": 2,
+      "feature": "masonry",
+      "recent": [
+        {
+          "author": "SebastianZ",
+          "date": "2026-09-07",
+          "url": "https://github.com/w3c/csswg-drafts/issues/10961#issuecomment-5576349834",
+          "gist": "With one engine already shipping this feature and at least one actively being worked on, I'd like to revive this discussion in the hope that we can find a viable solution before it's too late."
+        },
+        {
+          "author": "mirisuzanne",
+          "date": "2026-09-08",
+          "url": "https://github.com/w3c/csswg-drafts/issues/10961#issuecomment-5580300478",
+          "gist": "I've been teaching the multi-value syntax for years, and authors find it useful for understanding the various things `display` is doing. But it won't see broad teaching & adoption until there is funct"
+        }
+      ]
+    },
+    {
+      "issue": 14461,
+      "title": "[css-forms-1] Lighten form control backgrounds slightly in dark mode",
+      "labels": [
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14461",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "stubbornella",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14461#issuecomment-5598495641",
+          "gist": "This isn't decorative, it is about communicating importance to the user."
+        },
+        {
+          "author": "kbabbitt",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14461#issuecomment-5610427534",
+          "gist": "What happens in Forced Colors Mode? Naively, I'd expect this slight lightening to be overridden by the forced background color. If that's the case, would we need to communicate importance in some othe"
+        }
+      ]
+    },
+    {
+      "issue": 14056,
+      "title": "[css-values-5] Proposal for a new `<request-url-modifier>` called `<cross-origin-storage>`",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14056",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "romainmenke",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14056#issuecomment-5604896955",
+          "gist": "Being able to check for supports is also a good reason to make this unforgiving:"
+        }
+      ]
+    },
+    {
+      "issue": 14247,
+      "title": "[css-link-params] Are two references with different parameters independent instances?",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-image-animation-1",
+        "css-link-params-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14247",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "dholbert",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14247#issuecomment-5604834284",
+          "gist": "My intuition here is that they should **not** be different instances (or at least, we shouldn't require them at a spec level to be different instances)."
+        }
+      ]
+    },
+    {
+      "issue": 14252,
+      "title": "[css-forms-1] Adopt box-shadow on ::picker()",
+      "labels": [
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14252",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "stubbornella",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14252#issuecomment-5605229289",
+          "gist": "This isn't decorative, it is about communicating importance to the user."
+        },
+        {
+          "author": "kbabbitt",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14252#issuecomment-5610430064",
+          "gist": "Similar question to #14461: Forced Colors Mode would result in the shadow being dropped. Do we need some alternative way of communicating importance in that case?"
+        }
+      ]
+    },
+    {
+      "issue": 14447,
+      "title": "[css-link-params] Passing `currentColor` (and other state) without requiring the receiving SVG to have a param",
+      "labels": [
+        "css-link-params-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14447",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-09-04",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14447#issuecomment-5546620591",
+          "gist": "Good point. I think we can just special-case some keywords to have this behavior as `param()` args. Since we already require your actual params to be dashed-ident, this is compatible."
+        },
+        {
+          "author": "LeaVerou",
+          "date": "2026-09-06",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14447#issuecomment-5560732083",
+          "gist": "Yes, setting a specific value is *definitely* a requirement. `currentColor` is a good default, but often icons are a different color than the text (e.g. less visually prominent, or accented etc). Note"
+        }
+      ]
+    },
+    {
+      "issue": 14251,
+      "title": "[css-forms-1] Cursors for base appearance",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14251",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "stubbornella",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14251#issuecomment-5596376115",
+          "gist": "In a design system code analysis I completed, 27 of the 33 systems that specify a cursor use pointer — 82%. The UA baseline is the minority position, and design systems disagree with it."
+        }
+      ]
+    },
+    {
+      "issue": 14395,
+      "title": "[css-forms-1] Use `::field-content { flex: 1 }` instead of `::picker-icon { margin-inline-start: auto; }`",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14395",
+      "comments_in_window": 2,
+      "feature": null,
+      "recent": [
+        {
+          "author": "lukewarlow",
+          "date": "2026-09-03",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14395#issuecomment-5525202206",
+          "gist": "Should this be select::field-content or do we expect to apply it to all usages? I suspect it's fine to just apply to all of them?"
+        },
+        {
+          "author": "JoshTumath",
+          "date": "2026-09-03",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14395#issuecomment-5525728097",
+          "gist": "Should we also set `flex: none` on the `::picker-icon` to prevent shrinking?"
+        }
+      ]
+    },
+    {
+      "issue": 13176,
+      "title": "[css-anchor-position-1] anchors-visible still needs more details",
+      "labels": [
+        "Needs Testcase (WPT)",
+        "css-anchor-position-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13176",
+      "comments_in_window": 1,
+      "feature": "anchor-positioning",
+      "recent": [
+        {
+          "author": "waterplea",
+          "date": "2026-09-03",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13176#issuecomment-5524477187",
+          "gist": "The anchor-visible part is pretty useless since it only covers scrolling away. If I have, say, a sticky header in the same scrolling container it can cover my tooltip icon and the tooltip will still b"
+        }
+      ]
+    },
+    {
+      "issue": 13622,
+      "title": "[css-forms] Mechanism to influence the localisation for temporal controls?",
+      "labels": [
+        "HTML",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/13622",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "brechtDR",
+          "date": "2026-09-03",
+          "url": "https://github.com/w3c/csswg-drafts/issues/13622#issuecomment-5522601429",
+          "gist": "Commenting as a general: yes, please."
+        }
+      ]
+    },
+    {
+      "issue": 8399,
+      "title": "[css-conditional-5][css-nesting-1] Feature detection for nesting",
+      "labels": [
+        "css-conditional-5",
+        "css-nesting-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/8399",
+      "comments_in_window": 1,
+      "feature": "container-queries",
+      "recent": [
+        {
+          "author": "yisibl",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/8399#issuecomment-5600509311",
+          "gist": "## This is a memo:"
+        }
+      ]
+    },
+    {
+      "issue": 11068,
+      "title": "[css-values] Proposal: `children-count()` function",
+      "labels": [
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/11068",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "jackholden",
+          "date": "2026-09-07",
+          "url": "https://github.com/w3c/csswg-drafts/issues/11068#issuecomment-5568772569",
+          "gist": "+1 to this proposal"
+        }
+      ]
+    },
+    {
+      "issue": 7961,
+      "title": "[css-nesting-1] Can we relax the syntax further?",
+      "labels": [
+        "Closed Accepted by CSSWG Resolution",
+        "Needs Testcase (WPT)",
+        "css-nesting-1",
+        "css-nesting-2",
+        "css-syntax-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/7961",
+      "comments_in_window": 1,
+      "feature": "css-nesting",
+      "recent": [
+        {
+          "author": "yisibl",
+          "date": "2026-09-04",
+          "url": "https://github.com/w3c/csswg-drafts/issues/7961#issuecomment-5537006534",
+          "gist": "@tabatkins Are there currently any test cases in WPT that use JSON-like values in custom properties?"
+        }
+      ]
+    },
+    {
+      "issue": 12399,
+      "title": "[web-animations-2][css-animations-2] Should an animation be allowed to have multiple triggers associated?",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "animation-triggers-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12399",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "ydaniv",
+          "date": "2026-09-04",
+          "url": "https://github.com/w3c/csswg-drafts/issues/12399#issuecomment-5540810852",
+          "gist": "@estelle in [here](https://github.com/w3c/csswg-drafts/issues/12652#issuecomment-3329841437) we resolved:"
+        }
+      ]
+    },
+    {
+      "issue": 12131,
+      "title": "[css-anchor-position] Simplifying math functions for `<percentage>` in `anchor()`?",
+      "labels": [
+        "Agenda+",
+        "Commenter Response Pending",
+        "css-anchor-position-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12131",
+      "comments_in_window": 1,
+      "feature": "anchor-positioning",
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/12131#issuecomment-5604794412",
+          "gist": "Just to make things clear here, since it's been a while since this was discussed: back in 2020 [we resolved that min()/max() will simplify values that we know the relative sizes of](https://github.com"
+        }
+      ]
+    },
+    {
+      "issue": 12802,
+      "title": "Proposal: make a consistent \"list\" syntax in CSS, and list of lists syntax in CSS.",
+      "labels": [
+        "Commenter Response Pending",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12802",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-09-05",
+          "url": "https://github.com/w3c/csswg-drafts/issues/12802#issuecomment-5552700942",
+          "gist": "The curly-brace syntax you mention here is *not* a \"list of lists\" syntax, it's a generic \"this chunk of syntax would interfere with parsing the surrounding stuff\" syntax. Its use in functions/mixins "
+        }
+      ]
+    },
+    {
+      "issue": 12317,
+      "title": "[css-mixins-1] Allow typed custom properties inside custom functions",
+      "labels": [
+        "Closed Rejected as Wontfix by Editor Discretion",
+        "css-mixins-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/12317",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-09-03",
+          "url": "https://github.com/w3c/csswg-drafts/issues/12317#issuecomment-5532917049",
+          "gist": "I made a more focused issue on letting local args declare a type (#14442), so I'll close this one about letting functions see outside registrations."
+        }
+      ]
+    },
+    {
+      "issue": 10982,
+      "title": "[css-values-5] Disallow mix/random/tree-counting functions in some contexts",
+      "labels": [
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/10982",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "kbhomes",
+          "date": "2026-09-06",
+          "url": "https://github.com/w3c/csswg-drafts/issues/10982#issuecomment-5563056165",
+          "gist": "I wanted to revisit this issue for `random()` now that Chrome is shipping their implementation and I'm starting work on Firefox's. The (tentative) WPTs that currently exist for `random()` (and the beh"
+        }
+      ]
+    },
+    {
+      "issue": 10006,
+      "title": "[css-mixins] Allow mixins/functions to be called via custom properties",
+      "labels": [
+        "css-mixins-1",
+        "css-mixins-2",
+        "unknown/future spec"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/10006",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-09-04",
+          "url": "https://github.com/w3c/csswg-drafts/issues/10006#issuecomment-5546351035",
+          "gist": "@LeaVerou It's not, as `@apply` is processed at the stylesheet level, not the element-styles level. We have no idea what properties exist, or what their values might be, at the time we process mixins."
+        }
+      ]
+    },
+    {
+      "issue": 14436,
+      "title": "[css-link-params] How should currentColor in a parameter value resolve?",
+      "labels": [
+        "Agenda+",
+        "css-link-params-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14436",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-09-04",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14436#issuecomment-5546567729",
+          "gist": "As currently defined, the link params are unresolved to the same extent as an untyped custom property. That is, using `attr()`/`var()`/`if()`/etc in the value will resolve based on the element, but an"
+        }
+      ]
+    },
+    {
+      "issue": 14212,
+      "title": "[css-mixins-1] Is `!important` valid in functions and/or mixins?",
+      "labels": [
+        "Needs Edits",
+        "Needs Testcase (WPT)",
+        "css-mixins-1",
+        "css-mixins-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14212",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "cdoublev",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14212#issuecomment-5596645213",
+          "gist": "[CSS Syntax](https://drafts.csswg.org/css-syntax-3/#typedef-declaration-value) already makes `!important` invalid in `<declaration-value>`."
+        }
+      ]
+    },
+    {
+      "issue": 14468,
+      "title": "[css-forms-1] Distinguishing <input> vs <button>",
+      "labels": [
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14468",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "JoshTumath",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14468#issuecomment-5606612203",
+          "gist": "I'd like to know if having a different background colour is sufficient distinction. This is where brands would typically use their accent colour."
+        }
+      ]
+    },
+    {
+      "issue": 14380,
+      "title": "[css-values-5] Resolved progress of `*-interpolation()` when there is no corresponding `<'animation-timeline'>`",
+      "labels": [
+        "Closed Accepted as Obvious Bugfix",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14380",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-09-04",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14380#issuecomment-5545480652",
+          "gist": "Hm, yeah, I suppose just having it fall back to 0% progress is the most reasonable default."
+        }
+      ]
+    },
+    {
+      "issue": 14148,
+      "title": "[css-ui-4] `outline-color: auto` should not be required to represent the accent color",
+      "labels": [
+        "css-ui-3",
+        "css-ui-4"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14148",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "zcorpan",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14148#issuecomment-5608639178",
+          "gist": "I agree with this and was surprised that `accent-color` affected the outline color in Firefox (it's still the system outline color in Safari and Chrome, on macOS at least). cc @emilio"
+        }
+      ]
+    },
+    {
+      "issue": 14140,
+      "title": "[css-forms-1] control-value() meta issue",
+      "labels": [
+        "Agenda+",
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14140",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": []
+    },
+    {
+      "issue": 14416,
+      "title": "[css-view-transitions-2] Scoped VT: when scope becomes not rendered or disconnected, transition skips",
+      "labels": [
+        "Async Resolution: Call For Consensus",
+        "css-view-transitions-2"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14416",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "astearns",
+          "date": "2026-09-07",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14416#issuecomment-5576425290",
+          "gist": "The CSSWG will automatically accept this resolution one week from now if no objections are raised here. Anyone can add an emoji to this comment to express support. If you do not support this resolutio"
+        }
+      ]
+    },
+    {
+      "issue": 14465,
+      "title": "[css-color-5] Allow omitting percentages when serializing color-mix() in more cases",
+      "labels": [
+        "css-color-5",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14465",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "weinig",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14465#issuecomment-5607391742",
+          "gist": "cc @svgeesus @tabatkins"
+        }
+      ]
+    },
+    {
+      "issue": 14344,
+      "title": "[css-values-5] Add `calc-range()`, inverse of `progress()`?",
+      "labels": [
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14344",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-09-04",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14344#issuecomment-5545464855",
+          "gist": "Whoops, I totally forgot about `calc-interpolate()`. Yup, that works! (It's not *quite* the same as `random()` if you use a step and start+N*step doesn't hit the end exactly, but I'm more okay with th"
+        }
+      ]
+    },
+    {
+      "issue": 14444,
+      "title": "[css-grid-3] Synthesizing baselines for Grid Lanes containers",
+      "labels": [
+        "Agenda+",
+        "css-grid-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14444",
+      "comments_in_window": 1,
+      "feature": "masonry",
+      "recent": [
+        {
+          "author": "yanlingwang23",
+          "date": "2026-09-04",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14444#issuecomment-5546708470",
+          "gist": "Thanks for raising this. I agree with this interpretation. For the grid-lanes example with empty items, I would expect “hello” to align with the bottom of the purple box:"
+        }
+      ]
+    },
+    {
+      "issue": 14399,
+      "title": "[css-values-5] How to replace `ident(\"\")`?",
+      "labels": [
+        "Closed Accepted as Obvious Bugfix",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14399",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-09-03",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14399#issuecomment-5533042949",
+          "gist": "Ah good catch. Obviously you return the GIV. Fixed, thanks."
+        }
+      ]
+    },
+    {
+      "issue": 14136,
+      "title": "[css-inline-3] Clarification on text-box-trim propagation and independent block formatting contexts",
+      "labels": [
+        "css-inline-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14136",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "kbhomes",
+          "date": "2026-09-09",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14136#issuecomment-5607819416",
+          "gist": "Related, does `text-box-trim` propagate into the independent formatted context of a scroll container?"
+        }
+      ]
+    },
+    {
+      "issue": 14411,
+      "title": "[css-ui][css-content] Define generated content on widgets",
+      "labels": [
+        "Agenda+",
+        "css-forms-1",
+        "css-ui-4",
+        "css-ui-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14411",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "Loirooriol",
+          "date": "2026-09-04",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14411#issuecomment-5536487306",
+          "gist": "This was also being discussed in #12876. @emilio had a proposal in https://github.com/w3c/csswg-drafts/issues/12876#issuecomment-3613205198"
+        }
+      ]
+    },
+    {
+      "issue": 14446,
+      "title": "[css-link-params] How to pass computed/used values?",
+      "labels": [
+        "Closed as Duplicate",
+        "css-link-params-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14446",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "tabatkins",
+          "date": "2026-09-04",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14446#issuecomment-5546474261",
+          "gist": "Ah, I'm gonna call this a dupe of #14436, yeah. It's asking a specific question, but the problem is clearly more general."
+        }
+      ]
+    },
+    {
+      "issue": 14088,
+      "title": "[css-color-5] `calc(infinity)` in relative color and interpolation",
+      "labels": [
+        "css-color-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14088",
+      "comments_in_window": 1,
+      "feature": null,
+      "recent": [
+        {
+          "author": "romainmenke",
+          "date": "2026-09-04",
+          "url": "https://github.com/w3c/csswg-drafts/issues/14088#issuecomment-5541201183",
+          "gist": "Maybe tests could check a series of asserts instead of actual channel values?"
+        }
+      ]
+    }
+  ],
+  "fresh": [
+    {
+      "issue": 14463,
+      "title": "[css-color-5] how to handle/avoid clamping in relative color syntax",
+      "labels": [
+        "css-color-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14463",
+      "feature": null,
+      "created_at": "2026-09-09",
+      "background": "See: https://drafts.csswg.org/css-color-5/#relative-colors",
+      "related": [
+        {
+          "issue": 9484,
+          "url": "https://github.com/w3c/csswg-drafts/issues/9484"
+        }
+      ]
+    },
+    {
+      "issue": 14464,
+      "title": "[css-values-5] Standardize serialization for mix function components",
+      "labels": [
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14464",
+      "feature": null,
+      "created_at": "2026-09-09",
+      "background": "CSS Color 5 specifies rules for serializing color-mix() components - https://drafts.csswg.org/css-color-5/#serial-color-mix.",
+      "related": []
+    },
+    {
+      "issue": 14465,
+      "title": "[css-color-5] Allow omitting percentages when serializing color-mix() in more cases",
+      "labels": [
+        "css-color-5",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14465",
+      "feature": null,
+      "created_at": "2026-09-09",
+      "background": "The color-mix() serialization rules (https://drafts.csswg.org/css-color-5/#serial-color-mix) specify that percentages should only be omitted when all \"effective percentages\" are known and equal to 100% / number of components:",
+      "related": []
+    },
+    {
+      "issue": 14466,
+      "title": "[css-values-5] Add syntax definitions for `sibling-count` and `sibling-index`",
+      "labels": [
+        "Needs Edits",
+        "css-values-5"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14466",
+      "feature": null,
+      "created_at": "2026-09-09",
+      "background": "See: https://drafts.csswg.org/css-values-5/#funcdef-sibling-count",
+      "related": []
+    },
+    {
+      "issue": 14468,
+      "title": "[css-forms-1] Distinguishing <input> vs <button>",
+      "labels": [
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14468",
+      "feature": null,
+      "created_at": "2026-09-09",
+      "background": "Previously we were using `border-radius` to distinguish between `<input>` and `<button>`, but we resolved to make them match in #14308. Opening this issue to discuss how we might distinguish them.",
+      "related": [
+        {
+          "issue": 14308,
+          "url": "https://github.com/w3c/csswg-drafts/issues/14308"
+        }
+      ]
+    },
+    {
+      "issue": 14461,
+      "title": "[css-forms-1] Lighten form control backgrounds slightly in dark mode",
+      "labels": [
+        "css-forms-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14461",
+      "feature": null,
+      "created_at": "2026-09-08",
+      "background": "Splitting out from https://github.com/w3c/csswg-drafts/issues/14254 (see also https://github.com/w3c/csswg-drafts/issues/14252) ...",
+      "related": [
+        {
+          "issue": 14252,
+          "url": "https://github.com/w3c/csswg-drafts/issues/14252"
+        },
+        {
+          "issue": 14254,
+          "url": "https://github.com/w3c/csswg-drafts/issues/14254"
+        }
+      ]
+    },
+    {
+      "issue": 14444,
+      "title": "[css-grid-3] Synthesizing baselines for Grid Lanes containers",
+      "labels": [
+        "Agenda+",
+        "css-grid-3"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14444",
+      "feature": "masonry",
+      "created_at": "2026-09-04",
+      "background": "https://drafts.csswg.org/css-grid-3/#grid-lanes-baseline-alignment",
+      "related": []
+    },
+    {
+      "issue": 14446,
+      "title": "[css-link-params] How to pass computed/used values?",
+      "labels": [
+        "Closed as Duplicate",
+        "css-link-params-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14446",
+      "feature": null,
+      "created_at": "2026-09-04",
+      "background": "Authors will want to pass `currentColor`, `accentColor` and other values that resolve either at computed value time or used value time. How does that work? If I'm reading the current spec correctly, it seems they'd be passed as raw tokens.",
+      "related": [
+        {
+          "issue": 14436,
+          "url": "https://github.com/w3c/csswg-drafts/issues/14436"
+        }
+      ]
+    },
+    {
+      "issue": 14447,
+      "title": "[css-link-params] Passing `currentColor` (and other state) without requiring the receiving SVG to have a param",
+      "labels": [
+        "css-link-params-1"
+      ],
+      "url": "https://github.com/w3c/csswg-drafts/issues/14447",
+      "feature": null,
+      "created_at": "2026-09-04",
+      "background": "We had discussed this earlier, but I don't see it in the spec and didn't find any other issues.",
+      "related": []
+    }
+  ],
+  "spec_changes": [
+    {
+      "shortname": "css-color-4",
+      "title": "CSS Color Module Level 4",
+      "maturity": "CRD",
+      "date": "2026-09-08",
+      "url": "https://www.w3.org/TR/2026/CRD-css-color-4-20260908/"
+    },
+    {
+      "shortname": "css-color-5",
+      "title": "CSS Color Module Level 5",
+      "maturity": "WD",
+      "date": "2026-09-08",
+      "url": "https://www.w3.org/TR/2026/WD-css-color-5-20260908/"
+    },
+    {
+      "shortname": "css-color-hdr-1",
+      "title": "CSS Color HDR Module Level 1",
+      "maturity": "WD",
+      "date": "2026-09-07",
+      "url": "https://www.w3.org/TR/2026/WD-css-color-hdr-1-20260907/"
+    },
+    {
+      "shortname": "css-fonts-4",
+      "title": "CSS Fonts Module Level 4",
+      "maturity": "WD",
+      "date": "2026-09-07",
+      "url": "https://www.w3.org/TR/2026/WD-css-fonts-4-20260907/"
+    },
+    {
+      "shortname": "css-sizing-3",
+      "title": "CSS Box Sizing Module Level 3",
+      "maturity": "WD",
+      "date": "2026-09-04",
+      "url": "https://www.w3.org/TR/2026/WD-css-sizing-3-20260904/"
+    },
+    {
+      "shortname": "css-sizing-4",
+      "title": "CSS Box Sizing Module Level 4",
+      "maturity": "WD",
+      "date": "2026-09-04",
+      "url": "https://www.w3.org/TR/2026/WD-css-sizing-4-20260904/"
+    }
+  ]
+}

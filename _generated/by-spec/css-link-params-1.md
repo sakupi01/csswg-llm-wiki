@@ -26,3 +26,5 @@
 - 2026-09-04 opened #14446: [css-link-params] How to pass computed/used values?
 - 2026-09-04 opened #14447: [css-link-params] Passing `currentColor` (and other state) without requiring the receiving SVG to have a param
 - 2026-09-09 RESOLVED #14247: Differing link parmeters cause images to draw differently, but don't affect animation timing. Details TBD.
+- 2026-09-10 opened #14476: [css-link-params-1] Passing a font to a linked resource?
+- 2026-09-15 opened #14495: [css-link-params-1] What do you mean by "used value"?

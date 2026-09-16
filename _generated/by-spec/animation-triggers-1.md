@@ -26,6 +26,7 @@
 - 2025-08-20 RESOLVED #12581: change timeline clash resolution to use last in tree order
 - 2025-08-20 RESOLVED #12581: change timeline scoping to be global by default (like anchor names), and have triggers do the same
 - 2025-08-20 RESOLVED #12581: if a name is multiple in one property, last wins; if a name is defined by both event and timeline, event wins (because it's alphabetically earlier)
+- 2025-08-20 RESOLVED #12611: timeline-trigger-* and event-trigger just define the source element. on the animating element, `animation-trigger: trigger()#` specifies source element, action, and behavior. (`[trigger()+ ]#` for multiple triggers on a single animation
 - 2025-08-25 opened #12652: [web-animations-2][css-animations-2] animation-trigger CSS syntax
 - 2025-09-24 RESOLVED #12652: syntax of animation-trigger is [<dashed-ident> <behavior/actions>]+#
 - 2025-10-08 RESOLVED #12611: Accept the keywords from https://github.com/w3c/csswg-drafts/issues/12611#issuecomment-3377529486

@@ -70,6 +70,8 @@
 - 2021-11-12 opened #6814: [css-box] Suggestion: Add "of <property>" syntax for percentage values of padding and margin properties
 - 2021-11-28 opened #6840: [css-values-4] Privacy concern around URL interpolation.
 - 2021-12-08 opened #6869: Browser zoom unit for accessibility [css-values-and-units]
+- 2022-01-26 RESOLVED #5055: add `first-valid` and please add an issue to bikeshed the name once we better understand the scope
+- 2022-01-26 RESOLVED #5055: add `first-valid` and please add an issue to bikeshed the name once we better understnad the scope
 - 2022-02-02 opened #7005: [css-values] add font-size relative pixel unit rpx
 - 2022-05-11 opened #7268: [css-values] Proposal for a 'progress' function to calculate progress between two <length> values
 - 2022-05-12 opened #7273: map-get function proposal for customising web component styles
@@ -165,6 +167,7 @@
 - 2024-09-15 opened #10897: [css-values-5] <progress> requires easing-function?
 - 2024-09-18 opened #10919: [css-values-5] Are the tree counting functions allowed inside calc()?
 - 2024-09-25 opened #10948: [High-level] Making it less painful to communicate design tokens across parties
+- 2024-09-26 RESOLVED #10064: If you have an else clause, you must say `else` explicitly
 - 2024-09-26 RESOLVED #10064: We will use if(cond(): foo; else: bar)
 - 2024-09-26 RESOLVED #10437: Use the <syntax> production that we hae defined in the mixins spec, consistent with what we will be allowing in registered custom properties
 - 2024-09-26 RESOLVED #9539: Undo previous decision and move forward with optional curly-brace wrapping of complex arguments
@@ -375,9 +378,11 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - 2026-08-18 opened #14344: [css-values-5] Add `calc-range()`, inverse of `progress()`?
 - 2026-08-19 opened #14352: [css-values-5] Add `var-at()` arbitrary substitution function for pulling values from list valued variables
 - 2026-08-24 opened #14380: [css-values-5] Resolved progress of `*-interpolation()` when there is no corresponding `<'animation-timeline'>`
+- 2026-08-26 opened #14392: [css-flexbox][selectors] Select flex items by generated flex line and position within the line
 - 2026-08-27 opened #14399: [css-values-5] How to replace `ident("")`?
 - 2026-09-02 opened #14435: [css-values-5] /TR is stale, republish as WD
 - 2026-09-09 RESOLVED #14056: Unknown url modifiers will cause declaration to be invalid.
 - 2026-09-09 opened #14464: [css-values-5] Standardize serialization for mix function components
 - 2026-09-09 opened #14465: [css-color-5] Allow omitting percentages when serializing color-mix() in more cases
 - 2026-09-09 opened #14466: [css-values-5] Add syntax definitions for `sibling-count` and `sibling-index`
+- 2026-09-11 opened #14478: [css-values-5] Does `random()` simplify to a value at specified value time for a `fixed <number>` key?

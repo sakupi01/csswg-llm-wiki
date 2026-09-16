@@ -95,9 +95,11 @@
 - 2024-10-22 opened #11065: [selectors] `:user-interacted` pseudo-class to match controls the user has interacted with
 - 2024-11-05 opened #11154: [selectors] `:first-node`/`:last-node`/`:only-node` pseudo-classes
 - 2024-12-02 opened #11309: [css-selectors] Proposal: `>>` combinator to ensure all elements between an ancestor and a descendant match a given selector
+- 2025-01-08 RESOLVED #6867: `:has-slotted` should match when the fallback content is not being displayed
 - 2025-01-15 RESOLVED #6867: :has-slotted should use the flattened tree to resolve if content is slotted or not. We could later discuss a different pseudo-class for the other behavior.
 - 2025-01-19 opened #11536: [css-selectors] Compare values across different attributes?
 - 2025-01-27 opened #11584: Proposal for a user interaction :drag pseudo-class
+- 2025-01-29 RESOLVED #11000: Have  have `:scope` resolve to `:host`  rather than `:root` in shadow tree
 - 2025-02-28 opened #11801: [css-navigation-1] Add pseudo-class selector to target the element that initiated the outgoing navigation
 - 2025-03-05 opened #11834: [selectors] Consider adding a :hover-drag pseudo selector
 - 2025-03-19 opened #11969: [selectors][css-conditional] Pseudo-class or combinator that is syntactic sugar for wrapping in an `@rule`
@@ -147,3 +149,4 @@
 - 2026-08-06 opened #14291: [selectors] Should `.foo-*` match `foo-`?
 - 2026-08-20 opened #14360: [selectors-5] “initial state” selector
 - 2026-08-21 opened #14371: [selectors] Modifier for attribute selectors to split values into words
+- 2026-08-26 opened #14392: [css-flexbox][selectors] Select flex items by generated flex line and position within the line

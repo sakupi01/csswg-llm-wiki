@@ -17,3 +17,4 @@
 - 2025-01-20 opened #11539: [css-multicol] [css-align] Should `row-gap: normal` in multicol have a used value of 1em or 0?
 - 2025-01-31 RESOLVED #11539: in multicol, both row-gap and column-gap 'normal' resolves to 1em
 - 2026-07-15 opened #14186: Add a snapping threshold to CSS grid alignment and justification
+- 2026-08-05 RESOLVED #9556: Allow percentages to combine with the edge keywords of alignment properties, with a bare percent being relative to the `flex-start`, with syntax consitent with background-position

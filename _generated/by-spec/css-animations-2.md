@@ -98,6 +98,7 @@
 - 2024-10-22 opened #11064: [css-transitions-2][css-animations-2] The event order of the cancelled transitions/animations
 - 2025-01-24 opened #11564: [css-transforms] Feature request: Animate a part of an element
 - 2025-01-30 opened #11611: [web-animations-2][css-animations-2] Allow controlling video playback via an animation timeline
+- 2025-01-31 RESOLVED #10000: Allow `<length-percentage>` in keyframe selectors (with or without `<timeline-range-name>`)
 - 2025-01-31 RESOLVED #10574: Start pointer-animations-1
 - 2025-01-31 RESOLVED #10880: Relative units resolve against the animation target
 - 2025-02-06 opened #11659: [css-animations-2][scroll-animations-1] Serialization of `animation-*` shorthands with longhand value lengths different than `animation-name`

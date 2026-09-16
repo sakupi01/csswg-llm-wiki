@@ -16,3 +16,4 @@
 - 2026-06-19 opened #14068: [css-filters] Wrong links to SVG 2, and links to SVG11 should probably be updated.
 - 2026-07-22 RESOLVED #13949: drop href attribute in filter element
 - 2026-07-22 RESOLVED #13964: define filter region as either border box or bounding client rects for split inline
+- 2026-09-13 opened #14483: [filter-effects-1/css-color-5/css-pseudo] Visited Color Propagation Inconsistency

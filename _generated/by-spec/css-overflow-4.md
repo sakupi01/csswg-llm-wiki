@@ -68,6 +68,7 @@
 - 2022-07-06 RESOLVED #7245: Add overflow-clip-margin-inline, -block, and the full set of properties
 - 2022-09-07 opened #7708: [css-overflow] Is continue: discard working in the fragment tree useful?
 - 2022-09-08 opened #7714: [css-flexbox] overflow clip on SVG elements and flex layout
+- 2022-09-15 RESOLVED #7714: in the UA style sheet, we keep `svg { overflow: hidden; }`
 - 2022-09-15 RESOLVED #7714: in the flex spec, for auto min sizing, instead of saying scroll container, we read the computed overflow property value
 - 2022-09-15 RESOLVED #7714: overflow:hidden on replaced elements gets coerced to overflow:clip at paint time
 - 2022-09-29 opened #7811: [css-overflow] block-ellipsis rules don't match text-overflow rules
@@ -120,6 +121,7 @@
 - 2024-10-11 opened #11021: [css-overflow] Invisible line boxes and `line-clamp`
 - 2024-11-20 opened #11253: [css-overflow-4] Should block-ellipsis clip ::before/::after text?
 - 2024-11-28 opened #11291: [css-overflow-4] Clarify mandatory behavior for text-overflow with scrolling
+- 2024-12-11 RESOLVED #10745: `overflow-clip-margin: content-box` applies to scrollable boxes
 - 2024-12-16 opened #11379: [css-overflow] Web compat issue when hiding abspos after the line-clamp point
 - 2025-01-30 RESOLVED #11379: do not skip painting for abs pos where the containing block for the abs pos is at or above the line clamp
 - 2025-01-31 RESOLVED #10745: scrollable boxes can combine content-box and a positive margin (clamped to padding box), and content-box and padding box can use negative margins. border-box ignores margin either way.
@@ -177,6 +179,7 @@
 - 2026-01-27 RESOLVED #12817: Clamp at the bottom of the last line or in-flow block-level box before the clamp point
 - 2026-01-27 RESOLVED #12826: add examples and determine whether further edits may be helpful
 - 2026-01-27 RESOLVED #12857: Accept florian's text about spaces
+- 2026-01-27 RESOLVED #12857: The ellipsis should be subject to `hanging-punctuation` rules
 - 2026-01-27 RESOLVED #12857: add a note clarifying that when you have an ellipsis after punctuation, it's no longer at the end of the line and thus can't hang
 - 2026-01-27 RESOLVED #12962: Keep the behavior of line-clamp as-is, but design an opt-in for max-lines to count IFCs/tracks/lines to satisfy this use case
 - 2026-02-03 opened #13445: [css-overflow-4] Allow scrollable overflow to be visible in the off-axis / overflow-clip-margin
@@ -212,3 +215,4 @@
 - 2026-08-06 RESOLVED #14239: close no change, update tests
 - 2026-08-06 RESOLVED #3937: add this proposal to Overflow 5
 - 2026-09-04 opened #14448: [css-overflow] line-clamp + ellipsis insertion at soft-wrap point +  white-space: pre
+- 2026-09-14 opened #14485: line-clamp draft specification not in sync with WPT tests

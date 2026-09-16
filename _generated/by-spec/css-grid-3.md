@@ -134,6 +134,7 @@
 - 2025-04-02 opened #12043: [css-grid-3] Do we need a `masonry-basis` property?
 - 2025-04-12 opened #12071: [css-grid] A way for columns to shrink below their minimum width when they overflow?
 - 2025-04-22 opened #12111: [css-grid-3][masonry] Make `item-tolerance` initial value `normal`
+- 2025-05-14 RESOLVED #5813: Start defining a `grid-collapse` property
 - 2025-06-03 opened #12264: Proposal: wrap-strategy: balanced for visually balanced grid/flex wrapping
 - 2025-06-24 opened #12393: [css-grid-3] [masonry] Should items with a definite row/column be placed first?
 - 2025-07-01 opened #12423: [css-grid-3][Masonry] Repeat(auto-fill, auto) requires no stretched auto tracks
@@ -142,6 +143,7 @@
 - 2025-08-01 opened #12563: [css-sizing-3][css-grid-3][Masonry] Compressible Replaced Elements
 - 2025-08-04 opened #12573: [css-grid-3][Masonry] repeat(auto-fill) and minmax()
 - 2025-08-14 opened #12609: [css-grid-3][Masonry] fit-content track size
+- 2025-08-19 RESOLVED #10869: Initial track listing for masonry is `none`, same as grid
 - 2025-08-19 RESOLVED #12022: Design Principle - Keep masonry consistent with grid wherever practical: deviations need to be strongly justified by the inherent differences between grid vs masonry layout
 - 2025-08-19 RESOLVED #12022: Switch for masonry will be a new display type. Display type must include the word grid in the name. We will open an issue for the exact name.
 - 2025-08-19 RESOLVED #12432: use intrinsic sizing generally for column count for percentages

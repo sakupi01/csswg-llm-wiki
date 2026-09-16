@@ -187,6 +187,7 @@
 - 2024-05-23 opened #10360: [css-color-5] Clarification on `none` components in relative color syntax.
 - 2024-06-10 opened #10414: [css-color-5] Should intermediate out of range values be preserved in color-mix?
 - 2024-06-10 opened #10415: [css-color-5] Missing forms to use to serialize color-mix and relative color
+- 2024-06-12 RESOLVED #10151: `none` in calculations is converted to 0 when converting a color to a different color space. It is still preserved otherwise, and is still preserved when used as the whole value of a component.
 - 2024-06-12 RESOLVED #10327: relative rgb()/rgba() and relative hsl()/hsla() serialize as rgb() and hsl() when alpha is unity or unknown (like with currentColor)
 - 2024-06-12 RESOLVED #10327: relative rgb()/rgba() and relative hsl()/hsla() serialize as rgb() and hsl() when alpha is unity.
 - 2024-06-12 RESOLVED #10328: Adopt the proposed text
@@ -237,6 +238,7 @@
 - 2026-03-31 RESOLVED #12543: Close no change, update tests to match the new spec text
 - 2026-03-31 RESOLVED #13157: If in same color space, compare components. 2. If in different color space and there's a "none", not equal. 3. If in different color space and no "none"s, convert to oklab and do epsilon comparison
 - 2026-03-31 RESOLVED #13157: Whatever we resolve for comparing colors is also used to determine whether a transition starts
+- 2026-03-31 RESOLVED #13157: When comparing colors, `none` is only equal to `none`
 - 2026-03-31 RESOLVED #13157: style() and transitions use the same color comparison method
 - 2026-03-31 RESOLVED #13269: Update the animations spec with an example
 - 2026-03-31 RESOLVED #13320: Colors are not collapsed
@@ -268,3 +270,4 @@
 - 2026-08-06 RESOLVED #14070: alpha is required in alpha()
 - 2026-09-09 opened #14463: [css-color-5] how to handle/avoid clamping in relative color syntax
 - 2026-09-09 opened #14465: [css-color-5] Allow omitting percentages when serializing color-mix() in more cases
+- 2026-09-14 opened #14487: [css-color-5] Serialize omitted percentages in `color-mix()` to `0%` when the specified sum is greater than `100%`

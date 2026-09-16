@@ -169,6 +169,7 @@
 - 2024-02-14 opened #9959: [css-images-4] `cross-fade()` is sRGB-only
 - 2024-03-15 opened #10092: [css-images-4] Allow gradients with a single color stop and 0-1 positions
 - 2024-03-21 opened #10116: [css-images-4] Should `contain-intrinsic-size` affect `object-fit`?
+- 2024-04-03 RESOLVED #10116: `contain` removes the natural aspect ratio / width / height only for the purposes of sizing and layout of the box (and object-fit is therefore not affected)
 - 2024-05-29 opened #10374: [css-images-4] Gradient interpolation doesn't specify how to handle positionless stops at computed-value time
 - 2024-06-03 RESOLVED #10092: Relax gradient syntax to allow a single color stop with 0-1 positions
 - 2024-07-17 RESOLVED #10374: move the missing position fixup to computed value time

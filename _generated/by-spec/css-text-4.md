@@ -136,6 +136,7 @@
 - 2022-09-14 opened #7738: [css-text] Enable finer control over text-justify
 - 2022-10-12 RESOLVED #7055: Incorporate trim-end behavior into the normal keyword
 - 2022-10-12 RESOLVED #771: Add text-justify:ruby, which is like 'auto' but disables justification oppo on spaces and bopomofo.
+- 2022-10-12 RESOLVED #771: `rt, rtc { text-justify: ruby; }` to UA stylesheet
 - 2022-11-07 opened #8031: [css-text] text-transform capitalize for words separated by periods only (no space)
 - 2022-11-30 RESOLVED #6950: accept the text-spacing values for spacing adjustments?
 - 2022-11-30 RESOLVED #6950: non-zero padding disables text-spacing adjustement for spaces
@@ -152,6 +153,7 @@
 - 2023-02-02 RESOLVED #4246: Accept the proposal in the issue to split text-spacing into longhands.
 - 2023-02-10 opened #8442: [css-text-3] Upstream small Kana to Kana mapping to Unicode
 - 2023-02-21 opened #8482: [css-text-4] Add 'text-spacing: trim-all'?
+- 2023-02-22 RESOLVED #8273: rename `text-space-collapse` back to `white-space-collapse`
 - 2023-02-28 opened #8510: [css-text-4] Specify width of autospace gaps
 - 2023-02-28 opened #8511: [css-text-4] text-autospace: what gets copied?
 - 2023-03-01 opened #8512: [css-text-4] is text-autospace: auto missing?
@@ -288,3 +290,4 @@
 - 2026-08-18 opened #14345: [css-text-4] Punctuation adjustment at the end of each line
 - 2026-08-19 RESOLVED #13774: we allow 'normal replace' as a value for text-autospace
 - 2026-08-19 RESOLVED #13789: use the syntax linked in IRC with the addition of the auto keyword
+- 2026-09-15 opened #14494: [css-pseudo-4] definition of "intervening typographic space" for ::first-letter text rules is a bit unclear

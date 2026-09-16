@@ -33,3 +33,4 @@
 - 2025-07-30 opened #12546: [filter-effects] `drop-shadow()` combined with `transform` has interop issues
 - 2025-12-18 opened #13242: [filter-effects] Should root propagate `filter` to the viewport?
 - 2026-01-22 opened #13385: [css filters] Editorial: Github issues should be linked to the CSS issues not fxtf-drafts
+- 2026-09-13 opened #14483: [filter-effects-1/css-color-5/css-pseudo] Visited Color Propagation Inconsistency

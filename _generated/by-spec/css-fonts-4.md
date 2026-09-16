@@ -238,6 +238,7 @@
 - 2019-05-10 opened #3909: [css-fonts] Access arbitrary points on a variable  'ital' axis via `font-style`
 - 2019-05-12 opened #3926: [css-fonts] Allow UA to not download font hints if it would have ignored them
 - 2019-05-20 opened #3947: [css-fonts-4] How are duplicate "feature value blocks" treated in @font-feature-values?
+- 2019-05-22 RESOLVED #3907: Add `font-size: xxx-large` to Fonts level 4
 - 2019-06-04 RESOLVED #3739: Remove min-font-size and max-font-size from Fonts 4, replace with an example of using clamp() to handle safe responsive typography.
 - 2019-06-04 RESOLVED #3906: Capture that font-size keywords carry an additional bit of information having some (unspecified) interaction with some font families.
 - 2019-06-04 RESOLVED #3906: François does compat research on the effect of font-size keywords and generic font-families, and report back on interop.
@@ -255,6 +256,7 @@
 - 2019-08-28 opened #4252: [css-fonts-4] Palette leakage needs tests
 - 2019-09-17 RESOLVED #2531: Remove font-variant @font-face descriptor from Fonts 3
 - 2019-09-17 RESOLVED #4044: Adopt the proposal for font-stretch
+- 2019-09-17 RESOLVED #4107: Add them with the `ui-` prefix and make them not match if they're not available
 - 2019-09-20 opened #4358: [css-fonts] Remove `font-feature-settings` and `font-variation-settings` descriptors?
 - 2019-10-04 opened #4397: [css-fonts] Specify what generic font family maps to nastaliq
 - 2019-10-16 opened #4425: [css-fonts] What does fangsong map to for non chinese text
@@ -330,6 +332,7 @@
 - 2021-07-21 RESOLVED #6462: Republish CSS Fonts L4 and L5
 - 2021-07-21 RESOLVED #6462: Republish CSSOM
 - 2021-07-29 RESOLVED #6063: Add this keyword in fonts-4 as well
+- 2021-07-29 RESOLVED #6063: add a `incremental` to the `font-technology` values production as described on the PR
 - 2021-08-16 opened #6520: [css-fonts-4][css-nesting] Nesting of @supports inside @font-face and font technology feature queries
 - 2021-09-10 opened #6600: [css-fonts] Named instances and collections
 - 2021-09-15 RESOLVED #6520: Accept the PR

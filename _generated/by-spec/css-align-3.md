@@ -275,7 +275,10 @@
 - 2025-04-25 opened #12121: [css-align-3][css-position-3] align-items and justify-items for out of flow items
 - 2025-05-14 RESOLVED #11195: change stretch alignment case to allow the size to stretch when the normal alignment case allows stretching
 - 2025-05-14 RESOLVED #11461: Anonymous block boxes always stretch (go with option 1)
+- 2025-05-14 RESOLVED #12102: Values of `justify-self` other than normal or stretch treat the automatic size as fit-content, just like in flex/grid
 - 2025-05-14 RESOLVED #12102: auto margins do not prevent justify-self from imposing fit-content
+- 2025-06-25 RESOLVED #11641: Accept the PR, `stretch` falls back to `flex-start`, not `safe flex-start`
+- 2025-06-25 RESOLVED #11937: Change `safe` alignment on scroll containers to align towards the scroll origin side (rather than the `start` side)
 - 2025-07-30 opened #12542: [css-position-3][css-align-3] Handling center alignment for abspos boxes with auto/normal self-alignment and center item alignment in parent
 - 2025-08-06 RESOLVED #10861: All percentages (insets, sizes) resolve against the effective containing block (no inconsistency)
 - 2025-08-13 opened #12600: [css-align][css-writing-modes] Do orthogonal flows affect `justify-self: normal`?

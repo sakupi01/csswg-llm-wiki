@@ -92,6 +92,7 @@
 - 2024-08-30 opened #10805: [css-backgrounds-4] The `background-clip: text` needs to contain `text-emphasis`
 - 2024-09-17 opened #10907: [css-backgrounds-4][css-borders-4] Should initial value of border-color be sensitive to border-area?
 - 2024-09-26 opened #10949: [css-images][css-backgrounds] A method to fill the background of a partially transparent image with the max contrast color
+- 2024-11-07 RESOLVED #10696: Add `border-area || text` to the background-clip syntax
 - 2024-11-07 opened #11160: [css-backgrounds-4] Possible `background-clip` value to punch holes in the background layer in the shape of font charatcters
 - 2024-11-07 opened #11167: [css-backgrounds-4] default background-origin for `border-area` in shorthand
 - 2024-11-13 RESOLVED #11167: Using 'border-area' in the background shorthand (and omitting origin) defaults the origin to border-box
@@ -106,6 +107,7 @@
 - 2025-10-29 opened #13035: [css-backgrounds] Specify a rendering method for background images
 - 2025-11-05 opened #13062: [css-backgrounds-4] Time for FPWD
 - 2025-11-13 RESOLVED #13062: FPWD css-backgrounds-4
+- 2026-01-27 RESOLVED #9083: No change for now, use `background` shorthand + `background-color: revert-rule`
 - 2026-01-27 RESOLVED #9083: close this issue, no change
 - 2026-02-16 opened #13501: [css-background-4] Set independent background for overscroll on any side
 - 2026-06-11 opened #14035: [Req] backdrop occlusion.

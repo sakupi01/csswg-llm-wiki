@@ -236,9 +236,12 @@
 - 2022-07-06 opened #7463: [selectors-4] Disallow pseudo-elements inside :has()
 - 2022-07-07 opened #7474: [selectors] ::shadow no longer exists?
 - 2022-07-27 RESOLVED #7463: Disallow all current pseudo-elements inside of :has(), allow future pseudo-elements to define that they are valid if useful/possible.
+- 2022-08-24 RESOLVED #7319: start work on an `:open` as a pseudo class, which matches things that are in an "open" state. We need to define that state carefully, with a general conceptual definition that can be used by HTML for the specifics per-element.
+- 2022-08-24 RESOLVED #7319: start work on an `:open` pseudo class, which matches things that are in an "open" state. We need to define that state carefully, with a general conceptual definition that can be used by HTML for the specifics per-element.
 - 2022-09-02 opened #7676: [selectors] The forgiving nature of :has breaks jQuery when used with a complex :has selector
 - 2022-09-24 opened #7787: [selectors] Refer to DOM "document element" in :root's definition 
 - 2022-10-12 RESOLVED #5745: Accept to make & valid everywhere, maps to :scope where not otherwise defined
+- 2022-10-12 RESOLVED #6915: `lang=und` matches :lang("*")`, `lang=""` doesn't match any `:lang()`
 - 2022-10-12 RESOLVED #7319: Accept :open and :closed with definitions as proposed by TabAtkins
 - 2022-11-03 opened #8007: [css-selectors] Which contexts define a scoping root?
 - 2022-11-03 opened #8010: [css-selectors] Allow relative selectors everywhere
@@ -276,6 +279,9 @@
 - 2023-03-22 opened #8632: [css-selectors] Be able to select for partial attribute names
 - 2023-03-23 opened #8637: [selectors-4] Introduce `:popover-open` pseudo class
 - 2023-03-29 RESOLVED #8637: Add :popover-open pseudoclass, undefined popoverness from :open
+- 2023-04-19 RESOLVED #8174: specify `@initial` as defined in this issue and open another issue about the duplication problems with entry and exit styles
+- 2023-04-19 RESOLVED #8174: start with `@starting-style`
+- 2023-05-24 RESOLVED #8174: rename `@initial` to `@starting-style`
 - 2023-05-24 opened #8871: [selectors-4] Consider respecting border-bottom-style on the :visited selector
 - 2023-06-02 opened #8909: Serialize a simple selector seems incomplete
 - 2023-06-03 opened #8911: Universal selector is described incorrectly
@@ -346,10 +352,13 @@
 - 2025-01-22 RESOLVED #11151: UAs MUST preserve user privacy
 - 2025-01-29 RESOLVED #10298: Make :past and :future invalid for now, to reserve them for future use
 - 2025-01-29 RESOLVED #10298: Make the functional form of :current also invalid for highlight pseudos
+- 2025-01-29 RESOLVED #11000: Have  have `:scope` resolve to `:host`  rather than `:root` in shadow tree
 - 2025-02-04 opened #11647: `display: contents` with `nth-child` and other pseudo-classes
 - 2025-03-02 opened #11808: [selectors-4] Disallow empty `:is()`/`:where()`?
 - 2025-03-06 opened #11859: [selectors][css-scoping] Should :host(:has()) match?
 - 2025-04-01 RESOLVED #11185: An element matching :hover, :active, :focus-within, or :target-within also causes all flat tree ancestors up to the first top layer element or the root element, inclusive, to match that pseudo-class.
+- 2025-04-03 RESOLVED #10296: Add `:heading()` that accepts a comma-separated list of an+b expressions
+- 2025-04-03 RESOLVED #10296: `:heading()` has the expected class-level specificity
 - 2025-04-26 opened #12127: [selectors] :focus-visible matching heuristic unclear for non-interactive elements with tabindex="-1"
 - 2025-08-11 opened #12590: Write up rationale for why selectors in values are discouraged
 - 2025-09-02 opened #12713: [css-2025][selectors-4] Add Selectors 4 to Rough Interop
@@ -375,6 +384,7 @@
 - 2026-03-12 opened #13646: [selectors-4] `language-range` is missing its definition
 - 2026-03-12 opened #13647: [selectors-4] language tag note nits
 - 2026-03-25 opened #13720: [selectors-4] Clarify that :picture-in-picture applies to element in opener window
+- 2026-04-09 opened #13784: [css-image-animation] Conveying role, states, properties to platform AAPIs
 - 2026-05-20 opened #13947: [selectors-4] Changes since Level 3 wildly out of date
 - 2026-07-13 opened #14174: [css-selectors][css-values] Proposal: A Unified Data API for CSS via the `:data()` pseudo-class and `data()` function
 - 2026-07-25 opened #14228: [selectors] Partial attribute name selectors

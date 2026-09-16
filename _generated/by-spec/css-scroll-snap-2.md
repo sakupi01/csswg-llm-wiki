@@ -41,6 +41,7 @@
 - 2024-10-26 opened #11096: [css-scroll-snap]  scroll snap animation
 - 2024-11-08 opened #11173: [css-scroll-snap-2] scroll-start-target: auto doesn't match general meaning of auto
 - 2024-12-11 RESOLVED #10838: scrollsnapchanging uses the targeted location for targeted scrolls, but does not predict the destination of momentum scrolling (uses the current scroll location instead)
+- 2024-12-11 RESOLVED #11173: `scroll-initial-target: none | nearest`
 - 2025-02-17 opened #11731: [css-overflow-5][css-scroll-snap-2] Allow scroll-buttons to scroll to next/previous snap-point
 - 2025-02-17 opened #11732: [css-scroll-snap-2] Expose location of snap points to javascript
 - 2025-04-03 RESOLVED #10913: Close as fixed; dup of earlier issue

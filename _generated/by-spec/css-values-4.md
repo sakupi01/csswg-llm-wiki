@@ -114,6 +114,7 @@
 - 2019-11-16 opened #4513: [css-values-4] Serialization steps for min(1px + 1%) result in extra parentheses
 - 2019-11-18 opened #4514: [css-values] Contradictory statements regarding allowability of ∞
 - 2019-11-20 RESOLVED #4399: All math functions aggressively simplify their calculations as far as possible for a given value-computation stage.
+- 2019-11-20 RESOLVED #4399: If numeric simplification of a math function results in a single value, the serialization is that value wrapped in `calc()`
 - 2019-12-01 opened #4550: [css-values-4] Specify simplification of min() and max() more explicitly
 - 2019-12-02 opened #4551: [css-values-4] Specify that calculation trees explicitly work in double precision
 - 2019-12-02 opened #4552: [css-values-4] Explicitly undefine CSS numeric precision in general
@@ -345,6 +346,7 @@
 - 2024-09-12 opened #10880: [css-animations] How should relative-length values be interpreted when used in the <keyframe-selector> production in the @keyframes prelude?
 - 2024-09-20 opened #10928: [css-inline]  `text-box-edge: ideographic` and `ideographic-ink` should use ideographic fonts in the cascade list
 - 2024-09-25 opened #10943: [css-values-4] Serialization of Negate and Invert nodes seems incorrect
+- 2024-09-26 RESOLVED #10064: If you have an else clause, you must say `else` explicitly
 - 2024-09-26 RESOLVED #10064: We will use if(cond(): foo; else: bar)
 - 2024-10-09 opened #11012: [css-values-4] Make mod/rem/log return a consistent type
 - 2024-10-15 opened #11040: [css-values-4] `<integer>` grammar terms and `<number>`-returning functions
@@ -394,9 +396,11 @@
 - 2026-06-30 opened #14117: [css-values][svg] Should the `width`/`height` attr of `<svg>` require literal for determining natural sizes?
 - 2026-07-13 opened #14174: [css-selectors][css-values] Proposal: A Unified Data API for CSS via the `:data()` pseudo-class and `data()` function
 - 2026-07-15 RESOLVED #13500: Spec is right, fix tests, add some tests for the animated value
+- 2026-07-29 RESOLVED #10809: remove the `1 * ...` test, and fix the calc-in-MQ test
 - 2026-08-09 opened #14300: [css-values] Percentages and unit arithmetic
 - 2026-08-11 opened #14306: [css-values][css-fonts] Make the set of properties referred to as "font-*" more clear
 - 2026-08-18 opened #14341: [css-values-4] Remove step 1 of serialize a math function?
 - 2026-08-23 opened #14376: [css-values-4][css-inline-3] Clarify how `lh` values of font-affecting properties are computed
 - 2026-08-23 opened #14377: [css-values] What counts as a context that allows `<percentage>`?
 - 2026-08-24 opened #14381: Proposal: Add a New Visual Angle in Degrees (vad) Unit for Perceptual Sizing in CSS.
+- 2026-09-13 opened #14482: Value definitions should at least point to Values 4, perhaps 5?

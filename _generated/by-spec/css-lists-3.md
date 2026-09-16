@@ -134,4 +134,5 @@
 - 2026-01-12 opened #13335: [css-text-decor][css-lists][css-counter-styles] `text-emphasis` is similar to (symbolic) counters
 - 2026-04-01 opened #13753: [css-lists-3] [css-values-5] Potential issue with `toggle()` and `ul` in css-lists-3 Appendix A
 - 2026-04-02 RESOLVED #6800: Automatically negate the increment on reversed counters.
+- 2026-05-27 RESOLVED #5795: Update both current specs and CSS2 to affirm that `none` is an invalid value for counter-style-name
 - 2026-07-15 opened #14187: [css-lists] Can replaced elements or widgets be list items?

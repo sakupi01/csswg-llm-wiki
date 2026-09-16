@@ -48,6 +48,7 @@
 - 2024-09-26 RESOLVED #7767: Accept what is in the draft
 - 2024-11-01 opened #11131: viewport segment pseudo element
 - 2025-01-29 opened #11592: [css-viewport] zoom syntax double bar when should be single bar
+- 2025-01-31 RESOLVED #10872: Make `zoom` continuously interpolatable unless implementation difficulties come up
 - 2025-03-18 opened #11957: [css-viewport] Behavior of `segments` when there is only 1 segment
 - 2025-04-01 opened #12034: [css-env-1][css-viewport-1] "viewport segments" should be a definition
 - 2025-04-28 RESOLVED #11957: Return an array with just one segment when the device is used flat or any other non-foldable device.

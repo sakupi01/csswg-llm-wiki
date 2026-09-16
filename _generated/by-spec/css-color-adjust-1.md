@@ -121,6 +121,7 @@
 - 2025-03-04 opened #11824: [css-color-adjust-1] Forced Colors Mode Webdriver Emulation
 - 2025-03-06 opened #11857: [css-color-adjust-1] Forced Colors Mode support for gap decorations
 - 2025-04-01 RESOLVED #11824: Accept the PR, check with webdriver folks for approval
+- 2025-04-03 RESOLVED #11857: add `rule-color` to and remove `column-rule-color` from the list in the forced colors spec
 - 2025-04-03 RESOLVED #11857: add explicit text to the forced colors spec to make it clear sshorthands also apply to their longhands
 - 2025-04-03 RESOLVED #11857: put the list of affected properties in a note saying at the time of note-writing, here were the affected properties
 - 2025-04-30 opened #12135: [css-color-adjust-1] `ForcedColorsModeAutomationTheme` should not be a Web IDL enum

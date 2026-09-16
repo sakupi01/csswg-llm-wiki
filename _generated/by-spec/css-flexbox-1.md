@@ -176,6 +176,7 @@
 - 2022-09-15 RESOLVED #7641: (and vice-versa for the last baseline)
 - 2022-09-15 RESOLVED #7641: when taking the baseline of a row of item, we check a shared first baseline, then a shared last baseline, then the first baseline of the first item
 - 2022-09-15 RESOLVED #7660: baselines of a scrollable container should be clamped to the scrollable area
+- 2022-09-15 RESOLVED #7714: in the UA style sheet, we keep `svg { overflow: hidden; }`
 - 2022-09-15 RESOLVED #7714: in the flex spec, for auto min sizing, instead of saying scroll container, we read the computed overflow property value
 - 2022-09-15 RESOLVED #7714: overflow:hidden on replaced elements gets coerced to overflow:clip at paint time
 - 2022-09-22 opened #7774: [css-flexbox-1] Flex container baselines with "flex-wrap: wrap-reverse" present.
@@ -225,6 +226,7 @@
 - 2025-05-12 opened #12182: Should `min-content` really include the width/height of `flex-basis: 0%` scrollable items?
 - 2025-05-21 opened #12222: [css-flexbox-1] Clamp "hypothetical main size" to be non-negative?
 - 2025-06-18 RESOLVED #11784: In a flex container's cross axis, stretch sizing keyword resolves initially against the container, then re-resolves against the line once the line's size is determined.
+- 2025-06-25 RESOLVED #11641: Accept the PR, `stretch` falls back to `flex-start`, not `safe flex-start`
 - 2025-08-24 opened #12650: [css-flexbox] Should automatic minimum size check scrollability in the main axis or both?
 - 2025-10-06 RESOLVED #11435: Publish an updated CRD of css-flexbox
 - 2025-10-17 opened #12969: [css-flexbox] Web-compatible Intrinsic Sizing Algorithm

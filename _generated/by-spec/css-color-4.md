@@ -134,6 +134,7 @@
 - 2020-01-15 RESOLVED #4535: Remove Hyphen from rec2020 in all context; everything else stays as is
 - 2020-01-19 opened #4685: [css-color-4] colorspace profiles, hexadecimal roundoff and round-tripping
 - 2020-01-23 RESOLVED #480: color() functions, if they have a choice between percentage and number, they should use number
+- 2020-01-23 RESOLVED #480: the `color(lab ...)` function, like the rest of the color() values, are in the 0-1 (or 0% - 100%) range. And they serialize the same as other color() values (as a 0-1 number).
 - 2020-01-23 RESOLVED #982: move serialization into color-4
 - 2020-01-24 RESOLVED #4608: use "canvastext" as the initial value of color
 - 2020-01-26 opened #4703: [css-color-4] Lch limits on hue value are a bit too limiting
@@ -355,6 +356,7 @@
 - 2024-04-15 opened #10211: [css-color-4] Clarify that `none` is preserved in calculations
 - 2024-04-17 opened #10226: [css-color-4] Gamut mapping pseudocode is confusing
 - 2024-04-24 RESOLVED #10211: None is preserved in calculations involving css math functions
+- 2024-04-24 RESOLVED #10211: When interpolating between two none-containing values, the result is a calc-mix() expression preserving the `none` keywords in both values
 - 2024-04-26 opened #10254: [css-color] Clarification needed on how missing alpha components flow through relative color syntax for hsl/hwb
 - 2024-04-29 opened #10269: [css-color] is it practical to help building and grounds maintenance occupations match paint color?
 - 2024-05-10 opened #10305: [css-color-5] Declared value serializations of absolute and relative colors
@@ -435,3 +437,5 @@
 - 2026-08-14 opened #14329: [css-color-4] [css-ui] `accent-color: AccentColor` when parent's `accent-color` is `auto`?
 - 2026-08-19 opened #14347: [css-color-4] rewrite `13. Color interpolation` to be more explicit about all the steps and effects
 - 2026-09-03 opened #14437: [css-color-4][css-color-adjust-1] Clarify the effect of forced colors mode on system colors
+- 2026-09-10 opened #14472: [css-color-4] § 12: at what stage are colors compared, and when are two <color-space>s the same?
+- 2026-09-13 opened #14483: [filter-effects-1/css-color-5/css-pseudo] Visited Color Propagation Inconsistency

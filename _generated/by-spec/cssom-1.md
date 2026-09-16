@@ -183,6 +183,7 @@
 - 2020-01-22 RESOLVED #4135: Apply the rule for computed value list length of background properties to all other similar list repeating properties like masking, transitions, animations.
 - 2020-01-22 RESOLVED #4135: Have the computed value of the background / image layer properties match the number of items in the specified value
 - 2020-01-23 RESOLVED #480: color() functions, if they have a choice between percentage and number, they should use number
+- 2020-01-23 RESOLVED #480: the `color(lab ...)` function, like the rest of the color() values, are in the 0-1 (or 0% - 100%) range. And they serialize the same as other color() values (as a 0-1 number).
 - 2020-01-23 RESOLVED #982: move serialization into color-4
 - 2020-02-19 RESOLVED #3749: Line-height returns 'normal' in gCS for normal and all other give absolute length
 - 2020-02-24 opened #4803: [css-om] logical properties api?
@@ -279,6 +280,7 @@
 - 2023-02-15 opened #8453: [css-backgrounds] [css-masking] [cssom] serialization of the computed value for `background` and `mask`
 - 2023-02-24 opened #8496: [css-om][css-backgrounds] Serialization of `background: none`
 - 2023-03-07 opened #8538: [cssom] Serialize numbers using scientific notation?
+- 2023-03-08 RESOLVED #8496: Move color at the end of the final-bg-layer grammar, to make it serialize as `none`
 - 2023-03-17 opened #8608: [cssom-1] [css-cascade] CSSImportRule.sheet not being null conflicts with @import supports()
 - 2023-04-05 RESOLVED #8350: Redefine CSSRuleList as ObservableArray
 - 2023-04-26 RESOLVED #8538: Accept proposal to match JS scinot serialization triggers, other than 6-digit decimal truncation rule

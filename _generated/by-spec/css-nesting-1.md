@@ -85,6 +85,7 @@
 - 2023-01-18 opened #8329: [css-nesting-1] Name, terminology, and nesting selector misnomers are footguns (solution proposed)
 - 2023-01-22 opened #8349: [css-nesting] Another problem with mixing declarations and rules - error recovery
 - 2023-01-23 opened #8350: [css-nesting-1] Consider using ObservableArray<CSSRule> instead of CSSRuleList
+- 2023-01-25 RESOLVED #7850: properties in a conditional rule get auto-wrapped in `& { ... }`
 - 2023-01-25 RESOLVED #7972: Option 2
 - 2023-01-25 RESOLVED #7972: Relative-ness is decided based on & appearing *anywhere* in the selector, even nested inside anything else
 - 2023-01-25 opened #8356: [selectors] consider preserving invalid selectors in :is() and :where()

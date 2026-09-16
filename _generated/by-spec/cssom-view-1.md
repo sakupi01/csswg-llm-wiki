@@ -245,6 +245,7 @@
 - 2024-11-07 opened #11164: [cssom-view] Scroll steps don't match implementations
 - 2024-12-03 opened #11319: [cssom-view] Wanted: getBoundingClientRect() with logical property values
 - 2025-01-20 opened #11541: [cssom-view] offsetLeft, offsetTop, offsetWidth, offsetHeight, and fragmentation
+- 2025-01-22 RESOLVED #9452: enum ScrollIntoViewContainer { "all", "nearest" }, defaulting to `all`, expanding to element in the future if needed
 - 2025-01-29 RESOLVED #10992: add shadowRoots param to ePFP() to match caretPFP()
 - 2025-01-29 opened #11605: [cssom-view] Possible extensions to elementFromPoint
 - 2025-02-18 opened #11736: [scroll-animations] `ScrollTimeline` constructor prose about default `source` should not link to the `scrollingElement` getter but rather a procedure to determine the scrolling element

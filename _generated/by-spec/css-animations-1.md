@@ -82,3 +82,4 @@
 - 2026-03-31 RESOLVED #13269: Update the animations spec with an example
 - 2026-04-14 opened #13805: [css-animations-1] Editors draft missing link to 2023 working draft
 - 2026-06-28 opened #14096: [css-animations] How is a list of <easing-function> be handled when used for a keyframe specific animation-timing-function
+- 2026-09-10 opened #14475: [css-animations] Setting `CSSKeyframesRule.name` to empty string

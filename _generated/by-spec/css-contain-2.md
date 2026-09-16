@@ -130,6 +130,7 @@
 - 2024-03-06 RESOLVED #9349: Layout containment contains anchor names and size containment/paint containment do not
 - 2024-03-07 RESOLVED #9803: if a c-v:auto element is skipping its contents but has not yet determined its visiblity, don't fire the contentvisibilityautostatechange event until you do know the visibility
 - 2024-03-21 opened #10116: [css-images-4] Should `contain-intrinsic-size` affect `object-fit`?
+- 2024-04-03 RESOLVED #10116: `contain` removes the natural aspect ratio / width / height only for the purposes of sizing and layout of the box (and object-fit is therefore not affected)
 - 2024-05-17 opened #10347: [css-contain] content-visibility: auto and SVG-as-image
 - 2024-05-31 opened #10382: [css-contain] Describe generalized goals containment
 - 2024-06-12 opened #10433: [css-containment] Reorganizing the Containment specs

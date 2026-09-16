@@ -15,6 +15,7 @@
 - 2021-10-06 RESOLVED #6205: Add a matchContainer method as proposed in issue. Keep issue open to decide if need new observer or if we can reuse the existing
 - 2021-12-15 opened #6889: [css-conditional] republish 3,4,5
 - 2021-12-28 opened #6917: [css-conditional-5] Add `container()` as a leaf of the @when rule
+- 2022-01-19 RESOLVED #2463: Add an `at-rule` function with syntax `at-rule(@keyword)` or `at-rule(@keyword; descriptor: value)`
 - 2022-01-19 RESOLVED #3936: Close no-change
 - 2022-01-19 opened #6966: [css-conditional-5] Add ability to test for at-rule preludes
 - 2022-01-25 opened #6985: [css-scroll-snap] Proposing `:snapped`: exposing private snapped item browser state for developers and designers
@@ -60,6 +61,8 @@
 - 2024-06-26 RESOLVED #10268: use chrome/firefox behavior
 - 2024-06-28 opened #10509: [css-conditional] Element queries
 - 2024-07-08 opened #10544: [css-contain-2][css-conditional-5] Weaker form of layout containment for container queries.
+- 2024-07-17 RESOLVED #9875: call the keyword `align-content-on-display-block`
+- 2024-07-17 RESOLVED #9875: use `named-feature()` as the function name
 - 2024-07-24 RESOLVED #10544: container-type does not force layout containment, but does force an independent formatting context
 - 2024-08-15 opened #10744: Allow applying style rules to the container itself (especially with style querries)
 - 2024-08-26 opened #10784: [css-conditional] @container scroll-state(snapped) and snapchanged vs snapchanging
@@ -118,6 +121,7 @@
 - 2025-08-20 RESOLVED #12090: Container names are not tree-scoped
 - 2025-08-20 RESOLVED #12622: Add Lea as editor of that spec
 - 2025-08-20 RESOLVED #12622: Draft this into the same spec as @custom-media
+- 2025-08-20 RESOLVED #6966: Cut down the at-rule test to just `at-rule(@foo)` (no descriptor testing)
 - 2025-08-20 opened #12627: [css-conditional][css-mixins][css-cascade] How should global at-rules work inside of "contextual conditionals" like `@container`?
 - 2025-09-10 RESOLVED #12623: Change 'direction' to 'scrolled', discuss keywords later
 - 2025-09-11 opened #12774: [css-2025][css-conditional-5] Add `font-tech()` and `font-format()` to Safe to Release exceptions
@@ -146,10 +150,12 @@
 - 2026-03-30 opened #13744: [css-conditional-5][css-env-1] Evaluation of support of custom environment variables
 - 2026-03-31 RESOLVED #13157: If in same color space, compare components. 2. If in different color space and there's a "none", not equal. 3. If in different color space and no "none"s, convert to oklab and do epsilon comparison
 - 2026-03-31 RESOLVED #13157: Whatever we resolve for comparing colors is also used to determine whether a transition starts
+- 2026-03-31 RESOLVED #13157: When comparing colors, `none` is only equal to `none`
 - 2026-03-31 RESOLVED #13157: style() and transitions use the same color comparison method
 - 2026-04-02 RESOLVED #13729: Start working on spec for grid and tables in css-conditional-5
 - 2026-04-10 opened #13787: [css-conditional-5] Anchor fragment scrolls should update scroll-state(scrolled) direction to stay consistent with scroll-padding
 - 2026-04-27 RESOLVED #13157: Define ε as `0.00001` for `oklab
+- 2026-05-27 RESOLVED #13677: add feature detection keyword `single-axis-scroll-container` for this case
 - 2026-05-27 RESOLVED #13678: Add an anchor-position-follows-transforms keyword to feature-detect whether anchor positioning follows transforms
 - 2026-05-27 opened #13975: [css-conditional] Allow feature detection of style queries
 - 2026-06-19 opened #14071: [mediaqueries-5][css-conditional-5] `@custom-media` and `@supports-condition`

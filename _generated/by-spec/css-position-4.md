@@ -16,6 +16,7 @@
 - 2022-12-06 opened #8189: [css-animations-2, css-transitions-2] Entry and exit animations for top-layer elements
 - 2022-12-16 opened #8240: [selectors] :visited and ::backdrop
 - 2023-03-15 opened #8588: [css-position-4] Ability to escape containment of other positioned elements
+- 2023-03-22 RESOLVED #8189: include `overlay` property with values of `auto` and `none` to position-4 with a note about concerns over extensibility
 - 2023-03-24 opened #8642: [css2][css-position-4] When to paint in-band outlines seems wrong (Appendix E)
 - 2023-04-14 opened #8724: [css-anchor-position-1] Using a specific box (not your CB) to determine position-fallback
 - 2023-04-19 opened #8730: [css-position-4] Is the overlay property ready to ship?

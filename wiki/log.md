@@ -47,3 +47,8 @@ Append-only. One line per operation: `## [YYYY-MM-DD] <kind> | <summary>`.
 ## [2026-09-10] update | CI weekly sync (see Actions run summary)
 ## [2026-08-27] ingest | masonry: documented the unresolved shape-vs-flow orientation split (#12803), `item-flow` abandonment (#11480/#12804), settled `normal` default, and pending grid-lanes shorthand; refreshed catalog and resolution count
 ## [2026-08-27] wiki | multi-repo schema: open-ui full + whatwg/html selective mirrors, repo-qualified indexes, meetings (date, group), optional Current status feature section, qualified cross-repo link_refs, CI sync steps
+## [2026-08-27] update | mirrored openui/open-ui (816 issues, 207 RESOLVED items, 169 CG meeting dates) + whatwg/html selective set (128 form-controls issues); rebuilt repo-aware indexes
+## [2026-08-28] wiki | RESOLVED extraction: accept double-backtick-wrapped bot resolutions (adds #14172 F2F sizing resolution; csswg RESOLVED items 2701→2702); fixed in build_indexes + sync_issues
+## [2026-08-28] ingest | customizable-select: created feature page (78 css-forms-1 + 74 open-ui select resolutions; 9 key debates across openui/whatwg/csswg), form-controls family hub, css-forms-1 spec page; +19 people.yml entries (Open UI / WHATWG cohort)
+## [2026-08-28] summarise | Open UI CG telecons 2021-2026: 113 meeting pages (every form-control agenda day) with per-topic summaries + verbatim resolutions; R1/links/formatting machine-verified; +8 people.yml entries and nick aliases
+## [2026-09-16] update | sync 2026-08-27→2026-09-16: csswg-drafts 320 issues/495 comments, open-ui incremental, whatwg/html selective 128, 7 spec version updates (css-color-4/5, css-color-hdr-1, css-fonts-4/5, css-sizing-3/4); 18 new resolutions (14 csswg, 4 openui); indexes rebuilt

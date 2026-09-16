@@ -26,6 +26,7 @@
 - 2019-05-27 opened #3981: Event listener for client rectangle changes
 - 2019-06-04 opened #4005: [resize-observer-1] physical, rather than logical, dimensions – for images
 - 2019-06-13 opened #4032: [resize-observer] svg interaction
+- 2019-07-10 RESOLVED #4032: svg elements generating css layout boxes are included as part of resize observer and resize observer rectangles with a definition of `svg:root, *:not(svg|*) > svg, svg|foreignObject > svg { /* SVG elements with CSS layout box */}
 - 2019-07-24 opened #4150: [resize-observer] remove SVG specific text
 - 2019-08-22 opened #4234: [web-animations][css-animations][cssom-view][css-font-loading][resize-observer] Update spec to new IDL syntax for optional dictionaries
 - 2019-08-29 opened #4253: [css-animations][web-animations][css-font-loading][cssom-view][css-transitions][resize-observer] Update to constructor operations

@@ -37,6 +37,7 @@
 - 2025-09-15 opened #12802: Proposal: make a consistent "list" syntax in CSS, and list of lists syntax in CSS.
 - 2025-09-16 opened #12806: [css-values-5] A way to dynamically construct function calls (`<dashed-function>` etc)
 - 2025-10-21 opened #12987: [css-mixins-1][css-values-5] The inherit() function in custom functions
+- 2025-11-14 RESOLVED #12987: in `result: inherit();`, the inherit() is treated the same as a plain `inherit` (passed thru and only resolved on the actual element)
 - 2025-11-27 opened #13167: [css-mixins-1][css-extensions-1] Improve grammars of at-rule preludes
 - 2026-01-11 opened #13328: [css-mixin-1] Example 13 is confusing by using a fictitous `@nest` rule
 - 2026-01-25 opened #13394: [css-mixins] FunctionParameter dictionary should not have any required members

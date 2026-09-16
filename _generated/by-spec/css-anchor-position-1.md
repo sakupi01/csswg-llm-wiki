@@ -63,6 +63,7 @@
 - 2023-09-13 opened #9349: [css-contain][css-anchor-position-1] Should size/layout containment also contain anchor names?
 - 2023-09-14 opened #9356: [css-anchor-position-1][css-display-4] Anchor Positioning and Display Order
 - 2023-09-15 RESOLVED #7758: we add something to deal with clipping in this context
+- 2023-09-15 RESOLVED #9045: Add an `anchor-scope` property
 - 2023-09-15 RESOLVED #9149: !important must win and the issue of putting @try properties in their place in the cascade will be investigated
 - 2023-09-15 RESOLVED #9268: this issue is closed
 - 2023-09-15 opened #9362: [css-anchor-positioning-1] implied auto try blocks are confusing
@@ -78,6 +79,7 @@
 - 2024-02-13 RESOLVED #8200: If there's no previously successful fallback, we'll use the base styles with no fallback rules applied
 - 2024-02-13 RESOLVED #8200: Modulo timing details and things that should cause us to forget, the last successful fallback position is used when all options fail
 - 2024-02-13 RESOLVED #9195: Remove border/padding.
+- 2024-02-13 RESOLVED #9196: adopt `position-try-*` with addition of inset-area into pos-try-opts
 - 2024-02-13 opened #9944: [css-anchor-position-1] Is the "more verbose" syntax possible?
 - 2024-02-13 opened #9946: [css-anchor-position-1] Document the reason for excluding base styles from `position-try-order`
 - 2024-02-13 opened #9950: [css-anchor-position] Add 'anchor-default' to the list of allowed @position-try properties
@@ -291,6 +293,7 @@
 - 2026-01-21 RESOLVED #13067: add a new initial normal value that behaves as described in the comment
 - 2026-01-28 RESOLVED #13364: name lookup for timeline-name, anchor-name, etc. walks up the ancestor chain (up to stopping point) first, then looks for last-defined within scope
 - 2026-02-09 opened #13468: [css-position-3] Should there be a special fixedpos ICB?
+- 2026-02-18 RESOLVED #8913: Add `position-anchor: match-parent`
 - 2026-02-18 opened #13514: [css-anchor-position] Is it intended that `(justify|align)-items: anchor-center` doesn't apply to anchored abspos boxes with `(justify|align)-items: auto`?
 - 2026-02-25 opened #13558: Allow anchor-size() as a value for scroll-padding-*
 - 2026-02-26 opened #13567: [css-anchor-position-1] Clarify the nature of `@position-try` tree-scoped name

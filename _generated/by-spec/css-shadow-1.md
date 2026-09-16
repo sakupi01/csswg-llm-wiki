@@ -2,6 +2,9 @@
 # css-shadow-1 — chronological digest
 
 - 2021-06-09 opened #6370: [css-scoping] Publish an updated WD
+- 2024-10-04 opened #11000: [css-scoping][selectors] `:root` should resolve to `:host` in shadow trees
+- 2024-10-07 opened #11007: [css-scoping] `:has-shadow` pseudo-class
+- 2025-01-29 RESOLVED #11000: Have  have `:scope` resolve to `:host`  rather than `:root` in shadow tree
 - 2026-01-12 opened #13333: [css-shadow-1][editorial] Add a note for the merge and renaming
 - 2026-01-16 opened #13360: [css-shadow] Confusing spec naming
 - 2026-02-18 opened #13523: [css-shadow-1] Move definitions for `part` and `exportparts` attributes to host language specs

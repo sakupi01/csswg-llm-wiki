@@ -69,7 +69,9 @@ SENTINEL_RE = re.compile(
     r"^<!-- comment id=(\d+) author=(\S+) created=(\S+) url=(\S+?)( resolution=true)? -->$",
     re.M,
 )
-RESOLVED_LINE_RE = re.compile(r"^\s*(?:[*-]\s*)?`?(?:RESOLVED|RESOLUTION):\s*(.+?)`?\s*$", re.M)
+# up to two backticks: the bot wraps resolutions in `…`, or ``…`` when the
+# resolution text itself contains inline code (observed 2026-08, #14172)
+RESOLVED_LINE_RE = re.compile(r"^\s*(?:[*-]\s*)?`{0,2}(?:RESOLVED|RESOLUTION):\s*(.+?)`{0,2}\s*$", re.M)
 IRC_NICK_RE = re.compile(r"^\s*<([A-Za-z_][A-Za-z0-9_.\-\[\]|]{1,30})>\s", re.M)
 HTML_TAGS = {"details", "summary", "p", "br", "b", "i", "hr", "ins", "del", "img", "a"}
 SPEC_LABEL_RE = re.compile(r"^[a-z][a-z0-9]*(-[a-z0-9]+)*-\d+$")

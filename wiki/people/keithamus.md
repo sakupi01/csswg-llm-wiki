@@ -4,7 +4,7 @@ slug: keithamus
 kind: person
 github: "keithamus"
 irc_nicks: ["keithamus"]
-affiliation: "GitHub (HTML/WHATWG contributor; not in CSSWG participants snapshot)"
+affiliation: "GitHub"
 generated_by: llm
 ---
 
@@ -12,15 +12,15 @@ generated_by: llm
 
 - GitHub: [@keithamus](https://github.com/keithamus)
 - IRC nicks: `keithamus`
-- Affiliation: GitHub (HTML/WHATWG contributor; not in CSSWG participants snapshot) *(verify against `raw/data/w3c-api/group/css/participants.json` before citing)*
+- Affiliation: GitHub *(verify against `raw/data/w3c-api/group/css/participants.json` before citing)*
 
 ## Roles
 
-- ":heading() / headingoffset proposer"
+- Open UI participant
 
 ## Activity in the mirror
 
-Issues authored: 32 / comments: 152 / IRC minute lines: 0
+Issues authored: 68 / comments: 476 / IRC minute lines: 0
 (from `_generated/people-activity.jsonl`)
 
 ---

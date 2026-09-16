@@ -18,6 +18,7 @@ Entry point for every query. One line per page; update on every ingest.
 | [Container Queries](features/container-queries.md) | shipped | css-conditional-5 | Query an ancestor container's size/style/scroll-state (`@container`, `container-type`, `cq*` units); solved the decade-old circularity by querying a contained ancestor; `@container` picks its container from the query (#6644); moved contain-3→conditional-5 (#10433) |
 | [The flex Shorthand & its Longhands](features/flex-shorthand.md) | shipped | css-flexbox-1 | Why the spec says "use `flex`, not the longhands": the shorthand predates its longhands (split at Hamburg 2012), its omitted-component "magic" defaults were debated and kept, and the omitted-basis `0` vs `0%` gap (#5742) is still open |
 | [Text Fitting (`text-fit`)](features/text-fit.md) | in-discussion | css-text-5 | Fit wrapped text to line width by growing or shrinking its used font size; separate `text-grow`/`text-shrink` prototype APIs merged into one provisional `text-fit`, while browser-zoom safety and the proposed 200% default limit remain unresolved |
+| [Customizable `<select>`](features/customizable-select.md) | shipping | css-forms-1 | Fully stylable `<select>` via `appearance: base-select`, `<selectedcontent>`, `::picker(select)`; the Open UI → WHATWG → CSSWG relay that abandoned `<selectlist>` to retrofit `<select>` itself; Chrome 135 + Safari 27 |
 
 ## Specs
 
@@ -34,14 +35,20 @@ Entry point for every query. One line per page; update on every ingest.
 | [css-conditional-5](specs/css-conditional-5.md) | WD | container-queries |
 | [css-flexbox-1](specs/css-flexbox-1.md) | CRD | flex-shorthand |
 | [css-text-5](specs/css-text-5.md) | ED | text-fit |
+| [css-forms-1](specs/css-forms-1.md) | FPWD | customizable-select |
 
 ## Families
 
 | Family | Members | Theme |
 |---|---|---|
-| *(none yet)* | | |
+| [Form Controls Styling](families/form-controls.md) | customizable-select | Making native form controls fully stylable: `appearance: base`/`base-select`, part pseudo-elements, the Open UI / WHATWG / CSSWG venue pipeline |
 
 ## Recent meetings
+
+Open UI CG telecons (group: openui) are covered for every form-control agenda day,
+2021-2026 — 113 pages under `wiki/meetings/<year>/<date>-openui-telecon.md`, generated
+from the css-meeting-bot records mirrored in `raw/data/github/open-ui/`. CSSWG telecons
+below.
 
 | Date | Type | Summary |
 |---|---|---|
@@ -79,5 +86,6 @@ monthly = deeper arcs/contention (`/monthly-digest`).
 ## Not yet ingested
 
 Pilot order complete. Next candidates come from `/triage` — recent leaders without a page
-include `scroll-animations` (done), `css-align-3` (align-content baseline unship), `css-forms-1`
-(select/`::picker`), `css-values-5` (`random()`, `sibling-index()`). They land here before pages.
+include `css-align-3` (align-content baseline unship) and `css-values-5` (`random()`,
+`sibling-index()`). Form-controls family growth candidates: `appearance-base`,
+`control-value`, `slider-pseudos`, `field-sizing`, `accent-color`. They land here before pages.

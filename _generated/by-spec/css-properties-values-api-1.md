@@ -37,4 +37,5 @@
 - 2026-06-12 opened #14041: [cssom-1] Should `CSS.*()` register state in the relevant global object?
 - 2026-07-24 opened #14225: [css-properties-values-api] `@property` should be able to define multiple properties with the same descriptors by just comma-separating them
 - 2026-07-25 opened #14227: [css-properties-values] CSSOM for multi-name and shorthand `@property`
+- 2026-08-06 RESOLVED #14227: if single @property has multiple names, it will be represented in CSSOM as a single object with a `names` array and not expand into multiple objects and return empty string for the `name` in that case
 - 2026-09-01 opened #14425: [css-properties-values-api] Descriptors should support fallbacks

@@ -27,6 +27,7 @@
 - 2025-11-07 opened #13077: [css-mixins-1] Consider a way for mixins to be applied with the style attribute
 - 2025-11-14 RESOLVED #12946: always allow passing @contents block
 - 2025-11-14 RESOLVED #12946: remove @contents block from the args list
+- 2025-11-14 RESOLVED #12987: in `result: inherit();`, the inherit() is treated the same as a plain `inherit` (passed thru and only resolved on the actual element)
 - 2025-11-14 opened #13107: [css-mixins] Syntax to alias mixins
 - 2025-11-17 opened #13113: [css-mixins-1] Scoped mixins
 - 2025-11-22 opened #13138: [css-mixins-1] Should we be more explicit about the result? (@result)

@@ -60,6 +60,7 @@
 - 2019-02-10 opened #3641: [css-multicol] Should we refer to definition of `column-gap` in Box Alignment?
 - 2019-02-17 opened #3654: [css-multicol] Introduction refers to tables for layout
 - 2019-02-28 RESOLVED #1072: Clarify the spec using the notion that this is an out of flow that leaves a forced break behind
+- 2019-02-28 RESOLVED #3224: 1. update the spec to return to the behaviour as implemented in Blink/WebKit/Edge that `column-fill: auto` balances an unconstrained container, and does not balance a constrained container
 - 2019-02-28 RESOLVED #3224: include min and max as constraints
 - 2019-03-01 opened #3700: [css-multicol] Improve column-fill example 26 and example 27
 - 2019-05-30 opened #3988: [css-multicol] column-gap <length-percentage> remove at-risk marker

@@ -207,6 +207,7 @@
 - 2026-07-31 opened #14254: [css-forms-1] Refine base appearance colors
 - 2026-07-31 opened #14255: [css-forms-1] Apply overflow and wrapping control to select buttons
 - 2026-08-01 opened #14256: [css-forms-1] Improve appearance: base <select> styling to be usable as-is
+- 2026-08-05 RESOLVED #14172: For ::picker(), apply `box-sizing: border-box`, no minimum size, change `max-block-size` from `stretch` to `100dvb`, and apply `safe` overflow alignment (with the meaning that it keeps the popover in the viewport if possible). Debate whether to add `box-sizing: margin-box` / whether to change `100dvb` to a smaller size later.
 - 2026-08-05 opened #14273: [css-forms-1] Should size restrictions for custom selects also apply to inline size?
 - 2026-08-11 opened #14308: [css-forms-1] Apply border-radius to all base appearance controls
 - 2026-08-12 opened #14316: [css-forms-1] Use empty alt text for ::picker-icon and ::checkmark

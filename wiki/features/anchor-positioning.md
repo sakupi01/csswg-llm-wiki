@@ -83,7 +83,7 @@ A curated set of the narrative-carrying resolutions; text is verbatim from
 
 | Date | Resolution (verbatim) | Issue | Permalink |
 |---|---|---|---|
-| 2022-09-16 | ED of Anchor Positioning, editor [TabAtkins](../people/tabatkins.md) [iank_](../people/bfgeek.md) jhey | [#7282](https://github.com/w3c/csswg-drafts/issues/7282) | [link](https://github.com/w3c/csswg-drafts/issues/7282#issuecomment-1249591201) |
+| 2022-09-16 | ED of Anchor Positioning, editor [TabAtkins](../people/tabatkins.md) [iank_](../people/bfgeek.md) [jhey](../people/jhey.md) | [#7282](https://github.com/w3c/csswg-drafts/issues/7282) | [link](https://github.com/w3c/csswg-drafts/issues/7282#issuecomment-1249591201) |
 | 2023-06-14 | FPWD of css-anchor-positioning | [#8929](https://github.com/w3c/csswg-drafts/issues/8929) | [link](https://github.com/w3c/csswg-drafts/issues/8929#issuecomment-1591593743) |
 | 2023-08-02 | add the anchor-center value | [#8979](https://github.com/w3c/csswg-drafts/issues/8979) | [link](https://github.com/w3c/csswg-drafts/issues/8979#issuecomment-1663086600) |
 | 2023-08-23 | make the anchor-name property a comma-separated list of idents | [#8837](https://github.com/w3c/csswg-drafts/issues/8837) | [link](https://github.com/w3c/csswg-drafts/issues/8837#issuecomment-1690145010) |
@@ -140,7 +140,7 @@ start to lose out on some of the slightly more advanced cases"
 ([#8929](https://github.com/w3c/csswg-drafts/issues/8929), 2023-06), the friction was not the
 design but **shipping velocity**: the minutes record [jensimmons](../people/jensimmons.md)
 (Apple) asking for "more time for review before folks ship it" given Chrome's ~2-month
-timeline, with tantek adding "+1 … this feels unusual for the 'normal' CSSWG workmode"
+timeline, with [tantek](../people/tantek.md) adding "+1 … this feels unusual for the 'normal' CSSWG workmode"
 ([minutes](https://github.com/w3c/csswg-drafts/issues/8929#issuecomment-1591593743)).
 
 ### The `position-area` naming saga

@@ -155,6 +155,7 @@
 - 2024-11-22 opened #11260: overflow: overlay; not work
 - 2024-11-27 opened #11281: [css-overflow-3] Clarify how overflow values apply to the viewport
 - 2024-11-28 opened #11288: [css-overflow-3] Reserved scroller space between content edge and padding edge
+- 2024-12-11 RESOLVED #10745: `overflow-clip-margin: content-box` applies to scrollable boxes
 - 2024-12-11 opened #11355: [css-overflow] Should overflow-clip-margin allow negative lengths?
 - 2025-01-10 opened #11479: [css-overflow] What's the behavior of overflow:scroll on replaced elements?
 - 2025-01-30 RESOLVED #11355: allow negative lengths in overflow-clip-margin, with the obvious effect

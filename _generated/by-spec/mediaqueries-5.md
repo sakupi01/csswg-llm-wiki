@@ -166,6 +166,7 @@
 - 2023-10-23 opened #9510: [css-position-3] Please clarify how users can unstick position: sticky elements
 - 2023-12-04 opened #9674: [css-mediaqueries] Inverted-colors media feature can cause problems on semi-transparent images.
 - 2023-12-12 opened #9701: [mediaqueries-5] Media query for enclosed screens
+- 2023-12-13 RESOLVED #9375: Do not add `supports()` to @media.
 - 2023-12-13 RESOLVED #9375: add  a new condition= attribute that takes <import-condition> syntax
 - 2023-12-14 opened #9710: [mediaqueries] Dates
 - 2023-12-20 RESOLVED #9306: CSS WG adopts the CSS Color HDR draft as a work item
@@ -226,3 +227,4 @@
 - 2026-06-19 opened #14071: [mediaqueries-5][css-conditional-5] `@custom-media` and `@supports-condition`
 - 2026-09-01 opened #14428: [mediaqueries-5] Add 'display-state' and 'resizable' media feature
 - 2026-09-02 opened #14431: [mediaqueries-5] Allow `<media-query-list>` to be omitted instead of empty
+- 2026-09-11 opened #14477: [css-fonts][mediaqueries-5] Add prefers-bold-text user preference media feature

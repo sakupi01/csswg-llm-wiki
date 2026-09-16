@@ -205,6 +205,7 @@
 - 2023-01-25 RESOLVED #2254: Restriuction will be relaxed to allow punctuation-only matching
 - 2023-01-25 RESOLVED #2517: Revert previous resolution
 - 2023-01-25 RESOLVED #2517: Revert previous resolution; accept :blank works for this use case
+- 2023-01-25 RESOLVED #4506: ::first-line applies to markers when `list-style-position` is `inside` but excludes them when it’s `outside`
 - 2023-01-25 RESOLVED #5379: CSS inline layout properties are not applied to ::placeholder
 - 2023-01-25 opened #8355: [css-highlight-api] Support for some font styles and decorations
 - 2023-01-26 opened #8363: [css-highlight-api] Ensuring that the height of ::highlight and ::selection match
@@ -338,3 +339,4 @@
 - 2026-07-15 RESOLVED #13926: ::first-line / ::first-letter don't apply to input / textarea for now, revisit once we have better-defined layout for them
 - 2026-08-04 RESOLVED #9849: Clarify that spacing is about layout-introduced spacing, not about spacing characters (which are just considered text). Update WPTs
 - 2026-08-12 opened #14312: [css-pseudo-4] Should highlights support interactivity declarations?
+- 2026-09-15 opened #14494: [css-pseudo-4] definition of "intervening typographic space" for ::first-letter text rules is a bit unclear

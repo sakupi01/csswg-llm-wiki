@@ -96,6 +96,7 @@
 - 2022-02-03 RESOLVED #1773: Writing mode of a ruby annotation is forced to vertical rl if the parent ruby position is intercharacter
 - 2022-06-22 opened #7404: [css-ruby-1] Clarify abspos containing block
 - 2022-10-12 RESOLVED #771: Add text-justify:ruby, which is like 'auto' but disables justification oppo on spaces and bopomofo.
+- 2022-10-12 RESOLVED #771: `rt, rtc { text-justify: ruby; }` to UA stylesheet
 - 2022-11-30 RESOLVED #5995: only perform whitespace stripping before comparing the base and annotation texts
 - 2023-08-29 opened #9265: [css-ruby][css-display] Clarify that the `display: block ruby` wrapper is a block container
 - 2024-01-29 opened #9873: [css-ruby-1] "zh-Hanb" or "zh-Hant", which is correct for 30% font-size rule?
@@ -106,6 +107,7 @@
 - 2025-06-12 opened #12327: [css-ruby][css-writing-modes] Interaction of ruby with box-breaking bidirectional control codes
 - 2025-12-23 opened #13261: [css-ruby-1] Overlapping new `display` values
 - 2026-02-19 opened #13533: [css-ruby] glyph placement inside bopomofo ruby
+- 2026-04-02 RESOLVED #5912: Add `spaces`, alias `none` to `spaces`
 - 2026-05-01 opened #13875: [css-ruby] The bounds of ruby boxes seem necessary, but the spec suggests that they are not
 - 2026-07-08 opened #14144: [css-ruby] rt and rtc should probably reset `text-indent` to zero
 - 2026-08-24 RESOLVED #14144: Add `text-indent: 0` to `rtc, rt` rule in the Default UA Style Sheet.

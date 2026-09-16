@@ -74,6 +74,7 @@
 - 2022-07-18 opened #7509: [css-contain-3] Size container features should not be formatted as a CSS descriptor
 - 2022-07-22 opened #7526: [css-mediaqueries] Clarify propagated preferred color-scheme on SVG images with color-scheme: normal and no color-scheme meta tag
 - 2022-08-01 RESOLVED #7526: do what Emilio said
+- 2022-08-01 RESOLVED #7526: for the purposes of propagating prefers-color-scheme to the embedded page, if `color-scheme` is `normal` and there's no `color-scheme` meta tag, the propagated scheme is the preferred color-scheme of the embedder document
 - 2022-08-11 opened #7594: How to evaluate `<media-query>`
 - 2022-08-11 opened #7595: [mediaqueries] Merge error handling section into evaluating section
 - 2022-09-05 opened #7696: [mediaqueries] Consider exposing "mobileness" as a media query

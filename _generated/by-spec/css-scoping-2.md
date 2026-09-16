@@ -8,3 +8,4 @@
 - 2024-09-24 opened #10941: [css-scoping] @-rule to specify light DOM CSS rules within Shadow DOM styles
 - 2024-10-04 opened #11000: [css-scoping][selectors] `:root` should resolve to `:host` in shadow trees
 - 2024-10-07 opened #11007: [css-scoping] `:has-shadow` pseudo-class
+- 2025-01-29 RESOLVED #11000: Have  have `:scope` resolve to `:host`  rather than `:root` in shadow tree

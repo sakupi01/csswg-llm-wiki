@@ -131,6 +131,7 @@
 - 2020-01-24 RESOLVED #3978: Spec that text-top/bottom and background boxes of inlines ought to match
 - 2020-01-24 RESOLVED #3978: make leading-trim's text value match the same value for text-top/text-bottom/etc
 - 2020-01-24 RESOLVED #4010: leading-trim doesn't change the overflow state of anything sticking out of the linebox.
+- 2020-01-24 RESOLVED #4171: Use shape-margin on initial letter when shape-outside is none and `inlitial-letters-wrap: all`
 - 2020-01-24 RESOLVED #4495: "vertical-align: middle" always uses halfway between alphabetic baseline and x-height, except in modes where the x-height is meaningless (vertical writing modes with upright text orientation)
 - 2020-01-24 RESOLVED #4495: In such "meaningless" cases, "middle" means the same as "central".
 - 2020-01-28 opened #4707: [css-inline] vertically align to middle of cap height
@@ -194,6 +195,7 @@
 - 2020-07-28 RESOLVED #5235: auto value of baseline-source not allowed in vertical-align shorthand
 - 2020-07-28 RESOLVED #5237: Don't drill through in a way we can  block boxes with non-zero padding / border in the block axis
 - 2020-07-28 RESOLVED #860: No change
+- 2020-07-28 RESOLVED #864: add `leading` value to `initial-letter-align`, and get feedback to confirm it solves the issues for these scripts
 - 2020-07-28 opened #5371: [css-inline-3] leading-trim, text-edge, and vertical-align
 - 2020-07-31 RESOLVED #5312: Accept the addition of the terms with the current proposed definitions.
 - 2020-07-31 RESOLVED #5329: When 'over-sunk', an initial-letter is aligned with the top metrics instead.
@@ -268,6 +270,7 @@
 - 2024-10-15 opened #11038: [css-pseudo] Should the "first formatted line" propagate into a different BFC?
 - 2024-10-16 RESOLVED #10703: 2 values are required unless the single value provided can be doubled
 - 2024-10-16 RESOLVED #10713: we allow mix-and-match syntax for <text-edge> keywords
+- 2024-10-16 RESOLVED #10748: revert the previous resolution : allow all combinations for `text-box`
 - 2024-10-16 RESOLVED #10834: text-box-trim trims inline to the text-box-edge; otherwise use the line-fit-edge; both for sizing and for painting
 - 2024-10-16 RESOLVED #10904: make property text-box-edge inherited
 - 2024-10-23 RESOLVED #11038: propagation of text-box-trim from ancestor of multicol works the same as propagation from multicol itself

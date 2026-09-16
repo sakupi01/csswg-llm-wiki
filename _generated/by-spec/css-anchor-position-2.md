@@ -51,6 +51,7 @@
 - 2025-11-10 RESOLVED #10258: Auto margins are disabled if align-self is set to anchor-center
 - 2025-11-11 opened #13088: When using anchor positioning, the final edge alignment needs to be known
 - 2025-11-11 opened #13092: [css-anchor-position-2] `<anchored-feature>` is undefined In the anchor container feature syntax definition
+- 2026-02-18 RESOLVED #8913: Add `position-anchor: match-parent`
 - 2026-02-19 opened #13534: [css-anchor-position] How to style anchor based on anchored's chosen fallback?
 - 2026-02-25 opened #13558: Allow anchor-size() as a value for scroll-padding-*
 - 2026-02-27 opened #13573: Anchor positioning, should the fallbacks re-calculate to respect my default?

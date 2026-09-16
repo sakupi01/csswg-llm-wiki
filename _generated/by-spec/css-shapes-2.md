@@ -25,6 +25,7 @@
 - 2024-02-01 opened #9889: [css-shapes] CSS flexibility for `path()`s (and let’s fix paths while we’re at it?)
 - 2024-02-14 RESOLVED #9843: Work on adding corner rounding to polygon()
 - 2024-07-30 opened #10644: [css-shapes-2] Consider allowing `<position>` for the `from` and some other points
+- 2024-07-31 RESOLVED #5841: Accept Noam's PR (switch to `using`, allow reordering grammar)
 - 2024-07-31 RESOLVED #9728: Publish a new CRD of Shapes 1 with this change (and whatever else is already in since last publication)
 - 2024-07-31 RESOLVED #9728: Shapes Level 1 is modified to say that shape-outside takes all <basic-shape>s
 - 2024-07-31 opened #10647: [css-shapes] Overload `path()` for CSS-y SVG path syntax instead of taking up `shape()`
@@ -36,6 +37,7 @@
 - 2024-08-14 opened #10740: [css-shapes-2] Interpolation between `shape()` and `path()` needs more detail
 - 2024-09-27 RESOLVED #10666: Make the order strict: endpoints before control points.
 - 2024-09-27 RESOLVED #10667: Add a from-start keyword that goes after the value and latches the coordinate to the beginning of the segment.
+- 2024-09-27 RESOLVED #10740: Align `from` with the mandated first move.
 - 2024-09-27 RESOLVED #6997: Call it border-shape for now
 - 2024-09-27 RESOLVED #6997: adopt border-shape in principle and continue to discuss specifics
 - 2024-09-27 RESOLVED #6997: also specify the 1 path syntax
@@ -44,6 +46,7 @@
 - 2024-11-13 RESOLVED #10649: Accept the changes to the shape() grammar
 - 2024-12-12 opened #11358: [css-shapes-2] Allow `position` for the initial coordinates of `shape()`
 - 2024-12-13 opened #11368: [css-shapes-2] Minor problems with the new `<arc-command>`
+- 2025-01-08 RESOLVED #10666: restrict ordering such that `to` or `by` would need to come first
 - 2025-01-29 RESOLVED #10993: Add corner-shape: superellipse(k) and bevel / scoop / notch / round / squircle based on it, maybe continuous in the future
 - 2025-01-29 RESOLVED #10993: Add restrictions to avoid intersecting borders with scoop-like corners, specifics TBD
 - 2025-01-29 RESOLVED #10993: Initial value of corner-shape is round

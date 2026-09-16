@@ -68,6 +68,7 @@
 - 2025-01-18 opened #11533: [css-color-6] How to support color math involving more than one color?
 - 2025-01-19 opened #11534: `contrast-color()` MVP should support explicit light/dark colors rather than unspecified "very light/dark colors"
 - 2025-01-30 RESOLVED #11533: Yes to this issue, let's get it in a spec and start work on it
+- 2025-01-30 RESOLVED #11534: drop `max`, do white/black by default and allow extension points later
 - 2025-01-30 opened #11619: [css-color] We should consider addressing different use cases contemplated for contrast-color() with separate CSS functions
 - 2025-03-16 opened #11946: [css-color-6] Current state of relative chroma feature in oklch()
 - 2025-12-20 opened #13254: [css-color-6] Does color-layers() need a color interpolation method (or similar)?

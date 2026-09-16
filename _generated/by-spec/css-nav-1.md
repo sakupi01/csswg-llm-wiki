@@ -23,6 +23,7 @@
 - 2018-12-04 opened #3395: [css-nav-1] Clarify the condition of focusable element
 - 2018-12-06 opened #3401: [css-nav-1] changing the spatnav scroll controls from JS to declarative
 - 2019-02-19 opened #3656: [css-nav-1] Keeping related feature policies consistent accross the web platform.
+- 2019-02-26 RESOLVED #3401: drop navbeforescroll and add `spatial-navigation-action` with at least two values
 - 2019-02-27 RESOLVED #3384: Fold in the improved distance algo to the FPWD
 - 2019-03-19 opened #3743: [css-nav-1] Clarify how sptialNavigationSearch() works
 - 2019-05-20 opened #3944: [css-nav-1] FocusTraversal API

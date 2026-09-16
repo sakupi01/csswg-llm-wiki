@@ -82,6 +82,7 @@
 - 2022-06-17 opened #7383: [css-contain-3] Proposal to allow developer to specify content-visibility: auto margin.
 - 2022-06-17 opened #7384: [css-contain-3] Proposal: Add an event to fire when content-visibility: auto state changes
 - 2022-06-22 RESOLVED #7066: All elements are style containers by default.
+- 2022-06-22 RESOLVED #7066: Initial value is `none`
 - 2022-06-22 opened #7402: [css-contain-3] Rename 'none' to 'normal'
 - 2022-06-22 opened #7403: [css-contain-3] How should style containment by default be handled in the syntax?
 - 2022-06-24 opened #7413: [css-contain-3] Should style() queries allow !important flag?

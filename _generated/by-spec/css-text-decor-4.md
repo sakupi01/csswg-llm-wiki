@@ -77,6 +77,7 @@
 - 2022-05-04 opened #7251: [css-text-decor-4] Composition of inset shadows
 - 2022-05-17 opened #7283: [css-text-decor-4] Clarify thickness constraints
 - 2022-05-25 RESOLVED #7250: Leave text-shadow spread details undefined right now, with possibility of specification later after impl experience.
+- 2022-07-13 RESOLVED #4557: Remove text-decoration-skip-inset, add `text-decoration-trim: <length> <length>?`, follow-up for improvements and issues
 - 2022-07-21 opened #7522: [css-text-decor] [css-pseudo] default ‘text-decoration-color’ of ‘spelling-error’ and ‘grammar-error’
 - 2022-08-01 RESOLVED #2885: Add text-decoration-skip-self as a longhand of text-decoration-skip, for skipping ancestor decorations.
 - 2022-12-09 opened #8210: [css-text-decor-4] Stray mentions of text-decoration-skip-inset left in the spec
@@ -100,6 +101,7 @@
 - 2025-08-31 opened #12696: [css-text-decor] Rounding of text-decoration-thickness
 - 2025-09-03 RESOLVED #12015: change the definition to 'must do nothing'. and make the computed value remain.
 - 2025-09-11 opened #12779: [css-2025][css-text-decor-4] Add `text-decoration-thickness`, `text-underline-offset` properties and `from-font` value for `text-underline-position` to Safe to Release exceptions
+- 2025-09-12 RESOLVED #12779: add `text-decoration-thickness`, `text-underline-offset` properties and `from-font` for  `text-underline-position` to Safe to Release exceptions
 - 2025-09-18 opened #12823: [css-text-decor] text-decoration-skip isn't inherited
 - 2025-10-14 opened #12947: [css-break-4][css-text-decor-4] Allow breaks to only affect text decorations
 - 2025-10-14 opened #12951: [css-text-decor-4] Should the spec for `text-decoration-trim` suggest applying `auto` to Chinese & Japanese content by default?

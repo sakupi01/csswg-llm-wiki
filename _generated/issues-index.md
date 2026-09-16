@@ -3,6 +3,827 @@
 
 `number | state | labels | title (R = has resolution)`
 
+- openui/open-ui#1 closed [-] Move to WICG
+- openui/open-ui#3 closed [platform] Thoughts on an incremental approach to <select>/<input> + <datalist>
+- openui/open-ui#8 closed [backlog,enhancement,needs-triage,research] Do research on scrollbars
+- openui/open-ui#9 closed [platform,research] Please review switch anatomy and part proposal
+- openui/open-ui#10 closed [-] GitHub icon on the website is unreasonably large until JS loads
+- openui/open-ui#18 closed [enhancement,needs-triage,platform,research] Investigate modal/dialogue element
+- openui/open-ui#22 closed [research] Clarification on `discipline`
+- openui/open-ui#23 closed [enhancement,openui-site,research] Enhancement: Need to show popper on table cells whose text gets hidden due to cell width being too short 
+- openui/open-ui#26 closed [research,select] [select] Anatomy button default
+- openui/open-ui#27 closed [research] [MISC] How should icons/glyphs be named?
+- openui/open-ui#28 closed [-] [MISC] How should the icons/glyphs be implemented?
+- openui/open-ui#29 closed [enhancement,openui-site] Create better landing page
+- openui/open-ui#33 closed [-] Update repo description
+- openui/open-ui#38 closed [platform,research] Investigate checkbox & radio
+- openui/open-ui#40 closed [-] Images need useful text descriptions
+- openui/open-ui#41 closed [backlog,research] [MENU ITEM] Research and discuss / define mouse click behavior of menu items
+- openui/open-ui#42 closed [backlog,platform,research] Customizing a Textarea
+- openui/open-ui#43 closed [-] Names section of component pages should be anchors
+- openui/open-ui#47 closed [-] Naming the button component - small / large - fails the test of time.
+- openui/open-ui#50 closed [-] Personal take on terminology
+- openui/open-ui#55 closed [-] Should we name component parts based on the potential icon used or what we're trying to portray to the user
+- openui/open-ui#57 closed [enhancement] [MISC] How to handle and define stale documents
+- openui/open-ui#58 closed [enhancement] [MISC] In the web platform specifications API & naming conventions
+- openui/open-ui#61 closed [bug] Page title element missing from the Open UI website
+- openui/open-ui#63 closed [Misc] I want to help using my project
+- openui/open-ui#65 closed [-] rating suggestion; use <meter>
+- openui/open-ui#68 closed [backlog] Allow detection of support with @media / @supports
+- openui/open-ui#69 closed [question,research,select] [select] What should the value of an option element be set when it has multiple children?
+- openui/open-ui#73 closed [select] <select> popup naming
+- openui/open-ui#74 closed [select] Allowing interactive elements within an <option>
+- openui/open-ui#75 closed [Misc] [MISC] We need a better design for the anatomy
+- openui/open-ui#77 closed [agenda+,select] <select> naming of button and its capabilities R
+- openui/open-ui#78 closed [-] Can Flutter framework be included?
+- openui/open-ui#79 closed [-] Contribution process is unclear
+- openui/open-ui#80 closed [-] Slotting custom content into controls using new element types vs built-in <slot>s
+- openui/open-ui#81 closed [agenda+,needs-triage] Definition of a "control"?
+- openui/open-ui#82 closed [WHATWG,needs edits,needs-triage] Focus-related behavior for <option>s inside a <select>.
+- openui/open-ui#83 closed [WHATWG,needs edits,needs-triage] Specifics of disallowing interactive content under <select>
+- openui/open-ui#85 closed [enhancement] Data structure to describe components
+- openui/open-ui#86 closed [-] Inconsistent classification of <select> attributes/methods/properties
+- openui/open-ui#89 closed [-] Replace platform with generic components from @thepassle
+- openui/open-ui#91 closed [file,needs edits,needs-triage,research] Define file input anatomy
+- openui/open-ui#93 closed [-] Checkbox State Indicators
+- openui/open-ui#95 closed [enhancement] Make nav in alphabetical order
+- openui/open-ui#96 closed [needs-triage] Tie events to specific parts
+- openui/open-ui#100 closed [enhancement,needs-triage] Define how to research an anatomy
+- openui/open-ui#102 closed [-] What should pressing 'escape' do with the selected value for select?
+- openui/open-ui#104 closed [research,select] The scope of the select control
+- openui/open-ui#105 closed [needs-triage,select] [SELECT] Scrollbars in select list-box
+- openui/open-ui#106 closed [needs-triage,select] [SELECT] Events based on the state for select
+- openui/open-ui#107 closed [WHATWG,needs edits,needs-triage] [file] Figure out the right focus model for <input type=file>
+- openui/open-ui#109 closed [needs-triage] Bug: Textarea font sizing seems incorrect with other form elements
+- openui/open-ui#112 closed [a11y-tracker,needs-triage,select] <select multiple> is exposed as a listbox, not a combobox
+- openui/open-ui#113 open [select] <select multiple> usability improvement suggestions
+- openui/open-ui#114 open [file,needs-triage,research] Definition of anatomy for selected files
+- openui/open-ui#115 closed [needs-triage,research,select] [SELECT] Usecases & solution for filtering R
+- openui/open-ui#116 closed [needs-triage,research] Add research for <dialog> and related popups
+- openui/open-ui#117 closed [needs-triage,question] Designer kits for Open UI
+- openui/open-ui#118 closed [enhancement] Concepts component should collapse and expand the examples
+- openui/open-ui#119 closed [-] Clarify & simplify vision statement
+- openui/open-ui#120 closed [bug] Pages on https://open-ui.org/ are missing titles
+- openui/open-ui#121 closed [needs-triage,openui-site] Addition of implementations to component definitions
+- openui/open-ui#122 closed [needs-triage] Updating component definitions
+- openui/open-ui#123 closed [-] testing sync
+- openui/open-ui#126 closed [-] [Documentation] Update "Research page" guidance to make data sources more obvious
+- openui/open-ui#127 closed [-] [Documentation] Link common contribution markdown files to "Contribute" page
+- openui/open-ui#129 closed [needs-triage] Add some new component libraries?
+- openui/open-ui#137 closed [select] Make <select> change to closed state when focus leaves listbox
+- openui/open-ui#139 open [design-system,needs-triage] [Skeleton] Add component proposal 
+- openui/open-ui#142 closed [needs-triage,select] Modify button part behavior for <select multiple>?
+- openui/open-ui#143 closed [agenda+,select] <select> anatomy seems Windows-centric R
+- openui/open-ui#145 closed [select] Should <select> anatomy include type-to-search?
+- openui/open-ui#148 closed [-] Create deeper research page on lightdismiss behaviors
+- openui/open-ui#149 closed [-] Add design system website: Design Systems For Figma
+- openui/open-ui#150 closed [needs-triage,select] Proposal: allow nested <OPTGROUP> in HTML spec
+- openui/open-ui#151 open [design-system,needs-triage] Remove Card from Open-UI Scope
+- openui/open-ui#152 closed [needs-triage,select] <select multiple> anatomy is incomplete
+- openui/open-ui#153 closed [select] <select> with size > 1 is not specified
+- openui/open-ui#154 closed [select] Should the Home and End keys jump to the first and last <option>?
+- openui/open-ui#159 closed [-] Handing Home/End key on Mac
+- openui/open-ui#161 closed [needs-triage] [select] what should happen on key invocations when open state is true/false
+- openui/open-ui#166 closed [-] Open UI TPAC CG meeting?
+- openui/open-ui#168 open [enhancement,help wanted,needs-champion,needs-triage] Provide Design Tool Stickersheets for Designers [Idea/Longterm]
+- openui/open-ui#169 closed [agenda+] Skeleton Aria Role
+- openui/open-ui#170 closed [bug,openui-site] Website doesn't display well on mobile esp contribute page
+- openui/open-ui#171 closed [select] [SELECT] Does space remove the open state and select the currently selected option
+- openui/open-ui#172 closed [agenda+,needs-champion] [Collection issue] Run a user study on keyboard accessibility issues
+- openui/open-ui#173 closed [needs-triage] Drop target for <input type=file>
+- openui/open-ui#174 closed [needs-triage] RTL for <input type=file>
+- openui/open-ui#175 closed [-] Should proposals include details of current workarounds?
+- openui/open-ui#176 open [needs-triage,openui-site] [Documentation] Give permalinks more meaningful accessible names
+- openui/open-ui#177 closed [bug,checkbox,help wanted] [CHECKBOX] Fix image issues on checkbox
+- openui/open-ui#179 open [needs edits,needs-triage] Descriptions for component concepts?
+- openui/open-ui#180 closed [needs-triage] Using <file> over <input type=file>
+- openui/open-ui#181 closed [needs-triage] Should <input type=file> have an open state?
+- openui/open-ui#182 open [Tabs,needs-triage,research] Tabs
+- openui/open-ui#184 closed [Misc] Naming convention for proposed elements
+- openui/open-ui#186 closed [switch] Switch component page issues
+- openui/open-ui#189 open [Tabs,needs-triage] Tabs: Provide better use cases
+- openui/open-ui#190 open [Tabs,discussion,needs-champion,needs-triage,waiting] Tabs: What are the limits or definition of supplemental content
+- openui/open-ui#191 open [Tabs,discussion,needs-triage] Tabs: activeid vs. boolean to activate
+- openui/open-ui#192 closed [Tabs,waiting] Tabs: Provide better description
+- openui/open-ui#194 closed [Tabs] I would add Tab Labels would also flip (i.e. icons next to a label)
+- openui/open-ui#197 closed [Misc,discussion] Process design for Open UI
+- openui/open-ui#198 open [needs-triage] Progressive enhancement of new html elements
+- openui/open-ui#199 closed [checkbox] Provide a slot for unchecked checkbox
+- openui/open-ui#200 open [breadcrumb,needs edits,needs-champion,needs-triage] [Breadcrumb] What should the visual break between items be called?
+- openui/open-ui#201 open [breadcrumb,needs-champion,needs-triage] [Breadcrumb] Should our default anatomy include hidden list elements?
+- openui/open-ui#202 open [needs-triage,openui-site] [Research structure] Concepts are not always 1:1 between libraries and research pages
+- openui/open-ui#203 closed [Misc,discussion,needs edits,needs-triage] [Meta] Define a spectrum of customization native to the web platform
+- openui/open-ui#204 open [good first bug,needs-triage] [Research] "Fabric" library in research should be renamed to "Fluent UI"
+- openui/open-ui#206 closed [needs-champion,needs-triage] Test planning
+- openui/open-ui#208 closed [good first bug] Improve alt text for images in Analysis pages
+- openui/open-ui#213 open [help wanted,media,needs-champion,research] Improve <video> and <audio> elements
+- openui/open-ui#218 open [discussion,needs-triage] Make `<table>` elements responsive automatically
+- openui/open-ui#220 closed [-] Mobile design
+- openui/open-ui#226 closed [needs-champion,research] Token feature, or something like that. R
+- openui/open-ui#227 closed [needs-triage,research] Slider with tickmarks
+- openui/open-ui#228 closed [bug,good first bug,needs-triage] Select page has a lot of broken images
+- openui/open-ui#229 closed [-] [SELECT] Open select by default
+- openui/open-ui#237 closed [-] Scope of rendering environments in Open UI (e.g. Responsive Design)
+- openui/open-ui#238 closed [-] Tabs: Lazyload
+- openui/open-ui#239 open [help wanted,needs-triage,openui-site] Mobile improvements fonts, tables, code scrolling
+- openui/open-ui#240 closed [popover,select] Light dismiss on page scroll? R
+- openui/open-ui#241 closed [needs edits] Light dismiss on window blur?
+- openui/open-ui#247 closed [needs-triage,popover] Light dismiss on window resize
+- openui/open-ui#248 closed [-] Focus and openui-file
+- openui/open-ui#251 open [help wanted,needs-triage] Radio Button
+- openui/open-ui#252 closed [needs-triage] Design survey around lightdismiss behavior
+- openui/open-ui#254 closed [help wanted,needs-triage,research] Add a standardized method for toggling `type='password'` fields
+- openui/open-ui#255 open [help wanted,research] Improve resizer?
+- openui/open-ui#257 closed [agenda+] Should Link have a definition proposal or a full proposal?
+- openui/open-ui#258 open [i18n-tracker,needs-triage,openui-site] Internationalisation concerns
+- openui/open-ui#260 closed [Misc] Horizontal labels added to this repository
+- openui/open-ui#266 closed [-] Badges vs. Pills vs. Chips vs. Tags
+- openui/open-ui#268 closed [bug,checkbox] [CHECKBOX] Slots listing doesn't match anatomy
+- openui/open-ui#275 closed [checkbox,needs-triage] Checkbox/Radio with expandable content
+- openui/open-ui#276 closed [agenda+,select] Change URL parameter without Javascript
+- openui/open-ui#277 closed [-] Option elements with icons
+- openui/open-ui#278 closed [agenda+] Image - a full research proposal or just a definition proposal?
+- openui/open-ui#279 open [needs-triage] Form submission does not show progress
+- openui/open-ui#280 closed [needs-triage] Form not submitted warning message before unload
+- openui/open-ui#281 open [needs-research,needs-triage] Form submission confirmation without Javascript
+- openui/open-ui#283 open [needs-triage] And let’s come up with an active Label with values
+- openui/open-ui#284 closed [good first bug,openui-site] Rename Analysis to Research in Sidebar
+- openui/open-ui#285 open [good first bug,needs-triage,openui-site] Navigation Architecture
+- openui/open-ui#286 open [good first bug,needs-triage,openui-site] Better "Getting Started" Guidance
+- openui/open-ui#287 closed [good first bug,openui-site] Redesign Homepage
+- openui/open-ui#288 open [good first bug,needs-triage,openui-site] Redesign naming counter (green dots)
+- openui/open-ui#289 open [good first bug,needs-triage,openui-site] Add index to research pages for better navigation
+- openui/open-ui#290 closed [good first bug,needs-triage,openui-site] Improved analysis pages
+- openui/open-ui#291 closed [needs-triage,select] Handling strange DOM structures in <select>
+- openui/open-ui#292 closed [needs-triage,openui-site] Discord link removed from site
+- openui/open-ui#293 closed [needs-triage,openui-site] Simple design system for Open UI
+- openui/open-ui#296 closed [needs-triage,popover] [Popup] Naming for the new popup element
+- openui/open-ui#297 open [needs-triage] Should we standardize the anatomy of `<input type=range>`?
+- openui/open-ui#298 closed [-] namespace for project-specific stuff
+- openui/open-ui#300 closed [needs-triage] Noscript element in XHTML
+- openui/open-ui#301 closed [WHATWG,needs-triage] Remove or increase time element limitation of three digits in fractional part of second
+- openui/open-ui#302 closed [discussion,popover] [Popup] Invoking popups from custom elements with script vs popup attribute
+- openui/open-ui#303 closed [good first bug,openui-site] [Navigation Architecture] Rename "Contribute" to "Get Involved"
+- openui/open-ui#304 closed [openui-site] [Navigation Architecture] Elevate mechanical participation information on Get Involved
+- openui/open-ui#305 closed [needs-triage,openui-site] [Navigation Architecture] Write up process/stage information on Get Involved
+- openui/open-ui#306 closed [needs-triage,openui-site] [Navigation Architecture] Write up browser implementer guidance on Get Involved 
+- openui/open-ui#307 closed [needs-triage,openui-site] [Navigation Architecture] Migrate "work items" to a landing page structure
+- openui/open-ui#308 closed [needs-triage,openui-site] [Navigation Architecture] Create a Work Items dashboard/index
+- openui/open-ui#309 closed [needs-triage,openui-site] [Navigation Architecture] New "About" structure
+- openui/open-ui#310 closed [needs-triage,openui-site] [Navigation Architecture] Home page content refresh
+- openui/open-ui#311 closed [open-ui-resolved-accepted,popover] [Popup] Do we need the "open" content attribute?
+- openui/open-ui#312 closed [popover] [Popup] Polyfil / Open UI component
+- openui/open-ui#313 open [WHATWG,checkbox] [checkbox/switch] unchecked value behaviour
+- openui/open-ui#314 closed [openui-site] [Navigation Architecture] Create a site map page for the Open UI site
+- openui/open-ui#315 closed [popover] [Popup] If a fragment anchor is located inside a popup, should it open upon navigation?
+- openui/open-ui#318 closed [popover] [Popup] Specify that popups in different documents cannot effect each other
+- openui/open-ui#319 closed [needs-triage,popover] [Popup] Should focus changes between documents clear open popup in a given document?
+- openui/open-ui#320 closed [needs-triage,popover] [Popup] [Light Dismiss] Light dismiss "escape key" should probably include all close signals
+- openui/open-ui#321 closed [popover] [Popup] Should light dismiss be cancellable on popup?
+- openui/open-ui#322 closed [WHATWG,needs-triage,popover] [Popup] Should the hide() method be renamed to close()?
+- openui/open-ui#323 closed [needs-triage] [Popup] [Dialog] Evaluate which popup-related primitives should be extended to other elements
+- openui/open-ui#324 closed [needs-triage,popover,popover-spec] [Popup spec] Specify hide event sequence
+- openui/open-ui#325 closed [needs-triage] [Popup] Consider modal-ness as a spectrum in the platform
+- openui/open-ui#326 closed [needs-triage,popover] [Popup] Request for a primitive to remove popup from the top layer
+- openui/open-ui#327 closed [popover] [Popup] focus anchor after hide? R
+- openui/open-ui#328 closed [popover] [Popup] Should the popup and/or anchor attribute cause popup to be hoisted in logical orders?
+- openui/open-ui#329 closed [a11y-tracker,popover] [Popup] Define accessibility mappings for popup and its primitives
+- openui/open-ui#330 closed [needs-triage,popover,popover-spec] [Popup spec] Define in finer detail processing of autofocus and delegatesfocus attrs for popup
+- openui/open-ui#333 open [needs-triage] [Tabs] Evaluate use cases and options for declarative-show-hide functionality
+- openui/open-ui#334 closed [needs-research,needs-triage] [NEEDS RESEARCH] Create input type="color" proposal
+- openui/open-ui#335 closed [CSSWG,needs edits,open-ui-resolved-accepted,popover] [Popup] Supporting transitions and animations on open and dismiss R
+- openui/open-ui#338 open [needs-triage,open-ui-resolved-accepted,switch] [switch] Should a switch proposal graduate to the web platform?
+- openui/open-ui#341 closed [needs-triage] [Popup] Compatibility issue with existing `<popup>` use
+- openui/open-ui#342 closed [agenda+,needs edits,open-ui-resolved-accepted,popover] [popup] Consider to add popupshowing, popupshown, popuphiding and popuphidden events
+- openui/open-ui#343 closed [-] Generalize behavior for anchoring within elements
+- openui/open-ui#344 open [Tabs,needs-triage] [Popup] [Tabs] [Details] Global behavior for Navigating into components
+- openui/open-ui#346 open [needs-triage] Missing Components (Treeview, TreeGrid)
+- openui/open-ui#347 closed [needs-triage] [SELECT] Should the search for parts pierce into shadow roots?
+- openui/open-ui#354 closed [select] [SELECT] The use of "part" clashes with custom elements containing <selectmenu>
+- openui/open-ui#356 closed [needs edits,needs-triage,popover] [Popup] [Editor's Draft] Add popup IDL
+- openui/open-ui#357 closed [-] [Anchor Pos] Anchor syntax
+- openui/open-ui#358 closed [needs edits,popover] [Popup] Storing the activating element relationship
+- openui/open-ui#359 closed [needs edits,popover] [Popup] Suppressing rendering of popup when its activating element receives focus?
+- openui/open-ui#361 closed [-] [Checkbox] Alter DOM structure to place label after control
+- openui/open-ui#365 closed [needs-triage] Some links in component matrix are malformed
+- openui/open-ui#366 closed [needs-triage,openui-site] Update README to target Open UI CG instead of WICG
+- openui/open-ui#367 open [needs-research,needs-triage] Should the delegatesfocus attribute be extended to other HTML elements?
+- openui/open-ui#368 closed [popover] [Popup] Should the delegatesfocus attribute be renamed?
+- openui/open-ui#369 closed [needs edits,popover] [Popup] Conflict resolution with delegatesfocus and autofocus
+- openui/open-ui#372 open [Tabs,needs-triage] [Tabs] Review recommendations / consider how many new elements we need
+- openui/open-ui#373 closed [needs-triage] Research TextField Word-Jump
+- openui/open-ui#375 closed [needs-triage,openui-site] Page for listing companies & individuals involved in Open UI
+- openui/open-ui#376 closed [-] Add in support for Github topic minuting
+- openui/open-ui#377 closed [-] Headings in site navigation have contrast issues
+- openui/open-ui#379 closed [needs-triage] Ensure that delegatesfocus cannot trap focus
+- openui/open-ui#380 closed [needs-triage,select] [select] To what extent should customizable select implement the old <select>'s interface?
+- openui/open-ui#381 closed [-] [Popup] Imperative API for node referencing
+- openui/open-ui#382 closed [popover] [Popup] New IDL for Pop-Up content attributes, which allow Element references R
+- openui/open-ui#383 open [needs-triage] Toasts/Notification Research R
+- openui/open-ui#386 closed [agenda+,needs edits,select] [select] Clarify use of Enter/Space keys for opening/closing listbox R
+- openui/open-ui#390 closed [needs edits,needs-triage,popover,popover-spec] [Popup spec] Move invoker activation behaviors to other parts of the HTML spec
+- openui/open-ui#391 closed [needs edits,needs-triage,popover,popover-spec] [Popup spec] Update autofocus specifications in HTML for popup
+- openui/open-ui#393 closed [needs edits,needs-triage,popover,popover-spec] [Popup spec] Update close watcher logic and focusing steps algo for popup light dismissal
+- openui/open-ui#394 closed [needs edits,needs-triage,popover,popover-spec] [Popup spec] Make get the focusable area steps edits describe the correct behavior
+- openui/open-ui#396 closed [select] [select] Clarify the need for both part="option" and <option>
+- openui/open-ui#397 closed [toast] [Notification/Message] Deciding on a name
+- openui/open-ui#398 closed [Misc,needs-triage,openui-site] [Meta] Better onboarding for new Open UI members or non-members
+- openui/open-ui#399 closed [needs-triage,select] [select] Shadow root replacement
+- openui/open-ui#400 closed [agenda+] [Notification/Message] Defining component behaviour R
+- openui/open-ui#401 closed [focusgroup,needs-triage] Potential for focusgroup alignment?
+- openui/open-ui#404 closed [-] Force bad scrollbar designs to apply accessibility patches
+- openui/open-ui#405 open [needs-triage] [carousel] Request to explore carousels R
+- openui/open-ui#407 closed [-] Manage GRID cell as FLEX.
+- openui/open-ui#408 open [needs-research,needs-triage] [split-button] pre-spec research
+- openui/open-ui#409 closed [popover] [Popup] popup="" is supported on <button type=submit> but not <input type=submit> R
+- openui/open-ui#410 closed [popover] What is the semantic role for <popup>?
+- openui/open-ui#412 open [Tabs,needs-triage] [tabs] Concern about heading declarations as boundaries
+- openui/open-ui#415 closed [popover] [Popup] Should blur() be a light dismiss trigger? R
+- openui/open-ui#416 closed [-] Bikeshed: what should <popup> be called?
+- openui/open-ui#417 closed [-] What types of elements should be excluded from <popupdialog> usage?
+- openui/open-ui#420 closed [popover] [Popup] Triggering element support: buttons, text inputs, etc. R
+- openui/open-ui#421 open [WHATWG,color,needs-triage] Improve <input type="color">
+- openui/open-ui#423 open [WHATWG,date-picker,needs-research,needs-triage] Improve <input type="date">
+- openui/open-ui#424 closed [-] meta: cowpaths research?
+- openui/open-ui#426 closed [popover] [Popup] Light dismissal triggers for popup when used for context menu
+- openui/open-ui#427 closed [anchor,needs-triage] Anchor position for popup contextmenu
+- openui/open-ui#429 closed [select] <selectmenu> input/change events and the value property
+- openui/open-ui#433 closed [i18n-tracker,select] Arrow key up/down on closed <selectmenu>
+- openui/open-ui#435 closed [needs-triage,select] [select] Ability to style the selected-value part based on the selected option
+- openui/open-ui#437 closed [-] Suggest PrimeReact as another reference
+- openui/open-ui#438 closed [Misc,select] Adding docs for controls to the site
+- openui/open-ui#443 closed [popover] [popup] stacking context
+- openui/open-ui#444 closed [-] Rendering of select with multiple
+- openui/open-ui#447 closed [needs-triage,select] Should <select multiple> be part of <selectmenu>, or is it a separate control? R
+- openui/open-ui#449 closed [needs-triage] Create a way to style the invalid messages in native form elements 
+- openui/open-ui#454 open [needs-triage] Decide on scope of “alert” component behaviour
+- openui/open-ui#455 closed [popover] New Approach for Popup
+- openui/open-ui#456 closed [needs-triage,toggle] Should the CSS Toggles API be able to declaratively open a popup?
+- openui/open-ui#457 open [needs-triage,select] [Selectmenu] Best practices for autofill and <selectmenu>
+- openui/open-ui#458 closed [needs-triage,select] [selectmenu] Arbitrary content in <listbox> element
+- openui/open-ui#470 closed [popover] [Popup] How should the "popup is top layer" CSS pseudo class behave, and what should it be called R
+- openui/open-ui#471 closed [popover] [Popup] We need a JS method to open the popup
+- openui/open-ui#473 closed [checkbox,needs-triage] [checkbox] Does the checkbox need an implementation?
+- openui/open-ui#476 closed [needs-triage,select] [select] mult-select variation doesn't allow for keyboard access
+- openui/open-ui#477 closed [popover] Migrate `popup` explainer over to OpenUI 
+- openui/open-ui#478 closed [-] [select] 
+- openui/open-ui#480 closed [focusgroup] Bring focusgroup work under the OpenUI umbrella R
+- openui/open-ui#482 closed [needs-triage,select] [Select] Vertical align positioning
+- openui/open-ui#483 closed [agenda+,select] <selectmenu> always snaps shut when opened with mouse
+- openui/open-ui#484 open [needs-triage] Add some guidance on how to develop the accessibility model of a new control
+- openui/open-ui#485 closed [needs-triage] Migrate static site away from Gatsby.
+- openui/open-ui#486 closed [needs edits,popover,select] [selectmenu] button click behavior when the popup is open
+- openui/open-ui#487 open [needs-triage] Consider creation of a "checkbox group"
+- openui/open-ui#489 open [needs-triage] Panelset/Spicy-Sections issue(s) review/rfc
+- openui/open-ui#491 closed [needs edits,popover] [popup] Bikeshed: popup=popup is unusual R
+- openui/open-ui#492 closed [popover] [popup] visibility: hidden vs. other choices
+- openui/open-ui#493 closed [needs-triage,popover,popover-spec] [popup] Articulate use cases for anchoring a bit better
+- openui/open-ui#494 closed [popover] [popup] Display Ordering: will this cause open="" attributes to get removed during HTML parsing?
+- openui/open-ui#495 closed [popover] [popup] Note that popup=async + JavaScript allows custom behavior R
+- openui/open-ui#496 closed [-] [popup] Adjust instances of solely mentioning aria-haspopup in explainer
+- openui/open-ui#497 closed [-] [Select] Keep popup open when another element scrolls
+- openui/open-ui#499 open [-] <measure> web component R
+- openui/open-ui#500 closed [needs edits,popover] [popup] Consider renaming initiallyopen
+- openui/open-ui#505 closed [needs-triage] border-radius for outline
+- openui/open-ui#508 closed [needs edits,popover] [popup] Consider renaming `triggerpopup` R
+- openui/open-ui#511 closed [popover] [popup] Should `showPopup()` and `hidePopup()` throw?
+- openui/open-ui#514 closed [-] [popup] Allow <div popup> as a shorthand for <div popup=popup>
+- openui/open-ui#517 open [needs-triage] Proposal to create/transfer "spicy-sections" repo
+- openui/open-ui#519 closed [needs edits,popover] [popup] Add ::backdrop to popup
+- openui/open-ui#520 closed [needs edits,popover] What is the interaction between popup and other top layer elements R
+- openui/open-ui#521 closed [focusgroup] [focusgroup] Should it support shadow trees? R
+- openui/open-ui#522 closed [focusgroup,i18n-tracker,needs-triage] [focusgroup] i18n: should arrow key navigation follow text direction?
+- openui/open-ui#523 closed [popover] [popup] What are the precedence rules for `togglepopup`, `showpopup`, and `hidepopup` R
+- openui/open-ui#524 closed [needs-triage] [selectmenu] Customization - OS-native UIs
+- openui/open-ui#525 closed [popover] [popup] More crisply define the interactions between `popup=popup`, `popup=hint`, and `popup=async` R
+- openui/open-ui#526 closed [command-invokers,popover] [popup] "Interest"-based triggering for popovers R
+- openui/open-ui#528 closed [select] [selectmenu] Should we drop support for attachShadow? R
+- openui/open-ui#529 closed [a11y-tracker,popover] [popup] Should light dismiss happen on `mousedown` or `mouseup`? R
+- openui/open-ui#530 closed [a11y-tracker,popover] [popup] hint - how to provide keyboard access for non-focusable elements
+- openui/open-ui#531 closed [select] [selectmenu] Reconsider requiring <listbox> as a prerequisite for <selectmenu> R
+- openui/open-ui#532 closed [a11y-tracker,needs-triage,popover] [popup] Bikeshed `popover=hint` R
+- openui/open-ui#533 closed [popover] The popup attribute should allow the empty string value
+- openui/open-ui#534 open [needs-triage,select] [selectmenu] List Virtualization
+- openui/open-ui#536 closed [select] [selectmenu] Interoperability of styles
+- openui/open-ui#537 closed [focusgroup] [focusgroup] Why not include memory of last focused item in group?
+- openui/open-ui#540 closed [needs edits,select] [selectmenu] Restricting interactive content in <selectmenu> listbox R
+- openui/open-ui#541 closed [needs-triage] YouTube popup menu containing multiple nested select menus
+- openui/open-ui#543 closed [focusgroup,needs-triage] [focusgroup] Action of the Home and End keys R
+- openui/open-ui#544 closed [needs-triage] [Documentation] Permalinks to anchored positions not working
+- openui/open-ui#546 closed [popover] [popup] The `popup` IDL attribute might not be web compatible
+- openui/open-ui#547 closed [needs edits,select] [selectmenu] Method to apply styles only in open state
+- openui/open-ui#548 closed [needs edits,select] [selectmenu] Method to change arrow icon?
+- openui/open-ui#549 closed [popover] [popup] Should we rename showPopup/hidePopup to showPopUp/hidePopUp?
+- openui/open-ui#552 closed [needs-triage,select] [selectmenu] Decide on standardized default styles for `appearance:base-select`
+- openui/open-ui#555 closed [focusgroup] [focusgroup] "descend" into non-child descendent should callout limitation
+- openui/open-ui#557 closed [CSSWG,popover] [popup] Top layer pseudo class questions
+- openui/open-ui#558 closed [a11y-tracker,needs edits,needs-a11y-review,select] [selectmenu] Accessibility of option labels R
+- openui/open-ui#559 open [needs-triage] Panelset & tabs: defining separate goals for each pattern
+- openui/open-ui#561 closed [popover] [popup] Standardize the basic CSS for an element with the `popup` attribute
+- openui/open-ui#563 open [needs-triage] [Brainstorm] Declarative responsive markup
+- openui/open-ui#565 closed [agenda+,needs edits,select] [selectmenu] Accept "option" elements through multiple slots R
+- openui/open-ui#567 closed [needs-triage] [measure] Semantic measurements conversion API
+- openui/open-ui#568 closed [CSSWG,needs-triage] Selecting based on user changing values
+- openui/open-ui#571 closed [needs edits,select] [select] Should the inner HTML & styles of the selected option be copied into selected-value? R
+- openui/open-ui#573 closed [focusgroup,needs-triage] [Focusgroup] Navigation in screen readers on touch devices?
+- openui/open-ui#575 closed [popover] [popup]Two nested popups dismissed by only one outside click 
+- openui/open-ui#578 closed [agenda+,popover] [popup] It is error prone to have both async and sync 'hide' event R
+- openui/open-ui#579 closed [popover] [popup] Consider to dispatch show event as the first step of showPopup
+- openui/open-ui#581 closed [popover] [popup] Add further clarity that popup is not (presently?) for modal dialogs
+- openui/open-ui#582 closed [site-rewrite] [site rewrite] Set up long-running branch
+- openui/open-ui#583 closed [site-rewrite] [site rewrite] Migrate sources
+- openui/open-ui#584 closed [site-rewrite] [site rewrite] Migrate Styles
+- openui/open-ui#585 closed [site-rewrite] [site rewrite] Migrate Pages
+- openui/open-ui#586 closed [needs-triage,site-rewrite] [site rewrite] Ensure site metadata is consistent with Gatsby site
+- openui/open-ui#587 closed [site-rewrite] [site rewrite] Ensure that Readme is up-to-date
+- openui/open-ui#588 closed [needs-triage,site-rewrite] [site rewrite] Regression test the entire site
+- openui/open-ui#589 open [needs-triage,openui-site,site-rewrite] [site rewrite] Remove platform directory, bring research to top-level repo
+- openui/open-ui#590 closed [site-rewrite] [site rewrite] Remove Gatsby code
+- openui/open-ui#592 closed [site-rewrite] [site rewrite] Deploy long-running branch to Netlify
+- openui/open-ui#598 closed [needs edits,select] <p> element parser rules cause content to be kicked out of <selectmenu>
+- openui/open-ui#599 closed [select] Define behavior of tab key in <selectmenu> listbox R
+- openui/open-ui#600 open [CSSWG,i18n-tracker,needs edits,needs-triage,select] [selectmenu] How should writing-mode work with selectmenu R
+- openui/open-ui#605 closed [needs-triage] Initiate - Design to code
+- openui/open-ui#607 closed [popover] [popup] Naming for `show` and `hide` events R
+- openui/open-ui#608 closed [agenda+,select] [selectmenu (& co.)] Figure out interaction with autofill. R
+- openui/open-ui#609 closed [popover] [popup] defaultopen expectations
+- openui/open-ui#610 closed [popover] [popup] Boolean property for show state
+- openui/open-ui#612 closed [popover] [popup] return focus to triggering element if dismissing popup
+- openui/open-ui#616 closed [-] Content Mirrors
+- openui/open-ui#617 closed [popover] Tracking issue for bringing back `popover=hint` and hover-triggering behavior
+- openui/open-ui#621 closed [needs edits] Is there any principle/decision process we can add for "don't make it worse"?
+- openui/open-ui#622 open [command-invokers,needs-triage,popover] [invokers] - how to style invoking element based on Invoker state?
+- openui/open-ui#626 closed [-] Allowing WebExtensions to draw above web content
+- openui/open-ui#627 closed [popover] [popup] Should we rename popup due to potential developer confusion? R
+- openui/open-ui#631 closed [popover] Rename `defaultopen` for popovers
+- openui/open-ui#632 closed [bug,openui-site,select] Broken images on select research page
+- openui/open-ui#633 closed [-] Move future telcons over to Jitsi meet? R
+- openui/open-ui#634 closed [openui-site] How to redirect URLs on open-ui.org
+- openui/open-ui#635 closed [needs edits,popover] [popup] modals and toast stacking R
+- openui/open-ui#637 closed [agenda+,select] SelectMenu placeholder capability? R
+- openui/open-ui#638 closed [needs-triage,select] SelectMenu multi-select, dismiss or not to dismiss?
+- openui/open-ui#639 closed [agenda+] Should the button part of a SelectMenu toggle or show the listbox? R
+- openui/open-ui#641 closed [a11y-tracker] default tooltip placement
+- openui/open-ui#643 closed [-] Popover: brainstorm ways around the lack (for now) of `popover=hint`
+- openui/open-ui#645 closed [needs edits,needs-triage,select] [selectmenu] Add CSS selector to consistently select selectmenu parts
+- openui/open-ui#646 closed [agenda+,popover] [popover] are popovertoggletarget, popovershowtarget and popoverhidetarget needed? R
+- openui/open-ui#648 closed [agenda+,needs-research,select] [selectmenu] Mechanism to use <select> as progressive enhancement? R
+- openui/open-ui#649 closed [-] [popover] popover element auto-hide on right-click (context menu)
+- openui/open-ui#650 closed [popover] Normalize css vs popover
+- openui/open-ui#651 closed [popover] [popover] the complexity of triggering elements across multiple tree scopes (document or shadow root)
+- openui/open-ui#652 closed [-] Should the selected-value be able to contain SVG tags provided in the <option>
+- openui/open-ui#657 closed [agenda+,select] Should `<selectmenu>`'s `selected-value` support slot assignment? R
+- openui/open-ui#658 open [more-info-needed,needs-triage] Link `focus` and `hover` should follow WAI-ARIA WCAG AA guidelines
+- openui/open-ui#661 open [needs-research,needs-triage] Idea: Specify a Rich Text Textarea
+- openui/open-ui#662 closed [needs-triage,select] [selectmenu] alternative UX to unselect/uncheck selected values
+- openui/open-ui#664 closed [agenda+,select] Should option.innerText or option.value be used for getting and setting selectmenu.value?
+- openui/open-ui#665 closed [-] Should we change the meeting day/time to be more inclusive R
+- openui/open-ui#666 open [more-info-needed,needs-research,needs-triage] Add a new element to change a URL parameter without Javascript
+- openui/open-ui#670 closed [Misc] Proposal for updating Open UI Charter R
+- openui/open-ui#673 open [frontend,good first issue,needs-triage,openui-site] Utilise CSS variables across the site
+- openui/open-ui#674 closed [frontend,good first issue,openui-site] Make CSS solution consistent across the whole site
+- openui/open-ui#677 closed [site-rewrite] Support heading anchor links
+- openui/open-ui#679 closed [-] Add contributor bubbles to the Open UI site 
+- openui/open-ui#681 closed [good first bug,good first issue,openui-site] [Site]: Anchor links don't work on "Names" header
+- openui/open-ui#683 closed [select] Remove the Select element from proposals
+- openui/open-ui#687 closed [select] [selectmenu] Should the text inside `<option>`s be selectable? R
+- openui/open-ui#688 closed [Misc,needs-triage] [Principle] Definition of interoperability for Open UI base behaviors and styles  R
+- openui/open-ui#689 closed [CSSWG,Misc] [appearance: user-agent] Opt-in to the current OSes control variant
+- openui/open-ui#693 closed [needs-triage] WebIDL highighting is missing
+- openui/open-ui#700 closed [needs edits,openable] Consider "toggle" (expand/collapse) attribute  R
+- openui/open-ui#701 closed [select] [select] <selected-value> element violates rules for HTML element names
+- openui/open-ui#702 closed [agenda+,select] [select] Don't reuse slot="" and ::part(); behavior="" is also strange
+- openui/open-ui#703 closed [select] [select] Consider making the popover-ness automatic
+- openui/open-ui#704 closed [needs-triage,select] [select] It's very unclear what actual API surfaces are introduced by this proposal
+- openui/open-ui#705 closed [select] [select] The actual JS API surface and capabilities are not described anywhere
+- openui/open-ui#718 closed [-] [popover] Entry/Exit animations don't work as explained
+- openui/open-ui#723 closed [-] Can popovers be relatively positionable without anchor positioning?
+- openui/open-ui#725 closed [-] Proposal for Exclusive Accordions
+- openui/open-ui#730 closed [needs-triage] Consider providing a way for authors to style the title attribute's tooltip
+- openui/open-ui#734 closed [Misc] Focusgroup move to WHATWG R
+- openui/open-ui#736 closed [-] Modal dialog trigger without JS
+- openui/open-ui#737 closed [needs-triage] [meta] Should explainers defer to specs where appropriate
+- openui/open-ui#738 closed [-] [slider] `::-webkit-slider-container`
+- openui/open-ui#741 closed [-] [popover] Dialog with popover-like triggers
+- openui/open-ui#742 closed [needs edits,select] `<selectmenu>` eagerly makes selections
+- openui/open-ui#743 closed [needs edits] Inconsistent ordering of anatomy slot and parts R
+- openui/open-ui#744 open [needs-triage] Proposal for improvements to `<details>` styling
+- openui/open-ui#749 closed [needs-triage,select] `<selectmenu>` `min-inline-size` defaults and styles
+- openui/open-ui#751 closed [-] [accordion] Issues with current research
+- openui/open-ui#752 closed [-] [accordion] Differing interpretations/models of exclusivity R
+- openui/open-ui#758 closed [good first issue,needs-triage,openui-site] Design Systems page probably could use updates R
+- openui/open-ui#765 closed [-] Standardised tooltip styling
+- openui/open-ui#767 closed [agenda+,command-invokers,popover] [tooltip] Bikeshed the name for a `popovertargetaction` value to hover/focus trigger R
+- openui/open-ui#769 open [needs-research,needs-triage] Standardise the anatomy of input[type=number]
+- openui/open-ui#770 closed [needs-research] Multi Range Slider (slider with multiple handles)
+- openui/open-ui#771 open [more-info-needed,needs-triage,popover] [Popover] Should a popover have the ability to be opened by default?
+- openui/open-ui#772 open [WHATWG,needs-research,needs-triage] A standard spoiler / content-warning mechanism
+- openui/open-ui#773 closed [agenda+,select] Rename `selectmenu` to `selectbox`
+- openui/open-ui#777 closed [more-info-needed,needs-triage] Add a new input type for verification codes
+- openui/open-ui#778 closed [-] [exclusive accordion] how valuable is having working exclusivity in subtrees not connected to a document
+- openui/open-ui#779 closed [select] [select] Transforms applied to a `<selectmenu>` are not applied to the listbox
+- openui/open-ui#781 open [needs-triage,popover] [interesttarget] Are `popover-show-delay` and `popover-hide-delay` needed? Can they be abstracted?
+- openui/open-ui#786 closed [agenda+] [exclusive accordion] exclusively non-exclusive... R
+- openui/open-ui#787 closed [needs-triage,select] [selectlist] Should UAs be able to "fallback" to native implementation if a poor UX is detected?
+- openui/open-ui#789 closed [Misc,openui-site] [process] Scribe documentation
+- openui/open-ui#790 closed [bug,openui-site] Site initialization is failing
+- openui/open-ui#793 open [Misc,needs-triage,openui-site] Material Web should be updated to M3
+- openui/open-ui#794 open [Misc,needs-champion,needs-triage,openui-site] Stardust UI no longer exists
+- openui/open-ui#795 open [Misc,needs edits,needs-champion,needs-triage,openui-site] Fabric has been replaced with Fluent UI
+- openui/open-ui#797 closed [Misc,needs-triage,openui-site] Enable Astro "View Transitions" in the Open UI site
+- openui/open-ui#799 open [WHATWG,needs-triage] Add the ability to show/hide table rows/columns in a <table> R
+- openui/open-ui#800 open [WHATWG,needs-triage] Native ability to sort a <table>
+- openui/open-ui#801 closed [Misc,needs-triage,openui-site] Where to put "stale" explainers R
+- openui/open-ui#802 open [Misc,needs-triage,select] Errors for form related controls R
+- openui/open-ui#803 open [WHATWG,needs-triage] Native ability to text search tables
+- openui/open-ui#804 closed [needs-triage,switch] [switch]: Naming of the component and it's parts
+- openui/open-ui#807 closed [needs edits,select] [selectlist] Add `showPicker()` method to `<selectlist>` R
+- openui/open-ui#808 closed [select] Naming of the selected value element
+- openui/open-ui#809 closed [select] Should we worry about existing button behavior? R
+- openui/open-ui#812 closed [-] [exclusive accordion] developer poll on behavior of exclusive accordion
+- openui/open-ui#815 closed [command-invokers,needs-triage,popover] [popover] Can we add hover-triggering to anchor (`<a>`) elements? R
+- openui/open-ui#816 open [needs-triage,switch] switch: What customizability for animations should be supported?
+- openui/open-ui#817 closed [-] Joint TPAC / WHATWG / OpenUI session?
+- openui/open-ui#818 open [details,needs-triage] `<summary for>` pointing to a `<details>` element elsewhere
+- openui/open-ui#821 closed [select] Should all `<button type=selectlist>`s get behavior? What about `<button>`? R
+- openui/open-ui#822 closed [-] [Selectlist] Allow `<label>` as the first child of `<optgroup>`, as an alternative to the `label` attribute
+- openui/open-ui#823 closed [needs-triage] [Selectlist] Include `<hr>` as an allowed child of `<listbox>`
+- openui/open-ui#824 closed [select] selectlist: Animating changes in the selected value
+- openui/open-ui#825 closed [agenda+,needs edits,select] select: Should `<selectedoption>` respond to mutations in the selected `<option>` R
+- openui/open-ui#827 closed [needs-triage,select] selectlist: pseudo-class to style the selected option R
+- openui/open-ui#834 closed [-] Bikeshed a name for "light dismiss for dialog"
+- openui/open-ui#836 closed [select] Selectlist future compatibility questions
+- openui/open-ui#838 closed [command-invokers,popover] [popover] Can we add focus-triggering to form elements?
+- openui/open-ui#839 open [command-invokers,interest-invokers,needs-triage] [invokers] Can we add interesttarget support to more elements R
+- openui/open-ui#840 open [needs-triage] Add Firefox and WebKit to design systems
+- openui/open-ui#845 open [discussion,needs-triage] Improve design system anatomy JSON Schema R
+- openui/open-ui#846 closed [-] Improve client-side form validation with messages in the dom
+- openui/open-ui#847 open [select] How to make an accessible searchable "select" list? R
+- openui/open-ui#849 closed [needs-triage,popover] Responsive popovers to inline content? R
+- openui/open-ui#853 open [Misc,needs-triage] [misc] Getting developer & user feedback on solutions
+- openui/open-ui#854 closed [-] Is someone willing to pull together research on tooltip nestability?
+- openui/open-ui#856 closed [-] Custom decorations in standard components
+- openui/open-ui#857 closed [command-invokers,needs-triage,popover] [Popover] Tooltips on `<abbr>`s
+- openui/open-ui#859 closed [focusgroup] `focusgroup` should support logical properties
+- openui/open-ui#863 closed [select] selectlist: Should the "checked" option have a checkmark next to it? R
+- openui/open-ui#865 closed [command-invokers] Invokers: cross-origin restrictions
+- openui/open-ui#869 closed [command-invokers] Invokers: What should happen to popovertarget? R
+- openui/open-ui#871 closed [needs-triage,select] selectlist: We should add light dismiss behaviour to explainer
+- openui/open-ui#872 closed [agenda+,command-invokers] invokers: Behaviour when interesttarget and invoketarget point to the same element R
+- openui/open-ui#873 closed [needs-triage] `<input type="search">` provides a clear button "X" that can't be customized
+- openui/open-ui#874 open [discussion,needs-triage] Improve design system anatomy display
+- openui/open-ui#875 open [discussion,needs-triage] Improve design system concepts schema
+- openui/open-ui#878 open [needs-research,needs-triage] Add research for dual list box
+- openui/open-ui#880 open [discussion,needs-triage] Anatomy Schema "part" names?
+- openui/open-ui#881 closed [needs-triage,select] selectlist: customizing the default button's marker is weird R
+- openui/open-ui#884 open [needs edits,needs-triage,popover] Popup research issues
+- openui/open-ui#886 closed [select] [selectlist] button pseudo element naming
+- openui/open-ui#893 closed [focusgroup] [focusgroup] Functionality defered to (abandoned?) CSS Toggles Proposal
+- openui/open-ui#894 open [discussion,needs edits,needs-triage] [file] Is label the correct name for the file name part of file component R
+- openui/open-ui#896 closed [needs-triage,select] Design the `<listbox>` element R
+- openui/open-ui#897 open [needs-triage,select] Further selection refinements for collapsed selectlist R
+- openui/open-ui#898 closed [command-invokers,needs-triage] Custom actions / variety of actions for invoker leads to ambiguity for accessibility
+- openui/open-ui#900 closed [command-invokers,needs edits,needs-triage] [invokers] Should custom action names have naming requirements? R
+- openui/open-ui#903 open [needs-triage] Data tables (with sorting, filtering, etc.)
+- openui/open-ui#904 closed [command-invokers,needs-triage] [Invokers] Security implications? R
+- openui/open-ui#905 closed [command-invokers,interest-invokers,needs edits] [Invokers] What about de-hover/de-focus?
+- openui/open-ui#906 closed [command-invokers,needs-triage] [Invokers] no magic defaults please
+- openui/open-ui#907 closed [command-invokers,needs-triage] [Invokers] Supported action feature detection
+- openui/open-ui#908 closed [command-invokers] [Invokers] InterestTarget support on more elements
+- openui/open-ui#909 closed [command-invokers] [Invokers] Should interest event include what triggered it?
+- openui/open-ui#910 closed [listbox] listbox: Should selection follow focus?
+- openui/open-ui#911 closed [command-invokers] [invokers] Should input and select auto action exist?
+- openui/open-ui#914 closed [needs edits,openui-site] [Website] Open UI's X account should be linked
+- openui/open-ui#915 closed [command-invokers,needs edits] [invokers] Should we remove canvas element default?
+- openui/open-ui#916 open [command-invokers,needs-triage] [invokers] Picture in picture action?
+- openui/open-ui#919 open [good first bug,needs-triage] Research on *non-top-layer* non-modal dialogs
+- openui/open-ui#920 open [needs-triage] [dialog] Declarative indicator for dialog modality
+- openui/open-ui#921 open [needs-triage,openui-site] [site] Link prefetching results in an always redirected URL
+- openui/open-ui#922 closed [discussion,needs-triage] Standardise and expose browser pickers
+- openui/open-ui#924 closed [-] Combobox Proposal
+- openui/open-ui#925 closed [a11y-tracker,accordion] [accordion] UA ability for user to over-ride exclusive accordions functionality
+- openui/open-ui#926 closed [agenda+,needs edits] [Selectlist] `<label>`s as children of `<selectlist>` R
+- openui/open-ui#927 closed [-] Auth issues with repo setup
+- openui/open-ui#929 open [Combobox,needs-triage] Define Keyboard Interactions for <combobox> Component
+- openui/open-ui#930 closed [Combobox] Naming combobox Element
+- openui/open-ui#931 open [Combobox,select] Combobox search attribute and its values R
+- openui/open-ui#932 open [Combobox,needs-triage] Combobox filter attribute
+- openui/open-ui#933 closed [command-invokers,needs edits] [invokers] Media mute action ambiguous R
+- openui/open-ui#934 closed [agenda+,command-invokers,select] [invokers] Default actions for selectlist R
+- openui/open-ui#935 closed [command-invokers] [invokers] should `toggleModal`/`toggle` close open dialogs regardless of modal? R
+- openui/open-ui#937 closed [command-invokers,needs-triage] [invokers] Should invokers toggling a dialog close or cancel? R
+- openui/open-ui#938 closed [command-invokers,needs edits] [invokers] Should invokers on dialog have a cancel action? R
+- openui/open-ui#939 closed [Combobox,needs-triage] [combobox] Is type="selectlist" correct for the input? R
+- openui/open-ui#941 open [needs-triage] [dialog] Initially-open non-modal dialogs
+- openui/open-ui#945 closed [command-invokers,needs edits,needs-triage] [invokers] Should invokers check for user gesture? R
+- openui/open-ui#946 closed [command-invokers] [invokers] Should synthesized clicks dispatch trusted invoke events?
+- openui/open-ui#947 open [command-invokers,needs-triage] [invokers] Add media invokeaction for controlling loop property?
+- openui/open-ui#948 open [command-invokers,needs-triage] [invokers] Add media invokeaction for remote playback control?
+- openui/open-ui#949 closed [select] Proposal: Introduce `filter` Attribute for `select`
+- openui/open-ui#952 closed [command-invokers,needs edits,needs-triage] [invokers] Copy command R
+- openui/open-ui#954 closed [agenda+,command-invokers,needs-triage] [invokers] should we pursue proposing method names to match invoke actions?
+- openui/open-ui#956 closed [command-invokers,needs edits,needs-triage] [invokers] Dialog's `toggle` needs a better name
+- openui/open-ui#957 closed [needs-research,needs-triage] Research ToggleButtons
+- openui/open-ui#958 open [discussion,needs-triage,openui-site] Should we be Link Prefetching all sidebar links?
+- openui/open-ui#959 open [needs-triage,switch] [switch]: Should author defined content be allowed on tracks or thumb?
+- openui/open-ui#963 open [command-invokers,interest-invokers,needs-triage] [invokers] loseinterest should include a "safe area" mechanism R
+- openui/open-ui#964 closed [command-invokers,needs edits] [invokers] Update invokers proposal to clearly define a v1.
+- openui/open-ui#966 closed [discussion] Scoped modal dialogs
+- openui/open-ui#968 closed [command-invokers,discussion] [invokers] stepUp and stepDown actions for number inputs
+- openui/open-ui#969 closed [agenda+,command-invokers,discussion] [invokers] Casing for action values R
+- openui/open-ui#970 closed [needs-triage,select] selectlist feedback from apple R
+- openui/open-ui#971 open [Combobox,needs-triage] [combobox] Should we allow a button child to control the dropdown? R
+- openui/open-ui#972 open [command-invokers,needs-triage] [invokers] Geolocation API?
+- openui/open-ui#973 closed [Combobox,needs edits] [combobox] Update proposal to use datalist not listbox
+- openui/open-ui#974 open [command-invokers,needs-triage] [invokers] Share command
+- openui/open-ui#977 closed [needs-triage,select] stylable select: What should we do about the `multiple` and `size` attributes? R
+- openui/open-ui#978 open [needs-triage,switch] [switch]: Should author defined content be allowed on the track?
+- openui/open-ui#979 open [needs-triage,switch] [switch]: Should author defined content be allowed on the thumb? R
+- openui/open-ui#985 closed [Misc,WHATWG,needs-triage,waiting] [select] How to enable interoperable DOM, behaviors and user-agent styles for <select> R
+- openui/open-ui#987 open [needs-triage] Consider `<chart>` and/or `<diagram>` elements
+- openui/open-ui#989 closed [focusgroup] [focusgroup] Proposal: drop the limitation of focusgroup applying to children-only R
+- openui/open-ui#990 open [focusgroup,needs-triage] [focusgroup]: should focusgroup require the use of a modifier key? or ??? for unexpected patterns
+- openui/open-ui#991 closed [needs-triage] [invokers] Defining more complex invocation actions within CSS
+- openui/open-ui#992 open [command-invokers,interest-invokers,needs-triage] [interest] configurable delay mechanism
+- openui/open-ui#993 open [focusgroup,needs-triage] [focusgroup] create a default visual indicator?
+- openui/open-ui#995 closed [focusgroup,needs-triage] [focusgroup] Interactions with native elements (that have focusgroup-like behavior built-in) R
+- openui/open-ui#996 open [needs-triage] [switch] Differentiate the semantics of a switch vs a checkbox
+- openui/open-ui#998 closed [command-invokers] [invokers] bikeshed the attribute names.
+- openui/open-ui#999 closed [command-invokers,needs edits] [interest invokers] Do we need an interestaction attribute? R
+- openui/open-ui#1001 closed [command-invokers,interest-invokers,needs-triage] [interest invokers] Should el.interestTargetElement return null when not supported?
+- openui/open-ui#1002 closed [command-invokers,interest-invokers,needs edits] [interest invokers] Should interesttarget work on disabled form controls?
+- openui/open-ui#1003 closed [command-invokers,needs edits] [interest invokers] Support interesttarget on `<area>` elements? R
+- openui/open-ui#1007 closed [focusgroup,needs-triage] [focusgroup] Restrict usage of focusgroup on certain elements
+- openui/open-ui#1008 closed [a11y-tracker,focusgroup,needs-triage] [focusgroup] clarify and handle cases where scrollable regions have focusgroups (accessiblity)
+- openui/open-ui#1013 open [focusgroup,needs-triage] [focusgroup] How does focusgroup interplay with autofocus?
+- openui/open-ui#1014 open [needs-triage] Improve DX of element reference attributes by allowing relative references instead of just ids
+- openui/open-ui#1015 open [checkbox,needs-research,needs-triage] A declarative way to specify aggregation checkboxes
+- openui/open-ui#1016 closed [needs-triage,select] [select] What exactly should happen when tab or shift+tab is pressed on an option in the listbox?
+- openui/open-ui#1017 open [Misc,needs-triage] A design system, component library for the web? R
+- openui/open-ui#1018 closed [focusgroup,needs-triage] Focusgroup use cases and APG patterns
+- openui/open-ui#1019 closed [-] A way to create dropdowns for navigation / anchor tags similar to `<select>`
+- openui/open-ui#1020 closed [needs-triage] [Invokers] Expose API for default `invokeaction` handlers
+- openui/open-ui#1022 open [needs-triage] Multiple URLs for components?
+- openui/open-ui#1023 open [needs-triage] Consider <time> improvements
+- openui/open-ui#1024 closed [agenda+,command-invokers,popover] Imperative invoker relationships R
+- openui/open-ui#1026 closed [needs-triage,select] [select] - Ensure any new UA defaults meet WCAG 2.2 target size (minimum) R
+- openui/open-ui#1030 open [command-invokers,interest-invokers,needs-triage] [invokers] invoke on focus but not hover
+- openui/open-ui#1031 open [needs-triage] [carousel] How to make scroll-markers / navigation buttons?
+- openui/open-ui#1032 closed [agenda+,command-invokers,needs edits] [interest invokers] Should we support other forms of link elements? R
+- openui/open-ui#1033 open [command-invokers,needs-triage] [command invokers] Should events trigger when invoking? R
+- openui/open-ui#1036 open [command-invokers,interest-invokers,needs-triage] explore use cases for single input modality use cases of interest invoker
+- openui/open-ui#1037 open [command-invokers,interest-invokers,needs-triage] [invokers - interest] What to do with manual popovers on lose interest
+- openui/open-ui#1038 open [command-invokers,needs-triage] [command invokers] `command=set/reset/clear` for form inputs R
+- openui/open-ui#1039 open [needs-triage,research] Use cases for a button with a pressed state
+- openui/open-ui#1040 open [needs-triage,research] Use cases for a button with multiple states
+- openui/open-ui#1044 closed [focusgroup,needs-triage] [focusgroup] Should focusgroup direction follow the DOM order or the visual order?
+- openui/open-ui#1045 closed [WHATWG,needs edits,needs-triage] [switch] Should the switch element support swipe actions? R
+- openui/open-ui#1046 closed [switch] [switch] Should the switch have a toggle() method? R
+- openui/open-ui#1047 open [needs-triage,popover] [popover] moving keyboard focus out of a popover should dismiss it
+- openui/open-ui#1049 closed [select] Target minimum size for select
+- openui/open-ui#1052 open [command-invokers,interest-invokers,needs-triage] [interest invokers] Touch inputs R
+- openui/open-ui#1055 closed [Combobox,agenda+,select] Explore `<input>` Element as a child within `<select>` for Combobox R
+- openui/open-ui#1057 closed [needs-triage] [invokers] Implicit targets
+- openui/open-ui#1058 closed [needs edits] Press Button Proposal R
+- openui/open-ui#1060 closed [-] Dismissing popovers when focus leaves
+- openui/open-ui#1061 closed [needs edits,needs-triage,select] Will the stylable <select> element be able to break outside the browser window? 
+- openui/open-ui#1062 open [needs-triage] [invokers] setRangeText for textarea and inputs
+- openui/open-ui#1063 open [needs-triage,select] [select] `<selectedoption for=id>` as an alternative to split buttons and `<button type=popover>`
+- openui/open-ui#1064 closed [command-invokers,interest-invokers,needs edits] [interest invokers] How to define/control the action on "losing interest" R
+- openui/open-ui#1066 open [needs-triage] Foundation for the Global Design System component library
+- openui/open-ui#1068 closed [command-invokers] [invokers] add a way to list supported commands? R
+- openui/open-ui#1069 closed [command-invokers] [invokers] add an invoke method? R
+- openui/open-ui#1072 closed [-] [Invokes] commands should be dash delimited 
+- openui/open-ui#1081 closed [needs-triage,select] [select] mouse focus when clicking invoker to open dropdown
+- openui/open-ui#1082 closed [select] [select] Removing the capability for the author to provide a datalist element R
+- openui/open-ui#1085 closed [-] [select] 
+- openui/open-ui#1086 closed [select] [select] removing pseudo element for fallback button R
+- openui/open-ui#1087 closed [select] [select] keyboard behavior
+- openui/open-ui#1088 closed [needs-triage,popover] Extend popovertarget to support custom elements
+- openui/open-ui#1093 open [command-invokers,interest-invokers,needs edits,needs-triage] Interest Invokers: avoid a11y traps
+- openui/open-ui#1098 closed [i18n-tracker,needs-triage,switch] [switch]: Does the "on" position change between rtl and ltr? R
+- openui/open-ui#1099 closed [select] [select] rendering elements which don't fit the content model
+- openui/open-ui#1102 closed [needs-triage,select] Does `<select multiple>` need a button and popup by default? R
+- openui/open-ui#1104 open [a11y-tracker] Link delegation to descendant R
+- openui/open-ui#1106 open [needs-triage] [switch]: How does the switch behave in different writing modes?
+- openui/open-ui#1107 open [command-invokers,needs-triage,popover] [invokers / popovers] stopping a video in a popover
+- openui/open-ui#1108 closed [-] [select] Video in select?
+- openui/open-ui#1112 closed [select] select: Naming of <selectedoption> R
+- openui/open-ui#1113 closed [select] Select: make backwards compatible accessibility features of new select element easy to support by default
+- openui/open-ui#1114 closed [-] The utility of the `popover=hint` feature R
+- openui/open-ui#1115 closed [needs-triage,select] select: How should we render `<option label=label>text`? R
+- openui/open-ui#1116 closed [agenda+,select] select: how should the button be announced?
+- openui/open-ui#1117 closed [needs-triage,select] select: clarifying what should be used as the chosen value R
+- openui/open-ui#1118 open [needs edits,select] select: provide a way for authors to define the string value of rich options R
+- openui/open-ui#1119 closed [select] select: Should `<selectedoption>` update when selecting the already-selected option R
+- openui/open-ui#1120 closed [needs-triage,select] select: define corner case behavior for <selectedoption> 
+- openui/open-ui#1123 open [needs-triage] Link delegation: Cater for cmd-click, middle-click etc
+- openui/open-ui#1127 closed [select] select: use cases for opening the picker without user activation R
+- openui/open-ui#1128 closed [agenda+] What should "nested" dialog light dismiss look like? R
+- openui/open-ui#1129 closed [-] The content behind the dialog is always unclickable
+- openui/open-ui#1130 open [needs-triage] Meter element states R
+- openui/open-ui#1131 closed [invalid] Image is empty
+- openui/open-ui#1133 closed [command-invokers,interest-invokers,needs-triage] [Interest invokers] Keyboard inputs R
+- openui/open-ui#1134 open [needs-triage] Positioning Elements Above Popover or Dialog
+- openui/open-ui#1135 open [needs-triage] Drawer Component Research/Proposal
+- openui/open-ui#1136 closed [interest-invokers] [interest invokers] Should we rename interesttarget
+- openui/open-ui#1138 closed [interest-invokers] [interest invokers] Should we remove support for "input" buttons?
+- openui/open-ui#1140 closed [invalid] [select] chromium extension error show 
+- openui/open-ui#1142 open [needs-triage] [meta] Should we have an OpenUI account on new socials? R
+- openui/open-ui#1145 closed [invalid] [select] 
+- openui/open-ui#1146 closed [invalid] Sami Nmnkani
+- openui/open-ui#1147 open [-] [popover]: event propagation for the escape key
+- openui/open-ui#1148 open [needs-triage] [invokers] Reference the parent popover/dialog
+- openui/open-ui#1151 closed [-] [meta] Should we have a graduated proposals section on the site?
+- openui/open-ui#1154 closed [needs edits,select] [select] Remove reference to :closed pseudo class
+- openui/open-ui#1156 open [needs-triage,openable] [openable] Does defaultopen as a separate attribute make sense?
+- openui/open-ui#1157 open [needs-triage,openable] [openable] What pseudo class should an open openable match?
+- openui/open-ui#1158 closed [needs edits,openable] [openable] focus management behaviour R
+- openui/open-ui#1159 open [needs-triage,openable] [openable] Should openable be disallowed on certain elements?
+- openui/open-ui#1160 open [needs-triage,openable] [openable] Under what conditions should openable JS methods throw?
+- openui/open-ui#1161 open [needs edits,needs-triage,openable] [openable] Do we need a source property in an options bag for the open and toggle methods like popover has?
+- openui/open-ui#1162 open [needs-triage,openable] [openable] how should we support find in page?
+- openui/open-ui#1163 open [openable] [openable] do we need exclusive openables? R
+- openui/open-ui#1164 closed [-] [Range] Dual Handle Range Input Proposal R
+- openui/open-ui#1165 closed [-] [Range] Range Input Styling API Proposal
+- openui/open-ui#1166 open [needs-triage] [popover] Imperative Invokers and light dismiss
+- openui/open-ui#1175 closed [needs-triage] New draft of appearance:base spec
+- openui/open-ui#1178 closed [invalid] Ditch java
+- openui/open-ui#1179 closed [menu] [menu] Menu elements proposal R
+- openui/open-ui#1182 closed [select] [select] <selectedcontent> does not work with dynamic dom
+- openui/open-ui#1183 open [Enhanced range slider,needs-triage] [Range] Handle count and maximum limitations? R
+- openui/open-ui#1184 open [Enhanced range slider,needs-triage] [Range] Thumb collision handling
+- openui/open-ui#1185 open [Enhanced range slider,needs-triage] [Range] Keyboard navigation for multi-handle ranges R
+- openui/open-ui#1186 closed [Enhanced range slider,needs-triage] [Range] Progressive enhancement as rule of thumb? R
+- openui/open-ui#1187 open [menu,needs-triage] [menu] Explicitly mention whether reading-flow should impact arrow key navigation
+- openui/open-ui#1188 closed [menu,needs-triage] [menu] improve distinction between menubar and toolbar R
+- openui/open-ui#1189 open [menu] [menu] How should we group checkboxes and radios, and how should we decide if they are checkboxes or radios? R
+- openui/open-ui#1190 open [interest-invokers,menu,needs-triage] [menu] Activation behavior for opening submenus R
+- openui/open-ui#1191 closed [menu] [menu] Explicitly mention support for HR as a separator
+- openui/open-ui#1192 open [menu,needs-triage] [menu] When should activating a menuitem close the menu?
+- openui/open-ui#1193 closed [menu] [menu] Navigation vs menu items use case R
+- openui/open-ui#1194 open [menu,needs-triage] [menu] Consider reusing `<menu>` and `<nav>` HTML elements
+- openui/open-ui#1196 closed [menu,needs edits] [menu] allow buttons to open menu(list) popups R
+- openui/open-ui#1197 closed [Enhanced range slider,needs-triage] [Range] Update names and anatomy based on CSSWG decision R
+- openui/open-ui#1198 open [menu,needs-triage,openable] [menu] [openable] allow author choice of opening a submenu inline or as a popup
+- openui/open-ui#1200 closed [menu] [menu] - do we *need* to introduce menuitem elements? R
+- openui/open-ui#1201 open [menu,needs edits,needs-triage,toolbar] [menu] define orientation attribute R
+- openui/open-ui#1202 closed [invalid] https://github.com/openui/open-ui/issues/1179#issuecomment-2734725615
+- openui/open-ui#1203 closed [invalid] https://github.com/openui/open-ui/issues/1179#issuecomment-2734725615
+- openui/open-ui#1204 open [needs-triage] [select] Select options overlapping fixed navbar
+- openui/open-ui#1205 closed [menu] [menu] Define a default checked attribute for menuitem
+- openui/open-ui#1206 open [needs-triage,popover] [popover] Can we implement `cancel` event?
+- openui/open-ui#1211 open [needs-triage] [Range] Allow styling individual thumbs using `:nth-child()`
+- openui/open-ui#1217 closed [select] Should select multiple with popup have OK/Cancel buttons? R
+- openui/open-ui#1220 closed [command-invokers] [command invokers] scroll command R
+- openui/open-ui#1225 open [menu,needs-triage,toolbar] Keyboard shortcuts for menuitems and buttons R
+- openui/open-ui#1226 closed [menu] [menu] Should menulist be a popover by default? R
+- openui/open-ui#1227 open [interest-invokers] How should `interestfor` work on a disabled button R
+- openui/open-ui#1228 open [needs-triage,popover,select] [select] listbox toggle/beforetoggle R
+- openui/open-ui#1229 open [needs-triage,select] [select] Specifying direction for arrow key navigation
+- openui/open-ui#1238 closed [agenda+,select] [select] checkmark for select multiple R
+- openui/open-ui#1240 closed [agenda+,interest-invokers] [interest invokers] expected behavior when the interestfor link is broken R
+- openui/open-ui#1243 closed [Enhanced range slider] [Range] Explainer example issue? + question
+- openui/open-ui#1244 open [Enhanced range slider,a11y-tracker,needs-triage] [Range] What is the label? R
+- openui/open-ui#1245 open [needs-triage] [Range] Attribute disagreements
+- openui/open-ui#1253 closed [agenda+] [Link delegation] name bikeshedding
+- openui/open-ui#1254 closed [-] [Link delegation] modifier key passthrough R
+- openui/open-ui#1255 closed [-] [Link delegation] does the target get :hover, :active styles? R
+- openui/open-ui#1256 closed [-] [Link delegation] additional element support R
+- openui/open-ui#1258 closed [-] Alternative HTML-only version of the `::interest-hint` feature, via command invokers
+- openui/open-ui#1261 closed [needs-triage] [beforefocus/focusNext()] Present & discuss
+- openui/open-ui#1265 open [-] Open a11y questions for overflow/carousels R
+- openui/open-ui#1268 open [needs-triage] What's this component?
+- openui/open-ui#1273 closed [Combobox] Some thoughts and questions about combobox R
+- openui/open-ui#1274 open [menu] [menu] Soft disabling menuitem elements
+- openui/open-ui#1277 open [needs-triage] Should "Inactive" be more obvious?
+- openui/open-ui#1278 open [Enhanced range slider,needs-triage] [Range] What should clicking on the track do when multiple handles are available?
+- openui/open-ui#1279 closed [interest-invokers] [interest invokers] Consider alternative approaches given WebKit opposition
+- openui/open-ui#1281 open [focusgroup,needs-triage] [focusgroup] Default behaviour for key conflict elements
+- openui/open-ui#1282 open [-] [switch] Should the explainer be rewritten to support the switch attribute? R
+- openui/open-ui#1283 closed [toolbar] [toolbar] Toolbar element proposal R
+- openui/open-ui#1286 closed [needs-triage] Showcase for TPAC?
+- openui/open-ui#1291 closed [-] [invoker] Extend support for web components
+- openui/open-ui#1294 closed [focusgroup] [focusgroup] Is focusgroup the right name?
+- openui/open-ui#1295 closed [focusgroup,needs-triage] [focusgroup] Should we remove the "future considerations" out of the new explainer?
+- openui/open-ui#1296 open [focusgroup,needs-triage,openable] [focusgroup] Should we expose this via ElementInternals?
+- openui/open-ui#1297 closed [agenda+,menu] Is `aria-owns` the right relationship for sub-menus? R
+- openui/open-ui#1301 open [focusgroup,needs-triage] [focusgroup] Interaction with custom elements that delegate focus
+- openui/open-ui#1302 closed [-] [focusgroup] should there be a `no-roving` token to disable focusgroup's adjustment to sequential focus navigation?
+- openui/open-ui#1303 closed [agenda+,interest-invokers] Should there be an imperative way to show interest in an interest invoker? Or invoke a command invoker maybe? R
+- openui/open-ui#1306 closed [focusgroup] [focusgroup] How to account for browsers that don't automatically tab focus buttons
+- openui/open-ui#1311 closed [focusgroup] [focusgroup] Should focusgroup not consider positive tabindexes as different from '0'?
+- openui/open-ui#1312 open [menu,select] [menu] Should an event be fired when a <menuitem> is selected? Which event?
+- openui/open-ui#1314 closed [focusgroup] [focusgroup] Should a new attribute be used to manage entry priority rather than tabindex? R
+- openui/open-ui#1316 closed [focusgroup] [focusgroup] Should the entrance algorithm not consider direction?
+- openui/open-ui#1319 open [Combobox] [combobox] supporting autocomplete use cases in aria practices guide R
+- openui/open-ui#1320 open [Combobox,needs-triage] [combobox] when should the picker open and close?
+- openui/open-ui#1321 open [menu] What event should fire on checkable menu items? R
+- openui/open-ui#1323 open [menu,needs-triage] How to support interactive content like `<input type=search>` in a menu?
+- openui/open-ui#1326 open [menu,needs-triage] Can we give menuitems a default command?
+- openui/open-ui#1333 closed [-] `::picker()` and `:has(:hover)` or `:has(:active)` behaviour
+- openui/open-ui#1335 closed [overscroll] Proposal: overscroll way of accessing content R
+- openui/open-ui#1337 open [Enhanced range slider,needs-triage] [Range] Multi-handle necessity and scalability guidelines (3+ Thumbs) R
+- openui/open-ui#1338 open [Enhanced range slider,needs-triage] [Range] Clarifying the propagation of the disabled attribute R
+- openui/open-ui#1339 closed [Enhanced range slider,needs-triage] [Range] Standardize visual and audio feedback for constrained handle movement. R
+- openui/open-ui#1342 open [needs-triage] interestfor cascade issue
+- openui/open-ui#1344 open [command-invokers,needs-triage] [invokers] New useful commands: togglehidden, share, print, copy(clipboard-text), load-content(query), ...
+- openui/open-ui#1349 closed [-] Typo in filterable select code sample
+- openui/open-ui#1351 open [needs-triage,select] [listbox] Usability downgrades with new customisable listbox R
+- openui/open-ui#1354 open [-] [invokers] add some way to toggle a popover without considering interest state
+- openui/open-ui#1355 open [select] [Select] What to do with selectedcontent when multiple select is set with size 1 R
+- openui/open-ui#1358 closed [focusgroup] [focusgroup] Should elements with `tabindex="-1"` participate in focusgroup navigation when focused? R
+- openui/open-ui#1359 open [command-invokers,needs-triage] [invokers] Potential additions
+- openui/open-ui#1360 open [needs-triage] [popover] escape top layer
+- openui/open-ui#1363 open [menu,needs-triage] [menu] support :open pseudo-class on <menuitem>s that open submenus R
+- openui/open-ui#1366 open [Combobox,needs-triage] Implied case folding with Combobox search attribute
+- openui/open-ui#1368 open [needs-triage] [site] Link to the component name matrix from /get-involved
+- openui/open-ui#1369 closed [agenda+] [popover] Should `<label>` be treated the same as the `<button>` it labels for light-dismiss? R
+- openui/open-ui#1371 open [needs-triage] Research Issue for pickers
+- openui/open-ui#1372 closed [overscroll] Introduce "Declarative Overscroll Actions" R
+- openui/open-ui#1373 open [popover] Add the ability to open a POPOVER for tag A (HTML)
+- openui/open-ui#1375 open [needs-triage] Improvements to default style for base select? R
+- openui/open-ui#1377 open [details,needs-triage] Native form validation does not open <details>
+- openui/open-ui#1384 open [needs-triage,overscroll] Should it be possible to open overscroll areas "modally", and if so, how? R
+- openui/open-ui#1385 open [needs-triage,overscroll] Should it be possible to light dismiss overscroll areas?
+- openui/open-ui#1386 open [needs-triage,overscroll] How to make sure the overscroll area can be closed in an accessible way
+- openui/open-ui#1388 closed [-] [invokers] change command based on viewport
+- openui/open-ui#1389 open [-] [meta] Investigate automated minuting R
+- openui/open-ui#1390 open [focusgroup,needs-triage] [focusgroup] Multi-directional focus groups
+- openui/open-ui#1391 open [focusgroup,needs-triage] [focusgroup] after adding default modifiers, the axis restriction modifiers carry 2 meanings and can be confusing
+- openui/open-ui#1395 closed [-] [focusgroup] navigation inside a toolbar ceases when you arrow onto an editable input field
+- openui/open-ui#1396 open [focusgroup,needs-triage,toolbar] [focusgroup] Key conflict behaviours
+- openui/open-ui#1397 closed [focusgroup,needs edits] [Focusgroup] Should home and end keys do something? R
+- openui/open-ui#1398 closed [focusgroup,toolbar] [focusgroup] Should toolbar get the wrap modifier by default? R
+- openui/open-ui#1399 closed [toolbar] [toolbar] Do we need a HTML way to label them?
+- openui/open-ui#1400 open [needs-triage,toolbar] [toolbar] Do we need a separator for them?
+- openui/open-ui#1401 open [needs-triage,toolbar] [toolbar] How to handle vertical toolbars?
+- openui/open-ui#1402 open [needs-triage,toolbar] [toolbar] What should the UA stylesheet for toolbar be?
+- openui/open-ui#1404 open [focusgroup,needs-triage] [focusgroup] Should arrow keys be able to move focus out of certain key conflict elements?
+- openui/open-ui#1405 closed [focusgroup] [focusgroup] should `inline`/`block` not be replaced by `aria-orientation` ?
+- openui/open-ui#1406 open [focusgroup,menu,needs-triage] [focusgroup] Feedback: Mousepointer hover on other items should re-focus
+- openui/open-ui#1407 open [focusgroup,menu,needs-triage] [focusgroup] Feedback: Pointer-activated menu should not focus first item, but clicking down arrow after clicking the menu trigger should still activate the first item ( autofocus or tab-into should not be necessary)
+- openui/open-ui#1408 closed [focusgroup,menu] [focusgroup] Moving focus between horizontal submenus
+- openui/open-ui#1409 closed [Tabs,focusgroup] [focusgroup] tablists
+- openui/open-ui#1410 closed [focusgroup] [focusgroup] RTL
+- openui/open-ui#1411 closed [focusgroup] [focusgroup] accessibility
+- openui/open-ui#1412 closed [focusgroup] [focusgroup] Should listbox imply block modifier? R
+- openui/open-ui#1413 open [focusgroup,needs-triage] [focusgroup] Should focusgroup menubar/menulist automatically create menuitemcheckbox or menuitemradio
+- openui/open-ui#1414 open [toolbar] [toolbar] Should radio inputs behave differently inside of a toolbar? R
+- openui/open-ui#1415 open [needs-triage] materialUI is missing a massive number of its components
+- openui/open-ui#1416 open [needs-triage] tailwind-elements is missing a massive number of its components
+- openui/open-ui#1417 open [focusgroup,needs-triage] [focusgroup] tablist behavior token is misleading
+- openui/open-ui#1419 open [toolbar] [toolbar] should disabled toolbar items remain focusable
+- openui/open-ui#1420 closed [toolbar] [toolbar] Should toolbar have a disabled attribute and how should it behave?
+- openui/open-ui#1425 open [-] Base appearance color input questions R
+- openui/open-ui#1426 closed [-] [focusgroup] disabling segments creation
+- openui/open-ui#1428 open [-] `customvalidity` attribute for form-associated elements
+- openui/open-ui#1429 open [Combobox] [combobox] filtering behaviour with optgroups
+- openui/open-ui#1432 open [Combobox] [combobox] Textarea with datalists
+- openui/open-ui#1433 open [menu] menubar/menulist/menuitem content model R
+- openui/open-ui#1434 closed [focusgroup] [focusgroup] why `tabindex=-1` elements behave differently from "focusgroup items"?
+- openui/open-ui#1435 open [focusgroup] [focusgroup] Research issue for patterns incompatible with multi segment model
+- openui/open-ui#1436 open [select] Which option should be focused when tabbing and shift+tabbing into a listbox select element? R
+- openui/open-ui#1438 open [menu] What should the tab key do in menu elements? R
+- openui/open-ui#1439 open [menu] [menu] moving keyboard focus into submenus R
+- openui/open-ui#1441 open [select] Filterable select and scrollbars
+- openui/open-ui#1442 open [menu] Do we need command=show-menu and command=hide-menu? R
+- openui/open-ui#1447 open [-] [menu] navigational <menuitem>
+- openui/open-ui#1448 open [-] Streamlining the persistence of control values and states as a user preference
+- openui/open-ui#1451 open [-] [Meta] Triage Session
+- openui/open-ui#1452 open [menu,needs-a11y-review] Markup and a11y mappings for navigation menus R
+- openui/open-ui#1453 closed [select] Should `select multiple size=1` have a placeholder option? R
+- openui/open-ui#1456 open [menu] nested structure for menus? R
+- openui/open-ui#1457 open [-] Overscroll Areas feel like they should be done through CSS R
+- openui/open-ui#1459 open [Enhanced range slider] Link input elements with a slider value
+- openui/open-ui#1460 open [Enhanced range slider,agenda+] Segment dragging on range inputs R
+- openui/open-ui#1461 closed [Enhanced range slider] Rangegroup two thumbs at the same time R
+- openui/open-ui#1462 closed [Enhanced range slider] Have a way for <rangegroup> to have a maximum space between
+- openui/open-ui#1463 closed [Enhanced range slider] Should the step between be able to differ between each thumb when more than 2 thumbs
+- openui/open-ui#1464 open [Enhanced range slider,agenda+] [range] Support non-linear (e.g. logarithmic) value scales R
+- openui/open-ui#1465 open [a11y-tracker,select] Keyboard behaviour of custom select options
+- openui/open-ui#1468 open [menu] [menu] do we need special behaviors and thus special markup for <button>s that invoke <menulist>s?
+- openui/open-ui#1471 open [-] [focusgroup] Up/down arrow key navigation with inline wrapping content
+- openui/open-ui#1472 open [-] [focuslandmark] No declarative way to move keyboard focus between major page regions R
+- openui/open-ui#1474 closed [focusgroup] [focusgroup] Remove navigation menu example from explainer
+- openui/open-ui#1476 closed [focusgroup] [focusgroup] Fix explainer demos so the correct roles apply
+- openui/open-ui#1478 closed [agenda+,interest-invokers] [interest] Rich Hint interaction with IFrames R
+- openui/open-ui#1483 open [focusgroup] [focusgroup] Feature detection should be possible without running javascript on the page. R
+- openui/open-ui#1484 open [-] Listbox keyboard interaction model — a way to get the old behavior?
+- openui/open-ui#1487 open [-] [invokers] Generalizing command invokers
+- openui/open-ui#1489 open [focusgroup] [focusgroupV2]  Bikeshed names for the focusgroup itemcontrols modifiers
+- openui/open-ui#1490 open [focusgroup] [focusgroup] Should focusgroup manage focus when a currently-focused item is removed from the tree?
+- openui/open-ui#1491 open [select] Making a filterable select with an attribute
+- openui/open-ui#1492 closed [-] Mark Richer Text Fields proposal as inactive
+- openui/open-ui#1495 open [focusgroup] [focusgroupV2] Define coordinate topology for irregular grids
+- openui/open-ui#1496 open [focusgroup] [focusgroupV2] Define when grid topology can be inferred automatically
+- openui/open-ui#1497 open [openui-site] [Site] Questions layout when code is included looks terrible
+- openui/open-ui#1500 open [focusgroup] [focusgroupV2] itemcontrols should be its own attribute with a list of accepted tokens for customization
+- openui/open-ui#1508 open [menu] [menu] Menu explainer still mentions toggle-menu command
+- openui/open-ui#1510 open [TPAC26,agenda+] TPAC ARIA joint discussions
+- openui/open-ui#1511 open [Enhanced range slider] [Range] Keyboard and focus model for a draggable rangegroup segment
+- openui/open-ui#1515 open [Enhanced range slider,agenda+] [Range] What should be the behavior of an empty rangegroup R
+- openui/open-ui#1516 closed [-] Doc-Error at PopOver API
 - #66 open [css-animations-1] [css-animations] Specify base value liveness
 - #67 closed [css-animations-1] Make animation-delay live
 - #68 closed [css-animations-1] [css-animations] Clarify or remove elapsedTime
@@ -2166,7 +2987,7 @@
 - #2552 closed [css-multicol-1] [css-multicol] What happens to the mbp of the empty fragment created by a spanner being first-child of an element R
 - #2553 open [CSS2] CSS2 maintenance proposal R
 - #2554 open [CSS2] Review old CSS2 edits
-- #2555 open [web-animations-1] [web-animations-1] Explicitly mention that the updated the finished state procedure is run at each of the places where we update timing
+- #2555 closed [Closed Accepted as Editorial,web-animations-1] [web-animations-1] Explicitly mention that the updated the finished state procedure is run at each of the places where we update timing
 - #2557 closed [Closed Accepted by CSSWG Resolution,Commenter Satisfied,Tracked in DoC,css-grid-1] [css-grid] Applying 'justify-content' content distribution is in the wrong place in the overall grid sizing algo R
 - #2558 open [css-position-3] [css-position][css-sticky] Should overflowing sticky element continue scrolling until meeting opposite offset?
 - #2559 closed [Closed Accepted as Editorial,Tested,Tracked in DoC,css-text-3,i18n-tracker] [css-text-3] line-break, word-break: language unclear, and a new testcase.
@@ -6694,7 +7515,7 @@
 - #8271 closed [Closed Accepted by CSSWG Resolution,Testing Unnecessary,css-overflow-3,css-overflow-4,css-overflow-4-appendices,editorial] [css-overflow-3][css-overflow-4][css-overflow-5] Reshuffling Levels R
 - #8273 closed [Closed Accepted by CSSWG Resolution,Needs Testcase (WPT),css-text-4] [css-text-4] Renaming text-space-* to white-space-*
 - #8275 closed [css-overflow-3] [css-overflow] Not all boxes establish an independent formatting context due to `overflow`
-- #8276 open [Needs Edits,css-link-params-1] [css-link-params] param() in src()?
+- #8276 closed [Closed Accepted as Obvious Bugfix,css-link-params-1] [css-link-params] param() in src()?
 - #8277 open [css-ui-4] [feature-request] Stylable Resize Indicator
 - #8278 closed [Needs Edits,Needs Testcase (WPT),css-view-transitions-1] [css-view-transitions-1] UA CSS should size ::view-transition to 0x0 R
 - #8279 closed [Closed Accepted by CSSWG Resolution,Commenter Satisfied,a11y-tracker,css-text-3,i18n-tracker] [css-text-3] Conformant use of text-transform
@@ -7856,7 +8677,7 @@
 - #9869 open [css-display-3] [css-display-3] PointerEvent delivered to a pseudo inside a display:contents element yields unexpected results
 - #9870 open [css-typed-om] [css-typed-om-1][css-syntax-3][css-values-4] Clarify interaction between CSSNumericValue.parse() and `simplify a calculation tree`
 - #9871 closed [web-animations-2] [web-animations-2] Playing an animation might return too early when auto-aligning start time
-- #9872 open [SVG,css-link-params-1] [css-link-params] Let’s fix icons on the Web! Aka a way to pass currentColor and other context to linked SVGs
+- #9872 closed [Closed Accepted by Editor Discretion,SVG,css-link-params-1] [css-link-params] Let’s fix icons on the Web! Aka a way to pass currentColor and other context to linked SVGs
 - #9873 open [css-ruby-1] [css-ruby-1] "zh-Hanb" or "zh-Hant", which is correct for 30% font-size rule?
 - #9874 closed [Needs Edits,css-view-transitions-2] [css-view-transitions-2] Consider allowing `::view-transition-group(.class)` without * R
 - #9875 open [Needs Edits,css-conditional-5] [css-conditional] choose names for keyword-based feature queries in @supports and names for initial set of queries
@@ -8695,13 +9516,13 @@
 - #10997 open [css-flexbox-1] [css-flexbox-1] To transferred min/max constraints get applied to the min/max main sizes?
 - #10998 open [css-color-hdr-1] [css-color-hdr] Requesting Absolute HDR Mode and listed differences from Adaptive HDR Mode
 - #10999 closed [Closed Accepted by CSSWG Resolution,Needs Testcase (WPT),css-anchor-position-1] [css-anchor-position] Better handling of scroll position for fixpos elements on first layout R
-- #11000 open [Needs Edits,css-scoping-1,css-scoping-2,selectors-4,selectors-5] [css-scoping][selectors] `:root` should resolve to `:host` in shadow trees
+- #11000 open [Needs Edits,css-scoping-1,css-scoping-2,css-shadow-1,selectors-4,selectors-5] [css-scoping][selectors] `:root` should resolve to `:host` in shadow trees R
 - #11001 open [HTML] `:predefined` pseudo-class for built-ins (i.e. not custom elements)
 - #11002 open [css-cascade-6,css-cascade-7] [css-cascade] Can we use `@scope` for style isolation?
 - #11003 open [a11y-tracker,css-content-3,css-lists-3,css-pseudo-4] [css-content] ::marker content available for assistive technology
 - #11005 open [css-syntax-3] [css-syntax] Missing emoji in `non-ascii` identifier codepoints
 - #11006 closed [Closed Accepted by CSSWG Resolution,css-sizing-3] [css-sizing] Does indefinite `stretch` behave as automatic size or as initial value? R
-- #11007 open [css-scoping-1,css-scoping-2] [css-scoping] `:has-shadow` pseudo-class
+- #11007 open [css-scoping-1,css-scoping-2,css-shadow-1] [css-scoping] `:has-shadow` pseudo-class
 - #11008 open [css-color-4] CSS color serialization and <input type=color> with alpha/colorspace
 - #11009 closed [Closed as Question Answered,css-sizing-3] Auto Keyword value type of size Intrinsic vs Extrinsic.
 - #11010 closed [Closed as Question Answered,css-cascade-5] [css-cascade] A way to escape the current cascade layer and render styles in the parent layer (`@layer ..`)
@@ -9375,7 +10196,7 @@
 - #11936 open [css-forms-1] [css-forms-1] define how `::picker` works with input pickers
 - #11937 closed [Closed Accepted by CSSWG Resolution,css-align-3] [css-align-3] the `safe flex-start` fallback alignment for `justify-content:space-between` is actually unsafe
 - #11938 open [css-values-5] [css-values-5] Make `type()` optional in `attr()`
-- #11939 open [css-forms-1] [css-forms-1] Pseudo-class to match textual inputs
+- #11939 open [Agenda+,css-forms-1] [css-forms-1] Pseudo-class to match textual inputs
 - #11940 closed [css-nesting-1] [css-nesting?] Allow nesting `@media` inside `@font-face`
 - #11941 open [Needs Edits,css-values-5] [css-values-5] Allow `if()` in descriptors R
 - #11942 open [css-forms-1] [css-forms-1] Define which structural pseudo elements work for base appearance inputs.
@@ -9771,7 +10592,7 @@
 - #12495 open [Needs Edits,Needs Testcase (WPT),cssom-view-1] [cssom-view] How to fulfill programmatic scroll promises? R
 - #12496 closed [Closed Accepted by Editor Discretion,css-link-params-1] [css-link-params] Should params be root var()s or custom env()s?
 - #12497 open [css-pseudo-4,editorial] `::selection`, `::target-text`, `::highlight`, `::spelling-error`, `::grammar-error` style should propagate across shadow boundaries
-- #12499 open [css-link-params-1] [css-link-params] `url(param())` vs. `src(string())`
+- #12499 closed [Closed Rejected as Wontfix by Editor Discretion,css-link-params-1] [css-link-params] `url(param())` vs. `src(string())`
 - #12501 open [css-conditional-5] [css-conditional-5] Float container query example was dropped from the spec.
 - #12502 open [selectors-5] [selectors] Declarative custom `:state()` states
 - #12503 closed [Closed Rejected as Invalid] [cssom]
@@ -10104,7 +10925,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #12982 open [css-values-4,editorial] [css-values] Are the codepoints in an indentifier stored in escaped form or not?
 - #12983 closed [css-view-transitions-1,editorial] [css-view-transitions] CSS properties don't apply to view transition pseudo elements at all.
 - #12984 open [Closed Accepted as Obvious Bugfix,Needs Edits,css-values-5] [css-values] How does `ident()` handle strings?
-- #12987 open [Needs Edits,css-mixins-1,css-mixins-2] [css-mixins-1][css-values-5] The inherit() function in custom functions
+- #12987 open [Needs Edits,css-mixins-1,css-mixins-2] [css-mixins-1][css-values-5] The inherit() function in custom functions R
 - #12990 open [css-values-5] [css-mixins-1][css-values-5] A general inheritance syntax
 - #12997 closed [Closed as Question Answered,css-conditional-4] [css-conditional] Is the `at-rule` function all that necessary?
 - #12998 open [css-content-3,css-position-4,css-pseudo-4] [css-content-3] `content: none` does not work as universally as the spec claims it does.
@@ -10126,7 +10947,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #13020 closed [css-values-4] [css-values-4] Incomplete simplification of calculation sum node containing inverted sum nodes
 - #13025 open [css-page-4,css-regions-1] [paginated / print] Multiple flows for paginated content
 - #13035 closed [Commenter Satisfied,css-backgrounds-4] [css-backgrounds] Specify a rendering method for background images
-- #13036 open [Needs Edits,Needs Testcase (WPT),css-text-decor-4] [css-text-decor-4] Allow to interpolate between `auto` and length values in `text-decoration-inset` R
+- #13036 open [Async Resolution: Proposed,Needs Edits,Needs Testcase (WPT),css-text-decor-4] [css-text-decor-4] Allow to interpolate between `auto` and length values in `text-decoration-inset` R
 - #13037 closed [css-borders-4] [css-borders-4] Rendering of outset shadow spread with concave 50% corner-shapes R
 - #13040 open [a11y-tracker,css-ui-4,css-ui-5,open-ui] [css-ui] `interactivity: focusable`
 - #13041 open [Needs Edits,css-conditional-5,css-mixins-2,mediaqueries-5] [mediaqueries-5][css-conditional-5][css-mixins-1] Order dependent rules and adopted stylesheets R
@@ -10197,7 +11018,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #13153 closed [css-forms-1,selectors-4] [selectors‑4] Hovering a top‑layer pseudo‑element, `body:has(:hover)` doesn't match
 - #13155 closed [css-color-hdr-1] [css-color-hdr-1] has invalid "CSSWG Issues Repository" link
 - #13156 open [css-typed-om,meta] css-typed-om issues
-- #13157 closed [Closed Accepted by CSSWG Resolution,Needs Testcase (WPT),css-color-5,css-conditional-5] [css-conditional-5][css-color] Define `style()` color comparison in more precise terms R
+- #13157 open [Closed Accepted by CSSWG Resolution,Needs Testcase (WPT),css-color-5,css-conditional-5] [css-conditional-5][css-color] Define `style()` color comparison in more precise terms R
 - #13158 closed [Closed Rejected as Wontfix by Editor Discretion,css-values-5] [css-values-5] A more complete syntax definition for `calc-size()` to also cover the `size` keyword
 - #13162 open [css-values-4] [css-values-4][@property url] [Curiosity] URL interpretation differences with @property in CSS
 - #13163 open [Needs Example or Figure,css-navigation-1] [css-navigation-1] :link-to() pseudo-class for links that are related to the current navigation
@@ -10349,7 +11170,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #13377 closed [Closed Accepted by CSSWG Resolution,Needs Testcase (WPT),mediaqueries-4] [mediaqueries] Effect of <meta name=color-scheme> on img and video sources R
 - #13379 open [Needs Edits,Needs Testcase (WPT),css-view-transitions-2] [css-view-transitions-2] Figuring out whether a ViewTransition was skipped or not, is not possible R
 - #13381 open [css-highlight-api-1] [css-highlight-api] Use marker nodes to declaratively annotate highlights
-- #13383 open [Needs Edits,Needs Testcase (WPT),css-forms-1] [css-forms-1] option hover/active styles inside of disabled select listbox R
+- #13383 closed [Needs Edits,Needs Testcase (WPT),css-forms-1] [css-forms-1] option hover/active styles inside of disabled select listbox R
 - #13384 open [css-filter-effects-1] [css filters] supported values for the "in" attribute
 - #13385 closed [css-filter-effects-1,css-filter-effects-2,editorial,fx-filter-effects-1] [css filters] Editorial: Github issues should be linked to the CSS issues not fxtf-drafts
 - #13387 open [css-conditional-5,css-transitions-2] [css-conditional][css-transitions-2] Allow to check whether properties are animatable via @supports
@@ -10418,7 +11239,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #13473 open [compositing-1,compositing-2,css-filter-effects-1,css-filter-effects-2,css-masking-1,css-masking-2,fill-stroke-3,meta,motion-1,web-animations-2] [meta] Change naming scheme of FXTF specs?
 - #13476 open [css-sizing-4,css-values-5] [css-values] Retrieve intrinsic/natural size of resources
 - #13477 closed [Closed Accepted by CSSWG Resolution,css-gaps-1] [css-gaps-1] Decorations between empty areas: default behaviors R
-- #13478 open [Closed Accepted as Editorial,Needs Edits,css-flexbox-1,css-multicol-1,css-sizing-3,css-sizing-4,editorial] [css-sizing] Production for values common to max/min/preferred widths and heights
+- #13478 closed [Closed Accepted as Editorial,Needs Edits,css-flexbox-1,css-multicol-1,css-sizing-3,css-sizing-4,editorial] [css-sizing] Production for values common to max/min/preferred widths and heights
 - #13480 open [Needs Edits,Needs Testcase (WPT),scroll-animations-1] [scroll-animations-1] Define when `ScrollTimeline.source` should update R
 - #13481 closed [Closed as Retracted,css-gaps-1] [css-gaps-1]: Defer percentages insets to future version of css gaps
 - #13485 open [css-inline-3] [css-inline-3] Should dominant-baseline support the legacy SVG text-before-edge and text-after-edge values?
@@ -10429,7 +11250,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #13490 open [css-scroll-snap-1] [css-scroll-snap-1] [interop-2026] clarify how snap positions are calculated in the case where the target element is split into multiple boxes R
 - #13493 open [css-break-4,css-text-4] [css-break][css-text] `break` and `wrap` shorthands; forced wrapping
 - #13494 open [selectors-4] [selectors-4] Should `document.documentElement` match `:scope` when `document` is included `scoping roots`?
-- #13495 open [css-fonts-4,i18n-tracker] [css-fonts-4] Add `hkna` & `vkna` (& `pkna`) OpenType feature settings to `font-variant-east-asian` (e.g. `horizontal-kana` & `vertical-kana` & `proportional-kana`)
+- #13495 open [css-fonts-4,i18n-jlreq,i18n-tracker] [css-fonts-4] Add `hkna` & `vkna` (& `pkna`) OpenType feature settings to `font-variant-east-asian` (e.g. `horizontal-kana` & `vertical-kana` & `proportional-kana`)
 - #13496 closed [css-forms-1] [css-forms] What is motivating using the `lab` interpolation color space in the default style sheet
 - #13497 open [css-overflow-5] Enhanced `labelledby` for Scroll Markers
 - #13498 open [meta] [indexes] Index of Terms and Expansions of Productions
@@ -10516,7 +11337,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #13620 open [css-forms-1] [css-forms] Define UA styles for textual inputs
 - #13621 open [css-forms-1] [css-forms] Define UA styles for number input
 - #13622 open [HTML,css-forms-1] [css-forms] Mechanism to influence the localisation for temporal controls?
-- #13623 open [css-forms-1] [css-forms] Should button-like elements align-items: center?
+- #13623 closed [css-forms-1] [css-forms] Should button-like elements align-items: center?
 - #13625 open [animation-triggers-1] [animation-triggers-1] Add custom triggers
 - #13626 closed [Closed Rejected as Invalid,css-fonts-3,css-fonts-4] [css-fonts-3] Composite font faces with non-identical descriptors
 - #13628 open [css-properties-values-api-1] [css-values] Can we remove the limit for @property initial-value being computationally independent?
@@ -10626,8 +11447,8 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #13781 open [css-break-3,css-break-4] [css-break] Fragmenting of monolithic content when the alternative is overflow
 - #13782 open [css-anchor-position-1] [css-anchor-position-1] Ability to opt-out of transforms affecting anchor positioning
 - #13783 closed [Closed Accepted as Editorial,Closed Accepted by Editor Discretion,css-image-animation-1,editorial] [css-image-animation] Suggest a different term than "decorative"
-- #13784 open [Agenda+ TPAC,Commenter Response Pending,a11y-tracker,css-image-animation-1] [css-image-animation] Conveying role, states, properties to platform AAPIs
-- #13785 open [Commenter Response Pending,css-image-animation-1] [css-image-animation] alt-less (decorative) images need to be addressed
+- #13784 open [Agenda+ TPAC,Commenter Response Pending,a11y-tracker,css-image-animation-1,selectors-4] [css-image-animation] Conveying role, states, properties to platform AAPIs
+- #13785 open [Agenda+,Commenter Response Pending,css-image-animation-1] [css-image-animation] alt-less (decorative) images need to be addressed
 - #13786 closed [Closed Accepted by CSSWG Resolution,Tested,css-overflow-4,topic: line-clamp] [css-overflow] `block-ellipsis` displaced line strut clarification R
 - #13787 open [css-conditional-5] [css-conditional-5] Anchor fragment scrolls should update scroll-state(scrolled) direction to stay consistent with scroll-padding
 - #13788 closed [Closed Accepted as Editorial,css-color-5] [css-color-5] Does `<hue-interpolation-method>` always default to `shorter hue`?
@@ -10638,9 +11459,9 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #13794 closed [Closed Accepted as Obvious Bugfix,css-values-4] [css-values-4] `round(line-width, ...)` specification is confusing
 - #13795 closed [Closed Accepted as Obvious Bugfix,css-values-4] [css-values-4] `snap a length as a border width`: meaning of "Assert: len is non-negative."?
 - #13796 open [mediaqueries-5] [css-mediaqueries] Edge cases of `prefers-color-scheme` and iframe color-scheme
-- #13800 open [css-forms-1] [css-forms-1] Specify UA styles for file input
+- #13800 open [Agenda+,css-forms-1] [css-forms-1] Specify UA styles for file input
 - #13804 open [Needs Edits,Needs Testcase (WPT)] [css-pseudo] Add ::backdrop and ::view-transitions to the CSSPseudoElement's allowed pseudo-elements list R
-- #13805 open [css-animations-1,editorial] [css-animations-1] Editors draft missing link to 2023 working draft
+- #13805 closed [Closed Accepted as Obvious Bugfix,css-animations-1,editorial] [css-animations-1] Editors draft missing link to 2023 working draft
 - #13806 closed [css-animations-2,editorial] [css-animations-2] Editors draft missing Previous Versions section
 - #13807 open [Needs Edits,Needs Testcase (WPT),css-animations-2,scroll-animations-1,web-animations-2] [css-animations-2][web-animations-2][scroll-animations-1] Timeline returned for scope with no timeline providing that name. R
 - #13808 open [css-speech-1] [css-speech-1] defaults for phrasing elements and voice-character
@@ -10774,7 +11595,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #13998 open [Agenda+,css-position-4] [css-position] Painting order of decorations of inline box that establishes stacking context
 - #13999 open [Needs Edits,Needs Testcase (WPT),css-overscroll-1] [css-overscroll] Define overscrollcontainer and overscrollarea style details. R
 - #14000 open [Needs Design / Proposal,css-align-3,css-anchor-position-2] [css-anchor-position][css-align] Ability to center on chosen item
-- #14003 open [Closed Accepted by CSSWG Resolution,Needs Edits,css-content-3] [css-content-3]: Allow `content: <list-style-type>` as shorthand for `content: counter(dummy, <list-style-type>)`. R
+- #14003 closed [Closed Accepted by CSSWG Resolution,Needs Edits,css-content-3] [css-content-3]: Allow `content: <list-style-type>` as shorthand for `content: counter(dummy, <list-style-type>)`. R
 - #14004 closed [Closed Accepted by CSSWG Resolution,Needs Testcase (WPT),css-mixins-2,css-variables-2] [css-variables][css-mixins] In-place hygienic rewriting?
 - #14007 closed [Closed Accepted by Editor Discretion,css-mixins-1,css-mixins-2] [css-mixins-1] Further restrict `<css-type>`
 - #14008 closed [Closed Accepted by CSSWG Resolution,Needs Testcase (WPT),css-align-3,css-anchor-position-1] [css-align-3][css-anchor-position-1] overflow limit rect behaviour with fixedpos & default anchor. R
@@ -10811,7 +11632,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #14050 closed [-] [css-inline] Browsers are not interoperabe with regards to inline borders and line breaking
 - #14051 open [css-color-4] [css-color-4] Is CSS Gamut Mapping intended to apply to CSS gradients?
 - #14052 open [css-align-3,css-grid-3] [css-grid-3][masonry] For `align-items`/`justify-items`, should `fill-reverse` affect the definition of `start` and `end`? R
-- #14053 open [css-link-params-1] [css-variables] Inheriting Variables' Values from Variables in Parent Scopes
+- #14053 closed [Closed Accepted by Editor Discretion,css-link-params-1] [css-variables] Inheriting Variables' Values from Variables in Parent Scopes
 - #14054 open [Agenda+,css-transforms-2] [css-transforms-2] Should `transform-style: flat` be forced by other properties when they don't apply or have a different used value?
 - #14055 open [selectors-5] [css-selectors-5] Proposal: `:external-link` pseudo-class
 - #14056 open [Needs Edits,Needs Testcase (WPT),css-values-5] [css-values-5] Proposal for a new `<request-url-modifier>` called `<cross-origin-storage>` R
@@ -10820,7 +11641,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #14060 open [Needs Edits,Needs Testcase (WPT),animation-triggers-1] [animation-triggers-1][css-animations-2] Should reset action trigger CSS animation events? R
 - #14061 open [css-forms-1] [css-forms-1] Should `select:not(:open)::picker(select)` use `display: none !important`?
 - #14062 open [Needs Edits,Needs Testcase (WPT),css-anchor-position-1,css-forms-1] [css-anchor-position-1] Add flip-self-inline/flip-self-block keywords R
-- #14063 open [Agenda+,css-link-params-1] [css-link-params] Do we need tainting?
+- #14063 open [Agenda+,Closed Accepted by Editor Discretion,Needs Testcase (WPT),css-link-params-1] [css-link-params] Do we need tainting?
 - #14065 open [css-values-5] [css-values-5] Should the `<syntax>` support more complex types?
 - #14066 closed [-] Vertical/sideways text handling for specific codepoints
 - #14067 open [Agenda+,Closed Accepted by CSSWG Resolution,Tested,css-overflow-4,topic: line-clamp] [css-overflow-4] Effect of border-radius on line-clamp float clipping R
@@ -10857,7 +11678,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #14108 open [css-highlight-api-1,css-pseudo-4] [css-pseudo][css-highlight-api] Highlight painting over replaced elements
 - #14109 open [cssom-1] [cssom-1] Dereference child rule `parentStyleSheet` when removing an ancestor rule
 - #14112 open [Needs Edits,Needs Testcase (WPT),css-anchor-position-1] [css-anchor-position-1] What is supposed to happen with scrolling? R
-- #14113 open [web-animations-1] [web-animations-1] null or undefined keyframe in iterable keyframe object causes an assertion failure
+- #14113 closed [Closed Accepted as Editorial,editorial,web-animations-1] [web-animations-1] null or undefined keyframe in iterable keyframe object causes an assertion failure
 - #14115 open [css-color-5] [css-color-5] 11.2. Serializing Origin Colors does not cover light-dark()
 - #14116 closed [css-fonts-4] [css-fonts-4] When are relative units, calc(), var() and env() evaluated for values in @font-palette-values descriptors
 - #14117 open [Agenda+,SVG,css-values-4] [css-values][svg] Should the `width`/`height` attr of `<svg>` require literal for determining natural sizes?
@@ -10955,15 +11776,15 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #14238 closed [Closed as Question Answered,css-link-params-1] [css-link-params] can a URL-fragment param() contain var()?
 - #14239 closed [Closed Rejected as Wontfix by CSSWG Resolution,Needs Testcase (WPT),css-overflow-4,topic: line-clamp] [css-overflow] Interaction between `block-ellipsis` and min/max-content sizes R
 - #14240 open [Agenda+,css-overflow-4,topic: line-clamp] [css-overflow] Should line-clamp hidden content create empty fragments?
-- #14241 open [css-env-1,css-link-params-1] [css-env-1] How exactly should custom environment variables resolve?
+- #14241 closed [Closed Accepted by Editor Discretion,css-env-1,css-link-params-1] [css-env-1] How exactly should custom environment variables resolve?
 - #14243 open [css-mixins-2,meta] [css-mixins-1][Meta] Converging the mixin authoring model (@result, locals, @mixin/@macro merge) R
 - #14246 open [web-animations-1] [web-animations] Restrict lengths in the <easing-function> production parsed from the EffectTiming/OptionalEffectTiming dictionaries to absolute lengths
-- #14247 open [Closed Accepted by CSSWG Resolution,Needs Edits,Needs Testcase (WPT),css-image-animation-1,css-link-params-1] [css-link-params] Are two references with different parameters independent instances? R
+- #14247 closed [Closed Accepted by CSSWG Resolution,Needs Testcase (WPT),css-image-animation-1,css-link-params-1] [css-link-params] Are two references with different parameters independent instances? R
 - #14249 open [Closed Accepted by CSSWG Resolution,Needs Edits,css-forms-1] [css-forms-1] Adopt box-sizing on all form control parts R
 - #14250 open [Closed Accepted by CSSWG Resolution,Needs Edits,css-forms-1] [css-forms-1] Inherit all typography, but not into icons R
 - #14251 open [Needs Edits,Needs Testcase (WPT),css-forms-1] [css-forms-1] Cursors for base appearance R
 - #14252 open [css-forms-1] [css-forms-1] Adopt box-shadow on ::picker()
-- #14254 open [Needs Data,css-forms-1] [css-forms-1] Refine base appearance colors
+- #14254 open [Agenda+,css-forms-1] [css-forms-1] Refine base appearance colors
 - #14255 open [Closed Accepted by CSSWG Resolution,Needs Edits,Needs Testcase (WPT),css-forms-1] [css-forms-1] Apply overflow and wrapping control to select buttons R
 - #14256 open [css-forms-1] [css-forms-1] Improve appearance: base <select> styling to be usable as-is
 - #14258 closed [Closed as Question Answered,Commenter Satisfied,mediaqueries-4] [mediaqueries] Can you clarify the note about the future deprecation of media types?
@@ -11038,7 +11859,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #14358 open [css-fonts-4] [css-fonts-4] System fonts for Chinese
 - #14359 closed [-] [cssom]
 - #14360 open [selectors-5] [selectors-5] “initial state” selector
-- #14363 open [Needs Edits,css-image-animation-1,security-tracker] [css-image-animation] Security Horizontal Review
+- #14363 closed [Closed Accepted by CSSWG Resolution,css-image-animation-1,security-tracker] [css-image-animation] Security Horizontal Review
 - #14364 open [Agenda+,scroll-animations-1] [scroll-animations-1] Should SVG transforms be taken into account for view timelines?
 - #14365 open [Agenda+,cssom-1] [cssom] Make setProperty() strip leading/trailing whitespace
 - #14366 open [-] [css-view-transitions-2] Define impact of cross-document view transitions on Core Web Vitals
@@ -11060,11 +11881,11 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #14387 closed [Closed Rejected as Invalid,css-mixins-2] [css-mixins-1] I don't think we should've removed @macro
 - #14390 open [Agenda+,css-grid-3] [css-grid-3] What are the use cases for subgridding grid-lanes with grid and vice versa?
 - #14391 open [css-overflow-3] [css-overflow-3] make `text-overflow: ellipsis` infer `[title]`
-- #14392 open [-] [css-flexbox][selectors] Select flex items by generated flex line and position within the line
+- #14392 open [css-values-5,selectors-5] [css-flexbox][selectors] Select flex items by generated flex line and position within the line
 - #14393 open [css-align-3] [css-align-3] A contradiction between sections 3 and 5.1 of css-align ?
 - #14394 open [Agenda+,css-forms-1,selectors-4] [selectors-4][css-forms-1] Add pseudo class to select empty/unset file inputs
 - #14395 open [Needs Edits,Needs Testcase (WPT),css-forms-1] [css-forms-1] Use `::field-content { flex: 1 }` instead of `::picker-icon { margin-inline-start: auto; }` R
-- #14396 open [css-fonts-4] [css-fonts] Problems with "font-affecting properties"
+- #14396 closed [Closed Accepted as Obvious Bugfix,css-fonts-4] [css-fonts] Problems with "font-affecting properties"
 - #14397 closed [Closed Accepted as Obvious Bugfix,css-fonts-4] [css-fonts] Add `font-synthesis-position` to the list of `font-*` properties which are not longhands of `font`
 - #14398 closed [Closed Accepted as Obvious Bugfix,css-fonts-4] [css-fonts] Typo s/shorthand/longhand/ ?
 - #14399 closed [Closed Accepted as Obvious Bugfix,css-values-5] [css-values-5] How to replace `ident("")`?
@@ -11075,18 +11896,18 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #14405 open [Closed as Question Answered,css-ruby-1,editorial] [css-ruby-1] Clarify whether line-over ruby annotations on the first line can overflow the block container
 - #14406 open [css-overflow-3] [css-overflow-3] `scroll-behavior` that only acts as `smooth` within the same document.
 - #14407 closed [Closed as Question Answered,css-mixins-2] [css-mixins-2] how do private properties interact with non-private properties in the same style rule?
-- #14408 open [css-mixins-2] [css-mixins-2] Why do mixins see private properties visible to the style rule it is substituted into?
+- #14408 closed [Closed as Question Answered,css-mixins-2] [css-mixins-2] Why do mixins see private properties visible to the style rule it is substituted into?
 - #14410 closed [Closed as Question Answered,css-mixins-2] [css-mixins-2] How do private properties affect style queries?
 - #14411 open [Agenda+,css-forms-1,css-ui-4,css-ui-5] [css-ui][css-content] Define generated content on widgets
 - #14413 open [-] How to prevent `::selection` background from overlapping the previous line of text?
 - #14414 open [-] [css-ui][css-spatial-nav] Declarative navigation button assignment
 - #14415 open [-] [css-ui][css-spatial-nav] Interaction between `nav-*` and `spatial-navigation-*`, additional control of input behavior
-- #14416 open [Async Resolution: Call For Consensus,css-view-transitions-2] [css-view-transitions-2] Scoped VT: when scope becomes not rendered or disconnected, transition skips
+- #14416 open [Needs Edits,Needs Testcase (WPT),css-view-transitions-2] [css-view-transitions-2] Scoped VT: when scope becomes not rendered or disconnected, transition skips
 - #14421 open [cssom-1] [cssom] "Preferred shorthand order" seems weird?
 - #14422 open [Agenda+,cssom-1] [cssom] CSSOM serialization of declaration blocks is incompatible across browsers and a forward-compat landmine
 - #14424 closed [Agenda+,css-sizing-3,css-sizing-4] [css-sizing-3][css-sizing-4] Swap levels of fit-content and fit-content()
 - #14425 open [Agenda+,css-properties-values-api-1] [css-properties-values-api] Descriptors should support fallbacks
-- #14427 open [css-mixins-2] [css-mixins] Specify OM for CSSPrivateRule
+- #14427 open [Needs Edits,css-mixins-2] [css-mixins] Specify OM for CSSPrivateRule
 - #14428 open [mediaqueries-5] [mediaqueries-5] Add 'display-state' and 'resizable' media feature
 - #14429 open [Agenda+,css-sizing-3] [css-sizing-3] resolved value of min-width: auto on block-level flex etc.
 - #14430 open [css-conditional-5] [css-conditional-5] Element.matchContainer has no termination rule for change event listeners
@@ -11094,7 +11915,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #14432 open [css-mixins-2] [css-mixins-2] bring back `@result` and make `@private` more intuitive and generally useful?
 - #14433 open [-] `::interest-button` or `::after`/`::before` ?
 - #14435 open [Administrative Tracker,css-values-5] [css-values-5] /TR is stale, republish as WD
-- #14436 open [Agenda+,css-link-params-1] [css-link-params] How should currentColor in a parameter value resolve?
+- #14436 closed [Closed Accepted by Editor Discretion,css-link-params-1] [css-link-params] How should currentColor in a parameter value resolve?
 - #14437 open [css-color-4,css-color-adjust-1] [css-color-4][css-color-adjust-1] Clarify the effect of forced colors mode on system colors
 - #14440 open [css-forms-1] [css-forms-1] How do custom elements tap into `control-value()`?
 - #14442 open [css-mixins-1,css-mixins-2,css-syntax-3] [css-mixins] Types for private properties (in mixins and elsewhere) and probably function locals
@@ -11102,8 +11923,8 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #14444 open [Agenda+,css-grid-3] [css-grid-3] Synthesizing baselines for Grid Lanes containers
 - #14445 open [css-scroll-snap-1] [css-scroll-snap-1] Revisit the "non-scroll containers can capture snap positions" behavior
 - #14446 closed [Closed as Duplicate,css-link-params-1] [css-link-params] How to pass computed/used values?
-- #14447 open [css-link-params-1] [css-link-params] Passing `currentColor` (and other state) without requiring the receiving SVG to have a param
-- #14448 open [css-overflow-4,topic: line-clamp] [css-overflow] line-clamp + ellipsis insertion at soft-wrap point +  white-space: pre
+- #14447 open [Agenda+,Closed Accepted by Editor Discretion,css-link-params-1] [css-link-params] Passing `currentColor` (and other state) without requiring the receiving SVG to have a param
+- #14448 open [Agenda+,css-overflow-4,topic: line-clamp] [css-overflow] line-clamp + ellipsis insertion at soft-wrap point +  white-space: pre
 - #14449 open [css-align-3] [css-align] Limit baseline content-alignment to block containers?
 - #14450 open [-] Temporarily apply styles while the document is loading
 - #14451 open [css-font-loading-3] [css-font-loading] Which value wins if both `stretch` and `width` are provided?
@@ -11114,11 +11935,132 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #14458 open [-] [mediaqueries-5] Define media feature value `false` to evaluate to false in boolean context
 - #14461 open [css-forms-1] [css-forms-1] Lighten form control backgrounds slightly in dark mode
 - #14463 open [css-color-5] [css-color-5] how to handle/avoid clamping in relative color syntax
-- #14464 open [css-values-5] [css-values-5] Standardize serialization for mix function components
-- #14465 open [css-color-5,css-values-5] [css-color-5] Allow omitting percentages when serializing color-mix() in more cases
+- #14464 open [Agenda+,css-values-5] [css-values-5] Standardize serialization for mix function components
+- #14465 open [Needs Testcase (WPT),css-color-5,css-values-5] [css-color-5] Allow omitting percentages when serializing color-mix() in more cases
 - #14466 open [Needs Edits,css-values-5] [css-values-5] Add syntax definitions for `sibling-count` and `sibling-index`
 - #14468 open [css-forms-1] [css-forms-1] Distinguishing <input> vs <button>
 - #14470 open [css-grid-2,css-sizing-3] [css-grid][css-sizing-3] Automatic minimum sizes of grid items during final sizing
+- #14471 open [-] [animation-triggers-1] Define `AnimationTriggerBehavior` enum
+- #14472 open [css-color-4] [css-color-4] § 12: at what stage are colors compared, and when are two <color-space>s the same?
+- #14475 open [css-animations-1] [css-animations] Setting `CSSKeyframesRule.name` to empty string
+- #14476 open [css-link-params-1] [css-link-params-1] Passing a font to a linked resource?
+- #14477 open [Agenda+,css-fonts-5,mediaqueries-5] [css-fonts][mediaqueries-5] Add prefers-bold-text user preference media feature
+- #14478 open [css-values-5] [css-values-5] Does `random()` simplify to a value at specified value time for a `fixed <number>` key?
+- #14480 open [Agenda+] [css-cascade] Quirks mode Content-Type quirk should require a CORS-same-origin response
+- #14481 closed [-] [css-flexbox]: Add pseudo classes for addressing the first and the last items of the main/cross axes.
+- #14482 open [Administrative Tracker,css-values-4] Value definitions should at least point to Values 4, perhaps 5?
+- #14483 open [css-color-4,css-filter-effects-1,fx-filter-effects-1] [filter-effects-1/css-color-5/css-pseudo] Visited Color Propagation Inconsistency
+- #14485 open [css-overflow-4,topic: line-clamp] line-clamp draft specification not in sync with WPT tests
+- #14486 open [-] [css-break][css-tables][css-flexbox][css-grid] Proposal for Advanced Fragmentation of Parallel Layouts
+- #14487 open [css-color-5] [css-color-5] Serialize omitted percentages in `color-mix()` to `0%` when the specified sum is greater than `100%`
+- #14489 open [Agenda+,css-gaps-1] [css-gaps-1] Define rule-visibility-items behavior for grid lanes
+- #14492 open [-] [web-animations-1] Does an easing on a keyframe that specifies no value for the animated property apply?
+- #14493 open [Agenda+ TPAC] Web Preferences API: implementation interest and next steps
+- #14494 open [css-pseudo-4,css-text-4] [css-pseudo-4] definition of "intervening typographic space" for ::first-letter text rules is a bit unclear
+- #14495 open [Agenda+,css-link-params-1] [css-link-params-1] What do you mean by "used value"?
+- #14496 open [-] [css-forms-1] Refine base appearance state change colors
+- #14498 open [-] [css-values-5] calc-size() basis simplification algorithm is missing the keyword branch
+- #14499 open [-] [css-values-5] What makes a calc-size() "compatible" for interpolation?
+- whatwg/html#2369 closed [security/privacy,topic: parser] Consider hiding `nonce` content attributes.
+- whatwg/html#2404 open [addition/proposal,i18n-tracker,needs implementer interest] A tag to display date and/or time to the user in his preferred format.
+- whatwg/html#2791 open [addition/proposal,needs implementer interest] Client side include feature for HTML
+- whatwg/html#3520 open [clarification,interop] <meter> interoperability issue with values on boundaries
+- whatwg/html#3596 open [addition/proposal,needs implementer interest,topic: forms,topic: select] Allow adding icons/images to <select> and <datalist> <option>s
+- whatwg/html#3912 open [addition/proposal,needs concrete proposal,topic: fieldset,topic: rendering] Disable fieldset/legend rendering magic with CSS
+- whatwg/html#4081 closed [topic: forms,topic: rendering] Rendering rules for buttons
+- whatwg/html#4177 closed [topic: forms,topic: rendering] Rendering <input type=range> vertically
+- whatwg/html#4180 open [a11y-tracker,accessibility,addition/proposal,stage: 1,topic: forms,topic: rendering] <input type=checkbox switch>
+- whatwg/html#4280 open [addition/proposal,needs implementer interest,topic: forms] Add `valid` event for form fields
+- whatwg/html#4481 open [interop,topic: forms,topic: rendering] Define rendering and style for <select>
+- whatwg/html#4696 closed [addition/proposal] Introducing new HTML elements that are polyfillable
+- whatwg/html#5792 closed [addition/proposal,needs implementer interest,topic: forms,topic: select] Add open state to <select>
+- whatwg/html#6507 open [-] <mirror> element, like <slot>, but not limited to ShadowDOM, elements from anywhere can be assigned to it
+- whatwg/html#6578 open [addition/proposal,needs implementer interest,topic: forms] New `indeterminate` attribute for <input type=checkbox>
+- whatwg/html#7050 open [topic: rendering] Define rendering rules for all widgets in their native appearance and primitive appearance + pseudo-elements
+- whatwg/html#7293 open [topic: forms] <input type=password> should provide UI to show/hide its value
+- whatwg/html#7957 closed [addition/proposal,needs implementer interest,topic: forms] Automatically open option list in a `<select>` (`HTMLSelectElement`) 
+- whatwg/html#8189 closed [topic: forms,topic: rendering,topic: select] Rendering <select> as a listbox is a one-line widget that opens a popup on iOS and Android
+- whatwg/html#8247 closed [i18n-tracker,topic: forms,topic: select] <option> element: why is its content restricted to Text?
+- whatwg/html#8413 closed [i18n-clreq,i18n-jlreq,i18n-mlreq,i18n-tracker,topic: rendering] Clarify value direction for elements "progress" and "meter" with vertical writing mode
+- whatwg/html#8451 open [topic: forms,topic: selectors] Define :blank pseudo-class behavior
+- whatwg/html#8970 open [topic: popover,topic: shadow] Should popover use the flat tree
+- whatwg/html#9294 open [addition/proposal,needs implementer interest] Proposal:  measurement or number or quantity or num semantic HTML tag
+- whatwg/html#9799 closed [addition/proposal,stage: 3,topic: forms,topic: parser,topic: select] Customizable `<select>` element
+- whatwg/html#9878 open [addition/proposal,needs concrete proposal,needs implementer interest,topic: custom elements,topic: forms] Missing `reportValidity()` hook
+- whatwg/html#10310 closed [addition/proposal,topic: forms,topic: parser,topic: select] HTML parser changes for customizable `<select>`
+- whatwg/html#10317 closed [accessibility,needs concrete proposal,topic: forms,topic: select] Content model and 'what' to render for stylable `<select>` elements
+- whatwg/html#10437 open [i18n-tracker,topic: forms] should default reset/submit button text and default summary text use node's language rather than being locale-specific?
+- whatwg/html#10520 closed [topic: select] Timing of cloning for the `<selectedoption>` element
+- whatwg/html#10604 closed [topic: forms,topic: select,topic: user activation] Is it ok for `appearance:base` `<select>` not to require user activation before `showPicker()`?
+- whatwg/html#10694 open [addition/proposal,needs implementer interest,topic: events,topic: forms] Add an event for when a user attempts to submit
+- whatwg/html#10701 closed [topic: forms,topic: select] The behavior when a user clicks <select> to show the dropdown is not clearly defined
+- whatwg/html#10743 open [clarification,topic: forms,topic: select] "Show the picker" steps never dismisses the picker upon node removal
+- whatwg/html#10762 closed [topic: select] How to spec user interaction for select
+- whatwg/html#10843 open [i18n-tracker] Tooltips of `vertical-lr` and `rtl` input range are backwards
+- whatwg/html#10876 open [topic: select] Selection in form control elements, user-select, and customizable select
+- whatwg/html#10955 closed [interop,topic: select] Rendering option with empty label attribute or whitespace
+- whatwg/html#11017 closed [topic: select] innerText getter impact of customizable `select`
+- whatwg/html#11095 closed [topic: fieldset,topic: rendering] row-rule-* properties should inherit to an anonymous fieldset content box
+- whatwg/html#11107 open [topic: rendering,topic: select] native/primitive appearance of Customizable <select>
+- whatwg/html#11109 closed [-] Meeting 18 for joint OpenUI-WHATWG/HTML-CSSWG task force on styleable form controls
+- whatwg/html#11130 open [interop,topic: forms,topic: rendering] File upload control rendering should specify the button element to use. R
+- whatwg/html#11194 open [topic: rendering,topic: select] Remove support of field-sizing from `<select>`
+- whatwg/html#11288 open [addition/proposal,needs implementer interest] Filterable `<select>` via `<input>` (native combobox & more)
+- whatwg/html#11452 open [addition/proposal,needs implementer interest,topic: select] `<select>` attribute to switch between dropdown and listbox (`type`?)
+- whatwg/html#11463 closed [addition/proposal,topic: select] Generalizing/fixing `<selectedcontent>` (`<use>` for HTML?)
+- whatwg/html#11477 closed [topic: select] Base appearance for list box select elements
+- whatwg/html#11535 open [addition/proposal,needs implementer interest,stage: 1,topic: custom elements,topic: select,topic: shadow] The select element doesn't support slotted option elements
+- whatwg/html#11564 open [addition/proposal,needs implementer interest,topic: select] toggle and beforetoggle events for the select element
+- whatwg/html#11653 closed [topic: parser,topic: select] Popping node vs. end tag behavior in <option> and <selectedcontent>
+- whatwg/html#11707 closed [needs tests,topic: select] option element disabledness works incorrectly
+- whatwg/html#11708 closed [topic: select] option element form IDL attribute works incorrectly
+- whatwg/html#11729 open [addition/proposal,agenda+,needs implementer interest,stage: 2] Menu elements proposal
+- whatwg/html#11730 closed [topic: select] optgroup element text is incorrect
+- whatwg/html#11766 open [topic: select] Changes to option element descendants
+- whatwg/html#11783 open [topic: select] option element insertion and removing steps are wrong
+- whatwg/html#11787 closed [normative change,topic: select] make datalist an early return for the option insertion/removing steps
+- whatwg/html#11788 closed [topic: select] "option element nearest ancestor select" is wrong
+- whatwg/html#11804 closed [topic: rendering,topic: select] Issues with UA styles for select with base appearance
+- whatwg/html#11819 open [addition/proposal,stage: 1,topic: navigation] Allow deferring commit of a same-origin cross-document navigation
+- whatwg/html#11825 open [topic: select] Option selectedness when all children are removed from select
+- whatwg/html#11859 closed [topic: select] Should the HTMLSelectedContentElement interface exist?
+- whatwg/html#11880 open [topic: select] Clearing non-primary selectedcontent elements is broken
+- whatwg/html#11882 open [needs tests,topic: select] <seletedcontent> behavior in disconnected <select>
+- whatwg/html#11883 open [topic: select] <form>.reset() does not reset <selectedcontent>
+- whatwg/html#11905 closed [topic: forms,topic: select] Incorrect Padding Calculation in HTMLOptionsCollection Index Assignment
+- whatwg/html#11924 open [topic: select] Why does the disabled algorithm in option stop on certain elements
+- whatwg/html#11963 closed [topic: select] Selectedcontent post-connection steps define unused “ancestor” variable
+- whatwg/html#12049 open [topic: select] Base appearance for drop-down select multiple
+- whatwg/html#12050 open [addition/proposal,needs implementer interest,topic: select] Filtering support for customizable select R
+- whatwg/html#12096 open [topic: select] selectedcontent removing steps vs pagehide (and unload)
+- whatwg/html#12099 open [needs tests,topic: select] Selects interplay with popover is sometimes surprising.
+- whatwg/html#12106 closed [topic: select] select base appearance shadow tree issues
+- whatwg/html#12121 open [topic: rendering,topic: select] Should appearance: base select button have both `all: unset` and `display: contents` ?
+- whatwg/html#12130 open [addition/proposal,needs implementer interest,topic: forms,topic: select] No explicit API for closing a select's picker
+- whatwg/html#12183 closed [topic: select,topic: selectors] :hover and :active changes for <select>
+- whatwg/html#12196 closed [topic: rendering,topic: select] optgroup display:block?
+- whatwg/html#12199 closed [topic: rendering,topic: select] option and optgroup rendering requirements
+- whatwg/html#12227 open [addition/proposal,needs implementer interest,topic: select] The selectedcontent element can't be used outside of the select element
+- whatwg/html#12246 open [topic: select] change of the condition under which select element must have placeholder label option
+- whatwg/html#12271 open [topic: popover,topic: select] <select> popover integration does not appear to be defined
+- whatwg/html#12286 open [topic: focus,topic: rendering,topic: select] outline and ::picker(select) R
+- whatwg/html#12328 open [a11y-tracker,accessibility,topic: select] [Customizable select] Define UA behavior for interactive content inside <option>
+- whatwg/html#12342 open [addition/proposal,needs implementer interest,topic: select] Selectedcontent in select multiple
+- whatwg/html#12367 open [clarification,topic: select] Should <selectedcontent> match :disabled?
+- whatwg/html#12370 closed [-] Upcoming WHATNOT meeting on 2026-04-16
+- whatwg/html#12474 open [needs tests,topic: rendering,topic: select] Properly define <select><button> semantics
+- whatwg/html#12509 open [topic: select] Customizable Select: Updating selected option's content does not clone into selectedcontent
+- whatwg/html#12516 open [topic: select] Let's bikeshed `counter(fake-counter-name, disclosure-open)`
+- whatwg/html#12521 open [needs tests,topic: rendering,topic: select] Select in base-appearance mode should probably not have magic clips
+- whatwg/html#12558 open [topic: select] select fallback button text, div element
+- whatwg/html#12597 open [topic: rendering,topic: select] Should select with base appearance have overflow:clip or overflow:hidden by default?
+- whatwg/html#12634 open [topic: rendering,topic: select] Select picker default position-try-fallbacks
+- whatwg/html#12717 open [topic: rendering,topic: select] [select] Define which children are vs are not slotted.
+- openui/open-ui#1260 PR closed [-] Scoped focusgroup explainer
+- openui/open-ui#1289 PR closed [agenda+] [focusgroup] Add sections on scrolling and keyboard conflicts
+- openui/open-ui#1317 PR closed [agenda+] [focusgroup] Add in sections detailing interactions with reading flow and aria-orientation
+- openui/open-ui#1322 PR closed [agenda+] [focusgroup] Add entry priority attribute; don't consider direction
+- openui/open-ui#1379 PR closed [agenda+,focusgroup] [focusgroup] Extend child role inference to button, add default modifiers R
 - #2719 PR closed [-] Added the first proposal for a 'environment-blending' keyword. R
 - #2924 PR closed [Needs Testcase (WPT),cssom-1] [cssom-1] Replace steps of set a CSS declaration with some constraints R
 - #4150 PR closed [resize-observer-1] [resize-observer] remove SVG specific text
@@ -11137,3 +12079,36 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #9824 PR closed [Closed Accepted by CSSWG Resolution,Needs Testcase (WPT)] [css-ui-4] #8649 Specify ink overflow extent for outline R
 - #10270 PR open [Needs Edits] [css-spec-viewport-1] updated the values for zoom property R
 - #11137 PR closed [-] [css-viewport-1] Add automation support for viewport segments
+- whatwg/html#4143 PR closed [topic: forms,topic: rendering] Define button layout
+- whatwg/html#5465 PR closed [impacts documentation,topic: shadow] Add declarative Shadow DOM features
+- whatwg/html#7319 PR closed [addition/proposal,topic: forms] Add showPicker() to <input> elements
+- whatwg/html#9456 PR closed [-] add dialogmodaltarget attribute
+- whatwg/html#9546 PR open [addition/proposal,needs implementer interest,topic: forms] Add switch attribute to the input element to allow for a two-state switch control.
+- whatwg/html#10126 PR closed [addition/proposal,topic: dialog,topic: forms,topic: select,topic: style] Add the :open pseudo-class
+- whatwg/html#10456 PR closed [addition/proposal,impacts documentation,topic: forms] Enhance <input type=color> with alpha and colorspace=display-p3
+- whatwg/html#10548 PR closed [addition/proposal,agenda+,topic: forms,topic: select] Define customizable `<select>`
+- whatwg/html#10557 PR closed [do not merge yet,normative change,topic: parser,topic: select] Relax `<select>` parser
+- whatwg/html#10586 PR closed [topic: select] Update content model for customizable select
+- whatwg/html#10629 PR closed [topic: select] Define base appearance for <select>
+- whatwg/html#10633 PR closed [addition/proposal,do not merge yet,topic: forms,topic: select] Define the `<selectedcontent>` element
+- whatwg/html#10670 PR closed [addition/proposal,topic: forms,topic: rendering,topic: select] Add UA stylesheet for <select> base appearance
+- whatwg/html#10770 PR closed [normative change,topic: popover] Fix corner case invoker issue with popover nested inside invoker
+- whatwg/html#11460 PR closed [agenda+,topic: select] Change definition of select element list box and drop-down box rendering
+- whatwg/html#11465 PR closed [topic: select] Add examples for customizable select
+- whatwg/html#11495 PR closed [topic: select] Editorial: Fix variable naming in "focus another option"
+- whatwg/html#11720 PR closed [topic: select] Make option.form use nearest ancestor select
+- whatwg/html#11878 PR closed [topic: select] selectedcontent post-connection steps did not break out of the loop
+- whatwg/html#11890 PR closed [topic: select] Update selectedcontent in selectedness setting
+- whatwg/html#11891 PR closed [topic: select] Build list of selectedcontent elements to clear
+- whatwg/html#12011 PR open [-] Introduce the new menu elements
+- whatwg/html#12069 PR open [-] Define base appearance for select multiple drop-down
+- whatwg/html#12201 PR closed [normative change,topic: rendering,topic: select] Define option and optgroup base appearance rendering
+- whatwg/html#12205 PR closed [-] Make option and optgroup actually disabled inside disabled select
+- whatwg/html#12232 PR closed [topic: select] Make <option> and <optgroup> share a text content algorithm
+- whatwg/html#12263 PR open [topic: select] Clone into all descendant selectedcontent elements
+- whatwg/html#12369 PR open [editorial,topic: select] Rename selectedcontent "disabled" to "in valid tree position", inverting the value
+- whatwg/html#12400 PR closed [normative change,topic: forms,topic: select] Use "self" in select position-try-fallbacks
+- whatwg/html#12430 PR open [topic: select] Support `<selectedcontent>` in `<select multiple>`
+- whatwg/html#12504 PR closed [topic: select] Make select/option content model clearer about children versus descendants
+- whatwg/html#12568 PR closed [document conformance,topic: select] Remove categories of select/optgroup/option element inner content elements
+- whatwg/html#12733 PR closed [topic: select] Specify MouseEvent in select event.button check

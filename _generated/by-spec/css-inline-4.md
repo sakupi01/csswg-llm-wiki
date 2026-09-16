@@ -11,3 +11,4 @@
 - 2022-04-05 opened #7199: [css-fonts][css-inline] Shorthand for font-size / line-height
 - 2024-08-16 opened #10748: [css-inline] Disallow `auto` in `text-box` shorthand
 - 2024-09-09 RESOLVED #10748: Drop the `auto` value in the `text-box` shorthand
+- 2024-10-16 RESOLVED #10748: revert the previous resolution : allow all combinations for `text-box`

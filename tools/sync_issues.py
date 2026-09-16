@@ -15,6 +15,12 @@ are idempotent (files are rewritten whole from frontmatter + sentinels).
 PRs: skipped unless they carry css-meeting-bot comments; those are stored
 under pulls/.
 
+Selective mode (--issues / --issues-file): mirror an explicit set of issue
+numbers with their full comment history, no cursors. For repos where a full
+mirror is unrealistic (whatwg/html); the mirrored set persists to
+.sync-state.json as `selective_issues` so a rerun without arguments refreshes
+it. Explicitly requested PRs are mirrored regardless of bot comments.
+
 Intentionally dropped: reactions, edit history, label-change events.
 Deleted comments/issues are not detected (additive sync; see AGENTS.md).
 """
@@ -40,7 +46,8 @@ SENTINEL_RE = re.compile(
     r"^<!-- comment id=(\d+) author=(\S+) created=(\S+) url=(\S+?)( resolution=true)? -->$",
     re.M,
 )
-RESOLVED_RE = re.compile(r"^\s*(?:[*-]\s*)?`?(?:RESOLVED|RESOLUTION):\s*.+", re.M)
+# up to two backticks: ``…`` when the resolution text contains inline code
+RESOLVED_RE = re.compile(r"^\s*(?:[*-]\s*)?`{0,2}(?:RESOLVED|RESOLUTION):\s*.+", re.M)
 
 
 def log(msg: str) -> None:
@@ -364,11 +371,53 @@ def repair(repo: str) -> None:
     log(f"repair done: {n_missing} missing mirrored, {n_refetched} comment sets refetched")
 
 
+def sync_selective(repo: str, numbers: list, dry_run: bool) -> None:
+    """Mirror an explicit issue set (full comment history each). No cursors;
+    the set unions into state['selective_issues'] so bare reruns refresh it."""
+    state = load_state(repo)
+    todo = sorted(set(numbers) | set(state.get("selective_issues", [])))
+    if not todo:
+        log("selective: no issue numbers given and none recorded in state")
+        return
+    log(f"selective: {len(todo)} issues on {repo}")
+    n_done = 0
+    for number in todo:
+        if dry_run:
+            continue
+        item = gh_api(f"/repos/{repo}/issues/{number}")
+        kind = "pulls" if "pull_request" in item else "issues"
+        write_item(repo, item, kind)
+        if item.get("comments", 0):
+            for c in fetch_all_comments(repo, number):
+                merge_comment(repo, number, c, kind)
+        n_done += 1
+        if n_done % 25 == 0:
+            log(f"  {n_done}/{len(todo)}")
+    if not dry_run:
+        state["selective_issues"] = todo
+        save_state(repo, state)
+    log(f"selective done: {n_done} issues mirrored")
+
+
+def parse_issue_args(issues, issues_file) -> list:
+    numbers = []
+    if issues:
+        numbers += [int(x) for x in issues.replace(",", " ").split()]
+    if issues_file:
+        for line in Path(issues_file).read_text().splitlines():
+            line = line.split("#", 1)[0].strip()
+            if line:
+                numbers.append(int(line))
+    return numbers
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--repo", default=REPO_DEFAULT)
     ap.add_argument("--full", action="store_true", help="reset cursors, remirror all")
     ap.add_argument("--repair", action="store_true", help="verify against a fresh listing, fix gaps")
+    ap.add_argument("--issues", help="selective mode: comma/space-separated issue numbers")
+    ap.add_argument("--issues-file", help="selective mode: file of issue numbers (one per line, # comments ok)")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
     (data_dir(args.repo) / "issues").mkdir(parents=True, exist_ok=True)
@@ -376,6 +425,11 @@ def main() -> None:
     try:
         if args.repair:
             repair(args.repo)
+        elif args.issues or args.issues_file:
+            sync_selective(args.repo, parse_issue_args(args.issues, args.issues_file), args.dry_run)
+        elif load_state(args.repo).get("selective_issues"):
+            # a selectively-mirrored repo never stream-syncs: refresh the recorded set
+            sync_selective(args.repo, [], args.dry_run)
         else:
             sync(args.repo, args.full, args.dry_run)
     except KeyboardInterrupt:

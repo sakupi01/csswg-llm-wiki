@@ -72,6 +72,7 @@
 - 2021-11-28 opened #6839: [css-cascade][css-cascade-5] "source order" undefined
 - 2021-11-29 opened #6841: [css-cascade-5] Wrong link to editors draft
 - 2021-12-02 RESOLVED #6323: Reject this proposal; unlayered styles have a specified location in the layer stack which can't (currently) be controlled
+- 2021-12-02 RESOLVED #6743: Accept suggested behavior, where `revert-layer !important` in style attr only reverts the style-attr origins and the animations origin, ignoring other author origins
 - 2021-12-09 opened #6872: [css-cascade] Cascade layers, `!important` and the style attribute
 - 2022-01-31 opened #7002: [css-cascade-5] Add a R/W `CSSStyleSheet.layer` attribute for the layer name
 - 2022-02-03 opened #7015: [css-cascade-5] Do we need an API that lists the cascade layers in a tree scope?

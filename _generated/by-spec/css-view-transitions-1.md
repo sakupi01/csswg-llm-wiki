@@ -56,6 +56,7 @@
 - 2022-12-23 RESOLVED #8070: ::view-transition's containing block is the snapshot viewport
 - 2022-12-30 opened #8269: [css-view-transitions-1] How to interact with Intersection Observer?
 - 2023-01-03 opened #8278: [css-view-transitions-1] UA CSS should size ::view-transition to 0x0
+- 2023-01-18 RESOLVED #8144: adopt suggested change to rename to `updateCallbackDone
 - 2023-01-19 opened #8333: Interaction with Safari's back/forward previews
 - 2023-01-20 opened #8339: [css-view-transitions-1] Capturing fragmented elements
 - 2023-01-27 opened #8370: [css-view-transitions-1] UA CSS should add transform-origin to view-transition-group
@@ -74,6 +75,7 @@
 - 2023-03-15 RESOLVED #8278: The view transition fills the viewport and captures clicks
 - 2023-03-15 RESOLVED #8339: if an element if fragmented into more than one element, it does not participate in View Transitions (plus note that we want to do such things in the future)
 - 2023-03-15 RESOLVED #8548: Conditions are checked per-frame; transition is skipped if other constraints are broken
+- 2023-03-15 RESOLVED #8548: If an element is involved in a transition, the `view-transition-name` constraints are enforced during the transition
 - 2023-03-15 RESOLVED #8561: rasterization must cover at least the visible area of the viewport
 - 2023-03-15 RESOLVED #8561: user agent can limit rasterization for performance limitations, but must size the element as if it was fully rasterized
 - 2023-03-15 opened #8597: [css-view-transitions-1] Exposing ink overflow rect bounds to script
@@ -204,6 +206,7 @@
 - 2025-07-02 RESOLVED #11202: Finish outstanding edits and republish view transitions level 1, then merge contents into level 2
 - 2025-07-03 opened #12442: [css-view-transitions-1] finished promise timing
 - 2025-07-14 RESOLVED #12442: Change view transition finished promise timing to avoid flicker
+- 2025-08-19 RESOLVED #12116: `::view-transition` pseudo-element uses `position: absolute` instead `position: fixed` in the UA stylesheet
 - 2025-08-19 RESOLVED #12149: Disconnecting the VT root should skip the VT sync with timing wrt promises TBD
 - 2025-08-20 opened #12629: [css-view-transition-1] `visibility: hidden` analogy is misleading, elements remain keyboard-focusable and accessible
 - 2025-08-20 opened #12630: [css-view-transitions-1] Can we make the `::view-transition-old` and `::view-transition-new` pseudos “:has-allowed pseudo-element”s?

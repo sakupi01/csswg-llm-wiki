@@ -82,6 +82,7 @@
 - 2021-07-21 RESOLVED #6462: Republish CSSOM
 - 2021-07-27 RESOLVED #5635: No change, should work with already-in-the-spec calc() improvements
 - 2021-07-29 RESOLVED #6063: Add this keyword in fonts-4 as well
+- 2021-07-29 RESOLVED #6063: add a `incremental` to the `font-technology` values production as described on the PR
 - 2021-07-29 opened #6485: [css-fonts] Investigate using will-change: content to decide whether to use incremental font downloading
 - 2021-08-04 opened #6495: `[css-fonts-5]` Add generic `font-family` for symbols/emoji
 - 2021-10-03 opened #6709: [css-fonts] Font Sizing for Readability
@@ -143,3 +144,4 @@
 - 2026-03-31 opened #13750: [css-fonts] Preload a specific font by `unicode-range`
 - 2026-04-02 RESOLVED #13557: Add NUMBERpx to values of text-scale meta, deprecate 'scale' keyword (and make it optional for conformance).
 - 2026-06-24 RESOLVED #13557: Revert previous resolution and don't have a limit on meta text-scale for now
+- 2026-09-11 opened #14477: [css-fonts][mediaqueries-5] Add prefers-bold-text user preference media feature

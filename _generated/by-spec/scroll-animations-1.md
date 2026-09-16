@@ -139,8 +139,11 @@
 - 2022-12-23 RESOLVED #8101: Change “Scroll-linked Animations” to “Scroll-driven Animations” in scroll-animations-1
 - 2023-01-10 opened #8298: [scroll-animations-1] View progress contain of a sticky positioned elements on the edges
 - 2023-02-01 RESOLVED #7589: take the api shape int he linked comments and add properties to the animation interface along timeline
+- 2023-02-01 RESOLVED #7973: add `entry-crossing` and `exit-crossing` to handle things which could be taller than the scrollport
 - 2023-02-01 RESOLVED #7973: keep entry as entry
+- 2023-02-01 RESOLVED #8114: `getCurrentTime` should just match the internal calculation for the time value which is unclamped
 - 2023-02-01 RESOLVED #8204: Each anonymous scroll timeline is a different object. The source is updated at the same time as the currentTime.
+- 2023-02-01 RESOLVED #8227: add a `self` keyword
 - 2023-02-01 RESOLVED #8233: assume an interaction count of 1, attach all the frames. that creates something that you scale down when you apply the iteraction count.
 - 2023-02-01 RESOLVED #8233: divide the active interval by the iteration count to get the intrinsic iteration duration
 - 2023-02-01 RESOLVED #8298: ignore transforms when calculating timeline ranges
@@ -160,6 +163,7 @@
 - 2023-03-20 RESOLVED #7752: SLA uses logical interpretations of scrolling (rather than scrollLeft/Top always)
 - 2023-03-20 RESOLVED #7759: Reduce default scoping to ancestors only, add scroll-timeline-attachment as proposed in the issue
 - 2023-03-20 RESOLVED #8192: SLA does do flat-tree lookup for nearest ancestor scroller, spec will be clarified
+- 2023-03-20 RESOLVED #8201: Pending Brian's potential objections, go with `getCurrentTime(rangeName?)`
 - 2023-03-20 RESOLVED #8226: for printing/paged, root is considered fully in view (scroll timelines on it are inactive)
 - 2023-03-20 RESOLVED #8405: Accept proposal in the issue
 - 2023-03-20 RESOLVED #8406: animation-range's initial value is the keyword "normal"
@@ -230,11 +234,13 @@
 - 2025-01-09 opened #11469: [web-animations-2] [scroll-animations] should calling `play()` reset the start time of a scroll-driven animation?
 - 2025-01-10 opened #11477: [scroll-animations] `ViewTimelineOptions.inset` should use `CSSKeywordish` over `CSSKeywordValue`
 - 2025-01-30 opened #11615: [scroll-animations-1] Allow specifying small/large viewport for ViewTimelines that use the root viewport as scrollport
+- 2025-01-31 RESOLVED #10000: Allow `<length-percentage>` in keyframe selectors (with or without `<timeline-range-name>`)
 - 2025-01-31 RESOLVED #11466: Publish updated WD
 - 2025-01-31 RESOLVED #11466: remove the global warning on WA2, but put back warnings on subsections that still need work, with editor's discretion
 - 2025-01-31 RESOLVED #11467: Clarify the spec to answer / clarify graouts' questions
 - 2025-01-31 RESOLVED #11467: Define computed keyframe offsets
 - 2025-01-31 RESOLVED #9367: It also applies to scroll timelines
+- 2025-01-31 RESOLVED #9367: Keyword is `scroll`
 - 2025-02-04 opened #11644: [scroll-animations] Inset parameter of ViewTimelineOptions should be optional
 - 2025-02-06 opened #11659: [css-animations-2][scroll-animations-1] Serialization of `animation-*` shorthands with longhand value lengths different than `animation-name`
 - 2025-02-14 opened #11707: [scroll-animations] should `ViewTimeline.startOffset` and `ViewTimeline.endOffset` be `CSSNumericValue?`

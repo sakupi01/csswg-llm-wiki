@@ -59,6 +59,7 @@
 - 2020-04-29 RESOLVED #4415: contain-intrinsic-size defines scrollable overflow area for purpose of intrinsic sizing (including adding scrollbars if so required); is ignored for the actual scrollable overflow area during layout
 - 2020-04-29 RESOLVED #4951: Add an aspect-ratio option that supports fallback from intrinsic ratio
 - 2020-04-29 RESOLVED #4951: An aspect ratio specified with the auto option always applies to the content-box.
+- 2020-04-29 RESOLVED #4951: Use the `<aspect-ratio>||auto` syntax
 - 2020-04-30 opened #5032: [css-sizing-4] Should aspect-ratio affect the intrinsic size?
 - 2020-05-11 opened #5060: [css-sizing-4] Should aspect-ratio apply for width: auto; height: auto;?
 - 2020-06-01 opened #5142: [css-sizing-4] Can we Implement Different Values for Horizontal & Vertical Box?
@@ -123,6 +124,7 @@
 - 2021-11-16 opened #6817: [css-images] Layout of iframes with content intrinsic sizing that does not match the <iframe>
 - 2021-12-02 RESOLVED #6817: object-fit affects the rendering of iframes with expressed intrinsic sizes
 - 2021-12-02 RESOLVED #6817: object-position applies to iframes in the above case as well
+- 2021-12-08 RESOLVED #1771: Add `contain-intrinsic-size: from-element` with a note that it needs further discussion on the name
 - 2021-12-08 RESOLVED #1771: Use HTML mechanism (either attributes or meta) to express the intrinsic size of the child
 - 2022-06-15 opened #7370: [css-sizing-4] Do not add `stretch | fit-content | contain` for the logical properties
 - 2022-06-28 opened #7427: [css-sizing] Possible to reproduce a `<div>`'s `width: auto` behavior on any element?
@@ -172,6 +174,7 @@
 - 2023-03-20 opened #8620: [css-sizing-4] min-intrinsic-sizing needs to be per-axis, or have axis keywords.
 - 2023-07-12 RESOLVED #8407: The check mentioned by Vlad occurs at computed-value time
 - 2024-03-21 opened #10116: [css-images-4] Should `contain-intrinsic-size` affect `object-fit`?
+- 2024-04-03 RESOLVED #10116: `contain` removes the natural aspect ratio / width / height only for the purposes of sizing and layout of the box (and object-fit is therefore not affected)
 - 2024-05-06 opened #10282: [css-sizing] Proposal: `default-width` CSS property
 - 2024-06-11 RESOLVED #7770: Add a control for making padding size include border-width (and scrollbar width); ask for feedback on its relationship to box-sizing
 - 2024-07-19 opened #10601: [css-sizing-3][css-sizing-4] Move `fit-content` keyword to Level 3 and `fit-content()` function to Level 4

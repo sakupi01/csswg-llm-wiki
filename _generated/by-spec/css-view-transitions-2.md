@@ -141,6 +141,8 @@
 - 2024-06-13 RESOLVED #8282: We will design an optimization for VT of "offscreen" elements wherein we don't capture the bitmap for their offscreen state. Details TBD.
 - 2024-06-13 RESOLVED #9908: Add .transitionRoot readonly property to VT object, reflectring the element hosting the VT.
 - 2024-06-13 RESOLVED #9908: Add a pseudoElement option to the element.getAnimations() dict arg. subtree:true/false acts on that pseudo as the root
+- 2024-06-26 RESOLVED #8282: ::view-transition-old` renders new live image (if available) if old element is offscreen at capture time
+- 2024-06-26 RESOLVED #8282: The geometry animation on the `::view-transition-group` pseudo is same as before.
 - 2024-07-04 opened #10529: [css-view-transition-2] `view-transition-class` and tree-scoping
 - 2024-07-12 opened #10568: [css-view-transitions-2] (feature) access view-transition snapshot as an image/ImageData
 - 2024-07-17 opened #10585: [css-view-transitions-2] Optionally capture some properties (e.g. opacity/border) as style instead of snapshot
@@ -178,6 +180,8 @@
 - 2024-10-22 opened #11077: [css-view-transitions-2] when copying css properties for layered capture, resolve lengths to a fixed value
 - 2024-10-22 opened #11078: [css-view-transitions-2] how do we decide whether to use layered capture?
 - 2024-10-23 opened #11079: [css-view-transitions-2] Define behavior of scrollbars and overflow with layered capture
+- 2024-10-30 RESOLVED #10978: [Pending async confirmation] we will use `match-element` in the Animations API when element identity is used
+- 2024-10-30 RESOLVED #10995: [Pending async confirmation] `auto` will match elements using their ID attributes, falling back to element identity; `match-element` will only use element identity.
 - 2024-10-30 opened #11112: [css-view-transitions-2] Namespacing id vs css based view transition names
 - 2024-11-04 opened #11150: [css-view-transitions-2] Define behavior of root element in layered capture
 - 2024-11-05 opened #11152: [css-view-transitions-2] Allow targeting of the root having an active view-transition of any type
@@ -188,6 +192,7 @@
 - 2024-11-15 opened #11221: [css-view-transitions] Integration with drag-and-drop API's preview image? 
 - 2024-11-26 opened #11274: [css-view-transitions] Cursor and hover effect behaviour
 - 2024-12-02 opened #11311: [css-view-transitions-2] Rename “Nested View Transitions” to “Nested View Transition Groups”
+- 2024-12-18 RESOLVED #10995: use the `match-element` keyword for this and disallow it as a value in vt1 spec
 - 2025-01-30 opened #11614: [css-view-transitions-2] view-transition-name: auto when matching id should namespace
 - 2025-02-07 opened #11675: [css-view-transitions] Same-document view transitions without JavaScript
 - 2025-02-16 opened #11725: [css-view-transitions-1] The update pseudo-element styles algorithm treats captured elements as if they were actual elements
@@ -255,8 +260,10 @@
 - 2026-05-29 opened #13986: [css-view-transitions-2] Consider `document.activeViewTransitions`: array with all active view transitions within this document
 - 2026-06-22 opened #14081: [view-transitions-2] Does @view-transition 'types' `<custom-ident> support values that start with "-ua-"?
 - 2026-07-14 opened #14179: [css-view-transitions-2] Scoped transitions on non-layout containable elements
+- 2026-07-15 RESOLVED #13428: Behave as `contain: size` + `contain-intrinsic-size: auto` for the duration of scoped view transition capture + change callback
 - 2026-08-04 RESOLVED #12594: Drop 'with' from the spec for now, open an issue with motivating examples to add it back in when we have those
 - 2026-08-04 RESOLVED #12594: change @route to @location
 - 2026-08-11 RESOLVED #14179: `startViewTransition` throws an invalid state exception for elements that cannot have layout containment
 - 2026-08-21 opened #14368: [css-view-transitions-2] Delaying transitions until nested iframes are ready
 - 2026-08-31 opened #14416: [css-view-transitions-2] Scoped VT: when scope becomes not rendered or disconnected, transition skips
+- 2026-09-14 RESOLVED #14416: Skip viewTransition with an invalid state error if the scope is unqualified at any point in the transition

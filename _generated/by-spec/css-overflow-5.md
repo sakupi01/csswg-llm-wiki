@@ -19,6 +19,7 @@
 - 2024-09-27 RESOLVED #10722: add ::scroll-button() pseudo-elements to Overflow 5, as describe din the issue
 - 2024-09-27 RESOLVED #10916: Enabling active scroll marker styling and grouping should be done via CSS properties
 - 2024-09-27 RESOLVED #10917: Relax spec for less definitive cases, miriam to add use cases to issue, flackr to write possible algorithm(s) as examples
+- 2024-09-28 RESOLVED #10918: `:current` is better than `:checked`, issue remains open while we look for better alternatives
 - 2024-10-28 opened #11098: [css-overflow-5] What is the active :checked marker when some markers point to elements within different scrolling containers?
 - 2024-10-31 opened #11125: [css-overflow-5] Tree structure of scroll container controls
 - 2024-11-01 opened #11138: [css-overflow-5] Limit scrolling to the associated scroll container when activating a marker

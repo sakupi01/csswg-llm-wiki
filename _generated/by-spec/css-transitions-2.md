@@ -22,9 +22,12 @@
 - 2023-02-01 opened #8389: [css-display] Interaction gotchas when delaying the effect of `display: none`
 - 2023-03-02 RESOLVED #8174: Accept restrictions in https://github.com/w3c/csswg-drafts/issues/8174#issuecomment-1431243750 with exception if :is and :where
 - 2023-03-08 RESOLVED #8389: inertness is determined by the base computed style for 'display', resulting in animations to 'none' being considered inert
+- 2023-04-19 RESOLVED #8174: specify `@initial` as defined in this issue and open another issue about the duplication problems with entry and exit styles
+- 2023-04-19 RESOLVED #8174: start with `@starting-style`
 - 2023-04-24 opened #8760: [css-transitions-2] "Suggest an edit for this spec | Github Editor" link is broken
 - 2023-04-24 opened #8761: [css-transitions-2] Spec text talks about **values** being transitionable & having particular "animation type", when it probably wants to talk about **properties**
 - 2023-05-19 opened #8857: [css-transitions-2] Put discrete transitions behind new syntax for compatibility
+- 2023-05-24 RESOLVED #8174: rename `@initial` to `@starting-style`
 - 2023-06-07 RESOLVED #8857: Pick option 2 with name to be bikeshed
 - 2023-06-08 opened #8939: [css-transitions-2] Naming transition mode property and values
 - 2023-06-21 opened #8994: [css-transitions-2] Broken references in CSS Transitions Level 2

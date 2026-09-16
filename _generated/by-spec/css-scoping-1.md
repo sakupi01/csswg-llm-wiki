@@ -75,7 +75,10 @@
 - 2024-10-07 opened #11007: [css-scoping] `:has-shadow` pseudo-class
 - 2024-11-12 opened #11188: [css-scoping] :scope > * matches nothing in shadow trees
 - 2024-11-27 opened #11284: [css-pseudo-4][css-scoping] Can `::slotted()` be followed with element-backed pseudo-elements?
+- 2025-01-08 RESOLVED #6867: `:has-slotted` should match when the fallback content is not being displayed
 - 2025-01-15 RESOLVED #6867: :has-slotted should use the flattened tree to resolve if content is slotted or not. We could later discuss a different pseudo-class for the other behavior.
+- 2025-01-29 RESOLVED #11000: Have  have `:scope` resolve to `:host`  rather than `:root` in shadow tree
 - 2025-02-27 opened #11798: [css-scoping] Scoping of functions, other name-defining at-rules and custom idents
 - 2025-03-06 opened #11859: [selectors][css-scoping] Should :host(:has()) match?
+- 2025-03-19 RESOLVED #1914: Drop `:host-context()`
 - 2026-01-07 opened #13305: [css-scoping-1] Spec for tree-scoped names needs more nuance

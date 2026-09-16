@@ -85,6 +85,7 @@
 - 2023-02-15 RESOLVED #7434: border radius doesn't round the clipping region when mixing overflow: visible and clip
 - 2023-02-15 opened #8453: [css-backgrounds] [css-masking] [cssom] serialization of the computed value for `background` and `mask`
 - 2023-02-24 opened #8496: [css-om][css-backgrounds] Serialization of `background: none`
+- 2023-03-08 RESOLVED #8496: Move color at the end of the final-bg-layer grammar, to make it serialize as `none`
 - 2023-03-16 opened #8604: [css-backgrounds-3] Computed value of `background-image` wrong
 - 2023-05-02 opened #8786: [css-ui][css-backgrounds] Negative outline-offset is not interoperable and spec is not clear
 - 2023-08-31 opened #9286: [css-backgrounds-3][css-borders-4] Only the principal box should get a shadow

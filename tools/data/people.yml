@@ -302,3 +302,194 @@
   irc_nicks: [dholbert]
   affiliation: Mozilla (Gecko flexbox implementer)
   roles: []
+
+# --- form-controls / customizable <select> cohort (added 2026-08, Open UI + WHATWG venues) ---
+
+- slug: gregwhitworth
+  name: Greg Whitworth
+  github: gregwhitworth
+  irc_nicks: [gregwhitworth]
+  affiliation: Salesforce (previously Microsoft); Open UI CG chair
+  roles: [Open UI founder-figure; form controls survey (2019)]
+
+- slug: josepharhar
+  name: Joey Arhar
+  github: josepharhar
+  irc_nicks: [jarhar]
+  affiliation: Google (Chromium)
+  roles: [customizable <select> spec/implementation lead]
+
+- slug: dandclark
+  name: Dan Clark
+  github: dandclark
+  irc_nicks: [dandclark]
+  affiliation: Microsoft
+  roles: [early selectmenu behavioral spec work]
+
+- slug: domenic
+  name: Domenic Denicola
+  github: domenic
+  irc_nicks: [domenic]
+  affiliation: Google (WHATWG editor)
+  roles: [HTML standard editor]
+
+- slug: scottaohara
+  name: Scott O'Hara
+  github: scottaohara
+  irc_nicks: [scotto, scottaohara, scottohara]
+  affiliation: Microsoft (accessibility)
+  roles: [ARIA / HTML-AAM accessibility review]
+
+- slug: lukewarlow
+  name: Luke Warlow
+  github: lukewarlow
+  irc_nicks: [lwarlow, lukewarlow]
+  affiliation: Igalia
+  roles: [Open UI participant; customizable select]
+
+- slug: nt1m
+  name: Tim Nguyen
+  github: nt1m
+  irc_nicks: [ntim]
+  affiliation: Apple (WebKit)
+  roles: [css-forms-1 editor]
+
+- slug: keithamus
+  name: Keith Cirkel
+  github: keithamus
+  irc_nicks: [keithamus]
+  affiliation: GitHub
+  roles: [Open UI participant]
+
+- slug: jakearchibald
+  name: Jake Archibald
+  github: jakearchibald
+  irc_nicks: [JakeA]
+  affiliation: Shopify (previously Google)
+  roles: [developer advocacy; selectedcontent clone model]
+
+- slug: zcorpan
+  name: Simon Pieters
+  github: zcorpan
+  irc_nicks: [zcorpan]
+  affiliation: Mozilla
+  roles: [HTML parser / compat analysis]
+
+- slug: hsivonen
+  name: Henri Sivonen
+  github: hsivonen
+  irc_nicks: [hsivonen]
+  affiliation: Mozilla
+  roles: [HTML parser implementer]
+
+- slug: smaug
+  name: Olli Pettay
+  github: smaug----
+  irc_nicks: [smaug]
+  affiliation: Mozilla
+  roles: [DOM implementer]
+
+- slug: justinfagnani
+  name: Justin Fagnani
+  github: justinfagnani
+  irc_nicks: [justinfagnani]
+  affiliation: Google (Lit; later independent)
+  roles: [web components]
+
+- slug: bkardell
+  name: Brian Kardell
+  github: bkardell
+  irc_nicks: [bkardell]
+  affiliation: Igalia
+  roles: [Open UI participant]
+
+- slug: chrisdholt
+  name: Chris Holt
+  github: chrisdholt
+  irc_nicks: [chrisdholt]
+  affiliation: Microsoft (FAST)
+  roles: [Open UI participant]
+
+- slug: melanierichards
+  name: Melanie Richards
+  github: melanierichards
+  irc_nicks: [melanierichards]
+  affiliation: Microsoft (at the time)
+  roles: [Open UI early UX research]
+
+- slug: brechtDR
+  name: Brecht De Ruyte
+  github: brechtDR
+  irc_nicks: [brecht, brecht_dr]
+  affiliation: iO (developer advocate)
+  roles: [Open UI participant]
+
+- slug: hdv
+  name: Hidde de Vries
+  github: hdv
+  irc_nicks: [hdv]
+  affiliation: Independent (previously W3C/WAI)
+  roles: [Open UI frequent scribe]
+
+- slug: smhigley
+  name: Sarah Higley
+  github: smhigley
+  irc_nicks: [smhigley, sarah_h, sarah_higley]
+  affiliation: Microsoft (accessibility)
+  roles: [Open UI participant]
+
+- slug: jhey
+  name: Jhey Tompkins
+  github: jh3y
+  irc_nicks: [jhey]
+  affiliation: Shopify (previously Google)
+  roles: [developer advocacy; Open UI demos]
+
+- slug: jonathanneal
+  name: Jonathan Neal
+  github: jonathantneal
+  irc_nicks: [JonathanNeal]
+  affiliation: Independent (Open UI)
+  roles: [Open UI frequent chair/scribe (2021-2022)]
+
+- slug: sorvell
+  name: Steve Orvell
+  github: sorvell
+  irc_nicks: [sorvell]
+  affiliation: Google
+  roles: [Open UI participant]
+
+- slug: frehner
+  name: Anthony Frehner
+  github: frehner
+  irc_nicks: [frehner]
+  affiliation: Shopify
+  roles: [Open UI frequent scribe (2025-)]
+
+- slug: aleventhal
+  name: Aaron Leventhal
+  github: aleventhal
+  irc_nicks: [aaronlev]
+  affiliation: Google (accessibility)
+  roles: [Chromium accessibility]
+
+- slug: stubbornella
+  name: Nicole Sullivan
+  github: stubbornella
+  irc_nicks: [nicole]
+  affiliation: Google (at the time)
+  roles: [Open UI participant]
+
+- slug: tantek
+  name: Tantek Çelik
+  github: tantek
+  irc_nicks: [tantek]
+  affiliation: Mozilla (CSSWG long-time member)
+  roles: []
+
+- slug: westbrook
+  name: Westbrook Johnson
+  github: Westbrook
+  irc_nicks: [Westbrook]
+  affiliation: Adobe (Spectrum)
+  roles: [Open UI participant]

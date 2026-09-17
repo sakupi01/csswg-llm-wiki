@@ -295,3 +295,5 @@
 - 2026-08-17 opened #14337: [scroll-animations-1] [html] Stale timeline update needs clarifications
 - 2026-08-20 opened #14364: [scroll-animations-1] Should SVG transforms be taken into account for view timelines?
 - 2026-08-24 RESOLVED #13852: Make it parse error to use values that require an element context for the [inset](https://drafts.csswg.org/scroll-animations/#dom-viewtimelineoptions-inset) property on [ViewTimelineOptions](https://drafts.csswg.org/scroll-animations/#dictdef-viewtimelineoptions)
+- 2026-09-16 RESOLVED #11343: throw an error if you set iterations to infinity for scroll progress timelines
+- 2026-09-16 RESOLVED #11343: throw an error if you set something that makes the animation invalid

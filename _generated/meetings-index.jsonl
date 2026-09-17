@@ -1210,3 +1210,4 @@
 {"date": "2026-09-03", "group": "csswg", "type_guess": "telecon", "topics": 4, "resolutions": 2, "sources": ["bot"], "issues": [11842, 12750, 13981, 14140], "minutes_urls": []}
 {"date": "2026-09-09", "group": "csswg", "type_guess": "telecon", "topics": 6, "resolutions": 4, "sources": ["bot"], "issues": [14056, 14247, 14251, 14256, 14300, 14308], "minutes_urls": []}
 {"date": "2026-09-10", "group": "openui", "type_guess": "telecon", "topics": 4, "resolutions": 3, "sources": ["bot"], "issues": [1460, 1464, 1510, 1515], "minutes_urls": []}
+{"date": "2026-09-16", "group": "csswg", "type_guess": "telecon", "topics": 8, "resolutions": 6, "sources": ["bot"], "issues": [10812, 11343, 12131, 13670, 13988, 14252, 14461, 14477], "minutes_urls": []}

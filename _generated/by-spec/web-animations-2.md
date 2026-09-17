@@ -129,3 +129,5 @@
 - 2026-07-20 RESOLVED #14173: [apply the pending playback rate](https://drafts.csswg.org/web-animations-1/#apply-any-pending-playback-rate) of an animation when [auto-aligning the start time](https://drafts.csswg.org/web-animations-2/#auto-aligning-start-time).
 - 2026-07-20 opened #14205: [web-animations-2] rangeStart and rangeEnd invalidly returns dictionaries as attribute values
 - 2026-08-12 opened #14309: [web-animations-2] Incorporate implicit keyframe generation override from scroll animations
+- 2026-09-16 RESOLVED #11343: throw an error if you set iterations to infinity for scroll progress timelines
+- 2026-09-16 RESOLVED #11343: throw an error if you set something that makes the animation invalid

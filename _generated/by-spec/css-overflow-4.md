@@ -216,3 +216,4 @@
 - 2026-08-06 RESOLVED #3937: add this proposal to Overflow 5
 - 2026-09-04 opened #14448: [css-overflow] line-clamp + ellipsis insertion at soft-wrap point +  white-space: pre
 - 2026-09-14 opened #14485: line-clamp draft specification not in sync with WPT tests
+- 2026-09-16 RESOLVED #13670: change max-lines syntax to allow integer or auto or both and default to auto

@@ -1,18 +1,18 @@
 {"key": "tabatkins", "comments": 6732, "issues_authored": 356}
-{"key": "fantasai", "comments": 4761, "irc_lines": 562, "issues_authored": 676}
+{"key": "fantasai", "comments": 4763, "irc_lines": 562, "issues_authored": 677}
 {"key": "svgeesus", "comments": 4318, "issues_authored": 274}
-{"key": "css-meeting-bot", "comments": 4438}
-{"key": "Loirooriol", "comments": 3164, "issues_authored": 506}
+{"key": "css-meeting-bot", "comments": 4446}
+{"key": "Loirooriol", "comments": 3165, "issues_authored": 506}
 {"key": "frivoal", "comments": 2559, "issues_authored": 336}
 {"key": "emilio", "comments": 1850, "issues_authored": 294}
 {"key": "LeaVerou", "comments": 1544, "issues_authored": 216}
 {"key": "SebastianZ", "comments": 1354, "issues_authored": 214}
-{"key": "cdoublev", "comments": 931, "issues_authored": 379}
+{"key": "cdoublev", "comments": 932, "issues_authored": 379}
+{"key": "dbaron", "comments": 938, "irc_lines": 50, "issues_authored": 207}
 {"key": "noamr", "comments": 1091, "issues_authored": 102}
-{"key": "dbaron", "comments": 933, "irc_lines": 50, "issues_authored": 207}
-{"key": "lukewarlow", "comments": 945, "issues_authored": 182}
-{"key": "flackr", "comments": 864, "irc_lines": 118, "issues_authored": 124}
-{"key": "bramus", "comments": 990, "issues_authored": 94}
+{"key": "lukewarlow", "comments": 946, "issues_authored": 182}
+{"key": "flackr", "comments": 865, "irc_lines": 118, "issues_authored": 124}
+{"key": "bramus", "comments": 991, "issues_authored": 94}
 {"key": "Crissov", "comments": 941, "issues_authored": 128}
 {"key": "litherum", "comments": 919, "issues_authored": 150}
 {"key": "mfreed7", "comments": 972, "issues_authored": 96}
@@ -23,7 +23,7 @@
 {"key": "romainmenke", "comments": 739, "issues_authored": 106}
 {"key": "FremyCompany", "comments": 734, "issues_authored": 35}
 {"key": "nt1m", "comments": 670, "issues_authored": 89}
-{"key": "annevk", "comments": 655, "issues_authored": 97}
+{"key": "annevk", "comments": 655, "issues_authored": 98}
 {"key": "gregwhitworth", "comments": 602, "issues_authored": 117}
 {"key": "AmeliaBR", "comments": 664, "issues_authored": 43}
 {"key": "upsuper", "comments": 604, "issues_authored": 103}
@@ -91,7 +91,7 @@
 {"key": "Nadya678", "comments": 111, "issues_authored": 29}
 {"key": "heycam", "comments": 106, "issues_authored": 30}
 {"key": "melanierichards", "comments": 83, "issues_authored": 49}
-{"key": "JoshTumath", "comments": 121, "issues_authored": 9}
+{"key": "JoshTumath", "comments": 122, "issues_authored": 9}
 {"key": "DavMila", "comments": 104, "issues_authored": 25}
 {"key": "patrickhlauke", "comments": 110, "issues_authored": 18}
 {"key": "myles", "irc_lines": 125}
@@ -120,8 +120,8 @@
 {"key": "TalbotG", "comments": 77, "issues_authored": 17}
 {"key": "MurakamiShinyu", "comments": 77, "issues_authored": 14}
 {"key": "chrisdholt", "comments": 87, "issues_authored": 2}
+{"key": "smaug----", "comments": 74, "issues_authored": 15}
 {"key": "trusktr", "comments": 71, "issues_authored": 18}
-{"key": "smaug----", "comments": 73, "issues_authored": 15}
 {"key": "aphillips", "comments": 74, "issues_authored": 12}
 {"key": "cvrebert", "comments": 44, "issues_authored": 42}
 {"key": "dirkschulze", "comments": 74, "issues_authored": 12}
@@ -148,10 +148,10 @@
 {"key": "davelab6", "comments": 64, "issues_authored": 6}
 {"key": "Malvoz", "comments": 60, "issues_authored": 9}
 {"key": "andrico1234", "comments": 47, "issues_authored": 22}
+{"key": "anttijk", "comments": 56, "issues_authored": 12}
 {"key": "nigelmegitt", "comments": 64, "issues_authored": 4}
 {"key": "sanketj", "comments": 60, "issues_authored": 8}
 {"key": "aardrian", "comments": 64, "issues_authored": 3}
-{"key": "anttijk", "comments": 54, "issues_authored": 12}
 {"key": "stephenmcgruer", "comments": 45, "issues_authored": 21}
 {"key": "danielsakhapov", "comments": 49, "issues_authored": 16}
 {"key": "justinfagnani", "comments": 60, "issues_authored": 5}
@@ -218,13 +218,13 @@
 {"key": "jav099", "comments": 25, "issues_authored": 14}
 {"key": "nicksherman", "comments": 37, "issues_authored": 2}
 {"key": "theres-waldo", "comments": 32, "issues_authored": 7}
+{"key": "vitorroriz", "comments": 23, "issues_authored": 16}
 {"key": "aethanyc", "comments": 30, "issues_authored": 8}
 {"key": "aleventhal", "comments": 36, "issues_authored": 2}
 {"key": "behdad", "comments": 37, "issues_authored": 1}
 {"key": "cathiechen", "comments": 30, "issues_authored": 8}
 {"key": "felipeerias", "comments": 33, "issues_authored": 5}
 {"key": "liamquin", "comments": 35, "issues_authored": 3}
-{"key": "vitorroriz", "comments": 22, "issues_authored": 16}
 {"key": "proimage", "comments": 35, "issues_authored": 2}
 {"key": "rcabanier", "comments": 34, "issues_authored": 3}
 {"key": "svillar", "comments": 30, "issues_authored": 7}
@@ -288,6 +288,7 @@
 {"key": "bakura10", "comments": 16, "issues_authored": 8}
 {"key": "domfarolino", "comments": 12, "issues_authored": 12}
 {"key": "johanneswilm", "comments": 23, "issues_authored": 1}
+{"key": "knowler", "comments": 17, "issues_authored": 7}
 {"key": "myfonj", "comments": 22, "issues_authored": 2}
 {"key": "yarusome", "comments": 8, "issues_authored": 16}
 {"key": "Alohci", "comments": 20, "issues_authored": 3}
@@ -295,7 +296,6 @@
 {"key": "danegraphics", "comments": 22, "issues_authored": 1}
 {"key": "dlrobertson", "comments": 17, "issues_authored": 6}
 {"key": "janvarga", "comments": 12, "issues_authored": 11}
-{"key": "knowler", "comments": 16, "issues_authored": 7}
 {"key": "mdubet", "comments": 21, "issues_authored": 2}
 {"key": "sashafirsov", "comments": 22, "issues_authored": 1}
 {"key": "shivamidow", "comments": 20, "issues_authored": 3}
@@ -593,6 +593,7 @@
 {"key": "jridgewell", "comments": 6, "issues_authored": 3}
 {"key": "liminzhu", "comments": 8, "issues_authored": 1}
 {"key": "nhoizey", "comments": 9}
+{"key": "nullhook", "comments": 4, "issues_authored": 5}
 {"key": "otomad", "comments": 5, "issues_authored": 4}
 {"key": "philcunliffe", "comments": 9}
 {"key": "realskk", "comments": 8, "issues_authored": 1}
@@ -642,7 +643,6 @@
 {"key": "mtom55", "comments": 6, "issues_authored": 2}
 {"key": "nektro", "comments": 4, "issues_authored": 4}
 {"key": "nickserv", "comments": 7, "issues_authored": 1}
-{"key": "nullhook", "comments": 4, "issues_authored": 4}
 {"key": "oriadam", "comments": 6, "issues_authored": 2}
 {"key": "philkunz", "comments": 8}
 {"key": "pp-koch", "comments": 8}
@@ -1258,6 +1258,7 @@
 {"key": "fweth", "comments": 1, "issues_authored": 2}
 {"key": "gferreira", "comments": 2, "issues_authored": 1}
 {"key": "gossi", "comments": 3}
+{"key": "gregoryd", "comments": 2, "issues_authored": 1}
 {"key": "guillaumebrunerie", "comments": 2, "issues_authored": 1}
 {"key": "guswelter", "comments": 3}
 {"key": "gwern", "comments": 3}
@@ -1558,6 +1559,7 @@
 {"key": "angelux", "comments": 2}
 {"key": "anhtaiH", "comments": 2}
 {"key": "apprat", "comments": 1, "issues_authored": 1}
+{"key": "arichiv", "comments": 1, "issues_authored": 1}
 {"key": "atscott", "comments": 1, "issues_authored": 1}
 {"key": "b-houghton", "comments": 2}
 {"key": "b1tr0t", "comments": 2}
@@ -1655,7 +1657,6 @@
 {"key": "glenn2223", "comments": 1, "issues_authored": 1}
 {"key": "gorlanova", "comments": 2}
 {"key": "graphemecluster", "comments": 1, "issues_authored": 1}
-{"key": "gregoryd", "comments": 1, "issues_authored": 1}
 {"key": "grigs", "comments": 2}
 {"key": "grncdr", "comments": 1, "issues_authored": 1}
 {"key": "guybedford", "comments": 2}
@@ -2435,7 +2436,6 @@
 {"key": "aradalvand", "comments": 1}
 {"key": "arcanis", "issues_authored": 1}
 {"key": "aress31", "comments": 1}
-{"key": "arichiv", "issues_authored": 1}
 {"key": "ariofrio", "comments": 1}
 {"key": "arnt", "comments": 1}
 {"key": "arpit-agr", "comments": 1}

@@ -244,3 +244,5 @@
 - 2026-09-09 RESOLVED #14251: select, button, label, checkbox, radio, range { cursor: default; } /* auto and base appearance */
 - 2026-09-09 RESOLVED #14308: textarea, input[textish], select, buttonish, ::picker() { border-radius: 4px; }
 - 2026-09-09 opened #14468: [css-forms-1] Distinguishing <input> vs <button>
+- 2026-09-16 RESOLVED #14252: Use box-shadow to create a shadow in both light and dark modes on all ::picker()s
+- 2026-09-16 RESOLVED #14461: form controls (input, select, textarea, and any others with a transparent background) get { background: light-dark(transparent, alpha(white / 4%); }

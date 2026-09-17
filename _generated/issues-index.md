@@ -9370,7 +9370,7 @@
 - #10809 open [css-values-4,spec-test-mismatch] [css-values] A few more calc() issues in WPT tests  
 - #10810 closed [css-mixins-1] [css-mixins-1] `<type()>` conflicts with a previous definition in `css-images-4`
 - #10811 open [Closed Accepted as Obvious Bugfix,css-color-6] [css-color-6] `contrast-color()` doesn't include the existing syntax from `css-color-5`
-- #10812 open [Agenda+,css-images-3] [css-shapes][css-images-3] `<radial-size>` syntax seems incorrect
+- #10812 open [css-images-3] [css-shapes][css-images-3] `<radial-size>` syntax seems incorrect
 - #10813 open [css-grid-1,css-grid-2] [css-grid] Clarify how collapsed tracks affect positions of abspos elements in the presence of gaps
 - #10818 closed [Closed Accepted by Editor Discretion,css-values-5] [css-values-5] Forwards compatibility for inline `if()`
 - #10819 closed [css-env-1,css-values-4] [css-env] [css-values] Consider exposing device-pixel-ratio as an environment variable?
@@ -9775,7 +9775,7 @@
 - #11339 closed [Closed Accepted by CSSWG Resolution,css-masking-1] [css-masking] Impact of masks on hit-testing needs to be specified R
 - #11340 closed [scroll-animations-1] [scroll-animations] `ScrollTimeline` constructor has contradictory IDL and prose 
 - #11341 open [css-forms-1] [css-forms-1] Should `::picker-icon` only be available when appearance is base?
-- #11343 open [Agenda+,scroll-animations-1,web-animations-2] [scroll-animations] Should setting `iterations` to `Infinity` via a call to `updatingTiming()` throw?
+- #11343 open [Needs Edits,Needs Testcase (WPT),scroll-animations-1,web-animations-2] [scroll-animations] Should setting `iterations` to `Infinity` via a call to `updatingTiming()` throw? R
 - #11344 closed [css-color-hdr-1] [css-color-hdr] Time for FPWD R
 - #11345 closed [Closed Accepted as Obvious Bugfix,css-color-hdr-1] [css-color-hdr] Example of dynamic-range-limit use seems to require inheritance
 - #11346 closed [Closed Accepted as Obvious Bugfix,css-color-hdr-1] [css-color-hdr] Define "media white" better
@@ -10344,7 +10344,7 @@
 - #12126 closed [Closed Rejected as Invalid,css-speech-1] [css-speech-1] new value `auto` for `speak-as`
 - #12127 open [selectors-4] [selectors] :focus-visible matching heuristic unclear for non-interactive elements with tabindex="-1"
 - #12129 open [css-display-3,css-display-4] [css-display-4] Suggestion to clarify "block container" definition
-- #12131 open [Agenda+,Commenter Response Pending,css-anchor-position-1] [css-anchor-position] Simplifying math functions for `<percentage>` in `anchor()`?
+- #12131 open [Closed Accepted by CSSWG Resolution,Needs Edits,Needs Testcase (WPT),css-anchor-position-1] [css-anchor-position] Simplifying math functions for `<percentage>` in `anchor()`? R
 - #12132 open [css-backgrounds-4,css-values-5] [css-backgrounds-4] Using logical keywords in background-position shorthand with multiple backgrounds
 - #12133 open [Agenda+,css-sizing-3] [css-sizing-3] Make compressible replaced elements compress in the elements' inline axis, but not in the block axis
 - #12134 open [Closed Accepted by CSSWG Resolution,Needs Edits,Needs Testcase (WPT),scroll-animations-1,web-animations-2] [scroll-animations-1] [web-animations-2] at progress timeline boundary and animation ranges
@@ -10692,7 +10692,7 @@
 - #12636 closed [Closed Accepted as Obvious Bugfix,css-anchor-position-1] [css-anchor-position-1] Clarification on pseudo elements having originating element as implicit anchor
 - #12637 closed [web-animations-1] [web-animations-1] commitStyles does not specify how logical properties are committed in `commitStyles()`
 - #12643 open [css-overflow-3] [css-overflow] Viewport's `overflow` is not propagated from the `<body>` if it has `display: contents`
-- #12644 open [Agenda+,css-overflow-3] [css-overflow] Viewport's `overflow` isn't propagated "from the first such child" `<body>`
+- #12644 open [Agenda+,Needs Edits,css-overflow-3] [css-overflow] Viewport's `overflow` isn't propagated "from the first such child" `<body>`
 - #12645 open [web-animations-1,web-animations-2] Animation and clamping of width, height, and size
 - #12646 closed [-] Fullo
 - #12648 open [web-animations-1,web-animations-2] Clamping values and additive animation
@@ -11584,7 +11584,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #13985 open [web-animations-2] [web-animations-2] Throw at "If valid seek time is false, abort this procedure."?
 - #13986 open [css-view-transitions-2] [css-view-transitions-2] Consider `document.activeViewTransitions`: array with all active view transitions within this document
 - #13987 open [Needs Edits,Needs Testcase (WPT),css-grid-3] [css-grid-3][masonry] Should auto-placement cursor be updated after placing an explicitly-placed item? R
-- #13988 open [Agenda+,scroll-animations-1,web-animations-1] [web-animations-1][scroll-animations-1] View Timelines should not become inactive (or not be ready) on containers with no scrollable overflow
+- #13988 closed [scroll-animations-1,web-animations-1] [web-animations-1][scroll-animations-1] View Timelines should not become inactive (or not be ready) on containers with no scrollable overflow
 - #13990 open [scroll-animations-1,web-animations-2] [web-animations-2] `partial dictionary OptionalEffectTiming` should specify `duration`
 - #13991 open [css-animations-2] [css-animations-2] §4.9. The animation-timeline property links to wrong scroll-animations-1 section
 - #13992 open [Closed Accepted as Obvious Bugfix,css-color-5] [css-color-5] Serialization of the alpha() function is not specified
@@ -11783,7 +11783,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #14249 open [Closed Accepted by CSSWG Resolution,Needs Edits,css-forms-1] [css-forms-1] Adopt box-sizing on all form control parts R
 - #14250 open [Closed Accepted by CSSWG Resolution,Needs Edits,css-forms-1] [css-forms-1] Inherit all typography, but not into icons R
 - #14251 open [Needs Edits,Needs Testcase (WPT),css-forms-1] [css-forms-1] Cursors for base appearance R
-- #14252 open [css-forms-1] [css-forms-1] Adopt box-shadow on ::picker()
+- #14252 open [Needs Edits,Needs Testcase (WPT),css-forms-1] [css-forms-1] Adopt box-shadow on ::picker() R
 - #14254 open [Agenda+,css-forms-1] [css-forms-1] Refine base appearance colors
 - #14255 open [Closed Accepted by CSSWG Resolution,Needs Edits,Needs Testcase (WPT),css-forms-1] [css-forms-1] Apply overflow and wrapping control to select buttons R
 - #14256 open [css-forms-1] [css-forms-1] Improve appearance: base <select> styling to be usable as-is
@@ -11933,18 +11933,18 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #14455 closed [-] PROGECTIVE'S
 - #14457 open [-] [css-values] Effect of adding, removing, or replacing persistent UA interfaces on viewport-percentage units
 - #14458 open [-] [mediaqueries-5] Define media feature value `false` to evaluate to false in boolean context
-- #14461 open [css-forms-1] [css-forms-1] Lighten form control backgrounds slightly in dark mode
+- #14461 open [css-forms-1] [css-forms-1] Lighten form control backgrounds slightly in dark mode R
 - #14463 open [css-color-5] [css-color-5] how to handle/avoid clamping in relative color syntax
 - #14464 open [Agenda+,css-values-5] [css-values-5] Standardize serialization for mix function components
 - #14465 open [Needs Testcase (WPT),css-color-5,css-values-5] [css-color-5] Allow omitting percentages when serializing color-mix() in more cases
 - #14466 open [Needs Edits,css-values-5] [css-values-5] Add syntax definitions for `sibling-count` and `sibling-index`
 - #14468 open [css-forms-1] [css-forms-1] Distinguishing <input> vs <button>
-- #14470 open [css-grid-2,css-sizing-3] [css-grid][css-sizing-3] Automatic minimum sizes of grid items during final sizing
+- #14470 open [Agenda+,css-grid-2,css-sizing-3] [css-grid][css-sizing-3] Automatic minimum sizes of grid items during final sizing
 - #14471 open [-] [animation-triggers-1] Define `AnimationTriggerBehavior` enum
 - #14472 open [css-color-4] [css-color-4] § 12: at what stage are colors compared, and when are two <color-space>s the same?
 - #14475 open [css-animations-1] [css-animations] Setting `CSSKeyframesRule.name` to empty string
 - #14476 open [css-link-params-1] [css-link-params-1] Passing a font to a linked resource?
-- #14477 open [Agenda+,css-fonts-5,mediaqueries-5] [css-fonts][mediaqueries-5] Add prefers-bold-text user preference media feature
+- #14477 open [a11y-tracker,css-fonts-5,mediaqueries-5] [css-fonts][mediaqueries-5] Add prefers-bold-text user preference media feature
 - #14478 open [css-values-5] [css-values-5] Does `random()` simplify to a value at specified value time for a `fixed <number>` key?
 - #14480 open [Agenda+] [css-cascade] Quirks mode Content-Type quirk should require a CORS-same-origin response
 - #14481 closed [-] [css-flexbox]: Add pseudo classes for addressing the first and the last items of the main/cross axes.
@@ -11959,8 +11959,11 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #14494 open [css-pseudo-4,css-text-4] [css-pseudo-4] definition of "intervening typographic space" for ::first-letter text rules is a bit unclear
 - #14495 open [Agenda+,css-link-params-1] [css-link-params-1] What do you mean by "used value"?
 - #14496 open [-] [css-forms-1] Refine base appearance state change colors
-- #14498 open [-] [css-values-5] calc-size() basis simplification algorithm is missing the keyword branch
-- #14499 open [-] [css-values-5] What makes a calc-size() "compatible" for interpolation?
+- #14498 open [Needs Edits,css-values-5,editorial] [css-values-5] calc-size() basis simplification algorithm is missing the keyword branch
+- #14499 closed [Closed as Question Answered,css-values-5] [css-values-5] What makes a calc-size() "compatible" for interpolation?
+- #14500 open [Agenda+,css-pseudo-4,css-pseudo-5] Preventing User Dictionary Leaks via ::spelling-error and ::grammar-error CSS Pseudo-Elements
+- #14502 open [Agenda+,css-sizing-4,css-values-5] [css-values-5] Move calc-size() to css-sizing-4?
+- #14503 open [Agenda+,css-link-params-1] [css-link-params] Are link parameters applied before the resource's intrinsic dimensions are computed?
 - whatwg/html#2369 closed [security/privacy,topic: parser] Consider hiding `nonce` content attributes.
 - whatwg/html#2404 open [addition/proposal,i18n-tracker,needs implementer interest] A tag to display date and/or time to the user in his preferred format.
 - whatwg/html#2791 open [addition/proposal,needs implementer interest] Client side include feature for HTML

@@ -386,3 +386,6 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - 2026-09-09 opened #14465: [css-color-5] Allow omitting percentages when serializing color-mix() in more cases
 - 2026-09-09 opened #14466: [css-values-5] Add syntax definitions for `sibling-count` and `sibling-index`
 - 2026-09-11 opened #14478: [css-values-5] Does `random()` simplify to a value at specified value time for a `fixed <number>` key?
+- 2026-09-16 opened #14498: [css-values-5] calc-size() basis simplification algorithm is missing the keyword branch
+- 2026-09-16 opened #14499: [css-values-5] What makes a calc-size() "compatible" for interpolation?
+- 2026-09-16 opened #14502: [css-values-5] Move calc-size() to css-sizing-4?

@@ -28,3 +28,4 @@
 - 2024-12-02 opened #11312: [css-pseudo] Suggest a pseudo element that wraps all of its content 
 - 2025-02-07 opened #11670: Custom Pseudo Elements via New pseudo-before/pseudo-after Attribute
 - 2026-04-29 opened #13860: [css-pseudo] `::before(<ident>)` / `::after(<ident>)`: A possible path forwards for multiple gencontent pseudos?
+- 2026-09-16 opened #14500: Preventing User Dictionary Leaks via ::spelling-error and ::grammar-error CSS Pseudo-Elements

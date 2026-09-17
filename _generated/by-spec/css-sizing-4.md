@@ -237,3 +237,4 @@
 - 2026-04-01 RESOLVED #12333: for non replaced elements, while computing the initial block size, min-content, max-content etc. are considered indefinite
 - 2026-08-05 RESOLVED #13260: Resolve the margin behavior against the same containing block that we resolve percentages against
 - 2026-08-31 opened #14424: [css-sizing-3][css-sizing-4] Swap levels of fit-content and fit-content()
+- 2026-09-16 opened #14502: [css-values-5] Move calc-size() to css-sizing-4?

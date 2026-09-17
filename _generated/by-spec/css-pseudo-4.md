@@ -340,3 +340,4 @@
 - 2026-08-04 RESOLVED #9849: Clarify that spacing is about layout-introduced spacing, not about spacing characters (which are just considered text). Update WPTs
 - 2026-08-12 opened #14312: [css-pseudo-4] Should highlights support interactivity declarations?
 - 2026-09-15 opened #14494: [css-pseudo-4] definition of "intervening typographic space" for ::first-letter text rules is a bit unclear
+- 2026-09-16 opened #14500: Preventing User Dictionary Leaks via ::spelling-error and ::grammar-error CSS Pseudo-Elements

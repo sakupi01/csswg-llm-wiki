@@ -77,7 +77,7 @@
 - css-inline-3 | WD | 2024-12-18 | 94 open | no
 - css-layout-api-1 | FPWD | 2018-04-12 | 0 open | no
 - css-line-grid-1 | WD | 2014-09-16 | 8 open | no
-- css-link-params-1 | FPWD | 2026-07-14 | 8 open | no
+- css-link-params-1 | FPWD | 2026-07-14 | 9 open | no
 - css-lists-3 | WD | 2020-11-17 | 54 open | no
 - css-logical-1 | WD | 2025-12-04 | 15 open | no
 - css-masking-1 | CRD | 2021-08-05 | 7 open | no
@@ -99,7 +99,7 @@
 - css-position-4 | WD | 2025-10-07 | 36 open | no
 - css-print | RETIRED | 2013-03-14 | 0 open | no
 - css-properties-values-api-1 | WD | 2024-03-26 | 22 open | no
-- css-pseudo-4 | WD | 2025-06-27 | 88 open | no
+- css-pseudo-4 | WD | 2025-06-27 | 89 open | no
 - css-regions-1 | WD | 2014-10-09 | 3 open | no
 - css-rhythm-1 | WD | 2026-02-17 | 17 open | no
 - css-round-display-1 | WD | 2016-12-22 | 3 open | no
@@ -112,7 +112,7 @@
 - css-shadow-parts-1 | WD | 2025-12-16 | 36 open | no
 - css-shapes-1 | CRD | 2025-06-12 | 27 open | no
 - css-sizing-3 | WD | 2026-09-04 | 26 open | no
-- css-sizing-4 | WD | 2026-09-04 | 81 open | no
+- css-sizing-4 | WD | 2026-09-04 | 82 open | no
 - css-speech-1 | CRD | 2023-02-14 | 20 open | no
 - css-style-attr | REC | 2013-11-07 | 0 open | no
 - css-syntax-3 | CRD | 2021-12-24 | 50 open | no
@@ -132,7 +132,7 @@
 - css-ui-4 | WD | 2026-01-20 | 128 open | no
 - css-values-3 | CRD | 2024-03-22 | 1 open | yes
 - css-values-4 | WD | 2024-03-12 | 57 open | yes
-- css-values-5 | WD | 2024-11-11 | 173 open | no
+- css-values-5 | WD | 2024-11-11 | 175 open | no
 - css-variables-1 | CR | 2022-06-16 | 10 open | no
 - css-view-transitions-1 | CRD | 2024-03-28 | 39 open | no
 - css-view-transitions-2 | WD | 2024-11-13 | 71 open | no
@@ -163,11 +163,11 @@
 - mediaqueries-5 | WD | 2026-02-19 | 103 open | no
 - motion-1 | WD | 2024-11-05 | 3 open | no
 - resize-observer-1 | FPWD | 2020-02-11 | 48 open | no
-- scroll-animations-1 | WD | 2023-06-06 | 68 open | yes
+- scroll-animations-1 | WD | 2023-06-06 | 67 open | yes
 - selectors-3 | REC | 2018-11-06 | 4 open | no
 - selectors-4 | WD | 2026-01-22 | 102 open | no
 - selectors-5 | FPWD | 2026-02-17 | 98 open | yes
 - selectors-nonelement-1 | RETIRED | 2019-04-02 | 0 open | no
-- web-animations-1 | WD | 2023-06-05 | 45 open | no
+- web-animations-1 | WD | 2023-06-05 | 44 open | no
 - web-animations-2 | WD | 2025-11-20 | 80 open | no
 - worklets-1 | RETIRED | 2021-07-29 | 0 open | no

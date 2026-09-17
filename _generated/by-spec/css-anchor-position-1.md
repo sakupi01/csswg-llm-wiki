@@ -327,3 +327,4 @@
 - 2026-08-05 opened #14274: [css-anchor-position] Match alignment's new % behavior in anchor()
 - 2026-08-19 opened #14348: [css-anchor-position-1] Clarify `position-anchor: match-parent` uses the flattened tree
 - 2026-08-26 RESOLVED #14008: Do what fantasai says in the last comment
+- 2026-09-16 RESOLVED #12131: we will consistently not simplify comparisons of percentages in math functions

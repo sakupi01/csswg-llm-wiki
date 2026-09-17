@@ -1,4 +1,4 @@
-  1310  cdoublev
+  1311  cdoublev
   1193  noamr
   1069  Crissov
   1069  litherum
@@ -40,7 +40,7 @@
    141  foolip
    140  Nadya678
    136  heycam
-   130  JoshTumath
+   131  JoshTumath
    129  DavMila
    125  myles
    123  AtkinsSJ
@@ -91,10 +91,10 @@
     70  davelab6
     69  Malvoz
     69  andrico1234
+    68  anttijk
     68  nigelmegitt
     68  sanketj
     67  aardrian
-    66  anttijk
     66  stephenmcgruer
     65  danielsakhapov
     64  mattwoodrow
@@ -153,12 +153,12 @@
     40  pyoor
     39  jav099
     39  theres-waldo
+    39  vitorroriz
     38  aethanyc
     38  behdad
     38  cathiechen
     38  felipeerias
     38  liamquin
-    38  vitorroriz
     37  proimage
     37  rcabanier
     37  svillar

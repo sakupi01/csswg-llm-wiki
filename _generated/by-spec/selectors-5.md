@@ -150,3 +150,4 @@
 - 2026-08-20 opened #14360: [selectors-5] “initial state” selector
 - 2026-08-21 opened #14371: [selectors] Modifier for attribute selectors to split values into words
 - 2026-08-26 opened #14392: [css-flexbox][selectors] Select flex items by generated flex line and position within the line
+- 2026-09-17 opened #14504: Selectors: :host vs :is(:host)

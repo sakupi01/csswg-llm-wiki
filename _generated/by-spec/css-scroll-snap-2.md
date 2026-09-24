@@ -49,3 +49,4 @@
 - 2026-02-01 opened #13425: [css-scroll-snap-2] scroll-initial-target has incorrect 'see individual properties' in computed value
 - 2026-02-25 opened #13558: Allow anchor-size() as a value for scroll-padding-*
 - 2026-06-17 RESOLVED #8549: accept the proposal in last comment of issue
+- 2026-09-23 opened #14520: [css-scroll-snap-2] When should scrollsnapchanging and scrollsnapchanged be fired when re-snapping with a smooth scroll?

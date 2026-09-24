@@ -389,3 +389,4 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - 2026-09-16 opened #14498: [css-values-5] calc-size() basis simplification algorithm is missing the keyword branch
 - 2026-09-16 opened #14499: [css-values-5] What makes a calc-size() "compatible" for interpolation?
 - 2026-09-16 opened #14502: [css-values-5] Move calc-size() to css-sizing-4?
+- 2026-09-23 RESOLVED #14208: change any to none

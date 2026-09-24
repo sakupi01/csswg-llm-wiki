@@ -60,3 +60,4 @@
 - 2026-07-07 opened #14139: [css-position-4] Give an intro about why we're defining "Top Layer" and `overlay`
 - 2026-07-20 opened #14203: position: parent;
 - 2026-08-07 opened #14292: [css-position-4] Allow author stylesheets to remove elements from the top layer
+- 2026-09-19 opened #14513: [css-position-4] Outline painting order matches neither in-band nor out-of-band

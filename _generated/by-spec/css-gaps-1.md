@@ -110,3 +110,4 @@
 - 2026-08-05 RESOLVED #14169: Grid axis rules match Grid
 - 2026-08-05 RESOLVED #14169: Stacking axis rules are always split, per previous resolution.
 - 2026-09-14 opened #14489: [css-gaps-1] Define rule-visibility-items behavior for grid lanes
+- 2026-09-17 opened #14507: [css-gaps-1] Define segment endpoints for grid-axis gaps in grid lanes

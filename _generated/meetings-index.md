@@ -1216,3 +1216,5 @@
 - 2026-09-09 | csswg | telecon | 6 topics | 4 resolutions | bot | #14056 #14247 #14251 #14256 #14300 #14308
 - 2026-09-10 | openui | telecon | 4 topics | 3 resolutions | bot | openui/open-ui#1460 openui/open-ui#1464 openui/open-ui#1510 openui/open-ui#1515
 - 2026-09-16 | csswg | telecon | 8 topics | 6 resolutions | bot | #10812 #11343 #12131 #13670 #13988 #14252 #14461 #14477
+- 2026-09-17 | csswg | telecon | 3 topics | 0 resolutions | bot | #12240 #13981 #14218
+- 2026-09-23 | csswg | telecon | 7 topics | 3 resolutions | bot | #11518 #12644 #13454 #14054 #14208 #14254 #14447

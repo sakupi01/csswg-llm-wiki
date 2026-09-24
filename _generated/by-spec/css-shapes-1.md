@@ -61,6 +61,7 @@
 - 2024-07-31 opened #10645: [css-shapes] Should `circle()` serialization omit the `center` value?
 - 2024-07-31 opened #10647: [css-shapes] Overload `path()` for CSS-y SVG path syntax instead of taking up `shape()`
 - 2024-08-01 opened #10665: [css-shapes-1] `ellipse()` grammar doesn't allow the two-radial-size keyword form
+- 2024-08-31 opened #10812: [css-shapes][css-images-3] `<radial-size>` syntax seems incorrect
 - 2024-09-04 opened #10833: [css-images-4][css-shapes-1] Allow a single `*-corner` keyword to define an ellipse?
 - 2024-09-11 opened #10870: [css-shapes-1] The flooring values in rect() may have a conflict
 - 2024-12-20 opened #11401: [css-shapes-1] XYWH rounding should be calculated against inner  box, not outer

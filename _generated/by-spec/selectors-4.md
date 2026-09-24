@@ -390,3 +390,4 @@
 - 2026-07-25 opened #14228: [selectors] Partial attribute name selectors
 - 2026-07-27 opened #14232: :lang() pseudo-class should consider maximized language code
 - 2026-08-26 opened #14394: [selectors-4][css-forms-1] Add pseudo class to select empty/unset file inputs
+- 2026-09-17 opened #14504: Selectors: :host vs :is(:host)

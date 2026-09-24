@@ -439,3 +439,4 @@
 - 2026-09-03 opened #14437: [css-color-4][css-color-adjust-1] Clarify the effect of forced colors mode on system colors
 - 2026-09-10 opened #14472: [css-color-4] § 12: at what stage are colors compared, and when are two <color-space>s the same?
 - 2026-09-13 opened #14483: [filter-effects-1/css-color-5/css-pseudo] Visited Color Propagation Inconsistency
+- 2026-09-23 opened #14521: [css-color-4] Use component thresholds as the normative requirement instead of specific GMAs?

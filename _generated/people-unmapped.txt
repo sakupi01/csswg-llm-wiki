@@ -1,6 +1,6 @@
-  1311  cdoublev
+  1312  cdoublev
   1193  noamr
-  1069  Crissov
+  1071  Crissov
   1069  litherum
    845  romainmenke
    769  FremyCompany
@@ -8,15 +8,15 @@
    707  upsuper
    696  kojiishi
    519  jfkthame
-   515  ydaniv
+   516  ydaniv
    501  MatsPalmgren
    488  yisibl
    476  faceless2
    440  SelenIT
    418  r12a
    400  weinig
+   361  kbabbitt
    360  bradkemper
-   359  kbabbitt
    341  jonjohnjohnson
    306  gsnedders
    286  facelessuser
@@ -40,7 +40,7 @@
    141  foolip
    140  Nadya678
    136  heycam
-   131  JoshTumath
+   133  JoshTumath
    129  DavMila
    125  myles
    123  AtkinsSJ
@@ -65,7 +65,7 @@
     96  scottkellum
     94  TalbotG
     91  MurakamiShinyu
-    89  trusktr
+    90  trusktr
     86  aphillips
     86  cvrebert
     86  dirkschulze
@@ -86,15 +86,15 @@
     73  inoas
     72  hiikezoe
     72  hober
+    71  davelab6
     71  kevers-google
     71  shane
-    70  davelab6
     69  Malvoz
     69  andrico1234
-    68  anttijk
+    69  anttijk
+    68  aardrian
     68  nigelmegitt
     68  sanketj
-    67  aardrian
     66  stephenmcgruer
     65  danielsakhapov
     64  mattwoodrow
@@ -130,12 +130,12 @@
     47  KevinDoughty
     47  Manishearth
     47  myakura
+    47  tomayac
     46  gfellerph
     46  jamesnw
     46  jpamental
     46  mysteryDate
     46  pes10k
-    46  tomayac
     45  bernhardf-ro
     45  cabanier
     45  dead-claudia
@@ -149,10 +149,10 @@
     42  jwatt
     42  kidayasuo
     41  ChrisL_
-    40  kbhomes
+    41  kbhomes
+    40  jav099
     40  pyoor
     40  theres-waldo
-    39  jav099
     39  vitorroriz
     38  aethanyc
     38  behdad
@@ -166,10 +166,10 @@
     36  chriskirknielsen
     36  leolopes
     35  JaneOri
+    35  tuankiet65
     34  Marat-Tanalin
     34  kbrilla
     34  tbondwilkinson
-    34  tuankiet65
     34  wangxianzhu
     33  dontcallmedom-bot
     33  hunboy

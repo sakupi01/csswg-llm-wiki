@@ -183,3 +183,4 @@
 - 2026-08-19 opened #14357: [css-overflow] Clarify reasoning for making unprefixed line-clamp work on `-webkit-box`
 - 2026-08-26 opened #14391: [css-overflow-3] make `text-overflow: ellipsis` infer `[title]`
 - 2026-08-28 opened #14406: [css-overflow-3] `scroll-behavior` that only acts as `smooth` within the same document.
+- 2026-09-23 RESOLVED #12644: change spec so instead of 1st set child we use the body element concept

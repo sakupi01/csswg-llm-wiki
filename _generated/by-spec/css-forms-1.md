@@ -246,3 +246,5 @@
 - 2026-09-09 opened #14468: [css-forms-1] Distinguishing <input> vs <button>
 - 2026-09-16 RESOLVED #14252: Use box-shadow to create a shadow in both light and dark modes on all ::picker()s
 - 2026-09-16 RESOLVED #14461: form controls (input, select, textarea, and any others with a transparent background) get { background: light-dark(transparent, alpha(white / 4%); }
+- 2026-09-23 RESOLVED #14254: Adopt 50% currentColor for border-color, assuming we adjust it for special contrast requirements
+- 2026-09-23 opened #14518: autofill styling: [css-pseudo] Allow more author control over

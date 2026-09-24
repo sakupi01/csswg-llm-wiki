@@ -173,6 +173,7 @@
 - 2024-05-29 opened #10374: [css-images-4] Gradient interpolation doesn't specify how to handle positionless stops at computed-value time
 - 2024-06-03 RESOLVED #10092: Relax gradient syntax to allow a single color stop with 0-1 positions
 - 2024-07-17 RESOLVED #10374: move the missing position fixup to computed value time
+- 2024-08-31 opened #10812: [css-shapes][css-images-3] `<radial-size>` syntax seems incorrect
 - 2024-09-04 opened #10833: [css-images-4][css-shapes-1] Allow a single `*-corner` keyword to define an ellipse?
 - 2024-11-13 opened #11203: [css-images] Definition of cross-fade() natural dimensions seem to contradict definition of natural dimensions
 - 2024-12-16 opened #11381: [css-images-4] Clarifying CSS gradient rendering for edge cases involving "longer hue" interpolation

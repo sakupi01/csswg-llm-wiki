@@ -87,3 +87,4 @@
 - 2026-02-25 RESOLVED #13407: update scrollbar-gutters feature to include the View Transitions use-case
 - 2026-07-23 opened #14218: [css-overflow-5]: CSS scroll-marker and scroll-button create a wide array of developer footguns for questionable benefit
 - 2026-08-06 opened #14287: [css-overflow-5] More scroll axis locking behavior control
+- 2026-09-17 opened #14505: [css-overflow-5] Make <nav> a scroll-target-group

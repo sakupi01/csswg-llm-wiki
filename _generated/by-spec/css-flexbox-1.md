@@ -251,3 +251,4 @@
 - 2026-07-01 opened #14118: [css-flexbox] Parsing ambiguity with `flex: 1 0`
 - 2026-07-29 RESOLVED #5742: Switch omitted flex-basis back to 0% for compat, add a note to the spec about it
 - 2026-09-02 RESOLVED #8884: reaffirming previous resolution that the ideal algorithm should be non-normative
+- 2026-09-20 opened #14514: [css-inline] text-box-trim stops affecting direct text when using flex/grid

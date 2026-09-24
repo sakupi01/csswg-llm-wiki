@@ -145,3 +145,4 @@
 - 2026-04-02 RESOLVED #13557: Add NUMBERpx to values of text-scale meta, deprecate 'scale' keyword (and make it optional for conformance).
 - 2026-06-24 RESOLVED #13557: Revert previous resolution and don't have a limit on meta text-scale for now
 - 2026-09-11 opened #14477: [css-fonts][mediaqueries-5] Add prefers-bold-text user preference media feature
+- 2026-09-18 opened #14509: [css-fonts] Support the next generation of variable fonts tech with 3 new tech() tokens

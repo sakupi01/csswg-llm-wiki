@@ -1,14 +1,14 @@
-  1312  cdoublev
+  1313  cdoublev
   1193  noamr
-  1071  Crissov
+  1072  Crissov
   1069  litherum
    845  romainmenke
    769  FremyCompany
    707  AmeliaBR
    707  upsuper
-   696  kojiishi
-   519  jfkthame
-   516  ydaniv
+   697  kojiishi
+   522  jfkthame
+   517  ydaniv
    501  MatsPalmgren
    488  yisibl
    476  faceless2
@@ -19,7 +19,7 @@
    360  bradkemper
    341  jonjohnjohnson
    306  gsnedders
-   286  facelessuser
+   288  facelessuser
    268  xfq
    265  jsnkuhn
    253  mrego
@@ -29,8 +29,8 @@
    227  johannesodland
    211  benface
    203  cookiecrook
+   190  graouts
    190  tobireif
-   189  graouts
    184  javifernandez
    182  ewilligers
    180  davidsgrogan
@@ -40,7 +40,7 @@
    141  foolip
    140  Nadya678
    136  heycam
-   133  JoshTumath
+   134  JoshTumath
    129  DavMila
    125  myles
    123  AtkinsSJ
@@ -84,9 +84,9 @@
     74  janewman
     74  sideshowbarker
     73  inoas
+    72  davelab6
     72  hiikezoe
     72  hober
-    71  davelab6
     71  kevers-google
     71  shane
     69  Malvoz

@@ -3276,7 +3276,7 @@
 - #2911 closed [Closed Accepted as Editorial,Commenter Satisfied,css-backgrounds-3] [css-backgrounds] Remove non-breakable spaces (or use them consistently)
 - #2912 closed [Closed Accepted as Editorial,css-shapes-1,css-shapes-2] [css-align] [css-flexbox] [css-overflow] [css-rhythm] [css-shapes] [css-ui] Missing quotes around property refs
 - #2913 closed [Closed Rejected as Invalid,Tracked in DoC,css-grid-1] [css-grid] What value for position:absolute's getComputedStyle left (for display:grid)
-- #2914 open [web-animations-1] [web-animations] Drop reference to composite modes when using implicit keyframes
+- #2914 closed [web-animations-1] [web-animations] Drop reference to composite modes when using implicit keyframes
 - #2915 closed [Closed Rejected as Invalid,css-fonts-4] [css-fonts] Missing quotes in <feature-value-block> dfn
 - #2916 closed [css-backgrounds-4] [css-backgrounds] Incorrect value dfn for border-color and background-clip
 - #2917 closed [Closed Accepted as Obvious Bugfix,css-grid-2] [css-grid] Not clear how to read the <name-repeat> dfn
@@ -9485,7 +9485,7 @@
 - #10956 open [css-values-5] [css-values-5] we should ensure an if with no fallback can be reasoned about later
 - #10957 closed [-] [css-view-transitions-2] Clarifications around `view-transition-group`
 - #10958 open [css-cascade-6,css-cascade-7] [css-cascade] Allow `@import` to be nested in conditional rules and/or `@layer` iff nothing else precedes them
-- #10960 open [Needs Edits,scroll-animations-1] [scroll-animations-1] Typo in calculation of ViewTimeline progress
+- #10960 closed [Closed Accepted as Obvious Bugfix,scroll-animations-1] [scroll-animations-1] Typo in calculation of ViewTimeline progress
 - #10961 open [Agenda+,Needs Edits,css-display-4,css-grid-3,topic: masonry] [css-grid-3] Should there be an `inline-grid-lanes` legacy keyword for `display`? R
 - #10962 open [css-transitions-1] [css-transitions] What is the transition start value for an unset property?
 - #10963 open [css-pseudo-4,css-stacking-3,selectors-4] Add ::top-layer pseudo element
@@ -11074,7 +11074,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #13236 open [web-animations-2] [web-animations-2] Playing newly created animations with finite timelines doesn't schedule play task
 - #13242 open [css-filter-effects-1,fx-filter-effects-1] [filter-effects] Should root propagate `filter` to the viewport?
 - #13244 open [css-content-3] [css-content] Clarify valid and default values of `string-set`
-- #13245 open [Closed Accepted by CSSWG Resolution,Needs Edits,animation-triggers-1,css-animations-2] [css-animations-2] Should animation triggers be their own spec? R
+- #13245 closed [Closed Accepted by CSSWG Resolution,Needs Edits,animation-triggers-1,css-animations-2] [css-animations-2] Should animation triggers be their own spec? R
 - #13248 open [css-sizing-4] [css-sizing] Browsers don't apply `aspect-ratio` to `<audio>`
 - #13251 open [Needs Edits,css-font-loading-3] [css-font-loading-3] What is the behavior of adding a FontFace to documents.fonts in another document? R
 - #13253 open [css-filter-effects-2] [filter-effects] `@filter` at-rule to substitute SVG `<filter>` element
@@ -11117,7 +11117,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #13303 open [editorial,mediaqueries-5] [mediaqueries-5] Wording in spec for preference override for colorScheme unclear how it affects used color scheme
 - #13304 closed [-] [appearance: base] New pseudo classes for meter gauge regions
 - #13305 open [css-scoping-1] [css-scoping-1] Spec for tree-scoped names needs more nuance
-- #13307 open [Needs Edits,animation-triggers-1] [css-animations-2] Reconsider the property names of the timeline-trigger’s ranges (again). R
+- #13307 closed [Needs Edits,animation-triggers-1] [css-animations-2] Reconsider the property names of the timeline-trigger’s ranges (again). R
 - #13308 closed [css-borders-4] [css-borders-4]: `border-shape` order of shapes in the two-shape variant R
 - #13309 closed [css-filter-effects-1,editorial] [filter-effects-1] Syntax definition of `filter-functions`
 - #13310 closed [-] [css-transforms] Syntax definition for `transform-function` is broken
@@ -11564,7 +11564,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #13956 open [css-filter-effects-1,css-filter-effects-2] [filter-effects] Does per-fragment value resolution imply separate filter effect groups?
 - #13957 open [css-multicol-1,css-multicol-2] [css-multicol] Examples 30 & 31 do not follow from the spec - column balancing is under-specified and/or incorrect
 - #13958 open [css-typed-om,spec-test-mismatch] [css-typed-om-1] Clarify reification of computed 1–4 side values
-- #13959 open [scroll-animations-1] [scroll-animations] ViewTimeline IDL specifies that the `subject` attribute is non-null, but allows construction with no `subject` specified R
+- #13959 closed [scroll-animations-1] [scroll-animations] ViewTimeline IDL specifies that the `subject` attribute is non-null, but allows construction with no `subject` specified R
 - #13962 open [Agenda+,css-typed-om] [css-typed-om-1] vertical-align should likely reify as unsupported after becoming a shorthand
 - #13963 open [Needs Testcase (WPT),scroll-animations-1] [scroll-animations-1] When exactly does the timeline change take effect? What does the initial scroll snapshot look like?
 - #13964 open [Needs Edits,Needs Testcase (WPT),css-filter-effects-1] [css-filter-effects] Clarify the `filter region` for CSS reference filters R
@@ -11630,7 +11630,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #14047 closed [Closed Accepted by CSSWG Resolution,Tested,css-overflow-4,topic: line-clamp] [css-overflow-4] `block-ellipsis`, floats, and line-box clearance R
 - #14049 closed [Closed Accepted as Obvious Bugfix,css-color-4] [css-color-4] Use the phrase "prepare both colors for conversion" seems wrong in color interpolation algorithm
 - #14050 closed [-] [css-inline] Browsers are not interoperabe with regards to inline borders and line breaking
-- #14051 open [css-color-4] [css-color-4] Is CSS Gamut Mapping intended to apply to CSS gradients?
+- #14051 closed [Closed as Question Answered,css-color-4] [css-color-4] Is CSS Gamut Mapping intended to apply to CSS gradients?
 - #14052 open [css-align-3,css-grid-3] [css-grid-3][masonry] For `align-items`/`justify-items`, should `fill-reverse` affect the definition of `start` and `end`? R
 - #14053 closed [Closed Accepted by Editor Discretion,css-link-params-1] [css-variables] Inheriting Variables' Values from Variables in Parent Scopes
 - #14054 open [css-transforms-2] [css-transforms-2] Should `transform-style: flat` be forced by other properties when they don't apply or have a different used value?
@@ -11933,7 +11933,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #14455 closed [-] PROGECTIVE'S
 - #14457 open [-] [css-values] Effect of adding, removing, or replacing persistent UA interfaces on viewport-percentage units
 - #14458 open [-] [mediaqueries-5] Define media feature value `false` to evaluate to false in boolean context
-- #14461 open [Closed Accepted by CSSWG Resolution,Needs Edits,css-forms-1] [css-forms-1] Lighten form control backgrounds slightly in dark mode R
+- #14461 open [Closed Accepted by CSSWG Resolution,Needs Testcase (WPT),css-forms-1] [css-forms-1] Lighten form control backgrounds slightly in dark mode R
 - #14463 open [css-color-5] [css-color-5] how to handle/avoid clamping in relative color syntax
 - #14464 open [Agenda+,css-values-5] [css-values-5] Standardize serialization for mix function components
 - #14465 open [Needs Testcase (WPT),css-color-5,css-values-5] [css-color-5] Allow omitting percentages when serializing color-mix() in more cases
@@ -11954,7 +11954,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #14486 open [-] [css-break][css-tables][css-flexbox][css-grid] Proposal for Advanced Fragmentation of Parallel Layouts
 - #14487 open [css-color-5] [css-color-5] Serialize omitted percentages in `color-mix()` to `0%` when the specified sum is greater than `100%`
 - #14489 open [Agenda+,css-gaps-1] [css-gaps-1] Define rule-visibility-items behavior for grid lanes
-- #14492 open [Needs Review of Proposed Text,Needs Testcase (WPT),web-animations-1] [web-animations-1] Does an easing on a keyframe that specifies no value for the animated property apply?
+- #14492 closed [Closed Accepted as Obvious Bugfix,Needs Testcase (WPT),web-animations-1] [web-animations-1] Does an easing on a keyframe that specifies no value for the animated property apply?
 - #14493 open [Agenda+ TPAC] Web Preferences API: implementation interest and next steps
 - #14494 open [css-pseudo-4,css-text-4] [css-pseudo-4] definition of "intervening typographic space" for ::first-letter text rules is a bit unclear
 - #14495 open [Agenda+,css-link-params-1] [css-link-params-1] What do you mean by "used value"?
@@ -11974,6 +11974,9 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #14518 open [css-forms-1] autofill styling: [css-pseudo] Allow more author control over
 - #14520 open [css-scroll-snap-2] [css-scroll-snap-2] When should scrollsnapchanging and scrollsnapchanged be fired when re-snapping with a smooth scroll?
 - #14521 open [Agenda+,css-color-4] [css-color-4] Use component thresholds as the normative requirement instead of specific GMAs?
+- #14522 open [css-values-5] [css-values-5] Simplification of `calc-interpolate()` with `<easing-function>`s at parse time
+- #14523 open [-] [css-fonts-4] Clarify expectations about synthetic-bold vs glyph advances
+- #14525 open [-] [css-scrollbars-1][css-backgrounds] iframe scrollbar track transparency and overscroll background
 - whatwg/html#2369 closed [security/privacy,topic: parser] Consider hiding `nonce` content attributes.
 - whatwg/html#2404 open [addition/proposal,i18n-tracker,needs implementer interest] A tag to display date and/or time to the user in his preferred format.
 - whatwg/html#2791 open [addition/proposal,needs implementer interest] Client side include feature for HTML
@@ -12027,7 +12030,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - whatwg/html#11653 closed [topic: parser,topic: select] Popping node vs. end tag behavior in <option> and <selectedcontent>
 - whatwg/html#11707 closed [needs tests,topic: select] option element disabledness works incorrectly
 - whatwg/html#11708 closed [topic: select] option element form IDL attribute works incorrectly
-- whatwg/html#11729 open [addition/proposal,agenda+,needs implementer interest,stage: 2] Menu elements proposal
+- whatwg/html#11729 open [addition/proposal,stage: 2] Menu elements proposal
 - whatwg/html#11730 closed [topic: select] optgroup element text is incorrect
 - whatwg/html#11766 open [topic: select] Changes to option element descendants
 - whatwg/html#11783 open [topic: select] option element insertion and removing steps are wrong

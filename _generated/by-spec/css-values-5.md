@@ -390,3 +390,4 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - 2026-09-16 opened #14499: [css-values-5] What makes a calc-size() "compatible" for interpolation?
 - 2026-09-16 opened #14502: [css-values-5] Move calc-size() to css-sizing-4?
 - 2026-09-23 RESOLVED #14208: change any to none
+- 2026-09-24 opened #14522: [css-values-5] Simplification of `calc-interpolate()` with `<easing-function>`s at parse time

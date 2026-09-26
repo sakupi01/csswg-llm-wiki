@@ -27,7 +27,7 @@
 - css-anchor-position-2 | FPWD | 2025-10-21 | 35 open | yes
 - css-animation-worklet-1 | FPWD | 2019-06-25 | 0 open | no
 - css-animations-1 | WD | 2023-03-02 | 33 open | no
-- css-animations-2 | WD | 2023-06-02 | 60 open | no
+- css-animations-2 | WD | 2023-06-02 | 59 open | no
 - css-backgrounds-3 | CRD | 2024-03-11 | 20 open | no
 - css-backgrounds-4 | FPWD | 2025-11-25 | 44 open | no
 - css-beijing | RETIRED | 2011-05-12 | 0 open | no
@@ -41,7 +41,7 @@
 - css-cascade-5 | CR | 2022-01-13 | 30 open | no
 - css-cascade-6 | WD | 2024-09-06 | 47 open | no
 - css-color-3 | REC | 2022-01-18 | 0 open | no
-- css-color-4 | CRD | 2026-09-13 | 37 open | no
+- css-color-4 | CRD | 2026-09-13 | 36 open | no
 - css-color-5 | WD | 2026-09-13 | 32 open | no
 - css-color-adjust-1 | CR | 2025-12-16 | 19 open | no
 - css-color-hdr-1 | WD | 2026-09-07 | 12 open | no
@@ -132,7 +132,7 @@
 - css-ui-4 | WD | 2026-01-20 | 128 open | no
 - css-values-3 | CRD | 2024-03-22 | 1 open | yes
 - css-values-4 | WD | 2024-03-12 | 57 open | yes
-- css-values-5 | WD | 2024-11-11 | 175 open | no
+- css-values-5 | WD | 2024-11-11 | 176 open | no
 - css-variables-1 | CR | 2022-06-16 | 10 open | no
 - css-view-transitions-1 | CRD | 2024-03-28 | 39 open | no
 - css-view-transitions-2 | WD | 2024-11-13 | 71 open | no
@@ -163,11 +163,11 @@
 - mediaqueries-5 | WD | 2026-02-19 | 103 open | no
 - motion-1 | WD | 2024-11-05 | 3 open | no
 - resize-observer-1 | FPWD | 2020-02-11 | 48 open | no
-- scroll-animations-1 | WD | 2023-06-06 | 67 open | yes
+- scroll-animations-1 | WD | 2023-06-06 | 65 open | yes
 - selectors-3 | REC | 2018-11-06 | 4 open | no
 - selectors-4 | WD | 2026-01-22 | 103 open | no
 - selectors-5 | FPWD | 2026-02-17 | 99 open | yes
 - selectors-nonelement-1 | RETIRED | 2019-04-02 | 0 open | no
-- web-animations-1 | WD | 2023-06-05 | 45 open | no
+- web-animations-1 | WD | 2023-06-05 | 43 open | no
 - web-animations-2 | WD | 2025-11-20 | 80 open | no
 - worklets-1 | RETIRED | 2021-07-29 | 0 open | no

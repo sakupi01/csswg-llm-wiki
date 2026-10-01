@@ -163,3 +163,6 @@
 - 2026-07-24 opened #14226: [css-conditional-5] Split `container-type: scroll-state` back into 3 keywords
 - 2026-08-24 opened #14384: [css-conditional-5] How to resolve `cq*` values against a container size resolved at used value time?
 - 2026-09-02 opened #14430: [css-conditional-5] Element.matchContainer has no termination rule for change event listeners
+- 2026-09-25 opened #14527: [css-conditional-5] Allow writing-mode in style queries
+- 2026-09-30 opened #14541: [css-conditional-5] matchContainer() name may be confusing
+- 2026-09-30 opened #14545: [css-conditional-5][css-color-4] `@supports named-feature(gamut-mapping)`

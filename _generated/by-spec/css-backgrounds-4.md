@@ -111,3 +111,4 @@
 - 2026-01-27 RESOLVED #9083: close this issue, no change
 - 2026-02-16 opened #13501: [css-background-4] Set independent background for overscroll on any side
 - 2026-06-11 opened #14035: [Req] backdrop occlusion.
+- 2026-09-29 opened #14536: [css-backgrounds][compositing] Should `background-blend-mode` still be a reset-only sub-property of `background`?

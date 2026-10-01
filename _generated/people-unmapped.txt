@@ -1,8 +1,8 @@
-  1313  cdoublev
-  1193  noamr
-  1072  Crissov
+  1324  cdoublev
+  1195  noamr
+  1075  Crissov
   1069  litherum
-   845  romainmenke
+   857  romainmenke
    769  FremyCompany
    707  AmeliaBR
    707  upsuper
@@ -10,24 +10,24 @@
    522  jfkthame
    517  ydaniv
    501  MatsPalmgren
-   488  yisibl
+   489  yisibl
    476  faceless2
    440  SelenIT
    418  r12a
-   400  weinig
-   361  kbabbitt
+   407  weinig
+   363  kbabbitt
    360  bradkemper
    341  jonjohnjohnson
    306  gsnedders
-   288  facelessuser
-   268  xfq
+   289  facelessuser
+   269  xfq
    265  jsnkuhn
    253  mrego
    243  gitspeaks
    231  drott
    230  brandonmcconnell
    227  johannesodland
-   211  benface
+   212  benface
    203  cookiecrook
    190  graouts
    190  tobireif
@@ -41,11 +41,11 @@
    140  Nadya678
    136  heycam
    134  JoshTumath
+   130  sb3nder
    129  DavMila
    125  myles
    123  AtkinsSJ
    123  andreubotella
-   122  sb3nder
    122  schenney-chromium
    119  BorisChiou
    117  Psychpsyo
@@ -57,10 +57,10 @@
    108  sesse
    107  ByteEater-pl
    105  jihyerish
+   105  matthew-dean
    104  ExE-Boss
-   104  matthew-dean
    102  SimonSapin
-   100  ccameron-chromium
+   102  ccameron-chromium
     99  dauwhe
     96  scottkellum
     94  TalbotG
@@ -76,15 +76,15 @@
     83  jimmyfrasche
     82  bokand
     81  delan
+    81  karlcow
     81  simevidas
-    80  karlcow
     79  tats-u
     78  atotic
     77  fergald
     74  janewman
     74  sideshowbarker
+    73  davelab6
     73  inoas
-    72  davelab6
     72  hiikezoe
     72  hober
     71  kevers-google
@@ -141,11 +141,11 @@
     45  dead-claudia
     45  saschanaz
     44  DarkWiiPlayer
+    44  KurtCattiSchmidt
     44  castastrophe
     44  csnardi
     44  george-steel
     44  keithjgrant
-    43  KurtCattiSchmidt
     42  jwatt
     42  kidayasuo
     41  ChrisL_
@@ -153,17 +153,17 @@
     40  jav099
     40  pyoor
     40  theres-waldo
+    39  behdad
     39  vitorroriz
     38  aethanyc
-    38  behdad
     38  cathiechen
     38  felipeerias
     38  liamquin
+    37  chriskirknielsen
     37  proimage
     37  rcabanier
     37  svillar
     36  TKDev7
-    36  chriskirknielsen
     36  leolopes
     35  JaneOri
     35  tuankiet65

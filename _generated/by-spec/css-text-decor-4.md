@@ -117,3 +117,4 @@
 - 2026-03-25 RESOLVED #13036: Go with option 2 (computes as-is, but animates as length when interpolating with a length).
 - 2026-03-30 opened #13746: [css-text-decor-4] The illustration (and possibly description) for `text-decoration-inset: auto` needs to be updated to reflect the latest clreq
 - 2026-04-02 RESOLVED #8403: add %s, and they resolve on either sum of segments or individual segments depending on b-d-b
+- 2026-09-28 RESOLVED #13036: Clarify auto interpolation details as described in https://github.com/w3c/csswg-drafts/issues/13036#issuecomment-5625579068

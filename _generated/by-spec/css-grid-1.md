@@ -328,3 +328,4 @@
 - 2026-06-24 RESOLVED #13870: accept this PR clarifying that rows can fragment, with whatever editorial changes are needed
 - 2026-08-05 RESOLVED #13930: when grid-placement is fully auto in an axis, use the scrollport edges (otherwise do as specced)
 - 2026-09-20 opened #14514: [css-inline] text-box-trim stops affecting direct text when using flex/grid
+- 2026-09-29 opened #14538: [css-grid] Accommodating limited min-content contributions when distributing space to flexible tracks

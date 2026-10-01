@@ -56,3 +56,4 @@ Append-only. One line per operation: `## [YYYY-MM-DD] <kind> | <summary>`.
 ## [2026-09-17] update | CI weekly sync (see Actions run summary)
 ## [2026-09-24] update | CI weekly sync (see Actions run summary)
 ## [2026-09-26] update | sync since 2026-09-24 CI: csswg-drafts 75 issues (+3 new #14522 #14523 #14525), 21 comments; open-ui 6 issues, 5 comments; whatwg/html selective 128 refreshed; 0 spec versions; 0 new resolutions; indexes rebuilt
+## [2026-10-01] update | CI weekly sync (see Actions run summary)

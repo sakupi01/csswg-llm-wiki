@@ -7258,7 +7258,7 @@ and the text may quote an existing resolution — verify at the permalink.
 - 2026-03-18 | #13453 | css-gaps-1 | RESOLVED: Column decorations can go through row gaps (same as grid rows). No change to spec. | https://github.com/w3c/csswg-drafts/issues/13453#issuecomment-4083294827
 - 2026-03-18 | #13477 | css-gaps-1 | RESOLVED: Poll for whether Grid should default to 'between' or 'all'. Based on that, the initial value will be either 'between' or 'normal' (all for grid, between for multicol/flex) | https://github.com/w3c/csswg-drafts/issues/13477#issuecomment-4083463602
 - 2026-03-19 | openui/open-ui#1389 | - | RESOLVED: go back to manual (human) scribing. Put suggestions on the issue for how to improve automated minuting. | https://github.com/openui/open-ui/issues/1389#issuecomment-4092273314
-- 2026-03-19 | openui/open-ui#1414 | toolbar | RESOLVED: this behavior (radio groups inside a toolbar) is a real one, which we should explore further. | https://github.com/openui/open-ui/issues/1414#issuecomment-4092433405
+- 2026-03-19 | openui/open-ui#1414 | needs-triage,toolbar | RESOLVED: this behavior (radio groups inside a toolbar) is a real one, which we should explore further. | https://github.com/openui/open-ui/issues/1414#issuecomment-4092433405
 - 2026-03-19 | #12142 | css-forms-1 | RESOLVED: ::color-swatch { forced-color-adjust: none; } | https://github.com/w3c/csswg-drafts/issues/12142#issuecomment-4090940731
 - 2026-03-19 | #12142 | css-forms-1 | RESOLVED: Use background: linear-gradient() as in issue. | https://github.com/w3c/csswg-drafts/issues/12142#issuecomment-4090940731
 - 2026-03-19 | #12142 | css-forms-1 | RESOLVED: input[type=color] { padding: 0; overflow: clip; } ::color-swatch { size: stretch; border: none; } | https://github.com/w3c/csswg-drafts/issues/12142#issuecomment-4090940731
@@ -7611,3 +7611,13 @@ and the text may quote an existing resolution — verify at the permalink.
 - 2026-09-23 | #12644 | css-overflow-3 | RESOLVED: change spec so instead of 1st set child we use the body element concept | https://github.com/w3c/csswg-drafts/issues/12644#issuecomment-5798858471
 - 2026-09-23 | #14208 | css-values-5 | RESOLVED: change any to none | https://github.com/w3c/csswg-drafts/issues/14208#issuecomment-5798668664
 - 2026-09-23 | #14254 | css-forms-1 | RESOLVED: Adopt 50% currentColor for border-color, assuming we adjust it for special contrast requirements | https://github.com/w3c/csswg-drafts/issues/14254#issuecomment-5800155676
+- 2026-09-28 | #13036 | css-text-decor-4 | RESOLVED: Clarify auto interpolation details as described in https://github.com/w3c/csswg-drafts/issues/13036#issuecomment-5625579068 (manual) | https://github.com/w3c/csswg-drafts/issues/13036#issuecomment-5876750752
+- 2026-09-28 | #14445 | css-scroll-snap-1 | RESOLVED: Remove the behavior where a non-initial scroll-snap-type captures snap positions (manual) | https://github.com/w3c/csswg-drafts/issues/14445#issuecomment-5876756316
+- 2026-09-30 | #13979 | - | RESOLVED: Only keep (a) above, leave (b) for future discussion | https://github.com/w3c/csswg-drafts/issues/13979#issuecomment-5915709765
+- 2026-09-30 | #13979 | - | RESOLVED: will-change: z-index only creates a stacking context if either a) it currently could have that effect if its own value changed or b) it could have an effect if some combination of the properties in will-change changed | https://github.com/w3c/csswg-drafts/issues/13979#issuecomment-5915709765
+- 2026-09-30 | #14097 | css-inline-3 | RESOLVED: Add hanging value to text-box-edge | https://github.com/w3c/csswg-drafts/issues/14097#issuecomment-5915777397
+- 2026-09-30 | #14489 | css-gaps-1 | RESOLVED: rule-visibility applies per segment even in grid lanes | https://github.com/w3c/csswg-drafts/issues/14489#issuecomment-5915520787
+- 2026-09-30 | #14496 | - | RESOLVED: Adopt :disabled styles in the issue (with some selector munging) | https://github.com/w3c/csswg-drafts/issues/14496#issuecomment-5916858468
+- 2026-09-30 | #14496 | - | RESOLVED: Drop background-color, and use 80% border-color for :is(:hover,:focus) effect. | https://github.com/w3c/csswg-drafts/issues/14496#issuecomment-5916858468
+- 2026-09-30 | #14496 | - | RESOLVED: Reduce background-color on :active from 20% to 8% | https://github.com/w3c/csswg-drafts/issues/14496#issuecomment-5916858468
+- 2026-09-30 | #14507 | css-gaps-1 | RESOLVED: Leave flex as-is; grid lanes TBD | https://github.com/w3c/csswg-drafts/issues/14507#issuecomment-5915343634

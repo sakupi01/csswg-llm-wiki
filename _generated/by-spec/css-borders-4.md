@@ -140,4 +140,4 @@
 - 2026-07-14 opened #14183: [css-borders-4] Editorial: doubled "the" in "get the border-aligned corner clip-out path
 - 2026-07-14 opened #14184: [css-borders-4] "get the border-aligned corner clip-out path" references undefined `outerCorner`
 - 2026-07-14 opened #14185: [css-borders-4] "get the border-aligned corner clip-out path" references undefined `unitVectorFromStartToControlPoint
-- 2026-08-04 opened #14270: [css-borders-4] How should outset_adjusted_border_radius apply to non-round corner shapes?
+- 2026-08-04 opened #14270: [css-borders-4] How should `outset-adjusted border radius` apply to non-round corner shapes?

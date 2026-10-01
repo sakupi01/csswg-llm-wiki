@@ -440,3 +440,8 @@
 - 2026-09-10 opened #14472: [css-color-4] § 12: at what stage are colors compared, and when are two <color-space>s the same?
 - 2026-09-13 opened #14483: [filter-effects-1/css-color-5/css-pseudo] Visited Color Propagation Inconsistency
 - 2026-09-23 opened #14521: [css-color-4] Use component thresholds as the normative requirement instead of specific GMAs?
+- 2026-09-27 opened #14530: [css-color-4] Drop `If H is missing, a = b = 0` in `9.6`?
+- 2026-09-28 opened #14531: [css-color-4] Clarify setting "colorful" components to zero when changing a powerless hue component to a missing component
+- 2026-09-29 opened #14535: [css-color-4] Serialization of `transparent` as a component of a declared value
+- 2026-09-30 opened #14543: [css-color-4] when is it safe to convert `none` to `0` in the context of minifiers
+- 2026-09-30 opened #14545: [css-conditional-5][css-color-4] `@supports named-feature(gamut-mapping)`

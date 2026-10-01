@@ -415,3 +415,4 @@
 - 2026-08-20 opened #14365: [cssom] Make setProperty() strip leading/trailing whitespace
 - 2026-08-31 opened #14421: [cssom] "Preferred shorthand order" seems weird?
 - 2026-08-31 opened #14422: [cssom] CSSOM serialization of declaration blocks is incompatible across browsers and a forward-compat landmine
+- 2026-09-29 opened #14537: [cssom-1] Expected error type when trying to insert an invalid rule in a grouping rule

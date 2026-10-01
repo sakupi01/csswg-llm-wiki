@@ -5,3 +5,4 @@
 - 2025-07-17 opened #12492: EOTF correction / standard for alpha?
 - 2025-12-20 opened #13254: [css-color-6] Does color-layers() need a color interpolation method (or similar)?
 - 2026-02-10 opened #13473: [meta] Change naming scheme of FXTF specs?
+- 2026-09-29 opened #14536: [css-backgrounds][compositing] Should `background-blend-mode` still be a reset-only sub-property of `background`?

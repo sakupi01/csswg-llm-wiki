@@ -316,3 +316,4 @@
 - 2026-08-23 opened #14376: [css-values-4][css-inline-3] Clarify how `lh` values of font-affecting properties are computed
 - 2026-08-24 RESOLVED #13277: Accept edits clarifying that that `baseline-source` doesn't apply to inline boxes
 - 2026-09-20 opened #14514: [css-inline] text-box-trim stops affecting direct text when using flex/grid
+- 2026-09-30 RESOLVED #14097: Add hanging value to text-box-edge

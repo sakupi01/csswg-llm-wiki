@@ -769,7 +769,7 @@
 - openui/open-ui#1411 closed [focusgroup] [focusgroup] accessibility
 - openui/open-ui#1412 closed [focusgroup] [focusgroup] Should listbox imply block modifier? R
 - openui/open-ui#1413 open [focusgroup,needs-triage] [focusgroup] Should focusgroup menubar/menulist automatically create menuitemcheckbox or menuitemradio
-- openui/open-ui#1414 open [toolbar] [toolbar] Should radio inputs behave differently inside of a toolbar? R
+- openui/open-ui#1414 open [needs-triage,toolbar] [toolbar] Should radio inputs behave differently inside of a toolbar? R
 - openui/open-ui#1415 open [needs-triage] materialUI is missing a massive number of its components
 - openui/open-ui#1416 open [needs-triage] tailwind-elements is missing a massive number of its components
 - openui/open-ui#1417 open [focusgroup,needs-triage] [focusgroup] tablist behavior token is misleading
@@ -777,7 +777,7 @@
 - openui/open-ui#1420 closed [toolbar] [toolbar] Should toolbar have a disabled attribute and how should it behave?
 - openui/open-ui#1425 open [-] Base appearance color input questions R
 - openui/open-ui#1426 closed [-] [focusgroup] disabling segments creation
-- openui/open-ui#1428 open [-] `customvalidity` attribute for form-associated elements
+- openui/open-ui#1428 open [needs-triage] `customvalidity` attribute for form-associated elements
 - openui/open-ui#1429 open [Combobox] [combobox] filtering behaviour with optgroups
 - openui/open-ui#1432 open [Combobox] [combobox] Textarea with datalists
 - openui/open-ui#1433 open [menu] menubar/menulist/menuitem content model R
@@ -824,6 +824,12 @@
 - openui/open-ui#1511 open [Enhanced range slider] [Range] Keyboard and focus model for a draggable rangegroup segment
 - openui/open-ui#1515 closed [Enhanced range slider] [Range] What should be the behavior of an empty rangegroup R
 - openui/open-ui#1516 closed [-] Doc-Error at PopOver API
+- openui/open-ui#1520 open [-] [menu] Distinguish `checkable` attribute values
+- openui/open-ui#1521 open [Enhanced range slider] [rangegroup] Visual default for per-thumb labels
+- openui/open-ui#1522 open [Enhanced range slider] [rangegroup] Custom track shapes need a bit of scripting: is that OK, or should it be built in?
+- openui/open-ui#1523 open [Enhanced range slider] [rangegroup] Value tooltips: default on, a pseudo-element, or is anchor positioning enough?
+- openui/open-ui#1524 open [Enhanced range slider] [rangegroup] What does `n` in `::slider-thumb(n)` refer to?
+- openui/open-ui#1525 open [Enhanced range slider] [rangegroup] Vertical orientation and writing modes
 - #66 open [css-animations-1] [css-animations] Specify base value liveness
 - #67 closed [css-animations-1] Make animation-delay live
 - #68 closed [css-animations-1] [css-animations] Clarify or remove elapsedTime
@@ -1509,7 +1515,7 @@
 - #862 closed [Closed Rejected as Wontfix by CSSWG Resolution,css-inline-3,i18n-tracker] [css-inline] should `initial-letter` be plural? R
 - #863 closed [Closed Accepted by CSSWG Resolution,css-inline-3] [css-inline] add explicit width and height to initial-letter R
 - #864 open [Closed Accepted by CSSWG Resolution,Commenter Response Pending,css-inline-3,i18n-ilreq,i18n-tracker] [css-inline] alignment of initial-letter for South Asian scripts without hanging baseline
-- #865 open [Needs Edits,Needs Testcase (WPT),css-position-3] [css3 positioning] support position:sticky inside an overflow:hidden|auto on general parents R
+- #865 closed [Needs Edits,Needs Testcase (WPT),css-position-3] [css3 positioning] support position:sticky inside an overflow:hidden|auto on general parents R
 - #866 closed [Closed Accepted by CSSWG Resolution,Tested,Tracked in DoC,css-cascade-4,css-text-3,cssom-1] [css-text-3] Don't mince words about aliasing/shorthands with word-wrap R
 - #867 closed [Closed as Question Answered,Commenter Timed Out (Assumed Satisfied),css-color-4] [css-color-4] When do color space conversions happen?
 - #868 closed [css-color-4] [css-color-4] Is color-mod() = color(…) a typo?
@@ -3406,7 +3412,7 @@
 - #3067 closed [-] proposal: [css-variables] CSS variables in selectors 
 - #3068 closed [Closed Accepted by CSSWG Resolution,Commenter Satisfied,css-box-3] [css-align] gap properties for block layout R
 - #3069 open [css-fonts-4] [css-fonts-4] Browser behaviour for @font-feature-values/font-display on rel="preload"
-- #3070 open [Needs Edits,css-flexbox-2] [css-flexbox-2] Add flex-wrap: balance; R
+- #3070 closed [Needs Edits,css-flexbox-2] [css-flexbox-2] Add flex-wrap: balance; R
 - #3071 open [css-flexbox-2] [css-flexbox-2] Allow cramming items into a line when they would only overflow if not shrunk
 - #3072 open [selectors-5] [selectors-4] :valid-within / :invalid-within pseudo-classes
 - #3073 closed [Closed Accepted by CSSWG Resolution,Commenter Satisfied,css-break-3] [css-break] what happens to block margins that aren't between block-level boxes? R
@@ -6132,7 +6138,7 @@
 - #6529 closed [Closed Accepted by CSSWG Resolution,css-contain-2] [css-contain] Should scrollIntoView scroll to content-visibility: hidden subtree elements R
 - #6530 closed [Closed Accepted by CSSWG Resolution,css-animations-2,scroll-animations-1] [css-animations-2] Should the initial value for animation-duration be auto? R
 - #6531 open [css-overflow-3,css-text-decor-3] [css-overflow][css-text-decor] should text-decoration include ellipsis?
-- #6532 open [css-content-3] [css-content][css-flexbox] Clarify box structure of content generating pseudo-elements with content: '<content-list>'
+- #6532 open [Agenda+,css-content-3] [css-content][css-flexbox] Clarify box structure of content generating pseudo-elements with content: '<content-list>'
 - #6536 closed [Closed Rejected as OutOfScope,css-pseudo-4] [css-flexbox][css-pseudo] placeholder pseudo-element fails to be flex item
 - #6542 closed [Closed Accepted by CSSWG Resolution,Tested,css-text-3] [css-text] text-align: match-parent on the root element with direction: rtl doesn't match browsers R
 - #6544 open [css-gcpm-4,css-images-4,css-values-5] [css-images][css-values][css-gcpm] qrcode() for generating QR code images from URLs
@@ -6315,7 +6321,7 @@
 - #6785 closed [-] [css-mediaqueries-5] nav-controls future proofing concerns (should each control have its own feature?)
 - #6786 closed [css-values-4,css-values-5] [css-values?] Accept <number> where <integer> is expected
 - #6787 open [css-scroll-anchoring-1] [css-scroll-anchoring] Consider invalidating anchor after adjustment if at the point of selection the anchor has dirty descendants
-- #6788 open [css-ui-4] [css-ui] 'input-security' considered harmful
+- #6788 closed [css-ui-4] [css-ui] 'input-security' considered harmful
 - #6789 closed [Closed Accepted by CSSWG Resolution,Needs Testcase (WPT),css-position-3] [css-position] Behaviour of semi-replaced elements. R
 - #6790 closed [Closed Accepted by CSSWG Resolution,css-cascade-6] [css-cascade-6] Strong vs weak scoping proximity R
 - #6791 closed [Closed Accepted by CSSWG Resolution,css-fonts-4] [css-fonts-4] Naming font-technology() supports function R
@@ -6817,7 +6823,7 @@
 - #7383 open [css-contain-2,css-contain-3] [css-contain-3] Proposal to allow developer to specify content-visibility: auto margin.
 - #7384 closed [css-contain-2,css-contain-3] [css-contain-3] Proposal: Add an event to fire when content-visibility: auto state changes R
 - #7385 open [Needs Naming (Request to Bikeshed),css-text-4] [css-text-4] Bikeshedding word-boundary-expansion
-- #7387 open [Closed Accepted by CSSWG Resolution,css-display-4] [css-flexbox][css-grid] Providing authors with a method of opting into following the visual order, rather than logical order R
+- #7387 closed [Closed Accepted by CSSWG Resolution,css-display-4] [css-flexbox][css-grid] Providing authors with a method of opting into following the visual order, rather than logical order R
 - #7388 closed [Closed Accepted by Editor Discretion,css-images-4,editorial] [css-ui-4][css-images-4] `<string>` in `<image-set()>` and `<url-set>`
 - #7389 open [mediaqueries-5] [mediaqueries-5] Add media query for power saving mode
 - #7390 closed [-] [css-shapes-1] Define `<basic-shape>` with CSS value definition syntax
@@ -8070,7 +8076,7 @@
 - #9034 closed [Closed Accepted as Obvious Bugfix,css-values-4] [css-values-4] Wrong determined type for asin, acos, atan, and atan2
 - #9038 closed [selectors-4] [selectors-4] `:is()` and `:where()` not allowed inside `:not()`?
 - #9039 closed [-] This was last discussed in https://github.com/w3c/csswg-drafts/issues/609 ; see also [dbaron's multi-directional test suite](https://dbaron.org/css/test/2016/abspos-in-inline).
-- #9041 open [css-grid-3,topic: masonry] Alternative masonry path forward
+- #9041 closed [css-grid-3,topic: masonry] Alternative masonry path forward
 - #9042 closed [-] [css-anchor-position-1] `CSSTryRule.style.setProperty` can set disallowed properties in a `@try` rule
 - #9045 closed [Closed Accepted by CSSWG Resolution,css-anchor-position-1] [css-anchor-position-1] Better reusability of anchor names
 - #9046 closed [Closed as Question Answered,css-fonts-5] [css-fonts-5] Allow to define palette colors outside of `@font-palette-values`
@@ -8401,7 +8407,7 @@
 - #9481 open [css-view-transitions-2] [css-view-transitions-2] Clip captured snapshots to viewport for elements
 - #9482 closed [css-flexbox-2,css-grid-3] [css-flexbox][css-grid] Proposal: make `column-rule` work in Flex and Grid layout + add `row-rule` and `rule`, like for `gap`
 - #9483 closed [Closed Accepted as Obvious Bugfix,css-highlight-api-1] [css-highlight-api-1] Use custom-ident instead of custom-highlight-name
-- #9484 open [Closed Accepted as Editorial,Commenter Satisfied,Needs Testcase (WPT),css-color-4] [css-color-4] How to handle conversions that result in negative lightness?
+- #9484 closed [Closed Accepted as Editorial,Commenter Satisfied,css-color-4] [css-color-4] How to handle conversions that result in negative lightness?
 - #9485 open [css-fonts-4] [css-fonts-4] Make behaviour of new auto values on @font-face properties clearer
 - #9486 closed [Closed Accepted as Obvious Bugfix,Closed Accepted by Editor Discretion] [cssom-view] element.checkVisibility() should query the flat tree not shadow-including ancestors
 - #9487 closed [Needs Edits,cssom-view-1] [cssom-view] checkVisibility options have inconsistent naming schemes R
@@ -10947,7 +10953,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #13020 closed [css-values-4] [css-values-4] Incomplete simplification of calculation sum node containing inverted sum nodes
 - #13025 open [css-page-4,css-regions-1] [paginated / print] Multiple flows for paginated content
 - #13035 closed [Commenter Satisfied,css-backgrounds-4] [css-backgrounds] Specify a rendering method for background images
-- #13036 open [Async Resolution: Call For Consensus,Needs Edits,Needs Testcase (WPT),css-text-decor-4] [css-text-decor-4] Allow to interpolate between `auto` and length values in `text-decoration-inset` R
+- #13036 open [Needs Edits,Needs Testcase (WPT),css-text-decor-4] [css-text-decor-4] Allow to interpolate between `auto` and length values in `text-decoration-inset` R
 - #13037 closed [css-borders-4] [css-borders-4] Rendering of outset shadow spread with concave 50% corner-shapes R
 - #13040 open [a11y-tracker,css-ui-4,css-ui-5,open-ui] [css-ui] `interactivity: focusable`
 - #13041 open [Needs Edits,css-conditional-5,css-mixins-2,mediaqueries-5] [mediaqueries-5][css-conditional-5][css-mixins-1] Order dependent rules and adopted stylesheets R
@@ -11239,7 +11245,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #13473 open [compositing-1,compositing-2,css-filter-effects-1,css-filter-effects-2,css-masking-1,css-masking-2,fill-stroke-3,meta,motion-1,web-animations-2] [meta] Change naming scheme of FXTF specs?
 - #13476 open [css-sizing-4,css-values-5] [css-values] Retrieve intrinsic/natural size of resources
 - #13477 closed [Closed Accepted by CSSWG Resolution,css-gaps-1] [css-gaps-1] Decorations between empty areas: default behaviors R
-- #13478 closed [Closed Accepted as Editorial,Needs Edits,css-flexbox-1,css-multicol-1,css-sizing-3,css-sizing-4,editorial] [css-sizing] Production for values common to max/min/preferred widths and heights
+- #13478 open [Closed Accepted as Editorial,Needs Edits,css-flexbox-1,css-multicol-1,css-sizing-3,css-sizing-4,editorial] [css-sizing] Production for values common to max/min/preferred widths and heights
 - #13480 open [Needs Edits,Needs Testcase (WPT),scroll-animations-1] [scroll-animations-1] Define when `ScrollTimeline.source` should update R
 - #13481 closed [Closed as Retracted,css-gaps-1] [css-gaps-1]: Defer percentages insets to future version of css gaps
 - #13485 open [css-inline-3] [css-inline-3] Should dominant-baseline support the legacy SVG text-before-edge and text-after-edge values?
@@ -11575,7 +11581,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #13975 closed [Closed as Duplicate,css-conditional-5] [css-conditional] Allow feature detection of style queries
 - #13976 open [Needs Thought,css-filter-effects-2] Image Orientation in <feImage> filter nodes
 - #13978 closed [Closed Accepted by CSSWG Resolution,Needs Testcase (WPT),css-values-5] [css-values-5] Are sibling-count() and sibling-index() math functions? R
-- #13979 open [Agenda+] [css-will-change] Should `will-change: z-index` always create a stacking context even when element is ineligible for z-index?
+- #13979 open [-] [css-will-change] Should `will-change: z-index` always create a stacking context even when element is ineligible for z-index? R
 - #13980 open [a11y-tracker] Should `::interest-button` be opt-in, opt-out, or enabled via media query? R
 - #13981 open [-] Layout tree for `::interest-button` R
 - #13982 open [-] UA stylesheet rules for `::interest-button`
@@ -11646,7 +11652,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #14066 closed [-] Vertical/sideways text handling for specific codepoints
 - #14067 open [Agenda+,Closed Accepted by CSSWG Resolution,Tested,css-overflow-4,topic: line-clamp] [css-overflow-4] Effect of border-radius on line-clamp float clipping R
 - #14068 open [css-filter-effects-1,css-filter-effects-2] [css-filters] Wrong links to SVG 2, and links to SVG11 should probably be updated.
-- #14069 open [Agenda+,Needs Testcase (WPT),css-color-4] [css-color-4] How to make gamut mapping testable?
+- #14069 open [Agenda+,css-color-4] [css-color-4] How to make gamut mapping testable?
 - #14070 open [Needs Edits,Needs Testcase (WPT),css-color-5] [css-color-5] Omissable alpha in relative color serialization R
 - #14071 open [Needs Naming (Request to Bikeshed),css-conditional-5,mediaqueries-5] [mediaqueries-5][css-conditional-5] `@custom-media` and `@supports-condition`
 - #14072 closed [css-grid-3,topic: masonry] [css-grid-3][masonry] Impact of grid-auto-* on default direction
@@ -11666,8 +11672,8 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #14091 open [css-cascade-5] [css-cascade-5] Do element attached styles have their own cascade layer?
 - #14092 open [web-animations-2] [web-animations-2] How do relative units get evaluated when being processed as offsets in KeyframeEffect.setKeyframes
 - #14095 closed [Closed as Question Answered,css-color-4] [css-color-4] powerless `hue` when chroma/saturation is `none`
-- #14096 open [Agenda+,Async Resolution: Proposed,css-animations-1] [css-animations] How is a list of <easing-function> be handled when used for a keyframe specific animation-timing-function
-- #14097 open [Agenda+,css-inline-3] [css-inline-3] Add `hanging` value to `text-box-edge`
+- #14096 open [Async Resolution: Call For Consensus,css-animations-1] [css-animations] How is a list of <easing-function> be handled when used for a keyframe specific animation-timing-function
+- #14097 open [css-inline-3] [css-inline-3] Add `hanging` value to `text-box-edge` R
 - #14098 open [Agenda+,css-animations-2] [css-animations-2] Behavior of grouping together <keyframe-block> declarations is underspecified
 - #14099 open [css-cascade-4,cssom-1] [cssom-1] Clarify initialization and access of a loading `CSSImportRule.styleSheet`
 - #14100 closed [Closed Rejected as Invalid,Commenter Satisfied,css-color-5] [css-color-5] Example 32 is outdated
@@ -11793,10 +11799,10 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #14262 open [security-needs-resolution] Security Horizontal Review
 - #14263 open [css-fonts-4,cssom-1] unicode-range descriptor should serialize codepoint hex digits as ASCII case-insensitive?
 - #14265 open [css-overflow-4] [css-overflow-4] `scrollbar-gutter: stable` does not provide a stable layout when the OS switches between classic and overlay scrollbars
-- #14266 open [css-navigation-1] [css-navigation-1] Base URL for CSS-defined URL patterns
+- #14266 open [Agenda+,css-navigation-1] [css-navigation-1] Style based on navigation location without allowing untrusted CSS to sniff the document URL
 - #14267 open [css-navigation-1] [css-navigation-1] Do we need `with` or a notion of the "Other URL"
 - #14268 open [css-navigation-1] [css-navigation-1] Selecting based on URLPattern parameters
-- #14270 open [css-borders-4] [css-borders-4] How should outset_adjusted_border_radius apply to non-round corner shapes?
+- #14270 closed [css-borders-4] [css-borders-4] How should `outset-adjusted border radius` apply to non-round corner shapes?
 - #14272 open [css-multicol-2] [css-multicol] Define a ::row pseudo-element for multicol
 - #14273 open [css-forms-1] [css-forms-1] Should size restrictions for custom selects also apply to inline size?
 - #14274 open [css-anchor-position-1] [css-anchor-position] Match alignment's new % behavior in anchor()
@@ -11921,14 +11927,14 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #14442 open [css-mixins-1,css-mixins-2,css-syntax-3] [css-mixins] Types for private properties (in mixins and elsewhere) and probably function locals
 - #14443 open [-] [mediaqueries-5] allow query value to be custom property
 - #14444 open [Agenda+,css-grid-3] [css-grid-3] Synthesizing baselines for Grid Lanes containers
-- #14445 open [Async Resolution: Call For Consensus,css-scroll-snap-1] [css-scroll-snap-1] Revisit the "non-scroll containers can capture snap positions" behavior
+- #14445 closed [Needs Testcase (WPT),css-scroll-snap-1] [css-scroll-snap-1] Revisit the "non-scroll containers can capture snap positions" behavior
 - #14446 closed [Closed as Duplicate,css-link-params-1] [css-link-params] How to pass computed/used values?
-- #14447 open [Closed Accepted by Editor Discretion,css-link-params-1] [css-link-params] Passing `currentColor` (and other state) without requiring the receiving SVG to have a param
+- #14447 open [css-link-params-1] [css-link-params] Passing `currentColor` (and other state) without requiring the receiving SVG to have a param
 - #14448 open [Agenda+,css-overflow-4,topic: line-clamp] [css-overflow] line-clamp + ellipsis insertion at soft-wrap point +  white-space: pre
 - #14449 open [css-align-3] [css-align] Limit baseline content-alignment to block containers?
 - #14450 open [-] Temporarily apply styles while the document is loading
 - #14451 open [css-font-loading-3] [css-font-loading] Which value wins if both `stretch` and `width` are provided?
-- #14452 open [Closed Accepted as Obvious Bugfix,css-fonts-4] [css-fonts] palette-mix() should take an arbitrary number of components (like color-mix(), calc-mix(), etc.)
+- #14452 closed [Closed Accepted as Obvious Bugfix,css-fonts-4] [css-fonts] palette-mix() should take an arbitrary number of components (like color-mix(), calc-mix(), etc.)
 - #14454 open [Closed Accepted as Obvious Bugfix,Needs Review of Test Case(s),css-color-hdr-1] [css-color-hdr] dynamic-range-limit-mix() should take an arbitrary number of components (like color-mix(), calc-mix(), etc.)
 - #14455 closed [-] PROGECTIVE'S
 - #14457 open [-] [css-values] Effect of adding, removing, or replacing persistent UA interfaces on viewport-percentage units
@@ -11953,21 +11959,21 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #14485 open [css-overflow-4,topic: line-clamp] line-clamp draft specification not in sync with WPT tests
 - #14486 open [-] [css-break][css-tables][css-flexbox][css-grid] Proposal for Advanced Fragmentation of Parallel Layouts
 - #14487 open [css-color-5] [css-color-5] Serialize omitted percentages in `color-mix()` to `0%` when the specified sum is greater than `100%`
-- #14489 open [Agenda+,css-gaps-1] [css-gaps-1] Define rule-visibility-items behavior for grid lanes
-- #14492 closed [Closed Accepted as Obvious Bugfix,Needs Testcase (WPT),web-animations-1] [web-animations-1] Does an easing on a keyframe that specifies no value for the animated property apply?
+- #14489 open [css-gaps-1] [css-gaps-1] Define rule-visibility-items behavior for grid lanes R
+- #14492 closed [Closed Accepted as Obvious Bugfix,web-animations-1] [web-animations-1] Does an easing on a keyframe that specifies no value for the animated property apply?
 - #14493 open [Agenda+ TPAC] Web Preferences API: implementation interest and next steps
 - #14494 open [css-pseudo-4,css-text-4] [css-pseudo-4] definition of "intervening typographic space" for ::first-letter text rules is a bit unclear
 - #14495 open [Agenda+,css-link-params-1] [css-link-params-1] What do you mean by "used value"?
-- #14496 open [-] [css-forms-1] Refine base appearance state change colors
+- #14496 open [-] [css-forms-1] Refine base appearance state change colors R
 - #14498 open [Needs Edits,css-values-5,editorial] [css-values-5] calc-size() basis simplification algorithm is missing the keyword branch
 - #14499 closed [Closed as Question Answered,css-values-5] [css-values-5] What makes a calc-size() "compatible" for interpolation?
 - #14500 open [Agenda+,css-pseudo-4,css-pseudo-5] Preventing User Dictionary Leaks via ::spelling-error and ::grammar-error CSS Pseudo-Elements
-- #14502 open [Agenda+,Async Resolution: Proposed,css-sizing-4,css-values-5] [css-values-5] Move calc-size() to css-sizing-4?
+- #14502 open [Async Resolution: Call For Consensus,css-sizing-4,css-values-5] [css-values-5] Move calc-size() to css-sizing-4?
 - #14503 open [Agenda+,css-link-params-1] [css-link-params] Are link parameters applied before the resource's intrinsic dimensions are computed?
 - #14504 open [selectors-4,selectors-5,topic: shadow] Selectors: :host vs :is(:host)
 - #14505 open [Agenda+,HTML,css-overflow-5] [css-overflow-5] Make <nav> a scroll-target-group
 - #14506 open [Needs Design / Proposal] APIs to improve focus management
-- #14507 open [Agenda+,css-gaps-1] [css-gaps-1] Define segment endpoints for grid-axis gaps in grid lanes
+- #14507 open [css-gaps-1] [css-gaps-1] Define segment endpoints for grid-axis gaps in grid lanes R
 - #14509 open [css-fonts-5] [css-fonts] Support the next generation of variable fonts tech with 3 new tech() tokens
 - #14513 open [Agenda+,CSS2,css-position-4] [css-position-4] Outline painting order matches neither in-band nor out-of-band
 - #14514 open [css-flexbox-1,css-grid-1,css-inline-3] [css-inline] text-box-trim stops affecting direct text when using flex/grid
@@ -11977,6 +11983,21 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - #14522 open [css-values-5] [css-values-5] Simplification of `calc-interpolate()` with `<easing-function>`s at parse time
 - #14523 open [-] [css-fonts-4] Clarify expectations about synthetic-bold vs glyph advances
 - #14525 open [-] [css-scrollbars-1][css-backgrounds] iframe scrollbar track transparency and overscroll background
+- #14527 open [Agenda+,css-conditional-5,css-writing-modes-4,i18n-clreq,i18n-jlreq,i18n-mlreq,i18n-tracker] [css-conditional-5] Allow writing-mode in style queries
+- #14528 open [css-pseudo-4] [css-pseudo-4] CSSPseudoElement.selectorText parameter for ::scroll-button
+- #14529 open [css-values-5] [css-values-5] How to handle interleaved `<easing-function>`s when fixing up `*-interpolate()` stops?
+- #14530 closed [Closed Accepted as Obvious Bugfix,css-color-4] [css-color-4] Drop `If H is missing, a = b = 0` in `9.6`?
+- #14531 open [css-color-4] [css-color-4] Clarify setting "colorful" components to zero when changing a powerless hue component to a missing component
+- #14533 open [-] [cssom] Should StyleSheet.title and stylesheet sets be deprecated?
+- #14534 open [css-pseudo-4] [css-pseudo] Add aria-* properties *just for pseudo-elements*?
+- #14535 open [Needs Edits,css-color-4] [css-color-4] Serialization of `transparent` as a component of a declared value
+- #14536 open [compositing-1,compositing-2,css-backgrounds-3,css-backgrounds-4] [css-backgrounds][compositing] Should `background-blend-mode` still be a reset-only sub-property of `background`?
+- #14537 open [cssom-1] [cssom-1] Expected error type when trying to insert an invalid rule in a grouping rule
+- #14538 open [Agenda+,css-grid-1,css-grid-2] [css-grid] Accommodating limited min-content contributions when distributing space to flexible tracks
+- #14541 open [css-conditional-5] [css-conditional-5] matchContainer() name may be confusing
+- #14543 open [css-color-4] [css-color-4] when is it safe to convert `none` to `0` in the context of minifiers
+- #14544 open [-] [css-text-decor-4] Which font-size does a percentage text-decoration-thickness resolve against when the decoration propagates?
+- #14545 open [Agenda+,Async Resolution: Proposed,css-color-4,css-conditional-5] [css-conditional-5][css-color-4] `@supports named-feature(gamut-mapping)`
 - whatwg/html#2369 closed [security/privacy,topic: parser] Consider hiding `nonce` content attributes.
 - whatwg/html#2404 open [addition/proposal,i18n-tracker,needs implementer interest] A tag to display date and/or time to the user in his preferred format.
 - whatwg/html#2791 open [addition/proposal,needs implementer interest] Client side include feature for HTML
@@ -12040,15 +12061,15 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - whatwg/html#11819 open [addition/proposal,stage: 1,topic: navigation] Allow deferring commit of a same-origin cross-document navigation
 - whatwg/html#11825 open [topic: select] Option selectedness when all children are removed from select
 - whatwg/html#11859 closed [topic: select] Should the HTMLSelectedContentElement interface exist?
-- whatwg/html#11880 open [topic: select] Clearing non-primary selectedcontent elements is broken
+- whatwg/html#11880 closed [topic: select] Clearing non-primary selectedcontent elements is broken
 - whatwg/html#11882 open [needs tests,topic: select] <seletedcontent> behavior in disconnected <select>
-- whatwg/html#11883 open [topic: select] <form>.reset() does not reset <selectedcontent>
+- whatwg/html#11883 closed [topic: select] <form>.reset() does not reset <selectedcontent>
 - whatwg/html#11905 closed [topic: forms,topic: select] Incorrect Padding Calculation in HTMLOptionsCollection Index Assignment
 - whatwg/html#11924 open [topic: select] Why does the disabled algorithm in option stop on certain elements
 - whatwg/html#11963 closed [topic: select] Selectedcontent post-connection steps define unused “ancestor” variable
 - whatwg/html#12049 open [topic: select] Base appearance for drop-down select multiple
 - whatwg/html#12050 open [addition/proposal,needs implementer interest,topic: select] Filtering support for customizable select R
-- whatwg/html#12096 open [topic: select] selectedcontent removing steps vs pagehide (and unload)
+- whatwg/html#12096 closed [topic: select] selectedcontent removing steps vs pagehide (and unload)
 - whatwg/html#12099 open [needs tests,topic: select] Selects interplay with popover is sometimes surprising.
 - whatwg/html#12106 closed [topic: select] select base appearance shadow tree issues
 - whatwg/html#12121 open [topic: rendering,topic: select] Should appearance: base select button have both `all: unset` and `display: contents` ?
@@ -12061,7 +12082,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - whatwg/html#12271 open [topic: popover,topic: select] <select> popover integration does not appear to be defined
 - whatwg/html#12286 open [topic: focus,topic: rendering,topic: select] outline and ::picker(select) R
 - whatwg/html#12328 open [a11y-tracker,accessibility,topic: select] [Customizable select] Define UA behavior for interactive content inside <option>
-- whatwg/html#12342 open [addition/proposal,needs implementer interest,topic: select] Selectedcontent in select multiple
+- whatwg/html#12342 open [addition/proposal,agenda+,needs implementer interest,topic: select] Selectedcontent in select multiple
 - whatwg/html#12367 open [clarification,topic: select] Should <selectedcontent> match :disabled?
 - whatwg/html#12370 closed [-] Upcoming WHATNOT meeting on 2026-04-16
 - whatwg/html#12474 open [needs tests,topic: rendering,topic: select] Properly define <select><button> semantics
@@ -12099,7 +12120,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - whatwg/html#5465 PR closed [impacts documentation,topic: shadow] Add declarative Shadow DOM features
 - whatwg/html#7319 PR closed [addition/proposal,topic: forms] Add showPicker() to <input> elements
 - whatwg/html#9456 PR closed [-] add dialogmodaltarget attribute
-- whatwg/html#9546 PR open [addition/proposal,needs implementer interest,topic: forms] Add switch attribute to the input element to allow for a two-state switch control.
+- whatwg/html#9546 PR open [addition/proposal,agenda+,needs implementer interest,topic: forms] Add switch attribute to the input element to allow for a two-state switch control.
 - whatwg/html#10126 PR closed [addition/proposal,topic: dialog,topic: forms,topic: select,topic: style] Add the :open pseudo-class
 - whatwg/html#10456 PR closed [addition/proposal,impacts documentation,topic: forms] Enhance <input type=color> with alpha and colorspace=display-p3
 - whatwg/html#10548 PR closed [addition/proposal,agenda+,topic: forms,topic: select] Define customizable `<select>`
@@ -12121,7 +12142,7 @@ Proposal: Parametric CSS Selectors with Computed Property Binding
 - whatwg/html#12201 PR closed [normative change,topic: rendering,topic: select] Define option and optgroup base appearance rendering
 - whatwg/html#12205 PR closed [-] Make option and optgroup actually disabled inside disabled select
 - whatwg/html#12232 PR closed [topic: select] Make <option> and <optgroup> share a text content algorithm
-- whatwg/html#12263 PR open [topic: select] Clone into all descendant selectedcontent elements
+- whatwg/html#12263 PR closed [topic: select] Keep all descendant selectedcontent elements up to date
 - whatwg/html#12369 PR open [editorial,topic: select] Rename selectedcontent "disabled" to "in valid tree position", inverting the value
 - whatwg/html#12400 PR closed [normative change,topic: forms,topic: select] Use "self" in select position-try-fallbacks
 - whatwg/html#12430 PR open [topic: select] Support `<selectedcontent>` in `<select multiple>`

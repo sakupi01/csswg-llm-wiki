@@ -112,3 +112,4 @@
 - 2026-07-29 RESOLVED #13490: Snap the bounding box, but if it is bigger than the viewport, adjust the alignment [TBD] to keep the element in view.
 - 2026-07-29 RESOLVED #9519: Add TBD keyword to do joined-axis snapping
 - 2026-09-04 opened #14445: [css-scroll-snap-1] Revisit the "non-scroll containers can capture snap positions" behavior
+- 2026-09-28 RESOLVED #14445: Remove the behavior where a non-initial scroll-snap-type captures snap positions

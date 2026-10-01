@@ -113,3 +113,4 @@
 - 2026-02-17 opened #13511: [css-border][css-animation][css-transition] Animations/Transitions of border-width after change of computed value definition in issue #11494
 - 2026-03-11 RESOLVED #12791: no change, update WPT to match the spec's expectations and see if there's web compat issues
 - 2026-03-24 opened #13706: [css-break] box-decoration-break:clone on the root
+- 2026-09-29 opened #14536: [css-backgrounds][compositing] Should `background-blend-mode` still be a reset-only sub-property of `background`?

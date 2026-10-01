@@ -3,3 +3,4 @@
 
 - 2026-02-10 opened #13473: [meta] Change naming scheme of FXTF specs?
 - 2026-08-08 opened #14297: [compositing-2] Is plus-lighter intended to be valid in background-blend-mode?
+- 2026-09-29 opened #14536: [css-backgrounds][compositing] Should `background-blend-mode` still be a reset-only sub-property of `background`?

@@ -65,3 +65,4 @@
 - 2026-05-27 RESOLVED #12600: Clarify that css-writing-modes/CSS2 sizing rules map to 'normal', and other sizing effects of 'justify-self' take precedence over that.
 - 2026-06-22 opened #14078: [css-writing-modes] vo=Tr characters should fall back to rotated if vertical glyphs are missing
 - 2026-07-08 RESOLVED #13816: close no change
+- 2026-09-25 opened #14527: [css-conditional-5] Allow writing-mode in style queries

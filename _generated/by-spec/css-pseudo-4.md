@@ -341,3 +341,5 @@
 - 2026-08-12 opened #14312: [css-pseudo-4] Should highlights support interactivity declarations?
 - 2026-09-15 opened #14494: [css-pseudo-4] definition of "intervening typographic space" for ::first-letter text rules is a bit unclear
 - 2026-09-16 opened #14500: Preventing User Dictionary Leaks via ::spelling-error and ::grammar-error CSS Pseudo-Elements
+- 2026-09-26 opened #14528: [css-pseudo-4] CSSPseudoElement.selectorText parameter for ::scroll-button
+- 2026-09-28 opened #14534: [css-pseudo] Add aria-* properties *just for pseudo-elements*?
